@@ -5,21 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Featured Artist — Audiotool</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #0a0a0a;
-    --surface: #111111;
-    --surface2: #161616;
-    --border: #222222;
-    --border-bright: #333333;
-    --text: #e8e8e8;
-    --text-muted: #666;
+    --bg: #0d0d0d;
+    --surface: #141414;
+    --border: #242424;
+    --text: #f0ece4;
+    --text-muted: #888;
     --text-dim: #444;
-    --accent: #ff4d00;
-    --glow: var(--accent);
-    --mono: 'Space Mono', monospace;
-    --sans: 'Syne', sans-serif;
+    --accent: #c8b89a;
+    --serif: 'DM Serif Display', Georgia, serif;
+    --mono: 'DM Mono', monospace;
+    --max: 1100px;
+    --pad: clamp(20px, 4vw, 60px);
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -29,576 +28,604 @@
     background: var(--bg);
     color: var(--text);
     font-family: var(--mono);
+    font-size: 14px;
     min-height: 100vh;
     overflow-x: hidden;
   }
 
-  body::before {
-    content: '';
+  /* ── COLOR BANDS BG ── */
+  .color-bands {
     position: fixed;
     inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
-    opacity: 0.025;
     pointer-events: none;
-    z-index: 9999;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 1.4s ease;
+  }
+  .color-bands.visible { opacity: 1; }
+  .band-top {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 50vh;
+    transition: background 1.2s ease;
+  }
+  .band-bottom {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 50vh;
+    transition: background 1.2s ease;
+  }
+  .band-fade {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at center, transparent 20%, var(--bg) 75%);
   }
 
   /* ── HEADER ── */
   header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
     border-bottom: 1px solid var(--border);
-    padding: 0 40px;
+    background: rgba(13,13,13,0.93);
+    backdrop-filter: blur(16px);
+    height: 52px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 56px;
-    position: sticky;
-    top: 0;
-    background: rgba(10,10,10,0.95);
-    backdrop-filter: blur(12px);
-    z-index: 100;
+    padding: 0 var(--pad);
   }
 
   .logo {
-    font-family: var(--sans);
-    font-weight: 800;
-    font-size: 13px;
-    letter-spacing: 0.15em;
+    font-family: var(--mono);
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: var(--text);
+    color: var(--text-muted);
     text-decoration: none;
+    transition: color 0.2s;
   }
-
-  .logo span { color: var(--accent); }
+  .logo:hover { color: var(--text); }
+  .logo em { color: var(--accent); font-style: normal; }
 
   .back-btn {
     font-size: 11px;
-    color: var(--text-muted);
+    color: var(--text-dim);
     text-decoration: none;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: color 0.15s;
+    transition: color 0.2s;
   }
-
   .back-btn:hover { color: var(--text); }
-
-  /* ── GLOW BG ── */
-  .glow-bg {
-    position: fixed;
-    top: -30vh;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80vw;
-    height: 60vh;
-    background: radial-gradient(ellipse, var(--glow) 0%, transparent 70%);
-    opacity: 0.06;
-    pointer-events: none;
-    z-index: 0;
-    transition: background 1s;
-    filter: blur(60px);
-  }
 
   /* ── HERO ── */
   .hero {
     position: relative;
     z-index: 1;
-    padding: 80px 40px 60px;
-    border-bottom: 1px solid var(--border);
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: clamp(40px, 6vw, 80px) var(--pad) 0;
     display: grid;
     grid-template-columns: 1fr auto;
-    gap: 40px;
-    align-items: end;
+    gap: 48px;
+    align-items: start;
   }
 
-  .hero-label {
-    font-size: 10px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 16px;
-  }
-
-  .artist-index {
-    font-family: var(--mono);
+  .hero-index {
     font-size: 11px;
     color: var(--text-dim);
-    letter-spacing: 0.1em;
-    margin-bottom: 8px;
-  }
-
-  .artist-name {
-    font-family: var(--sans);
-    font-weight: 800;
-    font-size: clamp(40px, 7vw, 96px);
-    line-height: 0.9;
-    letter-spacing: -0.03em;
-    color: var(--text);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
     margin-bottom: 16px;
   }
 
-  .artist-realname {
-    font-size: 14px;
-    color: var(--text-muted);
-    letter-spacing: 0.05em;
-    margin-bottom: 24px;
+  .hero-name {
+    font-family: var(--serif);
+    font-size: clamp(52px, 9vw, 108px);
+    line-height: 0.9;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    margin-bottom: 12px;
   }
 
-  .artist-intro {
+  .hero-realname {
     font-size: 13px;
+    color: var(--text-muted);
+    letter-spacing: 0.04em;
+    margin-bottom: 28px;
+  }
+
+  .hero-intro {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 15px;
     line-height: 1.8;
     color: var(--text-muted);
-    max-width: 680px;
-    font-style: italic;
+    max-width: 540px;
+    border-left: 2px solid var(--border);
+    padding-left: 20px;
   }
 
-  .hero-meta {
-    text-align: right;
+  /* ── PHOTO ── */
+  .photo-frame {
+    width: clamp(160px, 20vw, 260px);
+    aspect-ratio: 1;
+    overflow: hidden;
     flex-shrink: 0;
   }
 
-  .date-badge {
-    font-size: 11px;
+  .photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    filter: grayscale(10%);
+    transition: filter 0.4s;
+  }
+  .photo-frame img:hover { filter: grayscale(0%); }
+
+  .photo-date {
+    font-size: 10px;
     color: var(--text-dim);
-    letter-spacing: 0.08em;
-    border: 1px solid var(--border);
-    padding: 8px 16px;
-    display: inline-block;
+    letter-spacing: 0.1em;
+    margin-top: 10px;
+    text-align: right;
   }
 
   /* ── LINKS BAR ── */
   .links-bar {
-    padding: 16px 40px;
-    border-bottom: 1px solid var(--border);
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
     position: relative;
     z-index: 1;
+    max-width: var(--max);
+    margin: 32px auto 0;
+    padding: 16px var(--pad);
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
   }
 
   .ext-link {
     font-size: 10px;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--text-muted);
+    color: var(--text-dim);
     text-decoration: none;
+    transition: color 0.15s;
     display: flex;
     align-items: center;
-    gap: 6px;
-    transition: color 0.15s;
+    gap: 5px;
   }
-
+  .ext-link::before { content: '↗'; color: var(--accent); }
   .ext-link:hover { color: var(--text); }
 
-  .ext-link::before {
-    content: '↗';
-    font-size: 11px;
-    color: var(--accent);
-  }
-
-  /* ── CONTENT LAYOUT ── */
-  .content {
-    display: grid;
-    grid-template-columns: 1fr 380px;
+  /* ── MAIN CONTENT ── */
+  .main {
     position: relative;
     z-index: 1;
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 var(--pad);
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 0;
   }
 
   /* ── INTERVIEW ── */
   .interview {
+    padding: 56px 48px 80px 0;
     border-right: 1px solid var(--border);
-    padding: 60px 40px;
   }
 
-  .section-title {
+  .section-label {
     font-size: 10px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--text-dim);
-    margin-bottom: 40px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid var(--border);
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
   }
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  .about-block { margin-bottom: 52px; }
 
   .about-text {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.9;
-    color: var(--text-muted);
-    margin-bottom: 48px;
+    color: #9a9690;
+    font-weight: 300;
   }
 
-  /* ── Q&A ── */
   .qa-list {
     display: flex;
     flex-direction: column;
-    gap: 36px;
+    gap: 44px;
   }
 
   .qa-q {
-    font-size: 11px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 10px;
-    line-height: 1.5;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 17px;
+    line-height: 1.4;
+    color: var(--text);
+    margin-bottom: 14px;
   }
 
   .qa-a {
     font-size: 13px;
-    line-height: 1.9;
-    color: var(--text-muted);
+    line-height: 1.95;
+    color: #8a8680;
+    font-weight: 300;
   }
+
+  .board-link {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    font-size: 11px;
+    color: var(--text-dim);
+  }
+  .board-link a {
+    color: var(--text-dim);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color 0.15s;
+  }
+  .board-link a:hover { color: var(--text-muted); }
 
   /* ── SIDEBAR ── */
   .sidebar {
-    padding: 60px 32px;
+    padding: 56px 0 80px 36px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 44px;
+  }
+
+  /* ── ALBUM COVER ── */
+  .album-cover-link {
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+  .album-cover-link::after {
+    content: 'Open on Audiotool ↗';
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text);
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  .album-cover-link:hover::after { opacity: 1; }
+
+  .album-cover {
+    width: 100%;
+    display: block;
+    border: 1px solid var(--border);
   }
 
   /* ── TRACKS ── */
-  .tracks-section {}
-
   .track-list {
     display: flex;
     flex-direction: column;
     gap: 1px;
     background: var(--border);
-    margin-top: 0;
   }
 
   .track-item {
     background: var(--surface);
-    padding: 16px;
-    display: flex;
-    gap: 12px;
-    text-decoration: none;
-    color: inherit;
+    padding: 11px 14px;
+    display: grid;
+    grid-template-columns: 22px 1fr 20px;
+    gap: 8px;
+    align-items: center;
+    cursor: pointer;
     transition: background 0.15s;
-    align-items: flex-start;
+    border: none;
+    width: 100%;
+    text-align: left;
+    color: inherit;
+    font-family: var(--mono);
   }
-
-  .track-item:hover { background: var(--surface2); }
+  .track-item:hover { background: #1a1a1a; }
+  .track-item.active { background: #1c1c1c; }
+  .track-item.active .track-num { color: var(--accent); }
+  .track-item.active .track-name { color: var(--text); }
+  .track-item.active .track-play { color: var(--accent); }
 
   .track-num {
     font-size: 10px;
     color: var(--text-dim);
-    letter-spacing: 0.08em;
-    flex-shrink: 0;
-    margin-top: 2px;
-    width: 20px;
+    font-variant-numeric: tabular-nums;
   }
 
-  .track-info { flex: 1; min-width: 0; }
-
-  .track-url {
+  .track-name {
     font-size: 11px;
-    color: var(--text);
-    letter-spacing: 0.03em;
+    color: var(--text-muted);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-bottom: 4px;
+    letter-spacing: 0.02em;
   }
 
-  .track-url strong {
-    color: var(--accent);
-  }
-
-  .track-desc {
-    font-size: 10px;
+  .track-play {
+    font-size: 9px;
     color: var(--text-dim);
-    line-height: 1.5;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+    text-align: right;
+  }
+
+  /* ── PLAYER ── */
+  .player-wrap {
     overflow: hidden;
-  }
-
-  /* ── ALBUM ── */
-  .album-block {
+    transition: height 0.3s ease;
+    height: 0;
     border: 1px solid var(--border);
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    border-top: none;
+  }
+  .player-wrap.open { height: 152px; }
+  .player-wrap iframe {
+    width: 100%;
+    height: 152px;
+    border: none;
+    display: block;
   }
 
-  .album-title-row {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-  }
-
-  .album-label {
-    font-size: 10px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--text-dim);
-  }
-
-  .album-name {
-    font-family: var(--sans);
-    font-weight: 700;
-    font-size: 14px;
-    color: var(--text);
-  }
-
-  .album-link {
-    display: inline-block;
-    border: 1px solid var(--border-bright);
-    color: var(--text);
-    text-decoration: none;
-    font-size: 10px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    padding: 8px 16px;
-    transition: all 0.15s;
-    align-self: flex-start;
-  }
-
-  .album-link:hover {
-    background: var(--text);
-    color: var(--bg);
-    border-color: var(--text);
-  }
-
-  /* ── NAV ARROWS ── */
+  /* ── NAV ── */
   .nav-arrows {
-    display: flex;
-    border-top: 1px solid var(--border);
     position: relative;
     z-index: 1;
+    border-top: 1px solid var(--border);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .nav-arrow {
-    flex: 1;
-    padding: 24px 40px;
+    padding: 28px var(--pad);
     text-decoration: none;
-    color: var(--text-muted);
+    color: var(--text-dim);
     transition: all 0.15s;
     display: flex;
     flex-direction: column;
     gap: 6px;
   }
+  .nav-arrow:hover { background: var(--surface); color: var(--text); }
+  .nav-arrow + .nav-arrow { border-left: 1px solid var(--border); text-align: right; align-items: flex-end; }
 
-  .nav-arrow:hover {
-    background: var(--surface);
-    color: var(--text);
-  }
-
-  .nav-arrow + .nav-arrow {
-    border-left: 1px solid var(--border);
-    text-align: right;
-    align-items: flex-end;
-  }
-
-  .nav-arrow-dir {
+  .nav-dir {
     font-size: 10px;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: var(--text-dim);
   }
-
-  .nav-arrow-name {
-    font-family: var(--sans);
-    font-weight: 700;
-    font-size: 16px;
+  .nav-name {
+    font-family: var(--serif);
+    font-size: 20px;
+    font-style: italic;
+    color: var(--text);
   }
 
-  @media (max-width: 960px) {
-    .content { grid-template-columns: 1fr; }
-    .interview { border-right: none; border-bottom: 1px solid var(--border); }
-    .hero { grid-template-columns: 1fr; }
-    .hero-meta { text-align: left; }
-  }
-
-  @media (max-width: 600px) {
-    header, .hero, .links-bar, .interview, .sidebar { padding-left: 20px; padding-right: 20px; }
-    .nav-arrow { padding: 20px; }
+  @media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; gap: 28px; }
+    .photo-frame { width: 160px; }
+    .photo-date { text-align: left; }
+    .main { grid-template-columns: 1fr; }
+    .interview { border-right: none; border-bottom: 1px solid var(--border); padding-right: 0; }
+    .sidebar { padding-left: 0; }
   }
 </style>
 </head>
 <body>
-<div class="glow-bg" id="glowBg"></div>
+
+<div class="color-bands" id="colorBands">
+  <div class="band-top" id="bandTop"></div>
+  <div class="band-bottom" id="bandBottom"></div>
+  <div class="band-fade"></div>
+</div>
 
 <header>
-  <a href="index.html" class="logo">audiotool <span>//</span> featured artists</a>
+  <a href="index.html" class="logo">audiotool <em>//</em> featured artists</a>
   <a href="index.html" class="back-btn">← All artists</a>
 </header>
 
-<div id="app">
-  <!-- filled by JS -->
-</div>
+<div id="app"></div>
 
 <script>
-const PALETTE = [
-  '#ff4d00','#ffb800','#00d4ff','#ff006e','#00ff88',
-  '#8b5cf6','#f97316','#06b6d4','#84cc16','#ec4899'
-];
-
 const params = new URLSearchParams(location.search);
 const artistId = params.get('id');
+let currentTrackUrl = null;
+
+function esc(s) {
+  return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function formatDate(d) {
+  if (!d) return '';
+  const [y,m,day] = d.split('-');
+  const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  return `${months[parseInt(m)-1]} ${parseInt(day)}, ${y}`;
+}
+
+function trackSlug(url) {
+  const m = url.match(/\/track\/([^/]+)/);
+  if (!m) return url;
+  return m[1].replace(/_/g,' ').replace(/-[a-z0-9]{6,}$/, '').replace(/-/g,' ');
+}
+
+function extractColors(src, cb) {
+  const img = new Image();
+  img.crossOrigin = 'anonymous';
+  img.onload = () => {
+    try {
+      const c = document.createElement('canvas');
+      c.width = img.width; c.height = img.height;
+      const ctx = c.getContext('2d');
+      ctx.drawImage(img, 0, 0);
+      function avg(data) {
+        let r=0,g=0,b=0,n=0;
+        for (let i=0;i<data.length;i+=4){r+=data[i];g+=data[i+1];b+=data[i+2];n++;}
+        return `rgb(${Math.round(r/n)},${Math.round(g/n)},${Math.round(b/n)})`;
+      }
+      cb(
+        avg(ctx.getImageData(4, 4, 60, 60).data),
+        avg(ctx.getImageData(4, img.height-64, 60, 60).data)
+      );
+    } catch(e) { cb(null,null); }
+  };
+  img.onerror = () => cb(null,null);
+  img.src = src;
+}
+
+function applyColors(c1, c2) {
+  if (!c1) return;
+  document.getElementById('bandTop').style.background = `linear-gradient(to bottom, ${c1} 0%, transparent 100%)`;
+  document.getElementById('bandBottom').style.background = `linear-gradient(to top, ${c2||c1} 0%, transparent 100%)`;
+  document.getElementById('colorBands').classList.add('visible');
+}
+
+window.playTrack = function(url) {
+  const m = url.match(/\/track\/([^/]+)/);
+  if (!m) return;
+  const wrap = document.getElementById('playerWrap');
+  const items = document.querySelectorAll('.track-item');
+
+  if (currentTrackUrl === url) {
+    wrap.classList.remove('open');
+    wrap.innerHTML = '';
+    currentTrackUrl = null;
+    items.forEach(el => { el.classList.remove('active'); el.querySelector('.track-play').textContent = '▷'; });
+    return;
+  }
+
+  currentTrackUrl = url;
+  wrap.innerHTML = `<iframe src="https://www.audiotool.com/track/${m[1]}/embed/" allow="autoplay"></iframe>`;
+  wrap.classList.add('open');
+  items.forEach(el => {
+    const active = el.dataset.url === url;
+    el.classList.toggle('active', active);
+    el.querySelector('.track-play').textContent = active ? '▶' : '▷';
+  });
+};
 
 fetch('data.json')
   .then(r => r.json())
   .then(data => {
-    if (!artistId) { location.href = 'index.html'; return; }
+    if (!artistId) { location.href='index.html'; return; }
     const idx = data.findIndex(a => a.artist === artistId);
-    if (idx === -1) { location.href = 'index.html'; return; }
-    const artist = data[idx];
-    const prev = idx > 0 ? data[idx-1] : null;
-    const next = idx < data.length-1 ? data[idx+1] : null;
-    render(artist, idx, data.length, prev, next);
+    if (idx === -1) { location.href='index.html'; return; }
+    render(data[idx], idx, data.length, idx>0?data[idx-1]:null, idx<data.length-1?data[idx+1]:null);
   });
 
-function formatDate(d) {
-  const [y,m,day] = d.split('-');
-  const months = ['January','February','March','April','May','June',
-                  'July','August','September','October','November','December'];
-  return `${months[parseInt(m)-1]} ${day}, ${y}`;
-}
-
-function getTrackId(url) {
-  const m = url.match(/\/track\/([^/]+)/);
-  return m ? m[1] : null;
-}
-
-function escHtml(s) {
-  return String(s||'')
-    .replace(/&/g,'&amp;').replace(/</g,'&lt;')
-    .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-}
-
 function render(a, idx, total, prev, next) {
-  const color = PALETTE[idx % PALETTE.length];
   document.title = `${a.artist} — Audiotool Featured Artist`;
-
-  // Set glow color
-  document.getElementById('glowBg').style.background =
-    `radial-gradient(ellipse, ${color} 0%, transparent 70%)`;
-  document.documentElement.style.setProperty('--accent', color);
-
-  const hasSoundcloud = a.soundcloud;
-  const hasProfile = a.at_profile;
-  const hasAlbum = a.album_url;
   const tracks = a.tracks || [];
+  const albumMatch = (a.album_url||'').match(/\/album\/([^/]+)/);
+  const albumId = albumMatch ? albumMatch[1] : null;
 
   document.getElementById('app').innerHTML = `
     <section class="hero">
       <div class="hero-left">
-        <p class="hero-label">Featured Artist ${String(idx+1).padStart(3,'0')} / ${total}</p>
-        <div class="artist-name">${escHtml(a.artist)}</div>
-        ${a.real_name && a.real_name !== a.artist
-          ? `<div class="artist-realname">${escHtml(a.real_name)}</div>`
-          : ''}
-        ${a.intro ? `<p class="artist-intro">"${escHtml(a.intro)}"</p>` : ''}
+        <div class="hero-index">Featured Artist ${String(idx+1).padStart(2,'0')} / ${total}</div>
+        <h1 class="hero-name">${esc(a.artist)}</h1>
+        ${a.real_name && a.real_name !== a.artist ? `<div class="hero-realname">${esc(a.real_name)}</div>` : ''}
+        ${a.intro ? `<p class="hero-intro">${esc(a.intro)}</p>` : ''}
       </div>
-      <div class="hero-meta">
-        <div class="date-badge">${formatDate(a.date)}</div>
+      <div>
+        ${a.photo ? `
+          <div class="photo-frame">
+            <img src="${esc(a.photo)}" alt="${esc(a.artist)}" id="artistPhoto">
+          </div>
+          <div class="photo-date">${formatDate(a.date)}</div>
+        ` : `<div class="photo-frame" style="background:var(--surface);display:flex;align-items:center;justify-content:center;"><span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em">NO PHOTO</span></div>`}
       </div>
     </section>
 
-    ${(hasProfile || hasSoundcloud || hasAlbum) ? `
     <div class="links-bar">
-      ${hasProfile ? `<a href="${escHtml(hasProfile)}" target="_blank" class="ext-link">Audiotool Profile</a>` : ''}
-      ${hasSoundcloud ? `<a href="${escHtml(hasSoundcloud)}" target="_blank" class="ext-link">SoundCloud</a>` : ''}
-      ${hasAlbum ? `<a href="${escHtml(hasAlbum)}" target="_blank" class="ext-link">Edition Album</a>` : ''}
-      <a href="${escHtml(a.board_url)}" target="_blank" class="ext-link">Original Post</a>
+      ${a.at_profile ? `<a href="${esc(a.at_profile)}" target="_blank" class="ext-link">Audiotool</a>` : ''}
+      ${a.soundcloud ? `<a href="${esc(a.soundcloud)}" target="_blank" class="ext-link">SoundCloud</a>` : ''}
+      ${a.album_url ? `<a href="${esc(a.album_url)}" target="_blank" class="ext-link">Edition Album</a>` : ''}
+      ${a.board_url ? `<a href="${esc(a.board_url)}" target="_blank" class="ext-link">Original Post</a>` : ''}
     </div>
-    ` : `
-    <div class="links-bar">
-      <a href="${escHtml(a.board_url)}" target="_blank" class="ext-link">Original Post</a>
-    </div>
-    `}
 
-    <div class="content">
+    <div class="main">
       <div class="interview">
-        ${a.about ? `
-          <p class="section-title">About</p>
-          <div class="about-text">${escHtml(a.about)}</div>
-        ` : ''}
-        <p class="section-title">Interview</p>
+        ${a.about ? `<div class="about-block"><div class="section-label">About</div><div class="about-text">${esc(a.about)}</div></div>` : ''}
         ${a.interview && a.interview.length ? `
+          <div class="section-label">Interview</div>
           <div class="qa-list">
             ${a.interview.map(qa => `
               <div class="qa-item">
-                <div class="qa-q">${escHtml(qa.q)}</div>
-                <div class="qa-a">${escHtml(qa.a)}</div>
+                <div class="qa-q">${esc(qa.q)}</div>
+                <div class="qa-a">${esc(qa.a)}</div>
               </div>
             `).join('')}
           </div>
-          <div style="margin-top:32px;font-size:11px;color:var(--text-dim)">
-            <a href="${escHtml(a.board_url)}" target="_blank"
-               style="color:var(--text-dim);text-decoration:underline;text-underline-offset:3px">
-              Original board post ↗
-            </a>
-          </div>
-        ` : `
-          <div class="about-text" style="color:var(--text-dim);font-size:12px">
-            Read the full interview on the
-            <a href="${escHtml(a.board_url)}" target="_blank"
-               style="color:var(--text-muted);text-decoration:underline;text-underline-offset:3px">
-              original board post ↗
-            </a>
-          </div>
-        `}
+        ` : ''}
+        <div class="board-link"><a href="${esc(a.board_url)}" target="_blank">Original board post ↗</a></div>
       </div>
 
       <div class="sidebar">
-        ${tracks.length ? `
-          <div class="tracks-section">
-            <p class="section-title">Curated Tracks</p>
-            <div class="track-list">
-              ${tracks.map((t,i) => {
-                const tid = getTrackId(t.url);
-                const name = tid ? tid.replace(/_/g,' ').replace(/-[a-z0-9]{4,}$/,'') : t.url;
-                return `
-                  <a href="${escHtml(t.url)}" target="_blank" class="track-item">
-                    <span class="track-num">${String(i+1).padStart(2,'0')}</span>
-                    <div class="track-info">
-                      <div class="track-url">${escHtml(name)}</div>
-                      ${t.desc ? `<div class="track-desc">${escHtml(t.desc)}</div>` : ''}
-                    </div>
-                  </a>
-                `;
-              }).join('')}
-            </div>
+        ${albumId ? `
+          <div>
+            <div class="section-label">Edition Audiotool</div>
+            <a href="${esc(a.album_url)}" target="_blank" class="album-cover-link">
+              <img
+                src="https://at-cdn-s03.audiotool.com/albums/${albumId}/cover512x512.jpg"
+                alt="Edition Audiotool: ${esc(a.artist)}"
+                class="album-cover"
+                id="albumCover"
+                onerror="this.closest('.album-cover-link').style.display='none'"
+              >
+            </a>
           </div>
         ` : ''}
 
-        ${hasAlbum ? `
-          <div class="album-block">
-            <div class="album-title-row">
-              <span class="album-label">Edition Audiotool</span>
-              <span class="album-name">${escHtml(a.artist)}</span>
+        ${tracks.length ? `
+          <div>
+            <div class="section-label">Curated Tracks</div>
+            <div class="track-list">
+              ${tracks.map((t,i) => `
+                <button class="track-item" data-url="${esc(t.url)}" onclick="playTrack('${esc(t.url)}')">
+                  <span class="track-num">${String(i+1).padStart(2,'0')}</span>
+                  <span class="track-name">${esc(trackSlug(t.url))}</span>
+                  <span class="track-play">▷</span>
+                </button>
+              `).join('')}
             </div>
-            <a href="${escHtml(hasAlbum)}" target="_blank" class="album-link">
-              Listen on Audiotool ↗
-            </a>
+            <div class="player-wrap" id="playerWrap"></div>
           </div>
         ` : ''}
       </div>
     </div>
 
     <nav class="nav-arrows">
-      ${prev ? `
-        <a href="artist.html?id=${encodeURIComponent(prev.artist)}" class="nav-arrow">
-          <span class="nav-arrow-dir">← Previous</span>
-          <span class="nav-arrow-name">${escHtml(prev.artist)}</span>
-        </a>
-      ` : '<span class="nav-arrow" style="opacity:0.2"><span class="nav-arrow-dir">Start of archive</span></span>'}
-      ${next ? `
-        <a href="artist.html?id=${encodeURIComponent(next.artist)}" class="nav-arrow">
-          <span class="nav-arrow-dir">Next →</span>
-          <span class="nav-arrow-name">${escHtml(next.artist)}</span>
-        </a>
-      ` : '<span class="nav-arrow" style="opacity:0.2;text-align:right;align-items:flex-end"><span class="nav-arrow-dir">End of archive</span></span>'}
+      ${prev ? `<a href="artist.html?id=${encodeURIComponent(prev.artist)}" class="nav-arrow"><span class="nav-dir">← Previous</span><span class="nav-name">${esc(prev.artist)}</span></a>`
+             : `<span class="nav-arrow" style="opacity:.25"><span class="nav-dir">Start of archive</span></span>`}
+      ${next ? `<a href="artist.html?id=${encodeURIComponent(next.artist)}" class="nav-arrow"><span class="nav-dir">Next →</span><span class="nav-name">${esc(next.artist)}</span></a>`
+             : `<span class="nav-arrow" style="opacity:.25;text-align:right;align-items:flex-end"><span class="nav-dir">End of archive</span></span>`}
     </nav>
   `;
+
+  // Color extraction
+  const colorSrc = albumId
+    ? `https://at-cdn-s03.audiotool.com/albums/${albumId}/cover512x512.jpg`
+    : a.photo || null;
+  if (colorSrc) extractColors(colorSrc, applyColors);
 }
 </script>
 </body>
