@@ -3,574 +3,513 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Featured Artist — Audiotool</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Special+Elite&display=swap" rel="stylesheet">
+<title>Admin — AT Featured Artists</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #0e0e0e;
-    --surface: #181818;
+    --bg: #0a0a0a;
+    --surface: #141414;
+    --surface2: #1c1c1c;
     --border: #2a2a2a;
     --text: #e8e4dc;
-    --text-muted: #aaa49c;
-    --text-dim: #555;
+    --muted: #888;
+    --dim: #444;
     --accent: #e8c840;
-    --accent2: #c8a830;
+    --green: #4ade80;
+    --red: #f87171;
     --block: 'Bebas Neue', Impact, sans-serif;
-    --type: 'Special Elite', 'Courier New', monospace;
-    --max: 1120px;
-    --pad: clamp(20px, 4vw, 56px);
+    --mono: 'DM Mono', monospace;
   }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--text); font-family:var(--mono); font-size:13px; min-height:100vh; }
 
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
+  /* LOGIN */
+  #loginScreen {
+    min-height:100vh; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:24px;
+  }
+  .login-title { font-family:var(--block); font-size:32px; letter-spacing:.15em; color:var(--accent); }
+  .login-sub { color:var(--muted); font-size:11px; letter-spacing:.1em; }
+  .login-box { display:flex; gap:0; border:2px solid var(--border); }
+  .login-box input {
+    background:var(--surface); border:none; outline:none; color:var(--text); font-family:var(--mono);
+    font-size:13px; padding:12px 16px; width:260px; letter-spacing:.05em;
+  }
+  .login-box button {
+    background:var(--accent); border:none; color:var(--bg); font-family:var(--block);
+    font-size:16px; letter-spacing:.1em; padding:12px 20px; cursor:pointer; transition:opacity .15s;
+  }
+  .login-box button:hover { opacity:.85; }
+  .login-err { color:var(--red); font-size:11px; letter-spacing:.08em; display:none; }
 
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: var(--type);
-    min-height: 100vh;
-    overflow-x: hidden;
-  }
+  /* MAIN */
+  #mainScreen { display:none; }
 
-  /* ── COLOR WASH ── */
-  #colorWash {
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: 0;
-    opacity: 0;
-    transition: opacity 1.6s ease;
-  }
-  #colorWash.on { opacity: 1; }
-  #washTop {
-    position: absolute;
-    top: 0; left: 0; right: 0; height: 45vh;
-    transition: background 1.4s ease;
-  }
-  #washBot {
-    position: absolute;
-    bottom: 0; left: 0; right: 0; height: 40vh;
-    transition: background 1.4s ease;
-  }
-  #washFade {
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(ellipse 80% 60% at 50% 40%, transparent 30%, var(--bg) 80%);
-  }
-
-  /* ── HEADER ── */
   header {
-    position: sticky; top: 0; z-index: 100;
-    background: rgba(14,14,14,0.95);
-    backdrop-filter: blur(12px);
-    border-bottom: 2px solid var(--border);
-    height: 50px;
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 0 var(--pad);
+    border-bottom:2px solid var(--border); padding:0 32px; height:50px;
+    display:flex; align-items:center; justify-content:space-between;
+    background:rgba(10,10,10,.95); position:sticky; top:0; z-index:100;
   }
-  .logo {
-    font-family: var(--block);
-    font-size: 16px;
-    letter-spacing: 0.15em;
-    color: var(--text-muted);
-    text-decoration: none;
-    transition: color .15s;
+  .hlogo { font-family:var(--block); font-size:18px; letter-spacing:.15em; color:var(--accent); }
+  .hright { display:flex; align-items:center; gap:16px; }
+  .save-all-btn {
+    background:var(--accent); color:var(--bg); font-family:var(--block);
+    font-size:14px; letter-spacing:.1em; padding:8px 20px; border:none; cursor:pointer;
+    transition:opacity .15s; display:flex; align-items:center; gap:8px;
   }
-  .logo:hover { color: var(--text); }
-  .logo .slash { color: var(--accent); }
-  .back {
-    font-family: var(--type);
-    font-size: 11px;
-    color: var(--text-dim);
-    text-decoration: none;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    transition: color .15s;
-  }
-  .back:hover { color: var(--text); }
+  .save-all-btn:hover { opacity:.85; }
+  .save-all-btn:disabled { opacity:.4; cursor:not-allowed; }
+  .status-msg { font-size:11px; color:var(--muted); letter-spacing:.08em; }
 
-  /* ── HERO ── */
-  .hero {
-    position: relative; z-index: 1;
-    max-width: var(--max);
-    margin: 0 auto;
-    padding: clamp(36px,5vw,72px) var(--pad) 0;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 40px;
-    align-items: start;
-  }
-  .hero-num {
-    font-family: var(--block);
-    font-size: 13px;
-    letter-spacing: 0.25em;
-    color: var(--accent);
-    margin-bottom: 10px;
-  }
-  .hero-name {
-    font-family: var(--block);
-    font-size: clamp(64px, 10vw, 128px);
-    line-height: 0.88;
-    letter-spacing: 0.02em;
-    color: var(--text);
-    text-transform: uppercase;
-    margin-bottom: 14px;
-  }
-  .hero-realname {
-    font-family: var(--type);
-    font-size: 13px;
-    color: var(--text-muted);
-    letter-spacing: 0.05em;
-    margin-bottom: 24px;
-  }
-  .hero-intro {
-    font-family: var(--type);
-    font-size: 14px;
-    line-height: 1.85;
-    color: var(--text-muted);
-    max-width: 520px;
-    border-left: 3px solid var(--accent);
-    padding-left: 18px;
-  }
+  .layout { display:grid; grid-template-columns:280px 1fr; min-height:calc(100vh - 50px); }
 
-  /* ── PHOTO ── */
-  .hero-photo { flex-shrink: 0; }
-  .photo-box {
-    width: clamp(160px, 20vw, 260px);
-    aspect-ratio: 1;
-    overflow: hidden;
-    border: 2px solid var(--border);
-  }
-  .photo-box img {
-    width: 100%; height: 100%;
-    object-fit: cover;
-    object-position: top center;
-    display: block;
-    filter: grayscale(15%);
-    transition: filter .4s;
-  }
-  .photo-box img:hover { filter: grayscale(0%); }
-  .photo-date {
-    font-size: 10px;
-    color: var(--text-dim);
-    letter-spacing: 0.1em;
-    margin-top: 8px;
-    text-align: right;
-    font-family: var(--type);
-  }
-
-  /* ── LINKS BAR ── */
-  .links-bar {
-    position: relative; z-index: 1;
-    max-width: var(--max); margin: 28px auto 0;
-    padding: 14px var(--pad);
-    border-top: 1px solid var(--border);
-    border-bottom: 2px solid var(--border);
-    display: flex; gap: 28px; flex-wrap: wrap;
-  }
-  .ext-link {
-    font-family: var(--type);
-    font-size: 11px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--text-dim);
-    text-decoration: none;
-    transition: color .15s;
-    display: flex; align-items: center; gap: 5px;
-  }
-  .ext-link::before { content: '↗'; color: var(--accent); }
-  .ext-link:hover { color: var(--text); }
-
-  /* ── MAIN GRID ── */
-  .main {
-    position: relative; z-index: 1;
-    max-width: var(--max); margin: 0 auto;
-    padding: 0 var(--pad);
-    display: grid;
-    grid-template-columns: 1fr 300px;
-  }
-
-  /* ── INTERVIEW ── */
-  .interview {
-    padding: 52px 48px 80px 0;
-    border-right: 1px solid var(--border);
-  }
-
-  .sec-title {
-    font-family: var(--block);
-    font-size: 28px;
-    letter-spacing: 0.12em;
-    color: var(--accent);
-    margin-bottom: 28px;
-    text-transform: uppercase;
-    padding-bottom: 10px;
-    border-bottom: 2px solid var(--accent);
-    display: inline-block;
-  }
-
-  .about-block { margin-bottom: 48px; }
-  .about-text {
-    font-family: var(--type);
-    font-size: 14px;
-    line-height: 1.9;
-    color: var(--text-muted);
-  }
-
-  .qa-list { display: flex; flex-direction: column; gap: 40px; }
-
-  .qa-q {
-    font-family: var(--block);
-    font-size: 20px;
-    letter-spacing: 0.06em;
-    color: var(--accent);
-    text-transform: uppercase;
-    margin-bottom: 12px;
-    line-height: 1.2;
-  }
-  .qa-a {
-    font-family: var(--type);
-    font-size: 14px;
-    line-height: 1.95;
-    color: var(--text-muted);
-  }
-
-  .board-link {
-    margin-top: 52px;
-    padding-top: 20px;
-    border-top: 1px solid var(--border);
-    font-family: var(--type);
-    font-size: 11px;
-  }
-  .board-link a {
-    color: var(--text-dim);
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    letter-spacing: 0.06em;
-    transition: color .15s;
-  }
-  .board-link a:hover { color: var(--text-muted); }
-
-  /* ── SIDEBAR ── */
+  /* SIDEBAR */
   .sidebar {
-    padding: 52px 0 80px 36px;
-    display: flex; flex-direction: column; gap: 40px;
+    border-right:1px solid var(--border); overflow-y:auto; max-height:calc(100vh - 50px);
+    position:sticky; top:50px;
+  }
+  .search-box {
+    padding:12px; border-bottom:1px solid var(--border); position:sticky; top:0;
+    background:var(--bg); z-index:10;
+  }
+  .search-box input {
+    width:100%; background:var(--surface); border:1px solid var(--border); outline:none;
+    color:var(--text); font-family:var(--mono); font-size:12px; padding:8px 12px;
+    letter-spacing:.03em;
+  }
+  .artist-list { padding:8px 0; }
+  .artist-item {
+    padding:10px 16px; cursor:pointer; transition:background .1s;
+    display:flex; align-items:center; justify-content:space-between; gap:8px;
+  }
+  .artist-item:hover { background:var(--surface); }
+  .artist-item.active { background:var(--surface2); border-left:3px solid var(--accent); }
+  .ai-name { font-family:var(--block); font-size:14px; letter-spacing:.06em; }
+  .ai-dot {
+    width:8px; height:8px; border-radius:50%; flex-shrink:0;
+    background:var(--dim); border:1px solid var(--border);
+  }
+  .ai-dot.has-colors { background:var(--green); border-color:var(--green); }
+
+  /* EDITOR */
+  .editor { padding:40px; max-width:900px; }
+  .ed-title { font-family:var(--block); font-size:36px; letter-spacing:.1em; margin-bottom:8px; }
+  .ed-sub { color:var(--muted); font-size:11px; letter-spacing:.1em; margin-bottom:40px; }
+
+  .ed-section { margin-bottom:40px; }
+  .ed-section-title {
+    font-family:var(--block); font-size:18px; letter-spacing:.12em; color:var(--accent);
+    margin-bottom:16px; padding-bottom:8px; border-bottom:1px solid var(--border);
+    text-transform:uppercase;
   }
 
-  /* ── ALBUM COVER ── */
-  .cover-link {
-    display: block;
-    position: relative;
-    border: 2px solid var(--border);
-    overflow: hidden;
-    transition: border-color .2s;
+  /* COLOR SECTION */
+  .color-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:24px; margin-bottom:24px; }
+  .color-field label {
+    display:block; font-size:10px; letter-spacing:.15em; text-transform:uppercase;
+    color:var(--muted); margin-bottom:8px;
   }
-  .cover-link:hover { border-color: var(--accent); }
-  .cover-link img {
-    width: 100%; display: block;
+  .color-picker-row { display:flex; align-items:center; gap:0; border:1px solid var(--border); }
+  .color-picker-row input[type=color] {
+    width:44px; height:40px; border:none; padding:2px; background:var(--surface);
+    cursor:pointer; flex-shrink:0;
   }
-  .cover-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,.5);
-    display: flex; align-items: center; justify-content: center;
-    opacity: 0; transition: opacity .2s;
-    font-family: var(--block);
-    font-size: 14px;
-    letter-spacing: 0.15em;
-    color: var(--text);
-    text-transform: uppercase;
-  }
-  .cover-link:hover .cover-overlay { opacity: 1; }
-
-  /* ── TRACKS ── */
-  .sidebar-title {
-    font-family: var(--block);
-    font-size: 22px;
-    letter-spacing: 0.1em;
-    color: var(--accent);
-    text-transform: uppercase;
-    padding-bottom: 8px;
-    border-bottom: 2px solid var(--accent);
-    margin-bottom: 0;
+  .color-picker-row input[type=text] {
+    flex:1; background:var(--surface); border:none; border-left:1px solid var(--border);
+    color:var(--text); font-family:var(--mono); font-size:13px; padding:0 12px; height:40px;
+    outline:none; letter-spacing:.05em;
   }
 
-  .track-list {
-    display: flex; flex-direction: column;
-    gap: 1px; background: var(--border);
-    margin-top: 1px;
+  /* COVER + PHOTO PREVIEW */
+  .preview-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-bottom:24px; }
+  .preview-box { }
+  .preview-label { font-size:10px; letter-spacing:.15em; text-transform:uppercase; color:var(--muted); margin-bottom:8px; }
+  .preview-img {
+    width:100%; aspect-ratio:1; object-fit:cover; display:block;
+    border:1px solid var(--border); background:var(--surface);
+    cursor:crosshair; position:relative;
   }
-  .track-btn {
-    background: var(--surface);
-    padding: 11px 14px;
-    display: grid;
-    grid-template-columns: 26px 1fr 18px;
-    gap: 8px; align-items: center;
-    cursor: pointer;
-    transition: background .15s;
-    border: none; width: 100%;
-    text-align: left; color: inherit;
-    font-family: var(--type);
-  }
-  .track-btn:hover { background: #202020; }
-  .track-btn.active { background: #1e1e1e; }
-  .track-btn.active .tn { color: var(--accent); }
-  .track-btn.active .tt { color: var(--text); }
-  .track-btn.active .tp { color: var(--accent); }
-
-  .tn { font-size: 10px; color: var(--text-dim); font-variant-numeric: tabular-nums; }
-  .tt { font-size: 11px; color: var(--text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; letter-spacing: .02em; }
-  .tp { font-size: 9px; color: var(--text-dim); text-align: right; }
-
-  .play-toggle {
-    width: 100%;
-    background: var(--surface);
-    border: 2px solid var(--accent);
-    color: var(--accent);
-    font-family: var(--block);
-    font-size: 18px;
-    letter-spacing: 0.15em;
-    padding: 14px 20px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    transition: background .15s, color .15s;
-    text-transform: uppercase;
-    margin-top: 12px;
-  }
-  .play-toggle:hover { background: var(--accent); color: var(--bg); }
-  .album-player { margin-top: 1px; }
-
-  /* ── NAV ── */
-  .nav {
-    position: relative; z-index: 1;
-    border-top: 2px solid var(--border);
-    display: grid; grid-template-columns: 1fr 1fr;
-  }
-  .nav-a {
-    padding: 28px var(--pad);
-    text-decoration: none; color: var(--text-dim);
-    transition: background .15s, color .15s;
-    display: flex; flex-direction: column; gap: 6px;
-  }
-  .nav-a:hover { background: var(--surface); color: var(--text); }
-  .nav-a + .nav-a { border-left: 1px solid var(--border); text-align: right; align-items: flex-end; }
-  .nav-dir { font-size: 10px; letter-spacing: .15em; text-transform: uppercase; color: var(--text-dim); }
-  .nav-name {
-    font-family: var(--block);
-    font-size: 24px; letter-spacing: .05em;
-    text-transform: uppercase; color: var(--text);
+  .preview-img-wrap { position:relative; }
+  .preview-img-wrap canvas { display:none; }
+  .pipette-hint {
+    font-size:10px; color:var(--dim); letter-spacing:.08em; margin-top:6px;
   }
 
-  @media (max-width: 900px) {
-    .hero { grid-template-columns: 1fr; gap: 24px; }
-    .photo-box { width: 150px; }
-    .photo-date { text-align: left; }
-    .main { grid-template-columns: 1fr; }
-    .interview { border-right: none; border-bottom: 1px solid var(--border); padding-right: 0; }
-    .sidebar { padding-left: 0; }
+  /* COLOR PREVIEW BAR */
+  .color-preview {
+    height:60px; border:1px solid var(--border); margin-bottom:24px; position:relative; overflow:hidden;
+    display:flex; align-items:center; justify-content:center;
   }
-  @media (max-width: 600px) {
-    .hero-name { font-size: 58px; }
+  .color-preview-bg {
+    position:absolute; inset:0;
+    background:linear-gradient(to right, var(--c1,#222) 0%, var(--bg) 40%, var(--bg) 60%, var(--c2,#222) 100%);
   }
+  .color-preview-text {
+    position:relative; font-family:var(--block); font-size:20px; letter-spacing:.15em;
+    color:var(--c-accent,#e8c840);
+  }
+
+  /* SAVE BTN */
+  .save-btn {
+    background:var(--accent); color:var(--bg); font-family:var(--block);
+    font-size:18px; letter-spacing:.12em; padding:12px 32px; border:none; cursor:pointer;
+    transition:opacity .15s;
+  }
+  .save-btn:hover { opacity:.85; }
+  .save-btn:disabled { opacity:.4; cursor:not-allowed; }
+  .save-status { margin-left:16px; font-size:11px; color:var(--muted); letter-spacing:.08em; }
+
+  /* EMPTY STATE */
+  .empty { color:var(--dim); font-size:13px; letter-spacing:.08em; padding:40px; }
+
+  /* TOAST */
+  #toast {
+    position:fixed; bottom:24px; right:24px; padding:12px 24px;
+    font-family:var(--block); font-size:16px; letter-spacing:.1em;
+    background:var(--green); color:#000;
+    opacity:0; transition:opacity .3s; pointer-events:none; z-index:999;
+  }
+  #toast.show { opacity:1; }
+  #toast.error { background:var(--red); }
 </style>
 </head>
 <body>
 
-<div id="colorWash">
-  <div id="washTop"></div>
-  <div id="washBot"></div>
-  <div id="washFade"></div>
+<div id="loginScreen">
+  <div class="login-title">AT // ADMIN</div>
+  <div class="login-sub">FEATURED ARTISTS CONTROL PANEL</div>
+  <div style="display:flex;flex-direction:column;gap:12px">
+    <div class="login-box">
+      <input type="password" id="pwInput" placeholder="Password" onkeydown="if(event.key==='Enter')doLogin()">
+    </div>
+    <div class="login-box">
+      <input type="password" id="tokenInput" placeholder="GitHub Token" onkeydown="if(event.key==='Enter')doLogin()">
+      <button onclick="doLogin()">ENTER</button>
+    </div>
+  </div>
+  <div class="login-err" id="loginErr">WRONG PASSWORD</div>
 </div>
 
-<header>
-  <a href="index.html" class="logo">AUDIOTOOL <span class="slash">//</span> FEATURED ARTISTS</a>
-  <a href="index.html" class="back">← All artists</a>
-</header>
+<div id="mainScreen">
+  <header>
+    <div class="hlogo">AT // ADMIN</div>
+    <div class="hright">
+      <span class="status-msg" id="statusMsg"></span>
+      <button class="save-all-btn" id="saveAllBtn" onclick="saveAll()" disabled>
+        <span>⬆</span> PUSH TO GITHUB
+      </button>
+    </div>
+  </header>
+  <div class="layout">
+    <div class="sidebar">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search artists..." oninput="filterArtists()">
+      </div>
+      <div class="artist-list" id="artistList"></div>
+    </div>
+    <div class="editor" id="editor">
+      <div class="empty">← Select an artist to edit colors</div>
+    </div>
+  </div>
+</div>
 
-<div id="app"></div>
+<div id="toast"></div>
 
 <script>
-const params = new URLSearchParams(location.search);
-const artistId = params.get('id');
-let curUrl = null;
+// CONFIG
+let GITHUB_TOKEN = '';
+const GITHUB_REPO = 'SnadBreugen/AT-featured-artists';
+const DATA_PATH = 'data.json';
+const PASSWORD = 'audiotool2026';
 
-function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+let data = [];
+let currentIdx = null;
+let dirty = false;
+let fileSha = '';
 
-function fmtDate(d){
-  if(!d) return '';
-  const [y,m,day]=d.split('-');
-  return ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+m-1]+' '+parseInt(day)+', '+y;
-}
-
-function tSlug(url){
-  const m=url.match(/\/track\/([^/]+)/);
-  if(!m) return url;
-  return m[1].replace(/_/g,' ').replace(/-[a-z0-9]{6,}$/,'').replace(/-/g,' ');
-}
-
-function extractColors(src, cb){
-  // Try direct first, then via CORS proxy
-  function tryLoad(url, onSuccess, onFail){
-    const img=new Image();
-    img.crossOrigin='anonymous';
-    img.onload=()=>{
-      try{
-        const c=document.createElement('canvas');
-        c.width=img.width; c.height=img.height;
-        const ctx=c.getContext('2d');
-        ctx.drawImage(img,0,0);
-        function avg(d){ let r=0,g=0,b=0,n=0; for(let i=0;i<d.length;i+=4){r+=d[i];g+=d[i+1];b+=d[i+2];n++;} return [r/n,g/n,b/n]; }
-        const t=avg(ctx.getImageData(4,4,80,80).data);
-        const b=avg(ctx.getImageData(4,img.height-84,80,80).data);
-        onSuccess(t,b);
-      }catch(e){ onFail(); }
-    };
-    img.onerror=onFail;
-    img.src=url;
-  }
-  // Try direct
-  tryLoad(src,
-    (t,b)=>cb(t,b),
-    ()=>{
-      // Try CORS proxy
-      const proxy='https://corsproxy.io/?'+encodeURIComponent(src);
-      tryLoad(proxy,
-        (t,b)=>cb(t,b),
-        ()=>cb(null,null)
-      );
-    }
-  );
-}
-
-function applyColors(t,b){
-  if(!t) return;
-  // Make slightly darker/more transparent for subtle bg effect
-  const tc=`rgba(${Math.round(t[0])},${Math.round(t[1])},${Math.round(t[2])},0.18)`;
-  const bc=`rgba(${Math.round(b[0])},${Math.round(b[1])},${Math.round(b[2])},0.15)`;
-  // Set accent color based on top color (brightened)
-  const ar=Math.min(255,Math.round(t[0]*1.4+40));
-  const ag=Math.min(255,Math.round(t[1]*1.4+40));
-  const ab=Math.min(255,Math.round(t[2]*1.4+40));
-  const accent=`rgb(${ar},${ag},${ab})`;
-  document.documentElement.style.setProperty('--accent', accent);
-  document.getElementById('washTop').style.background=`linear-gradient(to bottom, ${tc} 0%, transparent 100%)`;
-  document.getElementById('washBot').style.background=`linear-gradient(to top, ${bc} 0%, transparent 100%)`;
-  document.getElementById('colorWash').classList.add('on');
-}
-
-let albumOpen=false;
-window.toggleAlbum=function(){
-  const player=document.getElementById('albumPlayer');
-  const icon=document.getElementById('playIcon');
-  const label=document.getElementById('playLabel');
-  albumOpen=!albumOpen;
-  if(albumOpen){
-    const albumId=(document.getElementById('albumCover')||{}).dataset.albumid||window._albumId;
-    player.innerHTML=`<iframe src="https://www.audiotool.com/album/${window._albumId}/embed/" allow="autoplay" style="width:100%;height:200px;border:none;display:block"></iframe>`;
-    icon.textContent='■';
-    label.textContent='STOP';
+// LOGIN
+function doLogin(){
+  const pw = document.getElementById('pwInput').value;
+  const tok = document.getElementById('tokenInput').value.trim();
+  if(pw === PASSWORD && tok){
+    GITHUB_TOKEN = tok;
+    document.getElementById('loginScreen').style.display='none';
+    document.getElementById('mainScreen').style.display='block';
+    loadData();
   } else {
-    player.innerHTML='';
-    icon.textContent='▶';
-    label.textContent='PLAY ALBUM';
+    document.getElementById('loginErr').style.display='block';
+    document.getElementById('loginErr').textContent = !tok ? 'ENTER GITHUB TOKEN' : 'WRONG PASSWORD';
   }
-};
+}
 
-fetch('data.json')
-  .then(r=>r.json())
-  .then(data=>{
-    if(!artistId){location.href='index.html';return;}
-    const idx=data.findIndex(a=>a.artist===artistId);
-    if(idx===-1){location.href='index.html';return;}
-    render(data[idx],idx,data.length,idx>0?data[idx-1]:null,idx<data.length-1?data[idx+1]:null);
-  });
+// LOAD DATA FROM GITHUB
+async function loadData(){
+  setStatus('Loading...');
+  try {
+    const resp = await fetch(`https://api.github.com/repos/${GITHUB_REPO}/contents/${DATA_PATH}`,{
+      headers:{ Authorization:`token ${GITHUB_TOKEN}`, Accept:'application/vnd.github.v3+json' }
+    });
+    const json = await resp.json();
+    fileSha = json.sha;
+    data = JSON.parse(atob(json.content.replace(/\n/g,'')));
+    renderList(data);
+    setStatus(`${data.length} artists loaded`);
+  } catch(e){
+    setStatus('Error loading data');
+    console.error(e);
+  }
+}
 
-function render(a,idx,total,prev,next){
-  document.title=`${a.artist} — Audiotool Featured Artist`;
-  const tracks=a.tracks||[];
-  const albumMatch=(a.album_url||'').match(/\/album\/([^/]+)/);
-  const albumId=albumMatch?albumMatch[1]:null;
-  const coverSrc=albumId?`https://api.audiotool.com/album/${albumId}/cover/512.jpg`:null;
+function setStatus(msg){ document.getElementById('statusMsg').textContent=msg; }
 
-  document.getElementById('app').innerHTML=`
-    <section class="hero">
-      <div class="hero-left">
-        <div class="hero-num">FEATURED ARTIST ${String(idx+1).padStart(2,'0')} / ${total}</div>
-        <h1 class="hero-name">${esc(a.artist)}</h1>
-        ${a.real_name&&a.real_name!==a.artist?`<div class="hero-realname">${esc(a.real_name)}</div>`:''}
-        ${a.intro?`<p class="hero-intro">${esc(a.intro)}</p>`:''}
-      </div>
-      <div class="hero-photo">
-        ${a.photo?`
-          <div class="photo-box"><img src="${esc(a.photo)}" alt="${esc(a.artist)}"></div>
-        `:`<div class="photo-box" style="background:var(--surface);display:flex;align-items:center;justify-content:center;"><span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--type)">NO PHOTO</span></div>`}
-      </div>
-    </section>
+// RENDER LIST
+function renderList(artists){
+  const list = document.getElementById('artistList');
+  list.innerHTML = artists.map((a,i)=>{
+    const hasColors = !!(a.color1 && a.color2);
+    const realIdx = data.indexOf(a);
+    return `<div class="artist-item ${currentIdx===realIdx?'active':''}" onclick="selectArtist(${realIdx})">
+      <span class="ai-name">${a.artist}</span>
+      <span class="ai-dot ${hasColors?'has-colors':''}" title="${hasColors?'Colors set':'No colors'}"></span>
+    </div>`;
+  }).join('');
+}
 
-    <div class="links-bar">
-      ${a.at_profile?`<a href="${esc(a.at_profile)}" target="_blank" class="ext-link">Audiotool</a>`:''}
-      ${a.soundcloud?`<a href="${esc(a.soundcloud)}" target="_blank" class="ext-link">SoundCloud</a>`:''}
-      ${a.album_url?`<a href="${esc(a.album_url)}" target="_blank" class="ext-link">Edition Album</a>`:''}
-      ${a.board_url?`<a href="${esc(a.board_url)}" target="_blank" class="ext-link">Original Post</a>`:''}
-    </div>
+function filterArtists(){
+  const q = document.getElementById('searchInput').value.toLowerCase();
+  const filtered = data.filter(a=>a.artist.toLowerCase().includes(q));
+  renderList(filtered);
+}
 
-    <div class="main">
-      <div class="interview">
-        ${a.about?`
-          <div class="about-block">
-            <div class="sec-title">About</div>
-            <div class="about-text">${esc(a.about)}</div>
-          </div>
-        `:''}
-        ${a.interview&&a.interview.length?`
-          <div class="sec-title">Interview</div>
-          <div class="qa-list">
-            ${a.interview.map(qa=>`
-              <div class="qa-item">
-                <div class="qa-q">${esc(qa.q)}</div>
-                <div class="qa-a">${esc(qa.a)}</div>
-              </div>
-            `).join('')}
-          </div>
-        `:''}
-        <div class="board-link"><a href="${esc(a.board_url)}" target="_blank">↗ Original board post</a></div>
-      </div>
+// SELECT ARTIST
+function selectArtist(idx){
+  currentIdx = idx;
+  const a = data[idx];
+  renderList(document.getElementById('searchInput').value
+    ? data.filter(x=>x.artist.toLowerCase().includes(document.getElementById('searchInput').value.toLowerCase()))
+    : data);
 
-      <div class="sidebar">
-        ${coverSrc?`
-          <div>
-            <div class="sidebar-title">Edition Audiotool</div>
-            <a href="${esc(a.album_url||'#')}" target="_blank" class="cover-link" style="margin-top:12px">
-              <img src="${coverSrc}" alt="Edition Audiotool: ${esc(a.artist)}" id="albumCover" onerror="this.closest('.cover-link').style.display='none'">              <div class="cover-overlay">Listen ↗</div>
-            </a>
-          </div>
-        `:''}
+  const albumMatch = (a.album_url||'').match(/\/album\/([^/]+)/);
+  const albumId = albumMatch ? albumMatch[1] : null;
+  const coverUrl = a.cover_url || (albumId ? `https://api.audiotool.com/album/${albumId}/cover/256.jpg` : '');
 
-        ${albumId?`
-          <div>
-            <button class="play-toggle" id="playToggle" onclick="toggleAlbum()">
-              <span id="playIcon">▶</span>
-              <span id="playLabel">PLAY ALBUM</span>
-            </button>
-            <div class="album-player" id="albumPlayer"></div>
-          </div>
-        `:''}
+  const c1 = a.color1 || '#e8c840';
+  const c2 = a.color2 || '#c8a830';
+  const ca = a.color_accent || c1;
+
+  document.getElementById('editor').innerHTML = `
+    <div class="ed-title">${a.artist}</div>
+    <div class="ed-sub">${a.real_name||''} &nbsp;·&nbsp; ${a.date||''}</div>
+
+    <div class="ed-section">
+      <div class="ed-section-title">Color Preview</div>
+      <div class="color-preview" id="colorPreview">
+        <div class="color-preview-bg" id="previewBg"></div>
+        <div class="color-preview-text" id="previewText">${a.artist.toUpperCase()}</div>
       </div>
     </div>
 
-    <nav class="nav">
-      ${prev?`<a href="artist.html?id=${encodeURIComponent(prev.artist)}" class="nav-a"><span class="nav-dir">← Previous</span><span class="nav-name">${esc(prev.artist)}</span></a>`
-            :`<span class="nav-a" style="opacity:.25"><span class="nav-dir">Start of archive</span></span>`}
-      ${next?`<a href="artist.html?id=${encodeURIComponent(next.artist)}" class="nav-a"><span class="nav-dir">Next →</span><span class="nav-name">${esc(next.artist)}</span></a>`
-            :`<span class="nav-a" style="opacity:.25;text-align:right;align-items:flex-end"><span class="nav-dir">End of archive</span></span>`}
-    </nav>
+    <div class="ed-section">
+      <div class="ed-section-title">Images — Click to pick color</div>
+      <div class="preview-grid">
+        ${coverUrl ? `
+          <div class="preview-box">
+            <div class="preview-label">Album Cover</div>
+            <div class="preview-img-wrap">
+              <img src="${coverUrl}" class="preview-img" id="coverImg"
+                onclick="pickFromImage(event,'coverImg')"
+                onerror="this.style.opacity='.3'">
+              <canvas id="coverCanvas"></canvas>
+            </div>
+            <div class="pipette-hint">Click image to pick color → assign below</div>
+          </div>
+        ` : '<div class="preview-box"><div class="preview-label">No album cover</div></div>'}
+        ${a.photo ? `
+          <div class="preview-box">
+            <div class="preview-label">Artist Photo</div>
+            <div class="preview-img-wrap">
+              <img src="${a.photo}" class="preview-img" id="photoImg"
+                onclick="pickFromImage(event,'photoImg')"
+                onerror="this.style.opacity='.3'">
+              <canvas id="photoCanvas"></canvas>
+            </div>
+            <div class="pipette-hint">Click image to pick color → assign below</div>
+          </div>
+        ` : ''}
+      </div>
+      <div style="font-size:11px;color:var(--dim);margin-top:-12px;margin-bottom:24px;letter-spacing:.06em">
+        Last picked: <span id="pickedColor" style="font-family:var(--mono)">—</span>
+        &nbsp;
+        <button onclick="assignColor('color1')" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;letter-spacing:.06em;">→ BG TOP</button>
+        <button onclick="assignColor('color2')" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;letter-spacing:.06em;">→ BG BOTTOM</button>
+        <button onclick="assignColor('color_accent')" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;letter-spacing:.06em;">→ ACCENT</button>
+      </div>
+    </div>
+
+    <div class="ed-section">
+      <div class="ed-section-title">Colors</div>
+      <div class="color-grid">
+        <div class="color-field">
+          <label>Background Top (color1)</label>
+          <div class="color-picker-row">
+            <input type="color" id="color1Picker" value="${c1}" oninput="syncColor('color1',this.value)">
+            <input type="text" id="color1Text" value="${c1}" oninput="syncColorText('color1',this.value)" maxlength="7">
+          </div>
+        </div>
+        <div class="color-field">
+          <label>Background Bottom (color2)</label>
+          <div class="color-picker-row">
+            <input type="color" id="color2Picker" value="${c2}" oninput="syncColor('color2',this.value)">
+            <input type="text" id="color2Text" value="${c2}" oninput="syncColorText('color2',this.value)" maxlength="7">
+          </div>
+        </div>
+        <div class="color-field">
+          <label>Accent / Headlines</label>
+          <div class="color-picker-row">
+            <input type="color" id="color_accentPicker" value="${ca}" oninput="syncColor('color_accent',this.value)">
+            <input type="text" id="color_accentText" value="${ca}" oninput="syncColorText('color_accent',this.value)" maxlength="7">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <button class="save-btn" onclick="saveArtist()">SAVE ARTIST</button>
+      <span class="save-status" id="saveStatus"></span>
+    </div>
   `;
+  updatePreview(c1, c2, ca);
+}
 
-  window._albumId=albumId;
-  // Extract colors from album cover, fall back to artist photo
-  const colorSrc=a.cover_url||coverSrc||a.photo||null;  if(colorSrc) extractColors(colorSrc, applyColors);
+// PICK COLOR FROM IMAGE
+let lastPickedColor = null;
+function pickFromImage(event, imgId){
+  const img = document.getElementById(imgId);
+  const canvasId = imgId.replace('Img','Canvas');
+  const canvas = document.getElementById(canvasId);
+  const ctx = canvas.getContext('2d');
+
+  // Draw image to canvas (may fail due to CORS - show picked coords instead)
+  const rect = img.getBoundingClientRect();
+  const scaleX = img.naturalWidth / rect.width;
+  const scaleY = img.naturalHeight / rect.height;
+  const x = Math.round((event.clientX - rect.left) * scaleX);
+  const y = Math.round((event.clientY - rect.top) * scaleY);
+
+  canvas.width = img.naturalWidth || img.width;
+  canvas.height = img.naturalHeight || img.height;
+
+  try {
+    ctx.drawImage(img, 0, 0);
+    const pixel = ctx.getImageData(x, y, 1, 1).data;
+    const hex = '#' + [pixel[0],pixel[1],pixel[2]].map(v=>v.toString(16).padStart(2,'0')).join('');
+    lastPickedColor = hex;
+    document.getElementById('pickedColor').textContent = hex;
+    document.getElementById('pickedColor').style.color = hex;
+    document.getElementById('pickedColor').style.background = '#1c1c1c';
+    document.getElementById('pickedColor').style.padding = '2px 6px';
+  } catch(e) {
+    // CORS blocked - show a message
+    document.getElementById('pickedColor').textContent = 'CORS blocked — use color picker directly';
+    document.getElementById('pickedColor').style.color = 'var(--red)';
+  }
+}
+
+function assignColor(field){
+  if(!lastPickedColor) return;
+  syncColor(field, lastPickedColor);
+  document.getElementById(`${field}Picker`).value = lastPickedColor;
+  document.getElementById(`${field}Text`).value = lastPickedColor;
+}
+
+// SYNC COLOR
+function syncColor(field, val){
+  if(currentIdx===null) return;
+  data[currentIdx][field] = val;
+  document.getElementById(`${field}Text`).value = val;
+  document.getElementById(`${field}Picker`).value = val;
+  const c1 = data[currentIdx].color1||'#222';
+  const c2 = data[currentIdx].color2||'#222';
+  const ca = data[currentIdx].color_accent||c1;
+  updatePreview(c1,c2,ca);
+  markDirty();
+}
+
+function syncColorText(field, val){
+  if(val.match(/^#[0-9a-fA-F]{6}$/)){
+    syncColor(field, val);
+  }
+}
+
+function updatePreview(c1,c2,ca){
+  const bg = document.getElementById('previewBg');
+  const txt = document.getElementById('previewText');
+  if(bg) bg.style.background=`linear-gradient(to right, ${c1} 0%, #141414 40%, #141414 60%, ${c2} 100%)`;
+  if(txt) txt.style.color=ca;
+}
+
+function markDirty(){
+  dirty=true;
+  document.getElementById('saveAllBtn').disabled=false;
+}
+
+// SAVE SINGLE ARTIST (marks dirty, enables push)
+function saveArtist(){
+  if(currentIdx===null) return;
+  const btn = document.querySelector('.save-btn');
+  const status = document.getElementById('saveStatus');
+  btn.disabled=true;
+  status.textContent='Saved locally — click PUSH TO GITHUB to deploy';
+  status.style.color='var(--green)';
+  btn.disabled=false;
+  markDirty();
+  // Refresh dot in list
+  filterArtists();
+  const q = document.getElementById('searchInput').value;
+  renderList(q ? data.filter(x=>x.artist.toLowerCase().includes(q.toLowerCase())) : data);
+  showToast('Saved locally!');
+}
+
+// PUSH ALL TO GITHUB
+async function saveAll(){
+  const btn = document.getElementById('saveAllBtn');
+  btn.disabled=true;
+  setStatus('Pushing to GitHub...');
+  try {
+    const content = btoa(unescape(encodeURIComponent(JSON.stringify(data, null, 2))));
+    const resp = await fetch(`https://api.github.com/repos/${GITHUB_REPO}/contents/${DATA_PATH}`,{
+      method:'PUT',
+      headers:{
+        Authorization:`token ${GITHUB_TOKEN}`,
+        Accept:'application/vnd.github.v3+json',
+        'Content-Type':'application/json'
+      },
+      body: JSON.stringify({
+        message:'Update artist colors via admin',
+        content: content,
+        sha: fileSha
+      })
+    });
+    const json = await resp.json();
+    if(json.content){
+      fileSha = json.content.sha;
+      dirty=false;
+      setStatus('Pushed! GitHub Pages deploying...');
+      showToast('PUSHED TO GITHUB ✓');
+    } else {
+      throw new Error(json.message||'Unknown error');
+    }
+  } catch(e){
+    setStatus('Push failed: '+e.message);
+    showToast('PUSH FAILED: '+e.message, true);
+    btn.disabled=false;
+  }
+}
+
+function showToast(msg, isError=false){
+  const t=document.getElementById('toast');
+  t.textContent=msg;
+  t.className=isError?'show error':'show';
+  setTimeout(()=>t.className='',2800);
 }
 </script>
 </body>
