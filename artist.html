@@ -5,20 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Featured Artist — Audiotool</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Special+Elite&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #0d0d0d;
-    --surface: #141414;
-    --border: #242424;
-    --text: #f0ece4;
-    --text-muted: #888;
-    --text-dim: #444;
-    --accent: #c8b89a;
-    --serif: 'DM Serif Display', Georgia, serif;
-    --mono: 'DM Mono', monospace;
-    --max: 1100px;
-    --pad: clamp(20px, 4vw, 60px);
+    --bg: #0e0e0e;
+    --surface: #181818;
+    --border: #2a2a2a;
+    --text: #e8e4dc;
+    --text-muted: #aaa49c;
+    --text-dim: #555;
+    --accent: #e8c840;
+    --accent2: #c8a830;
+    --block: 'Bebas Neue', Impact, sans-serif;
+    --type: 'Special Elite', 'Courier New', monospace;
+    --max: 1120px;
+    --pad: clamp(20px, 4vw, 56px);
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -27,420 +28,353 @@
   body {
     background: var(--bg);
     color: var(--text);
-    font-family: var(--mono);
-    font-size: 14px;
+    font-family: var(--type);
     min-height: 100vh;
     overflow-x: hidden;
   }
 
-  /* ── COLOR BANDS BG ── */
-  .color-bands {
+  /* ── COLOR WASH ── */
+  #colorWash {
     position: fixed;
     inset: 0;
     pointer-events: none;
     z-index: 0;
     opacity: 0;
-    transition: opacity 1.4s ease;
+    transition: opacity 1.6s ease;
   }
-  .color-bands.visible { opacity: 1; }
-  .band-top {
+  #colorWash.on { opacity: 1; }
+  #washTop {
     position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 50vh;
-    transition: background 1.2s ease;
+    top: 0; left: 0; right: 0; height: 45vh;
+    transition: background 1.4s ease;
   }
-  .band-bottom {
+  #washBot {
     position: absolute;
-    bottom: 0; left: 0; right: 0;
-    height: 50vh;
-    transition: background 1.2s ease;
+    bottom: 0; left: 0; right: 0; height: 40vh;
+    transition: background 1.4s ease;
   }
-  .band-fade {
+  #washFade {
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse at center, transparent 20%, var(--bg) 75%);
+    background: radial-gradient(ellipse 80% 60% at 50% 40%, transparent 30%, var(--bg) 80%);
   }
 
   /* ── HEADER ── */
   header {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    border-bottom: 1px solid var(--border);
-    background: rgba(13,13,13,0.93);
-    backdrop-filter: blur(16px);
-    height: 52px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(14,14,14,0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 2px solid var(--border);
+    height: 50px;
+    display: flex; align-items: center; justify-content: space-between;
     padding: 0 var(--pad);
   }
-
   .logo {
-    font-family: var(--mono);
-    font-weight: 400;
-    font-size: 11px;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
+    font-family: var(--block);
+    font-size: 16px;
+    letter-spacing: 0.15em;
     color: var(--text-muted);
     text-decoration: none;
-    transition: color 0.2s;
+    transition: color .15s;
   }
   .logo:hover { color: var(--text); }
-  .logo em { color: var(--accent); font-style: normal; }
-
-  .back-btn {
+  .logo .slash { color: var(--accent); }
+  .back {
+    font-family: var(--type);
     font-size: 11px;
     color: var(--text-dim);
     text-decoration: none;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    transition: color 0.2s;
+    transition: color .15s;
   }
-  .back-btn:hover { color: var(--text); }
+  .back:hover { color: var(--text); }
 
   /* ── HERO ── */
   .hero {
-    position: relative;
-    z-index: 1;
+    position: relative; z-index: 1;
     max-width: var(--max);
     margin: 0 auto;
-    padding: clamp(40px, 6vw, 80px) var(--pad) 0;
+    padding: clamp(36px,5vw,72px) var(--pad) 0;
     display: grid;
     grid-template-columns: 1fr auto;
-    gap: 48px;
+    gap: 40px;
     align-items: start;
   }
-
-  .hero-index {
-    font-size: 11px;
-    color: var(--text-dim);
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    margin-bottom: 16px;
+  .hero-num {
+    font-family: var(--block);
+    font-size: 13px;
+    letter-spacing: 0.25em;
+    color: var(--accent);
+    margin-bottom: 10px;
   }
-
   .hero-name {
-    font-family: var(--serif);
-    font-size: clamp(52px, 9vw, 108px);
-    line-height: 0.9;
-    letter-spacing: -0.02em;
+    font-family: var(--block);
+    font-size: clamp(64px, 10vw, 128px);
+    line-height: 0.88;
+    letter-spacing: 0.02em;
     color: var(--text);
-    margin-bottom: 12px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
   }
-
   .hero-realname {
+    font-family: var(--type);
     font-size: 13px;
     color: var(--text-muted);
-    letter-spacing: 0.04em;
-    margin-bottom: 28px;
+    letter-spacing: 0.05em;
+    margin-bottom: 24px;
   }
-
   .hero-intro {
-    font-family: var(--serif);
-    font-style: italic;
-    font-size: 15px;
-    line-height: 1.8;
+    font-family: var(--type);
+    font-size: 14px;
+    line-height: 1.85;
     color: var(--text-muted);
-    max-width: 540px;
-    border-left: 2px solid var(--border);
-    padding-left: 20px;
+    max-width: 520px;
+    border-left: 3px solid var(--accent);
+    padding-left: 18px;
   }
 
   /* ── PHOTO ── */
-  .photo-frame {
+  .hero-photo { flex-shrink: 0; }
+  .photo-box {
     width: clamp(160px, 20vw, 260px);
     aspect-ratio: 1;
     overflow: hidden;
-    flex-shrink: 0;
+    border: 2px solid var(--border);
   }
-
-  .photo-frame img {
-    width: 100%;
-    height: 100%;
+  .photo-box img {
+    width: 100%; height: 100%;
     object-fit: cover;
     object-position: top center;
     display: block;
-    filter: grayscale(10%);
-    transition: filter 0.4s;
+    filter: grayscale(15%);
+    transition: filter .4s;
   }
-  .photo-frame img:hover { filter: grayscale(0%); }
-
+  .photo-box img:hover { filter: grayscale(0%); }
   .photo-date {
     font-size: 10px;
     color: var(--text-dim);
     letter-spacing: 0.1em;
-    margin-top: 10px;
+    margin-top: 8px;
     text-align: right;
+    font-family: var(--type);
   }
 
   /* ── LINKS BAR ── */
   .links-bar {
-    position: relative;
-    z-index: 1;
-    max-width: var(--max);
-    margin: 32px auto 0;
-    padding: 16px var(--pad);
-    display: flex;
-    gap: 24px;
-    flex-wrap: wrap;
+    position: relative; z-index: 1;
+    max-width: var(--max); margin: 28px auto 0;
+    padding: 14px var(--pad);
     border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
+    border-bottom: 2px solid var(--border);
+    display: flex; gap: 28px; flex-wrap: wrap;
   }
-
   .ext-link {
-    font-size: 10px;
-    letter-spacing: 0.12em;
+    font-family: var(--type);
+    font-size: 11px;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--text-dim);
     text-decoration: none;
-    transition: color 0.15s;
-    display: flex;
-    align-items: center;
-    gap: 5px;
+    transition: color .15s;
+    display: flex; align-items: center; gap: 5px;
   }
   .ext-link::before { content: '↗'; color: var(--accent); }
   .ext-link:hover { color: var(--text); }
 
-  /* ── MAIN CONTENT ── */
+  /* ── MAIN GRID ── */
   .main {
-    position: relative;
-    z-index: 1;
-    max-width: var(--max);
-    margin: 0 auto;
+    position: relative; z-index: 1;
+    max-width: var(--max); margin: 0 auto;
     padding: 0 var(--pad);
     display: grid;
     grid-template-columns: 1fr 300px;
-    gap: 0;
   }
 
   /* ── INTERVIEW ── */
   .interview {
-    padding: 56px 48px 80px 0;
+    padding: 52px 48px 80px 0;
     border-right: 1px solid var(--border);
   }
 
-  .section-label {
-    font-size: 10px;
-    letter-spacing: 0.2em;
+  .sec-title {
+    font-family: var(--block);
+    font-size: 28px;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    margin-bottom: 28px;
     text-transform: uppercase;
-    color: var(--text-dim);
-    margin-bottom: 32px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-  .section-label::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: var(--border);
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--accent);
+    display: inline-block;
   }
 
-  .about-block { margin-bottom: 52px; }
-
+  .about-block { margin-bottom: 48px; }
   .about-text {
+    font-family: var(--type);
     font-size: 14px;
     line-height: 1.9;
-    color: #9a9690;
-    font-weight: 300;
+    color: var(--text-muted);
   }
 
-  .qa-list {
-    display: flex;
-    flex-direction: column;
-    gap: 44px;
-  }
+  .qa-list { display: flex; flex-direction: column; gap: 40px; }
 
   .qa-q {
-    font-family: var(--serif);
-    font-style: italic;
-    font-size: 17px;
-    line-height: 1.4;
-    color: var(--text);
-    margin-bottom: 14px;
+    font-family: var(--block);
+    font-size: 20px;
+    letter-spacing: 0.06em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    line-height: 1.2;
   }
-
   .qa-a {
-    font-size: 13px;
+    font-family: var(--type);
+    font-size: 14px;
     line-height: 1.95;
-    color: #8a8680;
-    font-weight: 300;
+    color: var(--text-muted);
   }
 
   .board-link {
-    margin-top: 56px;
-    padding-top: 24px;
+    margin-top: 52px;
+    padding-top: 20px;
     border-top: 1px solid var(--border);
+    font-family: var(--type);
     font-size: 11px;
-    color: var(--text-dim);
   }
   .board-link a {
     color: var(--text-dim);
     text-decoration: underline;
     text-underline-offset: 3px;
-    transition: color 0.15s;
+    letter-spacing: 0.06em;
+    transition: color .15s;
   }
   .board-link a:hover { color: var(--text-muted); }
 
   /* ── SIDEBAR ── */
   .sidebar {
-    padding: 56px 0 80px 36px;
-    display: flex;
-    flex-direction: column;
-    gap: 44px;
+    padding: 52px 0 80px 36px;
+    display: flex; flex-direction: column; gap: 40px;
   }
 
   /* ── ALBUM COVER ── */
-  .album-cover-link {
+  .cover-link {
     display: block;
     position: relative;
+    border: 2px solid var(--border);
     overflow: hidden;
+    transition: border-color .2s;
   }
-  .album-cover-link::after {
-    content: 'Open on Audiotool ↗';
+  .cover-link:hover { border-color: var(--accent); }
+  .cover-link img {
+    width: 100%; display: block;
+  }
+  .cover-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.55);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 10px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
+    background: rgba(0,0,0,.5);
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0; transition: opacity .2s;
+    font-family: var(--block);
+    font-size: 14px;
+    letter-spacing: 0.15em;
     color: var(--text);
-    opacity: 0;
-    transition: opacity 0.2s;
+    text-transform: uppercase;
   }
-  .album-cover-link:hover::after { opacity: 1; }
-
-  .album-cover {
-    width: 100%;
-    display: block;
-    border: 1px solid var(--border);
-  }
+  .cover-link:hover .cover-overlay { opacity: 1; }
 
   /* ── TRACKS ── */
-  .track-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
-    background: var(--border);
+  .sidebar-title {
+    font-family: var(--block);
+    font-size: 22px;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--accent);
+    margin-bottom: 0;
   }
 
-  .track-item {
+  .track-list {
+    display: flex; flex-direction: column;
+    gap: 1px; background: var(--border);
+    margin-top: 1px;
+  }
+  .track-btn {
     background: var(--surface);
     padding: 11px 14px;
     display: grid;
-    grid-template-columns: 22px 1fr 20px;
-    gap: 8px;
-    align-items: center;
+    grid-template-columns: 26px 1fr 18px;
+    gap: 8px; align-items: center;
     cursor: pointer;
-    transition: background 0.15s;
-    border: none;
-    width: 100%;
-    text-align: left;
-    color: inherit;
-    font-family: var(--mono);
+    transition: background .15s;
+    border: none; width: 100%;
+    text-align: left; color: inherit;
+    font-family: var(--type);
   }
-  .track-item:hover { background: #1a1a1a; }
-  .track-item.active { background: #1c1c1c; }
-  .track-item.active .track-num { color: var(--accent); }
-  .track-item.active .track-name { color: var(--text); }
-  .track-item.active .track-play { color: var(--accent); }
+  .track-btn:hover { background: #202020; }
+  .track-btn.active { background: #1e1e1e; }
+  .track-btn.active .tn { color: var(--accent); }
+  .track-btn.active .tt { color: var(--text); }
+  .track-btn.active .tp { color: var(--accent); }
 
-  .track-num {
-    font-size: 10px;
-    color: var(--text-dim);
-    font-variant-numeric: tabular-nums;
-  }
+  .tn { font-size: 10px; color: var(--text-dim); font-variant-numeric: tabular-nums; }
+  .tt { font-size: 11px; color: var(--text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; letter-spacing: .02em; }
+  .tp { font-size: 9px; color: var(--text-dim); text-align: right; }
 
-  .track-name {
-    font-size: 11px;
-    color: var(--text-muted);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    letter-spacing: 0.02em;
-  }
-
-  .track-play {
-    font-size: 9px;
-    color: var(--text-dim);
-    text-align: right;
-  }
-
-  /* ── PLAYER ── */
   .player-wrap {
     overflow: hidden;
-    transition: height 0.3s ease;
-    height: 0;
-    border: 1px solid var(--border);
-    border-top: none;
+    height: 0; transition: height .3s ease;
+    border: 1px solid var(--border); border-top: none;
   }
   .player-wrap.open { height: 152px; }
-  .player-wrap iframe {
-    width: 100%;
-    height: 152px;
-    border: none;
-    display: block;
-  }
+  .player-wrap iframe { width: 100%; height: 152px; border: none; display: block; }
 
   /* ── NAV ── */
-  .nav-arrows {
-    position: relative;
-    z-index: 1;
-    border-top: 1px solid var(--border);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .nav {
+    position: relative; z-index: 1;
+    border-top: 2px solid var(--border);
+    display: grid; grid-template-columns: 1fr 1fr;
   }
-
-  .nav-arrow {
+  .nav-a {
     padding: 28px var(--pad);
-    text-decoration: none;
-    color: var(--text-dim);
-    transition: all 0.15s;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
+    text-decoration: none; color: var(--text-dim);
+    transition: background .15s, color .15s;
+    display: flex; flex-direction: column; gap: 6px;
   }
-  .nav-arrow:hover { background: var(--surface); color: var(--text); }
-  .nav-arrow + .nav-arrow { border-left: 1px solid var(--border); text-align: right; align-items: flex-end; }
-
-  .nav-dir {
-    font-size: 10px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--text-dim);
-  }
+  .nav-a:hover { background: var(--surface); color: var(--text); }
+  .nav-a + .nav-a { border-left: 1px solid var(--border); text-align: right; align-items: flex-end; }
+  .nav-dir { font-size: 10px; letter-spacing: .15em; text-transform: uppercase; color: var(--text-dim); }
   .nav-name {
-    font-family: var(--serif);
-    font-size: 20px;
-    font-style: italic;
-    color: var(--text);
+    font-family: var(--block);
+    font-size: 24px; letter-spacing: .05em;
+    text-transform: uppercase; color: var(--text);
   }
 
   @media (max-width: 900px) {
-    .hero { grid-template-columns: 1fr; gap: 28px; }
-    .photo-frame { width: 160px; }
+    .hero { grid-template-columns: 1fr; gap: 24px; }
+    .photo-box { width: 150px; }
     .photo-date { text-align: left; }
     .main { grid-template-columns: 1fr; }
     .interview { border-right: none; border-bottom: 1px solid var(--border); padding-right: 0; }
     .sidebar { padding-left: 0; }
   }
+  @media (max-width: 600px) {
+    .hero-name { font-size: 58px; }
+  }
 </style>
 </head>
 <body>
 
-<div class="color-bands" id="colorBands">
-  <div class="band-top" id="bandTop"></div>
-  <div class="band-bottom" id="bandBottom"></div>
-  <div class="band-fade"></div>
+<div id="colorWash">
+  <div id="washTop"></div>
+  <div id="washBot"></div>
+  <div id="washFade"></div>
 </div>
 
 <header>
-  <a href="index.html" class="logo">audiotool <em>//</em> featured artists</a>
-  <a href="index.html" class="back-btn">← All artists</a>
+  <a href="index.html" class="logo">AUDIOTOOL <span class="slash">//</span> FEATURED ARTISTS</a>
+  <a href="index.html" class="back">← All artists</a>
 </header>
 
 <div id="app"></div>
@@ -448,184 +382,178 @@
 <script>
 const params = new URLSearchParams(location.search);
 const artistId = params.get('id');
-let currentTrackUrl = null;
+let curUrl = null;
 
-function esc(s) {
-  return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+function fmtDate(d){
+  if(!d) return '';
+  const [y,m,day]=d.split('-');
+  return ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+m-1]+' '+parseInt(day)+', '+y;
 }
 
-function formatDate(d) {
-  if (!d) return '';
-  const [y,m,day] = d.split('-');
-  const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-  return `${months[parseInt(m)-1]} ${parseInt(day)}, ${y}`;
+function tSlug(url){
+  const m=url.match(/\/track\/([^/]+)/);
+  if(!m) return url;
+  return m[1].replace(/_/g,' ').replace(/-[a-z0-9]{6,}$/,'').replace(/-/g,' ');
 }
 
-function trackSlug(url) {
-  const m = url.match(/\/track\/([^/]+)/);
-  if (!m) return url;
-  return m[1].replace(/_/g,' ').replace(/-[a-z0-9]{6,}$/, '').replace(/-/g,' ');
-}
-
-function extractColors(src, cb) {
-  const img = new Image();
-  img.crossOrigin = 'anonymous';
-  img.onload = () => {
-    try {
-      const c = document.createElement('canvas');
-      c.width = img.width; c.height = img.height;
-      const ctx = c.getContext('2d');
-      ctx.drawImage(img, 0, 0);
-      function avg(data) {
-        let r=0,g=0,b=0,n=0;
-        for (let i=0;i<data.length;i+=4){r+=data[i];g+=data[i+1];b+=data[i+2];n++;}
-        return `rgb(${Math.round(r/n)},${Math.round(g/n)},${Math.round(b/n)})`;
-      }
-      cb(
-        avg(ctx.getImageData(4, 4, 60, 60).data),
-        avg(ctx.getImageData(4, img.height-64, 60, 60).data)
-      );
-    } catch(e) { cb(null,null); }
+function extractColors(src, cb){
+  const img=new Image();
+  img.crossOrigin='anonymous';
+  img.onload=()=>{
+    try{
+      const c=document.createElement('canvas');
+      c.width=img.width; c.height=img.height;
+      const ctx=c.getContext('2d');
+      ctx.drawImage(img,0,0);
+      function avg(d){ let r=0,g=0,b=0,n=0; for(let i=0;i<d.length;i+=4){r+=d[i];g+=d[i+1];b+=d[i+2];n++;} return [r/n,g/n,b/n]; }
+      const t=avg(ctx.getImageData(4,4,80,80).data);
+      const b=avg(ctx.getImageData(4,img.height-84,80,80).data);
+      cb(t,b);
+    }catch(e){cb(null,null);}
   };
-  img.onerror = () => cb(null,null);
-  img.src = src;
+  img.onerror=()=>cb(null,null);
+  img.src=src;
 }
 
-function applyColors(c1, c2) {
-  if (!c1) return;
-  document.getElementById('bandTop').style.background = `linear-gradient(to bottom, ${c1} 0%, transparent 100%)`;
-  document.getElementById('bandBottom').style.background = `linear-gradient(to top, ${c2||c1} 0%, transparent 100%)`;
-  document.getElementById('colorBands').classList.add('visible');
+function applyColors(t,b){
+  if(!t) return;
+  // Make slightly darker/more transparent for subtle bg effect
+  const tc=`rgba(${Math.round(t[0])},${Math.round(t[1])},${Math.round(t[2])},0.18)`;
+  const bc=`rgba(${Math.round(b[0])},${Math.round(b[1])},${Math.round(b[2])},0.15)`;
+  // Set accent color based on top color (brightened)
+  const ar=Math.min(255,Math.round(t[0]*1.4+40));
+  const ag=Math.min(255,Math.round(t[1]*1.4+40));
+  const ab=Math.min(255,Math.round(t[2]*1.4+40));
+  const accent=`rgb(${ar},${ag},${ab})`;
+  document.documentElement.style.setProperty('--accent', accent);
+  document.getElementById('washTop').style.background=`linear-gradient(to bottom, ${tc} 0%, transparent 100%)`;
+  document.getElementById('washBot').style.background=`linear-gradient(to top, ${bc} 0%, transparent 100%)`;
+  document.getElementById('colorWash').classList.add('on');
 }
 
-window.playTrack = function(url) {
-  const m = url.match(/\/track\/([^/]+)/);
-  if (!m) return;
-  const wrap = document.getElementById('playerWrap');
-  const items = document.querySelectorAll('.track-item');
-
-  if (currentTrackUrl === url) {
-    wrap.classList.remove('open');
-    wrap.innerHTML = '';
-    currentTrackUrl = null;
-    items.forEach(el => { el.classList.remove('active'); el.querySelector('.track-play').textContent = '▷'; });
+window.playTrack=function(url){
+  const m=url.match(/\/track\/([^/]+)/);
+  if(!m) return;
+  const wrap=document.getElementById('playerWrap');
+  const btns=document.querySelectorAll('.track-btn');
+  if(curUrl===url){
+    wrap.classList.remove('open'); wrap.innerHTML=''; curUrl=null;
+    btns.forEach(b=>{b.classList.remove('active');b.querySelector('.tp').textContent='▷';});
     return;
   }
-
-  currentTrackUrl = url;
-  wrap.innerHTML = `<iframe src="https://www.audiotool.com/track/${m[1]}/embed/" allow="autoplay"></iframe>`;
+  curUrl=url;
+  wrap.innerHTML=`<iframe src="https://www.audiotool.com/track/${m[1]}/embed/" allow="autoplay"></iframe>`;
   wrap.classList.add('open');
-  items.forEach(el => {
-    const active = el.dataset.url === url;
-    el.classList.toggle('active', active);
-    el.querySelector('.track-play').textContent = active ? '▶' : '▷';
+  btns.forEach(b=>{
+    const on=b.dataset.url===url;
+    b.classList.toggle('active',on);
+    b.querySelector('.tp').textContent=on?'▶':'▷';
   });
 };
 
 fetch('data.json')
-  .then(r => r.json())
-  .then(data => {
-    if (!artistId) { location.href='index.html'; return; }
-    const idx = data.findIndex(a => a.artist === artistId);
-    if (idx === -1) { location.href='index.html'; return; }
-    render(data[idx], idx, data.length, idx>0?data[idx-1]:null, idx<data.length-1?data[idx+1]:null);
+  .then(r=>r.json())
+  .then(data=>{
+    if(!artistId){location.href='index.html';return;}
+    const idx=data.findIndex(a=>a.artist===artistId);
+    if(idx===-1){location.href='index.html';return;}
+    render(data[idx],idx,data.length,idx>0?data[idx-1]:null,idx<data.length-1?data[idx+1]:null);
   });
 
-function render(a, idx, total, prev, next) {
-  document.title = `${a.artist} — Audiotool Featured Artist`;
-  const tracks = a.tracks || [];
-  const albumMatch = (a.album_url||'').match(/\/album\/([^/]+)/);
-  const albumId = albumMatch ? albumMatch[1] : null;
+function render(a,idx,total,prev,next){
+  document.title=`${a.artist} — Audiotool Featured Artist`;
+  const tracks=a.tracks||[];
+  const albumMatch=(a.album_url||'').match(/\/album\/([^/]+)/);
+  const albumId=albumMatch?albumMatch[1]:null;
+  const coverSrc=albumId?`https://at-cdn-s03.audiotool.com/albums/${albumId}/cover512x512.jpg`:null;
 
-  document.getElementById('app').innerHTML = `
+  document.getElementById('app').innerHTML=`
     <section class="hero">
       <div class="hero-left">
-        <div class="hero-index">Featured Artist ${String(idx+1).padStart(2,'0')} / ${total}</div>
+        <div class="hero-num">FEATURED ARTIST ${String(idx+1).padStart(2,'0')} / ${total}</div>
         <h1 class="hero-name">${esc(a.artist)}</h1>
-        ${a.real_name && a.real_name !== a.artist ? `<div class="hero-realname">${esc(a.real_name)}</div>` : ''}
-        ${a.intro ? `<p class="hero-intro">${esc(a.intro)}</p>` : ''}
+        ${a.real_name&&a.real_name!==a.artist?`<div class="hero-realname">${esc(a.real_name)}</div>`:''}
+        ${a.intro?`<p class="hero-intro">${esc(a.intro)}</p>`:''}
       </div>
-      <div>
-        ${a.photo ? `
-          <div class="photo-frame">
-            <img src="${esc(a.photo)}" alt="${esc(a.artist)}" id="artistPhoto">
-          </div>
-          <div class="photo-date">${formatDate(a.date)}</div>
-        ` : `<div class="photo-frame" style="background:var(--surface);display:flex;align-items:center;justify-content:center;"><span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em">NO PHOTO</span></div>`}
+      <div class="hero-photo">
+        ${a.photo?`
+          <div class="photo-box"><img src="${esc(a.photo)}" alt="${esc(a.artist)}"></div>
+          <div class="photo-date">${fmtDate(a.date)}</div>
+        `:`<div class="photo-box" style="background:var(--surface);display:flex;align-items:center;justify-content:center;"><span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--type)">NO PHOTO</span></div>`}
       </div>
     </section>
 
     <div class="links-bar">
-      ${a.at_profile ? `<a href="${esc(a.at_profile)}" target="_blank" class="ext-link">Audiotool</a>` : ''}
-      ${a.soundcloud ? `<a href="${esc(a.soundcloud)}" target="_blank" class="ext-link">SoundCloud</a>` : ''}
-      ${a.album_url ? `<a href="${esc(a.album_url)}" target="_blank" class="ext-link">Edition Album</a>` : ''}
-      ${a.board_url ? `<a href="${esc(a.board_url)}" target="_blank" class="ext-link">Original Post</a>` : ''}
+      ${a.at_profile?`<a href="${esc(a.at_profile)}" target="_blank" class="ext-link">Audiotool</a>`:''}
+      ${a.soundcloud?`<a href="${esc(a.soundcloud)}" target="_blank" class="ext-link">SoundCloud</a>`:''}
+      ${a.album_url?`<a href="${esc(a.album_url)}" target="_blank" class="ext-link">Edition Album</a>`:''}
+      ${a.board_url?`<a href="${esc(a.board_url)}" target="_blank" class="ext-link">Original Post</a>`:''}
     </div>
 
     <div class="main">
       <div class="interview">
-        ${a.about ? `<div class="about-block"><div class="section-label">About</div><div class="about-text">${esc(a.about)}</div></div>` : ''}
-        ${a.interview && a.interview.length ? `
-          <div class="section-label">Interview</div>
+        ${a.about?`
+          <div class="about-block">
+            <div class="sec-title">About</div>
+            <div class="about-text">${esc(a.about)}</div>
+          </div>
+        `:''}
+        ${a.interview&&a.interview.length?`
+          <div class="sec-title">Interview</div>
           <div class="qa-list">
-            ${a.interview.map(qa => `
+            ${a.interview.map(qa=>`
               <div class="qa-item">
                 <div class="qa-q">${esc(qa.q)}</div>
                 <div class="qa-a">${esc(qa.a)}</div>
               </div>
             `).join('')}
           </div>
-        ` : ''}
-        <div class="board-link"><a href="${esc(a.board_url)}" target="_blank">Original board post ↗</a></div>
+        `:''}
+        <div class="board-link"><a href="${esc(a.board_url)}" target="_blank">↗ Original board post</a></div>
       </div>
 
       <div class="sidebar">
-        ${albumId ? `
+        ${coverSrc?`
           <div>
-            <div class="section-label">Edition Audiotool</div>
-            <a href="${esc(a.album_url)}" target="_blank" class="album-cover-link">
-              <img
-                src="https://at-cdn-s03.audiotool.com/albums/${albumId}/cover512x512.jpg"
-                alt="Edition Audiotool: ${esc(a.artist)}"
-                class="album-cover"
-                id="albumCover"
-                onerror="this.closest('.album-cover-link').style.display='none'"
-              >
+            <div class="sidebar-title">Edition Audiotool</div>
+            <a href="${esc(a.album_url||'#')}" target="_blank" class="cover-link" style="margin-top:12px">
+              <img src="${coverSrc}" alt="Edition Audiotool: ${esc(a.artist)}" id="albumCover" onerror="this.closest('.cover-link').style.display='none'">
+              <div class="cover-overlay">Listen ↗</div>
             </a>
           </div>
-        ` : ''}
+        `:''}
 
-        ${tracks.length ? `
+        ${tracks.length?`
           <div>
-            <div class="section-label">Curated Tracks</div>
+            <div class="sidebar-title">Curated Tracks</div>
             <div class="track-list">
-              ${tracks.map((t,i) => `
-                <button class="track-item" data-url="${esc(t.url)}" onclick="playTrack('${esc(t.url)}')">
-                  <span class="track-num">${String(i+1).padStart(2,'0')}</span>
-                  <span class="track-name">${esc(trackSlug(t.url))}</span>
-                  <span class="track-play">▷</span>
+              ${tracks.map((t,i)=>`
+                <button class="track-btn" data-url="${esc(t.url)}" onclick="playTrack('${esc(t.url)}')">
+                  <span class="tn">${String(i+1).padStart(2,'0')}</span>
+                  <span class="tt">${esc(tSlug(t.url))}</span>
+                  <span class="tp">▷</span>
                 </button>
               `).join('')}
             </div>
             <div class="player-wrap" id="playerWrap"></div>
           </div>
-        ` : ''}
+        `:''}
       </div>
     </div>
 
-    <nav class="nav-arrows">
-      ${prev ? `<a href="artist.html?id=${encodeURIComponent(prev.artist)}" class="nav-arrow"><span class="nav-dir">← Previous</span><span class="nav-name">${esc(prev.artist)}</span></a>`
-             : `<span class="nav-arrow" style="opacity:.25"><span class="nav-dir">Start of archive</span></span>`}
-      ${next ? `<a href="artist.html?id=${encodeURIComponent(next.artist)}" class="nav-arrow"><span class="nav-dir">Next →</span><span class="nav-name">${esc(next.artist)}</span></a>`
-             : `<span class="nav-arrow" style="opacity:.25;text-align:right;align-items:flex-end"><span class="nav-dir">End of archive</span></span>`}
+    <nav class="nav">
+      ${prev?`<a href="artist.html?id=${encodeURIComponent(prev.artist)}" class="nav-a"><span class="nav-dir">← Previous</span><span class="nav-name">${esc(prev.artist)}</span></a>`
+            :`<span class="nav-a" style="opacity:.25"><span class="nav-dir">Start of archive</span></span>`}
+      ${next?`<a href="artist.html?id=${encodeURIComponent(next.artist)}" class="nav-a"><span class="nav-dir">Next →</span><span class="nav-name">${esc(next.artist)}</span></a>`
+            :`<span class="nav-a" style="opacity:.25;text-align:right;align-items:flex-end"><span class="nav-dir">End of archive</span></span>`}
     </nav>
   `;
 
-  // Color extraction
-  const colorSrc = albumId
-    ? `https://at-cdn-s03.audiotool.com/albums/${albumId}/cover512x512.jpg`
-    : a.photo || null;
-  if (colorSrc) extractColors(colorSrc, applyColors);
+  // Extract colors from album cover, fall back to artist photo
+  const colorSrc=coverSrc||a.photo||null;
+  if(colorSrc) extractColors(colorSrc, applyColors);
 }
 </script>
 </body>
