@@ -229,6 +229,28 @@
     margin-bottom: 48px;
   }
 
+  /* ── Q&A ── */
+  .qa-list {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  .qa-q {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+
+  .qa-a {
+    font-size: 13px;
+    line-height: 1.9;
+    color: var(--text-muted);
+  }
+
   /* ── SIDEBAR ── */
   .sidebar {
     padding: 60px 32px;
@@ -500,13 +522,30 @@ function render(a, idx, total, prev, next) {
           <div class="about-text">${escHtml(a.about)}</div>
         ` : ''}
         <p class="section-title">Interview</p>
-        <div class="about-text" style="color:var(--text-dim);font-size:12px">
-          Read the full interview on the
-          <a href="${escHtml(a.board_url)}" target="_blank"
-             style="color:var(--text-muted);text-decoration:underline;text-underline-offset:3px">
-            original board post ↗
-          </a>
-        </div>
+        ${a.interview && a.interview.length ? `
+          <div class="qa-list">
+            ${a.interview.map(qa => `
+              <div class="qa-item">
+                <div class="qa-q">${escHtml(qa.q)}</div>
+                <div class="qa-a">${escHtml(qa.a)}</div>
+              </div>
+            `).join('')}
+          </div>
+          <div style="margin-top:32px;font-size:11px;color:var(--text-dim)">
+            <a href="${escHtml(a.board_url)}" target="_blank"
+               style="color:var(--text-dim);text-decoration:underline;text-underline-offset:3px">
+              Original board post ↗
+            </a>
+          </div>
+        ` : `
+          <div class="about-text" style="color:var(--text-dim);font-size:12px">
+            Read the full interview on the
+            <a href="${escHtml(a.board_url)}" target="_blank"
+               style="color:var(--text-muted);text-decoration:underline;text-underline-offset:3px">
+              original board post ↗
+            </a>
+          </div>
+        `}
       </div>
 
       <div class="sidebar">
