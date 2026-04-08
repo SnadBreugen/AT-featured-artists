@@ -322,13 +322,25 @@
   .tt { font-size: 11px; color: var(--text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; letter-spacing: .02em; }
   .tp { font-size: 9px; color: var(--text-dim); text-align: right; }
 
-  .player-wrap {
-    overflow: hidden;
-    height: 0; transition: height .3s ease;
-    border: 1px solid var(--border); border-top: none;
+  .play-toggle {
+    width: 100%;
+    background: var(--surface);
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    font-family: var(--block);
+    font-size: 18px;
+    letter-spacing: 0.15em;
+    padding: 14px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: background .15s, color .15s;
+    text-transform: uppercase;
+    margin-top: 12px;
   }
-  .player-wrap.open { height: 152px; }
-  .player-wrap iframe { width: 100%; height: 152px; border: none; display: block; }
+  .play-toggle:hover { background: var(--accent); color: var(--bg); }
+  .album-player { margin-top: 1px; }
 
   /* ── NAV ── */
   .nav {
@@ -433,24 +445,22 @@ function applyColors(t,b){
   document.getElementById('colorWash').classList.add('on');
 }
 
-window.playTrack=function(url){
-  const m=url.match(/\/track\/([^/]+)/);
-  if(!m) return;
-  const wrap=document.getElementById('playerWrap');
-  const btns=document.querySelectorAll('.track-btn');
-  if(curUrl===url){
-    wrap.classList.remove('open'); wrap.innerHTML=''; curUrl=null;
-    btns.forEach(b=>{b.classList.remove('active');b.querySelector('.tp').textContent='▷';});
-    return;
+let albumOpen=false;
+window.toggleAlbum=function(){
+  const player=document.getElementById('albumPlayer');
+  const icon=document.getElementById('playIcon');
+  const label=document.getElementById('playLabel');
+  albumOpen=!albumOpen;
+  if(albumOpen){
+    const albumId=(document.getElementById('albumCover')||{}).dataset.albumid||window._albumId;
+    player.innerHTML=`<iframe src="https://www.audiotool.com/album/${window._albumId}/embed/" allow="autoplay" style="width:100%;height:200px;border:none;display:block"></iframe>`;
+    icon.textContent='■';
+    label.textContent='STOP';
+  } else {
+    player.innerHTML='';
+    icon.textContent='▶';
+    label.textContent='PLAY ALBUM';
   }
-  curUrl=url;
-  wrap.innerHTML=`<iframe src="https://www.audiotool.com/track/${m[1]}/embed/" allow="autoplay"></iframe>`;
-  wrap.classList.add('open');
-  btns.forEach(b=>{
-    const on=b.dataset.url===url;
-    b.classList.toggle('active',on);
-    b.querySelector('.tp').textContent=on?'▶':'▷';
-  });
 };
 
 fetch('data.json')
@@ -467,7 +477,7 @@ function render(a,idx,total,prev,next){
   const tracks=a.tracks||[];
   const albumMatch=(a.album_url||'').match(/\/album\/([^/]+)/);
   const albumId=albumMatch?albumMatch[1]:null;
-  const coverSrc=albumId?`https://at-cdn-s03.audiotool.com/albums/${albumId}/cover512x512.jpg`:null;
+  const coverSrc=albumId?`https://api.audiotool.com/album/${albumId}/cover/512.jpg`:null;
 
   document.getElementById('app').innerHTML=`
     <section class="hero">
@@ -480,7 +490,6 @@ function render(a,idx,total,prev,next){
       <div class="hero-photo">
         ${a.photo?`
           <div class="photo-box"><img src="${esc(a.photo)}" alt="${esc(a.artist)}"></div>
-          <div class="photo-date">${fmtDate(a.date)}</div>
         `:`<div class="photo-box" style="background:var(--surface);display:flex;align-items:center;justify-content:center;"><span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--type)">NO PHOTO</span></div>`}
       </div>
     </section>
@@ -519,25 +528,18 @@ function render(a,idx,total,prev,next){
           <div>
             <div class="sidebar-title">Edition Audiotool</div>
             <a href="${esc(a.album_url||'#')}" target="_blank" class="cover-link" style="margin-top:12px">
-              <img src="${coverSrc}" alt="Edition Audiotool: ${esc(a.artist)}" id="albumCover" onerror="this.closest('.cover-link').style.display='none'">
-              <div class="cover-overlay">Listen ↗</div>
+              <img src="${coverSrc}" alt="Edition Audiotool: ${esc(a.artist)}" id="albumCover" onerror="this.closest('.cover-link').style.display='none'">              <div class="cover-overlay">Listen ↗</div>
             </a>
           </div>
         `:''}
 
-        ${tracks.length?`
+        ${albumId?`
           <div>
-            <div class="sidebar-title">Curated Tracks</div>
-            <div class="track-list">
-              ${tracks.map((t,i)=>`
-                <button class="track-btn" data-url="${esc(t.url)}" onclick="playTrack('${esc(t.url)}')">
-                  <span class="tn">${String(i+1).padStart(2,'0')}</span>
-                  <span class="tt">${esc(tSlug(t.url))}</span>
-                  <span class="tp">▷</span>
-                </button>
-              `).join('')}
-            </div>
-            <div class="player-wrap" id="playerWrap"></div>
+            <button class="play-toggle" id="playToggle" onclick="toggleAlbum()">
+              <span id="playIcon">▶</span>
+              <span id="playLabel">PLAY ALBUM</span>
+            </button>
+            <div class="album-player" id="albumPlayer"></div>
           </div>
         `:''}
       </div>
@@ -551,9 +553,9 @@ function render(a,idx,total,prev,next){
     </nav>
   `;
 
+  window._albumId=albumId;
   // Extract colors from album cover, fall back to artist photo
-  const colorSrc=coverSrc||a.photo||null;
-  if(colorSrc) extractColors(colorSrc, applyColors);
+  const colorSrc=coverSrc||a.photo||null;  if(colorSrc) extractColors(colorSrc, applyColors);
 }
 </script>
 </body>
