@@ -411,22 +411,37 @@ function tSlug(url){
 }
 
 function extractColors(src, cb){
-  const img=new Image();
-  img.crossOrigin='anonymous';
-  img.onload=()=>{
-    try{
-      const c=document.createElement('canvas');
-      c.width=img.width; c.height=img.height;
-      const ctx=c.getContext('2d');
-      ctx.drawImage(img,0,0);
-      function avg(d){ let r=0,g=0,b=0,n=0; for(let i=0;i<d.length;i+=4){r+=d[i];g+=d[i+1];b+=d[i+2];n++;} return [r/n,g/n,b/n]; }
-      const t=avg(ctx.getImageData(4,4,80,80).data);
-      const b=avg(ctx.getImageData(4,img.height-84,80,80).data);
-      cb(t,b);
-    }catch(e){cb(null,null);}
-  };
-  img.onerror=()=>cb(null,null);
-  img.src=src;
+  // Try direct first, then via CORS proxy
+  function tryLoad(url, onSuccess, onFail){
+    const img=new Image();
+    img.crossOrigin='anonymous';
+    img.onload=()=>{
+      try{
+        const c=document.createElement('canvas');
+        c.width=img.width; c.height=img.height;
+        const ctx=c.getContext('2d');
+        ctx.drawImage(img,0,0);
+        function avg(d){ let r=0,g=0,b=0,n=0; for(let i=0;i<d.length;i+=4){r+=d[i];g+=d[i+1];b+=d[i+2];n++;} return [r/n,g/n,b/n]; }
+        const t=avg(ctx.getImageData(4,4,80,80).data);
+        const b=avg(ctx.getImageData(4,img.height-84,80,80).data);
+        onSuccess(t,b);
+      }catch(e){ onFail(); }
+    };
+    img.onerror=onFail;
+    img.src=url;
+  }
+  // Try direct
+  tryLoad(src,
+    (t,b)=>cb(t,b),
+    ()=>{
+      // Try CORS proxy
+      const proxy='https://corsproxy.io/?'+encodeURIComponent(src);
+      tryLoad(proxy,
+        (t,b)=>cb(t,b),
+        ()=>cb(null,null)
+      );
+    }
+  );
 }
 
 function applyColors(t,b){
@@ -555,7 +570,7 @@ function render(a,idx,total,prev,next){
 
   window._albumId=albumId;
   // Extract colors from album cover, fall back to artist photo
-  const colorSrc=coverSrc||a.photo||null;  if(colorSrc) extractColors(colorSrc, applyColors);
+  const colorSrc=a.cover_url||coverSrc||a.photo||null;  if(colorSrc) extractColors(colorSrc, applyColors);
 }
 </script>
 </body>
