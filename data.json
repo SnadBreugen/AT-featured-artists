@@ -1171,7 +1171,11 @@
       "soundcloud": "https://soundcloud.com/user-440167502"
     },
     "soundcloud": "https://soundcloud.com/user-440167502",
-    "is_current": false
+    "is_current": false,
+    "color1": "#3efcfc",
+    "color_accent": "#3efcfc",
+    "desc_bg": "#c28080",
+    "links_bar_color": "#c28080"
   },
   {
     "artist": "rai.",
