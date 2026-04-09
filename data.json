@@ -5081,7 +5081,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2025/11/27/comment/tpc-news/attachment-7f317b1369de4b628f68e7f02a6a2845.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2025/11/27/albums/7fcw6s32/cover256x256-6b55649d239647a28777532e3c0b6f3e.jpg",
-    "is_current": false
+    "is_current": true,
+    "color1": "#262492",
+    "color_accent": "#262492",
+    "desc_bg": "#e2e2fe",
+    "links_bar_color": "#e3e2fe"
   },
   {
     "artist": "escapiistt",
@@ -5261,6 +5265,6 @@
     "color_accent": "#01b541",
     "desc_bg": "#b1ccdd",
     "links_bar_color": "#b1ccdd",
-    "is_current": true
+    "is_current": false
   }
 ]
