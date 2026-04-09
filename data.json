@@ -82,7 +82,8 @@
     "color1": "#7dffbb",
     "color2": "#fd569e",
     "color_accent": "#c3f9dd",
-    "desc_bg": "#fdd3e5"
+    "desc_bg": "#fdd3e5",
+    "is_current": false
   },
   {
     "artist": "Goon",
@@ -175,7 +176,8 @@
     "soundcloud": "https://soundcloud.com/gilesincharge/mix-for-the-folks-at-home",
     "color1": "#ff603b",
     "color_accent": "#ff603b",
-    "desc_bg": "#f7d2ca"
+    "desc_bg": "#f7d2ca",
+    "is_current": false
   },
   {
     "artist": "Icebox",
@@ -264,7 +266,8 @@
       "youtube": "https://www.youtube.com/channel/UCt8K32jeloGRwTwuz2tOZlQ",
       "instagram": "https://www.instagram.com/call.me.icebox/",
       "spotify": "https://open.spotify.com/artist/3EPASK2OUUcDo6RgfnroTK"
-    }
+    },
+    "is_current": false
   },
   {
     "artist": "Fluent",
@@ -352,7 +355,8 @@
     "cover_url": "https://at-cdn-s03.audiotool.com/2021/08/26/albums/8zwck/cover256x256-55c80cee9e7b48c4b401ae1a2dd21f99.jpg",
     "social": {
       "soundcloud": "https://soundcloud.com/flvent"
-    }
+    },
+    "is_current": false
   },
   {
     "artist": "Kibbey",
@@ -441,7 +445,8 @@
       "twitter": "https://twitter.com/JordanKibbey",
       "spotify": "https://open.spotify.com/artist/6kYl9IaKjiau5Hbs7cLMFM",
       "bandcamp": "https://kibbey.bandcamp.com/"
-    }
+    },
+    "is_current": false
   },
   {
     "artist": "Syntax",
@@ -501,7 +506,8 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2021/10/17/comment/tpc-news_draft/attachment-0ddfc22e41124d039560bab9c802dc63.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2021/10/17/albums/51mehaa/cover256x256-055803161deb40898500aadde9ab29da.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2021/10/17/albums/51mehaa/cover256x256-055803161deb40898500aadde9ab29da.jpg",
+    "is_current": false
   },
   {
     "artist": "Laevent",
@@ -586,7 +592,8 @@
     "cover_url": "https://at-cdn-s03.audiotool.com/2021/11/01/albums/5c27f0z4/cover256x256-0d5116be87714def97576019ced34df4.jpg",
     "social": {
       "soundcloud": "https://soundcloud.com/1haydens"
-    }
+    },
+    "is_current": false
   },
   {
     "artist": "Naut",
@@ -663,7 +670,8 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2021/11/14/comment/tpc-news_draft/attachment-806f8da94aa6454baca5254ac42f2656.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2021/11/14/albums/3ke839j/cover256x256-326a6be894d245a898d682cc71c631fd.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2021/11/14/albums/3ke839j/cover256x256-326a6be894d245a898d682cc71c631fd.jpg",
+    "is_current": false
   },
   {
     "artist": "Tim Derry",
@@ -742,7 +750,8 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2021/12/13/comment/tpc-news_draft/attachment-0df41feebe4140ee9d23ba1b72f121c3.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2021/12/11/albums/ejmf2b/cover256x256-f905ca18e5ff41828bf755868493d62c.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2021/12/11/albums/ejmf2b/cover256x256-f905ca18e5ff41828bf755868493d62c.jpg",
+    "is_current": false
   },
   {
     "artist": "Sila",
@@ -825,7 +834,8 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2021/12/27/comment/tpc-news_draft/attachment-0e1fb87d5984412590154be09c0ed51d.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2021/12/26/albums/wxwkob/cover256x256-3ca0d6aa71fa48e499532e7f570cf543.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2021/12/26/albums/wxwkob/cover256x256-3ca0d6aa71fa48e499532e7f570cf543.jpg",
+    "is_current": false
   },
   {
     "artist": "Vulkron",
@@ -895,7 +905,8 @@
     "color1": "#8ae44e",
     "color2": "#e1232d",
     "color_accent": "#179ab5",
-    "desc_bg": "#83cdd2"
+    "desc_bg": "#83cdd2",
+    "is_current": false
   },
   {
     "artist": "BubbLz",
@@ -973,7 +984,8 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/01/24/comment/tpc-news/attachment-816a0e72e8b340fd92d884fb8881604a.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2022/01/24/albums/ieyyc/cover256x256-ed5cd253559e422d85bcedb76a8120ec.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2022/01/24/albums/ieyyc/cover256x256-ed5cd253559e422d85bcedb76a8120ec.jpg",
+    "is_current": false
   },
   {
     "artist": "Joe",
@@ -1029,7 +1041,8 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/02/07/comment/tpc-news/attachment-7b0a632aa0044974a1209ec6a5090027.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2022/02/07/albums/0itj8w/cover256x256-3b0ee09d78db40d78d5b50a53f32be76.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2022/02/07/albums/0itj8w/cover256x256-3b0ee09d78db40d78d5b50a53f32be76.jpg",
+    "is_current": false
   },
   {
     "artist": "Vault Boy",
@@ -1117,7 +1130,8 @@
     "social": {
       "soundcloud": "https://soundcloud.com/user-440167502"
     },
-    "soundcloud": "https://soundcloud.com/user-440167502"
+    "soundcloud": "https://soundcloud.com/user-440167502",
+    "is_current": false
   },
   {
     "artist": "rai.",
@@ -1200,7 +1214,8 @@
       "soundcloud": "https://soundcloud.com/officialrai",
       "instagram": "https://www.instagram.com/this.is.rai/"
     },
-    "soundcloud": "https://soundcloud.com/officialrai"
+    "soundcloud": "https://soundcloud.com/officialrai",
+    "is_current": false
   },
   {
     "artist": "Momo",
@@ -1288,7 +1303,8 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/03/21/comment/tpc-news/attachment-a634574e75694ea79afbafd4b7ca270f.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2022/03/20/albums/cw614p9s/cover256x256-5016a3b296b748f398dd9e7a11d5e635.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2022/03/20/albums/cw614p9s/cover256x256-5016a3b296b748f398dd9e7a11d5e635.jpg",
+    "is_current": false
   },
   {
     "artist": "Wightfall",
@@ -1380,7 +1396,8 @@
     "social": {
       "instagram": "https://www.instagram.com/wightfall/",
       "spotify": "https://open.spotify.com/artist/3wLNmKdqqy3rjGRZY7PgvR"
-    }
+    },
+    "is_current": false
   },
   {
     "artist": "Two Sworded",
@@ -1438,7 +1455,8 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/04/18/comment/tpc-news_draft/attachment-d182e0fb6acc47fbb56d8cb14100c753.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2022/04/18/albums/g7u0wvas/cover256x256-0e4aa599ab5346f79c0221db90f84c3c.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2022/04/18/albums/g7u0wvas/cover256x256-0e4aa599ab5346f79c0221db90f84c3c.jpg",
+    "is_current": false
   },
   {
     "artist": "po9t",
@@ -1528,7 +1546,8 @@
     "cover_url": "https://at-cdn-s03.audiotool.com/2022/05/01/albums/v2hcpjvp/cover256x256-9df6a3f63f3d45dd8b5d5d13de0c94fc.jpg",
     "social": {
       "instagram": "https://www.instagram.com/po9t.mp3/"
-    }
+    },
+    "is_current": false
   },
   {
     "artist": "sim",
@@ -1615,7 +1634,8 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/05/16/comment/tpc-news_draft/attachment-f70f59e40dd04040b125b3e0a96fcb53.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2022/05/16/albums/l6orny/cover256x256-35640fb09e8d4cc9bef227871a0300bb.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2022/05/16/albums/l6orny/cover256x256-35640fb09e8d4cc9bef227871a0300bb.jpg",
+    "is_current": false
   },
   {
     "artist": "aeiter",
@@ -1702,7 +1722,8 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/05/30/comment/tpc-news_draft/attachment-991b17980fa1477199169b88de188a56.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2022/05/29/albums/k2gh7/cover256x256-bc0672e9eeef4168a915fdbaa7f8391d.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2022/05/29/albums/k2gh7/cover256x256-bc0672e9eeef4168a915fdbaa7f8391d.jpg",
+    "is_current": false
   },
   {
     "artist": "okin",
@@ -1792,7 +1813,8 @@
     "cover_url": "https://at-cdn-s03.audiotool.com/2022/06/12/albums/28ylvwn0h/cover256x256-4898c79ae71647ff83c964c136b7eb68.jpg",
     "social": {
       "instagram": "https://www.instagram.com/okin_uk/"
-    }
+    },
+    "is_current": false
   },
   {
     "artist": "Client",
@@ -1878,7 +1900,8 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/06/26/comment/tpc-news_draft/attachment-432ba0a120ec4c388e625876f69724db.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2022/06/26/albums/bhxw4zi3g/cover256x256-7395eb358eda486791cabc5c2498482d.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2022/06/26/albums/bhxw4zi3g/cover256x256-7395eb358eda486791cabc5c2498482d.jpg",
+    "is_current": false
   },
   {
     "artist": "Gravidon",
@@ -1965,7 +1988,8 @@
     "social": {
       "twitter": "https://twitter.com/Gravi_Tweets",
       "instagram": "https://www.instagram.com/gravi.tv/"
-    }
+    },
+    "is_current": false
   },
   {
     "artist": "nico",
@@ -2053,7 +2077,8 @@
     "photo": "https://at-cdn-s03.audiotool.com/2022/07/24/comment/tpc-news_draft/attachment-cb038390e5464dc1b2e72c5f9683683d.png",
     "social": {
       "instagram": "https://www.instagram.com/ndaglio/"
-    }
+    },
+    "is_current": false
   },
   {
     "artist": "leadenshrew",
@@ -2135,7 +2160,8 @@
     "social": {
       "soundcloud": "https://soundcloud.com/leadenshrew"
     },
-    "soundcloud": "https://soundcloud.com/leadenshrew"
+    "soundcloud": "https://soundcloud.com/leadenshrew",
+    "is_current": false
   },
   {
     "artist": "viista",
@@ -2221,7 +2247,8 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/08/21/comment/tpc-news_draft/attachment-e4588261f95146ca957ec575db275761.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2022/08/21/albums/rxln02/cover256x256-a78cae19721d486a91624bd9105c1ffb.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2022/08/21/albums/rxln02/cover256x256-a78cae19721d486a91624bd9105c1ffb.jpg",
+    "is_current": false
   },
   {
     "artist": "Melancolist",
@@ -2279,7 +2306,8 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/09/04/comment/tpc-news_draft/attachment-17d4ec834d304525b5bbb77a9277e1a1.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2022/09/04/albums/rwigcs/cover256x256-eb731df59be84d77b93f4c650b665e2c.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2022/09/04/albums/rwigcs/cover256x256-eb731df59be84d77b93f4c650b665e2c.jpg",
+    "is_current": false
   },
   {
     "artist": "ApoC",
@@ -2332,7 +2360,8 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/09/18/comment/tpc-news_draft/attachment-c74fba8152fc4a2dbf11d222fb935a6b.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2022/09/18/albums/ge68uh/cover256x256-e51735b52b054a55957e55eeefec0191.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2022/09/18/albums/ge68uh/cover256x256-e51735b52b054a55957e55eeefec0191.jpg",
+    "is_current": false
   },
   {
     "artist": "sphere",
@@ -2420,7 +2449,8 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/10/03/comment/tpc-news_draft/attachment-b54233ec919e48ea8cefa3246874bf96.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2022/10/03/albums/6fd3wz3bv/cover256x256-d67bd69764074cc1a601cd5a555d70e1.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2022/10/03/albums/6fd3wz3bv/cover256x256-d67bd69764074cc1a601cd5a555d70e1.jpg",
+    "is_current": false
   },
   {
     "artist": "Drimeur",
@@ -2495,7 +2525,8 @@
         "a": "I love you all! Really I do! And we all must keep in mind that Audiotool is a sacred place that we must keep far from unconstructive words. Always try to help each other to improve. PEACE"
       }
     ],
-    "photo": "https://at-cdn-s03.audiotool.com/2022/10/17/comment/tpc-news_draft/attachment-7e0fb6b2f5f94a27bb28bc9d3e41d41e.png"
+    "photo": "https://at-cdn-s03.audiotool.com/2022/10/17/comment/tpc-news_draft/attachment-7e0fb6b2f5f94a27bb28bc9d3e41d41e.png",
+    "is_current": false
   },
   {
     "artist": "withdecay",
@@ -2509,7 +2540,8 @@
     "tracks": [],
     "note": "Artist requested album deletion",
     "interview": [],
-    "photo": ""
+    "photo": "",
+    "is_current": false
   },
   {
     "artist": "andy",
@@ -2597,7 +2629,8 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/11/27/comment/tpc-news_draft/attachment-57a53456b0894f15910a2b314d25d67d.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2022/11/27/albums/a6bxz/cover256x256-27a8029876bd4e0297be782788ea3348.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2022/11/27/albums/a6bxz/cover256x256-27a8029876bd4e0297be782788ea3348.jpg",
+    "is_current": false
   },
   {
     "artist": "etterath",
@@ -2682,7 +2715,8 @@
     "photo": "https://at-cdn-s03.audiotool.com/2022/12/18/comment/tpc-news_draft/attachment-e7f6d2235b954f2d8a6918d0c7e1f6e9.png",
     "social": {
       "linktree": "https://linktr.ee/etterathmusic"
-    }
+    },
+    "is_current": false
   },
   {
     "artist": "Xavi",
@@ -2768,7 +2802,8 @@
     "social": {
       "twitter": "https://twitter.com/xavimakesmusic",
       "instagram": "https://www.instagram.com/xavimakesmusic/"
-    }
+    },
+    "is_current": false
   },
   {
     "artist": "voyd",
@@ -2822,7 +2857,8 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2023/02/13/comment/tpc-news_draft/attachment-494ecf1a09c344faa73f7bedc67f5578.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2023/02/13/albums/xuz78/cover256x256-ad0f8ffb5dac4a42be6205d00efa0664.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2023/02/13/albums/xuz78/cover256x256-ad0f8ffb5dac4a42be6205d00efa0664.jpg",
+    "is_current": false
   },
   {
     "artist": "JayFK",
@@ -2879,7 +2915,8 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2023/02/27/comment/tpc-news/attachment-e5d4da4626b946c79b2e2173201e6ad7.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2023/02/27/albums/txwzmc9b/cover256x256-6aa0eb8d13c3469c932965b324ad0b1b.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2023/02/27/albums/txwzmc9b/cover256x256-6aa0eb8d13c3469c932965b324ad0b1b.jpg",
+    "is_current": false
   },
   {
     "artist": "Siren",
@@ -2936,7 +2973,8 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2023/03/13/comment/tpc-news/attachment-58ebace1c1404e44ac688cec7723533c.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2023/03/13/albums/33w5vfv/cover256x256-4c08dae4880f4199a9e16fed288acbf2.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2023/03/13/albums/33w5vfv/cover256x256-4c08dae4880f4199a9e16fed288acbf2.jpg",
+    "is_current": false
   },
   {
     "artist": "Kepz",
@@ -3000,7 +3038,8 @@
         "a": "Rebuilding Probe together with jujuu. We're ditching Defrac and Java and now using Typescript with our little inhouse framework. We're starting with Probe as a learning exercise before fully diving into the bigger rebuild of the Studio with Andre."
       }
     ],
-    "photo": "https://at-cdn-s03.audiotool.com/2023/03/20/comment/tpc-news/attachment-4e4dbfede8974d87a0c7aa82c2c6f381.png"
+    "photo": "https://at-cdn-s03.audiotool.com/2023/03/20/comment/tpc-news/attachment-4e4dbfede8974d87a0c7aa82c2c6f381.png",
+    "is_current": false
   },
   {
     "artist": "WPX",
@@ -3057,7 +3096,8 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2023/03/27/comment/tpc-news/attachment-a5ad265e97b044938dce21410d18e019.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2023/03/27/albums/hkmeiqi7z/cover256x256-c40e9b96eb2e428a86ee63570aa737fe.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2023/03/27/albums/hkmeiqi7z/cover256x256-c40e9b96eb2e428a86ee63570aa737fe.jpg",
+    "is_current": false
   },
   {
     "artist": "mxcii",
@@ -3144,7 +3184,8 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2023/04/10/comment/tpc-news/attachment-c2d598abe5a94e889d77186e1a851109.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2023/04/10/albums/4vsxwa3n8/cover256x256-74826ac634a64141ab90e1284e5daeb9.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2023/04/10/albums/4vsxwa3n8/cover256x256-74826ac634a64141ab90e1284e5daeb9.jpg",
+    "is_current": false
   },
   {
     "artist": "retro",
@@ -3202,7 +3243,8 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2023/04/24/comment/tpc-news/attachment-cc068e8cf20545c3bb007f9be65e4f10.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2023/04/24/albums/htt3j7dl6/cover256x256-e53599d01f71426fa5b60271fdf95dd6.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2023/04/24/albums/htt3j7dl6/cover256x256-e53599d01f71426fa5b60271fdf95dd6.jpg",
+    "is_current": false
   },
   {
     "artist": "Amp7070",
@@ -3260,7 +3302,8 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2023/05/08/comment/tpc-news/attachment-06e6e97ff03349cc81780a6cde60d768.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2023/05/08/albums/pnn0nr/cover256x256-7e413510cea74a059e340fae622a1278.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2023/05/08/albums/pnn0nr/cover256x256-7e413510cea74a059e340fae622a1278.jpg",
+    "is_current": false
   },
   {
     "artist": "Civility",
@@ -3347,7 +3390,8 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2023/05/22/comment/tpc-news/attachment-243c7416db444e4b8d56aded7d643113.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2023/05/22/albums/1topzrncq/cover256x256-8ff232349af142b6b9c4dfa3ef933a2e.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2023/05/22/albums/1topzrncq/cover256x256-8ff232349af142b6b9c4dfa3ef933a2e.jpg",
+    "is_current": false
   },
   {
     "artist": "Kurp",
@@ -3405,7 +3449,8 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2023/06/05/comment/tpc-news/attachment-8878da1561474486817858c3e807b1d4.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2023/06/05/albums/46rop/cover256x256-d56c1d0b38474ec3a8529a3bc295b66c.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2023/06/05/albums/46rop/cover256x256-d56c1d0b38474ec3a8529a3bc295b66c.jpg",
+    "is_current": false
   },
   {
     "artist": "Uzeh",
@@ -3493,7 +3538,8 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2025/01/16/comment/tpc-news/attachment-040269647c674547bd05d2e56e8674f4.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2025/01/16/albums/cql9n2/cover256x256-5f21862a324342768cf6ee50e40632c5.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2025/01/16/albums/cql9n2/cover256x256-5f21862a324342768cf6ee50e40632c5.jpg",
+    "is_current": false
   },
   {
     "artist": "althruist",
@@ -3591,7 +3637,8 @@
     "links_bar_bg": "#f7e2c5",
     "desc_bg": "#f7e2c5",
     "color1": "#fac987",
-    "color_accent": "#fac987"
+    "color_accent": "#fac987",
+    "is_current": false
   },
   {
     "artist": "Le Voile",
@@ -3676,7 +3723,8 @@
     "social": {
       "bandcamp": "https://levoile.bandcamp.com",
       "instagram": "https://www.instagram.com/le_voile_music/"
-    }
+    },
+    "is_current": false
   },
   {
     "artist": "anodyne",
@@ -3769,7 +3817,8 @@
     "cover_url": "https://at-cdn-s03.audiotool.com/2025/03/04/albums/6m3ql0k/cover256x256-97c8ef965f684af1ae84211081141a0a.jpg",
     "social": {
       "linktree": "https://linktr.ee/hurakanofficial"
-    }
+    },
+    "is_current": false
   },
   {
     "artist": "1trillionMPH",
@@ -3861,7 +3910,8 @@
     "cover_url": "https://at-cdn-s03.audiotool.com/2025/03/13/albums/ft2ksm79/cover256x256-7bbf9162e7fb4c6f8744d0a8ef3c70d4.jpg",
     "social": {
       "bandcamp": "https://1trillionmph.bandcamp.com"
-    }
+    },
+    "is_current": false
   },
   {
     "artist": "ryzenn AKA taiko!",
@@ -3926,7 +3976,8 @@
         "a": "Keep pushing, keep creating, and keep growing. Don't be afraid to try new things, and never stop learning. The community here is amazing, and I'm so grateful to be a part of it. Thank you all so much for the support!"
       }
     ],
-    "photo": "https://at-cdn-s03.audiotool.com/2025/04/24/comment/tpc-news/attachment-56790fdaf04446419999ce178893e110.png"
+    "photo": "https://at-cdn-s03.audiotool.com/2025/04/24/comment/tpc-news/attachment-56790fdaf04446419999ce178893e110.png",
+    "is_current": false
   },
   {
     "artist": "virux",
@@ -4016,7 +4067,8 @@
     "cover_url": "https://at-cdn-s03.audiotool.com/2025/04/10/albums/9p90rgu71/cover256x256-1e82b920ef43484eb4488ee7ff9c8ccb.jpg",
     "social": {
       "instagram": "https://www.instagram.com/v_irux/"
-    }
+    },
+    "is_current": false
   },
   {
     "artist": "Head Trauma Romance",
@@ -4102,7 +4154,8 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2025/04/24/comment/tpc-news/attachment-8adf0330f53e401e99b4698667d4c527.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2025/04/24/albums/hj1ci68/cover256x256-76438628f5254cce9fc2afe5c9c28e86.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2025/04/24/albums/hj1ci68/cover256x256-76438628f5254cce9fc2afe5c9c28e86.jpg",
+    "is_current": false
   },
   {
     "artist": "Dj TeK-NjA",
@@ -4187,7 +4240,8 @@
       "soundcloud": "https://soundcloud.com/dj-tek-nja",
       "bandcamp": "https://djtek-nja.bandcamp.com"
     },
-    "soundcloud": "https://soundcloud.com/dj-tek-nja"
+    "soundcloud": "https://soundcloud.com/dj-tek-nja",
+    "is_current": false
   },
   {
     "artist": "Sub4sax",
@@ -4257,7 +4311,8 @@
         "a": "I just wanted to take a moment to say how grateful I am to be part of this amazing community. The creativity, support, and shared knowledge here have been such an inspiration throughout my journey. I'm constantly amazed by the talent and innovation that surrounds me, and I encourage everyone to keep exploring, experimenting, and sharing ideas. Let's keep pushing the boundaries of what we can create together!"
       }
     ],
-    "photo": "https://at-cdn-s03.audiotool.com/2025/05/22/comment/tpc-news/attachment-c12216c86665433c8509c39d5ccc28b3.png"
+    "photo": "https://at-cdn-s03.audiotool.com/2025/05/22/comment/tpc-news/attachment-c12216c86665433c8509c39d5ccc28b3.png",
+    "is_current": false
   },
   {
     "artist": "BioL!nk",
@@ -4346,7 +4401,8 @@
     "cover_url": "https://at-cdn-s03.audiotool.com/2025/06/05/albums/tlqii/cover256x256-973b7eec780d4a0ab2b8a900b1a3ba6f.jpg",
     "social": {
       "instagram": "https://www.instagram.com/biolink_official/"
-    }
+    },
+    "is_current": false
   },
   {
     "artist": "Batoune & The Brewers",
@@ -4438,7 +4494,8 @@
     "cover_url": "https://at-cdn-s03.audiotool.com/2025/06/19/albums/tvsrl4/cover256x256-6e177fcbd7c1402e9d32ce7bfdefd30e.jpg",
     "social": {
       "bandcamp": "https://soundsofatelier.bandcamp.com"
-    }
+    },
+    "is_current": false
   },
   {
     "artist": "atelier",
@@ -4520,7 +4577,8 @@
         "a": "Make something unforgettable."
       }
     ],
-    "photo": "https://at-cdn-s03.audiotool.com/2025/07/24/comment/tpc-news/attachment-2e550ae19f784c10a3d280c55d313f93.png"
+    "photo": "https://at-cdn-s03.audiotool.com/2025/07/24/comment/tpc-news/attachment-2e550ae19f784c10a3d280c55d313f93.png",
+    "is_current": false
   },
   {
     "artist": "volen",
@@ -4609,7 +4667,8 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2025/09/18/comment/tpc-news/attachment-6211b649697c46e3b939c8663c934224.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2025/09/18/albums/olz62d0lm/cover256x256-782d5ce64e334b7d980fea884fced228.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2025/09/18/albums/olz62d0lm/cover256x256-782d5ce64e334b7d980fea884fced228.jpg",
+    "is_current": false
   },
   {
     "artist": "itxmi",
@@ -4697,7 +4756,8 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2025/10/02/comment/tpc-news/attachment-270b1fbed17e43dc9496da2b933b2a81.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2025/10/02/albums/godvrqp/cover256x256-7511afc67de6441d99a3135c014c59df.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2025/10/02/albums/godvrqp/cover256x256-7511afc67de6441d99a3135c014c59df.jpg",
+    "is_current": false
   },
   {
     "artist": "@elow",
@@ -4767,7 +4827,8 @@
         "a": "Don't lose your spark. If you read this, I hope your spark is as big if not bigger than mine. I love every person on this platform that I had a chance to meet so far."
       }
     ],
-    "photo": "https://at-cdn-s03.audiotool.com/2025/10/16/comment/tpc-news/attachment-d961ffa5cbdd41359e47165863d69008.png"
+    "photo": "https://at-cdn-s03.audiotool.com/2025/10/16/comment/tpc-news/attachment-d961ffa5cbdd41359e47165863d69008.png",
+    "is_current": false
   },
   {
     "artist": "Chonoes",
@@ -4852,7 +4913,8 @@
         "a": "I've been hearing a lot of people complaining about the toxicity of Audiotool's community, and to some extent, I agree. I just hope people can remember that this website only exists now because of us. Through all the years of drama, we've never forgotten how Audiotool has helped us and shaped us into who we are. Optimism with awareness can go a long way, and I cannot wait to see what the future holds for all of us!"
       }
     ],
-    "photo": "https://at-cdn-s03.audiotool.com/2025/10/30/comment/tpc-news/attachment-b6471fdff76b49ad87864824766f4790.png"
+    "photo": "https://at-cdn-s03.audiotool.com/2025/10/30/comment/tpc-news/attachment-b6471fdff76b49ad87864824766f4790.png",
+    "is_current": false
   },
   {
     "artist": "Snowfire",
@@ -4939,7 +5001,8 @@
         "a": "Create what you want to create, and don't let yourself be held back by being shy to publish something. Don't be afraid to get a little bit weird with it. It's perfectly fine to make something that isn't for everyone. MCL WHOOP WHOOP:)"
       }
     ],
-    "photo": "https://at-cdn-s03.audiotool.com/2025/11/13/comment/tpc-news/attachment-947dfea48f60460386a6400c47bb1dfc.png"
+    "photo": "https://at-cdn-s03.audiotool.com/2025/11/13/comment/tpc-news/attachment-947dfea48f60460386a6400c47bb1dfc.png",
+    "is_current": false
   },
   {
     "artist": "Alckhem",
@@ -5031,7 +5094,8 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2025/11/27/comment/tpc-news/attachment-7f317b1369de4b628f68e7f02a6a2845.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2025/11/27/albums/7fcw6s32/cover256x256-6b55649d239647a28777532e3c0b6f3e.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2025/11/27/albums/7fcw6s32/cover256x256-6b55649d239647a28777532e3c0b6f3e.jpg",
+    "is_current": false
   },
   {
     "artist": "escapiistt",
@@ -5118,7 +5182,8 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2025/12/11/comment/tpc-news/attachment-33625885b6924cd896eb29929b05cf09.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2025/12/11/albums/osio4/cover256x256-9b1986497add4631af823727a2f17a23.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2025/12/11/albums/osio4/cover256x256-9b1986497add4631af823727a2f17a23.jpg",
+    "is_current": false
   },
   {
     "artist": "erthboy",
@@ -5209,6 +5274,7 @@
     "color1": "#0281d0",
     "color_accent": "#0281d0",
     "desc_bg": "#c1e2cc",
-    "links_bar_color": "#a7c2d3"
+    "links_bar_color": "#a7c2d3",
+    "is_current": true
   }
 ]
