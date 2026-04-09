@@ -431,7 +431,7 @@
 <header>
   <a href="index.html" class="logo">AUDIOTOOL <span class="slash">//</span> FEATURED ARTISTS</a>
   <div style="display:flex;align-items:center;gap:20px">
-    <span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--mono)">v0.5.1</span>
+    <span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--mono)">v0.6.0</span>
     <a href="index.html" class="back">← All artists</a>
   </div>
 </header>
@@ -650,6 +650,12 @@ function render(a,idx,total,prev,next){
     <div class="links-bar">
       ${a.at_profile?`<a href="${esc(a.at_profile)}" target="_blank" class="ext-link">Audiotool</a>`:''}
       ${a.soundcloud?`<a href="${esc(a.soundcloud)}" target="_blank" class="ext-link">SoundCloud</a>`:''}
+      ${a.social&&a.social.spotify?`<a href="${esc(a.social.spotify)}" target="_blank" class="ext-link">Spotify</a>`:''}
+      ${a.social&&a.social.instagram?`<a href="${esc(a.social.instagram)}" target="_blank" class="ext-link">Instagram</a>`:''}
+      ${a.social&&a.social.youtube?`<a href="${esc(a.social.youtube)}" target="_blank" class="ext-link">YouTube</a>`:''}
+      ${a.social&&a.social.bandcamp?`<a href="${esc(a.social.bandcamp)}" target="_blank" class="ext-link">Bandcamp</a>`:''}
+      ${a.social&&a.social.linktree?`<a href="${esc(a.social.linktree)}" target="_blank" class="ext-link">Linktree</a>`:''}
+      ${a.social&&a.social.twitter?`<a href="${esc(a.social.twitter)}" target="_blank" class="ext-link">Twitter</a>`:''}
       ${a.album_url?`<a href="${esc(a.album_url)}" target="_blank" class="ext-link">Edition Album</a>`:''}
     </div>
 
@@ -673,19 +679,6 @@ function render(a,idx,total,prev,next){
           </div>
         `:''}
 
-        ${tracks.filter(t=>t.name&&t.desc).length?`
-          <div style="margin-top:52px">
-            <div class="sec-title">Why I picked these</div>
-            <div class="qa-list">
-              ${tracks.filter(t=>t.name&&t.desc).map(t=>`
-                <div class="qa-item">
-                  <div class="qa-q">${t.track_artist?esc(t.track_artist)+' — &ldquo;'+esc(t.name)+'&rdquo;':'"'+esc(t.name)+'"'}</div>
-                  <div class="qa-a">${esc(t.desc)}</div>
-                </div>
-              `).join('')}
-            </div>
-          </div>
-        `:''}
 
       </div>
 
