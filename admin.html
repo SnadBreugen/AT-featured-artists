@@ -369,6 +369,13 @@ function selectArtist(idx){
             <input type="text" id="color_accentText" value="${ca}" oninput="syncColorText('color_accent',this.value)" maxlength="7">
           </div>
         </div>
+        <div class="color-field">
+          <label>Track Desc Background</label>
+          <div class="color-picker-row">
+            <input type="color" id="desc_bgPicker" value="${a.desc_bg||'#e8e4dc'}" oninput="syncColor('desc_bg',this.value)">
+            <input type="text" id="desc_bgText" value="${a.desc_bg||'#e8e4dc'}" oninput="syncColorText('desc_bg',this.value)" maxlength="7">
+          </div>
+        </div>
       </div>
     </div>
 
