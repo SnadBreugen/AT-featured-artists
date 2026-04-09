@@ -1698,7 +1698,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/05/16/comment/tpc-news_draft/attachment-f70f59e40dd04040b125b3e0a96fcb53.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2022/05/16/albums/l6orny/cover256x256-35640fb09e8d4cc9bef227871a0300bb.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#89befb",
+    "color_accent": "#89befb",
+    "desc_bg": "#f3d5ba",
+    "links_bar_color": "#f3d5ba"
   },
   {
     "artist": "aeiter",
