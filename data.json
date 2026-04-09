@@ -2248,7 +2248,11 @@
       "soundcloud": "https://soundcloud.com/leadenshrew"
     },
     "soundcloud": "https://soundcloud.com/leadenshrew",
-    "is_current": false
+    "is_current": false,
+    "color1": "#82ea77",
+    "color_accent": "#82ea77",
+    "desc_bg": "#f582aa",
+    "links_bar_color": "#f4be78"
   },
   {
     "artist": "viista",
