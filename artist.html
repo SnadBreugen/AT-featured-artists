@@ -361,7 +361,7 @@
     font-size: 11px; line-height: 1.7;
     color: #1a1a1a;
     font-family: var(--type);
-    background: #e8e4dc;
+    background: var(--desc-bg, #e8e4dc);
     border-top: 1px solid var(--border);
   }
   .track-desc.open { display: block; }
@@ -431,7 +431,7 @@
 <header>
   <a href="index.html" class="logo">AUDIOTOOL <span class="slash">//</span> FEATURED ARTISTS</a>
   <div style="display:flex;align-items:center;gap:20px">
-    <span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--mono)">v0.6.2</span>
+    <span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--mono)">v0.6.3</span>
     <a href="index.html" class="back">← All artists</a>
   </div>
 </header>
@@ -731,6 +731,9 @@ function render(a,idx,total,prev,next){
   `;
 
   window._albumId=albumId;
+  // Apply desc_bg if set
+  if(a.desc_bg) document.documentElement.style.setProperty('--desc-bg', a.desc_bg);
+  else document.documentElement.style.removeProperty('--desc-bg');
   window._tracks=tracks.filter(t=>t.name&&t.track_artist);
   // Extract colors from album cover, fall back to artist photo
   const colorSrc=a.cover_url||coverSrc||a.photo||null;  if(colorSrc) extractColors(colorSrc, applyColors);
