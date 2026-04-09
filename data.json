@@ -1352,7 +1352,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/03/21/comment/tpc-news/attachment-a634574e75694ea79afbafd4b7ca270f.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2022/03/20/albums/cw614p9s/cover256x256-5016a3b296b748f398dd9e7a11d5e635.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#bf1db9",
+    "color_accent": "#bf1db9",
+    "desc_bg": "#f09dee",
+    "links_bar_color": "#f09dee"
   },
   {
     "artist": "Wightfall",
