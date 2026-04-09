@@ -431,7 +431,7 @@
 <header>
   <a href="index.html" class="logo">AUDIOTOOL <span class="slash">//</span> FEATURED ARTISTS</a>
   <div style="display:flex;align-items:center;gap:20px">
-    <span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--mono)">v0.4.9</span>
+    <span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--mono)">v0.5.0</span>
     <a href="index.html" class="back">← All artists</a>
   </div>
 </header>
@@ -716,7 +716,7 @@ function render(a,idx,total,prev,next){
               ${tracks.filter(t=>t.name&&t.track_artist).map((t,i)=>`
                 <div class="track-item">
                   <button class="track-btn" id="tbtn-${i}" data-url="${esc(t.url)}" onclick="toggleDesc(${i},'${esc(t.url)}')">
-                    <img class="track-cover" src="https://api.audiotool.com/track/${tId(t.url)}/image/64.jpg" onerror="this.style.display='none'" alt="">
+                    <img class="track-cover" src="https://api.audiotool.com/track/${tId(t.url)}/image/256.jpg" onerror="this.style.display='none'" alt="">
                     <span class="tt">${esc(t.track_artist)} · ${esc(t.name)}</span>
                     <span class="tp" id="tp-${i}">▷</span>
                   </button>
