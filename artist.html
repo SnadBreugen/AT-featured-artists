@@ -416,17 +416,17 @@ function tId(url){
   const m=url.match(/\/track\/([^/]+)/);
   return m?m[1]:'';
 }
-function tSlug(url, desc){
-  // If we have a desc, use first part of it as title
+function tSlug(url, desc, name){
+  // Use track name from JSON if available
+  if(name && name.length > 0) return name;
+  // Fall back to desc snippet
   if(desc && desc.length > 0){
-    // Take first sentence or first 50 chars
     const short = desc.split('.')[0].split(',')[0].trim();
     return short.length > 60 ? short.slice(0,57)+'...' : short;
   }
   const m=url.match(/\/track\/([^/]+)/);
   if(!m) return url;
   const slug = m[1];
-  // If it looks like a pure hash (8+ hex chars, no underscores/words), return empty
   if(/^[a-f0-9]{8,}$/.test(slug)) return '—';
   return slug.replace(/_/g,' ').replace(/-[a-f0-9]{6,}$/,'').replace(/-/g,' ');
 }
@@ -605,8 +605,8 @@ function render(a,idx,total,prev,next){
                 <button class="track-btn" data-url="${esc(t.url)}" onclick="playTrack('${esc(t.url)}')">
                   <img class="track-cover" src="${coverSrc||''}" onerror="this.style.opacity='.15'" alt="">
                   <span class="tt">
-                    <span class="tt-title">${esc(tSlug(t.url, t.desc))}</span>
-                    <span class="tt-artist">${esc(a.artist)}</span>
+                    <span class="tt-title">${esc(tSlug(t.url, t.desc, t.name))}</span>
+                    <span class="tt-artist">${esc(t.track_artist||'')}</span>
                   </span>
                   <span class="tp">▷</span>
                 </button>
