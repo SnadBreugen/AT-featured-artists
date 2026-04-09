@@ -169,7 +169,7 @@ fetch('data.json')
   .then(data => {
     allArtists = data;
     const current = data.find(a => a.is_current);
-    shuffled = data.filter(a => !a.is_current).sort(() => Math.random() - .5);
+    shuffled = data.filter(a => !a.is_current).reverse();
     document.getElementById('headerCount').textContent = data.length + ' ARTISTS';
     document.getElementById('searchCount').textContent = shuffled.length + ' IN ARCHIVE';
     if(current){ renderHero(current); applyBgWash(current); }
