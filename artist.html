@@ -168,6 +168,7 @@
     border-top: 1px solid var(--border);
     border-bottom: 2px solid var(--border);
     display: flex; gap: 28px; flex-wrap: wrap;
+    background: var(--links-bar-bg, transparent);
   }
   .ext-link {
     font-family: var(--type);
@@ -434,7 +435,7 @@
 <header>
   <a href="index.html" class="logo">AUDIOTOOL <span class="slash">//</span> FEATURED ARTISTS</a>
   <div style="display:flex;align-items:center;gap:20px">
-    <span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--mono)">v0.6.7</span>
+    <span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--mono)">v0.6.9</span>
     <a href="index.html" class="back">← All artists</a>
   </div>
 </header>
@@ -660,14 +661,14 @@ function render(a,idx,total,prev,next){
 
     <div class="main">
       <div class="interview">
-        ${a.about?`
+        ${(a.about||a.interview&&a.interview.length)?`
+          <div class="sec-title">Interview</div>
+          ${a.about?`
           <div class="about-block">
-            <div class="sec-title">About</div>
             <div class="about-text">${esc(a.about)}</div>
           </div>
-        `:''}
-        ${a.interview&&a.interview.length?`
-          <div class="sec-title">Interview</div>
+          `:''}
+          ${a.interview&&a.interview.length?`
           <div class="qa-list">
             ${a.interview.map(qa=>`
               <div class="qa-item">
@@ -676,6 +677,7 @@ function render(a,idx,total,prev,next){
               </div>
             `).join('')}
           </div>
+          `:''}
         `:''}
 
 
@@ -733,6 +735,8 @@ function render(a,idx,total,prev,next){
   // Apply desc_bg if set
   if(a.desc_bg) document.documentElement.style.setProperty('--desc-bg', a.desc_bg);
   else document.documentElement.style.removeProperty('--desc-bg');
+  if(a.links_bar_bg) document.documentElement.style.setProperty('--links-bar-bg', a.links_bar_bg);
+  else document.documentElement.style.removeProperty('--links-bar-bg');
   window._tracks=tracks.filter(t=>t.name&&t.track_artist);
   // Extract colors from album cover, fall back to artist photo
   // Use manually set colors first, fall back to auto-extraction
