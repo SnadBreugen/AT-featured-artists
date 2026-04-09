@@ -2460,7 +2460,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/09/18/comment/tpc-news_draft/attachment-c74fba8152fc4a2dbf11d222fb935a6b.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2022/09/18/albums/ge68uh/cover256x256-e51735b52b054a55957e55eeefec0191.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#c01b1b",
+    "color_accent": "#c01b1b",
+    "desc_bg": "#107a85",
+    "links_bar_color": "#ece6a7"
   },
   {
     "artist": "sphere",
