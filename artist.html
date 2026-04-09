@@ -385,6 +385,9 @@
   }
   .play-toggle:hover { background: var(--accent); color: var(--bg); }
   .album-player { margin-top: 1px; }
+  audio::-webkit-media-controls-overflow-button { display: none !important; }
+  audio::-webkit-media-controls-download-button { display: none !important; }
+  audio { --media-controls-overflow-menu-button: none; }
 
   /* ── NAV ── */
   .nav {
@@ -431,7 +434,7 @@
 <header>
   <a href="index.html" class="logo">AUDIOTOOL <span class="slash">//</span> FEATURED ARTISTS</a>
   <div style="display:flex;align-items:center;gap:20px">
-    <span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--mono)">v0.6.6</span>
+    <span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--mono)">v0.6.7</span>
     <a href="index.html" class="back">← All artists</a>
   </div>
 </header>
