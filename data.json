@@ -30,7 +30,9 @@
       },
       {
         "url": "https://www.audiotool.com/track/u9yqv9og/",
-        "desc": "Sim is great at distortion. THIS song is what anger sounds like."
+        "desc": "Sim is great at distortion. THIS song is what anger sounds like.",
+        "name": "u9yqv9og",
+        "track_artist": "sim"
       },
       {
         "url": "https://www.audiotool.com/track/those_chickens_are_up_to_something/",
@@ -96,7 +98,8 @@
       },
       {
         "url": "https://www.audiotool.com/track/pzl0zfth8/",
-        "desc": "Floating Points inspired"
+        "desc": "Floating Points inspired",
+        "name": "pzl0zfth8"
       }
     ],
     "interview": [
@@ -134,7 +137,13 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2021/08/08/comment/tpc-news_draft/attachment-1bb874d4e52643f7ae4646d778e5d5b4.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2021/08/16/albums/x7un5asj/cover256x256-e3af21a599ea4d9b868570a6465ca1b8.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2021/08/16/albums/x7un5asj/cover256x256-e3af21a599ea4d9b868570a6465ca1b8.jpg",
+    "social": {
+      "soundcloud": "https://soundcloud.com/gilesincharge/mix-for-the-folks-at-home",
+      "spotify": "https://open.spotify.com/playlist/6ifcfVN37oibmhseizqw0J",
+      "instagram": "https://www.instagram.com/g.i.les/"
+    },
+    "soundcloud": "https://soundcloud.com/gilesincharge/mix-for-the-folks-at-home"
   },
   {
     "artist": "Icebox",
@@ -218,7 +227,12 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2021/08/16/comment/tpc-news_draft/attachment-f080ea0fc8fc4aaebb0fb6ad40bcf2bc.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2021/08/23/albums/e1fvgi9c/cover256x256-2da1fd564b1f4dd99072312d31a2f1be.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2021/08/23/albums/e1fvgi9c/cover256x256-2da1fd564b1f4dd99072312d31a2f1be.jpg",
+    "social": {
+      "youtube": "https://www.youtube.com/channel/UCt8K32jeloGRwTwuz2tOZlQ",
+      "instagram": "https://www.instagram.com/call.me.icebox/",
+      "spotify": "https://open.spotify.com/artist/3EPASK2OUUcDo6RgfnroTK"
+    }
   },
   {
     "artist": "Fluent",
@@ -303,7 +317,10 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2021/08/26/comment/tpc-news_draft/attachment-6e8da1bba1b94a8f9dab063167c1601f.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2021/08/26/albums/8zwck/cover256x256-55c80cee9e7b48c4b401ae1a2dd21f99.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2021/08/26/albums/8zwck/cover256x256-55c80cee9e7b48c4b401ae1a2dd21f99.jpg",
+    "social": {
+      "soundcloud": "https://soundcloud.com/flvent"
+    }
   },
   {
     "artist": "Kibbey",
@@ -341,7 +358,8 @@
       },
       {
         "url": "https://www.audiotool.com/track/wb8av7v2wp/",
-        "desc": "maroon gate - endgame chord progressions."
+        "desc": "maroon gate - endgame chord progressions.",
+        "name": "wb8av7v2wp"
       },
       {
         "url": "https://www.audiotool.com/track/ukjf7taw/",
@@ -460,7 +478,8 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/renegade_full/",
-        "desc": "My favorite track on Audiotool. It makes me super emotional every time."
+        "desc": "My favorite track on Audiotool. It makes me super emotional every time.",
+        "name": "renegade full"
       },
       {
         "url": "https://www.audiotool.com/track/dmd00r97m5v/",
@@ -470,7 +489,8 @@
       },
       {
         "url": "https://www.audiotool.com/track/7o218xhe6/",
-        "desc": "QI - clear example that you can make hits on Audiotool."
+        "desc": "QI - clear example that you can make hits on Audiotool.",
+        "name": "7o218xhe6"
       },
       {
         "url": "https://www.audiotool.com/track/c5o1aev914/",
@@ -480,11 +500,13 @@
       },
       {
         "url": "https://www.audiotool.com/track/uuxd0t9b/",
-        "desc": "I EAT MERCURY by 1trillionMPH - powerful track."
+        "desc": "I EAT MERCURY by 1trillionMPH - powerful track.",
+        "name": "uuxd0t9b"
       },
       {
         "url": "https://www.audiotool.com/track/fhcadhc4pn7gjpoqz7fjl8hxkbs/",
-        "desc": "ARTIFICIAL 2 - my own track, abrasive and emotive."
+        "desc": "ARTIFICIAL 2 - my own track, abrasive and emotive.",
+        "name": "fhcadhc4pn7gjpoqz7fjl8hxkbs"
       }
     ],
     "interview": [
@@ -522,7 +544,10 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2021/10/31/comment/tpc-news_draft/attachment-577f8c796d5b40c1adc47e0f39dccfbf.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2021/11/01/albums/5c27f0z4/cover256x256-0d5116be87714def97576019ced34df4.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2021/11/01/albums/5c27f0z4/cover256x256-0d5116be87714def97576019ced34df4.jpg",
+    "social": {
+      "soundcloud": "https://soundcloud.com/1haydens"
+    }
   },
   {
     "artist": "Naut",
@@ -543,7 +568,8 @@
       },
       {
         "url": "https://www.audiotool.com/track/unscalable_sky/",
-        "desc": "André Michelle - the Heisenberg showcase"
+        "desc": "André Michelle - the Heisenberg showcase",
+        "name": "unscalable sky"
       },
       {
         "url": "https://www.audiotool.com/track/kitsch_kepz_remix/",
@@ -559,7 +585,8 @@
       },
       {
         "url": "https://www.audiotool.com/track/4b9qne1hdzm/",
-        "desc": "1991 by Wightfall - phenomenal sound design"
+        "desc": "1991 by Wightfall - phenomenal sound design",
+        "name": "4b9qne1hdzm"
       }
     ],
     "interview": [
@@ -629,7 +656,8 @@
       },
       {
         "url": "https://www.audiotool.com/track/chill_anon_lewi_-_teardrops_wip/",
-        "desc": "Teardrops ft. Nionsomnia - sounds really professional"
+        "desc": "Teardrops ft. Nionsomnia - sounds really professional",
+        "name": "chill anon lewi   teardrops wip"
       },
       {
         "url": "https://www.audiotool.com/track/ezvnu6tb/",
@@ -701,7 +729,8 @@
       },
       {
         "url": "https://www.audiotool.com/track/tq8ktyts/",
-        "desc": "]push (how do) by nico - great example of NOISE being gorgeous"
+        "desc": "]push (how do) by nico - great example of NOISE being gorgeous",
+        "name": "tq8ktyts"
       },
       {
         "url": "https://www.audiotool.com/track/peace_4_luv/",
@@ -772,7 +801,8 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/awaken_vip/",
-        "desc": "synthonix - never stopped loving the unique melodies"
+        "desc": "synthonix - never stopped loving the unique melodies",
+        "name": "awaken vip"
       },
       {
         "url": "https://www.audiotool.com/track/sit_back_relax/",
@@ -836,7 +866,8 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/ejtt4ifola/",
-        "desc": "Places by Soph - embodiment of untouched music"
+        "desc": "Places by Soph - embodiment of untouched music",
+        "name": "ejtt4ifola"
       },
       {
         "url": "https://www.audiotool.com/track/wl9ggytn/",
@@ -1038,7 +1069,11 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/02/21/comment/tpc-news_draft/attachment-72639ec0555b462cbe1fb927ef40474b.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2022/02/21/albums/2yit1/cover256x256-489bac6835a14e51aff26b310ea31eeb.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2022/02/21/albums/2yit1/cover256x256-489bac6835a14e51aff26b310ea31eeb.jpg",
+    "social": {
+      "soundcloud": "https://soundcloud.com/user-440167502"
+    },
+    "soundcloud": "https://soundcloud.com/user-440167502"
   },
   {
     "artist": "rai.",
@@ -1052,15 +1087,18 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/things_to_come-nssol/",
-        "desc": "Things To Come by 4▲4 - the 2nd song I listened to, convinced me to start"
+        "desc": "Things To Come by 4▲4 - the 2nd song I listened to, convinced me to start",
+        "name": "things to come nssol"
       },
       {
         "url": "https://www.audiotool.com/track/i_can_t_explain/",
-        "desc": "I Can't Explain by Ante - cold winter mornings on trains in Japan"
+        "desc": "I Can't Explain by Ante - cold winter mornings on trains in Japan",
+        "name": "i can t explain"
       },
       {
         "url": "https://www.audiotool.com/track/there_s_always_tomorrow/",
-        "desc": "there's always tomorrow by opaqity - was my alarm sound for a long time"
+        "desc": "there's always tomorrow by opaqity - was my alarm sound for a long time",
+        "name": "there s always tomorrow"
       },
       {
         "url": "https://www.audiotool.com/track/lonesome-xl0sef/",
@@ -1070,11 +1108,13 @@
       },
       {
         "url": "https://www.audiotool.com/track/6282/",
-        "desc": "6282 by SOLACE - gave me an idea about chords"
+        "desc": "6282 by SOLACE - gave me an idea about chords",
+        "name": "6282"
       },
       {
         "url": "https://www.audiotool.com/track/voi4u7vl4m/",
-        "desc": "Ashamed by THRONE - one of the absolute legends of AT"
+        "desc": "Ashamed by THRONE - one of the absolute legends of AT",
+        "name": "voi4u7vl4m"
       }
     ],
     "interview": [
@@ -1111,7 +1151,12 @@
         "a": "No matter how much you hate your work, don't ever delete it. You can hide it, but never delete it. You never know how much someone secretly loves your work. I've also deleted some of my own work, and I really regret it. Cherish everything you make."
       }
     ],
-    "photo": "https://at-cdn-s03.audiotool.com/2022/03/07/comment/tpc-news_draft/attachment-a6abd1c0f53b44618a7bdc84dc32a600.png"
+    "photo": "https://at-cdn-s03.audiotool.com/2022/03/07/comment/tpc-news_draft/attachment-a6abd1c0f53b44618a7bdc84dc32a600.png",
+    "social": {
+      "soundcloud": "https://soundcloud.com/officialrai",
+      "instagram": "https://www.instagram.com/this.is.rai/"
+    },
+    "soundcloud": "https://soundcloud.com/officialrai"
   },
   {
     "artist": "▽Momo▽桃.",
@@ -1287,7 +1332,11 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/04/03/comment/tpc-news_draft/attachment-9815d2123fe74cd293debd61652c73c6.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2022/04/02/albums/ir8d0wg2l/cover256x256-e304f8f9b8c844f0964f0de806049597.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2022/04/02/albums/ir8d0wg2l/cover256x256-e304f8f9b8c844f0964f0de806049597.jpg",
+    "social": {
+      "instagram": "https://www.instagram.com/wightfall/",
+      "spotify": "https://open.spotify.com/artist/3wLNmKdqqy3rjGRZY7PgvR"
+    }
   },
   {
     "artist": "Two Sworded",
@@ -1365,7 +1414,8 @@
       },
       {
         "url": "https://www.audiotool.com/track/lazy_sad_ft_looks/",
-        "desc": "lazy sad by looks & ford - studied on repeat trying to learn sidechain"
+        "desc": "lazy sad by looks & ford - studied on repeat trying to learn sidechain",
+        "name": "lazy sad ft looks"
       },
       {
         "url": "https://www.audiotool.com/track/oncuscha/",
@@ -1431,7 +1481,10 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/05/02/comment/tpc-news_draft/attachment-6e66091be1004e50acda7763b1e55149.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2022/05/01/albums/v2hcpjvp/cover256x256-9df6a3f63f3d45dd8b5d5d13de0c94fc.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2022/05/01/albums/v2hcpjvp/cover256x256-9df6a3f63f3d45dd8b5d5d13de0c94fc.jpg",
+    "social": {
+      "instagram": "https://www.instagram.com/po9t.mp3/"
+    }
   },
   {
     "artist": "sim",
@@ -1475,7 +1528,8 @@
       },
       {
         "url": "https://www.audiotool.com/track/maybe_i_can_actually_do_this_for_once/",
-        "desc": "maybe i can actually do this for once - my own track, a good time capsule"
+        "desc": "maybe i can actually do this for once - my own track, a good time capsule",
+        "name": "maybe i can actually do this for once"
       }
     ],
     "interview": [
@@ -1537,7 +1591,8 @@
       },
       {
         "url": "https://www.audiotool.com/track/p2ph66sa9rw/",
-        "desc": "circles [remix] by sim - influenced how I approach deep lofi texture"
+        "desc": "circles [remix] by sim - influenced how I approach deep lofi texture",
+        "name": "p2ph66sa9rw"
       },
       {
         "url": "https://www.audiotool.com/track/small_spaces/",
@@ -1617,7 +1672,8 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/bv3wq67w/",
-        "desc": "Identical [ollie flip] by ollie - one of my favorites"
+        "desc": "Identical [ollie flip] by ollie - one of my favorites",
+        "name": "bv3wq67w"
       },
       {
         "url": "https://www.audiotool.com/track/stressed_out_neo_flip/",
@@ -1689,7 +1745,10 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/06/12/comment/tpc-news_draft/attachment-af2d2360e247498f89fcfe80ec6622af.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2022/06/12/albums/28ylvwn0h/cover256x256-4898c79ae71647ff83c964c136b7eb68.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2022/06/12/albums/28ylvwn0h/cover256x256-4898c79ae71647ff83c964c136b7eb68.jpg",
+    "social": {
+      "instagram": "https://www.instagram.com/okin_uk/"
+    }
   },
   {
     "artist": "Client",
@@ -1715,7 +1774,8 @@
       },
       {
         "url": "https://www.audiotool.com/track/ctwlliqz20/",
-        "desc": "MONIKER by @sndcult - one of the most well mixed tracks on Audiotool"
+        "desc": "MONIKER by @sndcult - one of the most well mixed tracks on Audiotool",
+        "name": "ctwlliqz20"
       },
       {
         "url": "https://www.audiotool.com/track/ajknb1aex/",
@@ -1725,7 +1785,8 @@
       },
       {
         "url": "https://www.audiotool.com/track/rf4o40my9fj/",
-        "desc": "The Old World OST by Kyba & Zerod - reason why I make Sci-Fi genre"
+        "desc": "The Old World OST by Kyba & Zerod - reason why I make Sci-Fi genre",
+        "name": "rf4o40my9fj"
       },
       {
         "url": "https://www.audiotool.com/track/zndebpir/",
@@ -1787,19 +1848,23 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/zfg71nr7n/",
-        "desc": "worn by Audial - some of the best pads I've ever heard"
+        "desc": "worn by Audial - some of the best pads I've ever heard",
+        "name": "zfg71nr7n"
       },
       {
         "url": "https://www.audiotool.com/track/yqcsd6mrxf4g/",
-        "desc": "You & I by TEQTONIQ - I still have trouble comprehending that Teq is real"
+        "desc": "You & I by TEQTONIQ - I still have trouble comprehending that Teq is real",
+        "name": "yqcsd6mrxf4g"
       },
       {
         "url": "https://www.audiotool.com/track/outcry/",
-        "desc": "outcry by amoeba - simple premise with larger than life ambience"
+        "desc": "outcry by amoeba - simple premise with larger than life ambience",
+        "name": "outcry"
       },
       {
         "url": "https://www.audiotool.com/track/r6cdni3cw/",
-        "desc": "THE FATHER by leadenshrew - some British dude that hates Elden Ring"
+        "desc": "THE FATHER by leadenshrew - some British dude that hates Elden Ring",
+        "name": "r6cdni3cw"
       },
       {
         "url": "https://www.audiotool.com/track/aor3i40z/",
@@ -1809,7 +1874,8 @@
       },
       {
         "url": "https://www.audiotool.com/track/59p263ipxmb/",
-        "desc": "Chroma Force - my own track, like touching a Power Star in a Bugatti"
+        "desc": "Chroma Force - my own track, like touching a Power Star in a Bugatti",
+        "name": "59p263ipxmb"
       }
     ],
     "interview": [
@@ -1851,7 +1917,11 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/07/25/comment/tpc-news/attachment-4f889c42bbf34585a15d699d2a6032fb.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2022/08/21/albums/l1pqv/cover256x256-68b869809b394527ba76f2b0a29971ab.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2022/08/21/albums/l1pqv/cover256x256-68b869809b394527ba76f2b0a29971ab.jpg",
+    "social": {
+      "twitter": "https://twitter.com/Gravi_Tweets",
+      "instagram": "https://www.instagram.com/gravi.tv/"
+    }
   },
   {
     "artist": "nico",
@@ -1865,7 +1935,8 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/wq59x1kob/",
-        "desc": "idle idle by aeiter - this song has gotten me through so much"
+        "desc": "idle idle by aeiter - this song has gotten me through so much",
+        "name": "wq59x1kob"
       },
       {
         "url": "https://www.audiotool.com/track/why_did_i_fade_away/",
@@ -1881,11 +1952,13 @@
       },
       {
         "url": "https://www.audiotool.com/track/g1stsvqx5n1h/",
-        "desc": "nite owl by SOLACE - incredible vibe"
+        "desc": "nite owl by SOLACE - incredible vibe",
+        "name": "g1stsvqx5n1h"
       },
       {
         "url": "https://www.audiotool.com/track/maybe_i_can_actually_do_this_for_once/",
-        "desc": "maybe i can actually by sim - makes me feel like a warm Sunday afternoon"
+        "desc": "maybe i can actually by sim - makes me feel like a warm Sunday afternoon",
+        "name": "maybe i can actually do this for once"
       },
       {
         "url": "https://www.audiotool.com/track/xt2uc9a950g/",
@@ -1947,7 +2020,8 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/egodeath_w_opi/",
-        "desc": "egodeath w/ opi by looks - the best trap track on the website"
+        "desc": "egodeath w/ opi by looks - the best trap track on the website",
+        "name": "egodeath w opi"
       },
       {
         "url": "https://www.audiotool.com/track/why_did_i_fade_away/",
@@ -1957,15 +2031,18 @@
       },
       {
         "url": "https://www.audiotool.com/track/abs_x_lux_-_peripherals/",
-        "desc": "peripherals by abstract & looks - most infectious melodies I've ever heard"
+        "desc": "peripherals by abstract & looks - most infectious melodies I've ever heard",
+        "name": "abs x lux   peripherals"
       },
       {
         "url": "https://www.audiotool.com/track/fractals-3juepv/",
-        "desc": "Fractals by Infyuthsion - person I'm most grateful for in my growth"
+        "desc": "Fractals by Infyuthsion - person I'm most grateful for in my growth",
+        "name": "fractals 3juepv"
       },
       {
         "url": "https://www.audiotool.com/track/965ugbljb/",
-        "desc": "im not gonna keep asking by evilpanda107 - my favourite song on Audiotool"
+        "desc": "im not gonna keep asking by evilpanda107 - my favourite song on Audiotool",
+        "name": "965ugbljb"
       }
     ],
     "interview": [
@@ -2007,7 +2084,11 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/08/08/comment/tpc-news_draft/attachment-084a397452a5409a905ba78008a64f1b.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2022/08/07/albums/amowuc/cover256x256-b11bfeff401442d58a98c50bc6817bca.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2022/08/07/albums/amowuc/cover256x256-b11bfeff401442d58a98c50bc6817bca.jpg",
+    "social": {
+      "soundcloud": "https://soundcloud.com/leadenshrew"
+    },
+    "soundcloud": "https://soundcloud.com/leadenshrew"
   },
   {
     "artist": "viista",
@@ -2039,11 +2120,13 @@
       },
       {
         "url": "https://www.audiotool.com/track/xd28apfx/",
-        "desc": "FireBreather by laevent - atomic bomb converted into audio format"
+        "desc": "FireBreather by laevent - atomic bomb converted into audio format",
+        "name": "xd28apfx"
       },
       {
         "url": "https://www.audiotool.com/track/qn7sdhvoypc/",
-        "desc": "FloridaWater! by magi - sitting outside clearing your mind"
+        "desc": "FloridaWater! by magi - sitting outside clearing your mind",
+        "name": "qn7sdhvoypc"
       },
       {
         "url": "https://www.audiotool.com/track/rsirciyn4/",
@@ -2105,11 +2188,13 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/renegade_full/",
-        "desc": "looks - renegade, one of my all-time favorites"
+        "desc": "looks - renegade, one of my all-time favorites",
+        "name": "renegade full"
       },
       {
         "url": "https://www.audiotool.com/track/2gcp4ro7yj/",
-        "desc": "Frigolito - incredible production"
+        "desc": "Frigolito - incredible production",
+        "name": "2gcp4ro7yj"
       }
     ],
     "interview": [
@@ -2161,7 +2246,8 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/0oamzqce/",
-        "desc": "Forlorn by Waveshaper and Arcade - gets me emotional"
+        "desc": "Forlorn by Waveshaper and Arcade - gets me emotional",
+        "name": "0oamzqce"
       }
     ],
     "interview": [
@@ -2301,7 +2387,8 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/25aaa3p7jke/",
-        "desc": "Shreddin' by Giles - great grooves, stunning basslines, total creativity"
+        "desc": "Shreddin' by Giles - great grooves, stunning basslines, total creativity",
+        "name": "25aaa3p7jke"
       },
       {
         "url": "https://www.audiotool.com/track/d90d0c7b/",
@@ -2309,15 +2396,18 @@
       },
       {
         "url": "https://www.audiotool.com/track/bibmufgce8s5/",
-        "desc": "MIDNIGHT WONDERS by Tim Derry - smiling, crying and headbanging at the same time"
+        "desc": "MIDNIGHT WONDERS by Tim Derry - smiling, crying and headbanging at the same time",
+        "name": "bibmufgce8s5"
       },
       {
         "url": "https://www.audiotool.com/track/qlg1zsvg/",
-        "desc": "pack and get dressed by Snad Breugen - my spiritual and musical master"
+        "desc": "pack and get dressed by Snad Breugen - my spiritual and musical master",
+        "name": "qlg1zsvg"
       },
       {
         "url": "https://www.audiotool.com/track/kqezm1i6/",
-        "desc": "Déjà vu - my own track"
+        "desc": "Déjà vu - my own track",
+        "name": "kqezm1i6"
       }
     ],
     "interview": [
@@ -2474,23 +2564,28 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/4qenzr6cf833/",
-        "desc": "Soon I'll Be (roses) by evilpanda107/withdecay - beautiful, haunting, vocals So Good"
+        "desc": "Soon I'll Be (roses) by evilpanda107/withdecay - beautiful, haunting, vocals So Good",
+        "name": "4qenzr6cf833"
       },
       {
         "url": "https://www.audiotool.com/track/2qc3zdit7dr/",
-        "desc": "atlas by nico - such a creative and powerful piece"
+        "desc": "atlas by nico - such a creative and powerful piece",
+        "name": "2qc3zdit7dr"
       },
       {
         "url": "https://www.audiotool.com/track/nostalgia-yeq63qpz/",
-        "desc": "nostalgia by abstract - first artist that truly inspired me on AT"
+        "desc": "nostalgia by abstract - first artist that truly inspired me on AT",
+        "name": "nostalgia yeq63qpz"
       },
       {
         "url": "https://www.audiotool.com/track/h6es7bscjb3/",
-        "desc": "apogee by opaqity - may be one of the best artists period"
+        "desc": "apogee by opaqity - may be one of the best artists period",
+        "name": "h6es7bscjb3"
       },
       {
         "url": "https://www.audiotool.com/track/stardust-w2wgaaxx/",
-        "desc": "stardust by looks - masterfully produced, powerful, stunning"
+        "desc": "stardust by looks - masterfully produced, powerful, stunning",
+        "name": "stardust w2wgaaxx"
       },
       {
         "url": "https://www.audiotool.com/track/c5o1aev914/",
@@ -2537,7 +2632,10 @@
         "a": "Please be careful with those you choose to associate with. P.S. Stream my album."
       }
     ],
-    "photo": "https://at-cdn-s03.audiotool.com/2022/12/18/comment/tpc-news_draft/attachment-e7f6d2235b954f2d8a6918d0c7e1f6e9.png"
+    "photo": "https://at-cdn-s03.audiotool.com/2022/12/18/comment/tpc-news_draft/attachment-e7f6d2235b954f2d8a6918d0c7e1f6e9.png",
+    "social": {
+      "linktree": "https://linktr.ee/etterathmusic"
+    }
   },
   {
     "artist": "Xavi",
@@ -2551,31 +2649,38 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/4ipr9zkjm37/",
-        "desc": "Spaces by acloudyskye - where I realized how far they could go"
+        "desc": "Spaces by acloudyskye - where I realized how far they could go",
+        "name": "4ipr9zkjm37"
       },
       {
         "url": "https://www.audiotool.com/track/h6es7bscjb3/",
-        "desc": "apogee by opaqity - one of the most impressive tracks I've heard on AT"
+        "desc": "apogee by opaqity - one of the most impressive tracks I've heard on AT",
+        "name": "h6es7bscjb3"
       },
       {
         "url": "https://www.audiotool.com/track/stardust-w2wgaaxx/",
-        "desc": "stardust by looks - literally perfect in just about every way"
+        "desc": "stardust by looks - literally perfect in just about every way",
+        "name": "stardust w2wgaaxx"
       },
       {
         "url": "https://www.audiotool.com/track/leave-x6djj/",
-        "desc": "Moonrise by Kepz - knows how to use ambiance to set a stage"
+        "desc": "Moonrise by Kepz - knows how to use ambiance to set a stage",
+        "name": "leave x6djj"
       },
       {
         "url": "https://www.audiotool.com/track/when_stars_collide-kghra7tyi/",
-        "desc": "When Stars Collide by rnzr - one of the reasons I wanted to get good"
+        "desc": "When Stars Collide by rnzr - one of the reasons I wanted to get good",
+        "name": "when stars collide kghra7tyi"
       },
       {
         "url": "https://www.audiotool.com/track/afterglow_astrum_remix/",
-        "desc": "AFTERGLOW by Astrum - perfect notes of nostalgia"
+        "desc": "AFTERGLOW by Astrum - perfect notes of nostalgia",
+        "name": "afterglow astrum remix"
       },
       {
         "url": "https://www.audiotool.com/track/0yj6e6qb1m/",
-        "desc": "I. (Mango Beach) - my own track, the best I ever did on here"
+        "desc": "I. (Mango Beach) - my own track, the best I ever did on here",
+        "name": "0yj6e6qb1m"
       }
     ],
     "interview": [
@@ -2612,7 +2717,11 @@
         "a": "Keep working!!!! You're going to have harder days, but those will pass. Don't fall into sunken cost fallacy! One of the most freeing things you can do is take a synth or something you've been working on for an insane amount of time and say \"nah — this isn't working\" and delete it. Honestly feels good!!"
       }
     ],
-    "photo": "https://at-cdn-s03.audiotool.com/2022/12/26/comment/tpc-news_draft/attachment-d07d18e9f97d4689abea8f34ddf39d45.png"
+    "photo": "https://at-cdn-s03.audiotool.com/2022/12/26/comment/tpc-news_draft/attachment-d07d18e9f97d4689abea8f34ddf39d45.png",
+    "social": {
+      "twitter": "https://twitter.com/xavimakesmusic",
+      "instagram": "https://www.instagram.com/xavimakesmusic/"
+    }
   },
   {
     "artist": "voyd",
@@ -2680,7 +2789,8 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/reda045hw7/",
-        "desc": "My own track Vertigo"
+        "desc": "My own track Vertigo",
+        "name": "reda045hw7"
       }
     ],
     "interview": [
@@ -2736,7 +2846,8 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/or9wwaui/",
-        "desc": "sensory deprivation by sila and WPX - great balance"
+        "desc": "sensory deprivation by sila and WPX - great balance",
+        "name": "or9wwaui"
       }
     ],
     "interview": [
@@ -2856,7 +2967,8 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/or9wwaui/",
-        "desc": "My own collaboration with sila"
+        "desc": "My own collaboration with sila",
+        "name": "or9wwaui"
       }
     ],
     "interview": [
@@ -2942,7 +3054,8 @@
       },
       {
         "url": "https://www.audiotool.com/track/8fmvemqj0ky/",
-        "desc": "SNOW (mxcii remix) - my own track, quite satisfied with it"
+        "desc": "SNOW (mxcii remix) - my own track, quite satisfied with it",
+        "name": "8fmvemqj0ky"
       }
     ],
     "interview": [
@@ -3132,7 +3245,8 @@
       },
       {
         "url": "https://www.audiotool.com/track/vpj1idzcfv/",
-        "desc": "sim - has me jamming out every time"
+        "desc": "sim - has me jamming out every time",
+        "name": "vpj1idzcfv"
       },
       {
         "url": "https://www.audiotool.com/track/qjocor0ugp5/",
@@ -3364,7 +3478,8 @@
       },
       {
         "url": "https://www.audiotool.com/track/pit66himg28/",
-        "desc": "polyfiction by xoelmusic - sentimental, discovered when I joined"
+        "desc": "polyfiction by xoelmusic - sentimental, discovered when I joined",
+        "name": "pit66himg28"
       },
       {
         "url": "https://www.audiotool.com/track/u4z5rf3e/",
@@ -3422,7 +3537,10 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2025/01/30/comment/tpc-news/attachment-6642b72217c14557b859cf45156a8f74.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2025/01/30/albums/lh7cscpk/cover256x256-9d25b29c78f1425bb750924f030f6156.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2025/01/30/albums/lh7cscpk/cover256x256-9d25b29c78f1425bb750924f030f6156.jpg",
+    "social": {
+      "instagram": "https://www.instagram.com/althruistic_/"
+    }
   },
   {
     "artist": "Le Voile",
@@ -3436,15 +3554,18 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/brqlyrou57/",
-        "desc": "Explosion! VIP by RiMi & XculE - felt more excited than I had in a long time"
+        "desc": "Explosion! VIP by RiMi & XculE - felt more excited than I had in a long time",
+        "name": "brqlyrou57"
       },
       {
         "url": "https://www.audiotool.com/track/3hzoc0m8ox/",
-        "desc": "TRAUMA by JayFK - shared my love for Rezz with him"
+        "desc": "TRAUMA by JayFK - shared my love for Rezz with him",
+        "name": "3hzoc0m8ox"
       },
       {
         "url": "https://www.audiotool.com/track/f72sucv3ljqj/",
-        "desc": "Zero Light by Grawlix - convinced me there's real dubstep potential in AT"
+        "desc": "Zero Light by Grawlix - convinced me there's real dubstep potential in AT",
+        "name": "f72sucv3ljqj"
       },
       {
         "url": "https://www.audiotool.com/track/oxb34vh9xhr/",
@@ -3454,7 +3575,8 @@
       },
       {
         "url": "https://www.audiotool.com/track/rsmjd3wap2n/",
-        "desc": "Midnight Matters - my own track"
+        "desc": "Midnight Matters - my own track",
+        "name": "rsmjd3wap2n"
       }
     ],
     "interview": [
@@ -3499,7 +3621,11 @@
         "a": "Our deepest fear is not that we are inadequate. Our deepest fear is that we are powerful beyond measure. It is our light, not our darkness, that most frightens us. To anyone starting out, feeling like no one believes in you or that you can't succeed doing what you love: you can. Your talent is real, even if others don't see it yet. Believe in yourself, even when it feels like no one else does. Don't give up on your passions. And never, ever be afraid to be yourself."
       }
     ],
-    "photo": "https://at-cdn-s03.audiotool.com/2025/02/13/comment/tpc-news/attachment-2d9f7a6f1de343f3add6754e83e9ffa8.png"
+    "photo": "https://at-cdn-s03.audiotool.com/2025/02/13/comment/tpc-news/attachment-2d9f7a6f1de343f3add6754e83e9ffa8.png",
+    "social": {
+      "bandcamp": "https://levoile.bandcamp.com",
+      "instagram": "https://www.instagram.com/le_voile_music/"
+    }
   },
   {
     "artist": "anodyne",
@@ -3531,7 +3657,8 @@
       },
       {
         "url": "https://www.audiotool.com/track/cfpff6lg/",
-        "desc": "your side w/ civility by sim - absolute banger by my favourite AT duo"
+        "desc": "your side w/ civility by sim - absolute banger by my favourite AT duo",
+        "name": "cfpff6lg"
       },
       {
         "url": "https://www.audiotool.com/track/83mfygw1qs/",
@@ -3541,7 +3668,8 @@
       },
       {
         "url": "https://www.audiotool.com/track/60tciwin/",
-        "desc": "alibi(improv) - my own track, this is who I want to be musically"
+        "desc": "alibi(improv) - my own track, this is who I want to be musically",
+        "name": "60tciwin"
       }
     ],
     "interview": [
@@ -3587,7 +3715,10 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2025/04/24/comment/tpc-news/attachment-0ae2a6de4cee42d59d01ce02394deaa2.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2025/03/04/albums/6m3ql0k/cover256x256-97c8ef965f684af1ae84211081141a0a.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2025/03/04/albums/6m3ql0k/cover256x256-97c8ef965f684af1ae84211081141a0a.jpg",
+    "social": {
+      "linktree": "https://linktr.ee/hurakanofficial"
+    }
   },
   {
     "artist": "1trillionMPH",
@@ -3601,11 +3732,13 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/q5vzehwmj4/",
-        "desc": "carrion by evilpanda107 - the loop remixes moment was so amazing"
+        "desc": "carrion by evilpanda107 - the loop remixes moment was so amazing",
+        "name": "q5vzehwmj4"
       },
       {
         "url": "https://www.audiotool.com/track/qsw6b6tst/",
-        "desc": "dojo futon by laevent - Formulation is up there in greatest AT projects"
+        "desc": "dojo futon by laevent - Formulation is up there in greatest AT projects",
+        "name": "qsw6b6tst"
       },
       {
         "url": "https://www.audiotool.com/track/20m0d7hqg0/",
@@ -3627,7 +3760,8 @@
       },
       {
         "url": "https://www.audiotool.com/track/jlnd8baa6z/",
-        "desc": "FARTHER - my own, I realized what music is supposed to be"
+        "desc": "FARTHER - my own, I realized what music is supposed to be",
+        "name": "jlnd8baa6z"
       }
     ],
     "interview": [
@@ -3673,7 +3807,10 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2025/04/24/comment/tpc-news/attachment-1c9a73330d2e4d5caf41e8f06446e09f.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2025/03/13/albums/ft2ksm79/cover256x256-7bbf9162e7fb4c6f8744d0a8ef3c70d4.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2025/03/13/albums/ft2ksm79/cover256x256-7bbf9162e7fb4c6f8744d0a8ef3c70d4.jpg",
+    "social": {
+      "bandcamp": "https://1trillionmph.bandcamp.com"
+    }
   },
   {
     "artist": "ryzenn AKA taiko!",
@@ -3687,11 +3824,13 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/8y8u4v42a/",
-        "desc": "One of my favorite recent tracks"
+        "desc": "One of my favorite recent tracks",
+        "name": "8y8u4v42a"
       },
       {
         "url": "https://www.audiotool.com/track/0v6e3zf2/",
-        "desc": "From my Edition Audiotool album"
+        "desc": "From my Edition Audiotool album",
+        "name": "0v6e3zf2"
       }
     ],
     "interview": [
@@ -3756,23 +3895,28 @@
       },
       {
         "url": "https://www.audiotool.com/track/delta_phi/",
-        "desc": "Delta Phi by looks - one of the best sounding songs I've ever heard, 2014"
+        "desc": "Delta Phi by looks - one of the best sounding songs I've ever heard, 2014",
+        "name": "delta phi"
       },
       {
         "url": "https://www.audiotool.com/track/hftla1k16t/",
-        "desc": "Small rush by Amp7070 - I believe this is an example of a perfect track"
+        "desc": "Small rush by Amp7070 - I believe this is an example of a perfect track",
+        "name": "hftla1k16t"
       },
       {
         "url": "https://www.audiotool.com/track/vdluc0g3j/",
-        "desc": "Neuron by Project Epsilon - inspired me to switch from chiptune to dubstep"
+        "desc": "Neuron by Project Epsilon - inspired me to switch from chiptune to dubstep",
+        "name": "vdluc0g3j"
       },
       {
         "url": "https://www.audiotool.com/track/60tciwin/",
-        "desc": "alibi(improv) by anodyne - I probably wouldn't be making music without him"
+        "desc": "alibi(improv) by anodyne - I probably wouldn't be making music without him",
+        "name": "60tciwin"
       },
       {
         "url": "https://www.audiotool.com/track/6xzgxz3j03/",
-        "desc": "Fear & Forgiveness - my own, born from struggles with social anxiety"
+        "desc": "Fear & Forgiveness - my own, born from struggles with social anxiety",
+        "name": "6xzgxz3j03"
       }
     ],
     "interview": [
@@ -3818,7 +3962,10 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2025/04/24/comment/tpc-news/attachment-682f6cc19b8045019b6c844d622e5be0.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2025/04/10/albums/9p90rgu71/cover256x256-1e82b920ef43484eb4488ee7ff9c8ccb.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2025/04/10/albums/9p90rgu71/cover256x256-1e82b920ef43484eb4488ee7ff9c8ccb.jpg",
+    "social": {
+      "instagram": "https://www.instagram.com/v_irux/"
+    }
   },
   {
     "artist": "Head Trauma Romance",
@@ -3832,27 +3979,33 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/sinister_x_x/",
-        "desc": "sinister by X_X - first track with coolest sounds I'd ever heard on this site"
+        "desc": "sinister by X_X - first track with coolest sounds I'd ever heard on this site",
+        "name": "sinister x x"
       },
       {
         "url": "https://www.audiotool.com/track/la_la-k5gst92qh/",
-        "desc": "La La by Tocka & Avalone - game changing in 2018, still trying to get on this level"
+        "desc": "La La by Tocka & Avalone - game changing in 2018, still trying to get on this level",
+        "name": "la la k5gst92qh"
       },
       {
         "url": "https://www.audiotool.com/track/ws0npd73uxf/",
-        "desc": "Kibbey's house entry - could identify his track blindfolded"
+        "desc": "Kibbey's house entry - could identify his track blindfolded",
+        "name": "ws0npd73uxf"
       },
       {
         "url": "https://www.audiotool.com/track/jc0lvi0wa5c/",
-        "desc": "UDKBT by TEQTONIQ - huge banger, striving to get on their level"
+        "desc": "UDKBT by TEQTONIQ - huge banger, striving to get on their level",
+        "name": "jc0lvi0wa5c"
       },
       {
         "url": "https://www.audiotool.com/track/rb548nz7zd1r/",
-        "desc": "you always— by erthboy - craziest sounds I've heard on AT"
+        "desc": "you always— by erthboy - craziest sounds I've heard on AT",
+        "name": "rb548nz7zd1r"
       },
       {
         "url": "https://www.audiotool.com/track/i7cyjz583uty/",
-        "desc": "SELF DESTRUCT - my own, I think this is my best mix"
+        "desc": "SELF DESTRUCT - my own, I think this is my best mix",
+        "name": "i7cyjz583uty"
       }
     ],
     "interview": [
@@ -3912,23 +4065,28 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/ym5jnty43r6/",
-        "desc": "ah007 by Alex Hoffman - big influence, brings back memories of being a teenager"
+        "desc": "ah007 by Alex Hoffman - big influence, brings back memories of being a teenager",
+        "name": "ym5jnty43r6"
       },
       {
         "url": "https://www.audiotool.com/track/zz7rw64j6/",
-        "desc": "Thunderstorm by -Seismic- - crazy track, love the thunderstorm background"
+        "desc": "Thunderstorm by -Seismic- - crazy track, love the thunderstorm background",
+        "name": "zz7rw64j6"
       },
       {
         "url": "https://www.audiotool.com/track/oc47ugvdaa/",
-        "desc": "LOW by HTR & Sub4sax - one of the sickest tracks in Audiotool"
+        "desc": "LOW by HTR & Sub4sax - one of the sickest tracks in Audiotool",
+        "name": "oc47ugvdaa"
       },
       {
         "url": "https://www.audiotool.com/track/jjzd61y8gxx/",
-        "desc": "No Space, No Light by Snad Breugen - mad respect for this producer"
+        "desc": "No Space, No Light by Snad Breugen - mad respect for this producer",
+        "name": "jjzd61y8gxx"
       },
       {
         "url": "https://www.audiotool.com/track/rvb51vs/",
-        "desc": "My own track from the Edition Audiotool album"
+        "desc": "My own track from the Edition Audiotool album",
+        "name": "rvb51vs"
       }
     ],
     "interview": [
@@ -3973,7 +4131,12 @@
         "a": "We are all one big Audio family. Love each other. Respect each and everyone, no matter what. Be positive, inspiring, and encouraging to others. Negativity is not the way. (PLUR) Peace, Love, Unity, Respect."
       }
     ],
-    "photo": "https://at-cdn-s03.audiotool.com/2025/05/08/comment/tpc-news/attachment-c74eb5c1114a4373b7c52025b10e5929.png"
+    "photo": "https://at-cdn-s03.audiotool.com/2025/05/08/comment/tpc-news/attachment-c74eb5c1114a4373b7c52025b10e5929.png",
+    "social": {
+      "soundcloud": "https://soundcloud.com/dj-tek-nja",
+      "bandcamp": "https://djtek-nja.bandcamp.com"
+    },
+    "soundcloud": "https://soundcloud.com/dj-tek-nja"
   },
   {
     "artist": "Sub4sax",
@@ -3987,15 +4150,18 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/oc47ugvdaa/",
-        "desc": "LOW ft. Sub4sax - collab with Head Trauma Romance"
+        "desc": "LOW ft. Sub4sax - collab with Head Trauma Romance",
+        "name": "oc47ugvdaa"
       },
       {
         "url": "https://www.audiotool.com/track/yphnrriggk3/",
-        "desc": "Featured track by HTR & Sub4sax"
+        "desc": "Featured track by HTR & Sub4sax",
+        "name": "yphnrriggk3"
       },
       {
         "url": "https://www.audiotool.com/track/dyw76w/",
-        "desc": "From my Edition Audiotool album"
+        "desc": "From my Edition Audiotool album",
+        "name": "dyw76w"
       }
     ],
     "interview": [
@@ -4054,27 +4220,33 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/hk5txwk3/",
-        "desc": "M35 by Snio - one of my biggest inspirations, production incredibly clean"
+        "desc": "M35 by Snio - one of my biggest inspirations, production incredibly clean",
+        "name": "hk5txwk3"
       },
       {
         "url": "https://www.audiotool.com/track/33o8fg6f0x6/",
-        "desc": "VILE by leadenshrew - one of my biggest inspirations on this platform"
+        "desc": "VILE by leadenshrew - one of my biggest inspirations on this platform",
+        "name": "33o8fg6f0x6"
       },
       {
         "url": "https://www.audiotool.com/track/5j0pudknj/",
-        "desc": "Metropia by eratekk - my favorite DnB producer on AT"
+        "desc": "Metropia by eratekk - my favorite DnB producer on AT",
+        "name": "5j0pudknj"
       },
       {
         "url": "https://www.audiotool.com/track/b267lxs6h/",
-        "desc": "Covenant by Jetdarc & Client - masterclass in sound design and mixing"
+        "desc": "Covenant by Jetdarc & Client - masterclass in sound design and mixing",
+        "name": "b267lxs6h"
       },
       {
         "url": "https://www.audiotool.com/track/p83dthwpz5/",
-        "desc": "Chapter 1: Red Skies by SIREN - captures the essence of his unique style"
+        "desc": "Chapter 1: Red Skies by SIREN - captures the essence of his unique style",
+        "name": "p83dthwpz5"
       },
       {
         "url": "https://www.audiotool.com/track/n9ydabxo3n/",
-        "desc": "Starbound (Star VIP) - my own, most fun to make"
+        "desc": "Starbound (Star VIP) - my own, most fun to make",
+        "name": "n9ydabxo3n"
       }
     ],
     "interview": [
@@ -4146,11 +4318,13 @@
       },
       {
         "url": "https://www.audiotool.com/track/5fkyb5wn6ml/",
-        "desc": "Take Me by Le Voile - introduced me to Drum & Bass"
+        "desc": "Take Me by Le Voile - introduced me to Drum & Bass",
+        "name": "5fkyb5wn6ml"
       },
       {
         "url": "https://www.audiotool.com/track/snd-300/",
-        "desc": "snd-300 by Snad Breugen - a genius, first songs I listened to on AT"
+        "desc": "snd-300 by Snad Breugen - a genius, first songs I listened to on AT",
+        "name": "snd 300"
       },
       {
         "url": "https://www.audiotool.com/track/oxb34vh9xhr/",
@@ -4160,7 +4334,8 @@
       },
       {
         "url": "https://www.audiotool.com/track/nlmdzflb5hdm/",
-        "desc": "Aurora - my own, a declaration of love to my wife of 20 years"
+        "desc": "Aurora - my own, a declaration of love to my wife of 20 years",
+        "name": "nlmdzflb5hdm"
       }
     ],
     "interview": [
@@ -4206,7 +4381,10 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2025/06/19/comment/tpc-news/attachment-2c032dd8e6fc4cfead739340f42bc11e.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2025/06/19/albums/tvsrl4/cover256x256-6e177fcbd7c1402e9d32ce7bfdefd30e.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2025/06/19/albums/tvsrl4/cover256x256-6e177fcbd7c1402e9d32ce7bfdefd30e.jpg",
+    "social": {
+      "bandcamp": "https://soundsofatelier.bandcamp.com"
+    }
   },
   {
     "artist": "atelier",
@@ -4220,23 +4398,28 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/x7umb1jq3bd/",
-        "desc": "they love me by :_archive - haunting simplicity and emotional depth"
+        "desc": "they love me by :_archive - haunting simplicity and emotional depth",
+        "name": "x7umb1jq3bd"
       },
       {
         "url": "https://www.audiotool.com/track/ea2wmm8mwuhu/",
-        "desc": "Chop by evilpanda107 - balances raw aggression with clarity"
+        "desc": "Chop by evilpanda107 - balances raw aggression with clarity",
+        "name": "ea2wmm8mwuhu"
       },
       {
         "url": "https://www.audiotool.com/track/an5k1uqmr/",
-        "desc": "yōsei by etterath - intricate blend of ambient textures"
+        "desc": "yōsei by etterath - intricate blend of ambient textures",
+        "name": "an5k1uqmr"
       },
       {
         "url": "https://www.audiotool.com/track/g7kwswmzdooz/",
-        "desc": "counterpart by nico - clean and intentional, consistently pretty soundscape"
+        "desc": "counterpart by nico - clean and intentional, consistently pretty soundscape",
+        "name": "g7kwswmzdooz"
       },
       {
         "url": "https://www.audiotool.com/track/xd28apfx/",
-        "desc": "Boots! by laevent - noisy, unpredictable, full of personality"
+        "desc": "Boots! by laevent - noisy, unpredictable, full of personality",
+        "name": "xd28apfx"
       },
       {
         "url": "https://www.audiotool.com/track/74o8qx2a1hpy/",
@@ -4315,15 +4498,18 @@
       },
       {
         "url": "https://www.audiotool.com/track/3g3vlw3j3l/",
-        "desc": "Tonal contrast by Roy - one of the best beats I've ever heard"
+        "desc": "Tonal contrast by Roy - one of the best beats I've ever heard",
+        "name": "3g3vlw3j3l"
       },
       {
         "url": "https://www.audiotool.com/track/5e43g5duuq/",
-        "desc": "eulogy by sky bound zoo - amazing synth work, biggest recent influence"
+        "desc": "eulogy by sky bound zoo - amazing synth work, biggest recent influence",
+        "name": "5e43g5duuq"
       },
       {
         "url": "https://www.audiotool.com/track/pq4n8039wj7/",
-        "desc": "Daredevil - my own, favorite project to have worked on"
+        "desc": "Daredevil - my own, favorite project to have worked on",
+        "name": "pq4n8039wj7"
       }
     ],
     "interview": [
@@ -4395,19 +4581,23 @@
       },
       {
         "url": "https://www.audiotool.com/track/y1ud2i27mlfj/",
-        "desc": ".wav by Raiden - super impressive use of synths and lush chords"
+        "desc": ".wav by Raiden - super impressive use of synths and lush chords",
+        "name": "y1ud2i27mlfj"
       },
       {
         "url": "https://www.audiotool.com/track/bxnc8g0co9il/",
-        "desc": "f1ow by elias & noah - one of the most beautiful masterpieces I've ever heard"
+        "desc": "f1ow by elias & noah - one of the most beautiful masterpieces I've ever heard",
+        "name": "bxnc8g0co9il"
       },
       {
         "url": "https://www.audiotool.com/track/9kbgrdjnkdgf/",
-        "desc": "LXST NXGHT by Young kay - big inspiration for the fundamentals of my career"
+        "desc": "LXST NXGHT by Young kay - big inspiration for the fundamentals of my career",
+        "name": "9kbgrdjnkdgf"
       },
       {
         "url": "https://www.audiotool.com/track/ocze6c9me/",
-        "desc": "i know (w/kc x slow) - my own, one of my greatest works"
+        "desc": "i know (w/kc x slow) - my own, one of my greatest works",
+        "name": "ocze6c9me"
       }
     ],
     "interview": [
@@ -4467,15 +4657,18 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/nycjc30z/",
-        "desc": "Battle of Gods III - my first time listening to the trap side of audiotool"
+        "desc": "Battle of Gods III - my first time listening to the trap side of audiotool",
+        "name": "nycjc30z"
       },
       {
         "url": "https://www.audiotool.com/track/ht6z1etq/",
-        "desc": "Without You by Zack Reyes - had on repeat at age 14"
+        "desc": "Without You by Zack Reyes - had on repeat at age 14",
+        "name": "ht6z1etq"
       },
       {
         "url": "https://www.audiotool.com/track/cigmg8mhfu9w/",
-        "desc": "Warframe Menu Theme - my own track"
+        "desc": "Warframe Menu Theme - my own track",
+        "name": "cigmg8mhfu9w"
       }
     ],
     "interview": [
@@ -4534,27 +4727,33 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/k1osiy4y9i7/",
-        "desc": "mothsong by etterath - the most important song to me on Audiotool"
+        "desc": "mothsong by etterath - the most important song to me on Audiotool",
+        "name": "k1osiy4y9i7"
       },
       {
         "url": "https://www.audiotool.com/track/lni8ki6y/",
-        "desc": "see you again by polyspace - brings back nostalgia for childhood trips"
+        "desc": "see you again by polyspace - brings back nostalgia for childhood trips",
+        "name": "lni8ki6y"
       },
       {
         "url": "https://www.audiotool.com/track/ahntfhcz35/",
-        "desc": "the red moon's egg by we die - production is immaculate"
+        "desc": "the red moon's egg by we die - production is immaculate",
+        "name": "ahntfhcz35"
       },
       {
         "url": "https://www.audiotool.com/track/w6lmx83a59/",
-        "desc": "Chiliocosm by etterath - best production on Audiotool, hands down"
+        "desc": "Chiliocosm by etterath - best production on Audiotool, hands down",
+        "name": "w6lmx83a59"
       },
       {
         "url": "https://www.audiotool.com/track/7mhgv0xte/",
-        "desc": "w/ loste & skye by dove & polyspace - hits you like a wall of emotion"
+        "desc": "w/ loste & skye by dove & polyspace - hits you like a wall of emotion",
+        "name": "7mhgv0xte"
       },
       {
         "url": "https://www.audiotool.com/track/8ykxragg74/",
-        "desc": "REDROOM - my own track"
+        "desc": "REDROOM - my own track",
+        "name": "8ykxragg74"
       }
     ],
     "interview": [
@@ -4614,19 +4813,23 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/dughy9vxmhrrny9ldd9yayeuesaohoh/",
-        "desc": "Empty Promises by no vyce - something about the bouncy anxiety-filled beat"
+        "desc": "Empty Promises by no vyce - something about the bouncy anxiety-filled beat",
+        "name": "dughy9vxmhrrny9ldd9yayeuesaohoh"
       },
       {
         "url": "https://www.audiotool.com/track/eq4nc5h64his/",
-        "desc": "confused by naswalt - listened constantly on the bus in high school"
+        "desc": "confused by naswalt - listened constantly on the bus in high school",
+        "name": "eq4nc5h64his"
       },
       {
         "url": "https://www.audiotool.com/track/sm4wb1p8r0fj/",
-        "desc": "Fartstep by Vulkron - being in discord with him while this was produced"
+        "desc": "Fartstep by Vulkron - being in discord with him while this was produced",
+        "name": "sm4wb1p8r0fj"
       },
       {
         "url": "https://www.audiotool.com/track/4b9qne1hdzm/",
-        "desc": "Solitude by Wightfall - inspired me to look at how he did his sound design"
+        "desc": "Solitude by Wightfall - inspired me to look at how he did his sound design",
+        "name": "4b9qne1hdzm"
       },
       {
         "url": "https://www.audiotool.com/track/83mfygw1qs/",
@@ -4636,7 +4839,8 @@
       },
       {
         "url": "https://www.audiotool.com/track/jl9jtg5rg/",
-        "desc": "Untitled(prick/prod) - my own track, best I've published"
+        "desc": "Untitled(prick/prod) - my own track, best I've published",
+        "name": "jl9jtg5rg"
       }
     ],
     "interview": [
@@ -4695,27 +4899,33 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/unbreakable/",
-        "desc": "Unbreakable by Kepz"
+        "desc": "Unbreakable by Kepz",
+        "name": "unbreakable"
       },
       {
         "url": "https://www.audiotool.com/track/xcagqk/",
-        "desc": "O by oedipax"
+        "desc": "O by oedipax",
+        "name": "xcagqk"
       },
       {
         "url": "https://www.audiotool.com/track/conjure_the_ocean/",
-        "desc": "conjure the ocean by tornsage"
+        "desc": "conjure the ocean by tornsage",
+        "name": "conjure the ocean"
       },
       {
         "url": "https://www.audiotool.com/track/giants/",
-        "desc": "Giants by Olaf - great ambient soundscapes"
+        "desc": "Giants by Olaf - great ambient soundscapes",
+        "name": "giants"
       },
       {
         "url": "https://www.audiotool.com/track/s_st_02/",
-        "desc": "s.st.02 by Sandburgen - unique percussion"
+        "desc": "s.st.02 by Sandburgen - unique percussion",
+        "name": "s st 02"
       },
       {
         "url": "https://www.audiotool.com/track/9jocs31nx/",
-        "desc": "ensemble - my own track"
+        "desc": "ensemble - my own track",
+        "name": "9jocs31nx"
       }
     ],
     "interview": [
@@ -4776,27 +4986,33 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/w7evf0qdvx/",
-        "desc": "nåde by elias - loud, distorted, unique"
+        "desc": "nåde by elias - loud, distorted, unique",
+        "name": "w7evf0qdvx"
       },
       {
         "url": "https://www.audiotool.com/track/tjeor91e52s5/",
-        "desc": "Precinct 9 by Giles - first DnB that made me want to delve in"
+        "desc": "Precinct 9 by Giles - first DnB that made me want to delve in",
+        "name": "tjeor91e52s5"
       },
       {
         "url": "https://www.audiotool.com/track/2cpp37ei/",
-        "desc": "honest ugly & broken by naswalt - insane"
+        "desc": "honest ugly & broken by naswalt - insane",
+        "name": "2cpp37ei"
       },
       {
         "url": "https://www.audiotool.com/track/cymv2400idr/",
-        "desc": "my 816 by Yeetmanz - such a simple yet effective beat"
+        "desc": "my 816 by Yeetmanz - such a simple yet effective beat",
+        "name": "cymv2400idr"
       },
       {
         "url": "https://www.audiotool.com/track/9kdb0jk6/",
-        "desc": "oxygen^2 by po9t - one of the best beats I've heard, period"
+        "desc": "oxygen^2 by po9t - one of the best beats I've heard, period",
+        "name": "9kdb0jk6"
       },
       {
         "url": "https://www.audiotool.com/track/wwd53z8qto8y/",
-        "desc": "aliens are real - my own track, got me back into music"
+        "desc": "aliens are real - my own track, got me back into music",
+        "name": "wwd53z8qto8y"
       }
     ],
     "interview": [
@@ -4857,27 +5073,33 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/yphnrriggk3/",
-        "desc": "HTR and Sub4sax dropped this track right at a time when I was fully in my UKG era."
+        "desc": "HTR and Sub4sax dropped this track right at a time when I was fully in my UKG era.",
+        "name": "yphnrriggk3"
       },
       {
         "url": "https://www.audiotool.com/track/zah8ls1nv00j/",
-        "desc": "This track reminded me of what cool things can be accomplished with Audiotool."
+        "desc": "This track reminded me of what cool things can be accomplished with Audiotool.",
+        "name": "zah8ls1nv00j"
       },
       {
         "url": "https://www.audiotool.com/track/homeless/",
-        "desc": "This may as well have been a track by Burial himself."
+        "desc": "This may as well have been a track by Burial himself.",
+        "name": "homeless"
       },
       {
         "url": "https://www.audiotool.com/track/30jvqjhi0/",
-        "desc": "Alex Hoffman is a HUGE inspiration to me."
+        "desc": "Alex Hoffman is a HUGE inspiration to me.",
+        "name": "30jvqjhi0"
       },
       {
         "url": "https://www.audiotool.com/track/ua7qf7z7q/",
-        "desc": "THE WORST - this track needs no recognition but it sure deserves it."
+        "desc": "THE WORST - this track needs no recognition but it sure deserves it.",
+        "name": "ua7qf7z7q"
       },
       {
         "url": "https://www.audiotool.com/track/3xnj589j/",
-        "desc": "Runner's High is what I wish all of my tracks could be."
+        "desc": "Runner's High is what I wish all of my tracks could be.",
+        "name": "3xnj589j"
       }
     ],
     "interview": [
