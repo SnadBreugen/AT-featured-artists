@@ -324,26 +324,47 @@
     border: 1px solid var(--border); flex-shrink: 0;
     background: var(--surface);
   }
-  .track-item-wrap { position: relative; width: 100%; display: block; }
-  .track-desc-popup {
-    display: none;
-    position: absolute;
-    left: 0; right: 0;
-    background: var(--surface2,#1c1c1c);
-    border: 1px solid var(--accent);
-    border-top: none;
-    padding: 12px 14px;
-    font-size: 12px;
-    line-height: 1.7;
-    color: var(--text-muted);
+  .track-item { border-bottom: 1px solid var(--border); }
+  .track-btn {
+    background: var(--surface);
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: background .15s;
+    border: none; width: 100%;
+    text-align: left; color: inherit;
     font-family: var(--type);
-    z-index: 10;
+    min-width: 0;
   }
-  .track-desc-popup.open { display: block; }
-  .tn { font-size: 10px; color: var(--text-dim); font-variant-numeric: tabular-nums; }
-  .tt { font-size: 11px; color: var(--text-muted); overflow: hidden; letter-spacing: .02em; white-space: nowrap; text-overflow: ellipsis; min-width: 0; }
-  .tt-title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--text-muted); font-size: 11px; }
-  .tp { font-size: 9px; color: var(--text-dim); text-align: right; }
+  .track-btn:hover { background: #1e1e1e; }
+  .track-btn.active { background: #1e1e1e; }
+  .track-cover {
+    width: 32px; height: 32px; flex-shrink: 0;
+    object-fit: cover; display: block;
+    border: 1px solid var(--border);
+  }
+  .tt {
+    flex: 1;
+    font-size: 11px; color: var(--text-muted);
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    letter-spacing: .02em; min-width: 0;
+  }
+  .track-btn.active .tt { color: var(--text); }
+  .tp { font-size: 9px; color: var(--text-dim); flex-shrink: 0; }
+  .track-btn.active .tp { color: var(--accent); }
+  .track-desc {
+    display: none;
+    padding: 10px 12px 12px 54px;
+    font-size: 11px; line-height: 1.7;
+    color: var(--text-dim);
+    font-family: var(--type);
+    background: #1a1a1a;
+    border-top: 1px solid var(--border);
+  }
+  .track-desc.open { display: block; }
 
   .play-toggle {
     width: 100%;
@@ -410,7 +431,7 @@
 <header>
   <a href="index.html" class="logo">AUDIOTOOL <span class="slash">//</span> FEATURED ARTISTS</a>
   <div style="display:flex;align-items:center;gap:20px">
-    <span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--mono)">v0.4.8</span>
+    <span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--mono)">v0.4.9</span>
     <a href="index.html" class="back">← All artists</a>
   </div>
 </header>
@@ -691,21 +712,17 @@ function render(a,idx,total,prev,next){
         ${tracks.length?`
           <div>
             <div class="sidebar-title">Curated Tracks</div>
-            <div class="track-list">
-              ${tracks.filter(t=>t.name&&t.track_artist).map((t,i)=>{
-                const trackUrl=esc(t.url);
-                const coverId=tId(t.url);
-                const label=esc(t.track_artist)+' · '+esc(t.name);
-                const desc=t.desc?esc(t.desc):'';
-                return `<div class="track-item-wrap" id="wrap-${i}">
-                  <button class="track-btn" data-url="${trackUrl}" data-idx="${i}" onclick="toggleDesc(${i},'${trackUrl}')">
-                    <img class="track-cover" src="https://api.audiotool.com/track/${coverId}/image/64.jpg" onerror="this.style.display='none'" alt="">
-                    <span class="tt">${label}</span>
+            <div class="track-list" style="display:flex;flex-direction:column;gap:1px;background:var(--border);margin-top:1px">
+              ${tracks.filter(t=>t.name&&t.track_artist).map((t,i)=>`
+                <div class="track-item">
+                  <button class="track-btn" id="tbtn-${i}" data-url="${esc(t.url)}" onclick="toggleDesc(${i},'${esc(t.url)}')">
+                    <img class="track-cover" src="https://api.audiotool.com/track/${tId(t.url)}/image/64.jpg" onerror="this.style.display='none'" alt="">
+                    <span class="tt">${esc(t.track_artist)} · ${esc(t.name)}</span>
                     <span class="tp" id="tp-${i}">▷</span>
                   </button>
-                  ${desc?`<div class="track-desc-popup" id="tdesc-${i}">${desc}</div>`:''}
-                </div>`;
-              }).join('')}
+                  ${t.desc?`<div class="track-desc" id="tdesc-${i}">${esc(t.desc)}</div>`:''}
+                </div>
+              `).join('')}
             </div>
           </div>
         `:''}
