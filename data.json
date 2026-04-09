@@ -1885,7 +1885,11 @@
     "social": {
       "instagram": "https://www.instagram.com/okin_uk/"
     },
-    "is_current": false
+    "is_current": false,
+    "color1": "#dac4af",
+    "color_accent": "#dac4af",
+    "desc_bg": "#b0cad5",
+    "links_bar_color": "#b0cad5"
   },
   {
     "artist": "Client",
