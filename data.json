@@ -454,7 +454,11 @@
       "spotify": "https://open.spotify.com/artist/6kYl9IaKjiau5Hbs7cLMFM",
       "bandcamp": "https://kibbey.bandcamp.com/"
     },
-    "is_current": false
+    "is_current": false,
+    "color1": "#a09f72",
+    "color_accent": "#a09f72",
+    "desc_bg": "#a7a87f",
+    "links_bar_color": "#a7a87f"
   },
   {
     "artist": "Syntax",
