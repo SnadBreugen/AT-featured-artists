@@ -2068,7 +2068,11 @@
       "twitter": "https://twitter.com/Gravi_Tweets",
       "instagram": "https://www.instagram.com/gravi.tv/"
     },
-    "is_current": false
+    "is_current": false,
+    "color1": "#29c66b",
+    "color_accent": "#29c66b",
+    "desc_bg": "#5734d8",
+    "links_bar_color": "#b5dcc1"
   },
   {
     "artist": "nico",
