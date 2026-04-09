@@ -174,9 +174,9 @@ function selectArtist(idx){
     </div>
 
     <div class="ed-section">
-      <div class="ed-section-title">Interview Q&amp;As</div>
+      <div class="ed-section-title">Interview Q&As</div>
       <div id="qaList">${renderQAs(a.interview||[])}</div>
-      <button class="add-btn" onclick="addQA()">+ ADD Q&amp;A</button>
+      <button class="add-btn" onclick="addQA()">+ ADD Q&A</button>
     </div>
 
     <div class="ed-section">
@@ -206,18 +206,18 @@ function selectArtist(idx){
       <div class="ed-section-title">Images — Click to pick color</div>
       <div class="preview-grid">
         ${coverUrl?`<div><div class="preview-label">Album Cover</div><div class="preview-img-wrap"><img src="${coverUrl}" class="preview-img" id="coverImg" onclick="pickFromImage(event,'coverImg')" onerror="this.style.opacity='.3'"><canvas id="coverCanvas"></canvas></div><div style="font-size:10px;color:var(--dim);margin-top:4px">Click to pick color</div></div>`:`<div></div>`}
-        ${a.photo?`<div><div class="preview-label">Artist Photo</div><div class="preview-img-wrap"><img src="${a.photo}" class="preview-img" id="photoImg" onclick="pickFromImage(event,'photoImg')" onerror="this.style.opacity='.3'"><canvas id="photoCanvas"></canvas></div><div style="font-size:10px;color:var(--dim);margin-top:4px">Click to pick color</div></div>`:''}`}
+        ${a.photo?`<div><div class="preview-label">Artist Photo</div><div class="preview-img-wrap"><img src="${a.photo}" class="preview-img" id="photoImg" onclick="pickFromImage(event,'photoImg')" onerror="this.style.opacity='.3'"><canvas id="photoCanvas"></canvas></div><div style="font-size:10px;color:var(--dim);margin-top:4px">Click to pick color</div></div>`:''}
       </div>
       <div style="font-size:11px;color:var(--dim);margin-bottom:16px">
         Last picked: <span id="pickedColor" style="font-family:var(--mono)">—</span> &nbsp;
-        <button onclick="assignColorBoth()" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;">→ BACKGROUND &amp; HEADLINES</button>
+        <button onclick="assignColorBoth()" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;">→ BACKGROUND + HEADLINES</button>
       </div>
     </div>
 
     <div class="ed-section">
       <div class="ed-section-title">Colors</div>
       <div class="color-grid">
-        <div class="color-field"><label>Background &amp; Headlines</label><div class="color-picker-row"><input type="color" id="color1Picker" value="${c1}" oninput="syncColor('color1',this.value);syncColor('color_accent',this.value)"><input type="text" id="color1Text" value="${c1}" oninput="syncColorText('color1',this.value)" maxlength="7"></div></div>
+        <div class="color-field"><label>Background + Headlines</label><div class="color-picker-row"><input type="color" id="color1Picker" value="${c1}" oninput="syncColor('color1',this.value);syncColor('color_accent',this.value)"><input type="text" id="color1Text" value="${c1}" oninput="syncColorText('color1',this.value)" maxlength="7"></div></div>
         <div class="color-field"><label>Track Desc Background</label><div class="color-picker-row"><input type="color" id="desc_bgPicker" value="${a.desc_bg||'#e8e4dc'}" oninput="syncColor('desc_bg',this.value)"><input type="text" id="desc_bgText" value="${a.desc_bg||'#e8e4dc'}" oninput="syncColorText('desc_bg',this.value)" maxlength="7"></div></div>
       </div>
     </div>
@@ -270,7 +270,7 @@ async function lookupTrack(i){
   if(!url)return;
   const m=url.match(/\/track\/([^/?\s]+)/);
   if(!m){showToast('Invalid track URL',true);return;}
-  const tid=m[1].replace(/\/g,'');
+  const tid=m[1].replace(/\//g,'');
   const btn=document.getElementById(`tlookup${i}`);
   btn.disabled=true;btn.textContent='...';
   try{
