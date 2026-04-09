@@ -863,7 +863,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2021/12/27/comment/tpc-news_draft/attachment-0e1fb87d5984412590154be09c0ed51d.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2021/12/26/albums/wxwkob/cover256x256-3ca0d6aa71fa48e499532e7f570cf543.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#3c90b4",
+    "color_accent": "#3c90b4",
+    "desc_bg": "#94bbcc",
+    "links_bar_color": "#94bbcc"
   },
   {
     "artist": "Vulkron",
