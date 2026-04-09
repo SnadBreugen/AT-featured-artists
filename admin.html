@@ -56,7 +56,7 @@
   .track-lookup-btn{background:var(--surface2);border:1px solid var(--border);color:var(--accent);font-family:var(--block);font-size:12px;letter-spacing:.1em;padding:6px 14px;cursor:pointer;white-space:nowrap;}
   .track-lookup-btn:hover{background:var(--border);}
   .track-lookup-btn:disabled{opacity:.4;cursor:not-allowed;}
-  .color-grid{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:16px;margin-bottom:20px;}
+  .color-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px;max-width:480px;}
   .color-field label{display:block;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;}
   .color-picker-row{display:flex;align-items:center;border:1px solid var(--border);}
   .color-picker-row input[type=color]{width:40px;height:36px;border:none;padding:2px;background:var(--surface);cursor:pointer;flex-shrink:0;}
@@ -210,18 +210,14 @@ function selectArtist(idx){
       </div>
       <div style="font-size:11px;color:var(--dim);margin-bottom:16px">
         Last picked: <span id="pickedColor" style="font-family:var(--mono)">—</span> &nbsp;
-        <button onclick="assignColor('color1')" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;">→ BG TOP</button>
-        <button onclick="assignColor('color2')" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;">→ BG BOTTOM</button>
-        <button onclick="assignColor('color_accent')" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;">→ ACCENT</button>
+        <button onclick="assignColorBoth()" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;">→ BACKGROUND &amp; HEADLINES</button>
       </div>
     </div>
 
     <div class="ed-section">
       <div class="ed-section-title">Colors</div>
       <div class="color-grid">
-        <div class="color-field"><label>Background Top</label><div class="color-picker-row"><input type="color" id="color1Picker" value="${c1}" oninput="syncColor('color1',this.value)"><input type="text" id="color1Text" value="${c1}" oninput="syncColorText('color1',this.value)" maxlength="7"></div></div>
-        <div class="color-field"><label>Background Bottom</label><div class="color-picker-row"><input type="color" id="color2Picker" value="${c2}" oninput="syncColor('color2',this.value)"><input type="text" id="color2Text" value="${c2}" oninput="syncColorText('color2',this.value)" maxlength="7"></div></div>
-        <div class="color-field"><label>Accent / Headlines</label><div class="color-picker-row"><input type="color" id="color_accentPicker" value="${ca}" oninput="syncColor('color_accent',this.value)"><input type="text" id="color_accentText" value="${ca}" oninput="syncColorText('color_accent',this.value)" maxlength="7"></div></div>
+        <div class="color-field"><label>Background &amp; Headlines</label><div class="color-picker-row"><input type="color" id="color1Picker" value="${c1}" oninput="syncColor('color1',this.value);syncColor('color_accent',this.value)"><input type="text" id="color1Text" value="${c1}" oninput="syncColorText('color1',this.value)" maxlength="7"></div></div>
         <div class="color-field"><label>Track Desc Background</label><div class="color-picker-row"><input type="color" id="desc_bgPicker" value="${a.desc_bg||'#e8e4dc'}" oninput="syncColor('desc_bg',this.value)"><input type="text" id="desc_bgText" value="${a.desc_bg||'#e8e4dc'}" oninput="syncColorText('desc_bg',this.value)" maxlength="7"></div></div>
       </div>
     </div>
@@ -332,6 +328,7 @@ function pickFromImage(e,imgId){
   }
 }
 
+function assignColorBoth(){if(!lastPickedColor)return;syncColor('color1',lastPickedColor);syncColor('color2',lastPickedColor);syncColor('color_accent',lastPickedColor);document.getElementById('color1Picker').value=lastPickedColor;document.getElementById('color1Text').value=lastPickedColor;}
 function assignColor(f){if(!lastPickedColor)return;syncColor(f,lastPickedColor);document.getElementById(`${f}Picker`).value=lastPickedColor;document.getElementById(`${f}Text`).value=lastPickedColor;}
 function syncColor(f,v){if(currentIdx===null)return;data[currentIdx][f]=v;const t=document.getElementById(`${f}Text`),p=document.getElementById(`${f}Picker`);if(t)t.value=v;if(p)p.value=v;const c1=data[currentIdx].color1||'#333',c2=data[currentIdx].color2||'#333',ca=data[currentIdx].color_accent||c1;updatePreview(c1,c2,ca);markDirty();}
 function syncColorText(f,v){if(v.match(/^#[0-9a-fA-F]{6}$/))syncColor(f,v);}
