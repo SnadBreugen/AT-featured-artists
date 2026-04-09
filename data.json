@@ -1976,7 +1976,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/06/26/comment/tpc-news_draft/attachment-432ba0a120ec4c388e625876f69724db.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2022/06/26/albums/bhxw4zi3g/cover256x256-7395eb358eda486791cabc5c2498482d.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#e892a3",
+    "color_accent": "#e892a3",
+    "desc_bg": "#e4e2e3",
+    "links_bar_color": "#ac91a2"
   },
   {
     "artist": "Gravidon",
