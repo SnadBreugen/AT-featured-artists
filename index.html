@@ -7,14 +7,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Special+Elite&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #0e0e0e; --surface: #141414; --border: #222;
-    --text: #e8e4dc; --text-dim: #888; --accent: #e8c840;
+    --bg: #0e0e0e; --surface: #141414; --surface2: #1a1a1a;
+    --border: #222; --text: #e8e4dc; --text-dim: #888;
+    --accent: #e8c840;
     --block: "Bebas Neue", Impact, sans-serif;
     --type: "Special Elite", serif;
     --max: 1400px; --pad: 40px;
   }
   * { margin:0; padding:0; box-sizing:border-box; }
   body { background:var(--bg); color:var(--text); font-family:var(--type); min-height:100vh; overflow-x:hidden; }
+
+  /* BG WASH from current artist */
+  #bgWash {
+    position:fixed; inset:0; pointer-events:none; z-index:0;
+    opacity:0; transition:opacity 1s;
+  }
+  #bgWash.on { opacity:1; }
 
   /* HEADER */
   header {
@@ -26,115 +34,121 @@
   .logo .slash { color:var(--accent); }
   .header-count { font-family:var(--block); font-size:13px; letter-spacing:.1em; color:var(--text-dim); }
 
-  /* SEARCH BAR */
+  /* SEARCH */
   .search-bar {
-    border-bottom:1px solid var(--border); padding:16px var(--pad);
-    display:flex; align-items:center; gap:16px;
+    border-bottom:1px solid var(--border); padding:14px var(--pad);
+    display:flex; align-items:center; gap:16px; position:relative; z-index:1;
   }
   .search-input {
     background:var(--surface); border:1px solid var(--border); outline:none;
-    color:var(--text); font-family:var(--type); font-size:14px; padding:10px 16px;
-    width:320px; letter-spacing:.02em; transition:border-color .15s;
+    color:var(--text); font-family:var(--type); font-size:13px; padding:9px 14px;
+    width:300px; transition:border-color .15s;
   }
   .search-input:focus { border-color:var(--accent); }
   .search-input::placeholder { color:var(--text-dim); }
-  .search-count { font-family:var(--block); font-size:13px; letter-spacing:.1em; color:var(--text-dim); }
+  .search-count { font-family:var(--block); font-size:12px; letter-spacing:.1em; color:var(--text-dim); }
 
-  /* CURRENT FEATURED HERO */
-  .hero-section {
-    border-bottom:2px solid var(--border); padding:60px var(--pad);
-    max-width:var(--max); margin:0 auto;
-    display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center;
+  /* HERO */
+  .hero-wrap {
+    position:relative; z-index:1;
+    border-bottom:2px solid var(--border);
   }
-  .hero-label {
-    font-family:var(--block); font-size:12px; letter-spacing:.25em; color:var(--accent);
-    margin-bottom:16px;
+  .hero-tag {
+    padding:10px var(--pad); background:rgba(14,14,14,.6);
+    font-family:var(--block); font-size:11px; letter-spacing:.25em; color:var(--accent);
+    border-bottom:1px solid var(--border);
+  }
+  .hero {
+    max-width:var(--max); margin:0 auto; padding:56px var(--pad) 64px;
+    display:grid; grid-template-columns:1fr 360px; gap:80px; align-items:center;
   }
   .hero-name {
-    font-family:var(--block); font-size:clamp(64px, 8vw, 120px);
-    line-height:.9; letter-spacing:.05em; color:var(--text); margin-bottom:20px;
+    font-family:var(--block); font-size:clamp(72px, 9vw, 130px);
+    line-height:.88; letter-spacing:.04em; margin-bottom:16px;
+  }
+  .hero-realname {
+    font-family:var(--block); font-size:15px; letter-spacing:.2em;
+    color:var(--text-dim); margin-bottom:28px;
   }
   .hero-intro {
-    font-size:14px; line-height:1.8; color:var(--text-dim); max-width:500px;
-    font-style:italic; border-left:2px solid var(--accent); padding-left:16px;
-    margin-bottom:32px;
+    font-size:13px; line-height:1.85; color:var(--text-dim); max-width:560px;
+    font-style:italic; border-left:3px solid var(--accent); padding-left:18px;
+    margin-bottom:36px;
   }
-  .hero-link {
-    display:inline-block; font-family:var(--block); font-size:16px; letter-spacing:.15em;
-    background:var(--accent); color:var(--bg); padding:12px 32px; text-decoration:none;
-    transition:opacity .15s;
+  .hero-cta {
+    display:inline-block; font-family:var(--block); font-size:15px; letter-spacing:.15em;
+    padding:11px 30px; text-decoration:none; transition:opacity .15s;
+    background:var(--accent); color:#0e0e0e;
   }
-  .hero-link:hover { opacity:.85; }
-  .hero-photo-wrap { position:relative; }
+  .hero-cta:hover { opacity:.85; }
+  .hero-photo-col { position:relative; }
   .hero-photo {
-    width:100%; aspect-ratio:1; object-fit:cover; display:block;
-    border:1px solid var(--border);
+    width:100%; aspect-ratio:3/4; object-fit:cover; object-position:top;
+    display:block; border:1px solid var(--border);
   }
+  .hero-photo-placeholder { width:100%; aspect-ratio:3/4; background:var(--surface2); }
   .hero-photo-label {
     position:absolute; bottom:0; left:0; right:0;
-    background:rgba(14,14,14,.85); padding:12px 16px;
-    font-family:var(--block); font-size:11px; letter-spacing:.2em; color:var(--text-dim);
+    padding:10px 14px; background:rgba(14,14,14,.8);
+    font-family:var(--block); font-size:10px; letter-spacing:.2em; color:var(--text-dim);
   }
 
   /* GRID SECTION */
-  .grid-section { max-width:var(--max); margin:0 auto; padding:40px var(--pad); }
+  .grid-section { max-width:var(--max); margin:0 auto; padding:36px var(--pad); position:relative; z-index:1; }
   .grid-title {
-    font-family:var(--block); font-size:14px; letter-spacing:.2em; color:var(--text-dim);
-    margin-bottom:28px; text-transform:uppercase;
+    font-family:var(--block); font-size:13px; letter-spacing:.2em;
+    color:var(--text-dim); margin-bottom:24px;
   }
   .grid {
     display:grid;
-    grid-template-columns:repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns:repeat(auto-fill, minmax(200px, 1fr));
     gap:1px; background:var(--border);
   }
 
   /* CARD */
   .card {
-    background:var(--bg); cursor:pointer; transition:background .15s;
-    text-decoration:none; display:block; position:relative; overflow:hidden;
+    background:var(--bg); cursor:pointer; text-decoration:none;
+    display:flex; flex-direction:column; position:relative; overflow:hidden;
+    transition:background .15s;
   }
   .card:hover { background:var(--surface); }
-  .card:hover .card-name { color:var(--accent); }
+  .card-accent-bar { height:3px; width:100%; flex-shrink:0; }
+  .card-photo-wrap { position:relative; overflow:hidden; }
   .card-photo {
-    width:100%; aspect-ratio:1; object-fit:cover; display:block;
-    filter:grayscale(20%); transition:filter .2s;
+    width:100%; aspect-ratio:1; object-fit:cover; object-position:top;
+    display:block; transition:transform .3s;
+    filter:grayscale(15%);
   }
-  .card:hover .card-photo { filter:grayscale(0%); }
-  .card-photo-placeholder {
-    width:100%; aspect-ratio:1; background:var(--surface);
-    display:flex; align-items:center; justify-content:center;
-  }
-  .card-info { padding:14px 16px 16px; }
+  .card:hover .card-photo { transform:scale(1.03); filter:grayscale(0%); }
+  .card-photo-placeholder { width:100%; aspect-ratio:1; background:var(--surface2); }
+  .card-info { padding:12px 14px 14px; flex:1; }
   .card-name {
-    font-family:var(--block); font-size:20px; letter-spacing:.08em;
-    color:var(--text); transition:color .15s; line-height:1;
+    font-family:var(--block); font-size:18px; letter-spacing:.06em;
+    color:var(--text); line-height:1; margin-bottom:4px;
     white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+    transition:color .15s;
   }
-  .card-real { font-size:11px; color:var(--text-dim); margin-top:4px; font-family:var(--type); }
-  .card-date { font-size:10px; color:#444; margin-top:6px; font-family:var(--block); letter-spacing:.1em; }
+  .card:hover .card-name { color:var(--accent); }
+  .card-real { font-size:10px; color:var(--text-dim); margin-bottom:6px; }
+  .card-date { font-family:var(--block); font-size:10px; letter-spacing:.1em; color:#444; margin-bottom:8px; }
+  .card-intro { font-size:10px; line-height:1.6; color:#555; font-style:italic; }
 
-  /* COLOR WASH ON CARD */
-  .card-wash {
-    position:absolute; top:0; left:0; right:0; height:4px;
-    background:var(--c1, transparent);
-  }
-
-  /* NO RESULTS */
   .no-results {
     padding:60px; text-align:center; color:var(--text-dim);
-    font-family:var(--block); font-size:20px; letter-spacing:.15em;
-    display:none;
+    font-family:var(--block); font-size:20px; letter-spacing:.15em; display:none;
   }
 
-  @media(max-width:768px){
+  @media(max-width:900px){
     :root{--pad:20px;}
-    .hero-section{grid-template-columns:1fr;gap:32px;}
-    .hero-photo-wrap{order:-1;}
+    .hero{grid-template-columns:1fr;gap:32px;}
+    .hero-photo-col{order:-1;max-width:260px;}
     .grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));}
   }
 </style>
 </head>
 <body>
+
+<div id="bgWash"></div>
 
 <header>
   <a href="index.html" class="logo">AUDIOTOOL <span class="slash">//</span> FEATURED ARTISTS</a>
@@ -146,15 +160,11 @@
   <span class="search-count" id="searchCount"></span>
 </div>
 
-<!-- CURRENT FEATURED HERO -->
-<div id="heroSection" style="display:none">
-  <div style="border-bottom:1px solid var(--border);background:var(--surface);padding:12px var(--pad);max-width:100%">
-    <span style="font-family:var(--block);font-size:11px;letter-spacing:.2em;color:var(--accent)">▶ CURRENT FEATURED ARTIST</span>
-  </div>
-  <div class="hero-section" id="heroContent"></div>
+<div id="heroWrap" style="display:none" class="hero-wrap">
+  <div class="hero-tag">▶ CURRENT FEATURED ARTIST</div>
+  <div class="hero" id="heroContent"></div>
 </div>
 
-<!-- GRID -->
 <div class="grid-section">
   <div class="grid-title" id="gridTitle">ALL ARTISTS</div>
   <div class="grid" id="artistGrid"></div>
@@ -162,78 +172,75 @@
 </div>
 
 <script>
-let allArtists = [];
-let shuffled = [];
+let allArtists = [], shuffled = [];
 
 fetch('data.json')
   .then(r => r.json())
   .then(data => {
     allArtists = data;
-
-    // Find current featured
     const current = data.find(a => a.is_current);
-
-    // Shuffle the rest
-    const rest = current ? data.filter(a => !a.is_current) : [...data];
-    shuffled = rest.sort(() => Math.random() - 0.5);
+    const rest = data.filter(a => !a.is_current).sort(() => Math.random() - .5);
+    shuffled = rest;
 
     document.getElementById('headerCount').textContent = data.length + ' ARTISTS';
-    document.getElementById('searchCount').textContent = (current ? rest.length : data.length) + ' IN ARCHIVE';
+    document.getElementById('searchCount').textContent = rest.length + ' IN ARCHIVE';
 
-    if(current) renderHero(current);
+    if(current){
+      renderHero(current);
+      applyBgWash(current);
+    }
     renderGrid(shuffled);
   });
 
+function applyBgWash(a){
+  if(!a.color1) return;
+  const h = parseInt(a.color1.slice(1,3),16);
+  const e = parseInt(a.color1.slice(3,5),16);
+  const x = parseInt(a.color1.slice(5,7),16);
+  const wash = document.getElementById('bgWash');
+  wash.style.background = `radial-gradient(ellipse at top left, rgba(${h},${e},${x},0.12) 0%, transparent 60%)`;
+  wash.classList.add('on');
+}
+
 function renderHero(a){
-  const heroSection = document.getElementById('heroSection');
-  const heroContent = document.getElementById('heroContent');
-  heroSection.style.display = 'block';
-
-  const photo = a.photo || '';
-  const intro = (a.intro || '').slice(0, 280) + ((a.intro||'').length > 280 ? '…' : '');
-  const accentColor = a.color1 || a.color_accent || 'var(--accent)';
-
-  heroContent.style.borderLeft = `4px solid ${accentColor}`;
-  heroContent.innerHTML = `
+  document.getElementById('heroWrap').style.display = 'block';
+  const accent = a.color1 || a.color_accent || 'var(--accent)';
+  const intro = (a.intro||'').replace(/</g,'&lt;');
+  document.getElementById('heroContent').innerHTML = `
     <div>
-      <div class="hero-label" style="color:${accentColor}">FEATURED ARTIST</div>
-      <div class="hero-name" style="color:${accentColor}">${a.artist}</div>
-      ${a.real_name ? `<div style="font-family:var(--block);font-size:14px;letter-spacing:.15em;color:var(--text-dim);margin-bottom:20px">${a.real_name}</div>` : ''}
-      ${intro ? `<div class="hero-intro">${intro}</div>` : ''}
-      <a href="artist.html?id=${encodeURIComponent(a.artist)}" class="hero-link" style="background:${accentColor};color:#0e0e0e">READ MORE ↗</a>
+      <div class="hero-name" style="color:${accent}">${a.artist}</div>
+      ${a.real_name ? `<div class="hero-realname">${a.real_name}</div>` : ''}
+      ${intro ? `<div class="hero-intro" style="border-left-color:${accent}">${intro}</div>` : ''}
+      <a href="artist.html?id=${encodeURIComponent(a.artist)}" class="hero-cta" style="background:${accent}">READ MORE ↗</a>
     </div>
-    <div class="hero-photo-wrap">
-      ${photo
-        ? `<img src="${photo}" class="hero-photo" alt="${a.artist}" onerror="this.parentElement.innerHTML='<div class=hero-photo-placeholder></div>'">`
+    <div class="hero-photo-col">
+      ${a.photo
+        ? `<img src="${a.photo}" class="hero-photo" alt="${a.artist}" onerror="this.outerHTML='<div class=hero-photo-placeholder></div>'">`
         : '<div class="hero-photo-placeholder"></div>'}
       <div class="hero-photo-label">${a.artist.toUpperCase()}</div>
-    </div>
-  `;
+    </div>`;
 }
 
 function renderGrid(artists){
   const grid = document.getElementById('artistGrid');
   const noRes = document.getElementById('noResults');
-
-  if(!artists.length){
-    grid.innerHTML = '';
-    noRes.style.display = 'block';
-    return;
-  }
+  if(!artists.length){ grid.innerHTML=''; noRes.style.display='block'; return; }
   noRes.style.display = 'none';
-
   grid.innerHTML = artists.map(a => {
-    const photo = a.photo || '';
-    const accentColor = a.color1 || a.color_accent || '';
+    const accent = a.color1 || a.color_accent || '';
+    const intro = (a.intro||'').slice(0,80).replace(/</g,'&lt;') + ((a.intro||'').length>80?'…':'');
     return `<a href="artist.html?id=${encodeURIComponent(a.artist)}" class="card">
-      ${accentColor ? `<div class="card-wash" style="background:${accentColor}"></div>` : ''}
-      ${photo
-        ? `<img src="${photo}" class="card-photo" alt="${a.artist}" loading="lazy" onerror="this.parentElement.innerHTML+='<div class=card-photo-placeholder></div>';this.remove()">`
-        : '<div class="card-photo-placeholder"></div>'}
+      <div class="card-accent-bar" style="background:${accent||'var(--border)'}"></div>
+      <div class="card-photo-wrap">
+        ${a.photo
+          ? `<img src="${a.photo}" class="card-photo" alt="${a.artist}" loading="lazy" onerror="this.outerHTML='<div class=card-photo-placeholder></div>'">`
+          : '<div class="card-photo-placeholder"></div>'}
+      </div>
       <div class="card-info">
         <div class="card-name">${a.artist}</div>
         ${a.real_name ? `<div class="card-real">${a.real_name}</div>` : ''}
         <div class="card-date">${(a.date||'').slice(0,4)}</div>
+        ${intro ? `<div class="card-intro">${intro}</div>` : ''}
       </div>
     </a>`;
   }).join('');
@@ -241,22 +248,17 @@ function renderGrid(artists){
 
 function doSearch(){
   const q = document.getElementById('searchInput').value.toLowerCase().trim();
-  const gridTitle = document.getElementById('gridTitle');
-
   if(!q){
     document.getElementById('searchCount').textContent = shuffled.length + ' IN ARCHIVE';
-    gridTitle.textContent = 'ALL ARTISTS';
+    document.getElementById('gridTitle').textContent = 'ALL ARTISTS';
     renderGrid(shuffled);
     return;
   }
-
   const results = allArtists.filter(a =>
-    a.artist.toLowerCase().includes(q) ||
-    (a.real_name||'').toLowerCase().includes(q)
+    a.artist.toLowerCase().includes(q) || (a.real_name||'').toLowerCase().includes(q)
   );
-
   document.getElementById('searchCount').textContent = results.length + ' RESULTS';
-  gridTitle.textContent = 'SEARCH RESULTS';
+  document.getElementById('gridTitle').textContent = 'SEARCH RESULTS';
   renderGrid(results);
 }
 </script>
