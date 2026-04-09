@@ -394,7 +394,7 @@
 <header>
   <a href="index.html" class="logo">AUDIOTOOL <span class="slash">//</span> FEATURED ARTISTS</a>
   <div style="display:flex;align-items:center;gap:20px">
-    <span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--mono)">v0.4.3</span>
+    <span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--mono)">v0.4.4</span>
     <a href="index.html" class="back">← All artists</a>
   </div>
 </header>
@@ -504,7 +504,7 @@ function loadTrack(idx){
     b.querySelector('.tp').textContent=i===idx?'▶':'▷';
   });
   const trackId=m[1].replace(/\/$/,'');
-  const mp3=`https://api.audiotool.com/track/${trackId}/stream.mp3`;
+  const mp3=`https://api.audiotool.com/track/${trackId}/play.mp3`;
   player.innerHTML=`
     <div style="background:var(--surface);border:1px solid var(--border);padding:12px">
       <div style="font-size:10px;color:var(--accent);margin-bottom:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;letter-spacing:.06em;font-family:var(--block)">
