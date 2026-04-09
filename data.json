@@ -5261,6 +5261,6 @@
     "color_accent": "#01b541",
     "desc_bg": "#b1ccdd",
     "links_bar_color": "#b1ccdd",
-    "is_current": false
+    "is_current": true
   }
 ]
