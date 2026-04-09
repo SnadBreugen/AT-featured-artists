@@ -2741,7 +2741,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/11/27/comment/tpc-news_draft/attachment-57a53456b0894f15910a2b314d25d67d.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2022/11/27/albums/a6bxz/cover256x256-27a8029876bd4e0297be782788ea3348.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#fefefe",
+    "color_accent": "#fefefe",
+    "desc_bg": "#d5cdcd",
+    "links_bar_color": "#d5cdcd"
   },
   {
     "artist": "etterath",
