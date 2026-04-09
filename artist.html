@@ -410,7 +410,7 @@
 <header>
   <a href="index.html" class="logo">AUDIOTOOL <span class="slash">//</span> FEATURED ARTISTS</a>
   <div style="display:flex;align-items:center;gap:20px">
-    <span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--mono)">v0.4.6</span>
+    <span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--mono)">v0.4.7</span>
     <a href="index.html" class="back">← All artists</a>
   </div>
 </header>
@@ -539,6 +539,19 @@ function loadTrack(idx){
     </div>`;
   setTimeout(()=>{ const a=player.querySelector('audio'); if(a) a.play().catch(()=>{}); },50);
 }
+
+window.toggleDesc=function(idx, url){
+  // Toggle popup
+  const popup=document.getElementById('tdesc-'+idx);
+  if(popup){
+    document.querySelectorAll('.track-desc-popup').forEach((p,i)=>{
+      if(i!==idx) p.classList.remove('open');
+    });
+    popup.classList.toggle('open');
+  }
+  // Play
+  window.playTrack(url);
+};
 
 window.playTrack=function(url){
   const tracks=window._tracks;
@@ -679,13 +692,20 @@ function render(a,idx,total,prev,next){
           <div>
             <div class="sidebar-title">Curated Tracks</div>
             <div class="track-list">
-              ${tracks.filter(t=>t.name&&t.track_artist).map((t,i)=>`
-                <button class="track-btn" data-url="${esc(t.url)}" onclick="playTrack('${esc(t.url)}')">
-                  <img class="track-cover" src="https://api.audiotool.com/track/${tId(t.url)}/image/64.jpg" onerror="this.style.opacity='.3'" alt="">
-                  <span class="tt">${esc(t.track_artist)} · ${esc(t.name)}</span>
-                  <span class="tp">▷</span>
-                </button>
-              `).join('')}
+              ${tracks.filter(t=>t.name&&t.track_artist).map((t,i)=>{
+                const trackUrl=esc(t.url);
+                const coverId=tId(t.url);
+                const label=esc(t.track_artist)+' · '+esc(t.name);
+                const desc=t.desc?esc(t.desc):'';
+                return `<div class="track-item-wrap" id="wrap-${i}">
+                  <button class="track-btn" data-url="${trackUrl}" data-idx="${i}" onclick="toggleDesc(${i},'${trackUrl}')">
+                    <img class="track-cover" src="https://api.audiotool.com/track/${coverId}/image/64.jpg" onerror="this.style.display='none'" alt="">
+                    <span class="tt">${label}</span>
+                    <span class="tp" id="tp-${i}">▷</span>
+                  </button>
+                  ${desc?`<div class="track-desc-popup" id="tdesc-${i}">${desc}</div>`:''}
+                </div>`;
+              }).join('')}
             </div>
           </div>
         `:''}
