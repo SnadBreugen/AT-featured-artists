@@ -324,6 +324,22 @@
     border: 1px solid var(--border); flex-shrink: 0;
     background: var(--surface);
   }
+  .track-item-wrap { position: relative; }
+  .track-desc-popup {
+    display: none;
+    position: absolute;
+    left: 0; right: 0;
+    background: var(--surface2,#1c1c1c);
+    border: 1px solid var(--accent);
+    border-top: none;
+    padding: 12px 14px;
+    font-size: 12px;
+    line-height: 1.7;
+    color: var(--text-muted);
+    font-family: var(--type);
+    z-index: 10;
+  }
+  .track-desc-popup.open { display: block; }
   .tn { font-size: 10px; color: var(--text-dim); font-variant-numeric: tabular-nums; }
   .tt { font-size: 11px; color: var(--text-muted); overflow: hidden; letter-spacing: .02em; white-space: nowrap; text-overflow: ellipsis; }
   .tt-title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--text-muted); font-size: 11px; }
@@ -394,7 +410,7 @@
 <header>
   <a href="index.html" class="logo">AUDIOTOOL <span class="slash">//</span> FEATURED ARTISTS</a>
   <div style="display:flex;align-items:center;gap:20px">
-    <span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--mono)">v0.4.4</span>
+    <span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--mono)">v0.4.5</span>
     <a href="index.html" class="back">← All artists</a>
   </div>
 </header>
@@ -531,6 +547,16 @@ window.playTrack=function(url){
   const id=m[1];
   const idx=tracks.findIndex(t=>(t.url||'').includes(id));
   if(idx===-1) return;
+  // Toggle description popup
+  const btn=document.querySelector(`.track-btn[data-url="${url}"]`);
+  if(btn){
+    const popup=btn.closest('.track-item-wrap')?.querySelector('.track-desc-popup');
+    if(popup){
+      // Close all others
+      document.querySelectorAll('.track-desc-popup').forEach(p=>{ if(p!==popup) p.classList.remove('open'); });
+      popup.classList.toggle('open');
+    }
+  }
   if(!albumOpen){
     albumOpen=true;
     document.getElementById('playIcon').textContent='■';
@@ -655,7 +681,7 @@ function render(a,idx,total,prev,next){
             <div class="track-list">
               ${tracks.filter(t=>t.name&&t.track_artist).map((t,i)=>`
                 <button class="track-btn" data-url="${esc(t.url)}" onclick="playTrack('${esc(t.url)}')">
-                  <img class="track-cover" src="${coverSrc||''}" onerror="this.style.display='none'" alt="">
+                  <img class="track-cover" src="https://api.audiotool.com/track/${tId(t.url)}/image/64.jpg" onerror="this.src='${coverSrc||''}'" alt="">
                   <span class="tt">${esc(t.track_artist)} · ${esc(t.name)}</span>
                   <span class="tp">▷</span>
                 </button>
