@@ -360,7 +360,11 @@
     "social": {
       "soundcloud": "https://soundcloud.com/flvent"
     },
-    "is_current": false
+    "is_current": false,
+    "color1": "#ab8157",
+    "color_accent": "#ab8157",
+    "desc_bg": "#edd0b6",
+    "links_bar_color": "#edd0b6"
   },
   {
     "artist": "Kibbey",
