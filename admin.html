@@ -209,6 +209,14 @@ function selectArtist(idx){
         <div class="field-row"><div class="field-label">Real Name</div><input class="field-input" value="${esc(a.real_name||'')}" onchange="save('real_name',this.value)"></div>
         <div class="field-row"><div class="field-label">Date (YYYY-MM-DD)</div><input class="field-input" value="${esc(a.date||'')}" onchange="save('date',this.value)"></div>
         <div class="field-row"><div class="field-label">Artist Photo URL</div><input class="field-input" value="${esc(a.photo||'')}" onchange="save('photo',this.value)"></div>
+        <div class="field-row"><div class="field-label">Photo Position (e.g. top, center, 50% 20%)</div>
+          <div style="display:flex;gap:8px">
+            <input class="field-input" style="flex:1" value="${esc(a.photo_position||'top')}" onchange="save('photo_position',this.value)" placeholder="top">
+            <button onclick="save('photo_position','top');this.previousElementSibling.value='top'" style="background:var(--surface);border:1px solid var(--border);color:var(--muted);font-family:var(--mono);font-size:10px;padding:0 10px;cursor:pointer;">top</button>
+            <button onclick="save('photo_position','center');this.previousElementSibling.previousElementSibling.value='center'" style="background:var(--surface);border:1px solid var(--border);color:var(--muted);font-family:var(--mono);font-size:10px;padding:0 10px;cursor:pointer;">center</button>
+            <button onclick="save('photo_position','bottom');this.previousElementSibling.previousElementSibling.previousElementSibling.value='bottom'" style="background:var(--surface);border:1px solid var(--border);color:var(--muted);font-family:var(--mono);font-size:10px;padding:0 10px;cursor:pointer;">bottom</button>
+          </div>
+        </div>
         <div class="field-row"><div class="field-label">Audiotool Profile URL</div><input class="field-input" value="${esc(a.at_profile||'')}" onchange="save('at_profile',this.value)"></div>
         <div class="field-row"><div class="field-label">Album URL</div><input class="field-input" value="${esc(a.album_url||'')}" onchange="save('album_url',this.value)"></div>
         <div class="field-row"><div class="field-label">Cover URL (override)</div><input class="field-input" value="${esc(a.cover_url||'')}" onchange="save('cover_url',this.value)"></div>
