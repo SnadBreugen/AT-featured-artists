@@ -416,18 +416,18 @@ function tId(url){
   return m?m[1]:'';
 }
 function tSlug(url, desc, name){
-  // Use track name from JSON if available
-  if(name && name.length > 0) return name;
-  // Fall back to desc snippet
-  if(desc && desc.length > 0){
-    const short = desc.split('.')[0].split(',')[0].trim();
-    return short.length > 60 ? short.slice(0,57)+'...' : short;
-  }
+  // Skip if name is a pure hash ID
+  const isHash = name && /^[a-z0-9]{8,}$/.test(name) && !/[_\s-]/.test(name);
+  if(name && name.length > 0 && !isHash) return name;
+  // Fall back to URL slug if readable
   const m=url.match(/\/track\/([^/]+)/);
-  if(!m) return url;
-  const slug = m[1];
-  if(/^[a-f0-9]{8,}$/.test(slug)) return '—';
-  return slug.replace(/_/g,' ').replace(/-[a-f0-9]{6,}$/,'').replace(/-/g,' ');
+  if(m){
+    const slug = m[1];
+    if(!/^[a-z0-9]{8,}$/.test(slug)){
+      return slug.replace(/_/g,' ').replace(/-[a-z0-9]{6,}$/,'').replace(/-/g,' ');
+    }
+  }
+  return '—';
 }
 
 function extractColors(src, cb){
@@ -600,12 +600,10 @@ function render(a,idx,total,prev,next){
           <div>
             <div class="sidebar-title">Curated Tracks</div>
             <div class="track-list">
-              ${tracks.map((t,i)=>`
+              ${tracks.filter(t=>t.name&&t.track_artist).map((t,i)=>`
                 <button class="track-btn" data-url="${esc(t.url)}" onclick="playTrack('${esc(t.url)}')">
-                  <img class="track-cover" src="https://api.audiotool.com/track/${tId(t.url)}/image/32.jpg" onerror="this.style.opacity='.15'" alt="">
-                  <span class="tt">
-                    <span class="tt-title">${t.track_artist?esc(t.track_artist)+' · '+esc(tSlug(t.url,t.desc,t.name)):esc(tSlug(t.url,t.desc,t.name))}</span>
-                  </span>
+                  <img class="track-cover" src="${coverSrc||''}" onerror="this.style.display='none'" alt="">
+                  <span class="tt">${esc(t.track_artist)} · ${esc(t.name)}</span>
                   <span class="tp">▷</span>
                 </button>
               `).join('')}
