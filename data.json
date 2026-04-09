@@ -2633,7 +2633,11 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/10/17/comment/tpc-news_draft/attachment-7e0fb6b2f5f94a27bb28bc9d3e41d41e.png",
-    "is_current": false
+    "is_current": false,
+    "color1": "#e5730d",
+    "color_accent": "#e5730d",
+    "desc_bg": "#ecb683",
+    "links_bar_color": "#ecb683"
   },
   {
     "artist": "withdecay",
