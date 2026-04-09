@@ -1259,7 +1259,11 @@
       "instagram": "https://www.instagram.com/this.is.rai/"
     },
     "soundcloud": "https://soundcloud.com/officialrai",
-    "is_current": false
+    "is_current": false,
+    "color1": "#bfbfbb",
+    "color_accent": "#bfbfbb",
+    "desc_bg": "#c6c7c9",
+    "links_bar_color": "#d4d5d6"
   },
   {
     "artist": "Momo",
