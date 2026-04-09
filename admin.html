@@ -56,7 +56,7 @@
   .track-lookup-btn{background:var(--surface2);border:1px solid var(--border);color:var(--accent);font-family:var(--block);font-size:12px;letter-spacing:.1em;padding:6px 14px;cursor:pointer;white-space:nowrap;}
   .track-lookup-btn:hover{background:var(--border);}
   .track-lookup-btn:disabled{opacity:.4;cursor:not-allowed;}
-  .color-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px;max-width:480px;}
+  .color-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:20px;max-width:720px;}
   .color-field label{display:block;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;}
   .color-picker-row{display:flex;align-items:center;border:1px solid var(--border);}
   .color-picker-row input[type=color]{width:40px;height:36px;border:none;padding:2px;background:var(--surface);cursor:pointer;flex-shrink:0;}
@@ -99,11 +99,15 @@
     <div class="hlogo">AT // ADMIN</div>
     <div class="hright">
       <span class="status-msg" id="statusMsg"></span>
+      <a id="previewLink" href="#" target="_blank" style="font-family:var(--block);font-size:13px;letter-spacing:.1em;color:var(--muted);text-decoration:none;display:none;">↗ PREVIEW</a>
       <button class="save-all-btn" id="saveAllBtn" onclick="saveAll()" disabled><span>⬆</span> PUSH TO GITHUB</button>
     </div>
   </header>
   <div class="layout">
     <div class="sidebar">
+      <div style="padding:12px;border-bottom:1px solid var(--border);">
+        <button onclick="newArtist()" style="width:100%;background:none;border:1px solid var(--accent);color:var(--accent);font-family:var(--block);font-size:14px;letter-spacing:.12em;padding:8px;cursor:pointer;">+ NEW ARTIST</button>
+      </div>
       <div class="search-box"><input type="text" id="searchInput" placeholder="Search artists..." oninput="filterArtists()"></div>
       <div id="artistList"></div>
     </div>
@@ -119,6 +123,19 @@ function doLogin(){
   const pw=document.getElementById('pwInput').value,tok=document.getElementById('tokenInput').value.trim();
   if(pw===PASSWORD&&tok){GITHUB_TOKEN=tok;document.getElementById('loginScreen').style.display='none';document.getElementById('mainScreen').style.display='block';loadData();}
   else{const e=document.getElementById('loginErr');e.style.display='block';e.textContent=!tok?'ENTER GITHUB TOKEN':'WRONG PASSWORD';}
+}
+function newArtist(){
+  const a={
+    artist:'NEW ARTIST',real_name:'',date:new Date().toISOString().slice(0,10),
+    board_url:'',album_url:'',at_profile:'',soundcloud:'',photo:'',cover_url:'',
+    intro:'',about:'',interview:[],tracks:[],social:{},color1:'',color2:'',color_accent:'',desc_bg:''
+  };
+  data.push(a);
+  currentIdx=data.length-1;
+  renderList(data);
+  selectArtist(currentIdx);
+  markDirty();
+  showToast('New artist created!');
 }
 function setStatus(m){document.getElementById('statusMsg').textContent=m;}
 function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');}
@@ -142,6 +159,9 @@ function filterArtists(){const q=document.getElementById('searchInput').value.to
 
 function selectArtist(idx){
   currentIdx=idx;filterArtists();
+  const slug=encodeURIComponent(data[idx].artist);
+  const pl=document.getElementById('previewLink');
+  if(pl){pl.href=`artist.html?id=${slug}`;pl.style.display='block';}
   const a=data[idx];
   const albumId=(a.album_url||'').match(/\/album\/([^/]+)/)?.[1];
   const coverUrl=a.cover_url||(albumId?`https://api.audiotool.com/album/${albumId}/cover/256.jpg`:'');
@@ -219,6 +239,7 @@ function selectArtist(idx){
       <div class="color-grid">
         <div class="color-field"><label>Background + Headlines</label><div class="color-picker-row"><input type="color" id="color1Picker" value="${c1}" oninput="syncColor('color1',this.value);syncColor('color_accent',this.value)"><input type="text" id="color1Text" value="${c1}" oninput="syncColorText('color1',this.value)" maxlength="7"></div></div>
         <div class="color-field"><label>Track Desc Background</label><div class="color-picker-row"><input type="color" id="desc_bgPicker" value="${a.desc_bg||'#e8e4dc'}" oninput="syncColor('desc_bg',this.value)"><input type="text" id="desc_bgText" value="${a.desc_bg||'#e8e4dc'}" oninput="syncColorText('desc_bg',this.value)" maxlength="7"></div></div>
+        <div class="color-field"><label>Links Bar Background</label><div class="color-picker-row"><input type="color" id="links_bar_bgPicker" value="${a.links_bar_bg||'#0e0e0e'}" oninput="syncColor('links_bar_bg',this.value)"><input type="text" id="links_bar_bgText" value="${a.links_bar_bg||'#0e0e0e'}" oninput="syncColorText('links_bar_bg',this.value)" maxlength="7"></div></div>
       </div>
     </div>
 
