@@ -2339,7 +2339,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/08/21/comment/tpc-news_draft/attachment-e4588261f95146ca957ec575db275761.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2022/08/21/albums/rxln02/cover256x256-a78cae19721d486a91624bd9105c1ffb.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#819245",
+    "color_accent": "#819245",
+    "desc_bg": "#b34d75",
+    "links_bar_color": "#c7c2a3"
   },
   {
     "artist": "Melancolist",
