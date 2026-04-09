@@ -2161,7 +2161,11 @@
     "social": {
       "instagram": "https://www.instagram.com/ndaglio/"
     },
-    "is_current": false
+    "is_current": false,
+    "color1": "#afc072",
+    "color_accent": "#afc072",
+    "desc_bg": "#ac8698",
+    "links_bar_color": "#e4cdd8"
   },
   {
     "artist": "leadenshrew",
