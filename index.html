@@ -204,7 +204,7 @@ function renderHero(a){
       <a href="artist.html?id=${encodeURIComponent(a.artist)}" class="hero-cta" style="background:${accent}">READ MORE ↗</a>
     </div>
     <div class="hero-photo-col">
-      ${a.photo ? `<img src="${a.photo}" class="hero-photo" alt="${a.artist}" onerror="this.outerHTML='<div class=hero-photo-placeholder></div>'">`
+      ${a.photo ? `<img src="${a.photo}" class="hero-photo" style="object-position:${a.photo_position||'top'}" alt="${a.artist}" onerror="this.outerHTML='<div class=hero-photo-placeholder></div>'">`
                 : '<div class="hero-photo-placeholder"></div>'}
       <div style="position:absolute;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;background:${accent};color:#0e0e0e;padding:14px 12px;font-family:var(--block);font-size:12px;letter-spacing:.12em;z-index:2;">
         <span>FEATURED ARTIST</span>
@@ -230,7 +230,7 @@ function renderGrid(artists){
       <div class="card-inner">
         <div class="card-photo-wrap">
           ${a.photo
-            ? `<img src="${a.photo}" class="card-photo" alt="${a.artist}" loading="lazy" onerror="this.outerHTML='<div class=card-photo-placeholder></div>'">`
+            ? `<img src="${a.photo}" class="card-photo" style="object-position:${a.photo_position||'top'}" alt="${a.artist}" loading="lazy" onerror="this.outerHTML='<div class=card-photo-placeholder></div>'">`
             : '<div class="card-photo-placeholder"></div>'}
           <div class="card-feat-label">
             <span>Featured Artist</span>
