@@ -137,7 +137,7 @@
   /* ── PHOTO ── */
   .hero-photo { flex-shrink: 0; }
   .photo-box {
-    width: clamp(160px, 20vw, 260px);
+    width: clamp(220px, 28vw, 360px);
     aspect-ratio: 1;
     overflow: hidden;
     border: 2px solid var(--border);
@@ -304,7 +304,7 @@
     background: var(--surface);
     padding: 11px 14px;
     display: grid;
-    grid-template-columns: 26px 1fr 18px;
+    grid-template-columns: 36px 1fr 18px;
     gap: 8px; align-items: center;
     cursor: pointer;
     transition: background .15s;
@@ -318,6 +318,11 @@
   .track-btn.active .tt { color: var(--text); }
   .track-btn.active .tp { color: var(--accent); }
 
+  .track-cover {
+    width: 32px; height: 32px; object-fit: cover; display: block;
+    border: 1px solid var(--border); flex-shrink: 0;
+    background: var(--surface);
+  }
   .tn { font-size: 10px; color: var(--text-dim); font-variant-numeric: tabular-nums; }
   .tt { font-size: 11px; color: var(--text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; letter-spacing: .02em; }
   .tp { font-size: 9px; color: var(--text-dim); text-align: right; }
@@ -404,6 +409,10 @@ function fmtDate(d){
   return ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+m-1]+' '+parseInt(day)+', '+y;
 }
 
+function tId(url){
+  const m=url.match(/\/track\/([^/]+)/);
+  return m?m[1]:'';
+}
 function tSlug(url){
   const m=url.match(/\/track\/([^/]+)/);
   if(!m) return url;
@@ -535,7 +544,7 @@ function render(a,idx,total,prev,next){
             `).join('')}
           </div>
         `:''}
-        <div class="board-link"><a href="${esc(a.board_url)}" target="_blank">↗ Original board post</a></div>
+
       </div>
 
       <div class="sidebar">
