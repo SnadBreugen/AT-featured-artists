@@ -173,6 +173,7 @@ async function loadData(){
 
 function renderList(artists){
   document.getElementById('artistList').innerHTML=artists.map(a=>{
+    const isCur=!!a.is_current;
     const i=data.indexOf(a),hasColors=!!(a.color1&&a.color2);
     return `<div class="artist-item ${currentIdx===i?'active':''}" onclick="selectArtist(${i})"><span class="ai-name">${isCur?'★ ':''} ${a.artist}</span><span class="ai-dot ${hasColors?'has-colors':''}" title="${hasColors?'Colors set':'No colors'}"></span></div>`;
   }).join('');
