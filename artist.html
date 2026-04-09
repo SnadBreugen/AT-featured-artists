@@ -591,7 +591,7 @@ function render(a,idx,total,prev,next){
             <div class="track-list">
               ${tracks.map((t,i)=>`
                 <button class="track-btn" data-url="${esc(t.url)}" onclick="playTrack('${esc(t.url)}')">
-                  <img class="track-cover" src="https://api.audiotool.com/track/${tId(t.url)}/image/32.jpg" onerror="this.style.opacity='.15'" alt="">
+                  <img class="track-cover" src="${coverSrc||''}" onerror="this.style.opacity='.15'" alt="">
                   <span class="tt">${esc(tSlug(t.url))}</span>
                   <span class="tp">▷</span>
                 </button>
