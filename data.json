@@ -1078,7 +1078,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/02/07/comment/tpc-news/attachment-7b0a632aa0044974a1209ec6a5090027.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2022/02/07/albums/0itj8w/cover256x256-3b0ee09d78db40d78d5b50a53f32be76.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#c5c544",
+    "color_accent": "#c5c544",
+    "desc_bg": "#e2e48b",
+    "links_bar_color": "#e2e48b"
   },
   {
     "artist": "Vault Boy",
