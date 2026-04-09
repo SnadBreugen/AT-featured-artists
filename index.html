@@ -206,6 +206,12 @@ function renderHero(a){
     <div class="hero-photo-col">
       ${a.photo ? `<img src="${a.photo}" class="hero-photo" style="object-position:${a.photo_position||'top'}" alt="${a.artist}" onerror="this.outerHTML='<div class=hero-photo-placeholder></div>'">`
                 : '<div class="hero-photo-placeholder"></div>'}
+      ${(()=>{
+        const albumMatch=(a.album_url||'').match(/\/album\/([^/]+)/);
+        const albumId=albumMatch?albumMatch[1]:null;
+        const covUrl=a.cover_url||(albumId?`https://api.audiotool.com/album/${albumId}/cover/256.jpg`:'');
+        return covUrl?`<img src="${covUrl}" style="position:absolute;bottom:36px;left:0;width:45%;max-width:160px;display:block;border:1px solid rgba(0,0,0,.3);z-index:1;" onerror="this.style.display='none'">`:'';
+      })()}
       <div style="position:absolute;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;background:${accent};color:#0e0e0e;padding:14px 12px;font-family:var(--block);font-size:12px;letter-spacing:.12em;z-index:2;">
         <span>FEATURED ARTIST</span>
         <span>${allArtists.indexOf(a)+107}</span>
