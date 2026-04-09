@@ -609,7 +609,11 @@
     "social": {
       "soundcloud": "https://soundcloud.com/1haydens"
     },
-    "is_current": false
+    "is_current": false,
+    "color1": "#ad3877",
+    "color_accent": "#ad3877",
+    "desc_bg": "#c78aaa",
+    "links_bar_color": "#c78aaa"
   },
   {
     "artist": "Naut",
