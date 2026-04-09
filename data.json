@@ -1790,7 +1790,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/05/30/comment/tpc-news_draft/attachment-991b17980fa1477199169b88de188a56.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2022/05/29/albums/k2gh7/cover256x256-bc0672e9eeef4168a915fdbaa7f8391d.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#90ecdf",
+    "color_accent": "#90ecdf",
+    "desc_bg": "#e86b72",
+    "links_bar_color": "#f9c8cb"
   },
   {
     "artist": "okin",
