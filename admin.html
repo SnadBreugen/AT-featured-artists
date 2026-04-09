@@ -144,7 +144,7 @@ async function loadData(){
   setStatus('Loading...');
   try{
     const r=await fetch(`https://api.github.com/repos/${GITHUB_REPO}/contents/${DATA_PATH}`,{headers:{Authorization:`token ${GITHUB_TOKEN}`,Accept:'application/vnd.github.v3+json'}});
-    const j=await r.json();fileSha=j.sha;data=JSON.parse(atob(j.content.replace(/\n/g,'')));
+    const j=await r.json();fileSha=j.sha;data=JSON.parse(decodeURIComponent(escape(atob(j.content.replace(/\n/g,'')))));
     renderList(data);setStatus(`${data.length} artists loaded`);
   }catch(e){setStatus('Error loading data');}
 }
@@ -239,7 +239,7 @@ function selectArtist(idx){
       <div class="color-grid">
         <div class="color-field"><label>Background + Headlines</label><div class="color-picker-row"><input type="color" id="color1Picker" value="${c1}" oninput="syncColor('color1',this.value);syncColor('color_accent',this.value)"><input type="text" id="color1Text" value="${c1}" oninput="syncColorText('color1',this.value)" maxlength="7"></div></div>
         <div class="color-field"><label>Track Desc Background</label><div class="color-picker-row"><input type="color" id="desc_bgPicker" value="${a.desc_bg||'#e8e4dc'}" oninput="syncColor('desc_bg',this.value)"><input type="text" id="desc_bgText" value="${a.desc_bg||'#e8e4dc'}" oninput="syncColorText('desc_bg',this.value)" maxlength="7"></div></div>
-        <div class="color-field"><label>Links Bar Background</label><div class="color-picker-row"><input type="color" id="links_bar_bgPicker" value="${a.links_bar_bg||'#0e0e0e'}" oninput="syncColor('links_bar_bg',this.value)"><input type="text" id="links_bar_bgText" value="${a.links_bar_bg||'#0e0e0e'}" oninput="syncColorText('links_bar_bg',this.value)" maxlength="7"></div></div>
+        <div class="color-field"><label>Links Bar Color</label><div class="color-picker-row"><input type="color" id="links_bar_colorPicker" value="${a.links_bar_color||'#888888'}" oninput="syncColor('links_bar_color',this.value)"><input type="text" id="links_bar_colorText" value="${a.links_bar_color||'#888888'}" oninput="syncColorText('links_bar_color',this.value)" maxlength="7"></div></div>
       </div>
     </div>
 
