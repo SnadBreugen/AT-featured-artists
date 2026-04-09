@@ -431,7 +431,7 @@
 <header>
   <a href="index.html" class="logo">AUDIOTOOL <span class="slash">//</span> FEATURED ARTISTS</a>
   <div style="display:flex;align-items:center;gap:20px">
-    <span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--mono)">v0.6.5</span>
+    <span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--mono)">v0.6.6</span>
     <a href="index.html" class="back">← All artists</a>
   </div>
 </header>
@@ -506,14 +506,10 @@ function extractColors(src, cb){
 
 function applyColors(t,b){
   if(!t) return;
-  // Make slightly darker/more transparent for subtle bg effect
-  const tc=`rgba(${Math.round(t[0])},${Math.round(t[1])},${Math.round(t[2])},0.18)`;
-  const bc=`rgba(${Math.round(b[0])},${Math.round(b[1])},${Math.round(b[2])},0.15)`;
-  // Set accent color based on top color (brightened)
-  const ar=Math.min(255,Math.round(t[0]*1.4+40));
-  const ag=Math.min(255,Math.round(t[1]*1.4+40));
-  const ab=Math.min(255,Math.round(t[2]*1.4+40));
-  const accent=`rgb(${ar},${ag},${ab})`;
+  const tc=`rgba(${Math.round(t[0])},${Math.round(t[1])},${Math.round(t[2])},0.45)`;
+  const bc=`rgba(${Math.round(b[0])},${Math.round(b[1])},${Math.round(b[2])},0.40)`;
+  // Accent = exact color1 as chosen
+  const accent=`rgb(${Math.round(t[0])},${Math.round(t[1])},${Math.round(t[2])})`;
   document.documentElement.style.setProperty('--accent', accent);
   document.getElementById('washTop').style.background=`linear-gradient(to bottom, ${tc} 0%, transparent 100%)`;
   document.getElementById('washBot').style.background=`linear-gradient(to top, ${bc} 0%, transparent 100%)`;
