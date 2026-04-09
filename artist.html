@@ -641,7 +641,7 @@ function render(a,idx,total,prev,next){
         ${a.real_name&&a.real_name!==a.artist?`<div class="hero-realname">${esc(a.real_name)}</div>`:''}
         ${a.intro?`<p class="hero-intro">${esc(a.intro)}</p>`:''}
       </div>
-      <div class="hero-photo">
+      <div class="hero-photo" style="object-position:${a.photo_position||'top'}">
         ${a.photo?`
           <div class="photo-box"><img src="${esc(a.photo)}" alt="${esc(a.artist)}"></div>
         `:`<div class="photo-box" style="background:var(--surface);display:flex;align-items:center;justify-content:center;"><span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--type)">NO PHOTO</span></div>`}
