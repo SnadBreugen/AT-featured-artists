@@ -124,6 +124,17 @@ function doLogin(){
   if(pw===PASSWORD&&tok){GITHUB_TOKEN=tok;document.getElementById('loginScreen').style.display='none';document.getElementById('mainScreen').style.display='block';loadData();}
   else{const e=document.getElementById('loginErr');e.style.display='block';e.textContent=!tok?'ENTER GITHUB TOKEN':'WRONG PASSWORD';}
 }
+function deleteArtist(){
+  if(currentIdx===null) return;
+  const name = data[currentIdx].artist;
+  if(!confirm('Delete "' + name + '"? This cannot be undone.')) return;
+  data.splice(currentIdx, 1);
+  currentIdx = null;
+  document.getElementById('editor').innerHTML = '<div class="empty">Artist deleted — click PUSH TO GITHUB to save</div>';
+  filterArtists();
+  markDirty();
+  showToast('Deleted: ' + name);
+}
 function toggleCurrent(){
   if(currentIdx===null) return;
   const isCurrent = !data[currentIdx].is_current;
@@ -262,6 +273,7 @@ function selectArtist(idx){
 
     <div style="padding-bottom:60px">
       <button class="save-btn" onclick="saveArtist()">SAVE ARTIST</button>
+      <button onclick="deleteArtist()" style="background:none;border:1px solid var(--red);color:var(--red);font-family:var(--block);font-size:14px;letter-spacing:.1em;padding:10px 20px;cursor:pointer;margin-left:12px;">DELETE ARTIST</button>
       <span class="save-status" id="saveStatus"></span>
     </div>
   `;
