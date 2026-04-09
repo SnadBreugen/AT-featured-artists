@@ -5191,6 +5191,10 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2026/02/19/comment/tpc-news/attachment-a5d2aa62cc3c45e68f479fabce3d38aa.png",
-    "cover_url": "https://at-cdn-s03.audiotool.com/2026/02/19/albums/a4iyb/cover256x256-feebae9e00f448aaa1b10e31f6b50cfb.jpg"
+    "cover_url": "https://at-cdn-s03.audiotool.com/2026/02/19/albums/a4iyb/cover256x256-feebae9e00f448aaa1b10e31f6b50cfb.jpg",
+    "color1": "#01b541",
+    "color_accent": "#01b541",
+    "desc_bg": "#b1ccdd",
+    "links_bar_color": "#b1ccdd"
   }
 ]
