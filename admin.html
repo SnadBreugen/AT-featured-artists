@@ -124,6 +124,17 @@ function doLogin(){
   if(pw===PASSWORD&&tok){GITHUB_TOKEN=tok;document.getElementById('loginScreen').style.display='none';document.getElementById('mainScreen').style.display='block';loadData();}
   else{const e=document.getElementById('loginErr');e.style.display='block';e.textContent=!tok?'ENTER GITHUB TOKEN':'WRONG PASSWORD';}
 }
+function toggleCurrent(){
+  if(currentIdx===null) return;
+  const isCurrent = !data[currentIdx].is_current;
+  // Remove from all others first
+  data.forEach((a,i) => { if(i!==currentIdx) a.is_current=false; });
+  data[currentIdx].is_current = isCurrent;
+  markDirty();
+  // Re-render to update button
+  selectArtist(currentIdx);
+  showToast(isCurrent ? 'Set as Current Featured!' : 'Removed from Current');
+}
 function newArtist(){
   const a={
     artist:'NEW ARTIST',real_name:'',date:new Date().toISOString().slice(0,10),
@@ -152,7 +163,7 @@ async function loadData(){
 function renderList(artists){
   document.getElementById('artistList').innerHTML=artists.map(a=>{
     const i=data.indexOf(a),hasColors=!!(a.color1&&a.color2);
-    return `<div class="artist-item ${currentIdx===i?'active':''}" onclick="selectArtist(${i})"><span class="ai-name">${a.artist}</span><span class="ai-dot ${hasColors?'has-colors':''}" title="${hasColors?'Colors set':'No colors'}"></span></div>`;
+    return `<div class="artist-item ${currentIdx===i?'active':''}" onclick="selectArtist(${i})"><span class="ai-name">${isCur?'★ ':''} ${a.artist}</span><span class="ai-dot ${hasColors?'has-colors':''}" title="${hasColors?'Colors set':'No colors'}"></span></div>`;
   }).join('');
 }
 function filterArtists(){const q=document.getElementById('searchInput').value.toLowerCase();renderList(q?data.filter(a=>a.artist.toLowerCase().includes(q)):data);}
@@ -168,10 +179,16 @@ function selectArtist(idx){
   const c1=a.color1||'#333333',c2=a.color2||'#333333',ca=a.color_accent||c1;
   const social=a.social||{};
   const tracks=[...(a.tracks||[])];while(tracks.length<6)tracks.push({url:'',name:'',track_artist:'',desc:''});
+  const isCurrent=!!a.is_current;
 
   document.getElementById('editor').innerHTML=`
     <div class="ed-title">${a.artist}</div>
     <div class="ed-sub">${a.real_name||''} &nbsp;·&nbsp; ${a.date||''}</div>
+    <div style="margin-bottom:28px">
+      <button onclick="toggleCurrent()" id="currentBtn" style="font-family:var(--block);font-size:13px;letter-spacing:.1em;padding:8px 20px;border:none;cursor:pointer;${isCurrent?'background:var(--accent);color:var(--bg)':'background:var(--surface);border:1px solid var(--border);color:var(--text-dim)'}">
+        ${isCurrent ? '★ CURRENT FEATURED' : '☆ SET AS CURRENT FEATURED'}
+      </button>
+    </div>
 
     <div class="ed-section">
       <div class="ed-section-title">Basic Info</div>
