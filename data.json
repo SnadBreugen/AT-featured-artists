@@ -1511,7 +1511,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/04/18/comment/tpc-news_draft/attachment-d182e0fb6acc47fbb56d8cb14100c753.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2022/04/18/albums/g7u0wvas/cover256x256-0e4aa599ab5346f79c0221db90f84c3c.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#f10e0e",
+    "color_accent": "#f10e0e",
+    "desc_bg": "#abeef7",
+    "links_bar_color": "#23e4fc"
   },
   {
     "artist": "po9t",
