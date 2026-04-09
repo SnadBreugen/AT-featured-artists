@@ -481,9 +481,40 @@ function applyColors(t,b){
 }
 
 let albumOpen=false;
+let currentTrackIdx=-1;
+window._tracks=[];
+
+function loadTrack(idx){
+  const tracks=window._tracks;
+  if(!tracks||!tracks.length) return;
+  if(idx<0) idx=tracks.length-1;
+  if(idx>=tracks.length) idx=0;
+  currentTrackIdx=idx;
+  const t=tracks[idx];
+  const m=t.url.match(/\/track\/([^/]+)/);
+  if(!m) return;
+  const player=document.getElementById('albumPlayer');
+  if(!player) return;
+  // Highlight active track
+  document.querySelectorAll('.track-btn').forEach((b,i)=>{
+    b.classList.toggle('active',i===idx);
+    b.querySelector('.tp').textContent=i===idx?'▶':'▷';
+  });
+  player.innerHTML=`
+    <iframe src="https://www.audiotool.com/track/${m[1]}/embed/" allow="autoplay" style="width:100%;height:152px;border:none;display:block"></iframe>
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:8px 12px;background:var(--surface);border:1px solid var(--border);border-top:none">
+      <button onclick="loadTrack(${idx}-1)" style="background:none;border:none;color:var(--accent);cursor:pointer;font-family:var(--block);font-size:14px;letter-spacing:.1em">◀ PREV</button>
+      <span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em">${idx+1} / ${tracks.length}</span>
+      <button onclick="loadTrack(${idx}+1)" style="background:none;border:none;color:var(--accent);cursor:pointer;font-family:var(--block);font-size:14px;letter-spacing:.1em">NEXT ▶</button>
+    </div>`;
+}
+
 window.playTrack=function(url){
   const tracks=window._tracks;
-  const idx=tracks.findIndex(t=>t.url===url||t.url.includes(url)||url.includes(t.url.split('/').slice(-2,-1)[0]));
+  const m=url.match(/\/track\/([^/]+)/);
+  if(!m) return;
+  const id=m[1];
+  const idx=tracks.findIndex(t=>(t.url||'').includes(id));
   if(idx===-1) return;
   if(!albumOpen){
     albumOpen=true;
@@ -492,18 +523,19 @@ window.playTrack=function(url){
   }
   loadTrack(idx);
 };
+
 window.toggleAlbum=function(){
   const player=document.getElementById('albumPlayer');
   const icon=document.getElementById('playIcon');
   const label=document.getElementById('playLabel');
   albumOpen=!albumOpen;
   if(albumOpen){
-    const albumId=(document.getElementById('albumCover')||{}).dataset.albumid||window._albumId;
-    player.innerHTML=`<iframe src="https://www.audiotool.com/album/${window._albumId}/embed/" allow="autoplay" style="width:100%;height:200px;border:none;display:block"></iframe>`;
+    loadTrack(0);
     icon.textContent='■';
     label.textContent='STOP';
   } else {
     player.innerHTML='';
+    currentTrackIdx=-1;
     icon.textContent='▶';
     label.textContent='PLAY ALBUM';
   }
@@ -563,6 +595,20 @@ function render(a,idx,total,prev,next){
                 <div class="qa-a">${esc(qa.a)}</div>
               </div>
             `).join('')}
+          </div>
+        `:''}
+
+        ${tracks.filter(t=>t.name&&t.desc).length?`
+          <div style="margin-top:52px">
+            <div class="sec-title">Why I picked these</div>
+            <div class="qa-list">
+              ${tracks.filter(t=>t.name&&t.desc).map(t=>`
+                <div class="qa-item">
+                  <div class="qa-q">${t.track_artist?esc(t.track_artist)+' — &ldquo;'+esc(t.name)+'&rdquo;':'"'+esc(t.name)+'"'}</div>
+                  <div class="qa-a">${esc(t.desc)}</div>
+                </div>
+              `).join('')}
+            </div>
           </div>
         `:''}
 
