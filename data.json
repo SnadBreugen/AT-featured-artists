@@ -2553,7 +2553,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/10/03/comment/tpc-news_draft/attachment-b54233ec919e48ea8cefa3246874bf96.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2022/10/03/albums/6fd3wz3bv/cover256x256-d67bd69764074cc1a601cd5a555d70e1.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#772ee0",
+    "color_accent": "#772ee0",
+    "desc_bg": "#cba8ff",
+    "links_bar_color": "#cba8ff"
   },
   {
     "artist": "Drimeur",
