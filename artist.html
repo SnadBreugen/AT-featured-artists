@@ -470,6 +470,26 @@ function applyColors(t,b){
 }
 
 let albumOpen=false;
+let curUrl=null;
+window.playTrack=function(url){
+  const m=url.match(/\/track\/([^/]+)/);
+  if(!m) return;
+  const wrap=document.getElementById('playerWrap');
+  const btns=document.querySelectorAll('.track-btn');
+  if(curUrl===url){
+    wrap.classList.remove('open'); wrap.innerHTML=''; curUrl=null;
+    btns.forEach(b=>{b.classList.remove('active');b.querySelector('.tp').textContent='▷';});
+    return;
+  }
+  curUrl=url;
+  wrap.innerHTML=`<iframe src="https://www.audiotool.com/track/${m[1]}/embed/" allow="autoplay" style="width:100%;height:152px;border:none;display:block"></iframe>`;
+  wrap.classList.add('open');
+  btns.forEach(b=>{
+    const on=b.dataset.url===url;
+    b.classList.toggle('active',on);
+    b.querySelector('.tp').textContent=on?'▶':'▷';
+  });
+};
 window.toggleAlbum=function(){
   const player=document.getElementById('albumPlayer');
   const icon=document.getElementById('playIcon');
@@ -522,7 +542,6 @@ function render(a,idx,total,prev,next){
       ${a.at_profile?`<a href="${esc(a.at_profile)}" target="_blank" class="ext-link">Audiotool</a>`:''}
       ${a.soundcloud?`<a href="${esc(a.soundcloud)}" target="_blank" class="ext-link">SoundCloud</a>`:''}
       ${a.album_url?`<a href="${esc(a.album_url)}" target="_blank" class="ext-link">Edition Album</a>`:''}
-      ${a.board_url?`<a href="${esc(a.board_url)}" target="_blank" class="ext-link">Original Post</a>`:''}
     </div>
 
     <div class="main">
@@ -564,6 +583,22 @@ function render(a,idx,total,prev,next){
               <span id="playLabel">PLAY ALBUM</span>
             </button>
             <div class="album-player" id="albumPlayer"></div>
+          </div>
+        `:''}
+
+        ${tracks.length?`
+          <div>
+            <div class="sidebar-title">Curated Tracks</div>
+            <div class="track-list">
+              ${tracks.map((t,i)=>`
+                <button class="track-btn" data-url="${esc(t.url)}" onclick="playTrack('${esc(t.url)}')">
+                  <img class="track-cover" src="https://api.audiotool.com/track/${tId(t.url)}/image/32.jpg" onerror="this.style.opacity='.15'" alt="">
+                  <span class="tt">${esc(tSlug(t.url))}</span>
+                  <span class="tp">▷</span>
+                </button>
+              `).join('')}
+            </div>
+            <div class="player-wrap" id="playerWrap"></div>
           </div>
         `:''}
       </div>
