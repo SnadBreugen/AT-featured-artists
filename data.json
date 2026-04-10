@@ -83,7 +83,8 @@
     "color1": "#8bffc3",
     "color_accent": "#8bffc3",
     "desc_bg": "#f5e0e9",
-    "links_bar_color": "#fd569e"
+    "links_bar_color": "#fd569e",
+    "album_number": 107
   },
   {
     "artist": "Goon",
