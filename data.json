@@ -174,7 +174,11 @@
       "instagram": "https://www.instagram.com/g.i.les/"
     },
     "soundcloud": "https://soundcloud.com/gilesincharge/mix-for-the-folks-at-home",
-    "is_current": false
+    "is_current": false,
+    "color1": "#ff4f26",
+    "color_accent": "#ff4f26",
+    "desc_bg": "#9ec13f",
+    "links_bar_color": "#f7c2b5"
   },
   {
     "artist": "Icebox",
