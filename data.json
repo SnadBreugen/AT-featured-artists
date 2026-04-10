@@ -2980,7 +2980,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2023/02/13/comment/tpc-news_draft/attachment-494ecf1a09c344faa73f7bedc67f5578.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2023/02/13/albums/xuz78/cover256x256-ad0f8ffb5dac4a42be6205d00efa0664.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#728ba7",
+    "color_accent": "#728ba7",
+    "links_bar_color": "#c8d1da",
+    "desc_bg": "#e2e5ea"
   },
   {
     "artist": "JayFK",
