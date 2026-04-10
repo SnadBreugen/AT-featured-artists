@@ -520,7 +520,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2021/10/17/comment/tpc-news_draft/attachment-0ddfc22e41124d039560bab9c802dc63.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2021/10/17/albums/51mehaa/cover256x256-055803161deb40898500aadde9ab29da.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#7270d7",
+    "color_accent": "#7270d7",
+    "desc_bg": "#d33141",
+    "links_bar_color": "#c0bfe8"
   },
   {
     "artist": "Laevent",
