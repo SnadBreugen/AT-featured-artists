@@ -2777,27 +2777,39 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/25aaa3p7jke/",
-        "desc": "Shreddin' by Giles - great grooves, stunning basslines, total creativity",
-        "name": "25aaa3p7jke"
+        "desc": "Goon is one of the most talented artists I have found in Audiotool. He has everything : great grooves, stunning basslines, some craziness, a lot of creativity and also the coolest covers . I remember discovering this track and being bowled over by it. Literally. Hope you enjoy it too!",
+        "name": "Shreddin'",
+        "track_artist": "Giles"
       },
       {
         "url": "https://www.audiotool.com/track/d90d0c7b/",
-        "desc": "Q8 by Kepz - has such an underground touch that I love"
+        "desc": "There are some artists you want to sound like. Kepz is one of them. This Q8 track has inspired me so much that I had to add it here. This guy has such an underground touch that I love. Try it. You won't be disappointed!",
+        "name": "Q8",
+        "track_artist": "Kepz"
       },
       {
         "url": "https://www.audiotool.com/track/bibmufgce8s5/",
-        "desc": "MIDNIGHT WONDERS by Tim Derry - smiling, crying and headbanging at the same time",
-        "name": "bibmufgce8s5"
+        "desc": "Man this energy... For me, Tim Derry has the most impressive skills on AT. This track is the proof. Listen to it and you'll be smiling, crying and headbanging at the same time. So many emotions and so much power in the mix. And the acoustic piano samples... Wow! Shut up and take my money! As they say",
+        "name": "MIDNIGHT WONDERS",
+        "track_artist": "Tim Derry"
       },
       {
-        "url": "https://www.audiotool.com/track/qlg1zsvg/",
-        "desc": "pack and get dressed by Snad Breugen - my spiritual and musical master",
-        "name": "qlg1zsvg"
+        "url": "https://www.audiotool.com/track/3m4m2g60e9/",
+        "desc": "What can I say about Sandburgen... This guy never stops! Always has a top track up his sleeve. Multifunctional music robot, Anonymous hero of Audiotool. I think he is my spiritual master and - obviously - musical master. I picked this track because it sums up everything I like in his music : underground shape but with a melody driving you to another level and the drums making you say yes. Delicate and progressive. I have made two collabs with him and it was crazy for me... If you have a chance to do so, do not hesitate one second! Mister Sand man special Danke to you!",
+        "name": "pack and get dressed",
+        "track_artist": "Sandburgen"
       },
       {
-        "url": "https://www.audiotool.com/track/kqezm1i6/",
-        "desc": "Déjà vu - my own track",
-        "name": "kqezm1i6"
+        "url": "https://www.audiotool.com/track/l1x9e8o236/",
+        "desc": "Last but not least : Melancolist... When I discovered him on AT, it was love at first sight. I fell in love with his synths : powerful and delicate at the same time, with so much colors in it. He really made me think about Nt'O and Joachim Pastor. I also made few collabs with him and was always impressed by his creativity. Overall on the chords he has a sense of musicality. I think this track was the first I heard from him. But all of them are gorgeous. We miss you Melancolist, get back soon!",
+        "name": "Psychadelic jungle",
+        "track_artist": "Melancolist"
+      },
+      {
+        "url": "https://www.audiotool.com/track/nzl7tkg6fb/",
+        "name": "Oten et fadzo",
+        "track_artist": "Drimeur",
+        "desc": "You need to listen toOten et fadzo by Drimeur on Audiotool When you create something, in my case an AT track, I think your creation does not belongs to you anymore. It belongs to the audience. And sometimes you do not really get the attention you wanted when you created something. You wanted that drop to be the best in the world but the comments say that the intro is incredible,ibke,for example. And that is also what I like in music. We all speak the same language but still have different points of view. So this track is not my most popular track, but for me it’s my best and has everything I like doing in it : house style chords, headbanging kick, snares and hat dancing, 303 running progressive melody and a bit of synthwave. Hope you'll enjoy that!"
       }
     ],
     "interview": [
@@ -2840,10 +2852,10 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/10/17/comment/tpc-news_draft/attachment-7e0fb6b2f5f94a27bb28bc9d3e41d41e.png",
     "is_current": false,
-    "color1": "#8bba55",
-    "color_accent": "#8bba55",
-    "links_bar_color": "#73579e",
-    "desc_bg": "#dbdcc4"
+    "color1": "#e97015",
+    "color_accent": "#e97015",
+    "links_bar_color": "#e3861d",
+    "desc_bg": "#fce6b6"
   },
   {
     "artist": "withdecay",
