@@ -506,8 +506,8 @@ function extractColors(src, cb){
 
 function applyColors(t,b){
   if(!t) return;
-  const tc=`rgba(${Math.round(t[0])},${Math.round(t[1])},${Math.round(t[2])},0.45)`;
-  const bc=`rgba(${Math.round(b[0])},${Math.round(b[1])},${Math.round(b[2])},0.40)`;
+  const tc=`rgba(${Math.round(t[0])},${Math.round(t[1])},${Math.round(t[2])},0.55)`;
+  const bc=`rgba(${Math.round(b[0])},${Math.round(b[1])},${Math.round(b[2])},0.50)`;
   document.getElementById('washTop').style.background=`linear-gradient(to bottom, ${tc} 0%, transparent 100%)`;
   document.getElementById('washBot').style.background=`linear-gradient(to top, ${bc} 0%, transparent 100%)`;
   document.getElementById('colorWash').classList.add('on');
@@ -693,11 +693,7 @@ function render(a,idx,total,prev,next){
       <div class="interview">
         ${(a.about||a.interview&&a.interview.length)?`
           <div class="sec-title">Interview</div>
-          ${a.about?`
-          <div class="about-block">
-            <div class="about-text">${esc(a.about)}</div>
-          </div>
-          `:''}
+
           ${a.interview&&a.interview.length?`
           <div class="qa-list">
             ${a.interview.map(qa=>`
