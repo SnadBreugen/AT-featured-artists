@@ -434,7 +434,7 @@
 <header>
   <a href="index.html" class="logo">AUDIOTOOL <span class="slash">//</span> FEATURED ARTISTS</a>
   <div style="display:flex;align-items:center;gap:20px">
-    <span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--mono)">v0.7.2</span>
+    <span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--mono)">v0.7.3</span>
     <a href="index.html" class="back">← All artists</a>
   </div>
 </header>
@@ -523,6 +523,7 @@ function applyColors(t,b){
 
 let albumOpen=false;
 let currentTrackIdx=-1;
+let autoplay=true;
 window._tracks=[];
 
 function loadTrack(idx){
@@ -557,6 +558,7 @@ function loadTrack(idx){
         <button onclick="loadTrack(${idx}-1)" style="background:none;border:1px solid var(--border);color:var(--accent);cursor:pointer;font-family:var(--block);font-size:12px;letter-spacing:.1em;padding:3px 10px">◀ PREV</button>
         <span style="font-size:10px;color:var(--text-dim);letter-spacing:.08em;align-self:center">${idx+1} / ${tracks.length}</span>
         <button onclick="loadTrack(${idx}+1)" style="background:none;border:1px solid var(--border);color:var(--accent);cursor:pointer;font-family:var(--block);font-size:12px;letter-spacing:.1em;padding:3px 10px">NEXT ▶</button>
+        <button onclick="toggleAutoplay()" id="autoplayBtn" style="background:none;border:1px solid var(--border);color:var(--accent);cursor:pointer;font-family:var(--block);font-size:12px;letter-spacing:.1em;padding:3px 10px">AUTO ▶</button>
       </div>
     </div>`;
   setTimeout(()=>{ const a=player.querySelector('audio'); if(a) a.play().catch(()=>{}); },50);
@@ -600,6 +602,11 @@ window.playTrack=function(url){
   loadTrack(idx);
 };
 
+window.toggleAutoplay=function(){
+  autoplay=!autoplay;
+  const btn=document.getElementById('autoplayBtn');
+  if(btn) btn.style.opacity=autoplay?'1':'0.35';
+};
 window.toggleAlbum=function(){
   const player=document.getElementById('albumPlayer');
   const icon=document.getElementById('playIcon');
@@ -733,6 +740,10 @@ function render(a,idx,total,prev,next){
   `;
 
   window._albumId=albumId;
+  // Autostart first track
+  if(tracks.length && autoplay){
+    setTimeout(()=>loadTrack(0), 800);
+  }
   // Apply desc_bg if set
   if(a.desc_bg) document.documentElement.style.setProperty('--desc-bg', a.desc_bg);
   else document.documentElement.style.removeProperty('--desc-bg');
