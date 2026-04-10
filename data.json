@@ -5227,7 +5227,11 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2025/11/13/comment/tpc-news/attachment-947dfea48f60460386a6400c47bb1dfc.png",
-    "is_current": false
+    "is_current": false,
+    "color1": "#239267",
+    "color_accent": "#239267",
+    "links_bar_color": "#e80cea",
+    "desc_bg": "#aed5f9"
   },
   {
     "artist": "Alckhem",
