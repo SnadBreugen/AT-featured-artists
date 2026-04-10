@@ -2670,7 +2670,8 @@
     "note": "Artist requested album deletion",
     "interview": [],
     "photo": "",
-    "is_current": false
+    "is_current": false,
+    "is_hidden": true
   },
   {
     "artist": "andy",
