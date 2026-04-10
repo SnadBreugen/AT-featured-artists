@@ -935,7 +935,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/01/10/comment/tpc-news_draft/attachment-fcb07c0f62e74c1ba1cd86a250992026.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2022/01/09/albums/rszgk/cover256x256-f972d1efeb4a4657bbf8cc4f2d307620.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#99d154",
+    "color_accent": "#99d154",
+    "desc_bg": "#d32448",
+    "links_bar_color": "#d4f3af"
   },
   {
     "artist": "BubbLz",
