@@ -2921,7 +2921,11 @@
       "twitter": "https://twitter.com/xavimakesmusic",
       "instagram": "https://www.instagram.com/xavimakesmusic/"
     },
-    "is_current": false
+    "is_current": false,
+    "color1": "#d1423e",
+    "color_accent": "#d1423e",
+    "links_bar_color": "#658dc0",
+    "desc_bg": "#cfcfc7"
   },
   {
     "artist": "voyd",
