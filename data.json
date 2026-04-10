@@ -5045,7 +5045,11 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2025/10/16/comment/tpc-news/attachment-d961ffa5cbdd41359e47165863d69008.png",
-    "is_current": false
+    "is_current": false,
+    "color1": "#be876f",
+    "color_accent": "#be876f",
+    "links_bar_color": "#c3040e",
+    "desc_bg": "#b9c1c6"
   },
   {
     "artist": "Chonoes",
