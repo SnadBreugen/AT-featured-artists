@@ -3327,7 +3327,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2023/04/10/comment/tpc-news/attachment-c2d598abe5a94e889d77186e1a851109.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2023/04/10/albums/4vsxwa3n8/cover256x256-74826ac634a64141ab90e1284e5daeb9.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#b527dd",
+    "color_accent": "#b527dd",
+    "links_bar_color": "#ad247f",
+    "desc_bg": "#f0c9f8"
   },
   {
     "artist": "retro",
