@@ -2505,14 +2505,40 @@
     "about": "Hey! My name is François. I have the most French name ever. I live in the suburbs of Paris.",
     "tracks": [
       {
-        "url": "https://www.audiotool.com/track/renegade_full/",
-        "desc": "looks - renegade, one of my all-time favorites",
-        "name": "renegade full"
+        "url": "https://www.audiotool.com/track/into_the_sun-ocfuk2n/",
+        "desc": "An old piece of art with a beautiful arpeggio that could be composed by Jean Michel Jarre himself",
+        "name": "Into The Sun",
+        "track_artist": "Jordi Moragues"
       },
       {
-        "url": "https://www.audiotool.com/track/2gcp4ro7yj/",
-        "desc": "Frigolito - incredible production",
-        "name": "2gcp4ro7yj"
+        "url": "https://www.audiotool.com/track/dfixm3xmn2k/",
+        "desc": "A nice soundtrack that I would have liked to compose.",
+        "name": "Terry Road at Midnight",
+        "track_artist": "Giles"
+      },
+      {
+        "url": "https://www.audiotool.com/track/final_approach/",
+        "name": "Final Approach",
+        "track_artist": "Infyuthsion",
+        "desc": "A good lesson in what modulation is"
+      },
+      {
+        "url": "https://www.audiotool.com/track/jkpxib1d9dag/",
+        "name": "Tres Amigos",
+        "track_artist": "Sandburgen",
+        "desc": "Each of Sandburgen’s tracks is better than the others. So hard to choose only one."
+      },
+      {
+        "url": "https://www.audiotool.com/track/gty0z2ag2d/",
+        "name": "nowhere at once",
+        "track_artist": "nico",
+        "desc": "A mystic alien language: Creative experiment, fresh and pleasant sound design"
+      },
+      {
+        "url": "https://www.audiotool.com/track/4ji507yarh/",
+        "name": "Water on the moon",
+        "track_artist": "Melancolist",
+        "desc": "My track that sums up what I can do best is this one"
       }
     ],
     "interview": [
