@@ -2830,7 +2830,11 @@
       "linktree": "https://linktr.ee/etterathmusic"
     },
     "cover_url": "https://api.audiotool.com/album/m7fgkgz/cover/256.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#7bb28c",
+    "color_accent": "#7bb28c",
+    "links_bar_color": "#b03081",
+    "desc_bg": "#ace2b5"
   },
   {
     "artist": "Xavi",
