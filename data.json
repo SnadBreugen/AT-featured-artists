@@ -1260,7 +1260,10 @@
       "instagram": "https://www.instagram.com/this.is.rai/"
     },
     "soundcloud": "https://soundcloud.com/officialrai",
-    "is_current": false
+    "is_current": false,
+    "color1": "#bfe0e7",
+    "color_accent": "#bfe0e7",
+    "links_bar_color": "#f4a952"
   },
   {
     "artist": "▽Momo▽桃.",
