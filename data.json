@@ -3042,7 +3042,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2023/02/27/comment/tpc-news/attachment-e5d4da4626b946c79b2e2173201e6ad7.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2023/02/27/albums/txwzmc9b/cover256x256-6aa0eb8d13c3469c932965b324ad0b1b.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#c090c1",
+    "color_accent": "#c090c1",
+    "desc_bg": "#f4eef2",
+    "links_bar_color": "#805483"
   },
   {
     "artist": "Siren",
