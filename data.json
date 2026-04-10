@@ -911,7 +911,8 @@
       {
         "url": "https://www.audiotool.com/track/awaken_vip/",
         "desc": "synthonix - never stopped loving the unique melodies",
-        "name": "awaken vip"
+        "name": "awaken vip",
+        "track_artist": "synthonix"
       },
       {
         "url": "https://www.audiotool.com/track/sit_back_relax/",
@@ -924,6 +925,24 @@
         "desc": "Tocka - influenced my sound design a lot",
         "name": "Bad Juju",
         "track_artist": "Tocka"
+      },
+      {
+        "url": "https://www.audiotool.com/track/timestopper/",
+        "name": "Timestopper",
+        "track_artist": "looks",
+        "desc": "I grew up on Audiotool listening to this track all the time. While the sound design is very old, the production value still hasn't declined.\n\nTrust me, you have no idea how many times young me tried recreating the sound in this one"
+      },
+      {
+        "url": "https://www.audiotool.com/track/wnjqwgoc11vq/",
+        "name": "Centurion [AT Day 2020]",
+        "track_artist": "VIOK astrel",
+        "desc": "Not a classic like my previous picks, but still a helluva good production. For being made with almost 100% just audiotool resources, it shows just how powerful Audiotool really is."
+      },
+      {
+        "url": "https://www.audiotool.com/track/kk6hpa5m/",
+        "name": "Melancholy [HOME OFFICE]",
+        "track_artist": "Vulkron",
+        "desc": "It was very difficult to pick just one track to represent my sound design, as I've been influenced by so many things. But I believe that when everyone thinks of my sound, they'll think of something similar to this."
       }
     ],
     "interview": [
