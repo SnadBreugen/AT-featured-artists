@@ -197,7 +197,7 @@ function selectArtist(idx){
   const coverUrl=a.cover_url||(albumId?`https://api.audiotool.com/album/${albumId}/cover/256.jpg`:'');
   const c1=a.color1||'#333333',c2=a.color2||'#333333',ca=a.color_accent||c1;
   const social=a.social||{};
-  const tracks=[...(a.tracks||[])];while(tracks.length<6)tracks.push({url:'',name:'',track_artist:'',desc:''});
+  const tracks=[...(a.tracks||[])];while(tracks.length<11)tracks.push({url:'',name:'',track_artist:'',desc:''});
   const isCurrent=!!a.is_current;
   const isHidden=!!a.is_hidden;
 
@@ -261,7 +261,7 @@ function selectArtist(idx){
     </div>
 
     <div class="ed-section">
-      <div class="ed-section-title">Curated Tracks (6)</div>
+      <div class="ed-section-title">Curated Tracks (max. 11)</div>
       <div id="trackList">${renderTracks(tracks)}</div>
     </div>
 
