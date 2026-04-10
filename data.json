@@ -5135,7 +5135,11 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2025/10/30/comment/tpc-news/attachment-b6471fdff76b49ad87864824766f4790.png",
-    "is_current": false
+    "is_current": false,
+    "color1": "#b89bee",
+    "color_accent": "#b89bee",
+    "links_bar_color": "#e00001",
+    "desc_bg": "#ffd7ff"
   },
   {
     "artist": "Snowfire",
