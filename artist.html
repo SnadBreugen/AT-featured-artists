@@ -654,7 +654,9 @@ fetch('data.json')
     const idx=data.findIndex(a=>a.artist===artistId);
     if(idx===-1){location.href='index.html';return;}
     if(data[idx].is_hidden){ document.getElementById('app').innerHTML='<div style="padding:60px;font-family:var(--block);font-size:24px;color:var(--text-dim);letter-spacing:.1em">ARTIST NOT AVAILABLE</div>'; return; }
-    render(data[idx],idx,data.length,idx>0?data[idx-1]:null,idx<data.length-1?data[idx+1]:null);
+    const visible=data.filter(a=>!a.is_hidden);
+    const vIdx=visible.indexOf(data[idx]);
+    render(data[idx],idx,data.length,vIdx>0?visible[vIdx-1]:null,vIdx<visible.length-1?visible[vIdx+1]:null);
   });
 
 function render(a,idx,total,prev,next){
