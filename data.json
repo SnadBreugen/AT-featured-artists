@@ -4155,7 +4155,11 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2025/04/24/comment/tpc-news/attachment-56790fdaf04446419999ce178893e110.png",
-    "is_current": false
+    "is_current": false,
+    "color1": "#5958b0",
+    "color_accent": "#5958b0",
+    "links_bar_color": "#c1291d",
+    "desc_bg": "#d4d3e8"
   },
   {
     "artist": "virux",
