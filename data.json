@@ -2130,22 +2130,26 @@
       {
         "url": "https://www.audiotool.com/track/zfg71nr7n/",
         "desc": "worn by Audial - some of the best pads I've ever heard",
-        "name": "zfg71nr7n"
+        "name": "worn",
+        "track_artist": "Audial"
       },
       {
         "url": "https://www.audiotool.com/track/yqcsd6mrxf4g/",
         "desc": "You & I by TEQTONIQ - I still have trouble comprehending that Teq is real",
-        "name": "yqcsd6mrxf4g"
+        "name": "You & I",
+        "track_artist": "TEQTONIQ"
       },
       {
         "url": "https://www.audiotool.com/track/outcry/",
         "desc": "outcry by amoeba - simple premise with larger than life ambience",
-        "name": "outcry"
+        "name": "outcry",
+        "track_artist": "amoeba"
       },
       {
         "url": "https://www.audiotool.com/track/r6cdni3cw/",
         "desc": "THE FATHER by leadenshrew - some British dude that hates Elden Ring",
-        "name": "r6cdni3cw"
+        "name": "THE FATHER",
+        "track_artist": "leadenshrew "
       },
       {
         "url": "https://www.audiotool.com/track/aor3i40z/",
@@ -2156,7 +2160,8 @@
       {
         "url": "https://www.audiotool.com/track/59p263ipxmb/",
         "desc": "Chroma Force - my own track, like touching a Power Star in a Bugatti",
-        "name": "59p263ipxmb"
+        "name": "Chroma Force",
+        "track_artist": " Gravidon"
       }
     ],
     "interview": [
