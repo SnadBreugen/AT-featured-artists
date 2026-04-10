@@ -632,7 +632,8 @@
     "color1": "#5f5cff",
     "color_accent": "#5f5cff",
     "desc_bg": "#d5f8c9",
-    "links_bar_color": "#807ef1"
+    "links_bar_color": "#807ef1",
+    "is_hidden": true
   },
   {
     "artist": "Naut",
