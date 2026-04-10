@@ -4250,7 +4250,11 @@
     "social": {
       "instagram": "https://www.instagram.com/v_irux/"
     },
-    "is_current": false
+    "is_current": false,
+    "color1": "#688e65",
+    "color_accent": "#688e65",
+    "links_bar_color": "#d8fed3",
+    "desc_bg": "#d6e6d6"
   },
   {
     "artist": "Head Trauma Romance",
