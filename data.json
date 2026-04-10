@@ -3701,7 +3701,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2025/01/16/comment/tpc-news/attachment-040269647c674547bd05d2e56e8674f4.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2025/01/16/albums/cql9n2/cover256x256-5f21862a324342768cf6ee50e40632c5.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#e9becd",
+    "color_accent": "#e9becd",
+    "links_bar_color": "#759587",
+    "desc_bg": "#f9dce6"
   },
   {
     "artist": "althruist",
