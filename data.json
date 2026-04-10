@@ -1835,7 +1835,8 @@
     "color1": "#589ff3",
     "color_accent": "#589ff3",
     "desc_bg": "#eaddd2",
-    "links_bar_color": "#b08154"
+    "links_bar_color": "#b08154",
+    "is_hidden": true
   },
   {
     "artist": "aeiter",
