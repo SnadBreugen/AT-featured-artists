@@ -143,12 +143,15 @@
 
 <header>
   <a href="index.html" class="logo">AUDIOTOOL <span class="slash">//</span> FEATURED ARTISTS</a>
-  <span class="header-count" id="headerCount"></span>
+  <div style="display:flex;align-items:center;gap:24px;">
+    <button id="autoplayToggle" onclick="toggleAutoplay()" style="background:none;border:1px solid var(--border);color:var(--text-dim);font-family:var(--block);font-size:12px;letter-spacing:.12em;padding:6px 14px;cursor:pointer;transition:all .15s;">MUSIC AUTOPLAY: OFF</button>
+    <span class="header-count" id="headerCount"></span>
+  </div>
 </header>
 
 <div style="padding:12px var(--pad);border-bottom:1px solid var(--border);background:var(--surface);position:relative;z-index:1;">
   <span style="font-family:var(--type);font-size:12px;color:var(--text-dim);font-style:italic;letter-spacing:.03em;">
-    A curated archive of outstanding musicians from the Audiotool community — selected by the a-records label.
+    Outstanding musicians from the Audiotool community — featured artists and their Edition Audiotool albums.
   </span>
 </div>
 <div class="search-bar">
@@ -169,6 +172,21 @@
 
 <script>
 let allArtists = [], shuffled = [];
+let musicAutoplay = localStorage.getItem('musicAutoplay') === 'true';
+
+function toggleAutoplay(){
+  musicAutoplay = !musicAutoplay;
+  localStorage.setItem('musicAutoplay', musicAutoplay);
+  updateAutoplayBtn();
+}
+function updateAutoplayBtn(){
+  const btn = document.getElementById('autoplayToggle');
+  if(!btn) return;
+  btn.textContent = 'MUSIC AUTOPLAY: ' + (musicAutoplay ? 'ON' : 'OFF');
+  btn.style.color = musicAutoplay ? 'var(--accent)' : 'var(--text-dim)';
+  btn.style.borderColor = musicAutoplay ? 'var(--accent)' : 'var(--border)';
+}
+document.addEventListener('DOMContentLoaded', updateAutoplayBtn);
 
 fetch('data.json')
   .then(r => r.json())
