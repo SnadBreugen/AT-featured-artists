@@ -737,7 +737,7 @@ function render(a,idx,total,prev,next){
               ${tracks.filter(t=>t.name&&t.track_artist).map((t,i)=>`
                 <div class="track-item">
                   <button class="track-btn" id="tbtn-${i}" data-url="${esc(t.url)}" onclick="toggleDesc(${i},'${esc(t.url)}')">
-                    <img class="track-cover" src="https://api.audiotool.com/track/${tId(t.url)}/cover/256.jpg" onerror="this.style.display='none'" alt="">
+                    <img class="track-cover" src="https://api.audiotool.com/track/${tId(t.url)}/cover/256.jpg" onerror="this.src='${coverSrc||''}';this.onerror=null;" alt="">
                     <span class="tt">${esc(t.track_artist)} · ${esc(t.name)}</span>
                     <span class="tp" id="tp-${i}">▷</span>
                   </button>
