@@ -179,7 +179,8 @@
     "color1": "#ff4f26",
     "color_accent": "#ff4f26",
     "desc_bg": "#f7c2b5",
-    "links_bar_color": "#9ec13f"
+    "links_bar_color": "#9ec13f",
+    "album_number": 108
   },
   {
     "artist": "Icebox",
