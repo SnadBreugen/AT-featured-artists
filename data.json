@@ -986,7 +986,7 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/01/10/comment/tpc-news_draft/attachment-fcb07c0f62e74c1ba1cd86a250992026.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2022/01/09/albums/rszgk/cover256x256-f972d1efeb4a4657bbf8cc4f2d307620.jpg",
-    "is_current": true,
+    "is_current": false,
     "color1": "#99d154",
     "color_accent": "#99d154",
     "desc_bg": "#d4f3af",
@@ -5749,7 +5749,7 @@
     "color_accent": "#01b541",
     "desc_bg": "#b1ccdd",
     "links_bar_color": "#13daff",
-    "is_current": false
+    "is_current": true
   },
   {
     "artist": "NEW ARTIST",
