@@ -1018,7 +1018,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/01/24/comment/tpc-news/attachment-816a0e72e8b340fd92d884fb8881604a.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2022/01/24/albums/ieyyc/cover256x256-ed5cd253559e422d85bcedb76a8120ec.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#cd1f13",
+    "color_accent": "#cd1f13",
+    "desc_bg": "#cacbc8",
+    "links_bar_color": "#e9bdba"
   },
   {
     "artist": "Joe",
