@@ -1461,7 +1461,8 @@
     "color1": "#dd2fe9",
     "color_accent": "#dd2fe9",
     "desc_bg": "#f5a2fb",
-    "links_bar_color": "#509afb"
+    "links_bar_color": "#509afb",
+    "album_number": 124
   },
   {
     "artist": "Wightfall",
