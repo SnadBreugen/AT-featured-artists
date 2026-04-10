@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Featured Artists — Audiotool</title>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Special+Elite&family=Saira+Condensed:wght@900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Special+Elite&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #0e0e0e; --surface: #141414; --surface2: #1a1a1a;
@@ -147,13 +147,13 @@
 </header>
 
 <div style="padding:16px var(--pad);border-bottom:1px solid var(--border);background:var(--surface);position:relative;z-index:1;">
-  <span style="font-family:'Saira Condensed',sans-serif;font-weight:900;font-size:22px;color:var(--text);letter-spacing:-.01em;line-height:1.05;">
+  <span style="font-family:var(--type);font-size:20px;color:var(--text);letter-spacing:.02em;line-height:1.3;">
     Outstanding musicians from the Audiotool community | Featured artists and their Edition Audiotool albums
   </span>
 </div>
 <div class="search-bar">
   <input class="search-input" id="searchInput" type="text" placeholder="Search artists..." oninput="doSearch()">
-  <span class="search-count" id="searchCount"></span><span class="search-count" id="headerCount" style="margin-left:8px;color:var(--border);">|</span><span class="search-count" id="totalCount"></span>
+  <span class="search-count" id="searchCount"></span>
 </div>
 
 <div id="heroWrap" style="display:none" class="hero-wrap">
@@ -180,9 +180,10 @@ function updateAutoplayBtn(){
   const btn = document.getElementById('autoplayToggle');
   if(!btn) return;
   btn.textContent = 'MUSIC AUTOPLAY: ' + (musicAutoplay ? 'ON' : 'OFF');
-  btn.style.background = musicAutoplay ? 'var(--accent)' : 'none';
-  btn.style.color = musicAutoplay ? '#0e0e0e' : 'var(--text-dim)';
-  btn.style.borderColor = musicAutoplay ? 'var(--accent)' : 'var(--border)';
+  btn.style.background = 'var(--accent)';
+  btn.style.color = '#0e0e0e';
+  btn.style.borderColor = 'var(--accent)';
+  btn.style.opacity = musicAutoplay ? '1' : '0.5';
 }
 document.addEventListener('DOMContentLoaded', updateAutoplayBtn);
 
@@ -192,7 +193,7 @@ fetch('data.json')
     allArtists = data;
     const current = data.find(a => a.is_current);
     shuffled = data.filter(a => !a.is_current).reverse();
-    document.getElementById('totalCount').textContent = data.length + ' ARTISTS';
+    document.getElementById('searchCount').textContent = data.length + ' ARTISTS';
     document.getElementById('searchCount').textContent = shuffled.length + ' ARTISTS';
     if(current){ renderHero(current); applyBgWash(current); }
     renderGrid(shuffled);
