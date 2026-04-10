@@ -368,7 +368,8 @@
     "color1": "#ab8158",
     "color_accent": "#ab8158",
     "desc_bg": "#f8e0c9",
-    "links_bar_color": "#f0ae70"
+    "links_bar_color": "#f0ae70",
+    "album_number": 110
   },
   {
     "artist": "Kibbey",
