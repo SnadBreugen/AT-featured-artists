@@ -2401,7 +2401,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/09/04/comment/tpc-news_draft/attachment-17d4ec834d304525b5bbb77a9277e1a1.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2022/09/04/albums/rwigcs/cover256x256-eb731df59be84d77b93f4c650b665e2c.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#f4d2ae",
+    "color_accent": "#f4d2ae",
+    "desc_bg": "#f8f4e4",
+    "links_bar_color": "#9e7ef7"
   },
   {
     "artist": "ApoC",
