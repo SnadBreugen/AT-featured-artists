@@ -2976,29 +2976,34 @@
     "about": "Hiya! I'm Cherry and I'll be 17 years old by the time this interview is out! I was born in Nashville, but I've lived in central Florida for the past 8 years.",
     "tracks": [
       {
-        "url": "https://www.audiotool.com/track/4qenzr6cf833/",
-        "desc": "Soon I'll Be (roses) by evilpanda107/withdecay - beautiful, haunting, vocals So Good",
-        "name": "4qenzr6cf833"
-      },
-      {
         "url": "https://www.audiotool.com/track/2qc3zdit7dr/",
         "desc": "atlas by nico - such a creative and powerful piece",
-        "name": "2qc3zdit7dr"
+        "name": "atlas",
+        "track_artist": "nico"
       },
       {
         "url": "https://www.audiotool.com/track/nostalgia-yeq63qpz/",
         "desc": "nostalgia by abstract - first artist that truly inspired me on AT",
-        "name": "nostalgia yeq63qpz"
+        "name": "nostalgia",
+        "track_artist": "abstract"
       },
       {
         "url": "https://www.audiotool.com/track/h6es7bscjb3/",
         "desc": "apogee by opaqity - may be one of the best artists period",
-        "name": "h6es7bscjb3"
+        "name": "apogee",
+        "track_artist": "opaqity"
       },
       {
         "url": "https://www.audiotool.com/track/stardust-w2wgaaxx/",
         "desc": "stardust by looks - masterfully produced, powerful, stunning",
-        "name": "stardust w2wgaaxx"
+        "name": "stardust",
+        "track_artist": "looks"
+      },
+      {
+        "url": "https://www.audiotool.com/track/c5o1aev914/",
+        "desc": "trauma (we made it) - my own track, my most raw expression of emotion",
+        "name": "trauma (we made it)",
+        "track_artist": "etterath"
       },
       {
         "url": "https://www.audiotool.com/track/c5o1aev914/",
