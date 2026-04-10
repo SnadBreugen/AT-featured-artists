@@ -1976,7 +1976,10 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/06/26/comment/tpc-news_draft/attachment-432ba0a120ec4c388e625876f69724db.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2022/06/26/albums/bhxw4zi3g/cover256x256-7395eb358eda486791cabc5c2498482d.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#c46477",
+    "color_accent": "#c46477",
+    "links_bar_color": "#f5b2c3"
   },
   {
     "artist": "Gravidon",
@@ -2064,7 +2067,11 @@
       "twitter": "https://twitter.com/Gravi_Tweets",
       "instagram": "https://www.instagram.com/gravi.tv/"
     },
-    "is_current": false
+    "is_current": false,
+    "color1": "#7130e8",
+    "color_accent": "#7130e8",
+    "desc_bg": "#b997f7",
+    "links_bar_color": "#8cd39f"
   },
   {
     "artist": "nico",
