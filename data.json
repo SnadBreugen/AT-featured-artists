@@ -1741,7 +1741,8 @@
     "is_current": false,
     "color1": "#e2e4e3",
     "color_accent": "#e2e4e3",
-    "links_bar_color": "#c7c7c7"
+    "links_bar_color": "#c7c7c7",
+    "album_number": 127
   },
   {
     "artist": "sim",
