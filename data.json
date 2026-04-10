@@ -463,7 +463,8 @@
     "color1": "#acae19",
     "color_accent": "#acae19",
     "desc_bg": "#f2f3ce",
-    "links_bar_color": "#dddf58"
+    "links_bar_color": "#dddf58",
+    "album_number": 111
   },
   {
     "artist": "Syntax AKA Kiari",
