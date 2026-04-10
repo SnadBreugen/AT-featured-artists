@@ -3800,7 +3800,11 @@
     "social": {
       "instagram": "https://www.instagram.com/althruistic_/"
     },
-    "is_current": false
+    "is_current": false,
+    "color1": "#fac987",
+    "color_accent": "#fac987",
+    "links_bar_color": "#97bc43",
+    "desc_bg": "#e2f3b9"
   },
   {
     "artist": "Le Voile",
