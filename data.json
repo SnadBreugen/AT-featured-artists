@@ -4970,7 +4970,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2025/10/02/comment/tpc-news/attachment-270b1fbed17e43dc9496da2b933b2a81.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2025/10/02/albums/godvrqp/cover256x256-7511afc67de6441d99a3135c014c59df.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#8d99b1",
+    "color_accent": "#8d99b1",
+    "links_bar_color": "#e17a5f",
+    "desc_bg": "#e8c840"
   },
   {
     "artist": "@elow",
