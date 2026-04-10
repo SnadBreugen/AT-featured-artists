@@ -4877,7 +4877,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2025/09/18/comment/tpc-news/attachment-6211b649697c46e3b939c8663c934224.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2025/09/18/albums/olz62d0lm/cover256x256-782d5ce64e334b7d980fea884fced228.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#c9b651",
+    "color_accent": "#c9b651",
+    "links_bar_color": "#fdfe96",
+    "desc_bg": "#feffc2"
   },
   {
     "artist": "itxmi",
