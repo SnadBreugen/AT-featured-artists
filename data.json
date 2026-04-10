@@ -274,7 +274,8 @@
     "color1": "#9966ff",
     "color_accent": "#9966ff",
     "desc_bg": "#cab4f3",
-    "links_bar_color": "#39cedc"
+    "links_bar_color": "#39cedc",
+    "album_number": 109
   },
   {
     "artist": "Fluent",
