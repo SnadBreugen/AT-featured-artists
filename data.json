@@ -1646,7 +1646,8 @@
     "color1": "#fb0b0b",
     "color_accent": "#fb0b0b",
     "desc_bg": "#d6fff5",
-    "links_bar_color": "#1ce9fb"
+    "links_bar_color": "#1ce9fb",
+    "album_number": 126
   },
   {
     "artist": "po9t",
