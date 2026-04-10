@@ -754,10 +754,10 @@ function render(a,idx,total,prev,next){
     </div>
 
     <nav class="nav">
-      ${prev?`<a href="artist.html?id=${encodeURIComponent(prev.artist)}" class="nav-a"><span class="nav-dir">← Previous</span><span class="nav-name">${esc(prev.artist)}</span></a>`
-            :`<span class="nav-a" style="opacity:.25"><span class="nav-dir">Start of archive</span></span>`}
-      ${next?`<a href="artist.html?id=${encodeURIComponent(next.artist)}" class="nav-a"><span class="nav-dir">Next →</span><span class="nav-name">${esc(next.artist)}</span></a>`
-            :`<span class="nav-a" style="opacity:.25;text-align:right;align-items:flex-end"><span class="nav-dir">End of archive</span></span>`}
+      ${next?`<a href="artist.html?id=${encodeURIComponent(next.artist)}" class="nav-a"><span class="nav-dir">← Next</span><span class="nav-name">${esc(next.artist)}</span></a>`
+            :`<span class="nav-a" style="opacity:.25"><span class="nav-dir">End of archive</span></span>`}
+      ${prev?`<a href="artist.html?id=${encodeURIComponent(prev.artist)}" class="nav-a" style="text-align:right;align-items:flex-end"><span class="nav-dir">Previous →</span><span class="nav-name">${esc(prev.artist)}</span></a>`
+            :`<span class="nav-a" style="opacity:.25;text-align:right;align-items:flex-end"><span class="nav-dir">Start of archive</span></span>`}
     </nav>
   `;
 
