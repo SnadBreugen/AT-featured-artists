@@ -3545,7 +3545,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2023/05/22/comment/tpc-news/attachment-243c7416db444e4b8d56aded7d643113.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2023/05/22/albums/1topzrncq/cover256x256-8ff232349af142b6b9c4dfa3ef933a2e.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#8280ff",
+    "color_accent": "#8280ff",
+    "links_bar_color": "#1c9c76",
+    "desc_bg": "#a5d7e4"
   },
   {
     "artist": "Kurp",
