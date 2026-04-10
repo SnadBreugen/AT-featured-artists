@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Featured Artists — Audiotool</title>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Special+Elite&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Special+Elite&family=Saira+Condensed:wght@900&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #0e0e0e; --surface: #141414; --surface2: #1a1a1a;
@@ -143,12 +143,12 @@
 
 <header>
   <a href="index.html" class="logo">AUDIOTOOL <span class="slash">//</span> FEATURED ARTISTS</a>
-  <button id="autoplayToggle" onclick="toggleAutoplay()" style="background:none;border:2px solid var(--border);color:var(--text-dim);font-family:var(--block);font-size:14px;letter-spacing:.15em;padding:8px 18px;cursor:pointer;transition:all .2s;">MUSIC AUTOPLAY: OFF</button>
+  <button id="autoplayToggle" onclick="toggleAutoplay()" style="background:var(--accent);border:2px solid var(--accent);color:#0e0e0e;font-family:var(--block);font-size:14px;letter-spacing:.15em;padding:8px 18px;cursor:pointer;transition:all .2s;">MUSIC AUTOPLAY: OFF</button>
 </header>
 
 <div style="padding:16px var(--pad);border-bottom:1px solid var(--border);background:var(--surface);position:relative;z-index:1;">
-  <span style="font-family:var(--block);font-size:18px;color:var(--text);letter-spacing:.04em;">
-    Outstanding musicians from the Audiotool community | Featured artists and their Edition Audiotool albums.
+  <span style="font-family:'Saira Condensed',sans-serif;font-weight:900;font-size:22px;color:var(--text);letter-spacing:-.01em;line-height:1.05;">
+    Outstanding musicians from the Audiotool community | Featured artists and their Edition Audiotool albums
   </span>
 </div>
 <div class="search-bar">
@@ -180,7 +180,8 @@ function updateAutoplayBtn(){
   const btn = document.getElementById('autoplayToggle');
   if(!btn) return;
   btn.textContent = 'MUSIC AUTOPLAY: ' + (musicAutoplay ? 'ON' : 'OFF');
-  btn.style.color = musicAutoplay ? 'var(--accent)' : 'var(--text-dim)';
+  btn.style.background = musicAutoplay ? 'var(--accent)' : 'none';
+  btn.style.color = musicAutoplay ? '#0e0e0e' : 'var(--text-dim)';
   btn.style.borderColor = musicAutoplay ? 'var(--accent)' : 'var(--border)';
 }
 document.addEventListener('DOMContentLoaded', updateAutoplayBtn);
