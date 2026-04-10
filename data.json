@@ -1698,7 +1698,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/05/16/comment/tpc-news_draft/attachment-f70f59e40dd04040b125b3e0a96fcb53.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2022/05/16/albums/l6orny/cover256x256-35640fb09e8d4cc9bef227871a0300bb.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#589ff3",
+    "color_accent": "#589ff3",
+    "desc_bg": "#eaddd2",
+    "links_bar_color": "#b08154"
   },
   {
     "artist": "aeiter",
@@ -1786,7 +1790,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/05/30/comment/tpc-news_draft/attachment-991b17980fa1477199169b88de188a56.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2022/05/29/albums/k2gh7/cover256x256-bc0672e9eeef4168a915fdbaa7f8391d.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#5b6be1",
+    "color_accent": "#5b6be1",
+    "links_bar_color": "#e8626f",
+    "desc_bg": "#b9c0f9"
   },
   {
     "artist": "okin",
@@ -1877,7 +1885,11 @@
     "social": {
       "instagram": "https://www.instagram.com/okin_uk/"
     },
-    "is_current": false
+    "is_current": false,
+    "color1": "#caa68e",
+    "color_accent": "#caa68e",
+    "links_bar_color": "#9cb6c5",
+    "desc_bg": "#dde7e6"
   },
   {
     "artist": "Client",
