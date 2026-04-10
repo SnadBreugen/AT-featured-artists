@@ -3390,7 +3390,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2023/04/24/comment/tpc-news/attachment-cc068e8cf20545c3bb007f9be65e4f10.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2023/04/24/albums/htt3j7dl6/cover256x256-e53599d01f71426fa5b60271fdf95dd6.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#d541a9",
+    "color_accent": "#d541a9",
+    "links_bar_color": "#e0bb26",
+    "desc_bg": "#fcc5f2"
   },
   {
     "artist": "Amp7070",
