@@ -434,7 +434,7 @@
 <header>
   <a href="index.html" class="logo">AUDIOTOOL <span class="slash">//</span> FEATURED ARTISTS</a>
   <div style="display:flex;align-items:center;gap:20px">
-    <span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--mono)">v0.7.3</span>
+    <span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--mono)">v0.7.4</span>
     <a href="index.html" class="back">← All artists</a>
   </div>
 </header>
@@ -523,7 +523,7 @@ function applyColors(t,b){
 
 let albumOpen=false;
 let currentTrackIdx=-1;
-let autoplay=true;
+let autoplay=localStorage.getItem('musicAutoplay')==='true';
 window._tracks=[];
 
 function loadTrack(idx){
@@ -604,8 +604,12 @@ window.playTrack=function(url){
 
 window.toggleAutoplay=function(){
   autoplay=!autoplay;
+  localStorage.setItem('musicAutoplay', autoplay);
   const btn=document.getElementById('autoplayBtn');
-  if(btn) btn.style.opacity=autoplay?'1':'0.35';
+  if(btn){
+    btn.textContent = autoplay ? 'AUTO ▶' : 'AUTO ■';
+    btn.style.opacity=autoplay?'1':'0.4';
+  }
 };
 window.toggleAlbum=function(){
   const player=document.getElementById('albumPlayer');
@@ -740,7 +744,13 @@ function render(a,idx,total,prev,next){
   `;
 
   window._albumId=albumId;
-  // Autostart first track
+  // Update autoplay button state
+  const abtn=document.getElementById('autoplayBtn');
+  if(abtn){
+    abtn.textContent = autoplay ? 'AUTO ▶' : 'AUTO ■';
+    abtn.style.opacity = autoplay ? '1' : '0.4';
+  }
+  // Autostart first track if enabled
   if(tracks.length && autoplay){
     setTimeout(()=>loadTrack(0), 800);
   }
