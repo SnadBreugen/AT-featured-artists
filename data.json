@@ -3608,7 +3608,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2023/06/05/comment/tpc-news/attachment-8878da1561474486817858c3e807b1d4.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2023/06/05/albums/46rop/cover256x256-d56c1d0b38474ec3a8529a3bc295b66c.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#50f993",
+    "color_accent": "#50f993",
+    "links_bar_color": "#b30909",
+    "desc_bg": "#e0e0e0"
   },
   {
     "artist": "Uzeh",
