@@ -5416,7 +5416,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2025/12/11/comment/tpc-news/attachment-33625885b6924cd896eb29929b05cf09.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2025/12/11/albums/osio4/cover256x256-9b1986497add4631af823727a2f17a23.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#cd4f5a",
+    "color_accent": "#cd4f5a",
+    "links_bar_color": "#95b696",
+    "desc_bg": "#bdceae"
   },
   {
     "artist": "erthboy",
