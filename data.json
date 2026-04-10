@@ -4341,7 +4341,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2025/04/24/comment/tpc-news/attachment-8adf0330f53e401e99b4698667d4c527.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2025/04/24/albums/hj1ci68/cover256x256-76438628f5254cce9fc2afe5c9c28e86.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#9a1e87",
+    "color_accent": "#9a1e87",
+    "links_bar_color": "#dc3c78",
+    "desc_bg": "#ffdbeb"
   },
   {
     "artist": "Dj TeK-NjA",
