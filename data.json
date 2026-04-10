@@ -4506,7 +4506,11 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2025/05/22/comment/tpc-news/attachment-c12216c86665433c8509c39d5ccc28b3.png",
-    "is_current": false
+    "is_current": false,
+    "color1": "#fb6423",
+    "color_accent": "#fb6423",
+    "links_bar_color": "#31b0cf",
+    "desc_bg": "#ffc6ad"
   },
   {
     "artist": "BioL!nk",
