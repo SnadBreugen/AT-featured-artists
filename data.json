@@ -1607,7 +1607,10 @@
     "social": {
       "instagram": "https://www.instagram.com/po9t.mp3/"
     },
-    "is_current": false
+    "is_current": false,
+    "color1": "#e2e4e3",
+    "color_accent": "#e2e4e3",
+    "links_bar_color": "#c7c7c7"
   },
   {
     "artist": "sim",
