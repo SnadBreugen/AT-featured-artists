@@ -4431,7 +4431,11 @@
       "bandcamp": "https://djtek-nja.bandcamp.com"
     },
     "soundcloud": "https://soundcloud.com/dj-tek-nja",
-    "is_current": false
+    "is_current": false,
+    "color1": "#803cc3",
+    "color_accent": "#803cc3",
+    "links_bar_color": "#f69dfc",
+    "desc_bg": "#fee9fe"
   },
   {
     "artist": "Sub4sax",
