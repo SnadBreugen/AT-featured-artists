@@ -2459,7 +2459,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/09/18/comment/tpc-news_draft/attachment-c74fba8152fc4a2dbf11d222fb935a6b.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2022/09/18/albums/ge68uh/cover256x256-e51735b52b054a55957e55eeefec0191.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#bc2f2f",
+    "color_accent": "#bc2f2f",
+    "links_bar_color": "#166d6d",
+    "desc_bg": "#dbd6ff"
   },
   {
     "artist": "sphere",
@@ -2548,7 +2552,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2022/10/03/comment/tpc-news_draft/attachment-b54233ec919e48ea8cefa3246874bf96.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2022/10/03/albums/6fd3wz3bv/cover256x256-d67bd69764074cc1a601cd5a555d70e1.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#c9e2b1",
+    "color_accent": "#c9e2b1",
+    "desc_bg": "#e0cdef",
+    "links_bar_color": "#8458d5"
   },
   {
     "artist": "Drimeur",
