@@ -433,8 +433,9 @@
 
 <header>
   <a href="index.html" class="logo">AUDIOTOOL <span class="slash">//</span> FEATURED ARTISTS</a>
+  <button id="autoplayToggle" onclick="window.toggleAutoplay()" style="background:var(--accent);border:2px solid #0e0e0e;color:#0e0e0e;font-family:var(--block);font-size:13px;letter-spacing:.15em;padding:6px 16px;cursor:pointer;transition:all .2s;">▶ MUSIC AUTOPLAY</button>
   <div style="display:flex;align-items:center;gap:20px">
-    <span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--mono)">v0.7.4</span>
+    <span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--mono)">v0.7.5</span>
     <a href="index.html" class="back">← All artists</a>
   </div>
 </header>
@@ -605,12 +606,33 @@ window.playTrack=function(url){
 window.toggleAutoplay=function(){
   autoplay=!autoplay;
   localStorage.setItem('musicAutoplay', autoplay);
-  const btn=document.getElementById('autoplayBtn');
-  if(btn){
-    btn.textContent = autoplay ? 'AUTO ▶' : 'AUTO ■';
-    btn.style.opacity=autoplay?'1':'0.4';
+  updateAutoplayButtons();
+  if(!autoplay){
+    const player=document.getElementById('albumPlayer');
+    if(player) player.innerHTML='';
   }
 };
+function updateAutoplayButtons(){
+  const mainBtn=document.getElementById('autoplayToggle');
+  const inlineBtn=document.getElementById('autoplayBtn');
+  if(mainBtn){
+    if(autoplay){
+      mainBtn.textContent='■ MUSIC AUTOPLAY';
+      mainBtn.style.background='transparent';
+      mainBtn.style.color='var(--accent)';
+      mainBtn.style.borderColor='var(--accent)';
+    } else {
+      mainBtn.textContent='▶ MUSIC AUTOPLAY';
+      mainBtn.style.background='var(--accent)';
+      mainBtn.style.color='#0e0e0e';
+      mainBtn.style.borderColor='#0e0e0e';
+    }
+  }
+  if(inlineBtn){
+    inlineBtn.textContent = autoplay ? 'AUTO ■' : 'AUTO ▶';
+    inlineBtn.style.opacity = autoplay ? '1' : '0.4';
+  }
+}
 window.toggleAlbum=function(){
   const player=document.getElementById('albumPlayer');
   const icon=document.getElementById('playIcon');
@@ -745,11 +767,7 @@ function render(a,idx,total,prev,next){
 
   window._albumId=albumId;
   // Update autoplay button state
-  const abtn=document.getElementById('autoplayBtn');
-  if(abtn){
-    abtn.textContent = autoplay ? 'AUTO ▶' : 'AUTO ■';
-    abtn.style.opacity = autoplay ? '1' : '0.4';
-  }
+  updateAutoplayButtons();
   // Autostart first track if enabled
   if(tracks.length && autoplay){
     setTimeout(()=>loadTrack(0), 800);
