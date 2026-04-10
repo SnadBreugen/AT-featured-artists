@@ -3235,7 +3235,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2023/03/27/comment/tpc-news/attachment-a5ad265e97b044938dce21410d18e019.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2023/03/27/albums/hkmeiqi7z/cover256x256-c40e9b96eb2e428a86ee63570aa737fe.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#bdfa07",
+    "color_accent": "#bdfa07",
+    "links_bar_color": "#e6fc04",
+    "desc_bg": "#f3fdc7"
   },
   {
     "artist": "mxcii",
