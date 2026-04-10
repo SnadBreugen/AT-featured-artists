@@ -462,7 +462,7 @@
     "links_bar_color": "#dddf58"
   },
   {
-    "artist": "Syntax",
+    "artist": "Syntax AKA Kiari",
     "real_name": "Nicholas Girouard (kiari)",
     "date": "2021-10-17",
     "board_url": "https://www.audiotool.com/board/news/featured_artist_syntax",
@@ -482,6 +482,24 @@
         "desc": "Infyuthsion - one of my favourite DnB tracks in general",
         "name": "Aquamarine",
         "track_artist": "Infyuthsion"
+      },
+      {
+        "url": "https://www.audiotool.com/track/sayonara_days_gone_bump/",
+        "name": "Sayonara Days [Gone Bump]",
+        "track_artist": "Zone",
+        "desc": "A direct inspiration for one of my own tracks; this timeless beauty always has me coming back for a listen. The warmth of the bass and smoothness of the percussion is something so specific to Zone's style that I think is very captivating."
+      },
+      {
+        "url": "https://www.audiotool.com/track/light_pulse_of_the_heart/",
+        "name": "Light Pulse of the Heart",
+        "track_artist": "Inavon",
+        "desc": "Another very inspiring favourite of mine. Inavon's trancey synths in a pop-esque chiptune leave this one feeling dreamy and whimsical, yet still bursting with energy. Oh, and that melody is absolutely perfect, one of the best uses of tune sliding I can think of, however subtle its inclusion may be."
+      },
+      {
+        "url": "https://www.audiotool.com/track/fx98po5l7s6/",
+        "name": "Phos;Nouveau",
+        "track_artist": "Syntax AKA Kiari",
+        "desc": ""
       }
     ],
     "interview": [
