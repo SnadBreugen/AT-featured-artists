@@ -3173,7 +3173,11 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2023/03/20/comment/tpc-news/attachment-4e4dbfede8974d87a0c7aa82c2c6f381.png",
-    "is_current": false
+    "is_current": false,
+    "color1": "#b8d7eb",
+    "color_accent": "#b8d7eb",
+    "links_bar_color": "#ed7750",
+    "desc_bg": "#d1edff"
   },
   {
     "artist": "WPX",
