@@ -219,6 +219,7 @@ function selectArtist(idx){
         <div class="field-row"><div class="field-label">Artist Name</div><input class="field-input" value="${esc(a.artist)}" onchange="save('artist',this.value)"></div>
         <div class="field-row"><div class="field-label">Real Name</div><input class="field-input" value="${esc(a.real_name||'')}" onchange="save('real_name',this.value)"></div>
         <div class="field-row"><div class="field-label">Date (YYYY-MM-DD)</div><input class="field-input" value="${esc(a.date||'')}" onchange="save('date',this.value)"></div>
+        <div class="field-row"><div class="field-label">Album Number</div><input class="field-input" type="number" value="${a.album_number||''}" onchange="save('album_number',this.value?parseInt(this.value):null)" placeholder="e.g. 124"></div>
         <div class="field-row"><div class="field-label">Artist Photo URL</div><input class="field-input" value="${esc(a.photo||'')}" onchange="save('photo',this.value)"></div>
         <div class="field-row"><div class="field-label">Photo Position (e.g. top, center, 50% 20%)</div>
           <div style="display:flex;gap:8px">
