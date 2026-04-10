@@ -1449,7 +1449,11 @@
       "instagram": "https://www.instagram.com/wightfall/",
       "spotify": "https://open.spotify.com/artist/3wLNmKdqqy3rjGRZY7PgvR"
     },
-    "is_current": false
+    "is_current": false,
+    "color1": "#fdfdfd",
+    "color_accent": "#fdfdfd",
+    "desc_bg": "#acd9e2",
+    "links_bar_color": "#00d3ff"
   },
   {
     "artist": "Two Sworded",
