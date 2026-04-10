@@ -1836,7 +1836,7 @@
     "color_accent": "#589ff3",
     "desc_bg": "#eaddd2",
     "links_bar_color": "#b08154",
-    "is_hidden": true
+    "is_hidden": false
   },
   {
     "artist": "aeiter",
@@ -1943,7 +1943,8 @@
       {
         "url": "https://www.audiotool.com/track/bv3wq67w/",
         "desc": "Identical [ollie flip] by ollie - one of my favorites",
-        "name": "bv3wq67w"
+        "name": "bv3wq67w",
+        "track_artist": "ollie"
       },
       {
         "url": "https://www.audiotool.com/track/stressed_out_neo_flip/",
