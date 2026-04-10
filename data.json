@@ -3104,7 +3104,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2023/03/13/comment/tpc-news/attachment-58ebace1c1404e44ac688cec7723533c.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2023/03/13/albums/33w5vfv/cover256x256-4c08dae4880f4199a9e16fed288acbf2.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#8fbbe2",
+    "color_accent": "#8fbbe2",
+    "links_bar_color": "#d5d2ca",
+    "desc_bg": "#ead6ae"
   },
   {
     "artist": "Kepz",
