@@ -3988,7 +3988,11 @@
     "social": {
       "linktree": "https://linktr.ee/hurakanofficial"
     },
-    "is_current": false
+    "is_current": false,
+    "color1": "#dcebb4",
+    "color_accent": "#dcebb4",
+    "links_bar_color": "#c3e170",
+    "desc_bg": "#eef5db"
   },
   {
     "artist": "1trillionMPH",
