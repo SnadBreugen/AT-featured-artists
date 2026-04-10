@@ -4085,7 +4085,11 @@
     "social": {
       "bandcamp": "https://1trillionmph.bandcamp.com"
     },
-    "is_current": false
+    "is_current": false,
+    "color1": "#fdfea0",
+    "color_accent": "#fdfea0",
+    "links_bar_color": "#bfab4d",
+    "desc_bg": "#ababab"
   },
   {
     "artist": "ryzenn AKA taiko!",
