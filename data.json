@@ -2320,7 +2320,8 @@
       {
         "url": "https://www.audiotool.com/track/egodeath_w_opi/",
         "desc": "egodeath w/ opi by looks - the best trap track on the website",
-        "name": "egodeath w opi"
+        "name": "egodeath w opi",
+        "track_artist": "looks & opi"
       },
       {
         "url": "https://www.audiotool.com/track/why_did_i_fade_away/",
@@ -2331,17 +2332,25 @@
       {
         "url": "https://www.audiotool.com/track/abs_x_lux_-_peripherals/",
         "desc": "peripherals by abstract & looks - most infectious melodies I've ever heard",
-        "name": "abs x lux   peripherals"
+        "name": "abs x lux   peripherals",
+        "track_artist": "abstract & looks"
       },
       {
         "url": "https://www.audiotool.com/track/fractals-3juepv/",
         "desc": "Fractals by Infyuthsion - person I'm most grateful for in my growth",
-        "name": "fractals 3juepv"
+        "name": "fractals ",
+        "track_artist": "Infyuthsion"
       },
       {
         "url": "https://www.audiotool.com/track/965ugbljb/",
         "desc": "im not gonna keep asking by evilpanda107 - my favourite song on Audiotool",
         "name": "965ugbljb"
+      },
+      {
+        "url": "https://www.audiotool.com/track/41alihfxj79a/",
+        "name": "//AQUAMARINE",
+        "track_artist": "leadenshrew",
+        "desc": "I had a PS2 when I was growing up, and two of my favourite games were Metal Gear Solid 2 and Sonic Riders: Zero Gravity. The music in those games were so iconic and stuck with me to this day. There was recently a boom in Y2K style music on Soundcloud, which brought all those memories back. It's a pretty personal track that a nine year old me would enjoy."
       }
     ],
     "interview": [
