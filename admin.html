@@ -135,6 +135,13 @@ function deleteArtist(){
   markDirty();
   showToast('Deleted: ' + name);
 }
+function toggleHidden(){
+  if(currentIdx===null) return;
+  data[currentIdx].is_hidden = !data[currentIdx].is_hidden;
+  markDirty();
+  selectArtist(currentIdx);
+  showToast(data[currentIdx].is_hidden ? 'Artist hidden' : 'Artist visible');
+}
 function toggleCurrent(){
   if(currentIdx===null) return;
   const isCurrent = !data[currentIdx].is_current;
@@ -175,7 +182,7 @@ function renderList(artists){
   document.getElementById('artistList').innerHTML=artists.map(a=>{
     const isCur=!!a.is_current;
     const i=data.indexOf(a),hasColors=!!(a.color1&&a.color2);
-    return `<div class="artist-item ${currentIdx===i?'active':''}" onclick="selectArtist(${i})"><span class="ai-name">${isCur?'★ ':''} ${a.artist}</span><span class="ai-dot ${hasColors?'has-colors':''}" title="${hasColors?'Colors set':'No colors'}"></span></div>`;
+    return `<div class="artist-item ${currentIdx===i?'active':''}" onclick="selectArtist(${i})"><span class="ai-name">${isCur?'★ ':''}${a.is_hidden?'◉ ':''} ${a.artist}</span><span class="ai-dot ${hasColors?'has-colors':''}" title="${hasColors?'Colors set':'No colors'}"></span></div>`;
   }).join('');
 }
 function filterArtists(){const q=document.getElementById('searchInput').value.toLowerCase();renderList(q?data.filter(a=>a.artist.toLowerCase().includes(q)):data);}
@@ -192,6 +199,7 @@ function selectArtist(idx){
   const social=a.social||{};
   const tracks=[...(a.tracks||[])];while(tracks.length<6)tracks.push({url:'',name:'',track_artist:'',desc:''});
   const isCurrent=!!a.is_current;
+  const isHidden=!!a.is_hidden;
 
   document.getElementById('editor').innerHTML=`
     <div class="ed-title">${a.artist}</div>
@@ -199,6 +207,9 @@ function selectArtist(idx){
     <div style="margin-bottom:28px">
       <button onclick="toggleCurrent()" id="currentBtn" style="font-family:var(--block);font-size:13px;letter-spacing:.1em;padding:8px 20px;border:none;cursor:pointer;${isCurrent?'background:var(--accent);color:var(--bg)':'background:var(--surface);border:1px solid var(--border);color:var(--text-dim)'}">
         ${isCurrent ? '★ CURRENT FEATURED' : '☆ SET AS CURRENT FEATURED'}
+      </button>
+      <button onclick="toggleHidden()" id="hiddenBtn" style="font-family:var(--block);font-size:13px;letter-spacing:.1em;padding:8px 20px;border:none;cursor:pointer;margin-left:8px;${isHidden?'background:var(--red);color:#fff':'background:var(--surface);border:1px solid var(--border);color:var(--text-dim)'}">
+        ${isHidden ? '◉ HIDDEN' : '○ SET AS HIDDEN'}
       </button>
     </div>
 
