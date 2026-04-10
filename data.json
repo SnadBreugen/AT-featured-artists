@@ -523,8 +523,8 @@
     "is_current": false,
     "color1": "#7270d7",
     "color_accent": "#7270d7",
-    "desc_bg": "#d33141",
-    "links_bar_color": "#c0bfe8"
+    "desc_bg": "#e0b8bc",
+    "links_bar_color": "#9c9bf3"
   },
   {
     "artist": "Laevent",
@@ -613,8 +613,8 @@
     "is_current": false,
     "color1": "#5f5cff",
     "color_accent": "#5f5cff",
-    "desc_bg": "#6cb054",
-    "links_bar_color": "#c4c3f9"
+    "desc_bg": "#d5f8c9",
+    "links_bar_color": "#807ef1"
   },
   {
     "artist": "Naut",
@@ -779,8 +779,8 @@
     "is_current": false,
     "color1": "#66cdcc",
     "color_accent": "#66cdcc",
-    "desc_bg": "#ce58d0",
-    "links_bar_color": "#edbaee"
+    "desc_bg": "#efbcf0",
+    "links_bar_color": "#990198"
   },
   {
     "artist": "Sila",
