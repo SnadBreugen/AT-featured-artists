@@ -4696,7 +4696,11 @@
     "social": {
       "bandcamp": "https://soundsofatelier.bandcamp.com"
     },
-    "is_current": false
+    "is_current": false,
+    "color1": "#9d221e",
+    "color_accent": "#9d221e",
+    "links_bar_color": "#e04fc5",
+    "desc_bg": "#a8e8f0"
   },
   {
     "artist": "atelier",
