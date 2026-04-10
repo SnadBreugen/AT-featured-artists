@@ -4600,7 +4600,10 @@
     "social": {
       "instagram": "https://www.instagram.com/biolink_official/"
     },
-    "is_current": false
+    "is_current": false,
+    "color1": "#9d221d",
+    "color_accent": "#9d221d",
+    "links_bar_color": "#bdcceb"
   },
   {
     "artist": "Batoune & The Brewers",
