@@ -776,7 +776,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2021/12/13/comment/tpc-news_draft/attachment-0df41feebe4140ee9d23ba1b72f121c3.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2021/12/11/albums/ejmf2b/cover256x256-f905ca18e5ff41828bf755868493d62c.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#66cdcc",
+    "color_accent": "#66cdcc",
+    "desc_bg": "#ce58d0",
+    "links_bar_color": "#edbaee"
   },
   {
     "artist": "Sila",
