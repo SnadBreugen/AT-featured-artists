@@ -268,7 +268,11 @@
       "instagram": "https://www.instagram.com/call.me.icebox/",
       "spotify": "https://open.spotify.com/artist/3EPASK2OUUcDo6RgfnroTK"
     },
-    "is_current": false
+    "is_current": false,
+    "color1": "#9966ff",
+    "color_accent": "#9966ff",
+    "desc_bg": "#39cedc",
+    "links_bar_color": "#e2d3fd"
   },
   {
     "artist": "Fluent",
