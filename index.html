@@ -221,8 +221,8 @@ fetch('data.json')
   .then(r => r.json())
   .then(data => {
     allArtists = data;
-    const current = data.find(a => a.is_current);
-    shuffled = data.filter(a => !a.is_current).reverse();
+    const current = data.find(a => a.is_current && !a.is_hidden);
+    shuffled = data.filter(a => !a.is_current && !a.is_hidden).reverse();
     document.getElementById('searchCount').textContent = data.length + ' ARTISTS';
     document.getElementById('searchCount').textContent = shuffled.length + ' ARTISTS';
     if(current){ renderHero(current); applyBgWash(current); }
