@@ -3453,7 +3453,11 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2023/05/08/comment/tpc-news/attachment-06e6e97ff03349cc81780a6cde60d768.png",
     "cover_url": "https://at-cdn-s03.audiotool.com/2023/05/08/albums/pnn0nr/cover256x256-7e413510cea74a059e340fae622a1278.jpg",
-    "is_current": false
+    "is_current": false,
+    "color1": "#11c5cf",
+    "color_accent": "#11c5cf",
+    "links_bar_color": "#27918a",
+    "desc_bg": "#91f6fd"
   },
   {
     "artist": "Civility",
