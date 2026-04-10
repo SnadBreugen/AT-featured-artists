@@ -4783,7 +4783,11 @@
       }
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2025/07/24/comment/tpc-news/attachment-2e550ae19f784c10a3d280c55d313f93.png",
-    "is_current": false
+    "is_current": false,
+    "color1": "#ffc700",
+    "color_accent": "#ffc700",
+    "links_bar_color": "#fdfd00",
+    "desc_bg": "#fbe598"
   },
   {
     "artist": "volen",
