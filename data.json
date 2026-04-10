@@ -3890,7 +3890,11 @@
       "bandcamp": "https://levoile.bandcamp.com",
       "instagram": "https://www.instagram.com/le_voile_music/"
     },
-    "is_current": false
+    "is_current": false,
+    "color1": "#a6d636",
+    "color_accent": "#a6d636",
+    "links_bar_color": "#fffd60",
+    "desc_bg": "#b6cbe2"
   },
   {
     "artist": "anodyne",
