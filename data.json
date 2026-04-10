@@ -271,8 +271,8 @@
     "is_current": false,
     "color1": "#9966ff",
     "color_accent": "#9966ff",
-    "desc_bg": "#39cedc",
-    "links_bar_color": "#e2d3fd"
+    "desc_bg": "#cab4f3",
+    "links_bar_color": "#39cedc"
   },
   {
     "artist": "Fluent",
@@ -364,8 +364,8 @@
     "is_current": false,
     "color1": "#ab8158",
     "color_accent": "#ab8158",
-    "desc_bg": "#edb37d",
-    "links_bar_color": "#f4e5d7"
+    "desc_bg": "#f8e0c9",
+    "links_bar_color": "#f0ae70"
   },
   {
     "artist": "Kibbey",
