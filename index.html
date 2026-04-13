@@ -27,7 +27,13 @@
   }
   .logo { font-family:var(--block); font-size:16px; letter-spacing:.15em; color:var(--text); text-decoration:none; }
   .logo .slash { color:var(--accent); }
-  .header-count { font-family:var(--block); font-size:13px; letter-spacing:.1em; color:var(--text-dim); }
+  .header-right { display:flex; align-items:center; gap:20px; }
+  .gen-link {
+    font-family:var(--block); font-size:13px; letter-spacing:.12em;
+    color:var(--text-dim); text-decoration:none; transition:color .15s;
+  }
+  .gen-link:hover { color:var(--accent); }
+  .gen-link.active { color:var(--accent); }
 
   .search-bar {
     border-bottom:1px solid var(--border); padding:14px var(--pad);
@@ -78,35 +84,26 @@
   .grid-title { font-family:var(--block); font-size:13px; letter-spacing:.2em; color:var(--text-dim); margin-bottom:24px; }
   .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(340px, 1fr)); gap:1px; background:var(--border); }
 
-  /* CARD — horizontal layout like mockup */
+  /* CARD */
   .card {
     background:var(--bg); text-decoration:none; display:flex; flex-direction:column;
     position:relative; overflow:hidden; transition:background .15s; cursor:pointer;
   }
   .card:hover { background:var(--surface); }
-
   .card-inner { display:flex; gap:0; flex:1; }
-
-  /* Photo block — fixed width, square */
-  .card-photo-wrap {
-    width:140px; height:140px; flex-shrink:0;
-  }
+  .card-photo-wrap { width:140px; height:140px; flex-shrink:0; }
   .card-photo {
     width:100%; height:100%; object-fit:contain; object-position:center;
     display:block; transition:transform .3s; background:var(--surface2);
   }
   .card:hover .card-photo { transform:scale(1.04); filter:grayscale(0%); }
   .card-photo-placeholder { width:100%; height:100%; min-height:140px; background:var(--surface2); }
-
   .card-photo-label {
     position:absolute; bottom:0; left:0; right:0; padding:5px 8px;
     background:rgba(14,14,14,.85);
     font-family:var(--block); font-size:9px; letter-spacing:.12em; color:var(--text-dim);
     white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
   }
-
-
-  /* Info block */
   .card-info {
     flex:1; padding:16px 18px 14px; display:flex; flex-direction:column; justify-content:space-between; min-width:0;
   }
@@ -121,8 +118,6 @@
   .card-year { font-family:var(--block); font-size:32px; letter-spacing:.04em; color:#444; line-height:1; margin-bottom:8px; }
   .card-intro { font-size:10px; line-height:1.65; color:var(--text-dim); font-style:italic;
     display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
-
-  /* bottom accent bar */
   .card-bar { height:3px; width:100%; background:var(--border); flex-shrink:0; transition:background .25s; }
   .card:hover .card-bar { background:var(--card-accent, var(--accent)); }
 
@@ -143,7 +138,11 @@
 
 <header>
   <a href="index.html" class="logo">AUDIOTOOL <span class="slash">//</span> FEATURED ARTISTS</a>
-  <button id="autoplayToggle" onclick="toggleAutoplay()" style="background:var(--accent);border:2px solid #0e0e0e;color:#0e0e0e;font-family:var(--block);font-size:14px;letter-spacing:.15em;padding:8px 18px;cursor:pointer;transition:all .2s;">MUSIC AUTOPLAY: OFF</button>
+  <div class="header-right">
+    <a href="index.html" class="gen-link active">GEN II</a>
+    <a href="generation1.html" class="gen-link">GEN I</a>
+    <button id="autoplayToggle" onclick="toggleAutoplay()" style="background:var(--accent);border:2px solid #0e0e0e;color:#0e0e0e;font-family:var(--block);font-size:14px;letter-spacing:.15em;padding:8px 18px;cursor:pointer;transition:all .2s;">MUSIC AUTOPLAY: OFF</button>
+  </div>
 </header>
 
 <div style="padding:16px var(--pad);border-bottom:1px solid var(--border);background:var(--surface);position:relative;z-index:1;">
@@ -202,7 +201,6 @@ function toggleAutoplay(){
 function updateAutoplayBtn(){
   const btn = document.getElementById('autoplayToggle');
   if(!btn) return;
-  btn.textContent = 'MUSIC AUTOPLAY: ' + (musicAutoplay ? 'ON' : 'OFF');
   if(musicAutoplay){
     btn.textContent = '■ MUSIC AUTOPLAY';
     btn.style.background = 'transparent';
@@ -223,7 +221,6 @@ fetch('data.json')
     allArtists = data;
     const current = data.find(a => a.is_current && !a.is_hidden);
     shuffled = data.filter(a => !a.is_current && !a.is_hidden).reverse();
-    document.getElementById('searchCount').textContent = data.length + ' ARTISTS';
     document.getElementById('searchCount').textContent = shuffled.length + ' ARTISTS';
     if(current){ renderHero(current); applyBgWash(current); }
     renderGrid(shuffled);
@@ -261,21 +258,17 @@ function renderGrid(artists){
   const noRes = document.getElementById('noResults');
   if(!artists.length){ grid.innerHTML=''; noRes.style.display='block'; return; }
   noRes.style.display = 'none';
-
   grid.innerHTML = artists.map((a, i) => {
     const accent = a.color1 || a.color_accent || '';
     const accentStyle = accent ? `style="--card-accent:${accent}"` : '';
-    const intro = (a.intro||'').slice(0,120).replace(/</g,'&lt;') + ((a.intro||'').length>120?'…':'');
+    const intro = (a.intro||'').slice(0,120).replace(/</g,'&lt;') + ((a.intro||'').length>120?'...':'');
     const year = (a.date||'').slice(0,4);
-    const origIdx = allArtists.indexOf(a);
-    const num = origIdx >= 0 ? origIdx + 107 : '—';
     return `<a href="artist.html?id=${encodeURIComponent(a.artist)}" class="card" ${accentStyle}>
       <div class="card-inner">
         <div class="card-photo-wrap">
           ${a.photo
             ? `<img src="${a.photo}" class="card-photo" style="object-position:${a.photo_position||'top'}" alt="${a.artist}" loading="lazy" onerror="this.outerHTML='<div class=card-photo-placeholder></div>'">`
             : '<div class="card-photo-placeholder"></div>'}
-
         </div>
         <div class="card-info">
           <div class="card-top">
@@ -309,7 +302,6 @@ function doSearch(){
   renderGrid(results);
 }
 </script>
-
 
 </body>
 </html>

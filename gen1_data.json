@@ -1,0 +1,107 @@
+[
+  {
+    "artist": "Jace",
+    "real_name": "Joel Caffey",
+    "date": "2014-07-02",
+    "album_number": 1,
+    "at_profile": "https://www.audiotool.com/user/tophat",
+    "album_url": "https://www.audiotool.com/album/uedgwu/",
+    "cover_url": "https://at-cdn-s01.audiotool.com/2014/07/02/albums/UEdgwu/cover256x256-a0a04b2d9bdd43a4aca06e115d0f9889.jpg",
+    "photo": "https://at-cdn-s01.audiotool.com/2014/07/02/albums/UEdgwu/cover256x256-a0a04b2d9bdd43a4aca06e115d0f9889.jpg",
+    "photo_position": "center",
+    "intro": "For years TopHat has stood for high-quality atmospheric tracks somewhere between Chillout and Future Garage. Give yourselves time and enjoy a sample of his mastery.",
+    "about": "Joel Caffey, 18, from Chesapeake, Virginia. Student of biomedical engineering at Boston University. Started making music at age seven on piano, electronically around 2009. On Audiotool since 2010.",
+    "interview": [
+      {
+        "q": "Style",
+        "a": "Profoundly whimsical (life soundtrack music)"
+      },
+      {
+        "q": "Background",
+        "a": "Southern gospel piano, traditional jazz"
+      },
+      {
+        "q": "Message",
+        "a": "I have learned that music is an extension of what we come to love, so let the essence of your heart flow effortlessly through your sound."
+      }
+    ],
+    "tracks": [
+      {
+        "url": "https://www.audiotool.com/track/under_the_same_sun/",
+        "name": "Under The Same Sun",
+        "track_artist": "Olaf",
+        "desc": "don't fear your emotions; channel them"
+      },
+      {
+        "url": "https://www.audiotool.com/track/lense/",
+        "name": "Lense",
+        "track_artist": "VLTRA",
+        "desc": "devote time to each element of a track"
+      },
+      {
+        "url": "https://www.audiotool.com/track/a_n_un_musical_joke/",
+        "name": "A(N) (UN)MUSICAL JOKE",
+        "track_artist": "Frigolito",
+        "desc": "have fun while producing!"
+      },
+      {
+        "url": "https://www.audiotool.com/track/jackfruit/",
+        "name": "Jackfruit",
+        "track_artist": "Snad Breugen",
+        "desc": "organization is key"
+      },
+      {
+        "url": "https://www.audiotool.com/track/break_iii/",
+        "name": "Break III",
+        "track_artist": "Julsy",
+        "desc": "be open to the unconventional"
+      },
+      {
+        "url": "https://www.audiotool.com/track/i_have_useless_superpowers/",
+        "name": "I have useless superpowers",
+        "track_artist": "sbronz",
+        "desc": "explore sample manipulation"
+      },
+      {
+        "url": "https://www.audiotool.com/track/breakdown-qmmcmasrq/",
+        "name": "Breakdown",
+        "track_artist": "CGMan",
+        "desc": "don't fear chaos"
+      },
+      {
+        "url": "https://www.audiotool.com/track/bcn_city/",
+        "name": "BCN CITY",
+        "track_artist": "Griader",
+        "desc": "your music is an extension of where we are from"
+      },
+      {
+        "url": "https://www.audiotool.com/track/susitna/",
+        "name": "susitna",
+        "track_artist": "Mr. Standfast",
+        "desc": "be original, the best you that will ever be"
+      },
+      {
+        "url": "https://www.audiotool.com/track/facing_dimensions/",
+        "name": "Facing Dimensions",
+        "track_artist": "Intracktion",
+        "desc": "The most underrated artist on Audiotool in Jace's eyes"
+      },
+      {
+        "url": "https://www.audiotool.com/track/",
+        "name": "",
+        "track_artist": "",
+        "desc": ""
+      }
+    ],
+    "social": {},
+    "color1": "#1a1a6e",
+    "color2": "#0d0d3a",
+    "color_accent": "#4a4aaa",
+    "desc_bg": "#e8e4dc",
+    "links_bar_color": "",
+    "overlay_color1": "#1a1a6e",
+    "overlay_color2": "#0d0d3a",
+    "is_current": false,
+    "is_hidden": false
+  }
+]
