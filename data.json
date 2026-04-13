@@ -5386,22 +5386,26 @@
       {
         "url": "https://www.audiotool.com/track/dughy9vxmhrrny9ldd9yayeuesaohoh/",
         "desc": "Empty Promises by no vyce - something about the bouncy anxiety-filled beat",
-        "name": "dughy9vxmhrrny9ldd9yayeuesaohoh"
+        "name": "Empty Promises",
+        "track_artist": "no vyce (Kryptic)"
       },
       {
         "url": "https://www.audiotool.com/track/eq4nc5h64his/",
         "desc": "confused by naswalt - listened constantly on the bus in high school",
-        "name": "eq4nc5h64his"
+        "name": "confused",
+        "track_artist": "naswalt"
       },
       {
         "url": "https://www.audiotool.com/track/sm4wb1p8r0fj/",
         "desc": "Fartstep by Vulkron - being in discord with him while this was produced",
-        "name": "sm4wb1p8r0fj"
+        "name": "Fartstep ",
+        "track_artist": "Vulkron"
       },
       {
         "url": "https://www.audiotool.com/track/4b9qne1hdzm/",
         "desc": "Solitude by Wightfall - inspired me to look at how he did his sound design",
-        "name": "4b9qne1hdzm"
+        "name": "Solitude",
+        "track_artist": "Wightfall"
       },
       {
         "url": "https://www.audiotool.com/track/83mfygw1qs/",
@@ -5412,7 +5416,8 @@
       {
         "url": "https://www.audiotool.com/track/jl9jtg5rg/",
         "desc": "Untitled(prick/prod) - my own track, best I've published",
-        "name": "jl9jtg5rg"
+        "name": "Untitled(prick/prod)",
+        "track_artist": "Snowfire"
       }
     ],
     "interview": [
