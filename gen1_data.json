@@ -98,10 +98,12 @@
     "color2": "#0d0d3a",
     "color_accent": "#4a4aaa",
     "desc_bg": "#e8e4dc",
-    "links_bar_color": "",
+    "links_bar_color": "#32ffff",
     "overlay_color1": "#1a1a6e",
     "overlay_color2": "#0d0d3a",
     "is_current": false,
-    "is_hidden": false
+    "is_hidden": false,
+    "bar_color": "#32FFFF",
+    "bar_text_color": "#0b3132"
   }
 ]
