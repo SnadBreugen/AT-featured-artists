@@ -83,14 +83,12 @@
   .qa-remove{float:right;background:none;border:none;color:var(--red);cursor:pointer;font-size:16px;padding:0 4px;}
   .add-btn{background:none;border:1px solid var(--border);color:var(--muted);font-family:var(--mono);font-size:11px;padding:6px 14px;cursor:pointer;margin-top:8px;}
   .add-btn:hover{border-color:var(--accent);color:var(--accent);}
-
-  /* Gen I cover preview */
   .cover-preview-wrap{position:relative;width:220px;border:2px solid var(--border);overflow:hidden;margin-bottom:16px;}
   .cover-preview-wrap img{width:100%;aspect-ratio:1;object-fit:cover;display:block;}
   .cover-preview-wrap .no-photo{width:100%;aspect-ratio:1;background:var(--surface2);}
   .cover-bar-preview{position:absolute;bottom:0;left:0;right:0;padding:8px 12px;display:flex;align-items:center;justify-content:space-between;}
-  .cover-bar-preview .p-num{font-family:var(--block);font-size:22px;line-height:1;}
-  .cover-bar-preview .p-name{font-family:var(--block);font-size:14px;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:65%;}
+  .cover-bar-preview .p-num{font-family:var(--block);font-size:18px;line-height:1;}
+  .cover-bar-preview .p-name{font-family:var(--block);font-size:18px;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:65%;}
 </style>
 </head>
 <body>
@@ -117,12 +115,10 @@
       <button class="save-all-btn" id="saveAllBtn" onclick="saveAll()" disabled>PUSH TO GITHUB</button>
     </div>
   </header>
-
   <div class="gen-tabs">
     <div class="gen-tab active" id="tabGen2" onclick="switchGen(2)">GEN II</div>
     <div class="gen-tab" id="tabGen1" onclick="switchGen(1)">GEN I</div>
   </div>
-
   <div class="layout">
     <div class="sidebar">
       <div style="padding:12px;border-bottom:1px solid var(--border);">
@@ -134,7 +130,6 @@
     <div class="editor" id="editor"><div class="empty">Select an artist to edit</div></div>
   </div>
 </div>
-
 <div id="toast"></div>
 
 <script>
@@ -201,7 +196,9 @@ function selectArtist(idx){
 function renderEditorGen1(a,idx){
   const barColor=a.bar_color||a.color1||'#111111';
   const barText=a.bar_text_color||'#ffffff';
+  const linksBarColor=a.links_bar_color||'#888888';
   const tracks=[...(a.tracks||[])]; while(tracks.length<11)tracks.push({url:'',name:'',track_artist:'',desc:''});
+  const social=a.social||{};
 
   document.getElementById('editor').innerHTML=`
     <div class="ed-title">${esc(a.artist)}</div>
@@ -222,6 +219,18 @@ function renderEditorGen1(a,idx){
         <div class="field-row"><div class="field-label">Artist Photo URL</div><input class="field-input" value="${esc(a.photo||'')}" onchange="save('photo',this.value);refreshCoverPreview()"></div>
         <div class="field-row"><div class="field-label">Audiotool Profile URL</div><input class="field-input" value="${esc(a.at_profile||'')}" onchange="save('at_profile',this.value)"></div>
         <div class="field-row"><div class="field-label">Album URL</div><input class="field-input" value="${esc(a.album_url||'')}" onchange="save('album_url',this.value)"></div>
+      </div>
+    </div>
+
+    <div class="ed-section">
+      <div class="ed-section-title">Social Links</div>
+      <div class="fields-2col">
+        <div class="field-row"><div class="field-label">SoundCloud</div><input class="field-input" value="${esc(social.soundcloud||a.soundcloud||'')}" onchange="saveSocial('soundcloud',this.value,true)"></div>
+        <div class="field-row"><div class="field-label">Spotify</div><input class="field-input" value="${esc(social.spotify||'')}" onchange="saveSocial('spotify',this.value)"></div>
+        <div class="field-row"><div class="field-label">Instagram</div><input class="field-input" value="${esc(social.instagram||'')}" onchange="saveSocial('instagram',this.value)"></div>
+        <div class="field-row"><div class="field-label">YouTube</div><input class="field-input" value="${esc(social.youtube||'')}" onchange="saveSocial('youtube',this.value)"></div>
+        <div class="field-row"><div class="field-label">Bandcamp</div><input class="field-input" value="${esc(social.bandcamp||'')}" onchange="saveSocial('bandcamp',this.value)"></div>
+        <div class="field-row"><div class="field-label">Twitter / X</div><input class="field-input" value="${esc(social.twitter||'')}" onchange="saveSocial('twitter',this.value)"></div>
       </div>
     </div>
 
@@ -250,26 +259,37 @@ function renderEditorGen1(a,idx){
 
     <div class="ed-section">
       <div class="ed-section-title">Cover Bar Colors</div>
-      <div class="color-grid" style="grid-template-columns:1fr 1fr;">
+      <div class="color-grid" style="grid-template-columns:1fr 1fr 1fr;">
         <div class="color-field">
           <label>Balken Farbe</label>
           <div class="color-picker-row">
-            <input type="color" id="barColorPicker" value="${barColor}" oninput="syncBarColor('bar_color',this.value)">
-            <input type="text" id="barColorText" value="${barColor}" oninput="if(this.value.match(/^#[0-9a-fA-F]{6}$/))syncBarColor('bar_color',this.value)" maxlength="7">
+            <input type="color" id="barColorPicker" value="${barColor}" oninput="syncBarColor(this.value)">
+            <input type="text" id="barColorText" value="${barColor}" oninput="if(this.value.match(/^#[0-9a-fA-F]{6}$/))syncBarColor(this.value)" maxlength="7">
           </div>
         </div>
         <div class="color-field">
           <label>Schrift Farbe</label>
-          <div style="display:flex;gap:8px;margin-top:6px">
-            <button id="textBtnWhite" onclick="setBarTextColor('#ffffff')" style="font-family:var(--block);font-size:13px;letter-spacing:.1em;padding:8px 20px;cursor:pointer;flex:1;${barText==='#ffffff'||barText==='white'?'background:#fff;color:#000;border:none;':'background:var(--surface);border:1px solid var(--border);color:var(--text);'}">WEISS</button>
-            <button id="textBtnBlack" onclick="setBarTextColor('#000000')" style="font-family:var(--block);font-size:13px;letter-spacing:.1em;padding:8px 20px;cursor:pointer;flex:1;${barText==='#000000'||barText==='black'?'background:#000;color:#fff;border:1px solid #555;':'background:var(--surface);border:1px solid var(--border);color:var(--text);'}">SCHWARZ</button>
+          <div class="color-picker-row">
+            <input type="color" id="barTextPicker" value="${barText}" oninput="syncBarTextColor(this.value)">
+            <input type="text" id="barTextText" value="${barText}" oninput="if(this.value.match(/^#[0-9a-fA-F]{6}$/))syncBarTextColor(this.value)" maxlength="7">
+          </div>
+        </div>
+        <div class="color-field">
+          <label>Social Links Farbe</label>
+          <div class="color-picker-row">
+            <input type="color" id="links_bar_colorPicker" value="${linksBarColor}" oninput="syncColor('links_bar_color',this.value)">
+            <input type="text" id="links_bar_colorText" value="${linksBarColor}" oninput="syncColorText('links_bar_color',this.value)" maxlength="7">
           </div>
         </div>
       </div>
       ${a.photo?`
-        <div style="font-size:10px;color:var(--dim);margin-bottom:8px">Click photo to pick bar color:</div>
+        <div style="font-size:10px;color:var(--dim);margin-bottom:8px">Click photo to pick color:</div>
         <div class="preview-img-wrap" style="max-width:220px"><img src="${esc(a.photo)}" class="preview-img" id="photoImg" onclick="pickFromImage(event,'photoImg')" onerror="this.style.opacity='.3'"><canvas id="photoCanvas"></canvas></div>
-        <div style="font-size:11px;color:var(--dim);margin-top:8px">Last picked: <span id="pickedColor">-</span> <button onclick="assignToBar()" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;margin-left:8px;">TO BAR</button></div>
+        <div style="font-size:11px;color:var(--dim);margin-top:8px">Last picked: <span id="pickedColor">-</span>
+          <button onclick="assignToBar()" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;margin-left:8px;">TO BAR</button>
+          <button onclick="assignToBarText()" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;margin-left:4px;">TO SCHRIFT</button>
+          <button onclick="assignToLinks()" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;margin-left:4px;">TO LINKS</button>
+        </div>
       `:''}
     </div>
 
@@ -286,29 +306,26 @@ function renderEditorGen1(a,idx){
   `;
 }
 
-function syncBarColor(field,val){
+function syncBarColor(val){
   if(currentIdx===null)return;
-  currentData()[currentIdx][field]=val; setDirty();
-  const picker=document.getElementById('barColorPicker');
-  const text=document.getElementById('barColorText');
-  if(picker)picker.value=val; if(text)text.value=val;
-  const bar=document.getElementById('coverBarPreview');
-  if(bar)bar.style.background=val;
+  currentData()[currentIdx].bar_color=val; setDirty();
+  const p=document.getElementById('barColorPicker'), t=document.getElementById('barColorText');
+  if(p)p.value=val; if(t)t.value=val;
+  const bar=document.getElementById('coverBarPreview'); if(bar)bar.style.background=val;
 }
 
-function setBarTextColor(color){
+function syncBarTextColor(val){
   if(currentIdx===null)return;
-  currentData()[currentIdx].bar_text_color=color; setDirty();
-  const isWhite=color==='#ffffff'||color==='white';
-  const wBtn=document.getElementById('textBtnWhite');
-  const bBtn=document.getElementById('textBtnBlack');
-  if(wBtn)wBtn.style.cssText=isWhite?'font-family:var(--block);font-size:13px;letter-spacing:.1em;padding:8px 20px;cursor:pointer;flex:1;background:#fff;color:#000;border:none;':'font-family:var(--block);font-size:13px;letter-spacing:.1em;padding:8px 20px;cursor:pointer;flex:1;background:var(--surface);border:1px solid var(--border);color:var(--text);';
-  if(bBtn)bBtn.style.cssText=!isWhite?'font-family:var(--block);font-size:13px;letter-spacing:.1em;padding:8px 20px;cursor:pointer;flex:1;background:#000;color:#fff;border:1px solid #555;':'font-family:var(--block);font-size:13px;letter-spacing:.1em;padding:8px 20px;cursor:pointer;flex:1;background:var(--surface);border:1px solid var(--border);color:var(--text);';
-  const pnum=document.getElementById('coverPNum'); if(pnum)pnum.style.color=color;
-  const pname=document.getElementById('coverPName'); if(pname)pname.style.color=color;
+  currentData()[currentIdx].bar_text_color=val; setDirty();
+  const p=document.getElementById('barTextPicker'), t=document.getElementById('barTextText');
+  if(p)p.value=val; if(t)t.value=val;
+  const pnum=document.getElementById('coverPNum'); if(pnum)pnum.style.color=val;
+  const pname=document.getElementById('coverPName'); if(pname)pname.style.color=val;
 }
 
-function assignToBar(){ if(lastPickedColor)syncBarColor('bar_color',lastPickedColor); }
+function assignToBar(){ if(lastPickedColor)syncBarColor(lastPickedColor); }
+function assignToBarText(){ if(lastPickedColor)syncBarTextColor(lastPickedColor); }
+function assignToLinks(){ if(lastPickedColor)syncColor('links_bar_color',lastPickedColor); }
 
 function refreshCoverPreview(){
   if(currentIdx===null)return;
@@ -337,7 +354,6 @@ function renderEditorGen2(a,idx){
         ${isHidden?'HIDDEN':'SET AS HIDDEN'}
       </button>
     </div>
-
     <div class="ed-section">
       <div class="ed-section-title">Basic Info</div>
       <div class="fields-2col">
@@ -360,19 +376,16 @@ function renderEditorGen2(a,idx){
         <div class="field-row"><div class="field-label">Board Post URL</div><input class="field-input" value="${esc(a.board_url||'')}" onchange="save('board_url',this.value)"></div>
       </div>
     </div>
-
     <div class="ed-section">
       <div class="ed-section-title">Texts</div>
       <div class="field-row"><div class="field-label">Intro</div><textarea class="field-input" style="min-height:100px" onchange="save('intro',this.value)">${esc(a.intro||'')}</textarea></div>
       <div class="field-row"><div class="field-label">About</div><textarea class="field-input" style="min-height:80px" onchange="save('about',this.value)">${esc(a.about||'')}</textarea></div>
     </div>
-
     <div class="ed-section">
       <div class="ed-section-title">Interview Q&As</div>
       <div id="qaList">${renderQAs(a.interview||[])}</div>
       <button class="add-btn" onclick="addQA()">+ ADD Q&A</button>
     </div>
-
     <div class="ed-section">
       <div class="ed-section-title">Social Links</div>
       <div class="fields-2col">
@@ -385,17 +398,14 @@ function renderEditorGen2(a,idx){
         <div class="field-row"><div class="field-label">YouTube</div><input class="field-input" value="${esc(social.youtube||'')}" onchange="saveSocial('youtube',this.value)"></div>
       </div>
     </div>
-
     <div class="ed-section">
       <div class="ed-section-title">Curated Tracks (max. 11)</div>
       <div id="trackList">${renderTracks(tracks)}</div>
     </div>
-
     <div class="ed-section">
       <div class="ed-section-title">Color Preview</div>
       <div class="color-preview"><div class="color-preview-bg" id="previewBg"></div><div class="color-preview-text" id="previewText">${esc(a.artist.toUpperCase())}</div></div>
     </div>
-
     <div class="ed-section">
       <div class="ed-section-title">Images - Click to pick color</div>
       <div class="preview-grid">
@@ -407,7 +417,6 @@ function renderEditorGen2(a,idx){
         <button onclick="assignColorBoth()" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;margin-left:8px;">TO BACKGROUND + HEADLINES</button>
       </div>
     </div>
-
     <div class="ed-section">
       <div class="ed-section-title">Colors</div>
       <div class="color-grid">
@@ -416,7 +425,6 @@ function renderEditorGen2(a,idx){
         <div class="color-field"><label>Links Bar Color</label><div class="color-picker-row"><input type="color" id="links_bar_colorPicker" value="${a.links_bar_color||'#888888'}" oninput="syncColor('links_bar_color',this.value)"><input type="text" id="links_bar_colorText" value="${a.links_bar_color||'#888888'}" oninput="syncColorText('links_bar_color',this.value)" maxlength="7"></div></div>
       </div>
     </div>
-
     <div style="padding-bottom:60px">
       <button class="save-btn" onclick="saveArtist()">SAVE ARTIST</button>
       <button onclick="deleteArtist()" style="background:none;border:1px solid var(--red);color:var(--red);font-family:var(--block);font-size:14px;letter-spacing:.1em;padding:10px 20px;cursor:pointer;margin-left:12px;">DELETE</button>
@@ -470,7 +478,7 @@ function toggleCurrent(){ if(currentIdx===null||currentGen!==2)return; const isC
 
 function newArtist(){
   const isGen1=currentGen===1;
-  const a=isGen1?{artist:'NEW ARTIST',real_name:'',date:new Date().toISOString().slice(0,10),album_number:currentData().length+1,at_profile:'',album_url:'',photo:'',intro:'',about:'',interview:[],tracks:[],social:{},color1:'',color2:'',color_accent:'',desc_bg:'',bar_color:'#111111',bar_text_color:'#ffffff',is_hidden:false}:{artist:'NEW ARTIST',real_name:'',date:new Date().toISOString().slice(0,10),board_url:'',album_url:'',at_profile:'',soundcloud:'',photo:'',cover_url:'',intro:'',about:'',interview:[],tracks:[],social:{},color1:'',color2:'',color_accent:'',desc_bg:'',is_hidden:false};
+  const a=isGen1?{artist:'NEW ARTIST',real_name:'',date:new Date().toISOString().slice(0,10),album_number:currentData().length+1,at_profile:'',album_url:'',photo:'',intro:'',about:'',interview:[],tracks:[],social:{},color1:'',color2:'',color_accent:'',desc_bg:'',bar_color:'#111111',bar_text_color:'#ffffff',links_bar_color:'',is_hidden:false}:{artist:'NEW ARTIST',real_name:'',date:new Date().toISOString().slice(0,10),board_url:'',album_url:'',at_profile:'',soundcloud:'',photo:'',cover_url:'',intro:'',about:'',interview:[],tracks:[],social:{},color1:'',color2:'',color_accent:'',desc_bg:'',is_hidden:false};
   currentData().push(a); currentIdx=currentData().length-1; filterArtists(); selectArtist(currentIdx); setDirty(); showToast('New artist created');
 }
 
