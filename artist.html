@@ -5,19 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Featured Artist — Audiotool</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Special+Elite&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lexend+Deca&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #0e0e0e;
     --surface: #181818;
     --border: #2a2a2a;
-    --text: #e8e4dc;
-    --text-muted: #aaa49c;
-    --text-dim: #555;
+    --text: #ffffff;
+    --text-muted: #aaaaaa;
+    --text-dim: #aaaaaa;
     --accent: #e8c840;
     --accent2: #c8a830;
     --block: 'Bebas Neue', Impact, sans-serif;
-    --type: 'Special Elite', 'Courier New', monospace;
+    --type: 'Lexend Deca', sans-serif;
     --max: 1120px;
     --pad: clamp(20px, 4vw, 56px);
   }
@@ -33,7 +33,6 @@
     overflow-x: hidden;
   }
 
-  /* ── COLOR WASH ── */
   #colorWash {
     position: fixed;
     inset: 0;
@@ -59,7 +58,6 @@
     background: radial-gradient(ellipse 80% 60% at 50% 40%, transparent 30%, var(--bg) 80%);
   }
 
-  /* ── HEADER ── */
   header {
     position: sticky; top: 0; z-index: 100;
     background: rgba(14,14,14,0.95);
@@ -90,7 +88,6 @@
   }
   .back:hover { color: var(--text); }
 
-  /* ── HERO ── */
   .hero {
     position: relative; z-index: 1;
     max-width: var(--max);
@@ -135,7 +132,6 @@
     padding-left: 18px;
   }
 
-  /* ── PHOTO ── */
   .hero-photo { flex-shrink: 0; }
   .photo-box {
     width: clamp(220px, 28vw, 360px);
@@ -161,7 +157,6 @@
     font-family: var(--type);
   }
 
-  /* ── LINKS BAR ── */
   .links-bar {
     position: relative; z-index: 1;
     max-width: var(--max); margin: 28px auto 0;
@@ -183,7 +178,6 @@
   .ext-link::before { content: '↗'; color: var(--links-bar-color, var(--accent)); }
   .ext-link:hover { color: var(--text); }
 
-  /* ── MAIN GRID ── */
   .main {
     position: relative; z-index: 1;
     max-width: var(--max); margin: 0 auto;
@@ -192,7 +186,6 @@
     grid-template-columns: 1fr 300px;
   }
 
-  /* ── INTERVIEW ── */
   .interview {
     padding: 52px 48px 80px 0;
     border-right: 1px solid var(--border);
@@ -252,13 +245,11 @@
   }
   .board-link a:hover { color: var(--text-muted); }
 
-  /* ── SIDEBAR ── */
   .sidebar {
     padding: 52px 0 80px 36px;
     display: flex; flex-direction: column; gap: 40px;
   }
 
-  /* ── ALBUM COVER ── */
   .cover-link {
     display: block;
     position: relative;
@@ -267,9 +258,7 @@
     transition: border-color .2s;
   }
   .cover-link:hover { border-color: var(--accent); }
-  .cover-link img {
-    width: 100%; display: block;
-  }
+  .cover-link img { width: 100%; display: block; }
   .cover-overlay {
     position: absolute;
     inset: 0;
@@ -284,7 +273,6 @@
   }
   .cover-link:hover .cover-overlay { opacity: 1; }
 
-  /* ── TRACKS ── */
   .sidebar-title {
     font-family: var(--block);
     font-size: 22px;
@@ -300,30 +288,6 @@
     display: flex; flex-direction: column;
     gap: 1px; background: var(--border);
     margin-top: 1px;
-  }
-  .track-btn {
-    background: var(--surface);
-    padding: 10px 14px;
-    display: grid;
-    grid-template-columns: 36px 1fr 18px;
-    min-height: 52px;
-    gap: 8px; align-items: center;
-    cursor: pointer;
-    transition: background .15s;
-    border: none; width: 100%;
-    text-align: left; color: inherit;
-    font-family: var(--type);
-  }
-  .track-btn:hover { background: #202020; }
-  .track-btn.active { background: #1e1e1e; }
-  .track-btn.active .tn { color: var(--accent); }
-  .track-btn.active .tt { color: var(--text); }
-  .track-btn.active .tp { color: var(--accent); }
-
-  .track-cover {
-    width: 32px; height: 32px; object-fit: cover; display: block;
-    border: 1px solid var(--border); flex-shrink: 0;
-    background: var(--surface);
   }
   .track-item { border-bottom: 1px solid var(--border); }
   .track-btn {
@@ -386,11 +350,7 @@
   }
   .play-toggle:hover { background: var(--accent); color: var(--bg); }
   .album-player { margin-top: 1px; }
-  audio::-webkit-media-controls-overflow-button { display: none !important; }
-  audio::-webkit-media-controls-download-button { display: none !important; }
-  audio { --media-controls-overflow-menu-button: none; }
 
-  /* ── NAV ── */
   .nav {
     position: relative; z-index: 1;
     border-top: 2px solid var(--border);
@@ -419,9 +379,7 @@
     .interview { border-right: none; border-bottom: 1px solid var(--border); padding-right: 0; }
     .sidebar { padding-left: 0; }
   }
-  @media (max-width: 600px) {
-    .hero-name { font-size: 58px; }
-  }
+  @media (max-width: 600px) { .hero-name { font-size: 58px; } }
 </style>
 </head>
 <body>
@@ -452,27 +410,9 @@ function fmtDate(d){
   return ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+m-1]+' '+parseInt(day)+', '+y;
 }
 
-function tId(url){
-  const m=url.match(/\/track\/([^/]+)/);
-  return m?m[1]:'';
-}
-function tSlug(url, desc, name){
-  // Skip if name is a pure hash ID
-  const isHash = name && /^[a-z0-9]{8,}$/.test(name) && !/[_\s-]/.test(name);
-  if(name && name.length > 0 && !isHash) return name;
-  // Fall back to URL slug if readable
-  const m=url.match(/\/track\/([^/]+)/);
-  if(m){
-    const slug = m[1];
-    if(!/^[a-z0-9]{8,}$/.test(slug)){
-      return slug.replace(/_/g,' ').replace(/-[a-z0-9]{6,}$/,'').replace(/-/g,' ');
-    }
-  }
-  return '—';
-}
+function tId(url){ const m=url.match(/\/track\/([^/]+)/); return m?m[1]:''; }
 
 function extractColors(src, cb){
-  // Try direct first, then via CORS proxy
   function tryLoad(url, onSuccess, onFail){
     const img=new Image();
     img.crossOrigin='anonymous';
@@ -491,18 +431,10 @@ function extractColors(src, cb){
     img.onerror=onFail;
     img.src=url;
   }
-  // Try direct
-  tryLoad(src,
-    (t,b)=>cb(t,b),
-    ()=>{
-      // Try CORS proxy
-      const proxy='https://corsproxy.io/?'+encodeURIComponent(src);
-      tryLoad(proxy,
-        (t,b)=>cb(t,b),
-        ()=>cb(null,null)
-      );
-    }
-  );
+  tryLoad(src, (t,b)=>cb(t,b), ()=>{
+    const proxy='https://corsproxy.io/?'+encodeURIComponent(src);
+    tryLoad(proxy, (t,b)=>cb(t,b), ()=>cb(null,null));
+  });
 }
 
 function applyColors(t,b){
@@ -512,7 +444,6 @@ function applyColors(t,b){
   document.getElementById('washTop').style.background=`linear-gradient(to bottom, ${tc} 0%, transparent 100%)`;
   document.getElementById('washBot').style.background=`linear-gradient(to top, ${bc} 0%, transparent 100%)`;
   document.getElementById('colorWash').classList.add('on');
-  // Only set accent if not already overridden by artist data
   if(!window._accentOverride){
     const accent=`rgb(${Math.round(t[0])},${Math.round(t[1])},${Math.round(t[2])})`;
     document.documentElement.style.setProperty('--accent', accent);
@@ -535,7 +466,6 @@ function loadTrack(idx){
   if(!m) return;
   const player=document.getElementById('albumPlayer');
   if(!player) return;
-  // Highlight active track
   document.querySelectorAll('.track-btn').forEach((b,i)=>{
     b.classList.toggle('active',i===idx);
     b.querySelector('.tp').textContent=i===idx?'▶':'▷';
@@ -545,33 +475,29 @@ function loadTrack(idx){
   player.innerHTML=`
     <div style="background:var(--surface);border:1px solid var(--border);padding:12px">
       <div style="font-size:10px;color:var(--accent);margin-bottom:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;letter-spacing:.06em;font-family:var(--block)">
-        ${t.track_artist||''} — ${t.name||trackId}
+        ${t.track_artist||''} . ${t.name||trackId}
       </div>
       <audio controls preload="none" style="width:100%;height:32px;display:block"
         onended="loadTrack(${idx+1})"
-        onerror="this.insertAdjacentHTML('afterend','<div style=\'font-size:10px;color:var(--red);margin-top:4px\'>Stream not available</div>')">
+        onerror="this.insertAdjacentHTML('afterend','<div style=padding:4px;font-size:10px;color:var(--text-dim)>Stream not available</div>')">
         <source src="${mp3}" type="audio/mpeg">
       </audio>
       <div style="display:flex;justify-content:space-between;margin-top:8px">
-        <button onclick="loadTrack(${idx}-1)" style="background:none;border:1px solid var(--border);color:var(--accent);cursor:pointer;font-family:var(--block);font-size:12px;letter-spacing:.1em;padding:3px 10px">◀ PREV</button>
+        <button onclick="loadTrack(${idx}-1)" style="background:none;border:1px solid var(--border);color:var(--accent);cursor:pointer;font-family:var(--block);font-size:12px;letter-spacing:.1em;padding:3px 10px">PREV</button>
         <span style="font-size:10px;color:var(--text-dim);letter-spacing:.08em;align-self:center">${idx+1} / ${tracks.length}</span>
-        <button onclick="loadTrack(${idx}+1)" style="background:none;border:1px solid var(--border);color:var(--accent);cursor:pointer;font-family:var(--block);font-size:12px;letter-spacing:.1em;padding:3px 10px">NEXT ▶</button>
-        <button onclick="toggleAutoplay()" id="autoplayBtn" style="background:none;border:1px solid var(--border);color:var(--accent);cursor:pointer;font-family:var(--block);font-size:12px;letter-spacing:.1em;padding:3px 10px">AUTO ▶</button>
+        <button onclick="loadTrack(${idx}+1)" style="background:none;border:1px solid var(--border);color:var(--accent);cursor:pointer;font-family:var(--block);font-size:12px;letter-spacing:.1em;padding:3px 10px">NEXT</button>
+        <button onclick="toggleAutoplay()" id="autoplayBtn" style="background:none;border:1px solid var(--border);color:var(--accent);cursor:pointer;font-family:var(--block);font-size:12px;letter-spacing:.1em;padding:3px 10px">AUTO</button>
       </div>
     </div>`;
   setTimeout(()=>{ const a=player.querySelector('audio'); if(a) a.play().catch(()=>{}); },50);
 }
 
 window.toggleDesc=function(idx, url){
-  // Toggle popup
   const popup=document.getElementById('tdesc-'+idx);
   if(popup){
-    document.querySelectorAll('.track-desc-popup').forEach((p,i)=>{
-      if(i!==idx) p.classList.remove('open');
-    });
+    document.querySelectorAll('.track-desc-popup').forEach((p,i)=>{ if(i!==idx) p.classList.remove('open'); });
     popup.classList.toggle('open');
   }
-  // Play
   window.playTrack(url);
 };
 
@@ -582,12 +508,10 @@ window.playTrack=function(url){
   const id=m[1];
   const idx=tracks.findIndex(t=>(t.url||'').includes(id));
   if(idx===-1) return;
-  // Toggle description popup
   const btn=document.querySelector(`.track-btn[data-url="${url}"]`);
   if(btn){
     const popup=btn.closest('.track-item-wrap')?.querySelector('.track-desc-popup');
     if(popup){
-      // Close all others
       document.querySelectorAll('.track-desc-popup').forEach(p=>{ if(p!==popup) p.classList.remove('open'); });
       popup.classList.toggle('open');
     }
@@ -604,47 +528,24 @@ window.toggleAutoplay=function(){
   autoplay=!autoplay;
   localStorage.setItem('musicAutoplay', autoplay);
   updateAutoplayButtons();
-  if(!autoplay){
-    const player=document.getElementById('albumPlayer');
-    if(player) player.innerHTML='';
-  }
+  if(!autoplay){ const player=document.getElementById('albumPlayer'); if(player) player.innerHTML=''; }
 };
 function updateAutoplayButtons(){
   const mainBtn=document.getElementById('autoplayToggle');
   const inlineBtn=document.getElementById('autoplayBtn');
   if(mainBtn){
-    if(autoplay){
-      mainBtn.textContent='■ MUSIC AUTOPLAY';
-      mainBtn.style.background='transparent';
-      mainBtn.style.color='var(--accent)';
-      mainBtn.style.borderColor='var(--accent)';
-    } else {
-      mainBtn.textContent='▶ MUSIC AUTOPLAY';
-      mainBtn.style.background='var(--accent)';
-      mainBtn.style.color='#0e0e0e';
-      mainBtn.style.borderColor='#0e0e0e';
-    }
+    if(autoplay){ mainBtn.textContent='■ MUSIC AUTOPLAY'; mainBtn.style.background='transparent'; mainBtn.style.color='var(--accent)'; mainBtn.style.borderColor='var(--accent)'; }
+    else { mainBtn.textContent='▶ MUSIC AUTOPLAY'; mainBtn.style.background='var(--accent)'; mainBtn.style.color='#0e0e0e'; mainBtn.style.borderColor='#0e0e0e'; }
   }
-  if(inlineBtn){
-    inlineBtn.textContent = autoplay ? 'AUTO ■' : 'AUTO ▶';
-    inlineBtn.style.opacity = autoplay ? '1' : '0.4';
-  }
+  if(inlineBtn){ inlineBtn.textContent = autoplay ? 'AUTO ■' : 'AUTO ▶'; inlineBtn.style.opacity = autoplay ? '1' : '0.4'; }
 }
 window.toggleAlbum=function(){
   const player=document.getElementById('albumPlayer');
   const icon=document.getElementById('playIcon');
   const label=document.getElementById('playLabel');
   albumOpen=!albumOpen;
-  if(albumOpen){
-    loadTrack(0);
-    icon.textContent='■';
-    label.textContent='STOP';
-  } else {
-    player.innerHTML='';
-    currentTrackIdx=-1;
-    icon.textContent='▶';
-    label.textContent='PLAY ALBUM';
-  }
+  if(albumOpen){ loadTrack(0); icon.textContent='■'; label.textContent='STOP'; }
+  else { player.innerHTML=''; currentTrackIdx=-1; icon.textContent='▶'; label.textContent='PLAY ALBUM'; }
 };
 
 fetch('data.json')
@@ -675,9 +576,8 @@ function render(a,idx,total,prev,next){
         ${a.intro?`<p class="hero-intro">${esc(a.intro)}</p>`:''}
       </div>
       <div class="hero-photo" style="object-position:${a.photo_position||'top'}">
-        ${a.photo?`
-          <div class="photo-box"><img src="${esc(a.photo)}" alt="${esc(a.artist)}"></div>
-        `:`<div class="photo-box" style="background:var(--surface);display:flex;align-items:center;justify-content:center;"><span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--type)">NO PHOTO</span></div>`}
+        ${a.photo?`<div class="photo-box"><img src="${esc(a.photo)}" alt="${esc(a.artist)}"></div>`
+                 :`<div class="photo-box" style="background:var(--surface);display:flex;align-items:center;justify-content:center;"><span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--type)">NO PHOTO</span></div>`}
       </div>
     </section>
 
@@ -697,7 +597,7 @@ function render(a,idx,total,prev,next){
       <div class="interview">
         ${(a.about||a.interview&&a.interview.length)?`
           <div class="sec-title">Interview</div>
-
+          ${a.about?`<div class="about-block"><p class="about-text">${esc(a.about)}</p></div>`:''}
           ${a.interview&&a.interview.length?`
           <div class="qa-list">
             ${a.interview.map(qa=>`
@@ -706,11 +606,8 @@ function render(a,idx,total,prev,next){
                 <div class="qa-a">${esc(qa.a)}</div>
               </div>
             `).join('')}
-          </div>
-          `:''}
+          </div>`:''}
         `:''}
-
-
       </div>
 
       <div class="sidebar">
@@ -718,11 +615,11 @@ function render(a,idx,total,prev,next){
           <div>
             <div class="sidebar-title">Edition Audiotool</div>
             <a href="${esc(a.album_url||'#')}" target="_blank" class="cover-link" style="margin-top:12px">
-              <img src="${coverSrc}" alt="Edition Audiotool: ${esc(a.artist)}" id="albumCover" onerror="this.closest('.cover-link').style.display='none'">              <div class="cover-overlay">Listen ↗</div>
+              <img src="${coverSrc}" alt="Edition Audiotool: ${esc(a.artist)}" id="albumCover" onerror="this.closest('.cover-link').style.display='none'">
+              <div class="cover-overlay">Listen ↗</div>
             </a>
           </div>
         `:''}
-
         ${albumId?`
           <div>
             <button class="play-toggle" id="playToggle" onclick="toggleAlbum()">
@@ -732,7 +629,6 @@ function render(a,idx,total,prev,next){
             <div class="album-player" id="albumPlayer"></div>
           </div>
         `:''}
-
         ${tracks.length?`
           <div>
             <div class="sidebar-title">Curated Tracks</div>
@@ -741,7 +637,7 @@ function render(a,idx,total,prev,next){
                 <div class="track-item">
                   <button class="track-btn" id="tbtn-${i}" data-url="${esc(t.url)}" onclick="toggleDesc(${i},'${esc(t.url)}')">
                     <img class="track-cover" src="https://api.audiotool.com/track/${tId(t.url)}/cover/256.jpg" onerror="this.src='${coverSrc||''}';this.onerror=null;" alt="">
-                    <span class="tt">${esc(t.track_artist)} · ${esc(t.name)}</span>
+                    <span class="tt">${esc(t.track_artist)} . ${esc(t.name)}</span>
                     <span class="tp" id="tp-${i}">▷</span>
                   </button>
                   ${t.desc?`<div class="track-desc" id="tdesc-${i}">${esc(t.desc)}</div>`:''}
@@ -754,38 +650,24 @@ function render(a,idx,total,prev,next){
     </div>
 
     <nav class="nav">
-      ${prev?`<a href="artist.html?id=${encodeURIComponent(prev.artist)}" class="nav-a"><span class="nav-dir">← Previous</span><span class="nav-name">${esc(prev.artist)}</span></a>`
+      ${prev?`<a href="artist.html?id=${encodeURIComponent(prev.artist)}" class="nav-a"><span class="nav-dir">Previous</span><span class="nav-name">${esc(prev.artist)}</span></a>`
             :`<span class="nav-a" style="opacity:.25"><span class="nav-dir">Start of archive</span></span>`}
-      ${next?`<a href="artist.html?id=${encodeURIComponent(next.artist)}" class="nav-a" style="text-align:right;align-items:flex-end"><span class="nav-dir">Next →</span><span class="nav-name">${esc(next.artist)}</span></a>`
+      ${next?`<a href="artist.html?id=${encodeURIComponent(next.artist)}" class="nav-a" style="text-align:right;align-items:flex-end"><span class="nav-dir">Next</span><span class="nav-name">${esc(next.artist)}</span></a>`
             :`<span class="nav-a" style="opacity:.25;text-align:right;align-items:flex-end"><span class="nav-dir">End of archive</span></span>`}
     </nav>
   `;
 
   window._albumId=albumId;
-  // Update autoplay button state
   updateAutoplayButtons();
-  // Autostart first track if enabled
-  if(tracks.length && autoplay){
-    setTimeout(()=>loadTrack(0), 800);
-  }
-  // Apply desc_bg if set
+  if(tracks.length && autoplay){ setTimeout(()=>loadTrack(0), 800); }
   if(a.desc_bg) document.documentElement.style.setProperty('--desc-bg', a.desc_bg);
   else document.documentElement.style.removeProperty('--desc-bg');
   if(a.links_bar_color) document.documentElement.style.setProperty('--links-bar-color', a.links_bar_color);
   else document.documentElement.style.removeProperty('--links-bar-color');
   window._tracks=tracks.filter(t=>t.name&&t.track_artist);
-  // Extract colors from album cover, fall back to artist photo
-  // Use manually set colors first, fall back to auto-extraction
-  // Set accent override flag before any async color extraction
-  if(a.color_accent){
-    window._accentOverride = true;
-    document.documentElement.style.setProperty('--accent', a.color_accent);
-  } else if(a.color1){
-    window._accentOverride = true;
-    document.documentElement.style.setProperty('--accent', a.color1);
-  } else {
-    window._accentOverride = false;
-  }
+  if(a.color_accent){ window._accentOverride=true; document.documentElement.style.setProperty('--accent', a.color_accent); }
+  else if(a.color1){ window._accentOverride=true; document.documentElement.style.setProperty('--accent', a.color1); }
+  else { window._accentOverride=false; }
   if(a.color1){
     const hexToRgb=h=>{const r=parseInt(h.slice(1,3),16),g=parseInt(h.slice(3,5),16),b=parseInt(h.slice(5,7),16);return[r,g,b];};
     applyColors(hexToRgb(a.color1), hexToRgb(a.color2||a.color1));
