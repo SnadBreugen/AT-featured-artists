@@ -20,11 +20,15 @@
   header{border-bottom:2px solid var(--border);padding:0 32px;height:50px;display:flex;align-items:center;justify-content:space-between;background:rgba(10,10,10,.95);position:sticky;top:0;z-index:100;}
   .hlogo{font-family:var(--block);font-size:18px;letter-spacing:.15em;color:var(--accent);}
   .hright{display:flex;align-items:center;gap:16px;}
-  .save-all-btn{background:var(--accent);color:var(--bg);font-family:var(--block);font-size:14px;letter-spacing:.1em;padding:8px 20px;border:none;cursor:pointer;display:flex;align-items:center;gap:8px;}
+  .save-all-btn{background:var(--accent);color:var(--bg);font-family:var(--block);font-size:14px;letter-spacing:.1em;padding:8px 20px;border:none;cursor:pointer;}
   .save-all-btn:disabled{opacity:.4;cursor:not-allowed;}
   .status-msg{font-size:11px;color:var(--muted);letter-spacing:.08em;}
-  .layout{display:grid;grid-template-columns:260px 1fr;min-height:calc(100vh - 50px);}
-  .sidebar{border-right:1px solid var(--border);overflow-y:auto;max-height:calc(100vh - 50px);position:sticky;top:50px;}
+  .gen-tabs{display:flex;border-bottom:2px solid var(--border);background:var(--bg);position:sticky;top:50px;z-index:99;}
+  .gen-tab{font-family:var(--block);font-size:14px;letter-spacing:.12em;padding:12px 28px;cursor:pointer;color:var(--muted);border-bottom:3px solid transparent;margin-bottom:-2px;transition:color .15s,border-color .15s;}
+  .gen-tab:hover{color:var(--text);}
+  .gen-tab.active{color:#28E5FF;border-bottom-color:#28E5FF;}
+  .layout{display:grid;grid-template-columns:260px 1fr;min-height:calc(100vh - 100px);}
+  .sidebar{border-right:1px solid var(--border);overflow-y:auto;max-height:calc(100vh - 100px);position:sticky;top:100px;}
   .search-box{padding:12px;border-bottom:1px solid var(--border);position:sticky;top:0;background:var(--bg);z-index:10;}
   .search-box input{width:100%;background:var(--surface);border:1px solid var(--border);outline:none;color:var(--text);font-family:var(--mono);font-size:12px;padding:8px 12px;}
   .artist-item{padding:10px 16px;cursor:pointer;transition:background .1s;display:flex;align-items:center;justify-content:space-between;gap:8px;}
@@ -33,7 +37,7 @@
   .ai-name{font-family:var(--block);font-size:14px;letter-spacing:.06em;}
   .ai-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;background:var(--dim);border:1px solid var(--border);}
   .ai-dot.has-colors{background:var(--green);border-color:var(--green);}
-  .editor{padding:40px;max-width:960px;overflow-y:auto;max-height:calc(100vh - 50px);}
+  .editor{padding:40px;max-width:960px;overflow-y:auto;max-height:calc(100vh - 100px);}
   .ed-title{font-family:var(--block);font-size:36px;letter-spacing:.1em;margin-bottom:4px;}
   .ed-sub{color:var(--muted);font-size:11px;letter-spacing:.1em;margin-bottom:32px;}
   .ed-section{margin-bottom:36px;}
@@ -79,9 +83,17 @@
   .qa-remove{float:right;background:none;border:none;color:var(--red);cursor:pointer;font-size:16px;padding:0 4px;}
   .add-btn{background:none;border:1px solid var(--border);color:var(--muted);font-family:var(--mono);font-size:11px;padding:6px 14px;cursor:pointer;margin-top:8px;}
   .add-btn:hover{border-color:var(--accent);color:var(--accent);}
+  .cover-preview-wrap{position:relative;width:200px;border:2px solid var(--border);overflow:hidden;margin-bottom:16px;}
+  .cover-preview-wrap img{width:100%;aspect-ratio:1;object-fit:cover;display:block;}
+  .cover-ov-top{position:absolute;top:0;left:0;right:0;padding:6px 10px;display:flex;align-items:center;justify-content:space-between;}
+  .cover-ov-top .pnum{font-family:var(--block);font-size:18px;line-height:1;}
+  .cover-ov-top .pname{font-family:'Special Elite',serif;font-size:11px;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:60%;}
+  .cover-ov-bot{position:absolute;bottom:0;left:0;right:0;padding:5px 10px;display:flex;align-items:center;justify-content:space-between;}
+  .logo-toggle-btn{font-family:var(--block);font-size:13px;letter-spacing:.1em;padding:8px 20px;border:none;cursor:pointer;transition:all .15s;}
 </style>
 </head>
 <body>
+
 <div id="loginScreen">
   <div class="login-title">AT // ADMIN</div>
   <div class="login-sub">FEATURED ARTISTS CONTROL PANEL</div>
@@ -94,15 +106,22 @@
   </div>
   <div class="login-err" id="loginErr">WRONG PASSWORD</div>
 </div>
+
 <div id="mainScreen">
   <header>
     <div class="hlogo">AT // ADMIN</div>
     <div class="hright">
       <span class="status-msg" id="statusMsg"></span>
-      <a id="previewLink" href="#" target="_blank" style="font-family:var(--block);font-size:13px;letter-spacing:.1em;color:var(--muted);text-decoration:none;display:none;">↗ PREVIEW</a>
-      <button class="save-all-btn" id="saveAllBtn" onclick="saveAll()" disabled><span>⬆</span> PUSH TO GITHUB</button>
+      <a id="previewLink" href="#" target="_blank" style="font-family:var(--block);font-size:13px;letter-spacing:.1em;color:var(--muted);text-decoration:none;display:none;">PREVIEW ↗</a>
+      <button class="save-all-btn" id="saveAllBtn" onclick="saveAll()" disabled>PUSH TO GITHUB</button>
     </div>
   </header>
+
+  <div class="gen-tabs">
+    <div class="gen-tab active" id="tabGen2" onclick="switchGen(2)">GEN II</div>
+    <div class="gen-tab" id="tabGen1" onclick="switchGen(1)">GEN I</div>
+  </div>
+
   <div class="layout">
     <div class="sidebar">
       <div style="padding:12px;border-bottom:1px solid var(--border);">
@@ -111,105 +130,93 @@
       <div class="search-box"><input type="text" id="searchInput" placeholder="Search artists..." oninput="filterArtists()"></div>
       <div id="artistList"></div>
     </div>
-    <div class="editor" id="editor"><div class="empty">← Select an artist to edit</div></div>
+    <div class="editor" id="editor"><div class="empty">Select an artist to edit</div></div>
   </div>
 </div>
+
 <div id="toast"></div>
+
 <script>
-const GITHUB_REPO='SnadBreugen/AT-featured-artists',DATA_PATH='data.json',PASSWORD='audiotool2026';
-let GITHUB_TOKEN='',data=[],currentIdx=null,dirty=false,fileSha='',lastPickedColor=null;
+const GITHUB_REPO='SnadBreugen/AT-featured-artists';
+const DATA_PATH_GEN2='data.json', DATA_PATH_GEN1='gen1_data.json';
+const PASSWORD='audiotool2026';
+
+const AT_A_SVG_WHITE=`<svg height="100%" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M694.679 800C654.814 800 619.994 777.727 602.276 745.116C542.971 779.942 473.823 800 400 800C179.022 800 0 620.828 0 399.938C0 179.049 179.022 0 400 0C620.978 0 800 179.049 800 400.061L800 694.785C800 752.869 752.876 800 694.802 800ZM400.123 210.552C295.54 210.552 210.643 295.339 210.643 400.061C210.643 504.784 295.417 589.448 400.123 589.448C504.829 589.448 589.603 504.661 589.603 400.061C589.603 295.462 504.829 210.552 400.123 210.552Z" fill="white"/></svg>`;
+const AT_A_SVG_BLACK=AT_A_SVG_WHITE.replace('fill="white"','fill="black"');
+const ARECORDS_SVG_WHITE=`<svg height="100%" viewBox="0 0 311 49" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116.334 34.5179C113.55 34.5179 111.293 32.2612 111.293 29.4767C111.293 27.0962 110.383 24.7156 108.568 22.9006C104.932 19.2652 99.0402 19.2652 95.4048 22.9006C91.7693 26.536 91.7693 32.4281 95.4048 36.0636C97.2144 37.8732 99.5788 38.7781 101.949 38.7888H116.334C119.119 38.7888 121.375 41.0455 121.375 43.83C121.375 46.6145 119.119 48.8711 116.334 48.8711H101.992C97.0313 48.8711 92.0656 46.9807 88.2793 43.1944C80.7068 35.622 80.7068 23.3476 88.2793 15.7751C95.8518 8.20263 108.126 8.20263 115.699 15.7751C119.485 19.5614 121.375 24.5163 121.375 29.4767ZM38.7781 43.8246C38.7781 46.6091 36.5214 48.8657 33.7369 48.8657C31.7926 48.8657 30.1122 47.767 29.272 46.1567C26.3798 47.8747 23.0029 48.8657 19.389 48.8657C8.68198 48.8657 0 40.1838 0 29.4767C0 18.7697 8.68198 10.0877 19.389 10.0877C30.0961 10.0877 38.7781 18.7697 38.7781 29.4767V43.8246ZM19.389 20.17C14.2509 20.17 10.0823 24.3386 10.0823 29.4767C10.0823 34.6148 14.2509 38.7834 19.389 38.7834C24.5271 38.7834 28.6958 34.6148 28.6958 29.4767C28.6958 24.3386 24.5271 20.17 19.389 20.17ZM181.481 48.8657C170.774 48.8657 162.092 40.1838 162.092 29.4767C162.092 18.7697 170.774 10.0877 181.481 10.0877C192.188 10.0877 200.87 18.7697 200.87 29.4767C200.87 40.1838 192.188 48.8657 181.481 48.8657ZM181.481 20.17C176.343 20.17 172.175 24.3386 172.175 29.4767C172.175 34.6148 176.343 38.7834 181.481 38.7834C186.619 38.7834 190.788 34.6148 190.788 29.4767C190.788 24.3386 186.619 20.17 181.481 20.17ZM267.956 5.05192V29.4767C267.956 40.1838 259.274 48.8657 248.567 48.8657C237.86 48.8657 229.178 40.1838 229.178 29.4767C229.178 18.7697 237.86 10.0877 248.567 10.0877C251.939 10.0877 255.111 10.9494 257.874 12.4628V5.04653C257.874 2.25667 260.131 0 262.915 0C265.7 0 267.956 2.25667 267.956 5.04115V5.05192ZM248.567 20.17C243.429 20.17 239.261 24.3386 239.261 29.4767C239.261 34.6148 243.429 38.7834 248.567 38.7834C253.705 38.7834 257.874 34.6148 257.874 29.4767C257.874 24.3386 253.705 20.17 248.567 20.17Z" fill="white"/></svg>`;
+const ARECORDS_SVG_BLACK=ARECORDS_SVG_WHITE.replace(/fill="white"/g,'fill="black"');
+
+function getLogoSvg(color,type){ if(type==='at') return color==='black'?AT_A_SVG_BLACK:AT_A_SVG_WHITE; return color==='black'?ARECORDS_SVG_BLACK:ARECORDS_SVG_WHITE; }
+function padNum(n){ return String(n||'').padStart(3,'0'); }
+
+let GITHUB_TOKEN='', currentGen=2, data2=[], data1=[], sha2='', sha1='', currentIdx=null, dirty2=false, dirty1=false, lastPickedColor=null;
+
+function currentData(){ return currentGen===2?data2:data1; }
+function currentDirty(){ return currentGen===2?dirty2:dirty1; }
+function setDirty(){ if(currentGen===2)dirty2=true;else dirty1=true; document.getElementById('saveAllBtn').disabled=false; }
+function currentPath(){ return currentGen===2?DATA_PATH_GEN2:DATA_PATH_GEN1; }
 
 function doLogin(){
-  const pw=document.getElementById('pwInput').value,tok=document.getElementById('tokenInput').value.trim();
-  if(pw===PASSWORD&&tok){GITHUB_TOKEN=tok;document.getElementById('loginScreen').style.display='none';document.getElementById('mainScreen').style.display='block';loadData();}
-  else{const e=document.getElementById('loginErr');e.style.display='block';e.textContent=!tok?'ENTER GITHUB TOKEN':'WRONG PASSWORD';}
+  const pw=document.getElementById('pwInput').value, tok=document.getElementById('tokenInput').value.trim();
+  if(pw===PASSWORD&&tok){ GITHUB_TOKEN=tok; document.getElementById('loginScreen').style.display='none'; document.getElementById('mainScreen').style.display='block'; loadData(2); loadData(1); }
+  else{ const e=document.getElementById('loginErr'); e.style.display='block'; e.textContent=!tok?'ENTER GITHUB TOKEN':'WRONG PASSWORD'; }
 }
-function deleteArtist(){
-  if(currentIdx===null) return;
-  const name = data[currentIdx].artist;
-  if(!confirm('Delete "' + name + '"? This cannot be undone.')) return;
-  data.splice(currentIdx, 1);
-  currentIdx = null;
-  document.getElementById('editor').innerHTML = '<div class="empty">Artist deleted — click PUSH TO GITHUB to save</div>';
-  filterArtists();
-  markDirty();
-  showToast('Deleted: ' + name);
-}
-function toggleHidden(){
-  if(currentIdx===null) return;
-  data[currentIdx].is_hidden = !data[currentIdx].is_hidden;
-  markDirty();
-  selectArtist(currentIdx);
-  showToast(data[currentIdx].is_hidden ? 'Artist hidden' : 'Artist visible');
-}
-function toggleCurrent(){
-  if(currentIdx===null) return;
-  const isCurrent = !data[currentIdx].is_current;
-  // Remove from all others first
-  data.forEach((a,i) => { if(i!==currentIdx) a.is_current=false; });
-  data[currentIdx].is_current = isCurrent;
-  markDirty();
-  // Re-render to update button
-  selectArtist(currentIdx);
-  showToast(isCurrent ? 'Set as Current Featured!' : 'Removed from Current');
-}
-function newArtist(){
-  const a={
-    artist:'NEW ARTIST',real_name:'',date:new Date().toISOString().slice(0,10),
-    board_url:'',album_url:'',at_profile:'',soundcloud:'',photo:'',cover_url:'',
-    intro:'',about:'',interview:[],tracks:[],social:{},color1:'',color2:'',color_accent:'',desc_bg:''
-  };
-  data.push(a);
-  currentIdx=data.length-1;
-  renderList(data);
-  selectArtist(currentIdx);
-  markDirty();
-  showToast('New artist created!');
-}
-function setStatus(m){document.getElementById('statusMsg').textContent=m;}
-function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');}
 
-async function loadData(){
-  setStatus('Loading...');
+function switchGen(gen){
+  currentGen=gen; currentIdx=null;
+  document.getElementById('tabGen1').classList.toggle('active',gen===1);
+  document.getElementById('tabGen2').classList.toggle('active',gen===2);
+  document.getElementById('editor').innerHTML='<div class="empty">Select an artist to edit</div>';
+  const pl=document.getElementById('previewLink'); if(pl)pl.style.display='none';
+  filterArtists();
+  setStatus(`${currentData().length} artists loaded`);
+  document.getElementById('saveAllBtn').disabled=!currentDirty();
+}
+
+function setStatus(m){ document.getElementById('statusMsg').textContent=m; }
+function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
+
+async function loadData(gen){
+  const path=gen===2?DATA_PATH_GEN2:DATA_PATH_GEN1;
   try{
-    const r=await fetch(`https://api.github.com/repos/${GITHUB_REPO}/contents/${DATA_PATH}`,{headers:{Authorization:`token ${GITHUB_TOKEN}`,Accept:'application/vnd.github.v3+json'}});
-    const j=await r.json();fileSha=j.sha;data=JSON.parse(decodeURIComponent(escape(atob(j.content.replace(/\n/g,'')))));
-    renderList(data);setStatus(`${data.length} artists loaded`);
+    const r=await fetch(`https://api.github.com/repos/${GITHUB_REPO}/contents/${path}`,{headers:{Authorization:`token ${GITHUB_TOKEN}`,Accept:'application/vnd.github.v3+json'}});
+    const j=await r.json();
+    const parsed=JSON.parse(decodeURIComponent(escape(atob(j.content.replace(/\n/g,'')))));
+    if(gen===2){sha2=j.sha;data2=parsed;}else{sha1=j.sha;data1=parsed;}
+    if(gen===currentGen){renderList(currentData());setStatus(`${currentData().length} artists loaded`);}
   }catch(e){setStatus('Error loading data');}
 }
 
 function renderList(artists){
   document.getElementById('artistList').innerHTML=artists.map(a=>{
-    const isCur=!!a.is_current;
-    const i=data.indexOf(a),hasColors=!!(a.color1&&a.color2);
-    return `<div class="artist-item ${currentIdx===i?'active':''}" onclick="selectArtist(${i})"><span class="ai-name">${isCur?'★ ':''}${a.is_hidden?'◉ ':''} ${a.artist}</span><span class="ai-dot ${hasColors?'has-colors':''}" title="${hasColors?'Colors set':'No colors'}"></span></div>`;
+    const i=currentData().indexOf(a);
+    const hasColors=!!(a.color1&&a.color2)||!!(a.overlay_color1&&a.overlay_color2);
+    return `<div class="artist-item ${currentIdx===i?'active':''}" onclick="selectArtist(${i})"><span class="ai-name">${a.is_current?'* ':''}${a.is_hidden?'o ':''} ${a.artist}</span><span class="ai-dot ${hasColors?'has-colors':''}" title="${hasColors?'Colors set':'No colors'}"></span></div>`;
   }).join('');
 }
-function filterArtists(){const q=document.getElementById('searchInput').value.toLowerCase();renderList(q?data.filter(a=>a.artist.toLowerCase().includes(q)):data);}
+function filterArtists(){ const q=document.getElementById('searchInput').value.toLowerCase(); renderList(q?currentData().filter(a=>a.artist.toLowerCase().includes(q)):currentData()); }
 
 function selectArtist(idx){
-  currentIdx=idx;filterArtists();
-  const slug=encodeURIComponent(data[idx].artist);
+  currentIdx=idx; filterArtists();
+  const a=currentData()[idx];
   const pl=document.getElementById('previewLink');
-  if(pl){pl.href=`artist.html?id=${slug}`;pl.style.display='block';}
-  const a=data[idx];
-  const albumId=(a.album_url||'').match(/\/album\/([^/]+)/)?.[1];
-  const coverUrl=a.cover_url||(albumId?`https://api.audiotool.com/album/${albumId}/cover/256.jpg`:'');
-  const c1=a.color1||'#333333',c2=a.color2||'#333333',ca=a.color_accent||c1;
-  const social=a.social||{};
-  const tracks=[...(a.tracks||[])];while(tracks.length<11)tracks.push({url:'',name:'',track_artist:'',desc:''});
-  const isCurrent=!!a.is_current;
-  const isHidden=!!a.is_hidden;
+  if(pl){ pl.href=currentGen===2?`artist.html?id=${encodeURIComponent(a.artist)}`:`artist_gen1.html?id=${encodeURIComponent(a.artist)}`; pl.style.display='block'; }
+  if(currentGen===2)renderEditorGen2(a,idx);
+  else renderEditorGen1(a,idx);
+}
+
+function renderEditorGen1(a,idx){
+  const ov1=a.overlay_color1||a.color1||'#111111';
+  const ov2=a.overlay_color2||a.color2||'#0a0a0a';
+  const logoColor=a.logo_color||'white';
+  const tracks=[...(a.tracks||[])]; while(tracks.length<11)tracks.push({url:'',name:'',track_artist:'',desc:''});
 
   document.getElementById('editor').innerHTML=`
-    <div class="ed-title">${a.artist}</div>
-    <div class="ed-sub">${a.real_name||''} &nbsp;·&nbsp; ${a.date||''}</div>
+    <div class="ed-title">${esc(a.artist)}</div>
+    <div class="ed-sub">${esc(a.real_name||'')} . ${esc(a.date||'')} . GEN I #${padNum(a.album_number)}</div>
     <div style="margin-bottom:28px">
-      <button onclick="toggleCurrent()" id="currentBtn" style="font-family:var(--block);font-size:13px;letter-spacing:.1em;padding:8px 20px;border:none;cursor:pointer;${isCurrent?'background:var(--accent);color:var(--bg)':'background:var(--surface);border:1px solid var(--border);color:var(--text-dim)'}">
-        ${isCurrent ? '★ CURRENT FEATURED' : '☆ SET AS CURRENT FEATURED'}
-      </button>
-      <button onclick="toggleHidden()" id="hiddenBtn" style="font-family:var(--block);font-size:13px;letter-spacing:.1em;padding:8px 20px;border:none;cursor:pointer;margin-left:8px;${isHidden?'background:var(--red);color:#fff':'background:var(--surface);border:1px solid var(--border);color:var(--text-dim)'}">
-        ${isHidden ? '◉ HIDDEN' : '○ SET AS HIDDEN'}
+      <button onclick="toggleHidden()" style="font-family:var(--block);font-size:13px;letter-spacing:.1em;padding:8px 20px;border:none;cursor:pointer;${a.is_hidden?'background:var(--red);color:#fff':'background:var(--surface);border:1px solid var(--border);color:var(--muted)'}">
+        ${a.is_hidden?'HIDDEN':'SET AS HIDDEN'}
       </button>
     </div>
 
@@ -219,14 +226,141 @@ function selectArtist(idx){
         <div class="field-row"><div class="field-label">Artist Name</div><input class="field-input" value="${esc(a.artist)}" onchange="save('artist',this.value)"></div>
         <div class="field-row"><div class="field-label">Real Name</div><input class="field-input" value="${esc(a.real_name||'')}" onchange="save('real_name',this.value)"></div>
         <div class="field-row"><div class="field-label">Date (YYYY-MM-DD)</div><input class="field-input" value="${esc(a.date||'')}" onchange="save('date',this.value)"></div>
-        <div class="field-row"><div class="field-label">Album Number</div><input class="field-input" type="number" value="${a.album_number||''}" onchange="save('album_number',this.value?parseInt(this.value):null)" placeholder="e.g. 124"></div>
+        <div class="field-row"><div class="field-label">Album Number</div><input class="field-input" type="number" value="${a.album_number||''}" onchange="save('album_number',this.value?parseInt(this.value):null)"></div>
+        <div class="field-row"><div class="field-label">Artist Photo URL</div><input class="field-input" value="${esc(a.photo||'')}" onchange="save('photo',this.value);refreshCoverPreview()"></div>
+        <div class="field-row"><div class="field-label">Audiotool Profile URL</div><input class="field-input" value="${esc(a.at_profile||'')}" onchange="save('at_profile',this.value)"></div>
+        <div class="field-row"><div class="field-label">Album URL</div><input class="field-input" value="${esc(a.album_url||'')}" onchange="save('album_url',this.value)"></div>
+      </div>
+    </div>
+
+    <div class="ed-section">
+      <div class="ed-section-title">Texts</div>
+      <div class="field-row"><div class="field-label">Intro</div><textarea class="field-input" style="min-height:100px" onchange="save('intro',this.value)">${esc(a.intro||'')}</textarea></div>
+      <div class="field-row"><div class="field-label">About</div><textarea class="field-input" style="min-height:80px" onchange="save('about',this.value)">${esc(a.about||'')}</textarea></div>
+    </div>
+
+    <div class="ed-section">
+      <div class="ed-section-title">Interview Q&As</div>
+      <div id="qaList">${renderQAs(a.interview||[])}</div>
+      <button class="add-btn" onclick="addQA()">+ ADD Q&A</button>
+    </div>
+
+    <div class="ed-section">
+      <div class="ed-section-title">Cover Preview</div>
+      <div class="cover-preview-wrap" id="coverPreviewWrap">
+        ${a.photo?`<img src="${esc(a.photo)}" id="coverPreviewImg" onerror="this.style.opacity='.2'">`:`<div style="width:100%;aspect-ratio:1;background:var(--surface2)"></div>`}
+        <div class="cover-ov-top" id="coverOvTop" style="background:${ov1}">
+          <span class="pnum" id="coverPNum" style="color:${logoColor==='black'?'#000':'#fff'}">${padNum(a.album_number)}</span>
+          <span class="pname" id="coverPName" style="color:${logoColor==='black'?'#000':'#fff'}">${esc(a.artist)}</span>
+        </div>
+        <div class="cover-ov-bot" id="coverOvBot" style="background:${ov2}">
+          <div id="coverLogoArecords" style="height:10px;width:auto">${getLogoSvg(logoColor,'arecords')}</div>
+          <div id="coverLogoAt" style="height:14px;width:auto">${getLogoSvg(logoColor,'at')}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ed-section">
+      <div class="ed-section-title">Cover Overlay Colors</div>
+      <div class="color-grid" style="grid-template-columns:1fr 1fr;">
+        <div class="color-field"><label>Top Bar</label><div class="color-picker-row"><input type="color" id="ov1Picker" value="${ov1}" oninput="syncOverlayColor('overlay_color1',this.value)"><input type="text" id="ov1Text" value="${ov1}" oninput="if(this.value.match(/^#[0-9a-fA-F]{6}$/))syncOverlayColor('overlay_color1',this.value)" maxlength="7"></div></div>
+        <div class="color-field"><label>Bottom Bar</label><div class="color-picker-row"><input type="color" id="ov2Picker" value="${ov2}" oninput="syncOverlayColor('overlay_color2',this.value)"><input type="text" id="ov2Text" value="${ov2}" oninput="if(this.value.match(/^#[0-9a-fA-F]{6}$/))syncOverlayColor('overlay_color2',this.value)" maxlength="7"></div></div>
+      </div>
+      ${a.photo?`
+        <div style="margin-bottom:8px;font-size:10px;color:var(--dim)">Click photo to pick color:</div>
+        <div class="preview-img-wrap" style="max-width:200px"><img src="${esc(a.photo)}" class="preview-img" id="photoImg" onclick="pickFromImage(event,'photoImg')" onerror="this.style.opacity='.3'"><canvas id="photoCanvas"></canvas></div>
+      `:''}
+      <div style="font-size:11px;color:var(--dim);margin-top:8px">
+        Last picked: <span id="pickedColor">-</span>
+        <button onclick="assignOverlayTop()" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;margin-left:8px;">TO TOP BAR</button>
+        <button onclick="assignOverlayBot()" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;margin-left:4px;">TO BOTTOM BAR</button>
+      </div>
+    </div>
+
+    <div class="ed-section">
+      <div class="ed-section-title">Logo Color</div>
+      <div style="display:flex;gap:8px;align-items:center">
+        <button id="logoBtnWhite" class="logo-toggle-btn" onclick="setLogoColor('white')" style="${logoColor==='white'?'background:#fff;color:#000;':'background:var(--surface);border:1px solid var(--border);color:var(--text);'}">WEISS</button>
+        <button id="logoBtnBlack" class="logo-toggle-btn" onclick="setLogoColor('black')" style="${logoColor==='black'?'background:#000;color:#fff;border:1px solid #555;':'background:var(--surface);border:1px solid var(--border);color:var(--text);'}">SCHWARZ</button>
+      </div>
+    </div>
+
+    <div class="ed-section">
+      <div class="ed-section-title">Curated Tracks (max. 11)</div>
+      <div id="trackList">${renderTracks(tracks)}</div>
+    </div>
+
+    <div style="padding-bottom:60px">
+      <button class="save-btn" onclick="saveArtist()">SAVE ARTIST</button>
+      <button onclick="deleteArtist()" style="background:none;border:1px solid var(--red);color:var(--red);font-family:var(--block);font-size:14px;letter-spacing:.1em;padding:10px 20px;cursor:pointer;margin-left:12px;">DELETE</button>
+      <span class="save-status" id="saveStatus"></span>
+    </div>
+  `;
+}
+
+function setLogoColor(color){
+  if(currentIdx===null)return;
+  currentData()[currentIdx].logo_color=color;
+  setDirty();
+  const wBtn=document.getElementById('logoBtnWhite');
+  const bBtn=document.getElementById('logoBtnBlack');
+  if(wBtn) wBtn.style.cssText=color==='white'?'background:#fff;color:#000;':'background:var(--surface);border:1px solid var(--border);color:var(--text);';
+  if(bBtn) bBtn.style.cssText=color==='black'?'background:#000;color:#fff;border:1px solid #555;':'background:var(--surface);border:1px solid var(--border);color:var(--text);';
+  const textColor=color==='black'?'#000':'#fff';
+  const pnum=document.getElementById('coverPNum'); if(pnum)pnum.style.color=textColor;
+  const pname=document.getElementById('coverPName'); if(pname)pname.style.color=textColor;
+  const logoAr=document.getElementById('coverLogoArecords'); if(logoAr)logoAr.innerHTML=getLogoSvg(color,'arecords');
+  const logoAt=document.getElementById('coverLogoAt'); if(logoAt)logoAt.innerHTML=getLogoSvg(color,'at');
+}
+
+function syncOverlayColor(field,val){
+  if(currentIdx===null)return;
+  currentData()[currentIdx][field]=val; setDirty();
+  const isTop=field==='overlay_color1';
+  const picker=document.getElementById(isTop?'ov1Picker':'ov2Picker');
+  const text=document.getElementById(isTop?'ov1Text':'ov2Text');
+  if(picker)picker.value=val; if(text)text.value=val;
+  const el=document.getElementById(isTop?'coverOvTop':'coverOvBot');
+  if(el)el.style.background=val;
+}
+function assignOverlayTop(){ if(lastPickedColor)syncOverlayColor('overlay_color1',lastPickedColor); }
+function assignOverlayBot(){ if(lastPickedColor)syncOverlayColor('overlay_color2',lastPickedColor); }
+function refreshCoverPreview(){ if(currentIdx===null)return; const img=document.getElementById('coverPreviewImg'); if(img)img.src=currentData()[currentIdx].photo||''; }
+
+function renderEditorGen2(a,idx){
+  const albumId=(a.album_url||'').match(/\/album\/([^/]+)/)?.[1];
+  const coverUrl=a.cover_url||(albumId?`https://api.audiotool.com/album/${albumId}/cover/256.jpg`:'');
+  const c1=a.color1||'#333333',c2=a.color2||'#333333',ca=a.color_accent||c1;
+  const social=a.social||{};
+  const tracks=[...(a.tracks||[])]; while(tracks.length<11)tracks.push({url:'',name:'',track_artist:'',desc:''});
+  const isCurrent=!!a.is_current,isHidden=!!a.is_hidden;
+
+  document.getElementById('editor').innerHTML=`
+    <div class="ed-title">${esc(a.artist)}</div>
+    <div class="ed-sub">${esc(a.real_name||'')} . ${esc(a.date||'')}</div>
+    <div style="margin-bottom:28px;display:flex;gap:8px">
+      <button onclick="toggleCurrent()" style="font-family:var(--block);font-size:13px;letter-spacing:.1em;padding:8px 20px;border:none;cursor:pointer;${isCurrent?'background:var(--accent);color:var(--bg)':'background:var(--surface);border:1px solid var(--border);color:var(--muted)'}">
+        ${isCurrent?'CURRENT FEATURED':'SET AS CURRENT FEATURED'}
+      </button>
+      <button onclick="toggleHidden()" style="font-family:var(--block);font-size:13px;letter-spacing:.1em;padding:8px 20px;border:none;cursor:pointer;${isHidden?'background:var(--red);color:#fff':'background:var(--surface);border:1px solid var(--border);color:var(--muted)'}">
+        ${isHidden?'HIDDEN':'SET AS HIDDEN'}
+      </button>
+    </div>
+
+    <div class="ed-section">
+      <div class="ed-section-title">Basic Info</div>
+      <div class="fields-2col">
+        <div class="field-row"><div class="field-label">Artist Name</div><input class="field-input" value="${esc(a.artist)}" onchange="save('artist',this.value)"></div>
+        <div class="field-row"><div class="field-label">Real Name</div><input class="field-input" value="${esc(a.real_name||'')}" onchange="save('real_name',this.value)"></div>
+        <div class="field-row"><div class="field-label">Date (YYYY-MM-DD)</div><input class="field-input" value="${esc(a.date||'')}" onchange="save('date',this.value)"></div>
+        <div class="field-row"><div class="field-label">Album Number</div><input class="field-input" type="number" value="${a.album_number||''}" onchange="save('album_number',this.value?parseInt(this.value):null)"></div>
         <div class="field-row"><div class="field-label">Artist Photo URL</div><input class="field-input" value="${esc(a.photo||'')}" onchange="save('photo',this.value)"></div>
-        <div class="field-row"><div class="field-label">Photo Position (e.g. top, center, 50% 20%)</div>
+        <div class="field-row">
+          <div class="field-label">Photo Position</div>
           <div style="display:flex;gap:8px">
-            <input class="field-input" style="flex:1" value="${esc(a.photo_position||'top')}" onchange="save('photo_position',this.value)" placeholder="top">
+            <input class="field-input" style="flex:1" value="${esc(a.photo_position||'top')}" onchange="save('photo_position',this.value)">
             <button onclick="save('photo_position','top');this.previousElementSibling.value='top'" style="background:var(--surface);border:1px solid var(--border);color:var(--muted);font-family:var(--mono);font-size:10px;padding:0 10px;cursor:pointer;">top</button>
             <button onclick="save('photo_position','center');this.previousElementSibling.previousElementSibling.value='center'" style="background:var(--surface);border:1px solid var(--border);color:var(--muted);font-family:var(--mono);font-size:10px;padding:0 10px;cursor:pointer;">center</button>
-            <button onclick="save('photo_position','bottom');this.previousElementSibling.previousElementSibling.previousElementSibling.value='bottom'" style="background:var(--surface);border:1px solid var(--border);color:var(--muted);font-family:var(--mono);font-size:10px;padding:0 10px;cursor:pointer;">bottom</button>
           </div>
         </div>
         <div class="field-row"><div class="field-label">Audiotool Profile URL</div><input class="field-input" value="${esc(a.at_profile||'')}" onchange="save('at_profile',this.value)"></div>
@@ -238,8 +372,8 @@ function selectArtist(idx){
 
     <div class="ed-section">
       <div class="ed-section-title">Texts</div>
-      <div class="field-row"><div class="field-label">Intro (editor's text)</div><textarea class="field-input" style="min-height:100px" onchange="save('intro',this.value)">${esc(a.intro||'')}</textarea></div>
-      <div class="field-row"><div class="field-label">About (artist's own text)</div><textarea class="field-input" style="min-height:80px" onchange="save('about',this.value)">${esc(a.about||'')}</textarea></div>
+      <div class="field-row"><div class="field-label">Intro</div><textarea class="field-input" style="min-height:100px" onchange="save('intro',this.value)">${esc(a.intro||'')}</textarea></div>
+      <div class="field-row"><div class="field-label">About</div><textarea class="field-input" style="min-height:80px" onchange="save('about',this.value)">${esc(a.about||'')}</textarea></div>
     </div>
 
     <div class="ed-section">
@@ -268,18 +402,18 @@ function selectArtist(idx){
 
     <div class="ed-section">
       <div class="ed-section-title">Color Preview</div>
-      <div class="color-preview"><div class="color-preview-bg" id="previewBg"></div><div class="color-preview-text" id="previewText">${a.artist.toUpperCase()}</div></div>
+      <div class="color-preview"><div class="color-preview-bg" id="previewBg"></div><div class="color-preview-text" id="previewText">${esc(a.artist.toUpperCase())}</div></div>
     </div>
 
     <div class="ed-section">
-      <div class="ed-section-title">Images — Click to pick color</div>
+      <div class="ed-section-title">Images - Click to pick color</div>
       <div class="preview-grid">
-        ${coverUrl?`<div><div class="preview-label">Album Cover</div><div class="preview-img-wrap"><img src="${coverUrl}" class="preview-img" id="coverImg" onclick="pickFromImage(event,'coverImg')" onerror="this.style.opacity='.3'"><canvas id="coverCanvas"></canvas></div><div style="font-size:10px;color:var(--dim);margin-top:4px">Click to pick color</div></div>`:`<div></div>`}
-        ${a.photo?`<div><div class="preview-label">Artist Photo</div><div class="preview-img-wrap"><img src="${a.photo}" class="preview-img" id="photoImg" onclick="pickFromImage(event,'photoImg')" onerror="this.style.opacity='.3'"><canvas id="photoCanvas"></canvas></div><div style="font-size:10px;color:var(--dim);margin-top:4px">Click to pick color</div></div>`:''}
+        ${coverUrl?`<div><div class="preview-label">Album Cover</div><div class="preview-img-wrap"><img src="${coverUrl}" class="preview-img" id="coverImg" onclick="pickFromImage(event,'coverImg')" onerror="this.style.opacity='.3'"><canvas id="coverCanvas"></canvas></div></div>`:'<div></div>'}
+        ${a.photo?`<div><div class="preview-label">Artist Photo</div><div class="preview-img-wrap"><img src="${esc(a.photo)}" class="preview-img" id="photoImg" onclick="pickFromImage(event,'photoImg')" onerror="this.style.opacity='.3'"><canvas id="photoCanvas"></canvas></div></div>`:''}
       </div>
       <div style="font-size:11px;color:var(--dim);margin-bottom:16px">
-        Last picked: <span id="pickedColor" style="font-family:var(--mono)">—</span> &nbsp;
-        <button onclick="assignColorBoth()" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;">→ BACKGROUND + HEADLINES</button>
+        Last picked: <span id="pickedColor">-</span>
+        <button onclick="assignColorBoth()" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;margin-left:8px;">TO BACKGROUND + HEADLINES</button>
       </div>
     </div>
 
@@ -294,93 +428,66 @@ function selectArtist(idx){
 
     <div style="padding-bottom:60px">
       <button class="save-btn" onclick="saveArtist()">SAVE ARTIST</button>
-      <button onclick="deleteArtist()" style="background:none;border:1px solid var(--red);color:var(--red);font-family:var(--block);font-size:14px;letter-spacing:.1em;padding:10px 20px;cursor:pointer;margin-left:12px;">DELETE ARTIST</button>
+      <button onclick="deleteArtist()" style="background:none;border:1px solid var(--red);color:var(--red);font-family:var(--block);font-size:14px;letter-spacing:.1em;padding:10px 20px;cursor:pointer;margin-left:12px;">DELETE</button>
       <span class="save-status" id="saveStatus"></span>
     </div>
   `;
   updatePreview(c1,c2,ca);
 }
 
-function renderQAs(qas){
-  return qas.map((qa,i)=>`
-    <div class="qa-item" id="qa-${i}">
-      <button class="qa-remove" onclick="removeQA(${i})">✕</button>
-      <div class="field-row" style="margin-bottom:8px"><div class="field-label">Question</div><input class="field-input" value="${esc(qa.q||'')}" onchange="saveQA(${i},'q',this.value)"></div>
-      <div class="field-row"><div class="field-label">Answer</div><textarea class="field-input" onchange="saveQA(${i},'a',this.value)">${esc(qa.a||'')}</textarea></div>
-    </div>`).join('');
-}
-function saveQA(i,f,v){if(currentIdx===null)return;if(!data[currentIdx].interview)data[currentIdx].interview=[];data[currentIdx].interview[i][f]=v;markDirty();}
-function addQA(){if(currentIdx===null)return;if(!data[currentIdx].interview)data[currentIdx].interview=[];data[currentIdx].interview.push({q:'',a:''});document.getElementById('qaList').innerHTML=renderQAs(data[currentIdx].interview);markDirty();}
-function removeQA(i){if(currentIdx===null)return;data[currentIdx].interview.splice(i,1);document.getElementById('qaList').innerHTML=renderQAs(data[currentIdx].interview);markDirty();}
+function renderQAs(qas){ return qas.map((qa,i)=>`<div class="qa-item" id="qa-${i}"><button class="qa-remove" onclick="removeQA(${i})">x</button><div class="field-row" style="margin-bottom:8px"><div class="field-label">Question</div><input class="field-input" value="${esc(qa.q||'')}" onchange="saveQA(${i},'q',this.value)"></div><div class="field-row"><div class="field-label">Answer</div><textarea class="field-input" onchange="saveQA(${i},'a',this.value)">${esc(qa.a||'')}</textarea></div></div>`).join(''); }
+function saveQA(i,f,v){ if(currentIdx===null)return; if(!currentData()[currentIdx].interview)currentData()[currentIdx].interview=[]; currentData()[currentIdx].interview[i][f]=v; setDirty(); }
+function addQA(){ if(currentIdx===null)return; if(!currentData()[currentIdx].interview)currentData()[currentIdx].interview=[]; currentData()[currentIdx].interview.push({q:'',a:''}); document.getElementById('qaList').innerHTML=renderQAs(currentData()[currentIdx].interview); setDirty(); }
+function removeQA(i){ if(currentIdx===null)return; currentData()[currentIdx].interview.splice(i,1); document.getElementById('qaList').innerHTML=renderQAs(currentData()[currentIdx].interview); setDirty(); }
 
 function renderTracks(tracks){
   return tracks.map((t,i)=>{
-    const tid=(t.url||'').match(/\/track\/([^/]+)/)?.[1]||'';
+    const tid=(t.url||'').match(/\/track\/([^/?\s]+)/)?.[1]||'';
     const cov=tid?`https://api.audiotool.com/track/${tid}/cover/256.jpg`:'';
-    return `<div class="track-card" id="track-${i}">
-      <div class="track-card-header">
-        <div class="track-num">${i+1}</div>
-        ${cov?`<img class="track-cover-preview" src="${cov}" onerror="this.style.display='none'" id="tc${i}">`:`<div style="width:40px;height:40px;background:var(--surface2);flex-shrink:0"></div>`}
-        <div class="track-info"><div class="track-name-display" id="tnd${i}">${esc(t.name||'—')}</div><div class="track-artist-display" id="tad${i}">${esc(t.track_artist||'—')}</div></div>
-      </div>
-      <div class="track-url-row">
-        <input class="field-input" id="turl${i}" placeholder="https://www.audiotool.com/track/..." value="${esc(t.url||'')}" onchange="saveTrackField(${i},'url',this.value)">
-        <button class="track-lookup-btn" id="tlookup${i}" onclick="lookupTrack(${i})">LOOKUP</button>
-      </div>
-      <div class="fields-2col" style="margin-bottom:10px">
-        <div class="field-row"><div class="field-label">Track Name</div><input class="field-input" id="tname${i}" value="${esc(t.name||'')}" onchange="saveTrackField(${i},'name',this.value)"></div>
-        <div class="field-row"><div class="field-label">Artist</div><input class="field-input" id="tartist${i}" value="${esc(t.track_artist||'')}" onchange="saveTrackField(${i},'track_artist',this.value)"></div>
-      </div>
-      <div class="field-row"><div class="field-label">Description (why I picked this)</div><textarea class="field-input" style="min-height:60px" onchange="saveTrackField(${i},'desc',this.value)">${esc(t.desc||'')}</textarea></div>
-    </div>`;
+    return `<div class="track-card" id="track-${i}"><div class="track-card-header"><div class="track-num">${i+1}</div>${cov?`<img class="track-cover-preview" src="${cov}" onerror="this.style.display='none'" id="tc${i}">`:`<div style="width:40px;height:40px;background:var(--surface2);flex-shrink:0"></div>`}<div class="track-info"><div class="track-name-display" id="tnd${i}">${esc(t.name||'--')}</div><div class="track-artist-display" id="tad${i}">${esc(t.track_artist||'--')}</div></div></div><div class="track-url-row"><input class="field-input" id="turl${i}" placeholder="https://www.audiotool.com/track/..." value="${esc(t.url||'')}" onchange="saveTrackField(${i},'url',this.value)"><button class="track-lookup-btn" id="tlookup${i}" onclick="lookupTrack(${i})">LOOKUP</button></div><div class="fields-2col" style="margin-bottom:10px"><div class="field-row"><div class="field-label">Track Name</div><input class="field-input" id="tname${i}" value="${esc(t.name||'')}" onchange="saveTrackField(${i},'name',this.value)"></div><div class="field-row"><div class="field-label">Artist</div><input class="field-input" id="tartist${i}" value="${esc(t.track_artist||'')}" onchange="saveTrackField(${i},'track_artist',this.value)"></div></div><div class="field-row"><div class="field-label">Description</div><textarea class="field-input" style="min-height:60px" onchange="saveTrackField(${i},'desc',this.value)">${esc(t.desc||'')}</textarea></div></div>`;
   }).join('');
 }
 
 async function lookupTrack(i){
-  const url=document.getElementById(`turl${i}`).value.trim();
-  if(!url)return;
-  const m=url.match(/\/track\/([^/?\s]+)/);
-  if(!m){showToast('Invalid track URL',true);return;}
+  const url=document.getElementById(`turl${i}`).value.trim(); if(!url)return;
+  const m=url.match(/\/track\/([^/?\s]+)/); if(!m){showToast('Invalid URL',true);return;}
   const tid=m[1].replace(/\//g,'');
-  const btn=document.getElementById(`tlookup${i}`);
-  btn.disabled=true;btn.textContent='...';
+  const btn=document.getElementById(`tlookup${i}`); btn.disabled=true;btn.textContent='...';
   try{
     const r=await fetch(`https://api.audiotool.com/track/${tid}/eds/`);
     const xml=await r.text();
     const doc=new DOMParser().parseFromString(xml,'text/xml');
     const el=doc.querySelector('track');
-    const name=el?.getAttribute('title')||tid;
-    const artist=el?.getAttribute('user-name')||'';
+    const name=el?.getAttribute('title')||tid, artist=el?.getAttribute('user-name')||'';
     const trackUrl=`https://www.audiotool.com/track/${tid}/`;
     saveTrackField(i,'url',trackUrl);saveTrackField(i,'name',name);saveTrackField(i,'track_artist',artist);
-    document.getElementById(`tname${i}`).value=name;
-    document.getElementById(`tartist${i}`).value=artist;
+    document.getElementById(`tname${i}`).value=name; document.getElementById(`tartist${i}`).value=artist;
     document.getElementById(`turl${i}`).value=trackUrl;
-    document.getElementById(`tnd${i}`).textContent=name;
-    document.getElementById(`tad${i}`).textContent=artist;
-    const cov=document.getElementById(`tc${i}`);
-    if(cov){cov.src=`https://api.audiotool.com/track/${tid}/cover/256.jpg`;cov.style.display='block';}
-    showToast(`✓ ${name}`);
-  }catch(e){
-    saveTrackField(i,'url',`https://www.audiotool.com/track/${tid}/`);
-    showToast('API blocked — fill name/artist manually',true);
-  }
+    document.getElementById(`tnd${i}`).textContent=name; document.getElementById(`tad${i}`).textContent=artist;
+    const cov=document.getElementById(`tc${i}`); if(cov){cov.src=`https://api.audiotool.com/track/${tid}/cover/256.jpg`;cov.style.display='block';}
+    showToast(name);
+  }catch(e){ showToast('API blocked - fill manually',true); }
   btn.disabled=false;btn.textContent='LOOKUP';
 }
 
-function saveTrackField(i,f,v){
-  if(currentIdx===null)return;
-  if(!data[currentIdx].tracks)data[currentIdx].tracks=[];
-  while(data[currentIdx].tracks.length<=i)data[currentIdx].tracks.push({url:'',name:'',track_artist:'',desc:''});
-  data[currentIdx].tracks[i][f]=v;markDirty();
-}
+function saveTrackField(i,f,v){ if(currentIdx===null)return; if(!currentData()[currentIdx].tracks)currentData()[currentIdx].tracks=[]; while(currentData()[currentIdx].tracks.length<=i)currentData()[currentIdx].tracks.push({url:'',name:'',track_artist:'',desc:''}); currentData()[currentIdx].tracks[i][f]=v; setDirty(); }
+function save(f,v){ if(currentIdx===null)return; currentData()[currentIdx][f]=v; setDirty(); }
+function saveSocial(f,v,alsoRoot=false){ if(currentIdx===null)return; if(!currentData()[currentIdx].social)currentData()[currentIdx].social={}; currentData()[currentIdx].social[f]=v; if(alsoRoot)currentData()[currentIdx][f]=v; setDirty(); }
 
-function save(f,v){if(currentIdx===null)return;data[currentIdx][f]=v;markDirty();}
-function saveSocial(f,v,alsoRoot=false){if(currentIdx===null)return;if(!data[currentIdx].social)data[currentIdx].social={};data[currentIdx].social[f]=v;if(alsoRoot)data[currentIdx][f]=v;markDirty();}
+function deleteArtist(){ if(currentIdx===null)return; const name=currentData()[currentIdx].artist; if(!confirm('Delete "'+name+'"?'))return; currentData().splice(currentIdx,1); currentIdx=null; document.getElementById('editor').innerHTML='<div class="empty">Artist deleted</div>'; filterArtists(); setDirty(); showToast('Deleted: '+name); }
+function toggleHidden(){ if(currentIdx===null)return; currentData()[currentIdx].is_hidden=!currentData()[currentIdx].is_hidden; setDirty(); selectArtist(currentIdx); }
+function toggleCurrent(){ if(currentIdx===null||currentGen!==2)return; const isCurrent=!data2[currentIdx].is_current; data2.forEach((a,i)=>{if(i!==currentIdx)a.is_current=false;}); data2[currentIdx].is_current=isCurrent; setDirty(); selectArtist(currentIdx); }
+
+function newArtist(){
+  const isGen1=currentGen===1;
+  const a=isGen1?{artist:'NEW ARTIST',real_name:'',date:new Date().toISOString().slice(0,10),album_number:currentData().length+1,at_profile:'',album_url:'',photo:'',intro:'',about:'',interview:[],tracks:[],social:{},color1:'',color2:'',color_accent:'',desc_bg:'',overlay_color1:'#111111',overlay_color2:'#0a0a0a',logo_color:'white',is_hidden:false}:{artist:'NEW ARTIST',real_name:'',date:new Date().toISOString().slice(0,10),board_url:'',album_url:'',at_profile:'',soundcloud:'',photo:'',cover_url:'',intro:'',about:'',interview:[],tracks:[],social:{},color1:'',color2:'',color_accent:'',desc_bg:'',is_hidden:false};
+  currentData().push(a); currentIdx=currentData().length-1; filterArtists(); selectArtist(currentIdx); setDirty(); showToast('New artist created');
+}
 
 function pickFromImage(e,imgId){
   const img=document.getElementById(imgId);
   const canvas=document.getElementById(imgId.replace('Img','Canvas'));
+  if(!canvas)return;
   const ctx=canvas.getContext('2d');
   const rect=img.getBoundingClientRect();
   const x=Math.round((e.clientX-rect.left)*(img.naturalWidth/rect.width));
@@ -393,40 +500,34 @@ function pickFromImage(e,imgId){
     lastPickedColor=hex;
     const el=document.getElementById('pickedColor');
     el.textContent=hex;el.style.color=hex;el.style.background='#1c1c1c';el.style.padding='2px 6px';
-  }catch(e){
-    document.getElementById('pickedColor').textContent='CORS blocked — use picker directly';
-    document.getElementById('pickedColor').style.color='var(--red)';
-  }
+  }catch(e){ const el=document.getElementById('pickedColor'); el.textContent='CORS blocked';el.style.color='var(--red)'; }
 }
 
-function assignColorBoth(){if(!lastPickedColor)return;syncColor('color1',lastPickedColor);syncColor('color2',lastPickedColor);syncColor('color_accent',lastPickedColor);document.getElementById('color1Picker').value=lastPickedColor;document.getElementById('color1Text').value=lastPickedColor;}
-function assignColor(f){if(!lastPickedColor)return;syncColor(f,lastPickedColor);document.getElementById(`${f}Picker`).value=lastPickedColor;document.getElementById(`${f}Text`).value=lastPickedColor;}
-function syncColor(f,v){if(currentIdx===null)return;data[currentIdx][f]=v;const t=document.getElementById(`${f}Text`),p=document.getElementById(`${f}Picker`);if(t)t.value=v;if(p)p.value=v;const c1=data[currentIdx].color1||'#333',c2=data[currentIdx].color2||'#333',ca=data[currentIdx].color_accent||c1;updatePreview(c1,c2,ca);markDirty();}
-function syncColorText(f,v){if(v.match(/^#[0-9a-fA-F]{6}$/))syncColor(f,v);}
-function updatePreview(c1,c2,ca){const bg=document.getElementById('previewBg'),txt=document.getElementById('previewText');if(bg)bg.style.background=`linear-gradient(to right,${c1} 0%,#141414 40%,#141414 60%,${c2} 100%)`;if(txt)txt.style.color=ca;}
-function markDirty(){dirty=true;document.getElementById('saveAllBtn').disabled=false;}
+function assignColorBoth(){ if(!lastPickedColor)return; syncColor('color1',lastPickedColor);syncColor('color2',lastPickedColor);syncColor('color_accent',lastPickedColor); const p=document.getElementById('color1Picker'),t=document.getElementById('color1Text'); if(p)p.value=lastPickedColor;if(t)t.value=lastPickedColor; }
+function syncColor(f,v){ if(currentIdx===null)return; currentData()[currentIdx][f]=v; const t=document.getElementById(`${f}Text`),p=document.getElementById(`${f}Picker`); if(t)t.value=v;if(p)p.value=v; const c1=currentData()[currentIdx].color1||'#333',c2=currentData()[currentIdx].color2||'#333',ca=currentData()[currentIdx].color_accent||c1; updatePreview(c1,c2,ca); setDirty(); }
+function syncColorText(f,v){ if(v.match(/^#[0-9a-fA-F]{6}$/))syncColor(f,v); }
+function updatePreview(c1,c2,ca){ const bg=document.getElementById('previewBg'),txt=document.getElementById('previewText'); if(bg)bg.style.background=`linear-gradient(to right,${c1} 0%,#141414 40%,#141414 60%,${c2} 100%)`;if(txt)txt.style.color=ca; }
 
-function saveArtist(){
-  if(currentIdx===null)return;
-  if(data[currentIdx].tracks)data[currentIdx].tracks=data[currentIdx].tracks.filter(t=>t.url&&t.url.trim());
-  markDirty();
-  const s=document.getElementById('saveStatus');
-  s.textContent='Saved locally — click PUSH TO GITHUB to deploy';s.style.color='var(--green)';
-  filterArtists();showToast('Saved locally!');
-}
+function saveArtist(){ if(currentIdx===null)return; if(currentData()[currentIdx].tracks)currentData()[currentIdx].tracks=currentData()[currentIdx].tracks.filter(t=>t.url&&t.url.trim()); setDirty(); filterArtists(); const s=document.getElementById('saveStatus'); s.textContent='Saved locally - click PUSH TO GITHUB to deploy';s.style.color='var(--green)'; showToast('Saved locally'); }
 
 async function saveAll(){
-  const btn=document.getElementById('saveAllBtn');btn.disabled=true;setStatus('Pushing to GitHub...');
-  try{
-    const content=btoa(unescape(encodeURIComponent(JSON.stringify(data,null,2))));
-    const r=await fetch(`https://api.github.com/repos/${GITHUB_REPO}/contents/${DATA_PATH}`,{method:'PUT',headers:{Authorization:`token ${GITHUB_TOKEN}`,Accept:'application/vnd.github.v3+json','Content-Type':'application/json'},body:JSON.stringify({message:'Update artist data via admin',content,sha:fileSha})});
-    const j=await r.json();
-    if(j.content){fileSha=j.content.sha;dirty=false;setStatus('Pushed! GitHub Pages deploying...');showToast('PUSHED TO GITHUB ✓');}
-    else throw new Error(j.message||'Unknown error');
-  }catch(e){setStatus('Push failed: '+e.message);showToast('PUSH FAILED: '+e.message,true);btn.disabled=false;}
+  const btn=document.getElementById('saveAllBtn'); btn.disabled=true; setStatus('Pushing...');
+  const pushes=[];
+  if(dirty2)pushes.push(pushData(data2,DATA_PATH_GEN2,sha2,s=>{sha2=s;dirty2=false;}));
+  if(dirty1)pushes.push(pushData(data1,DATA_PATH_GEN1,sha1,s=>{sha1=s;dirty1=false;}));
+  try{ await Promise.all(pushes); setStatus('Pushed! GitHub Pages deploying...'); showToast('PUSHED TO GITHUB'); }
+  catch(e){ setStatus('Push failed: '+e.message); showToast('PUSH FAILED',true); btn.disabled=false; }
 }
 
-function showToast(m,isErr=false){const t=document.getElementById('toast');t.textContent=m;t.className=isErr?'show error':'show';setTimeout(()=>t.className='',2800);}
+async function pushData(dataset,path,sha,onSuccess){
+  const content=btoa(unescape(encodeURIComponent(JSON.stringify(dataset,null,2))));
+  const r=await fetch(`https://api.github.com/repos/${GITHUB_REPO}/contents/${path}`,{method:'PUT',headers:{Authorization:`token ${GITHUB_TOKEN}`,Accept:'application/vnd.github.v3+json','Content-Type':'application/json'},body:JSON.stringify({message:'Update artist data via admin',content,sha})});
+  const j=await r.json();
+  if(j.content)onSuccess(j.content.sha);
+  else throw new Error(j.message||'Unknown error');
+}
+
+function showToast(m,isErr=false){ const t=document.getElementById('toast');t.textContent=m;t.className=isErr?'show error':'show';setTimeout(()=>t.className='',2800); }
 </script>
 </body>
 </html>

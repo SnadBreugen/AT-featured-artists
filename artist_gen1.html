@@ -8,19 +8,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Special+Elite&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #0e0e0e;
-    --surface: #181818;
-    --border: #2a2a2a;
-    --text: #e8e4dc;
-    --text-muted: #aaa49c;
-    --text-dim: #555;
-    --accent: #e8c840;
+    --bg: #0e0e0e; --surface: #181818; --border: #2a2a2a;
+    --text: #e8e4dc; --text-muted: #aaa49c; --text-dim: #555;
+    --accent: #e8c840; --gen-color: #28E5FF;
     --block: 'Bebas Neue', Impact, sans-serif;
     --type: 'Special Elite', 'Courier New', monospace;
-    --max: 1120px;
-    --pad: clamp(20px, 4vw, 56px);
+    --max: 1120px; --pad: clamp(20px, 4vw, 56px);
   }
-
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { scroll-behavior: smooth; }
   body { background: var(--bg); color: var(--text); font-family: var(--type); min-height: 100vh; overflow-x: hidden; }
@@ -33,10 +27,8 @@
 
   header {
     position: sticky; top: 0; z-index: 100;
-    background: rgba(14,14,14,0.95);
-    backdrop-filter: blur(12px);
-    border-bottom: 2px solid var(--border);
-    height: 50px;
+    background: rgba(14,14,14,0.95); backdrop-filter: blur(12px);
+    border-bottom: 2px solid var(--border); height: 50px;
     display: flex; align-items: center; justify-content: space-between;
     padding: 0 var(--pad);
   }
@@ -44,107 +36,54 @@
   .logo:hover { color: var(--text); }
   .logo .slash { color: var(--accent); }
   .header-right { display: flex; align-items: center; gap: 20px; }
-  .back { font-family: var(--type); font-size: 11px; color: var(--text-dim); text-decoration: none; letter-spacing: 0.1em; text-transform: uppercase; transition: color .15s; }
-  .back:hover { color: var(--text); }
+  .back { font-family: var(--type); font-size: 11px; color: var(--gen-color); text-decoration: none; letter-spacing: 0.1em; text-transform: uppercase; transition: opacity .15s; opacity: .7; }
+  .back:hover { opacity: 1; }
 
-  /* HERO */
   .hero {
-    position: relative; z-index: 1;
-    max-width: var(--max); margin: 0 auto;
+    position: relative; z-index: 1; max-width: var(--max); margin: 0 auto;
     padding: clamp(36px,5vw,72px) var(--pad) 0;
-    display: grid; grid-template-columns: 1fr auto;
-    gap: 40px; align-items: start;
+    display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: start;
   }
   .hero-num { font-family: var(--block); font-size: 13px; letter-spacing: 0.25em; color: var(--accent); margin-bottom: 10px; }
   .hero-name { font-family: var(--block); font-size: clamp(48px, 8vw, 120px); line-height: 0.88; letter-spacing: 0.02em; color: var(--text); text-transform: uppercase; margin-bottom: 14px; word-break: break-word; }
   .hero-realname { font-family: var(--type); font-size: 13px; color: var(--text-muted); letter-spacing: 0.05em; margin-bottom: 24px; }
   .hero-intro { font-family: var(--type); font-size: 14px; line-height: 1.85; color: var(--text-muted); max-width: 520px; border-left: 3px solid var(--accent); padding-left: 18px; }
 
-  /* COVER with overlay - Gen I style */
   .hero-photo { flex-shrink: 0; }
-  .cover-wrap {
-    width: clamp(200px, 26vw, 340px);
-    position: relative;
-    border: 2px solid var(--border);
-    overflow: hidden;
-  }
-  .cover-wrap img {
-    width: 100%; aspect-ratio: 1;
-    object-fit: cover; object-position: center;
-    display: block;
-    filter: grayscale(10%);
-    transition: filter .4s;
-  }
+  .cover-wrap { width: clamp(200px, 26vw, 340px); position: relative; border: 2px solid var(--border); overflow: hidden; }
+  .cover-wrap img { width: 100%; aspect-ratio: 1; object-fit: cover; object-position: center; display: block; filter: grayscale(10%); transition: filter .4s; }
   .cover-wrap img:hover { filter: grayscale(0%); }
-  .cover-overlay-top {
-    position: absolute; top: 0; left: 0; right: 0;
-    padding: 10px 14px;
-    display: flex; align-items: center; justify-content: space-between;
-    background: var(--ov1, #111);
-  }
-  .cover-overlay-top .num { font-family: var(--block); font-size: 26px; letter-spacing: .04em; color: #fff; line-height: 1; }
-  .cover-overlay-top .name { font-family: var(--block); font-size: 17px; letter-spacing: .08em; color: #fff; text-align: right; }
-  .cover-overlay-bot {
-    position: absolute; bottom: 0; left: 0; right: 0;
-    padding: 8px 14px;
-    display: flex; align-items: center; justify-content: space-between;
-    background: var(--ov2, #0a0a0a);
-  }
+  .cover-overlay-top { position: absolute; top: 0; left: 0; right: 0; padding: 10px 14px; display: flex; align-items: center; justify-content: space-between; background: var(--ov1, #111); }
+  .cover-overlay-top .num { font-family: var(--block); font-size: 26px; letter-spacing: .04em; line-height: 1; }
+  .cover-overlay-top .name { font-family: var(--type); font-size: 14px; text-align: right; }
+  .cover-overlay-bot { position: absolute; bottom: 0; left: 0; right: 0; padding: 8px 14px; display: flex; align-items: center; justify-content: space-between; background: var(--ov2, #0a0a0a); }
   .cover-overlay-bot .arecords-svg { height: 14px; width: auto; }
   .cover-overlay-bot .at-a-svg { height: 18px; width: auto; }
   .cover-date { font-size: 10px; color: var(--text-dim); letter-spacing: 0.1em; margin-top: 8px; text-align: right; font-family: var(--type); }
 
-  /* LINKS BAR */
   .links-bar {
-    position: relative; z-index: 1;
-    max-width: var(--max); margin: 28px auto 0;
-    padding: 14px var(--pad);
-    border-top: 1px solid var(--border); border-bottom: 2px solid var(--border);
+    position: relative; z-index: 1; max-width: var(--max); margin: 28px auto 0;
+    padding: 14px var(--pad); border-top: 1px solid var(--border); border-bottom: 2px solid var(--border);
     display: flex; gap: 28px; flex-wrap: wrap;
   }
-  .ext-link {
-    font-family: var(--type); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
-    color: var(--links-bar-color, var(--text-dim)); text-decoration: none; transition: color .15s;
-    display: flex; align-items: center; gap: 5px;
-  }
+  .ext-link { font-family: var(--type); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--links-bar-color, var(--text-dim)); text-decoration: none; transition: color .15s; display: flex; align-items: center; gap: 5px; }
   .ext-link::before { content: '↗'; color: var(--links-bar-color, var(--accent)); }
   .ext-link:hover { color: var(--text); }
 
-  /* MAIN GRID */
-  .main {
-    position: relative; z-index: 1;
-    max-width: var(--max); margin: 0 auto;
-    padding: 0 var(--pad);
-    display: grid; grid-template-columns: 1fr 300px;
-  }
-
-  /* INTERVIEW */
+  .main { position: relative; z-index: 1; max-width: var(--max); margin: 0 auto; padding: 0 var(--pad); display: grid; grid-template-columns: 1fr 300px; }
   .interview { padding: 52px 48px 80px 0; border-right: 1px solid var(--border); }
-  .sec-title {
-    font-family: var(--block); font-size: 28px; letter-spacing: 0.12em; color: var(--accent);
-    margin-bottom: 28px; text-transform: uppercase; padding-bottom: 10px;
-    border-bottom: 2px solid var(--accent); display: inline-block;
-  }
+  .sec-title { font-family: var(--block); font-size: 28px; letter-spacing: 0.12em; color: var(--accent); margin-bottom: 28px; text-transform: uppercase; padding-bottom: 10px; border-bottom: 2px solid var(--accent); display: inline-block; }
   .about-block { margin-bottom: 48px; }
   .about-text { font-family: var(--type); font-size: 14px; line-height: 1.9; color: var(--text-muted); }
   .qa-list { display: flex; flex-direction: column; gap: 40px; }
   .qa-q { font-family: var(--block); font-size: 20px; letter-spacing: 0.06em; color: var(--accent); text-transform: uppercase; margin-bottom: 12px; line-height: 1.2; }
   .qa-a { font-family: var(--type); font-size: 14px; line-height: 1.95; color: var(--text-muted); }
 
-  /* SIDEBAR */
   .sidebar { padding: 52px 0 80px 36px; display: flex; flex-direction: column; gap: 40px; }
   .sidebar-title { font-family: var(--block); font-size: 22px; letter-spacing: 0.1em; color: var(--accent); text-transform: uppercase; padding-bottom: 8px; border-bottom: 2px solid var(--accent); }
-
-  /* TRACKS */
   .track-list { display: flex; flex-direction: column; gap: 1px; background: var(--border); margin-top: 1px; }
   .track-item { border-bottom: 1px solid var(--border); }
-  .track-btn {
-    background: var(--surface); padding: 10px 12px;
-    display: flex; flex-direction: row; align-items: center; gap: 10px;
-    cursor: pointer; transition: background .15s;
-    border: none; width: 100%; text-align: left; color: inherit;
-    font-family: var(--type); min-width: 0;
-  }
+  .track-btn { background: var(--surface); padding: 10px 12px; display: flex; flex-direction: row; align-items: center; gap: 10px; cursor: pointer; transition: background .15s; border: none; width: 100%; text-align: left; color: inherit; font-family: var(--type); min-width: 0; }
   .track-btn:hover { background: #1e1e1e; }
   .track-btn.active { background: #1e1e1e; }
   .track-cover { width: 32px; height: 32px; flex-shrink: 0; object-fit: cover; display: block; border: 1px solid var(--border); background: var(--surface); }
@@ -152,20 +91,12 @@
   .track-btn.active .tt { color: var(--text); }
   .tp { font-size: 9px; color: var(--text-dim); flex-shrink: 0; }
   .track-btn.active .tp { color: var(--accent); }
-  .track-missing { padding: 10px 12px; font-size: 10px; color: var(--text-dim); font-family: var(--type); letter-spacing: .05em; background: var(--surface); font-style: italic; }
   .track-desc { display: none; padding: 10px 12px 12px 54px; font-size: 11px; line-height: 1.7; color: #1a1a1a; font-family: var(--type); background: var(--desc-bg, #e8e4dc); border-top: 1px solid var(--border); }
   .track-desc.open { display: block; }
-
-  .play-toggle {
-    width: 100%; background: var(--surface); border: 2px solid var(--accent); color: var(--accent);
-    font-family: var(--block); font-size: 18px; letter-spacing: 0.15em; padding: 14px 20px;
-    cursor: pointer; display: flex; align-items: center; gap: 12px;
-    transition: background .15s, color .15s; text-transform: uppercase; margin-top: 12px;
-  }
+  .play-toggle { width: 100%; background: var(--surface); border: 2px solid var(--accent); color: var(--accent); font-family: var(--block); font-size: 18px; letter-spacing: 0.15em; padding: 14px 20px; cursor: pointer; display: flex; align-items: center; gap: 12px; transition: background .15s, color .15s; text-transform: uppercase; margin-top: 12px; }
   .play-toggle:hover { background: var(--accent); color: var(--bg); }
   .album-player { margin-top: 1px; }
 
-  /* NAV */
   .nav { position: relative; z-index: 1; border-top: 2px solid var(--border); display: grid; grid-template-columns: 1fr 1fr; }
   .nav-a { padding: 28px var(--pad); text-decoration: none; color: var(--text-dim); transition: background .15s, color .15s; display: flex; flex-direction: column; gap: 6px; }
   .nav-a:hover { background: var(--surface); color: var(--text); }
@@ -173,24 +104,13 @@
   .nav-dir { font-size: 10px; letter-spacing: .15em; text-transform: uppercase; color: var(--text-dim); }
   .nav-name { font-family: var(--block); font-size: 24px; letter-spacing: .05em; text-transform: uppercase; color: var(--text); }
 
-  @media (max-width: 900px) {
-    .hero { grid-template-columns: 1fr; gap: 24px; }
-    .cover-wrap { width: 160px; }
-    .cover-date { text-align: left; }
-    .main { grid-template-columns: 1fr; }
-    .interview { border-right: none; border-bottom: 1px solid var(--border); padding-right: 0; }
-    .sidebar { padding-left: 0; }
-  }
+  @media (max-width: 900px) { .hero { grid-template-columns: 1fr; gap: 24px; } .cover-wrap { width: 160px; } .cover-date { text-align: left; } .main { grid-template-columns: 1fr; } .interview { border-right: none; border-bottom: 1px solid var(--border); padding-right: 0; } .sidebar { padding-left: 0; } }
   @media (max-width: 600px) { .hero-name { font-size: 58px; } }
 </style>
 </head>
 <body>
 
-<div id="colorWash">
-  <div id="washTop"></div>
-  <div id="washBot"></div>
-  <div id="washFade"></div>
-</div>
+<div id="colorWash"><div id="washTop"></div><div id="washBot"></div><div id="washFade"></div></div>
 
 <header>
   <a href="index.html" class="logo">AUDIOTOOL <span class="slash">//</span> FEATURED ARTISTS</a>
@@ -203,135 +123,61 @@
 <div id="app"></div>
 
 <script>
-const AT_A_SVG = `<svg height="100%" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M434.174 500C409.259 500 387.496 486.079 376.423 465.698C339.357 487.463 296.14 500 250 500C111.889 500 -1.76588e-08 388.017 -1.13758e-08 249.962C-5.09287e-09 111.906 111.889 -5.08691e-09 250 -1.1366e-08C388.111 -1.76451e-08 500 111.906 500 250.038L500 434.241C500 470.543 470.548 500 434.251 500M250.077 131.595C184.712 131.595 131.652 184.587 131.652 250.038C131.652 315.49 184.636 368.405 250.077 368.405C315.518 368.405 368.502 315.413 368.502 250.038C368.502 184.664 315.518 131.595 250.077 131.595Z" fill="white"/></svg>`;
+const AT_A_SVG_WHITE = `<svg height="100%" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M694.679 800C654.814 800 619.994 777.727 602.276 745.116C542.971 779.942 473.823 800 400 800C179.022 800 0 620.828 0 399.938C0 179.049 179.022 0 400 0C620.978 0 800 179.049 800 400.061L800 694.785C800 752.869 752.876 800 694.802 800ZM400.123 210.552C295.54 210.552 210.643 295.339 210.643 400.061C210.643 504.784 295.417 589.448 400.123 589.448C504.829 589.448 589.603 504.661 589.603 400.061C589.603 295.462 504.829 210.552 400.123 210.552Z" fill="white"/></svg>`;
+const AT_A_SVG_BLACK = AT_A_SVG_WHITE.replace('fill="white"','fill="black"');
+const ARECORDS_SVG_WHITE = `<svg height="100%" viewBox="0 0 311 49" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116.334 34.5179C113.55 34.5179 111.293 32.2612 111.293 29.4767C111.293 27.0962 110.383 24.7156 108.568 22.9006C104.932 19.2652 99.0402 19.2652 95.4048 22.9006C91.7693 26.536 91.7693 32.4281 95.4048 36.0636C97.2144 37.8732 99.5788 38.7781 101.949 38.7888H116.334C119.119 38.7888 121.375 41.0455 121.375 43.83C121.375 46.6145 119.119 48.8711 116.334 48.8711H101.992C97.0313 48.8711 92.0656 46.9807 88.2793 43.1944C80.7068 35.622 80.7068 23.3476 88.2793 15.7751C95.8518 8.20263 108.126 8.20263 115.699 15.7751C119.485 19.5614 121.375 24.5163 121.375 29.4767ZM38.7781 43.8246C38.7781 46.6091 36.5214 48.8657 33.7369 48.8657C31.7926 48.8657 30.1122 47.767 29.272 46.1567C26.3798 47.8747 23.0029 48.8657 19.389 48.8657C8.68198 48.8657 0 40.1838 0 29.4767C0 18.7697 8.68198 10.0877 19.389 10.0877C30.0961 10.0877 38.7781 18.7697 38.7781 29.4767V43.8246ZM19.389 20.17C14.2509 20.17 10.0823 24.3386 10.0823 29.4767C10.0823 34.6148 14.2509 38.7834 19.389 38.7834C24.5271 38.7834 28.6958 34.6148 28.6958 29.4767C28.6958 24.3386 24.5271 20.17 19.389 20.17ZM181.481 48.8657C170.774 48.8657 162.092 40.1838 162.092 29.4767C162.092 18.7697 170.774 10.0877 181.481 10.0877C192.188 10.0877 200.87 18.7697 200.87 29.4767C200.87 40.1838 192.188 48.8657 181.481 48.8657ZM181.481 20.17C176.343 20.17 172.175 24.3386 172.175 29.4767C172.175 34.6148 176.343 38.7834 181.481 38.7834C186.619 38.7834 190.788 34.6148 190.788 29.4767C190.788 24.3386 186.619 20.17 181.481 20.17ZM267.956 5.05192V29.4767C267.956 40.1838 259.274 48.8657 248.567 48.8657C237.86 48.8657 229.178 40.1838 229.178 29.4767C229.178 18.7697 237.86 10.0877 248.567 10.0877C251.939 10.0877 255.111 10.9494 257.874 12.4628V5.04653C257.874 2.25667 260.131 0 262.915 0C265.7 0 267.956 2.25667 267.956 5.04115V5.05192ZM248.567 20.17C243.429 20.17 239.261 24.3386 239.261 29.4767C239.261 34.6148 243.429 38.7834 248.567 38.7834C253.705 38.7834 257.874 34.6148 257.874 29.4767C257.874 24.3386 253.705 20.17 248.567 20.17Z" fill="white"/></svg>`;
+const ARECORDS_SVG_BLACK = ARECORDS_SVG_WHITE.replace(/fill="white"/g,'fill="black"');
 
-const ARECORDS_SVG = `<svg height="100%" viewBox="0 0 311 49" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116.334 34.5179C113.55 34.5179 111.293 32.2612 111.293 29.4767C111.293 27.0962 110.383 24.7156 108.568 22.9006C104.932 19.2652 99.0402 19.2652 95.4048 22.9006C91.7693 26.536 91.7693 32.4281 95.4048 36.0636C97.2144 37.8732 99.5788 38.7781 101.949 38.7888C101.965 38.7888 101.976 38.7888 101.992 38.7888C102.019 38.7888 102.04 38.7888 102.067 38.7888H116.334C119.119 38.7888 121.375 41.0455 121.375 43.83C121.375 46.6145 119.119 48.8711 116.334 48.8711H101.992C97.0313 48.8711 92.0656 46.9807 88.2793 43.1944C80.7068 35.622 80.7068 23.3476 88.2793 15.7751C95.8518 8.20263 108.126 8.20263 115.699 15.7751C119.485 19.5614 121.375 24.5163 121.375 29.4767C121.375 29.4767 121.375 29.4767 121.375 29.4821C121.375 32.2666 119.119 34.5232 116.334 34.5232V34.5179ZM77.5561 20.17C72.418 20.17 68.2494 24.3386 68.2494 29.4767C68.2494 29.4767 68.2494 51.9734 68.2494 43.8246C68.2494 46.6091 65.9927 48.8657 63.2082 48.8657C60.4238 48.8657 58.1671 46.6091 58.1671 43.8246C58.1671 45.7958 58.1671 29.4767 58.1671 29.4767C58.1671 18.7697 66.8437 10.0931 77.5507 10.0877C77.5507 10.0877 77.5507 10.0877 77.5561 10.0877C80.3406 10.0877 82.5973 12.3443 82.5973 15.1288C82.5973 17.9133 80.3406 20.17 77.5561 20.17ZM48.4726 24.4356C51.257 24.4356 53.5137 26.6922 53.5137 29.4767C53.5137 32.2612 51.257 34.5179 48.4726 34.5179C45.6881 34.5179 43.4314 32.2612 43.4314 29.4767C43.4314 26.6922 45.6881 24.4356 48.4726 24.4356ZM38.7781 43.8246C38.7781 46.6091 36.5214 48.8657 33.7369 48.8657C31.7926 48.8657 30.1122 47.767 29.272 46.1567C26.3798 47.8747 23.0029 48.8657 19.389 48.8657C8.68198 48.8657 0 40.1838 0 29.4767C0 18.7697 8.68198 10.0877 19.389 10.0877C30.0961 10.0877 38.7781 18.7697 38.7781 29.4767V43.8192V43.8246ZM19.389 20.17C14.2509 20.17 10.0823 24.3386 10.0823 29.4767C10.0823 34.6148 14.2509 38.7834 19.389 38.7834C24.5271 38.7834 28.6958 34.6148 28.6958 29.4767C28.6958 24.3386 24.5271 20.17 19.389 20.17ZM181.481 48.8657C170.774 48.8657 162.092 40.1838 162.092 29.4767C162.092 18.7697 170.774 10.0877 181.481 10.0877C192.188 10.0877 200.87 18.7697 200.87 29.4767C200.87 40.1838 192.188 48.8657 181.481 48.8657ZM181.481 20.17C176.343 20.17 172.175 24.3386 172.175 29.4767C172.175 34.6148 176.343 38.7834 181.481 38.7834C186.619 38.7834 190.788 34.6148 190.788 29.4767C190.788 24.3386 186.619 20.17 181.481 20.17ZM151.224 22.8952C149.538 21.2094 147.211 20.17 144.642 20.17C139.504 20.17 135.335 24.3386 135.335 29.4767C135.335 34.6148 139.504 38.7834 144.642 38.7834C147.2 38.7834 149.511 37.7494 151.197 36.0851C151.208 36.0744 151.213 36.0636 151.224 36.0528C153.195 34.087 156.383 34.087 158.354 36.0528C160.326 38.024 160.326 41.2125 158.354 43.1837C154.848 46.6952 150.001 48.8657 144.642 48.8657C133.935 48.8657 125.253 40.1838 125.253 29.4767C125.253 18.7697 133.935 10.0877 144.642 10.0877C149.996 10.0877 154.838 12.2582 158.349 15.7644C160.32 17.7356 160.32 20.924 158.349 22.8952C156.378 24.8664 153.189 24.8664 151.218 22.8952H151.224ZM267.956 5.05192V29.4767C267.956 40.1838 259.274 48.8657 248.567 48.8657C237.86 48.8657 229.178 40.1838 229.178 29.4767C229.178 18.7697 237.86 10.0877 248.567 10.0877C251.939 10.0877 255.111 10.9494 257.874 12.4628V5.04653C257.874 2.25667 260.131 0 262.915 0C265.7 0 267.956 2.25667 267.956 5.04115V5.05192ZM248.567 20.17C243.429 20.17 239.261 24.3386 239.261 29.4767C239.261 34.6148 243.429 38.7834 248.567 38.7834C253.705 38.7834 257.874 34.6148 257.874 29.4767C257.874 24.3386 253.705 20.17 248.567 20.17ZM224.137 20.17C218.999 20.17 214.83 24.3386 214.83 29.4767V43.8192C214.83 46.6091 212.574 48.8657 209.789 48.8657C207.005 48.8657 204.748 46.6091 204.748 43.8246V29.4767C204.748 18.7697 213.425 10.0931 224.132 10.0877C224.132 10.0877 224.132 10.0877 224.137 10.0877C226.922 10.0877 229.178 12.3443 229.178 15.1288C229.178 17.9133 226.922 20.17 224.137 20.17ZM311 29.4929C311 29.4929 311 29.509 311 29.5144C311 39.8391 302.932 48.2733 292.753 48.8657H291.611V48.8442H281.916C279.132 48.8442 276.875 46.5875 276.875 43.803C276.875 41.0186 279.132 38.7619 281.916 38.7619H291.611V38.8211C296.749 38.8211 300.918 34.6525 300.918 29.5144C300.918 29.5036 300.918 29.4929 300.918 29.4767C300.918 26.6922 303.174 24.4356 305.959 24.4356C308.743 24.4356 311 26.6922 311 29.4767C311 29.4767 311 29.4875 311 29.4929ZM300.918 20.1484H291.616V20.2077C286.489 20.2077 282.331 24.3548 282.31 29.4767C282.31 32.2612 280.053 34.5179 277.268 34.5179C274.484 34.5179 272.227 32.2612 272.227 29.4767C272.227 29.4605 272.227 29.4444 272.227 29.4282C272.27 18.7589 280.936 10.1254 291.616 10.1254V10.0661H300.918C303.702 10.0661 305.959 12.3228 305.959 15.1073C305.959 17.8918 303.702 20.1484 300.918 20.1484Z" fill="white"/></svg>`;
+function getLogoSvg(color, type){
+  if(type==='at') return color==='black' ? AT_A_SVG_BLACK : AT_A_SVG_WHITE;
+  return color==='black' ? ARECORDS_SVG_BLACK : ARECORDS_SVG_WHITE;
+}
 
 const params = new URLSearchParams(location.search);
 const artistId = params.get('id');
 let autoplay = localStorage.getItem('musicAutoplay') === 'true';
-let albumOpen = false;
-let currentTrackIdx = -1;
+let albumOpen = false, currentTrackIdx = -1;
 window._tracks = [];
 
 function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
-
-function fmtDate(d){
-  if(!d) return '';
-  const [y,m,day]=d.split('-');
-  return ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+m-1]+' '+parseInt(day)+', '+y;
-}
-
-function tId(url){
-  const m=url.match(/\/track\/([^/]+)/);
-  return m?m[1]:'';
-}
+function fmtDate(d){ if(!d)return''; const [y,m,day]=d.split('-'); return ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+m-1]+' '+parseInt(day)+', '+y; }
+function tId(url){ const m=url.match(/\/track\/([^/]+)/); return m?m[1]:''; }
+function padNum(n){ return String(n).padStart(3,'0'); }
 
 function applyColors(t,b){
-  if(!t) return;
-  const tc=`rgba(${Math.round(t[0])},${Math.round(t[1])},${Math.round(t[2])},0.55)`;
-  const bc=`rgba(${Math.round(b[0])},${Math.round(b[1])},${Math.round(b[2])},0.50)`;
-  document.getElementById('washTop').style.background=`linear-gradient(to bottom, ${tc} 0%, transparent 100%)`;
-  document.getElementById('washBot').style.background=`linear-gradient(to top, ${bc} 0%, transparent 100%)`;
+  if(!t)return;
+  document.getElementById('washTop').style.background=`linear-gradient(to bottom,rgba(${Math.round(t[0])},${Math.round(t[1])},${Math.round(t[2])},0.55) 0%,transparent 100%)`;
+  document.getElementById('washBot').style.background=`linear-gradient(to top,rgba(${Math.round(b[0])},${Math.round(b[1])},${Math.round(b[2])},0.50) 0%,transparent 100%)`;
   document.getElementById('colorWash').classList.add('on');
 }
 
 function loadTrack(idx){
   const tracks=window._tracks;
-  if(!tracks||!tracks.length) return;
-  if(idx<0) idx=tracks.length-1;
-  if(idx>=tracks.length) idx=0;
+  if(!tracks||!tracks.length)return;
+  if(idx<0)idx=tracks.length-1;
+  if(idx>=tracks.length)idx=0;
   currentTrackIdx=idx;
   const t=tracks[idx];
   const m=t.url.match(/\/track\/([^/]+)/);
-  if(!m) return;
+  if(!m)return;
   const player=document.getElementById('albumPlayer');
-  if(!player) return;
-  document.querySelectorAll('.track-btn').forEach((b,i)=>{
-    b.classList.toggle('active',i===idx);
-    const tp=b.querySelector('.tp');
-    if(tp) tp.textContent=i===idx?'▶':'▷';
-  });
+  if(!player)return;
+  document.querySelectorAll('.track-btn').forEach((b,i)=>{ b.classList.toggle('active',i===idx); const tp=b.querySelector('.tp'); if(tp)tp.textContent=i===idx?'▶':'▷'; });
   const trackId=m[1].replace(/\/$/,'');
-  const mp3=`https://api.audiotool.com/track/${trackId}/play.mp3`;
-  player.innerHTML=`
-    <div style="background:var(--surface);border:1px solid var(--border);padding:12px">
-      <div style="font-size:10px;color:var(--accent);margin-bottom:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;letter-spacing:.06em;font-family:var(--block)">
-        ${esc(t.track_artist||'')} . ${esc(t.name||trackId)}
-      </div>
-      <audio controls preload="none" style="width:100%;height:32px;display:block"
-        onended="loadTrack(${idx+1})"
-        onerror="this.insertAdjacentHTML('afterend','<div style=padding:4px;font-size:10px;color:var(--text-dim)>Stream not available</div>')">
-        <source src="${mp3}" type="audio/mpeg">
-      </audio>
-      <div style="display:flex;justify-content:space-between;margin-top:8px">
-        <button onclick="loadTrack(${idx}-1)" style="background:none;border:1px solid var(--border);color:var(--accent);cursor:pointer;font-family:var(--block);font-size:12px;letter-spacing:.1em;padding:3px 10px">PREV</button>
-        <span style="font-size:10px;color:var(--text-dim);letter-spacing:.08em;align-self:center">${idx+1} / ${tracks.length}</span>
-        <button onclick="loadTrack(${idx}+1)" style="background:none;border:1px solid var(--border);color:var(--accent);cursor:pointer;font-family:var(--block);font-size:12px;letter-spacing:.1em;padding:3px 10px">NEXT</button>
-      </div>
-    </div>`;
-  setTimeout(()=>{ const a=player.querySelector('audio'); if(a) a.play().catch(()=>{}); },50);
+  player.innerHTML=`<div style="background:var(--surface);border:1px solid var(--border);padding:12px"><div style="font-size:10px;color:var(--accent);margin-bottom:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;letter-spacing:.06em;font-family:var(--block)">${esc(t.track_artist||'')} . ${esc(t.name||trackId)}</div><audio controls preload="none" style="width:100%;height:32px;display:block" onended="loadTrack(${idx+1})" onerror="this.insertAdjacentHTML('afterend','<div style=padding:4px;font-size:10px;color:var(--text-dim)>Stream not available</div>')"><source src="https://api.audiotool.com/track/${trackId}/play.mp3" type="audio/mpeg"></audio><div style="display:flex;justify-content:space-between;margin-top:8px"><button onclick="loadTrack(${idx}-1)" style="background:none;border:1px solid var(--border);color:var(--accent);cursor:pointer;font-family:var(--block);font-size:12px;letter-spacing:.1em;padding:3px 10px">PREV</button><span style="font-size:10px;color:var(--text-dim);letter-spacing:.08em;align-self:center">${idx+1} / ${tracks.length}</span><button onclick="loadTrack(${idx}+1)" style="background:none;border:1px solid var(--border);color:var(--accent);cursor:pointer;font-family:var(--block);font-size:12px;letter-spacing:.1em;padding:3px 10px">NEXT</button></div></div>`;
+  setTimeout(()=>{ const a=player.querySelector('audio'); if(a)a.play().catch(()=>{}); },50);
 }
 
-window.toggleDesc=function(idx){
-  const popup=document.getElementById('tdesc-'+idx);
-  if(!popup) return;
-  document.querySelectorAll('.track-desc').forEach((p,i)=>{ if(i!==idx) p.classList.remove('open'); });
-  popup.classList.toggle('open');
-};
-
-window.playTrack=function(idx){
-  if(!albumOpen){
-    albumOpen=true;
-    const icon=document.getElementById('playIcon');
-    const label=document.getElementById('playLabel');
-    if(icon) icon.textContent='■';
-    if(label) label.textContent='STOP';
-  }
-  loadTrack(idx);
-};
-
-window.toggleAlbum=function(){
-  const player=document.getElementById('albumPlayer');
-  const icon=document.getElementById('playIcon');
-  const label=document.getElementById('playLabel');
-  albumOpen=!albumOpen;
-  if(albumOpen){
-    loadTrack(0);
-    if(icon) icon.textContent='■';
-    if(label) label.textContent='STOP';
-  } else {
-    if(player) player.innerHTML='';
-    currentTrackIdx=-1;
-    if(icon) icon.textContent='▶';
-    if(label) label.textContent='PLAY TRACKS';
-  }
-};
-
-window.toggleAutoplay=function(){
-  autoplay=!autoplay;
-  localStorage.setItem('musicAutoplay',autoplay);
-  updateAutoplayBtn();
-  if(!autoplay){
-    const player=document.getElementById('albumPlayer');
-    if(player) player.innerHTML='';
-  }
-};
+window.toggleDesc=function(idx){ const popup=document.getElementById('tdesc-'+idx); if(!popup)return; document.querySelectorAll('.track-desc').forEach((p,i)=>{if(i!==idx)p.classList.remove('open');}); popup.classList.toggle('open'); };
+window.playTrack=function(idx){ if(!albumOpen){albumOpen=true;const icon=document.getElementById('playIcon');const label=document.getElementById('playLabel');if(icon)icon.textContent='■';if(label)label.textContent='STOP';} loadTrack(idx); };
+window.toggleAlbum=function(){ const player=document.getElementById('albumPlayer');const icon=document.getElementById('playIcon');const label=document.getElementById('playLabel');albumOpen=!albumOpen;if(albumOpen){loadTrack(0);if(icon)icon.textContent='■';if(label)label.textContent='STOP';}else{if(player)player.innerHTML='';currentTrackIdx=-1;if(icon)icon.textContent='▶';if(label)label.textContent='PLAY TRACKS';} };
+window.toggleAutoplay=function(){ autoplay=!autoplay;localStorage.setItem('musicAutoplay',autoplay);updateAutoplayBtn();if(!autoplay){const player=document.getElementById('albumPlayer');if(player)player.innerHTML='';}};
 
 function updateAutoplayBtn(){
   const btn=document.getElementById('autoplayToggle');
-  if(!btn) return;
-  if(autoplay){
-    btn.textContent='MUSIC AUTOPLAY: ON';
-    btn.style.background='transparent';
-    btn.style.color='var(--accent)';
-    btn.style.borderColor='var(--accent)';
-  } else {
-    btn.textContent='MUSIC AUTOPLAY: OFF';
-    btn.style.background='var(--accent)';
-    btn.style.color='#0e0e0e';
-    btn.style.borderColor='#0e0e0e';
-  }
+  if(!btn)return;
+  if(autoplay){btn.textContent='MUSIC AUTOPLAY: ON';btn.style.background='transparent';btn.style.color='var(--accent)';btn.style.borderColor='var(--accent)';}
+  else{btn.textContent='MUSIC AUTOPLAY: OFF';btn.style.background='var(--accent)';btn.style.color='#0e0e0e';btn.style.borderColor='#0e0e0e';}
 }
 
 fetch('gen1_data.json')
@@ -340,49 +186,41 @@ fetch('gen1_data.json')
     if(!artistId){location.href='generation1.html';return;}
     const idx=data.findIndex(a=>a.artist===artistId);
     if(idx===-1){location.href='generation1.html';return;}
-    if(data[idx].is_hidden){
-      document.getElementById('app').innerHTML='<div style="padding:60px;font-family:var(--block);font-size:24px;color:var(--text-dim);letter-spacing:.1em">ARTIST NOT AVAILABLE</div>';
-      return;
-    }
+    if(data[idx].is_hidden){document.getElementById('app').innerHTML='<div style="padding:60px;font-family:var(--block);font-size:24px;color:var(--text-dim);letter-spacing:.1em">ARTIST NOT AVAILABLE</div>';return;}
     const visible=data.filter(a=>!a.is_hidden);
     const vIdx=visible.indexOf(data[idx]);
-    render(data[idx], vIdx>0?visible[vIdx-1]:null, vIdx<visible.length-1?visible[vIdx+1]:null);
+    render(data[idx],vIdx>0?visible[vIdx-1]:null,vIdx<visible.length-1?visible[vIdx+1]:null);
   })
-  .catch(()=>{
-    document.getElementById('app').innerHTML='<div style="padding:60px;font-family:var(--block);font-size:24px;color:var(--text-dim);letter-spacing:.1em">DATA NOT FOUND</div>';
-  });
+  .catch(()=>{document.getElementById('app').innerHTML='<div style="padding:60px;font-family:var(--block);font-size:24px;color:var(--text-dim);letter-spacing:.1em">DATA NOT FOUND</div>';});
 
-function render(a, prev, next){
+function render(a,prev,next){
   document.title=`${a.artist} . Gen I . Audiotool Featured Artist`;
-  const ov1 = a.overlay_color1 || a.color1 || '#111';
-  const ov2 = a.overlay_color2 || a.color2 || '#0a0a0a';
-
-  // Only include tracks with a name and artist (graceful missing track handling)
-  const tracks = (a.tracks||[]).filter(t=>t.name && t.track_artist && t.url && t.url.includes('/track/'));
-  window._tracks = tracks;
-
-  const accent = a.color_accent || a.color1 || 'var(--accent)';
+  const ov1=a.overlay_color1||a.color1||'#111';
+  const ov2=a.overlay_color2||a.color2||'#0a0a0a';
+  const logoColor=a.logo_color||'white';
+  const tracks=(a.tracks||[]).filter(t=>t.name&&t.track_artist&&t.url&&t.url.includes('/track/'));
+  window._tracks=tracks;
+  const accent=a.color_accent||a.color1||'var(--accent)';
 
   document.getElementById('app').innerHTML=`
     <section class="hero">
       <div class="hero-left">
-        <div class="hero-num" style="color:${accent}">FEATURED ARTIST ${a.album_number} . GEN I</div>
+        <div class="hero-num" style="color:${accent}">FEATURED ARTIST ${padNum(a.album_number)} . GEN I</div>
         <h1 class="hero-name" style="color:${accent}">${esc(a.artist)}</h1>
         ${a.real_name&&a.real_name!==a.artist?`<div class="hero-realname">${esc(a.real_name)}</div>`:''}
         ${a.intro?`<p class="hero-intro" style="border-left-color:${accent}">${esc(a.intro)}</p>`:''}
       </div>
       <div class="hero-photo">
         <div class="cover-wrap" style="--ov1:${ov1};--ov2:${ov2}">
-          ${a.photo
-            ? `<img src="${esc(a.photo)}" alt="${esc(a.artist)}" style="object-position:${a.photo_position||'center'}" onerror="this.style.display='none'">`
-            : `<div style="width:100%;aspect-ratio:1;background:var(--surface);display:flex;align-items:center;justify-content:center;"><span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--type)">NO PHOTO</span></div>`}
-          <div class="cover-overlay-top">
-            <span class="num">${a.album_number}</span>
-            <span class="name">${esc(a.artist)}</span>
+          ${a.photo?`<img src="${esc(a.photo)}" alt="${esc(a.artist)}" style="object-position:${a.photo_position||'center'}" onerror="this.style.display='none'">`:
+            `<div style="width:100%;aspect-ratio:1;background:var(--surface);display:flex;align-items:center;justify-content:center;"><span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--type)">NO PHOTO</span></div>`}
+          <div class="cover-overlay-top" style="background:${ov1}">
+            <span class="num" style="color:${logoColor==='black'?'#000':'#fff'}">${padNum(a.album_number)}</span>
+            <span class="name" style="color:${logoColor==='black'?'#000':'#fff'}">${esc(a.artist)}</span>
           </div>
-          <div class="cover-overlay-bot">
-            <div class="arecords-svg">${ARECORDS_SVG}</div>
-            <div class="at-a-svg">${AT_A_SVG}</div>
+          <div class="cover-overlay-bot" style="background:${ov2}">
+            <div class="arecords-svg">${getLogoSvg(logoColor,'arecords')}</div>
+            <div class="at-a-svg">${getLogoSvg(logoColor,'at')}</div>
           </div>
         </div>
         ${a.date?`<div class="cover-date">${fmtDate(a.date)}</div>`:''}
@@ -404,25 +242,14 @@ function render(a, prev, next){
         ${(a.about||a.interview&&a.interview.length)?`
           <div class="sec-title" style="color:${accent};border-bottom-color:${accent}">Interview</div>
           ${a.about?`<div class="about-block"><p class="about-text">${esc(a.about)}</p></div>`:''}
-          ${a.interview&&a.interview.length?`
-            <div class="qa-list">
-              ${a.interview.map(qa=>`
-                <div class="qa-item">
-                  <div class="qa-q" style="color:${accent}">${esc(qa.q)}</div>
-                  <div class="qa-a">${esc(qa.a)}</div>
-                </div>
-              `).join('')}
-            </div>
-          `:''}
+          ${a.interview&&a.interview.length?`<div class="qa-list">${a.interview.map(qa=>`<div class="qa-item"><div class="qa-q" style="color:${accent}">${esc(qa.q)}</div><div class="qa-a">${esc(qa.a)}</div></div>`).join('')}</div>`:''}
         `:'<div style="padding:52px 0;font-family:var(--block);font-size:16px;color:var(--text-dim);letter-spacing:.1em">NO INTERVIEW DATA</div>'}
       </div>
-
       <div class="sidebar">
         ${tracks.length?`
           <div>
             <button class="play-toggle" id="playToggle" onclick="toggleAlbum()" style="border-color:${accent};color:${accent}">
-              <span id="playIcon">▶</span>
-              <span id="playLabel">PLAY TRACKS</span>
+              <span id="playIcon">▶</span><span id="playLabel">PLAY TRACKS</span>
             </button>
             <div class="album-player" id="albumPlayer"></div>
           </div>
@@ -432,8 +259,7 @@ function render(a, prev, next){
               ${tracks.map((t,i)=>`
                 <div class="track-item">
                   <button class="track-btn" onclick="toggleDesc(${i});playTrack(${i})">
-                    <img class="track-cover" src="https://api.audiotool.com/track/${tId(t.url)}/cover/256.jpg"
-                      onerror="this.style.background='var(--surface)';this.style.display='block';this.removeAttribute('src')" alt="">
+                    <img class="track-cover" src="https://api.audiotool.com/track/${tId(t.url)}/cover/256.jpg" onerror="this.style.background='var(--surface)';this.removeAttribute('src')" alt="">
                     <span class="tt">${esc(t.track_artist)} . ${esc(t.name)}</span>
                     <span class="tp" id="tp-${i}">▷</span>
                   </button>
@@ -447,28 +273,19 @@ function render(a, prev, next){
     </div>
 
     <nav class="nav">
-      ${prev
-        ?`<a href="artist_gen1.html?id=${encodeURIComponent(prev.artist)}" class="nav-a"><span class="nav-dir">Previous</span><span class="nav-name">${esc(prev.artist)}</span></a>`
-        :`<span class="nav-a" style="opacity:.25"><span class="nav-dir">Start of archive</span></span>`}
-      ${next
-        ?`<a href="artist_gen1.html?id=${encodeURIComponent(next.artist)}" class="nav-a" style="text-align:right;align-items:flex-end"><span class="nav-dir">Next</span><span class="nav-name">${esc(next.artist)}</span></a>`
-        :`<span class="nav-a" style="opacity:.25;text-align:right;align-items:flex-end"><span class="nav-dir">End of archive</span></span>`}
+      ${prev?`<a href="artist_gen1.html?id=${encodeURIComponent(prev.artist)}" class="nav-a"><span class="nav-dir">Previous</span><span class="nav-name">${esc(prev.artist)}</span></a>`:`<span class="nav-a" style="opacity:.25"><span class="nav-dir">Start of archive</span></span>`}
+      ${next?`<a href="artist_gen1.html?id=${encodeURIComponent(next.artist)}" class="nav-a" style="text-align:right;align-items:flex-end"><span class="nav-dir">Next</span><span class="nav-name">${esc(next.artist)}</span></a>`:`<span class="nav-a" style="opacity:.25;text-align:right;align-items:flex-end"><span class="nav-dir">End of archive</span></span>`}
     </nav>
   `;
 
-  // Apply colors
   updateAutoplayBtn();
-  if(a.desc_bg) document.documentElement.style.setProperty('--desc-bg', a.desc_bg);
-  if(a.links_bar_color) document.documentElement.style.setProperty('--links-bar-color', a.links_bar_color);
-
+  if(a.desc_bg)document.documentElement.style.setProperty('--desc-bg',a.desc_bg);
+  if(a.links_bar_color)document.documentElement.style.setProperty('--links-bar-color',a.links_bar_color);
   if(a.color1){
-    const h=h=>{const r=parseInt(h.slice(1,3),16),g=parseInt(h.slice(3,5),16),b=parseInt(h.slice(5,7),16);return[r,g,b];};
-    try{ applyColors(h(a.color1), h(a.color2||a.color1)); }catch(e){}
+    const h=s=>{const r=parseInt(s.slice(1,3),16),g=parseInt(s.slice(3,5),16),b=parseInt(s.slice(5,7),16);return[r,g,b];};
+    try{applyColors(h(a.color1),h(a.color2||a.color1));}catch(e){}
   }
-
-  if(tracks.length && autoplay){
-    setTimeout(()=>{ window.toggleAlbum(); }, 800);
-  }
+  if(tracks.length&&autoplay)setTimeout(()=>{window.toggleAlbum();},800);
 }
 </script>
 </body>
