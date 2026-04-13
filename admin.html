@@ -92,20 +92,15 @@
 </style>
 </head>
 <body>
-
 <div id="loginScreen">
   <div class="login-title">AT // ADMIN</div>
   <div class="login-sub">FEATURED ARTISTS CONTROL PANEL</div>
   <div style="display:flex;flex-direction:column;gap:12px">
     <div class="login-box"><input type="password" id="pwInput" placeholder="Password" onkeydown="if(event.key==='Enter')doLogin()"></div>
-    <div class="login-box">
-      <input type="password" id="tokenInput" placeholder="GitHub Token" onkeydown="if(event.key==='Enter')doLogin()">
-      <button onclick="doLogin()">ENTER</button>
-    </div>
+    <div class="login-box"><input type="password" id="tokenInput" placeholder="GitHub Token" onkeydown="if(event.key==='Enter')doLogin()"><button onclick="doLogin()">ENTER</button></div>
   </div>
   <div class="login-err" id="loginErr">WRONG PASSWORD</div>
 </div>
-
 <div id="mainScreen">
   <header>
     <div class="hlogo">AT // ADMIN</div>
@@ -131,12 +126,10 @@
   </div>
 </div>
 <div id="toast"></div>
-
 <script>
 const GITHUB_REPO='SnadBreugen/AT-featured-artists';
 const DATA_PATH_GEN2='data.json', DATA_PATH_GEN1='gen1_data.json';
 const PASSWORD='audiotool2026';
-
 let GITHUB_TOKEN='', currentGen=2, data2=[], data1=[], sha2='', sha1='', currentIdx=null, dirty2=false, dirty1=false, lastPickedColor=null;
 
 function currentData(){ return currentGen===2?data2:data1; }
@@ -155,8 +148,7 @@ function switchGen(gen){
   document.getElementById('tabGen2').classList.toggle('active',gen===2);
   document.getElementById('editor').innerHTML='<div class="empty">Select an artist to edit</div>';
   const pl=document.getElementById('previewLink'); if(pl)pl.style.display='none';
-  filterArtists();
-  setStatus(`${currentData().length} artists loaded`);
+  filterArtists(); setStatus(`${currentData().length} artists loaded`);
   document.getElementById('saveAllBtn').disabled=!currentDirty();
 }
 
@@ -196,7 +188,7 @@ function selectArtist(idx){
 function renderEditorGen1(a,idx){
   const barColor=a.bar_color||a.color1||'#111111';
   const barText=a.bar_text_color||'#ffffff';
-  const linksBarColor=a.links_bar_color||'#888888';
+  const c1=a.color1||'#333333', c2=a.color2||a.color1||'#333333', ca=a.color_accent||a.color1||'#333333';
   const tracks=[...(a.tracks||[])]; while(tracks.length<11)tracks.push({url:'',name:'',track_artist:'',desc:''});
   const social=a.social||{};
 
@@ -231,6 +223,7 @@ function renderEditorGen1(a,idx){
         <div class="field-row"><div class="field-label">YouTube</div><input class="field-input" value="${esc(social.youtube||'')}" onchange="saveSocial('youtube',this.value)"></div>
         <div class="field-row"><div class="field-label">Bandcamp</div><input class="field-input" value="${esc(social.bandcamp||'')}" onchange="saveSocial('bandcamp',this.value)"></div>
         <div class="field-row"><div class="field-label">Twitter / X</div><input class="field-input" value="${esc(social.twitter||'')}" onchange="saveSocial('twitter',this.value)"></div>
+        <div class="field-row"><div class="field-label">Linktree</div><input class="field-input" value="${esc(social.linktree||'')}" onchange="saveSocial('linktree',this.value)"></div>
       </div>
     </div>
 
@@ -259,7 +252,7 @@ function renderEditorGen1(a,idx){
 
     <div class="ed-section">
       <div class="ed-section-title">Cover Bar Colors</div>
-      <div class="color-grid" style="grid-template-columns:1fr 1fr 1fr;">
+      <div class="color-grid" style="grid-template-columns:1fr 1fr;">
         <div class="color-field">
           <label>Balken Farbe</label>
           <div class="color-picker-row">
@@ -274,23 +267,30 @@ function renderEditorGen1(a,idx){
             <input type="text" id="barTextText" value="${barText}" oninput="if(this.value.match(/^#[0-9a-fA-F]{6}$/))syncBarTextColor(this.value)" maxlength="7">
           </div>
         </div>
-        <div class="color-field">
-          <label>Social Links Farbe</label>
-          <div class="color-picker-row">
-            <input type="color" id="links_bar_colorPicker" value="${linksBarColor}" oninput="syncColor('links_bar_color',this.value)">
-            <input type="text" id="links_bar_colorText" value="${linksBarColor}" oninput="syncColorText('links_bar_color',this.value)" maxlength="7">
-          </div>
-        </div>
       </div>
       ${a.photo?`
         <div style="font-size:10px;color:var(--dim);margin-bottom:8px">Click photo to pick color:</div>
         <div class="preview-img-wrap" style="max-width:220px"><img src="${esc(a.photo)}" class="preview-img" id="photoImg" onclick="pickFromImage(event,'photoImg')" onerror="this.style.opacity='.3'"><canvas id="photoCanvas"></canvas></div>
         <div style="font-size:11px;color:var(--dim);margin-top:8px">Last picked: <span id="pickedColor">-</span>
-          <button onclick="assignToBar()" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;margin-left:8px;">TO BAR</button>
-          <button onclick="assignToBarText()" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;margin-left:4px;">TO SCHRIFT</button>
-          <button onclick="assignToLinks()" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;margin-left:4px;">TO LINKS</button>
+          <button onclick="if(lastPickedColor)syncBarColor(lastPickedColor)" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;margin-left:8px;">TO BAR</button>
+          <button onclick="if(lastPickedColor)syncBarTextColor(lastPickedColor)" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;margin-left:4px;">TO SCHRIFT</button>
+          <button onclick="assignColorBoth()" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;margin-left:4px;">TO BG + HEADLINES</button>
         </div>
       `:''}
+    </div>
+
+    <div class="ed-section">
+      <div class="ed-section-title">Color Preview</div>
+      <div class="color-preview"><div class="color-preview-bg" id="previewBg"></div><div class="color-preview-text" id="previewText">${esc(a.artist.toUpperCase())}</div></div>
+    </div>
+
+    <div class="ed-section">
+      <div class="ed-section-title">Colors</div>
+      <div class="color-grid">
+        <div class="color-field"><label>Background + Headlines</label><div class="color-picker-row"><input type="color" id="color1Picker" value="${c1}" oninput="syncColor('color1',this.value);syncColor('color_accent',this.value)"><input type="text" id="color1Text" value="${c1}" oninput="syncColorText('color1',this.value)" maxlength="7"></div></div>
+        <div class="color-field"><label>Track Desc Background</label><div class="color-picker-row"><input type="color" id="desc_bgPicker" value="${a.desc_bg||'#e8e4dc'}" oninput="syncColor('desc_bg',this.value)"><input type="text" id="desc_bgText" value="${a.desc_bg||'#e8e4dc'}" oninput="syncColorText('desc_bg',this.value)" maxlength="7"></div></div>
+        <div class="color-field"><label>Links Bar Color</label><div class="color-picker-row"><input type="color" id="links_bar_colorPicker" value="${a.links_bar_color||'#888888'}" oninput="syncColor('links_bar_color',this.value)"><input type="text" id="links_bar_colorText" value="${a.links_bar_color||'#888888'}" oninput="syncColorText('links_bar_color',this.value)" maxlength="7"></div></div>
+      </div>
     </div>
 
     <div class="ed-section">
@@ -304,6 +304,7 @@ function renderEditorGen1(a,idx){
       <span class="save-status" id="saveStatus"></span>
     </div>
   `;
+  updatePreview(c1, c2, ca);
 }
 
 function syncBarColor(val){
@@ -322,10 +323,6 @@ function syncBarTextColor(val){
   const pnum=document.getElementById('coverPNum'); if(pnum)pnum.style.color=val;
   const pname=document.getElementById('coverPName'); if(pname)pname.style.color=val;
 }
-
-function assignToBar(){ if(lastPickedColor)syncBarColor(lastPickedColor); }
-function assignToBarText(){ if(lastPickedColor)syncBarTextColor(lastPickedColor); }
-function assignToLinks(){ if(lastPickedColor)syncColor('links_bar_color',lastPickedColor); }
 
 function refreshCoverPreview(){
   if(currentIdx===null)return;
@@ -478,7 +475,7 @@ function toggleCurrent(){ if(currentIdx===null||currentGen!==2)return; const isC
 
 function newArtist(){
   const isGen1=currentGen===1;
-  const a=isGen1?{artist:'NEW ARTIST',real_name:'',date:new Date().toISOString().slice(0,10),album_number:currentData().length+1,at_profile:'',album_url:'',photo:'',intro:'',about:'',interview:[],tracks:[],social:{},color1:'',color2:'',color_accent:'',desc_bg:'',bar_color:'#111111',bar_text_color:'#ffffff',links_bar_color:'',is_hidden:false}:{artist:'NEW ARTIST',real_name:'',date:new Date().toISOString().slice(0,10),board_url:'',album_url:'',at_profile:'',soundcloud:'',photo:'',cover_url:'',intro:'',about:'',interview:[],tracks:[],social:{},color1:'',color2:'',color_accent:'',desc_bg:'',is_hidden:false};
+  const a=isGen1?{artist:'NEW ARTIST',real_name:'',date:new Date().toISOString().slice(0,10),album_number:currentData().length+1,at_profile:'',album_url:'',photo:'',intro:'',about:'',interview:[],tracks:[],social:{},color1:'',color2:'',color_accent:'',desc_bg:'',links_bar_color:'',bar_color:'#111111',bar_text_color:'#ffffff',is_hidden:false}:{artist:'NEW ARTIST',real_name:'',date:new Date().toISOString().slice(0,10),board_url:'',album_url:'',at_profile:'',soundcloud:'',photo:'',cover_url:'',intro:'',about:'',interview:[],tracks:[],social:{},color1:'',color2:'',color_accent:'',desc_bg:'',is_hidden:false};
   currentData().push(a); currentIdx=currentData().length-1; filterArtists(); selectArtist(currentIdx); setDirty(); showToast('New artist created');
 }
 
