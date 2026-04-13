@@ -40,36 +40,28 @@
 
   .grid-section { max-width:var(--max); margin:0 auto; padding:36px var(--pad); position:relative; z-index:1; }
   .grid-title { font-family:var(--block); font-size:13px; letter-spacing:.2em; color:var(--text-dim); margin-bottom:24px; }
-  .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(220px, 1fr)); gap:1px; background:var(--border); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(340px, 1fr)); gap:1px; background:var(--border); }
 
-  .card { background:var(--bg); text-decoration:none; display:block; position:relative; overflow:hidden; transition:background .15s; cursor:pointer; aspect-ratio:1; }
+  /* CARD - identical to index.html */
+  .card { background:var(--bg); text-decoration:none; display:flex; flex-direction:column; position:relative; overflow:hidden; transition:background .15s; cursor:pointer; }
   .card:hover { background:var(--surface); }
-  .card-cover-wrap { position:relative; width:100%; height:100%; }
-  .card-photo { width:100%; height:100%; object-fit:cover; object-position:center; display:block; transition:transform .3s, filter .3s; filter:grayscale(10%); }
+  .card-inner { display:flex; gap:0; flex:1; }
+  .card-photo-wrap { width:140px; height:140px; flex-shrink:0; }
+  .card-photo { width:100%; height:100%; object-fit:contain; object-position:center; display:block; transition:transform .3s; background:var(--surface2); }
   .card:hover .card-photo { transform:scale(1.04); filter:grayscale(0%); }
-  .card-photo-placeholder { width:100%; height:100%; background:var(--surface2); }
-
-  .card-overlay-top {
-    position:absolute; top:0; left:0; right:0; padding:8px 12px;
-    display:flex; align-items:center; justify-content:space-between;
-    background:var(--ov1, #111);
-  }
-  .card-overlay-top .num { font-family:"Bebas Neue", Impact, sans-serif; font-size:22px; letter-spacing:.04em; color:#fff; line-height:1; }
-  .card-overlay-top .name { font-family:"Special Elite", serif; font-size:13px; color:#fff; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:65%; text-align:right; }
-
-  .card-overlay-bot {
-    position:absolute; bottom:0; left:0; right:0; padding:7px 12px;
-    display:flex; align-items:center; justify-content:space-between;
-    background:var(--ov2, #0a0a0a);
-  }
-  .card-overlay-bot .arecords-svg { height:12px; width:auto; }
-  .card-overlay-bot .at-a-svg { height:16px; width:auto; }
+  .card-photo-placeholder { width:100%; height:100%; min-height:140px; background:var(--surface2); }
+  .card-info { flex:1; padding:16px 18px 14px; display:flex; flex-direction:column; justify-content:space-between; min-width:0; }
+  .card-name { font-family:var(--block); font-size:clamp(28px,3vw,40px); letter-spacing:0.02em; line-height:0.88; color:var(--text); transition:color .15s; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; margin-bottom:4px; }
+  .card:hover .card-name { color:var(--card-accent, var(--accent)); }
+  .card-real { font-size:10px; color:var(--text); margin-bottom:10px; }
+  .card-year { font-family:var(--block); font-size:32px; letter-spacing:.04em; color:#444; line-height:1; margin-bottom:8px; }
+  .card-intro { font-size:10px; line-height:1.65; color:var(--text-dim); font-style:italic; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .card-bar { height:3px; width:100%; background:var(--border); flex-shrink:0; transition:background .25s; }
+  .card:hover .card-bar { background:var(--card-accent, var(--accent)); }
 
   .no-results { padding:60px; text-align:center; color:var(--text-dim); font-family:var(--block); font-size:20px; letter-spacing:.15em; display:none; }
-  .footer-logos { border-top:1px solid var(--border); padding:20px var(--pad); display:flex; align-items:center; justify-content:space-between; position:relative; z-index:1; background:rgba(14,14,14,.5); }
 
-  @media(max-width:900px){ :root{--pad:20px;} .grid{grid-template-columns:repeat(auto-fill, minmax(160px, 1fr));} }
-  @media(max-width:500px){ .grid{grid-template-columns:1fr 1fr;} }
+  @media(max-width:900px){ :root{--pad:20px;} .grid{grid-template-columns:1fr;} .card-photo-wrap{width:120px;} }
 </style>
 </head>
 <body>
@@ -97,30 +89,7 @@
   <div class="no-results" id="noResults">NO ARTISTS FOUND</div>
 </div>
 
-<div class="footer-logos">
-  <a href="https://www.audiotool.com" target="_blank" style="opacity:.25;transition:opacity .2s;" onmouseover="this.style.opacity='.7'" onmouseout="this.style.opacity='.25'">
-    <svg height="24" viewBox="0 0 761 119" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M46.9597 24.6095C72.9028 24.6095 93.9216 45.5365 93.9216 71.3681V105.814C93.9216 112.603 88.3885 118.113 81.5705 118.113L80.687 118.082C76.3737 117.782 72.6587 115.271 70.7084 111.698C63.746 115.768 55.6267 118.113 46.9597 118.113C21.0172 118.113 0 97.1712 0 71.3546C0 45.5377 21.0169 24.6099 46.9597 24.6095ZM46.9755 49.2189C34.6973 49.2189 24.7294 59.1283 24.7294 71.3681C24.7294 83.608 34.6829 93.5038 46.9755 93.5038C59.2679 93.5036 69.2193 83.5934 69.2193 71.3681C69.2193 59.1429 59.2679 49.2192 46.9755 49.2189Z" fill="white"/><path d="M748.266 0C755.098 0 760.617 5.50837 760.617 12.2969V105.801C760.617 112.589 755.084 118.098 748.266 118.098L747.631 118.095C741.096 117.766 735.917 112.391 735.917 105.814V12.2969C735.903 5.5087 741.434 0 748.266 0Z" fill="white"/></svg>
-  </a>
-  <a href="https://www.audiotool.com/user/a-records" target="_blank" style="opacity:.25;transition:opacity .2s;" onmouseover="this.style.opacity='.7'" onmouseout="this.style.opacity='.25'">
-    <svg height="20" viewBox="0 0 311 49" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M38.7781 43.8246C38.7781 46.6091 36.5214 48.8657 33.7369 48.8657C31.7926 48.8657 30.1122 47.767 29.272 46.1567C26.3798 47.8747 23.0029 48.8657 19.389 48.8657C8.68198 48.8657 0 40.1838 0 29.4767C0 18.7697 8.68198 10.0877 19.389 10.0877C30.0961 10.0877 38.7781 18.7697 38.7781 29.4767V43.8246ZM19.389 20.17C14.2509 20.17 10.0823 24.3386 10.0823 29.4767C10.0823 34.6148 14.2509 38.7834 19.389 38.7834C24.5271 38.7834 28.6958 34.6148 28.6958 29.4767C28.6958 24.3386 24.5271 20.17 19.389 20.17Z" fill="white"/></svg>
-  </a>
-</div>
-
 <script>
-const AT_A_SVG_WHITE = `<svg height="100%" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M694.679 800C654.814 800 619.994 777.727 602.276 745.116C542.971 779.942 473.823 800 400 800C179.022 800 0 620.828 0 399.938C0 179.049 179.022 0 400 0C620.978 0 800 179.049 800 400.061L800 694.785C800 752.869 752.876 800 694.802 800ZM400.123 210.552C295.54 210.552 210.643 295.339 210.643 400.061C210.643 504.784 295.417 589.448 400.123 589.448C504.829 589.448 589.603 504.661 589.603 400.061C589.603 295.462 504.829 210.552 400.123 210.552Z" fill="white"/></svg>`;
-
-const AT_A_SVG_BLACK = `<svg height="100%" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M694.679 800C654.814 800 619.994 777.727 602.276 745.116C542.971 779.942 473.823 800 400 800C179.022 800 0 620.828 0 399.938C0 179.049 179.022 0 400 0C620.978 0 800 179.049 800 400.061L800 694.785C800 752.869 752.876 800 694.802 800ZM400.123 210.552C295.54 210.552 210.643 295.339 210.643 400.061C210.643 504.784 295.417 589.448 400.123 589.448C504.829 589.448 589.603 504.661 589.603 400.061C589.603 295.462 504.829 210.552 400.123 210.552Z" fill="black"/></svg>`;
-
-const ARECORDS_SVG_WHITE = `<svg height="100%" viewBox="0 0 311 49" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116.334 34.5179C113.55 34.5179 111.293 32.2612 111.293 29.4767C111.293 27.0962 110.383 24.7156 108.568 22.9006C104.932 19.2652 99.0402 19.2652 95.4048 22.9006C91.7693 26.536 91.7693 32.4281 95.4048 36.0636C97.2144 37.8732 99.5788 38.7781 101.949 38.7888H116.334C119.119 38.7888 121.375 41.0455 121.375 43.83C121.375 46.6145 119.119 48.8711 116.334 48.8711H101.992C97.0313 48.8711 92.0656 46.9807 88.2793 43.1944C80.7068 35.622 80.7068 23.3476 88.2793 15.7751C95.8518 8.20263 108.126 8.20263 115.699 15.7751C119.485 19.5614 121.375 24.5163 121.375 29.4767ZM38.7781 43.8246C38.7781 46.6091 36.5214 48.8657 33.7369 48.8657C31.7926 48.8657 30.1122 47.767 29.272 46.1567C26.3798 47.8747 23.0029 48.8657 19.389 48.8657C8.68198 48.8657 0 40.1838 0 29.4767C0 18.7697 8.68198 10.0877 19.389 10.0877C30.0961 10.0877 38.7781 18.7697 38.7781 29.4767V43.8246ZM19.389 20.17C14.2509 20.17 10.0823 24.3386 10.0823 29.4767C10.0823 34.6148 14.2509 38.7834 19.389 38.7834C24.5271 38.7834 28.6958 34.6148 28.6958 29.4767C28.6958 24.3386 24.5271 20.17 19.389 20.17ZM181.481 48.8657C170.774 48.8657 162.092 40.1838 162.092 29.4767C162.092 18.7697 170.774 10.0877 181.481 10.0877C192.188 10.0877 200.87 18.7697 200.87 29.4767C200.87 40.1838 192.188 48.8657 181.481 48.8657ZM181.481 20.17C176.343 20.17 172.175 24.3386 172.175 29.4767C172.175 34.6148 176.343 38.7834 181.481 38.7834C186.619 38.7834 190.788 34.6148 190.788 29.4767C190.788 24.3386 186.619 20.17 181.481 20.17ZM267.956 5.05192V29.4767C267.956 40.1838 259.274 48.8657 248.567 48.8657C237.86 48.8657 229.178 40.1838 229.178 29.4767C229.178 18.7697 237.86 10.0877 248.567 10.0877C251.939 10.0877 255.111 10.9494 257.874 12.4628V5.04653C257.874 2.25667 260.131 0 262.915 0C265.7 0 267.956 2.25667 267.956 5.04115V5.05192ZM248.567 20.17C243.429 20.17 239.261 24.3386 239.261 29.4767C239.261 34.6148 243.429 38.7834 248.567 38.7834C253.705 38.7834 257.874 34.6148 257.874 29.4767C257.874 24.3386 253.705 20.17 248.567 20.17ZM311 29.5144C311 39.8391 302.932 48.2733 292.753 48.8657H281.916C279.132 48.8442 276.875 46.5875 276.875 43.803C276.875 41.0186 279.132 38.7619 281.916 38.7619H291.611C296.749 38.8211 300.918 34.6525 300.918 29.5144C300.918 26.6922 303.174 24.4356 305.959 24.4356C308.743 24.4356 311 26.6922 311 29.4767Z" fill="white"/></svg>`;
-
-const ARECORDS_SVG_BLACK = ARECORDS_SVG_WHITE.replace(/fill="white"/g, 'fill="black"');
-
-function padNum(n) { return String(n).padStart(3, '0'); }
-function getLogoSvg(color, type) {
-  if(type === 'at') return color === 'black' ? AT_A_SVG_BLACK : AT_A_SVG_WHITE;
-  return color === 'black' ? ARECORDS_SVG_BLACK : ARECORDS_SVG_WHITE;
-}
-
 let allArtists = [];
 
 fetch('gen1_data.json')
@@ -142,23 +111,29 @@ function renderGrid(artists) {
   if (!artists.length) { grid.innerHTML = ''; noRes.style.display = 'block'; return; }
   noRes.style.display = 'none';
   grid.innerHTML = artists.map(a => {
-    const ov1 = a.overlay_color1 || a.color1 || '#111';
-    const ov2 = a.overlay_color2 || a.color2 || '#0a0a0a';
-    const logoColor = a.logo_color || 'white';
-    return `<a href="artist_gen1.html?id=${encodeURIComponent(a.artist)}" class="card" style="--ov1:${ov1};--ov2:${ov2}">
-      <div class="card-cover-wrap">
-        ${a.photo
-          ? `<img src="${a.photo}" class="card-photo" style="object-position:${a.photo_position||'center'}" alt="${a.artist}" loading="lazy" onerror="this.outerHTML='<div class=card-photo-placeholder></div>'">`
-          : '<div class="card-photo-placeholder"></div>'}
-        <div class="card-overlay-top">
-          <span class="num">${padNum(a.album_number)}</span>
-          <span class="name">${a.artist}</span>
+    const accent = a.color1 || a.color_accent || '';
+    const accentStyle = accent ? `style="--card-accent:${accent}"` : '';
+    const intro = (a.intro||'').slice(0,120).replace(/</g,'&lt;') + ((a.intro||'').length>120?'...':'');
+    const year = (a.date||'').slice(0,4);
+    return `<a href="artist_gen1.html?id=${encodeURIComponent(a.artist)}" class="card" ${accentStyle}>
+      <div class="card-inner">
+        <div class="card-photo-wrap">
+          ${a.photo
+            ? `<img src="${a.photo}" class="card-photo" style="object-position:${a.photo_position||'top'}" alt="${a.artist}" loading="lazy" onerror="this.outerHTML='<div class=card-photo-placeholder></div>'">`
+            : '<div class="card-photo-placeholder"></div>'}
         </div>
-        <div class="card-overlay-bot">
-          <div class="arecords-svg">${getLogoSvg(logoColor, 'arecords')}</div>
-          <div class="at-a-svg">${getLogoSvg(logoColor, 'at')}</div>
+        <div class="card-info">
+          <div class="card-top">
+            <div class="card-name">${a.artist}</div>
+            ${a.real_name ? `<div class="card-real">${a.real_name}</div>` : ''}
+          </div>
+          <div>
+            ${year ? `<div class="card-year">${year}</div>` : ''}
+            ${intro ? `<div class="card-intro">${intro}</div>` : ''}
+          </div>
         </div>
       </div>
+      <div class="card-bar"></div>
     </a>`;
   }).join('');
 }
