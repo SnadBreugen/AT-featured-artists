@@ -83,13 +83,14 @@
   .qa-remove{float:right;background:none;border:none;color:var(--red);cursor:pointer;font-size:16px;padding:0 4px;}
   .add-btn{background:none;border:1px solid var(--border);color:var(--muted);font-family:var(--mono);font-size:11px;padding:6px 14px;cursor:pointer;margin-top:8px;}
   .add-btn:hover{border-color:var(--accent);color:var(--accent);}
-  .cover-preview-wrap{position:relative;width:200px;border:2px solid var(--border);overflow:hidden;margin-bottom:16px;}
+
+  /* Gen I cover preview */
+  .cover-preview-wrap{position:relative;width:220px;border:2px solid var(--border);overflow:hidden;margin-bottom:16px;}
   .cover-preview-wrap img{width:100%;aspect-ratio:1;object-fit:cover;display:block;}
-  .cover-ov-top{position:absolute;top:0;left:0;right:0;padding:6px 10px;display:flex;align-items:center;justify-content:space-between;}
-  .cover-ov-top .pnum{font-family:var(--block);font-size:18px;line-height:1;}
-  .cover-ov-top .pname{font-family:'Special Elite',serif;font-size:11px;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:60%;}
-  .cover-ov-bot{position:absolute;bottom:0;left:0;right:0;padding:5px 10px;display:flex;align-items:center;justify-content:space-between;}
-  .logo-toggle-btn{font-family:var(--block);font-size:13px;letter-spacing:.1em;padding:8px 20px;border:none;cursor:pointer;transition:all .15s;}
+  .cover-preview-wrap .no-photo{width:100%;aspect-ratio:1;background:var(--surface2);}
+  .cover-bar-preview{position:absolute;bottom:0;left:0;right:0;padding:8px 12px;display:flex;align-items:center;justify-content:space-between;}
+  .cover-bar-preview .p-num{font-family:var(--block);font-size:22px;line-height:1;}
+  .cover-bar-preview .p-name{font-family:var(--block);font-size:14px;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:65%;}
 </style>
 </head>
 <body>
@@ -141,20 +142,11 @@ const GITHUB_REPO='SnadBreugen/AT-featured-artists';
 const DATA_PATH_GEN2='data.json', DATA_PATH_GEN1='gen1_data.json';
 const PASSWORD='audiotool2026';
 
-const AT_A_SVG_WHITE=`<svg height="100%" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M694.679 800C654.814 800 619.994 777.727 602.276 745.116C542.971 779.942 473.823 800 400 800C179.022 800 0 620.828 0 399.938C0 179.049 179.022 0 400 0C620.978 0 800 179.049 800 400.061L800 694.785C800 752.869 752.876 800 694.802 800ZM400.123 210.552C295.54 210.552 210.643 295.339 210.643 400.061C210.643 504.784 295.417 589.448 400.123 589.448C504.829 589.448 589.603 504.661 589.603 400.061C589.603 295.462 504.829 210.552 400.123 210.552Z" fill="white"/></svg>`;
-const AT_A_SVG_BLACK=AT_A_SVG_WHITE.replace('fill="white"','fill="black"');
-const ARECORDS_SVG_WHITE=`<svg height="100%" viewBox="0 0 311 49" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116.334 34.5179C113.55 34.5179 111.293 32.2612 111.293 29.4767C111.293 27.0962 110.383 24.7156 108.568 22.9006C104.932 19.2652 99.0402 19.2652 95.4048 22.9006C91.7693 26.536 91.7693 32.4281 95.4048 36.0636C97.2144 37.8732 99.5788 38.7781 101.949 38.7888H116.334C119.119 38.7888 121.375 41.0455 121.375 43.83C121.375 46.6145 119.119 48.8711 116.334 48.8711H101.992C97.0313 48.8711 92.0656 46.9807 88.2793 43.1944C80.7068 35.622 80.7068 23.3476 88.2793 15.7751C95.8518 8.20263 108.126 8.20263 115.699 15.7751C119.485 19.5614 121.375 24.5163 121.375 29.4767ZM38.7781 43.8246C38.7781 46.6091 36.5214 48.8657 33.7369 48.8657C31.7926 48.8657 30.1122 47.767 29.272 46.1567C26.3798 47.8747 23.0029 48.8657 19.389 48.8657C8.68198 48.8657 0 40.1838 0 29.4767C0 18.7697 8.68198 10.0877 19.389 10.0877C30.0961 10.0877 38.7781 18.7697 38.7781 29.4767V43.8246ZM19.389 20.17C14.2509 20.17 10.0823 24.3386 10.0823 29.4767C10.0823 34.6148 14.2509 38.7834 19.389 38.7834C24.5271 38.7834 28.6958 34.6148 28.6958 29.4767C28.6958 24.3386 24.5271 20.17 19.389 20.17ZM181.481 48.8657C170.774 48.8657 162.092 40.1838 162.092 29.4767C162.092 18.7697 170.774 10.0877 181.481 10.0877C192.188 10.0877 200.87 18.7697 200.87 29.4767C200.87 40.1838 192.188 48.8657 181.481 48.8657ZM181.481 20.17C176.343 20.17 172.175 24.3386 172.175 29.4767C172.175 34.6148 176.343 38.7834 181.481 38.7834C186.619 38.7834 190.788 34.6148 190.788 29.4767C190.788 24.3386 186.619 20.17 181.481 20.17ZM267.956 5.05192V29.4767C267.956 40.1838 259.274 48.8657 248.567 48.8657C237.86 48.8657 229.178 40.1838 229.178 29.4767C229.178 18.7697 237.86 10.0877 248.567 10.0877C251.939 10.0877 255.111 10.9494 257.874 12.4628V5.04653C257.874 2.25667 260.131 0 262.915 0C265.7 0 267.956 2.25667 267.956 5.04115V5.05192ZM248.567 20.17C243.429 20.17 239.261 24.3386 239.261 29.4767C239.261 34.6148 243.429 38.7834 248.567 38.7834C253.705 38.7834 257.874 34.6148 257.874 29.4767C257.874 24.3386 253.705 20.17 248.567 20.17Z" fill="white"/></svg>`;
-const ARECORDS_SVG_BLACK=ARECORDS_SVG_WHITE.replace(/fill="white"/g,'fill="black"');
-
-function getLogoSvg(color,type){ if(type==='at') return color==='black'?AT_A_SVG_BLACK:AT_A_SVG_WHITE; return color==='black'?ARECORDS_SVG_BLACK:ARECORDS_SVG_WHITE; }
-function padNum(n){ return String(n||'').padStart(3,'0'); }
-
 let GITHUB_TOKEN='', currentGen=2, data2=[], data1=[], sha2='', sha1='', currentIdx=null, dirty2=false, dirty1=false, lastPickedColor=null;
 
 function currentData(){ return currentGen===2?data2:data1; }
 function currentDirty(){ return currentGen===2?dirty2:dirty1; }
 function setDirty(){ if(currentGen===2)dirty2=true;else dirty1=true; document.getElementById('saveAllBtn').disabled=false; }
-function currentPath(){ return currentGen===2?DATA_PATH_GEN2:DATA_PATH_GEN1; }
 
 function doLogin(){
   const pw=document.getElementById('pwInput').value, tok=document.getElementById('tokenInput').value.trim();
@@ -175,6 +167,7 @@ function switchGen(gen){
 
 function setStatus(m){ document.getElementById('statusMsg').textContent=m; }
 function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
+function padNum(n){ return String(n||'').padStart(3,'0'); }
 
 async function loadData(gen){
   const path=gen===2?DATA_PATH_GEN2:DATA_PATH_GEN1;
@@ -190,7 +183,7 @@ async function loadData(gen){
 function renderList(artists){
   document.getElementById('artistList').innerHTML=artists.map(a=>{
     const i=currentData().indexOf(a);
-    const hasColors=!!(a.color1&&a.color2)||!!(a.overlay_color1&&a.overlay_color2);
+    const hasColors=!!(a.color1)||!!(a.bar_color);
     return `<div class="artist-item ${currentIdx===i?'active':''}" onclick="selectArtist(${i})"><span class="ai-name">${a.is_current?'* ':''}${a.is_hidden?'o ':''} ${a.artist}</span><span class="ai-dot ${hasColors?'has-colors':''}" title="${hasColors?'Colors set':'No colors'}"></span></div>`;
   }).join('');
 }
@@ -206,9 +199,8 @@ function selectArtist(idx){
 }
 
 function renderEditorGen1(a,idx){
-  const ov1=a.overlay_color1||a.color1||'#111111';
-  const ov2=a.overlay_color2||a.color2||'#0a0a0a';
-  const logoColor=a.logo_color||'white';
+  const barColor=a.bar_color||a.color1||'#111111';
+  const barText=a.bar_text_color||'#ffffff';
   const tracks=[...(a.tracks||[])]; while(tracks.length<11)tracks.push({url:'',name:'',track_artist:'',desc:''});
 
   document.getElementById('editor').innerHTML=`
@@ -223,10 +215,10 @@ function renderEditorGen1(a,idx){
     <div class="ed-section">
       <div class="ed-section-title">Basic Info</div>
       <div class="fields-2col">
-        <div class="field-row"><div class="field-label">Artist Name</div><input class="field-input" value="${esc(a.artist)}" onchange="save('artist',this.value)"></div>
+        <div class="field-row"><div class="field-label">Artist Name</div><input class="field-input" value="${esc(a.artist)}" onchange="save('artist',this.value);refreshCoverPreview()"></div>
         <div class="field-row"><div class="field-label">Real Name</div><input class="field-input" value="${esc(a.real_name||'')}" onchange="save('real_name',this.value)"></div>
         <div class="field-row"><div class="field-label">Date (YYYY-MM-DD)</div><input class="field-input" value="${esc(a.date||'')}" onchange="save('date',this.value)"></div>
-        <div class="field-row"><div class="field-label">Album Number</div><input class="field-input" type="number" value="${a.album_number||''}" onchange="save('album_number',this.value?parseInt(this.value):null)"></div>
+        <div class="field-row"><div class="field-label">Album Number</div><input class="field-input" type="number" value="${a.album_number||''}" onchange="save('album_number',this.value?parseInt(this.value):null);refreshCoverPreview()"></div>
         <div class="field-row"><div class="field-label">Artist Photo URL</div><input class="field-input" value="${esc(a.photo||'')}" onchange="save('photo',this.value);refreshCoverPreview()"></div>
         <div class="field-row"><div class="field-label">Audiotool Profile URL</div><input class="field-input" value="${esc(a.at_profile||'')}" onchange="save('at_profile',this.value)"></div>
         <div class="field-row"><div class="field-label">Album URL</div><input class="field-input" value="${esc(a.album_url||'')}" onchange="save('album_url',this.value)"></div>
@@ -248,41 +240,37 @@ function renderEditorGen1(a,idx){
     <div class="ed-section">
       <div class="ed-section-title">Cover Preview</div>
       <div class="cover-preview-wrap" id="coverPreviewWrap">
-        ${a.photo?`<img src="${esc(a.photo)}" id="coverPreviewImg" onerror="this.style.opacity='.2'">`:`<div style="width:100%;aspect-ratio:1;background:var(--surface2)"></div>`}
-        <div class="cover-ov-top" id="coverOvTop" style="background:${ov1}">
-          <span class="pnum" id="coverPNum" style="color:${logoColor==='black'?'#000':'#fff'}">${padNum(a.album_number)}</span>
-          <span class="pname" id="coverPName" style="color:${logoColor==='black'?'#000':'#fff'}">${esc(a.artist)}</span>
-        </div>
-        <div class="cover-ov-bot" id="coverOvBot" style="background:${ov2}">
-          <div id="coverLogoArecords" style="height:10px;width:auto">${getLogoSvg(logoColor,'arecords')}</div>
-          <div id="coverLogoAt" style="height:14px;width:auto">${getLogoSvg(logoColor,'at')}</div>
+        ${a.photo?`<img src="${esc(a.photo)}" id="coverPreviewImg" onerror="this.style.opacity='.2'">`:`<div class="no-photo"></div>`}
+        <div class="cover-bar-preview" id="coverBarPreview" style="background:${barColor}">
+          <span class="p-num" id="coverPNum" style="color:${barText}">${padNum(a.album_number)}</span>
+          <span class="p-name" id="coverPName" style="color:${barText}">${esc(a.artist)}</span>
         </div>
       </div>
     </div>
 
     <div class="ed-section">
-      <div class="ed-section-title">Cover Overlay Colors</div>
+      <div class="ed-section-title">Cover Bar Colors</div>
       <div class="color-grid" style="grid-template-columns:1fr 1fr;">
-        <div class="color-field"><label>Top Bar</label><div class="color-picker-row"><input type="color" id="ov1Picker" value="${ov1}" oninput="syncOverlayColor('overlay_color1',this.value)"><input type="text" id="ov1Text" value="${ov1}" oninput="if(this.value.match(/^#[0-9a-fA-F]{6}$/))syncOverlayColor('overlay_color1',this.value)" maxlength="7"></div></div>
-        <div class="color-field"><label>Bottom Bar</label><div class="color-picker-row"><input type="color" id="ov2Picker" value="${ov2}" oninput="syncOverlayColor('overlay_color2',this.value)"><input type="text" id="ov2Text" value="${ov2}" oninput="if(this.value.match(/^#[0-9a-fA-F]{6}$/))syncOverlayColor('overlay_color2',this.value)" maxlength="7"></div></div>
+        <div class="color-field">
+          <label>Balken Farbe</label>
+          <div class="color-picker-row">
+            <input type="color" id="barColorPicker" value="${barColor}" oninput="syncBarColor('bar_color',this.value)">
+            <input type="text" id="barColorText" value="${barColor}" oninput="if(this.value.match(/^#[0-9a-fA-F]{6}$/))syncBarColor('bar_color',this.value)" maxlength="7">
+          </div>
+        </div>
+        <div class="color-field">
+          <label>Schrift Farbe</label>
+          <div style="display:flex;gap:8px;margin-top:6px">
+            <button id="textBtnWhite" onclick="setBarTextColor('#ffffff')" style="font-family:var(--block);font-size:13px;letter-spacing:.1em;padding:8px 20px;cursor:pointer;flex:1;${barText==='#ffffff'||barText==='white'?'background:#fff;color:#000;border:none;':'background:var(--surface);border:1px solid var(--border);color:var(--text);'}">WEISS</button>
+            <button id="textBtnBlack" onclick="setBarTextColor('#000000')" style="font-family:var(--block);font-size:13px;letter-spacing:.1em;padding:8px 20px;cursor:pointer;flex:1;${barText==='#000000'||barText==='black'?'background:#000;color:#fff;border:1px solid #555;':'background:var(--surface);border:1px solid var(--border);color:var(--text);'}">SCHWARZ</button>
+          </div>
+        </div>
       </div>
       ${a.photo?`
-        <div style="margin-bottom:8px;font-size:10px;color:var(--dim)">Click photo to pick color:</div>
-        <div class="preview-img-wrap" style="max-width:200px"><img src="${esc(a.photo)}" class="preview-img" id="photoImg" onclick="pickFromImage(event,'photoImg')" onerror="this.style.opacity='.3'"><canvas id="photoCanvas"></canvas></div>
+        <div style="font-size:10px;color:var(--dim);margin-bottom:8px">Click photo to pick bar color:</div>
+        <div class="preview-img-wrap" style="max-width:220px"><img src="${esc(a.photo)}" class="preview-img" id="photoImg" onclick="pickFromImage(event,'photoImg')" onerror="this.style.opacity='.3'"><canvas id="photoCanvas"></canvas></div>
+        <div style="font-size:11px;color:var(--dim);margin-top:8px">Last picked: <span id="pickedColor">-</span> <button onclick="assignToBar()" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;margin-left:8px;">TO BAR</button></div>
       `:''}
-      <div style="font-size:11px;color:var(--dim);margin-top:8px">
-        Last picked: <span id="pickedColor">-</span>
-        <button onclick="assignOverlayTop()" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;margin-left:8px;">TO TOP BAR</button>
-        <button onclick="assignOverlayBot()" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;margin-left:4px;">TO BOTTOM BAR</button>
-      </div>
-    </div>
-
-    <div class="ed-section">
-      <div class="ed-section-title">Logo Color</div>
-      <div style="display:flex;gap:8px;align-items:center">
-        <button id="logoBtnWhite" class="logo-toggle-btn" onclick="setLogoColor('white')" style="${logoColor==='white'?'background:#fff;color:#000;':'background:var(--surface);border:1px solid var(--border);color:var(--text);'}">WEISS</button>
-        <button id="logoBtnBlack" class="logo-toggle-btn" onclick="setLogoColor('black')" style="${logoColor==='black'?'background:#000;color:#fff;border:1px solid #555;':'background:var(--surface);border:1px solid var(--border);color:var(--text);'}">SCHWARZ</button>
-      </div>
     </div>
 
     <div class="ed-section">
@@ -298,34 +286,37 @@ function renderEditorGen1(a,idx){
   `;
 }
 
-function setLogoColor(color){
-  if(currentIdx===null)return;
-  currentData()[currentIdx].logo_color=color;
-  setDirty();
-  const wBtn=document.getElementById('logoBtnWhite');
-  const bBtn=document.getElementById('logoBtnBlack');
-  if(wBtn) wBtn.style.cssText=color==='white'?'background:#fff;color:#000;':'background:var(--surface);border:1px solid var(--border);color:var(--text);';
-  if(bBtn) bBtn.style.cssText=color==='black'?'background:#000;color:#fff;border:1px solid #555;':'background:var(--surface);border:1px solid var(--border);color:var(--text);';
-  const textColor=color==='black'?'#000':'#fff';
-  const pnum=document.getElementById('coverPNum'); if(pnum)pnum.style.color=textColor;
-  const pname=document.getElementById('coverPName'); if(pname)pname.style.color=textColor;
-  const logoAr=document.getElementById('coverLogoArecords'); if(logoAr)logoAr.innerHTML=getLogoSvg(color,'arecords');
-  const logoAt=document.getElementById('coverLogoAt'); if(logoAt)logoAt.innerHTML=getLogoSvg(color,'at');
-}
-
-function syncOverlayColor(field,val){
+function syncBarColor(field,val){
   if(currentIdx===null)return;
   currentData()[currentIdx][field]=val; setDirty();
-  const isTop=field==='overlay_color1';
-  const picker=document.getElementById(isTop?'ov1Picker':'ov2Picker');
-  const text=document.getElementById(isTop?'ov1Text':'ov2Text');
+  const picker=document.getElementById('barColorPicker');
+  const text=document.getElementById('barColorText');
   if(picker)picker.value=val; if(text)text.value=val;
-  const el=document.getElementById(isTop?'coverOvTop':'coverOvBot');
-  if(el)el.style.background=val;
+  const bar=document.getElementById('coverBarPreview');
+  if(bar)bar.style.background=val;
 }
-function assignOverlayTop(){ if(lastPickedColor)syncOverlayColor('overlay_color1',lastPickedColor); }
-function assignOverlayBot(){ if(lastPickedColor)syncOverlayColor('overlay_color2',lastPickedColor); }
-function refreshCoverPreview(){ if(currentIdx===null)return; const img=document.getElementById('coverPreviewImg'); if(img)img.src=currentData()[currentIdx].photo||''; }
+
+function setBarTextColor(color){
+  if(currentIdx===null)return;
+  currentData()[currentIdx].bar_text_color=color; setDirty();
+  const isWhite=color==='#ffffff'||color==='white';
+  const wBtn=document.getElementById('textBtnWhite');
+  const bBtn=document.getElementById('textBtnBlack');
+  if(wBtn)wBtn.style.cssText=isWhite?'font-family:var(--block);font-size:13px;letter-spacing:.1em;padding:8px 20px;cursor:pointer;flex:1;background:#fff;color:#000;border:none;':'font-family:var(--block);font-size:13px;letter-spacing:.1em;padding:8px 20px;cursor:pointer;flex:1;background:var(--surface);border:1px solid var(--border);color:var(--text);';
+  if(bBtn)bBtn.style.cssText=!isWhite?'font-family:var(--block);font-size:13px;letter-spacing:.1em;padding:8px 20px;cursor:pointer;flex:1;background:#000;color:#fff;border:1px solid #555;':'font-family:var(--block);font-size:13px;letter-spacing:.1em;padding:8px 20px;cursor:pointer;flex:1;background:var(--surface);border:1px solid var(--border);color:var(--text);';
+  const pnum=document.getElementById('coverPNum'); if(pnum)pnum.style.color=color;
+  const pname=document.getElementById('coverPName'); if(pname)pname.style.color=color;
+}
+
+function assignToBar(){ if(lastPickedColor)syncBarColor('bar_color',lastPickedColor); }
+
+function refreshCoverPreview(){
+  if(currentIdx===null)return;
+  const a=currentData()[currentIdx];
+  const img=document.getElementById('coverPreviewImg'); if(img)img.src=a.photo||'';
+  const pnum=document.getElementById('coverPNum'); if(pnum)pnum.textContent=padNum(a.album_number);
+  const pname=document.getElementById('coverPName'); if(pname)pname.textContent=a.artist||'';
+}
 
 function renderEditorGen2(a,idx){
   const albumId=(a.album_url||'').match(/\/album\/([^/]+)/)?.[1];
@@ -473,14 +464,13 @@ async function lookupTrack(i){
 function saveTrackField(i,f,v){ if(currentIdx===null)return; if(!currentData()[currentIdx].tracks)currentData()[currentIdx].tracks=[]; while(currentData()[currentIdx].tracks.length<=i)currentData()[currentIdx].tracks.push({url:'',name:'',track_artist:'',desc:''}); currentData()[currentIdx].tracks[i][f]=v; setDirty(); }
 function save(f,v){ if(currentIdx===null)return; currentData()[currentIdx][f]=v; setDirty(); }
 function saveSocial(f,v,alsoRoot=false){ if(currentIdx===null)return; if(!currentData()[currentIdx].social)currentData()[currentIdx].social={}; currentData()[currentIdx].social[f]=v; if(alsoRoot)currentData()[currentIdx][f]=v; setDirty(); }
-
 function deleteArtist(){ if(currentIdx===null)return; const name=currentData()[currentIdx].artist; if(!confirm('Delete "'+name+'"?'))return; currentData().splice(currentIdx,1); currentIdx=null; document.getElementById('editor').innerHTML='<div class="empty">Artist deleted</div>'; filterArtists(); setDirty(); showToast('Deleted: '+name); }
 function toggleHidden(){ if(currentIdx===null)return; currentData()[currentIdx].is_hidden=!currentData()[currentIdx].is_hidden; setDirty(); selectArtist(currentIdx); }
 function toggleCurrent(){ if(currentIdx===null||currentGen!==2)return; const isCurrent=!data2[currentIdx].is_current; data2.forEach((a,i)=>{if(i!==currentIdx)a.is_current=false;}); data2[currentIdx].is_current=isCurrent; setDirty(); selectArtist(currentIdx); }
 
 function newArtist(){
   const isGen1=currentGen===1;
-  const a=isGen1?{artist:'NEW ARTIST',real_name:'',date:new Date().toISOString().slice(0,10),album_number:currentData().length+1,at_profile:'',album_url:'',photo:'',intro:'',about:'',interview:[],tracks:[],social:{},color1:'',color2:'',color_accent:'',desc_bg:'',overlay_color1:'#111111',overlay_color2:'#0a0a0a',logo_color:'white',is_hidden:false}:{artist:'NEW ARTIST',real_name:'',date:new Date().toISOString().slice(0,10),board_url:'',album_url:'',at_profile:'',soundcloud:'',photo:'',cover_url:'',intro:'',about:'',interview:[],tracks:[],social:{},color1:'',color2:'',color_accent:'',desc_bg:'',is_hidden:false};
+  const a=isGen1?{artist:'NEW ARTIST',real_name:'',date:new Date().toISOString().slice(0,10),album_number:currentData().length+1,at_profile:'',album_url:'',photo:'',intro:'',about:'',interview:[],tracks:[],social:{},color1:'',color2:'',color_accent:'',desc_bg:'',bar_color:'#111111',bar_text_color:'#ffffff',is_hidden:false}:{artist:'NEW ARTIST',real_name:'',date:new Date().toISOString().slice(0,10),board_url:'',album_url:'',at_profile:'',soundcloud:'',photo:'',cover_url:'',intro:'',about:'',interview:[],tracks:[],social:{},color1:'',color2:'',color_accent:'',desc_bg:'',is_hidden:false};
   currentData().push(a); currentIdx=currentData().length-1; filterArtists(); selectArtist(currentIdx); setDirty(); showToast('New artist created');
 }
 

@@ -49,16 +49,32 @@
   .hero-realname { font-family: var(--type); font-size: 13px; color: var(--text-muted); letter-spacing: 0.05em; margin-bottom: 24px; }
   .hero-intro { font-family: var(--type); font-size: 14px; line-height: 1.85; color: var(--text-muted); max-width: 520px; border-left: 3px solid var(--accent); padding-left: 18px; }
 
+  /* COVER - single bottom bar */
   .hero-photo { flex-shrink: 0; }
-  .cover-wrap { width: clamp(200px, 26vw, 340px); position: relative; border: 2px solid var(--border); overflow: hidden; }
-  .cover-wrap img { width: 100%; aspect-ratio: 1; object-fit: cover; object-position: center; display: block; filter: grayscale(10%); transition: filter .4s; }
+  .cover-wrap {
+    width: clamp(200px, 26vw, 340px);
+    position: relative; border: 2px solid var(--border); overflow: hidden;
+  }
+  .cover-wrap img {
+    width: 100%; aspect-ratio: 1; object-fit: cover; object-position: center;
+    display: block; filter: grayscale(10%); transition: filter .4s;
+  }
   .cover-wrap img:hover { filter: grayscale(0%); }
-  .cover-overlay-top { position: absolute; top: 0; left: 0; right: 0; padding: 10px 14px; display: flex; align-items: center; justify-content: space-between; background: var(--ov1, #111); }
-  .cover-overlay-top .num { font-family: var(--block); font-size: 26px; letter-spacing: .04em; line-height: 1; }
-  .cover-overlay-top .name { font-family: var(--type); font-size: 14px; text-align: right; }
-  .cover-overlay-bot { position: absolute; bottom: 0; left: 0; right: 0; padding: 8px 14px; display: flex; align-items: center; justify-content: space-between; background: var(--ov2, #0a0a0a); }
-  .cover-overlay-bot .arecords-svg { height: 14px; width: auto; }
-  .cover-overlay-bot .at-a-svg { height: 18px; width: auto; }
+  .cover-bar {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    padding: 10px 14px;
+    display: flex; align-items: center; justify-content: space-between;
+    background: var(--bar-color, #111);
+  }
+  .cover-bar .bar-num {
+    font-family: var(--block); font-size: 28px; letter-spacing: .04em;
+    color: var(--bar-text, #fff); line-height: 1;
+  }
+  .cover-bar .bar-name {
+    font-family: var(--block); font-size: 18px; letter-spacing: .06em;
+    color: var(--bar-text, #fff); text-align: right;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 65%;
+  }
   .cover-date { font-size: 10px; color: var(--text-dim); letter-spacing: 0.1em; margin-top: 8px; text-align: right; font-family: var(--type); }
 
   .links-bar {
@@ -104,7 +120,7 @@
   .nav-dir { font-size: 10px; letter-spacing: .15em; text-transform: uppercase; color: var(--text-dim); }
   .nav-name { font-family: var(--block); font-size: 24px; letter-spacing: .05em; text-transform: uppercase; color: var(--text); }
 
-  @media (max-width: 900px) { .hero { grid-template-columns: 1fr; gap: 24px; } .cover-wrap { width: 160px; } .cover-date { text-align: left; } .main { grid-template-columns: 1fr; } .interview { border-right: none; border-bottom: 1px solid var(--border); padding-right: 0; } .sidebar { padding-left: 0; } }
+  @media (max-width: 900px) { .hero { grid-template-columns: 1fr; gap: 24px; } .cover-wrap { width: 180px; } .cover-date { text-align: left; } .main { grid-template-columns: 1fr; } .interview { border-right: none; border-bottom: 1px solid var(--border); padding-right: 0; } .sidebar { padding-left: 0; } }
   @media (max-width: 600px) { .hero-name { font-size: 58px; } }
 </style>
 </head>
@@ -123,16 +139,6 @@
 <div id="app"></div>
 
 <script>
-const AT_A_SVG_WHITE = `<svg height="100%" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M694.679 800C654.814 800 619.994 777.727 602.276 745.116C542.971 779.942 473.823 800 400 800C179.022 800 0 620.828 0 399.938C0 179.049 179.022 0 400 0C620.978 0 800 179.049 800 400.061L800 694.785C800 752.869 752.876 800 694.802 800ZM400.123 210.552C295.54 210.552 210.643 295.339 210.643 400.061C210.643 504.784 295.417 589.448 400.123 589.448C504.829 589.448 589.603 504.661 589.603 400.061C589.603 295.462 504.829 210.552 400.123 210.552Z" fill="white"/></svg>`;
-const AT_A_SVG_BLACK = AT_A_SVG_WHITE.replace('fill="white"','fill="black"');
-const ARECORDS_SVG_WHITE = `<svg height="100%" viewBox="0 0 311 49" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116.334 34.5179C113.55 34.5179 111.293 32.2612 111.293 29.4767C111.293 27.0962 110.383 24.7156 108.568 22.9006C104.932 19.2652 99.0402 19.2652 95.4048 22.9006C91.7693 26.536 91.7693 32.4281 95.4048 36.0636C97.2144 37.8732 99.5788 38.7781 101.949 38.7888H116.334C119.119 38.7888 121.375 41.0455 121.375 43.83C121.375 46.6145 119.119 48.8711 116.334 48.8711H101.992C97.0313 48.8711 92.0656 46.9807 88.2793 43.1944C80.7068 35.622 80.7068 23.3476 88.2793 15.7751C95.8518 8.20263 108.126 8.20263 115.699 15.7751C119.485 19.5614 121.375 24.5163 121.375 29.4767ZM38.7781 43.8246C38.7781 46.6091 36.5214 48.8657 33.7369 48.8657C31.7926 48.8657 30.1122 47.767 29.272 46.1567C26.3798 47.8747 23.0029 48.8657 19.389 48.8657C8.68198 48.8657 0 40.1838 0 29.4767C0 18.7697 8.68198 10.0877 19.389 10.0877C30.0961 10.0877 38.7781 18.7697 38.7781 29.4767V43.8246ZM19.389 20.17C14.2509 20.17 10.0823 24.3386 10.0823 29.4767C10.0823 34.6148 14.2509 38.7834 19.389 38.7834C24.5271 38.7834 28.6958 34.6148 28.6958 29.4767C28.6958 24.3386 24.5271 20.17 19.389 20.17ZM181.481 48.8657C170.774 48.8657 162.092 40.1838 162.092 29.4767C162.092 18.7697 170.774 10.0877 181.481 10.0877C192.188 10.0877 200.87 18.7697 200.87 29.4767C200.87 40.1838 192.188 48.8657 181.481 48.8657ZM181.481 20.17C176.343 20.17 172.175 24.3386 172.175 29.4767C172.175 34.6148 176.343 38.7834 181.481 38.7834C186.619 38.7834 190.788 34.6148 190.788 29.4767C190.788 24.3386 186.619 20.17 181.481 20.17ZM267.956 5.05192V29.4767C267.956 40.1838 259.274 48.8657 248.567 48.8657C237.86 48.8657 229.178 40.1838 229.178 29.4767C229.178 18.7697 237.86 10.0877 248.567 10.0877C251.939 10.0877 255.111 10.9494 257.874 12.4628V5.04653C257.874 2.25667 260.131 0 262.915 0C265.7 0 267.956 2.25667 267.956 5.04115V5.05192ZM248.567 20.17C243.429 20.17 239.261 24.3386 239.261 29.4767C239.261 34.6148 243.429 38.7834 248.567 38.7834C253.705 38.7834 257.874 34.6148 257.874 29.4767C257.874 24.3386 253.705 20.17 248.567 20.17Z" fill="white"/></svg>`;
-const ARECORDS_SVG_BLACK = ARECORDS_SVG_WHITE.replace(/fill="white"/g,'fill="black"');
-
-function getLogoSvg(color, type){
-  if(type==='at') return color==='black' ? AT_A_SVG_BLACK : AT_A_SVG_WHITE;
-  return color==='black' ? ARECORDS_SVG_BLACK : ARECORDS_SVG_WHITE;
-}
-
 const params = new URLSearchParams(location.search);
 const artistId = params.get('id');
 let autoplay = localStorage.getItem('musicAutoplay') === 'true';
@@ -195,9 +201,8 @@ fetch('gen1_data.json')
 
 function render(a,prev,next){
   document.title=`${a.artist} . Gen I . Audiotool Featured Artist`;
-  const ov1=a.overlay_color1||a.color1||'#111';
-  const ov2=a.overlay_color2||a.color2||'#0a0a0a';
-  const logoColor=a.logo_color||'white';
+  const barColor = a.bar_color || a.color1 || '#111111';
+  const barText = a.bar_text_color || '#ffffff';
   const tracks=(a.tracks||[]).filter(t=>t.name&&t.track_artist&&t.url&&t.url.includes('/track/'));
   window._tracks=tracks;
   const accent=a.color_accent||a.color1||'var(--accent)';
@@ -211,16 +216,13 @@ function render(a,prev,next){
         ${a.intro?`<p class="hero-intro" style="border-left-color:${accent}">${esc(a.intro)}</p>`:''}
       </div>
       <div class="hero-photo">
-        <div class="cover-wrap" style="--ov1:${ov1};--ov2:${ov2}">
-          ${a.photo?`<img src="${esc(a.photo)}" alt="${esc(a.artist)}" style="object-position:${a.photo_position||'center'}" onerror="this.style.display='none'">`:
-            `<div style="width:100%;aspect-ratio:1;background:var(--surface);display:flex;align-items:center;justify-content:center;"><span style="font-size:10px;color:var(--text-dim);letter-spacing:.1em;font-family:var(--type)">NO PHOTO</span></div>`}
-          <div class="cover-overlay-top" style="background:${ov1}">
-            <span class="num" style="color:${logoColor==='black'?'#000':'#fff'}">${padNum(a.album_number)}</span>
-            <span class="name" style="color:${logoColor==='black'?'#000':'#fff'}">${esc(a.artist)}</span>
-          </div>
-          <div class="cover-overlay-bot" style="background:${ov2}">
-            <div class="arecords-svg">${getLogoSvg(logoColor,'arecords')}</div>
-            <div class="at-a-svg">${getLogoSvg(logoColor,'at')}</div>
+        <div class="cover-wrap">
+          ${a.photo
+            ? `<img src="${esc(a.photo)}" alt="${esc(a.artist)}" style="object-position:${a.photo_position||'center'}" onerror="this.style.display='none'">`
+            : `<div style="width:100%;aspect-ratio:1;background:var(--surface);"></div>`}
+          <div class="cover-bar" style="--bar-color:${barColor};--bar-text:${barText}">
+            <span class="bar-num">${padNum(a.album_number)}</span>
+            <span class="bar-name">${esc(a.artist)}</span>
           </div>
         </div>
         ${a.date?`<div class="cover-date">${fmtDate(a.date)}</div>`:''}
