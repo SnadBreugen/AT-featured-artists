@@ -244,12 +244,6 @@ function render(a,prev,next){
       <div class="sidebar">
         ${tracks.length?`
           <div>
-            <button class="play-toggle" id="playToggle" onclick="toggleAlbum()" style="border-color:${accent};color:${accent}">
-              <span id="playIcon">▶</span><span id="playLabel">PLAY TRACKS</span>
-            </button>
-            <div class="album-player" id="albumPlayer"></div>
-          </div>
-          <div>
             <div class="sidebar-title" style="color:${accent};border-bottom-color:${accent}">Edition Audiotool</div>
             <div class="cover-wrap" style="margin-top:12px">
               ${a.cover_url
@@ -261,6 +255,10 @@ function render(a,prev,next){
               </div>
             </div>
             ${a.date?`<div class="cover-date">${fmtDate(a.date)}</div>`:''}
+            <button class="play-toggle" id="playToggle" onclick="toggleAlbum()" style="border-color:${accent};color:${accent};margin-top:12px">
+              <span id="playIcon">▶</span><span id="playLabel">PLAY TRACKS</span>
+            </button>
+            <div class="album-player" id="albumPlayer"></div>
           </div>
           <div>
             <div class="sidebar-title" style="color:${accent};border-bottom-color:${accent}">Curated Tracks</div>
