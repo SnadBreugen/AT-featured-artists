@@ -6,7 +6,7 @@
 <title>Admin — AT Featured Artists</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-  :root { --bg:#0a0a0a;--surface:#141414;--surface2:#1c1c1c;--border:#2a2a2a;--text:#ffffff;--muted:#888;--dim:#444;--accent:#e8c840;--green:#4ade80;--red:#f87171;--block:'Bebas Neue',Impact,sans-serif;--mono:'DM Mono',monospace; }
+  :root { --bg:#0a0a0a;--surface:#141414;--surface2:#1c1c1c;--border:#2a2a2a;--text:#e8e4dc;--muted:#888;--dim:#444;--accent:#e8c840;--green:#4ade80;--red:#f87171;--block:'Bebas Neue',Impact,sans-serif;--mono:'DM Mono',monospace; }
   *{margin:0;padding:0;box-sizing:border-box;}
   body{background:var(--bg);color:var(--text);font-family:var(--mono);font-size:13px;min-height:100vh;}
   #loginScreen{min-height:100vh;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:24px;}
@@ -27,6 +27,7 @@
   .gen-tab{font-family:var(--block);font-size:14px;letter-spacing:.12em;padding:12px 28px;cursor:pointer;color:var(--muted);border-bottom:3px solid transparent;margin-bottom:-2px;transition:color .15s,border-color .15s;}
   .gen-tab:hover{color:var(--text);}
   .gen-tab.active{color:#28E5FF;border-bottom-color:#28E5FF;}
+  .gen-tab.import-tab.active{color:var(--accent);border-bottom-color:var(--accent);}
   .layout{display:grid;grid-template-columns:260px 1fr;min-height:calc(100vh - 100px);}
   .sidebar{border-right:1px solid var(--border);overflow-y:auto;max-height:calc(100vh - 100px);position:sticky;top:100px;}
   .search-box{padding:12px;border-bottom:1px solid var(--border);position:sticky;top:0;background:var(--bg);z-index:10;}
@@ -89,6 +90,14 @@
   .cover-bar-preview{position:absolute;bottom:0;left:0;right:0;padding:8px 12px;display:flex;align-items:center;justify-content:space-between;}
   .cover-bar-preview .p-num{font-family:var(--block);font-size:18px;line-height:1;}
   .cover-bar-preview .p-name{font-family:var(--block);font-size:18px;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:65%;}
+  #importScreen{display:none;padding:40px;max-width:860px;}
+  .import-log{background:var(--surface);border:1px solid var(--border);padding:16px;height:400px;overflow-y:auto;font-size:11px;line-height:1.8;margin:20px 0;font-family:var(--mono);}
+  .import-log .ok{color:var(--green);}
+  .import-log .err{color:var(--red);}
+  .import-log .skip{color:var(--muted);}
+  .import-log .info{color:var(--accent);}
+  .progress-bar-wrap{background:var(--surface);border:1px solid var(--border);height:8px;margin-bottom:8px;}
+  .progress-bar-fill{height:100%;background:var(--accent);transition:width .3s;}
 </style>
 </head>
 <body>
@@ -113,8 +122,25 @@
   <div class="gen-tabs">
     <div class="gen-tab active" id="tabGen2" onclick="switchGen(2)">GEN II</div>
     <div class="gen-tab" id="tabGen1" onclick="switchGen(1)">GEN I</div>
+    <div class="gen-tab import-tab" id="tabImport" onclick="switchGen('import')">IMPORT GEN I</div>
   </div>
-  <div class="layout">
+  <div id="importScreen">
+    <div class="ed-title">IMPORT GEN I</div>
+    <div class="ed-sub">FETCH ARTIST + TRACK DATA FROM AUDIOTOOL API</div>
+    <p style="color:var(--muted);font-size:12px;line-height:1.7;margin-bottom:24px">
+      Fetches Artist Name, Tracks and Track Descriptions from the Audiotool API for all 105 Gen I albums.<br>
+      Existing entries (matched by album URL) are <strong style="color:var(--accent)">skipped</strong> — your data stays intact.<br>
+      New entries get added. When done click <strong style="color:var(--accent)">PUSH TO GITHUB</strong> in the header.
+    </p>
+    <div style="display:flex;gap:12px;align-items:center;margin-bottom:20px">
+      <button id="importBtn" onclick="startImport()" style="background:var(--accent);color:var(--bg);font-family:var(--block);font-size:16px;letter-spacing:.12em;padding:12px 32px;border:none;cursor:pointer;">START IMPORT</button>
+      <button onclick="document.getElementById('importLog').innerHTML='<span style=color:var(--dim)>Log cleared.</span>'" style="background:none;border:1px solid var(--border);color:var(--muted);font-family:var(--mono);font-size:11px;padding:10px 20px;cursor:pointer;">CLEAR LOG</button>
+      <span id="importStatus" style="font-size:12px;color:var(--muted);letter-spacing:.08em;"></span>
+    </div>
+    <div class="progress-bar-wrap"><div class="progress-bar-fill" id="progressFill" style="width:0%"></div></div>
+    <div class="import-log" id="importLog"><span style="color:var(--dim)">Ready. Press START IMPORT to begin.</span></div>
+  </div>
+  <div class="layout" id="mainLayout">
     <div class="sidebar">
       <div style="padding:12px;border-bottom:1px solid var(--border);">
         <button onclick="newArtist()" style="width:100%;background:none;border:1px solid var(--accent);color:var(--accent);font-family:var(--block);font-size:14px;letter-spacing:.12em;padding:8px;cursor:pointer;">+ NEW ARTIST</button>
@@ -130,10 +156,11 @@
 const GITHUB_REPO='SnadBreugen/AT-featured-artists';
 const DATA_PATH_GEN2='data.json', DATA_PATH_GEN1='gen1_data.json';
 const PASSWORD='audiotool2026';
-let GITHUB_TOKEN='', currentGen=2, data2=[], data1=[], sha2='', sha1='', currentIdx=null, dirty2=false, dirty1=false, lastPickedColor=null;
+const GEN1_ALBUMS=['https://www.audiotool.com/album/9pnx5/','https://www.audiotool.com/album/hnwkpu4/','https://www.audiotool.com/album/dgaoqtpm/','https://www.audiotool.com/album/0poc9tl/','https://www.audiotool.com/album/6pvw3rdg/','https://www.audiotool.com/album/i0qv2qyt6/','https://www.audiotool.com/album/zwhdmh/','https://www.audiotool.com/album/agr87qx/','https://www.audiotool.com/album/pts4e/','https://www.audiotool.com/album/2gvqxec/','https://www.audiotool.com/album/dfkvkal/','https://www.audiotool.com/album/trxsjo/','https://www.audiotool.com/album/rpzwcp4v/','https://www.audiotool.com/album/xlv4lr4/','https://www.audiotool.com/album/amg2pbi/','https://www.audiotool.com/album/og6fd6z/','https://www.audiotool.com/album/kcvqjvpm2/','https://www.audiotool.com/album/8ktqn1orf/','https://www.audiotool.com/album/t5tdmds/','https://www.audiotool.com/album/76ipsvb/','https://www.audiotool.com/album/0cszualx/','https://www.audiotool.com/album/dgj432vk7/','https://www.audiotool.com/album/fphr89zyy/','https://www.audiotool.com/album/drwan2/','https://www.audiotool.com/album/fg0yzv/','https://www.audiotool.com/album/zgmrmokl0/','https://www.audiotool.com/album/dyz0s22ey/','https://www.audiotool.com/album/0hqoaaw/','https://www.audiotool.com/album/s1xjwzjco/','https://www.audiotool.com/album/dejfpldko/','https://www.audiotool.com/album/q9ovx/','https://www.audiotool.com/album/s1nfsuq/','https://www.audiotool.com/album/8n41y2t4x/','https://www.audiotool.com/album/ku50sqn/','https://www.audiotool.com/album/vranm/','https://www.audiotool.com/album/akswas7/','https://www.audiotool.com/album/fpkdql8j/','https://www.audiotool.com/album/pif3btmq/','https://www.audiotool.com/album/ixieojt/','https://www.audiotool.com/album/jvjotpw/','https://www.audiotool.com/album/fckpbo/','https://www.audiotool.com/album/pri3aji/','https://www.audiotool.com/album/o15is/','https://www.audiotool.com/album/huq36h9yv/','https://www.audiotool.com/album/4oqrg5xs/','https://www.audiotool.com/album/d6qdh/','https://www.audiotool.com/album/qd3ss/','https://www.audiotool.com/album/jbkwf/','https://www.audiotool.com/album/mlzmzzie/','https://www.audiotool.com/album/0oryk5/','https://www.audiotool.com/album/gerzj5pa7/','https://www.audiotool.com/album/ofu4hck4/','https://www.audiotool.com/album/tzgcys/','https://www.audiotool.com/album/8v9sxpke3/','https://www.audiotool.com/album/blgcbm/','https://www.audiotool.com/album/fegwtffwt/','https://www.audiotool.com/album/qbtlhcu/','https://www.audiotool.com/album/hbufuuw/','https://www.audiotool.com/album/advfxu/','https://www.audiotool.com/album/e0aqv0xnj/','https://www.audiotool.com/album/0ybmt/','https://www.audiotool.com/album/cvguob117/','https://www.audiotool.com/album/ttfrr/','https://www.audiotool.com/album/xmilsqmwn/','https://www.audiotool.com/album/2sem3/','https://www.audiotool.com/album/jkuptea/','https://www.audiotool.com/album/ftnagxh/','https://www.audiotool.com/album/rjggctqy/','https://www.audiotool.com/album/7a9ktldnm/','https://www.audiotool.com/album/3i0j5p/','https://www.audiotool.com/album/mhksqxj/','https://www.audiotool.com/album/rs5yxjze/','https://www.audiotool.com/album/w3ob3/','https://www.audiotool.com/album/naaejqfyw/','https://www.audiotool.com/album/develp/','https://www.audiotool.com/album/tzvj27b/','https://www.audiotool.com/album/gw9cqiqr/','https://www.audiotool.com/album/xdi9i0mh/','https://www.audiotool.com/album/pohsz7b/','https://www.audiotool.com/album/qbemlckoi/','https://www.audiotool.com/album/ubguzjkis/','https://www.audiotool.com/album/knl9rxjg/','https://www.audiotool.com/album/bwjaynh12/','https://www.audiotool.com/album/mzcfu/','https://www.audiotool.com/album/pjpiou3l/','https://www.audiotool.com/album/zxigd/','https://www.audiotool.com/album/dvf4umd/','https://www.audiotool.com/album/mogada75n/','https://www.audiotool.com/album/p1yi4n/','https://www.audiotool.com/album/x8x8lg2tm/','https://www.audiotool.com/album/pevrv/','https://www.audiotool.com/album/uq8tpudy/','https://www.audiotool.com/album/mjv7t0sad/','https://www.audiotool.com/album/9pfmz/','https://www.audiotool.com/album/rwhjt2i/','https://www.audiotool.com/album/jtpwkjj/','https://www.audiotool.com/album/wmnofedc/','https://www.audiotool.com/album/n2xjvl/','https://www.audiotool.com/album/0i3ls/','https://www.audiotool.com/album/fynka1b/','https://www.audiotool.com/album/xe89crjwc/','https://www.audiotool.com/album/dq1pabol/','https://www.audiotool.com/album/qafr9/','https://www.audiotool.com/album/djnov/','https://www.audiotool.com/album/f1ailrc/'];
+
+let GITHUB_TOKEN='', currentGen=2, data2=[], data1=[], sha2='', sha1='', currentIdx=null, dirty2=false, dirty1=false, lastPickedColor=null, importRunning=false;
 
 function currentData(){ return currentGen===2?data2:data1; }
-function currentDirty(){ return currentGen===2?dirty2:dirty1; }
 function setDirty(){ if(currentGen===2)dirty2=true;else dirty1=true; document.getElementById('saveAllBtn').disabled=false; }
 
 function doLogin(){
@@ -144,17 +171,93 @@ function doLogin(){
 
 function switchGen(gen){
   currentGen=gen; currentIdx=null;
-  document.getElementById('tabGen1').classList.toggle('active',gen===1);
   document.getElementById('tabGen2').classList.toggle('active',gen===2);
-  document.getElementById('editor').innerHTML='<div class="empty">Select an artist to edit</div>';
-  const pl=document.getElementById('previewLink'); if(pl)pl.style.display='none';
-  filterArtists(); setStatus(`${currentData().length} artists loaded`);
-  document.getElementById('saveAllBtn').disabled=!currentDirty();
+  document.getElementById('tabGen1').classList.toggle('active',gen===1);
+  document.getElementById('tabImport').classList.toggle('active',gen==='import');
+  document.getElementById('importScreen').style.display=gen==='import'?'block':'none';
+  document.getElementById('mainLayout').style.display=gen==='import'?'none':'grid';
+  if(gen!=='import'){
+    document.getElementById('editor').innerHTML='<div class="empty">Select an artist to edit</div>';
+    const pl=document.getElementById('previewLink'); if(pl)pl.style.display='none';
+    filterArtists();
+    setStatus(`${currentData().length} artists loaded`);
+    document.getElementById('saveAllBtn').disabled=!(gen===2?dirty2:dirty1);
+  }
 }
 
 function setStatus(m){ document.getElementById('statusMsg').textContent=m; }
 function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
 function padNum(n){ return String(n||'').padStart(3,'0'); }
+
+function logLine(msg,type=''){
+  const log=document.getElementById('importLog');
+  const d=document.createElement('div'); d.className=type; d.textContent=msg;
+  log.appendChild(d); log.scrollTop=log.scrollHeight;
+}
+
+async function fetchAlbum(albumUrl){
+  const albumId=albumUrl.replace(/\/$/,'').split('/').pop();
+  const r=await fetch(`https://api.audiotool.com/album/${albumId}/eds/`);
+  if(!r.ok) throw new Error(`HTTP ${r.status}`);
+  const xml=await r.text();
+  const doc=new DOMParser().parseFromString(xml,'text/xml');
+  const albumEl=doc.querySelector('album');
+  if(!albumEl) throw new Error('No album element');
+  const artistName=albumEl.getAttribute('user-name')||'';
+  const userKey=albumEl.getAttribute('user-key')||'';
+  const atProfile=userKey?`https://www.audiotool.com/user/${userKey}/`:'';
+  const tracks=[];
+  doc.querySelectorAll('track').forEach(t=>{
+    const key=t.getAttribute('key')||'';
+    const name=t.getAttribute('title')||'';
+    const trackArtist=t.getAttribute('user-name')||artistName;
+    const desc=t.getAttribute('description')||'';
+    if(key) tracks.push({url:`https://www.audiotool.com/track/${key}/`,name,track_artist:trackArtist,desc});
+  });
+  return {artistName,atProfile,tracks:tracks.slice(0,11)};
+}
+
+async function startImport(){
+  if(importRunning){showToast('Already running',true);return;}
+  importRunning=true;
+  const btn=document.getElementById('importBtn');
+  btn.disabled=true; btn.textContent='IMPORTING...';
+  document.getElementById('importLog').innerHTML='';
+  const existingUrls=new Set(data1.map(a=>(a.album_url||'').replace(/\/$/,'')));
+  let added=0,skipped=0,failed=0;
+  const total=GEN1_ALBUMS.length;
+  logLine(`Starting import of ${total} albums...`,'info');
+  for(let i=0;i<total;i++){
+    const url=GEN1_ALBUMS[i];
+    const cleanUrl=url.replace(/\/$/,'');
+    document.getElementById('progressFill').style.width=Math.round((i/total)*100)+'%';
+    document.getElementById('importStatus').textContent=`${i+1} / ${total}`;
+    if(existingUrls.has(cleanUrl)){
+      logLine(`[${i+1}/${total}] SKIP: ${cleanUrl.split('/').pop()}`,'skip');
+      skipped++; continue;
+    }
+    try{
+      const {artistName,atProfile,tracks}=await fetchAlbum(url);
+      data1.push({artist:artistName,real_name:'',date:'',album_number:data1.length+1,at_profile:atProfile,album_url:url,photo:'',intro:'',about:'',interview:[],tracks,social:{},color1:'',color2:'',color_accent:'',desc_bg:'',links_bar_color:'',bar_color:'#111111',bar_text_color:'#ffffff',is_hidden:false});
+      existingUrls.add(cleanUrl);
+      dirty1=true;
+      document.getElementById('saveAllBtn').disabled=false;
+      logLine(`[${i+1}/${total}] OK: ${artistName} (${tracks.length} tracks)`,'ok');
+      added++;
+    }catch(e){
+      logLine(`[${i+1}/${total}] FAILED: ${cleanUrl.split('/').pop()} — ${e.message}`,'err');
+      failed++;
+    }
+    await new Promise(res=>setTimeout(res,200));
+  }
+  document.getElementById('progressFill').style.width='100%';
+  document.getElementById('importStatus').textContent='Done';
+  logLine(`Finished: ${added} added, ${skipped} skipped, ${failed} failed.`,'info');
+  if(added>0) logLine('Click PUSH TO GITHUB in the header to save.','info');
+  btn.disabled=false; btn.textContent='START IMPORT';
+  importRunning=false;
+  showToast(`Import done: ${added} added`);
+}
 
 async function loadData(gen){
   const path=gen===2?DATA_PATH_GEN2:DATA_PATH_GEN1;
@@ -181,66 +284,41 @@ function selectArtist(idx){
   const a=currentData()[idx];
   const pl=document.getElementById('previewLink');
   if(pl){ pl.href=currentGen===2?`artist.html?id=${encodeURIComponent(a.artist)}`:`artist_gen1.html?id=${encodeURIComponent(a.artist)}`; pl.style.display='block'; }
-  if(currentGen===2)renderEditorGen2(a,idx);
-  else renderEditorGen1(a,idx);
+  if(currentGen===2)renderEditorGen2(a,idx); else renderEditorGen1(a,idx);
 }
 
 function renderEditorGen1(a,idx){
-  const barColor=a.bar_color||a.color1||'#111111';
-  const barText=a.bar_text_color||'#ffffff';
-  const c1=a.color1||'#333333', c2=a.color2||a.color1||'#333333', ca=a.color_accent||a.color1||'#333333';
+  const barColor=a.bar_color||'#111111', barText=a.bar_text_color||'#ffffff';
+  const c1=a.color1||'#333333',c2=a.color2||a.color1||'#333333',ca=a.color_accent||a.color1||'#333333';
   const tracks=[...(a.tracks||[])]; while(tracks.length<11)tracks.push({url:'',name:'',track_artist:'',desc:''});
   const social=a.social||{};
-
   document.getElementById('editor').innerHTML=`
     <div class="ed-title">${esc(a.artist)}</div>
     <div class="ed-sub">${esc(a.real_name||'')} . ${esc(a.date||'')} . GEN I #${padNum(a.album_number)}</div>
-    <div style="margin-bottom:28px">
-      <button onclick="toggleHidden()" style="font-family:var(--block);font-size:13px;letter-spacing:.1em;padding:8px 20px;border:none;cursor:pointer;${a.is_hidden?'background:var(--red);color:#fff':'background:var(--surface);border:1px solid var(--border);color:var(--muted)'}">
-        ${a.is_hidden?'HIDDEN':'SET AS HIDDEN'}
-      </button>
-    </div>
-
-    <div class="ed-section">
-      <div class="ed-section-title">Basic Info</div>
-      <div class="fields-2col">
-        <div class="field-row"><div class="field-label">Artist Name</div><input class="field-input" value="${esc(a.artist)}" onchange="save('artist',this.value);refreshCoverPreview()"></div>
-        <div class="field-row"><div class="field-label">Real Name</div><input class="field-input" value="${esc(a.real_name||'')}" onchange="save('real_name',this.value)"></div>
-        <div class="field-row"><div class="field-label">Date (YYYY-MM-DD)</div><input class="field-input" value="${esc(a.date||'')}" onchange="save('date',this.value)"></div>
-        <div class="field-row"><div class="field-label">Album Number</div><input class="field-input" type="number" value="${a.album_number||''}" onchange="save('album_number',this.value?parseInt(this.value):null);refreshCoverPreview()"></div>
-        <div class="field-row"><div class="field-label">Artist Photo URL</div><input class="field-input" value="${esc(a.photo||'')}" onchange="save('photo',this.value);refreshCoverPreview()"></div>
-        <div class="field-row"><div class="field-label">Audiotool Profile URL</div><input class="field-input" value="${esc(a.at_profile||'')}" onchange="save('at_profile',this.value)"></div>
-        <div class="field-row"><div class="field-label">Album URL</div><input class="field-input" value="${esc(a.album_url||'')}" onchange="save('album_url',this.value)"></div>
-      </div>
-    </div>
-
-    <div class="ed-section">
-      <div class="ed-section-title">Social Links</div>
-      <div class="fields-2col">
-        <div class="field-row"><div class="field-label">SoundCloud</div><input class="field-input" value="${esc(social.soundcloud||a.soundcloud||'')}" onchange="saveSocial('soundcloud',this.value,true)"></div>
-        <div class="field-row"><div class="field-label">Spotify</div><input class="field-input" value="${esc(social.spotify||'')}" onchange="saveSocial('spotify',this.value)"></div>
-        <div class="field-row"><div class="field-label">Instagram</div><input class="field-input" value="${esc(social.instagram||'')}" onchange="saveSocial('instagram',this.value)"></div>
-        <div class="field-row"><div class="field-label">YouTube</div><input class="field-input" value="${esc(social.youtube||'')}" onchange="saveSocial('youtube',this.value)"></div>
-        <div class="field-row"><div class="field-label">Bandcamp</div><input class="field-input" value="${esc(social.bandcamp||'')}" onchange="saveSocial('bandcamp',this.value)"></div>
-        <div class="field-row"><div class="field-label">Twitter / X</div><input class="field-input" value="${esc(social.twitter||'')}" onchange="saveSocial('twitter',this.value)"></div>
-        <div class="field-row"><div class="field-label">Linktree</div><input class="field-input" value="${esc(social.linktree||'')}" onchange="saveSocial('linktree',this.value)"></div>
-      </div>
-    </div>
-
-    <div class="ed-section">
-      <div class="ed-section-title">Texts</div>
+    <div style="margin-bottom:28px"><button onclick="toggleHidden()" style="font-family:var(--block);font-size:13px;letter-spacing:.1em;padding:8px 20px;border:none;cursor:pointer;${a.is_hidden?'background:var(--red);color:#fff':'background:var(--surface);border:1px solid var(--border);color:var(--muted)'}"> ${a.is_hidden?'HIDDEN':'SET AS HIDDEN'}</button></div>
+    <div class="ed-section"><div class="ed-section-title">Basic Info</div><div class="fields-2col">
+      <div class="field-row"><div class="field-label">Artist Name</div><input class="field-input" value="${esc(a.artist)}" onchange="save('artist',this.value);refreshCoverPreview()"></div>
+      <div class="field-row"><div class="field-label">Real Name</div><input class="field-input" value="${esc(a.real_name||'')}" onchange="save('real_name',this.value)"></div>
+      <div class="field-row"><div class="field-label">Date (YYYY-MM-DD)</div><input class="field-input" value="${esc(a.date||'')}" onchange="save('date',this.value)"></div>
+      <div class="field-row"><div class="field-label">Album Number</div><input class="field-input" type="number" value="${a.album_number||''}" onchange="save('album_number',this.value?parseInt(this.value):null);refreshCoverPreview()"></div>
+      <div class="field-row"><div class="field-label">Artist Photo URL</div><input class="field-input" value="${esc(a.photo||'')}" onchange="save('photo',this.value);refreshCoverPreview()"></div>
+      <div class="field-row"><div class="field-label">Audiotool Profile URL</div><input class="field-input" value="${esc(a.at_profile||'')}" onchange="save('at_profile',this.value)"></div>
+      <div class="field-row"><div class="field-label">Album URL</div><input class="field-input" value="${esc(a.album_url||'')}" onchange="save('album_url',this.value)"></div>
+    </div></div>
+    <div class="ed-section"><div class="ed-section-title">Social Links</div><div class="fields-2col">
+      <div class="field-row"><div class="field-label">SoundCloud</div><input class="field-input" value="${esc(social.soundcloud||a.soundcloud||'')}" onchange="saveSocial('soundcloud',this.value,true)"></div>
+      <div class="field-row"><div class="field-label">Spotify</div><input class="field-input" value="${esc(social.spotify||'')}" onchange="saveSocial('spotify',this.value)"></div>
+      <div class="field-row"><div class="field-label">Instagram</div><input class="field-input" value="${esc(social.instagram||'')}" onchange="saveSocial('instagram',this.value)"></div>
+      <div class="field-row"><div class="field-label">YouTube</div><input class="field-input" value="${esc(social.youtube||'')}" onchange="saveSocial('youtube',this.value)"></div>
+      <div class="field-row"><div class="field-label">Bandcamp</div><input class="field-input" value="${esc(social.bandcamp||'')}" onchange="saveSocial('bandcamp',this.value)"></div>
+      <div class="field-row"><div class="field-label">Twitter / X</div><input class="field-input" value="${esc(social.twitter||'')}" onchange="saveSocial('twitter',this.value)"></div>
+    </div></div>
+    <div class="ed-section"><div class="ed-section-title">Texts</div>
       <div class="field-row"><div class="field-label">Intro</div><textarea class="field-input" style="min-height:100px" onchange="save('intro',this.value)">${esc(a.intro||'')}</textarea></div>
       <div class="field-row"><div class="field-label">About</div><textarea class="field-input" style="min-height:80px" onchange="save('about',this.value)">${esc(a.about||'')}</textarea></div>
     </div>
-
-    <div class="ed-section">
-      <div class="ed-section-title">Interview Q&As</div>
-      <div id="qaList">${renderQAs(a.interview||[])}</div>
-      <button class="add-btn" onclick="addQA()">+ ADD Q&A</button>
-    </div>
-
-    <div class="ed-section">
-      <div class="ed-section-title">Cover Preview</div>
+    <div class="ed-section"><div class="ed-section-title">Interview Q&As</div><div id="qaList">${renderQAs(a.interview||[])}</div><button class="add-btn" onclick="addQA()">+ ADD Q&A</button></div>
+    <div class="ed-section"><div class="ed-section-title">Cover Preview</div>
       <div class="cover-preview-wrap" id="coverPreviewWrap">
         ${a.photo?`<img src="${esc(a.photo)}" id="coverPreviewImg" onerror="this.style.opacity='.2'">`:`<div class="no-photo"></div>`}
         <div class="cover-bar-preview" id="coverBarPreview" style="background:${barColor}">
@@ -249,88 +327,31 @@ function renderEditorGen1(a,idx){
         </div>
       </div>
     </div>
-
-    <div class="ed-section">
-      <div class="ed-section-title">Cover Bar Colors</div>
+    <div class="ed-section"><div class="ed-section-title">Cover Bar Colors</div>
       <div class="color-grid" style="grid-template-columns:1fr 1fr;">
-        <div class="color-field">
-          <label>Balken Farbe</label>
-          <div class="color-picker-row">
-            <input type="color" id="barColorPicker" value="${barColor}" oninput="syncBarColor(this.value)">
-            <input type="text" id="barColorText" value="${barColor}" oninput="if(this.value.match(/^#[0-9a-fA-F]{6}$/))syncBarColor(this.value)" maxlength="7">
-          </div>
-        </div>
-        <div class="color-field">
-          <label>Schrift Farbe</label>
-          <div class="color-picker-row">
-            <input type="color" id="barTextPicker" value="${barText}" oninput="syncBarTextColor(this.value)">
-            <input type="text" id="barTextText" value="${barText}" oninput="if(this.value.match(/^#[0-9a-fA-F]{6}$/))syncBarTextColor(this.value)" maxlength="7">
-          </div>
-        </div>
+        <div class="color-field"><label>Balken Farbe</label><div class="color-picker-row"><input type="color" id="barColorPicker" value="${barColor}" oninput="syncBarColor(this.value)"><input type="text" id="barColorText" value="${barColor}" oninput="if(this.value.match(/^#[0-9a-fA-F]{6}$/))syncBarColor(this.value)" maxlength="7"></div></div>
+        <div class="color-field"><label>Schrift Farbe</label><div class="color-picker-row"><input type="color" id="barTextPicker" value="${barText}" oninput="syncBarTextColor(this.value)"><input type="text" id="barTextText" value="${barText}" oninput="if(this.value.match(/^#[0-9a-fA-F]{6}$/))syncBarTextColor(this.value)" maxlength="7"></div></div>
       </div>
-      ${a.photo?`
-        <div style="font-size:10px;color:var(--dim);margin-bottom:8px">Click photo to pick color:</div>
-        <div class="preview-img-wrap" style="max-width:220px"><img src="${esc(a.photo)}" class="preview-img" id="photoImg" onclick="pickFromImage(event,'photoImg')" onerror="this.style.opacity='.3'"><canvas id="photoCanvas"></canvas></div>
-        <div style="font-size:11px;color:var(--dim);margin-top:8px">Last picked: <span id="pickedColor">-</span>
-          <button onclick="if(lastPickedColor)syncBarColor(lastPickedColor)" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;margin-left:8px;">TO BAR</button>
-          <button onclick="if(lastPickedColor)syncBarTextColor(lastPickedColor)" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;margin-left:4px;">TO SCHRIFT</button>
-          <button onclick="assignColorBoth()" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;margin-left:4px;">TO BG + HEADLINES</button>
-        </div>
-      `:''}
+      ${a.photo?`<div style="font-size:10px;color:var(--dim);margin-bottom:8px">Click photo to pick color:</div><div class="preview-img-wrap" style="max-width:220px"><img src="${esc(a.photo)}" class="preview-img" id="photoImg" onclick="pickFromImage(event,'photoImg')" onerror="this.style.opacity='.3'"><canvas id="photoCanvas"></canvas></div><div style="font-size:11px;color:var(--dim);margin-top:8px">Last picked: <span id="pickedColor">-</span><button onclick="if(lastPickedColor)syncBarColor(lastPickedColor)" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;margin-left:8px;">TO BAR</button><button onclick="if(lastPickedColor)syncBarTextColor(lastPickedColor)" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;margin-left:4px;">TO SCHRIFT</button><button onclick="assignColorBoth()" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;margin-left:4px;">TO BG+HEADLINES</button></div>`:''}
     </div>
-
-    <div class="ed-section">
-      <div class="ed-section-title">Color Preview</div>
-      <div class="color-preview"><div class="color-preview-bg" id="previewBg"></div><div class="color-preview-text" id="previewText">${esc(a.artist.toUpperCase())}</div></div>
-    </div>
-
-    <div class="ed-section">
-      <div class="ed-section-title">Colors</div>
-      <div class="color-grid">
-        <div class="color-field"><label>Background + Headlines</label><div class="color-picker-row"><input type="color" id="color1Picker" value="${c1}" oninput="syncColor('color1',this.value);syncColor('color_accent',this.value)"><input type="text" id="color1Text" value="${c1}" oninput="syncColorText('color1',this.value)" maxlength="7"></div></div>
-        <div class="color-field"><label>Track Desc Background</label><div class="color-picker-row"><input type="color" id="desc_bgPicker" value="${a.desc_bg||'#e8e4dc'}" oninput="syncColor('desc_bg',this.value)"><input type="text" id="desc_bgText" value="${a.desc_bg||'#e8e4dc'}" oninput="syncColorText('desc_bg',this.value)" maxlength="7"></div></div>
-        <div class="color-field"><label>Links Bar Color</label><div class="color-picker-row"><input type="color" id="links_bar_colorPicker" value="${a.links_bar_color||'#888888'}" oninput="syncColor('links_bar_color',this.value)"><input type="text" id="links_bar_colorText" value="${a.links_bar_color||'#888888'}" oninput="syncColorText('links_bar_color',this.value)" maxlength="7"></div></div>
-      </div>
-    </div>
-
-    <div class="ed-section">
-      <div class="ed-section-title">Curated Tracks (max. 11)</div>
-      <div id="trackList">${renderTracks(tracks)}</div>
-    </div>
-
+    <div class="ed-section"><div class="ed-section-title">Color Preview</div><div class="color-preview"><div class="color-preview-bg" id="previewBg"></div><div class="color-preview-text" id="previewText">${esc(a.artist.toUpperCase())}</div></div></div>
+    <div class="ed-section"><div class="ed-section-title">Colors</div><div class="color-grid">
+      <div class="color-field"><label>Background + Headlines</label><div class="color-picker-row"><input type="color" id="color1Picker" value="${c1}" oninput="syncColor('color1',this.value);syncColor('color_accent',this.value)"><input type="text" id="color1Text" value="${c1}" oninput="syncColorText('color1',this.value)" maxlength="7"></div></div>
+      <div class="color-field"><label>Track Desc Background</label><div class="color-picker-row"><input type="color" id="desc_bgPicker" value="${a.desc_bg||'#e8e4dc'}" oninput="syncColor('desc_bg',this.value)"><input type="text" id="desc_bgText" value="${a.desc_bg||'#e8e4dc'}" oninput="syncColorText('desc_bg',this.value)" maxlength="7"></div></div>
+      <div class="color-field"><label>Links Bar Color</label><div class="color-picker-row"><input type="color" id="links_bar_colorPicker" value="${a.links_bar_color||'#888888'}" oninput="syncColor('links_bar_color',this.value)"><input type="text" id="links_bar_colorText" value="${a.links_bar_color||'#888888'}" oninput="syncColorText('links_bar_color',this.value)" maxlength="7"></div></div>
+    </div></div>
+    <div class="ed-section"><div class="ed-section-title">Curated Tracks (max. 11)</div><div id="trackList">${renderTracks(tracks)}</div></div>
     <div style="padding-bottom:60px">
       <button class="save-btn" onclick="saveArtist()">SAVE ARTIST</button>
       <button onclick="deleteArtist()" style="background:none;border:1px solid var(--red);color:var(--red);font-family:var(--block);font-size:14px;letter-spacing:.1em;padding:10px 20px;cursor:pointer;margin-left:12px;">DELETE</button>
       <span class="save-status" id="saveStatus"></span>
-    </div>
-  `;
-  updatePreview(c1, c2, ca);
+    </div>`;
+  updatePreview(c1,c2,ca);
 }
 
-function syncBarColor(val){
-  if(currentIdx===null)return;
-  currentData()[currentIdx].bar_color=val; setDirty();
-  const p=document.getElementById('barColorPicker'), t=document.getElementById('barColorText');
-  if(p)p.value=val; if(t)t.value=val;
-  const bar=document.getElementById('coverBarPreview'); if(bar)bar.style.background=val;
-}
-
-function syncBarTextColor(val){
-  if(currentIdx===null)return;
-  currentData()[currentIdx].bar_text_color=val; setDirty();
-  const p=document.getElementById('barTextPicker'), t=document.getElementById('barTextText');
-  if(p)p.value=val; if(t)t.value=val;
-  const pnum=document.getElementById('coverPNum'); if(pnum)pnum.style.color=val;
-  const pname=document.getElementById('coverPName'); if(pname)pname.style.color=val;
-}
-
-function refreshCoverPreview(){
-  if(currentIdx===null)return;
-  const a=currentData()[currentIdx];
-  const img=document.getElementById('coverPreviewImg'); if(img)img.src=a.photo||'';
-  const pnum=document.getElementById('coverPNum'); if(pnum)pnum.textContent=padNum(a.album_number);
-  const pname=document.getElementById('coverPName'); if(pname)pname.textContent=a.artist||'';
-}
+function syncBarColor(val){ if(currentIdx===null)return; currentData()[currentIdx].bar_color=val; setDirty(); const p=document.getElementById('barColorPicker'),t=document.getElementById('barColorText');if(p)p.value=val;if(t)t.value=val; const bar=document.getElementById('coverBarPreview');if(bar)bar.style.background=val; }
+function syncBarTextColor(val){ if(currentIdx===null)return; currentData()[currentIdx].bar_text_color=val; setDirty(); const p=document.getElementById('barTextPicker'),t=document.getElementById('barTextText');if(p)p.value=val;if(t)t.value=val; const pnum=document.getElementById('coverPNum');if(pnum)pnum.style.color=val; const pname=document.getElementById('coverPName');if(pname)pname.style.color=val; }
+function refreshCoverPreview(){ if(currentIdx===null)return; const a=currentData()[currentIdx]; const img=document.getElementById('coverPreviewImg');if(img)img.src=a.photo||''; const pnum=document.getElementById('coverPNum');if(pnum)pnum.textContent=padNum(a.album_number); const pname=document.getElementById('coverPName');if(pname)pname.textContent=a.artist||''; }
 
 function renderEditorGen2(a,idx){
   const albumId=(a.album_url||'').match(/\/album\/([^/]+)/)?.[1];
@@ -339,95 +360,57 @@ function renderEditorGen2(a,idx){
   const social=a.social||{};
   const tracks=[...(a.tracks||[])]; while(tracks.length<11)tracks.push({url:'',name:'',track_artist:'',desc:''});
   const isCurrent=!!a.is_current,isHidden=!!a.is_hidden;
-
   document.getElementById('editor').innerHTML=`
-    <div class="ed-title">${esc(a.artist)}</div>
-    <div class="ed-sub">${esc(a.real_name||'')} . ${esc(a.date||'')}</div>
+    <div class="ed-title">${esc(a.artist)}</div><div class="ed-sub">${esc(a.real_name||'')} . ${esc(a.date||'')}</div>
     <div style="margin-bottom:28px;display:flex;gap:8px">
-      <button onclick="toggleCurrent()" style="font-family:var(--block);font-size:13px;letter-spacing:.1em;padding:8px 20px;border:none;cursor:pointer;${isCurrent?'background:var(--accent);color:var(--bg)':'background:var(--surface);border:1px solid var(--border);color:var(--muted)'}">
-        ${isCurrent?'CURRENT FEATURED':'SET AS CURRENT FEATURED'}
-      </button>
-      <button onclick="toggleHidden()" style="font-family:var(--block);font-size:13px;letter-spacing:.1em;padding:8px 20px;border:none;cursor:pointer;${isHidden?'background:var(--red);color:#fff':'background:var(--surface);border:1px solid var(--border);color:var(--muted)'}">
-        ${isHidden?'HIDDEN':'SET AS HIDDEN'}
-      </button>
+      <button onclick="toggleCurrent()" style="font-family:var(--block);font-size:13px;letter-spacing:.1em;padding:8px 20px;border:none;cursor:pointer;${isCurrent?'background:var(--accent);color:var(--bg)':'background:var(--surface);border:1px solid var(--border);color:var(--muted)'}"> ${isCurrent?'CURRENT FEATURED':'SET AS CURRENT FEATURED'}</button>
+      <button onclick="toggleHidden()" style="font-family:var(--block);font-size:13px;letter-spacing:.1em;padding:8px 20px;border:none;cursor:pointer;${isHidden?'background:var(--red);color:#fff':'background:var(--surface);border:1px solid var(--border);color:var(--muted)'}"> ${isHidden?'HIDDEN':'SET AS HIDDEN'}</button>
     </div>
-    <div class="ed-section">
-      <div class="ed-section-title">Basic Info</div>
-      <div class="fields-2col">
-        <div class="field-row"><div class="field-label">Artist Name</div><input class="field-input" value="${esc(a.artist)}" onchange="save('artist',this.value)"></div>
-        <div class="field-row"><div class="field-label">Real Name</div><input class="field-input" value="${esc(a.real_name||'')}" onchange="save('real_name',this.value)"></div>
-        <div class="field-row"><div class="field-label">Date (YYYY-MM-DD)</div><input class="field-input" value="${esc(a.date||'')}" onchange="save('date',this.value)"></div>
-        <div class="field-row"><div class="field-label">Album Number</div><input class="field-input" type="number" value="${a.album_number||''}" onchange="save('album_number',this.value?parseInt(this.value):null)"></div>
-        <div class="field-row"><div class="field-label">Artist Photo URL</div><input class="field-input" value="${esc(a.photo||'')}" onchange="save('photo',this.value)"></div>
-        <div class="field-row">
-          <div class="field-label">Photo Position</div>
-          <div style="display:flex;gap:8px">
-            <input class="field-input" style="flex:1" value="${esc(a.photo_position||'top')}" onchange="save('photo_position',this.value)">
-            <button onclick="save('photo_position','top');this.previousElementSibling.value='top'" style="background:var(--surface);border:1px solid var(--border);color:var(--muted);font-family:var(--mono);font-size:10px;padding:0 10px;cursor:pointer;">top</button>
-            <button onclick="save('photo_position','center');this.previousElementSibling.previousElementSibling.value='center'" style="background:var(--surface);border:1px solid var(--border);color:var(--muted);font-family:var(--mono);font-size:10px;padding:0 10px;cursor:pointer;">center</button>
-          </div>
-        </div>
-        <div class="field-row"><div class="field-label">Audiotool Profile URL</div><input class="field-input" value="${esc(a.at_profile||'')}" onchange="save('at_profile',this.value)"></div>
-        <div class="field-row"><div class="field-label">Album URL</div><input class="field-input" value="${esc(a.album_url||'')}" onchange="save('album_url',this.value)"></div>
-        <div class="field-row"><div class="field-label">Cover URL (override)</div><input class="field-input" value="${esc(a.cover_url||'')}" onchange="save('cover_url',this.value)"></div>
-        <div class="field-row"><div class="field-label">Board Post URL</div><input class="field-input" value="${esc(a.board_url||'')}" onchange="save('board_url',this.value)"></div>
-      </div>
-    </div>
-    <div class="ed-section">
-      <div class="ed-section-title">Texts</div>
+    <div class="ed-section"><div class="ed-section-title">Basic Info</div><div class="fields-2col">
+      <div class="field-row"><div class="field-label">Artist Name</div><input class="field-input" value="${esc(a.artist)}" onchange="save('artist',this.value)"></div>
+      <div class="field-row"><div class="field-label">Real Name</div><input class="field-input" value="${esc(a.real_name||'')}" onchange="save('real_name',this.value)"></div>
+      <div class="field-row"><div class="field-label">Date (YYYY-MM-DD)</div><input class="field-input" value="${esc(a.date||'')}" onchange="save('date',this.value)"></div>
+      <div class="field-row"><div class="field-label">Album Number</div><input class="field-input" type="number" value="${a.album_number||''}" onchange="save('album_number',this.value?parseInt(this.value):null)"></div>
+      <div class="field-row"><div class="field-label">Artist Photo URL</div><input class="field-input" value="${esc(a.photo||'')}" onchange="save('photo',this.value)"></div>
+      <div class="field-row"><div class="field-label">Photo Position</div><div style="display:flex;gap:8px"><input class="field-input" style="flex:1" value="${esc(a.photo_position||'top')}" onchange="save('photo_position',this.value)"><button onclick="save('photo_position','top');this.previousElementSibling.value='top'" style="background:var(--surface);border:1px solid var(--border);color:var(--muted);font-family:var(--mono);font-size:10px;padding:0 10px;cursor:pointer;">top</button><button onclick="save('photo_position','center');this.previousElementSibling.previousElementSibling.value='center'" style="background:var(--surface);border:1px solid var(--border);color:var(--muted);font-family:var(--mono);font-size:10px;padding:0 10px;cursor:pointer;">center</button></div></div>
+      <div class="field-row"><div class="field-label">Audiotool Profile URL</div><input class="field-input" value="${esc(a.at_profile||'')}" onchange="save('at_profile',this.value)"></div>
+      <div class="field-row"><div class="field-label">Album URL</div><input class="field-input" value="${esc(a.album_url||'')}" onchange="save('album_url',this.value)"></div>
+      <div class="field-row"><div class="field-label">Cover URL (override)</div><input class="field-input" value="${esc(a.cover_url||'')}" onchange="save('cover_url',this.value)"></div>
+      <div class="field-row"><div class="field-label">Board Post URL</div><input class="field-input" value="${esc(a.board_url||'')}" onchange="save('board_url',this.value)"></div>
+    </div></div>
+    <div class="ed-section"><div class="ed-section-title">Texts</div>
       <div class="field-row"><div class="field-label">Intro</div><textarea class="field-input" style="min-height:100px" onchange="save('intro',this.value)">${esc(a.intro||'')}</textarea></div>
       <div class="field-row"><div class="field-label">About</div><textarea class="field-input" style="min-height:80px" onchange="save('about',this.value)">${esc(a.about||'')}</textarea></div>
     </div>
-    <div class="ed-section">
-      <div class="ed-section-title">Interview Q&As</div>
-      <div id="qaList">${renderQAs(a.interview||[])}</div>
-      <button class="add-btn" onclick="addQA()">+ ADD Q&A</button>
-    </div>
-    <div class="ed-section">
-      <div class="ed-section-title">Social Links</div>
-      <div class="fields-2col">
-        <div class="field-row"><div class="field-label">SoundCloud</div><input class="field-input" value="${esc(a.soundcloud||social.soundcloud||'')}" onchange="saveSocial('soundcloud',this.value,true)"></div>
-        <div class="field-row"><div class="field-label">Spotify</div><input class="field-input" value="${esc(social.spotify||'')}" onchange="saveSocial('spotify',this.value)"></div>
-        <div class="field-row"><div class="field-label">Instagram</div><input class="field-input" value="${esc(social.instagram||'')}" onchange="saveSocial('instagram',this.value)"></div>
-        <div class="field-row"><div class="field-label">Linktree</div><input class="field-input" value="${esc(social.linktree||'')}" onchange="saveSocial('linktree',this.value)"></div>
-        <div class="field-row"><div class="field-label">Bandcamp</div><input class="field-input" value="${esc(social.bandcamp||'')}" onchange="saveSocial('bandcamp',this.value)"></div>
-        <div class="field-row"><div class="field-label">Twitter / X</div><input class="field-input" value="${esc(social.twitter||'')}" onchange="saveSocial('twitter',this.value)"></div>
-        <div class="field-row"><div class="field-label">YouTube</div><input class="field-input" value="${esc(social.youtube||'')}" onchange="saveSocial('youtube',this.value)"></div>
-      </div>
-    </div>
-    <div class="ed-section">
-      <div class="ed-section-title">Curated Tracks (max. 11)</div>
-      <div id="trackList">${renderTracks(tracks)}</div>
-    </div>
-    <div class="ed-section">
-      <div class="ed-section-title">Color Preview</div>
-      <div class="color-preview"><div class="color-preview-bg" id="previewBg"></div><div class="color-preview-text" id="previewText">${esc(a.artist.toUpperCase())}</div></div>
-    </div>
-    <div class="ed-section">
-      <div class="ed-section-title">Images - Click to pick color</div>
+    <div class="ed-section"><div class="ed-section-title">Interview Q&As</div><div id="qaList">${renderQAs(a.interview||[])}</div><button class="add-btn" onclick="addQA()">+ ADD Q&A</button></div>
+    <div class="ed-section"><div class="ed-section-title">Social Links</div><div class="fields-2col">
+      <div class="field-row"><div class="field-label">SoundCloud</div><input class="field-input" value="${esc(a.soundcloud||social.soundcloud||'')}" onchange="saveSocial('soundcloud',this.value,true)"></div>
+      <div class="field-row"><div class="field-label">Spotify</div><input class="field-input" value="${esc(social.spotify||'')}" onchange="saveSocial('spotify',this.value)"></div>
+      <div class="field-row"><div class="field-label">Instagram</div><input class="field-input" value="${esc(social.instagram||'')}" onchange="saveSocial('instagram',this.value)"></div>
+      <div class="field-row"><div class="field-label">Linktree</div><input class="field-input" value="${esc(social.linktree||'')}" onchange="saveSocial('linktree',this.value)"></div>
+      <div class="field-row"><div class="field-label">Bandcamp</div><input class="field-input" value="${esc(social.bandcamp||'')}" onchange="saveSocial('bandcamp',this.value)"></div>
+      <div class="field-row"><div class="field-label">Twitter / X</div><input class="field-input" value="${esc(social.twitter||'')}" onchange="saveSocial('twitter',this.value)"></div>
+      <div class="field-row"><div class="field-label">YouTube</div><input class="field-input" value="${esc(social.youtube||'')}" onchange="saveSocial('youtube',this.value)"></div>
+    </div></div>
+    <div class="ed-section"><div class="ed-section-title">Curated Tracks (max. 11)</div><div id="trackList">${renderTracks(tracks)}</div></div>
+    <div class="ed-section"><div class="ed-section-title">Color Preview</div><div class="color-preview"><div class="color-preview-bg" id="previewBg"></div><div class="color-preview-text" id="previewText">${esc(a.artist.toUpperCase())}</div></div></div>
+    <div class="ed-section"><div class="ed-section-title">Images - Click to pick color</div>
       <div class="preview-grid">
         ${coverUrl?`<div><div class="preview-label">Album Cover</div><div class="preview-img-wrap"><img src="${coverUrl}" class="preview-img" id="coverImg" onclick="pickFromImage(event,'coverImg')" onerror="this.style.opacity='.3'"><canvas id="coverCanvas"></canvas></div></div>`:'<div></div>'}
         ${a.photo?`<div><div class="preview-label">Artist Photo</div><div class="preview-img-wrap"><img src="${esc(a.photo)}" class="preview-img" id="photoImg" onclick="pickFromImage(event,'photoImg')" onerror="this.style.opacity='.3'"><canvas id="photoCanvas"></canvas></div></div>`:''}
       </div>
-      <div style="font-size:11px;color:var(--dim);margin-bottom:16px">
-        Last picked: <span id="pickedColor">-</span>
-        <button onclick="assignColorBoth()" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;margin-left:8px;">TO BACKGROUND + HEADLINES</button>
-      </div>
+      <div style="font-size:11px;color:var(--dim);margin-bottom:16px">Last picked: <span id="pickedColor">-</span><button onclick="assignColorBoth()" style="background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 10px;cursor:pointer;margin-left:8px;">TO BACKGROUND + HEADLINES</button></div>
     </div>
-    <div class="ed-section">
-      <div class="ed-section-title">Colors</div>
-      <div class="color-grid">
-        <div class="color-field"><label>Background + Headlines</label><div class="color-picker-row"><input type="color" id="color1Picker" value="${c1}" oninput="syncColor('color1',this.value);syncColor('color_accent',this.value)"><input type="text" id="color1Text" value="${c1}" oninput="syncColorText('color1',this.value)" maxlength="7"></div></div>
-        <div class="color-field"><label>Track Desc Background</label><div class="color-picker-row"><input type="color" id="desc_bgPicker" value="${a.desc_bg||'#e8e4dc'}" oninput="syncColor('desc_bg',this.value)"><input type="text" id="desc_bgText" value="${a.desc_bg||'#e8e4dc'}" oninput="syncColorText('desc_bg',this.value)" maxlength="7"></div></div>
-        <div class="color-field"><label>Links Bar Color</label><div class="color-picker-row"><input type="color" id="links_bar_colorPicker" value="${a.links_bar_color||'#888888'}" oninput="syncColor('links_bar_color',this.value)"><input type="text" id="links_bar_colorText" value="${a.links_bar_color||'#888888'}" oninput="syncColorText('links_bar_color',this.value)" maxlength="7"></div></div>
-      </div>
-    </div>
+    <div class="ed-section"><div class="ed-section-title">Colors</div><div class="color-grid">
+      <div class="color-field"><label>Background + Headlines</label><div class="color-picker-row"><input type="color" id="color1Picker" value="${c1}" oninput="syncColor('color1',this.value);syncColor('color_accent',this.value)"><input type="text" id="color1Text" value="${c1}" oninput="syncColorText('color1',this.value)" maxlength="7"></div></div>
+      <div class="color-field"><label>Track Desc Background</label><div class="color-picker-row"><input type="color" id="desc_bgPicker" value="${a.desc_bg||'#e8e4dc'}" oninput="syncColor('desc_bg',this.value)"><input type="text" id="desc_bgText" value="${a.desc_bg||'#e8e4dc'}" oninput="syncColorText('desc_bg',this.value)" maxlength="7"></div></div>
+      <div class="color-field"><label>Links Bar Color</label><div class="color-picker-row"><input type="color" id="links_bar_colorPicker" value="${a.links_bar_color||'#888888'}" oninput="syncColor('links_bar_color',this.value)"><input type="text" id="links_bar_colorText" value="${a.links_bar_color||'#888888'}" oninput="syncColorText('links_bar_color',this.value)" maxlength="7"></div></div>
+    </div></div>
     <div style="padding-bottom:60px">
       <button class="save-btn" onclick="saveArtist()">SAVE ARTIST</button>
       <button onclick="deleteArtist()" style="background:none;border:1px solid var(--red);color:var(--red);font-family:var(--block);font-size:14px;letter-spacing:.1em;padding:10px 20px;cursor:pointer;margin-left:12px;">DELETE</button>
       <span class="save-status" id="saveStatus"></span>
-    </div>
-  `;
+    </div>`;
   updatePreview(c1,c2,ca);
 }
 
@@ -451,14 +434,11 @@ async function lookupTrack(i){
   const btn=document.getElementById(`tlookup${i}`); btn.disabled=true;btn.textContent='...';
   try{
     const r=await fetch(`https://api.audiotool.com/track/${tid}/eds/`);
-    const xml=await r.text();
-    const doc=new DOMParser().parseFromString(xml,'text/xml');
-    const el=doc.querySelector('track');
+    const xml=await r.text(); const doc=new DOMParser().parseFromString(xml,'text/xml'); const el=doc.querySelector('track');
     const name=el?.getAttribute('title')||tid, artist=el?.getAttribute('user-name')||'';
     const trackUrl=`https://www.audiotool.com/track/${tid}/`;
     saveTrackField(i,'url',trackUrl);saveTrackField(i,'name',name);saveTrackField(i,'track_artist',artist);
-    document.getElementById(`tname${i}`).value=name; document.getElementById(`tartist${i}`).value=artist;
-    document.getElementById(`turl${i}`).value=trackUrl;
+    document.getElementById(`tname${i}`).value=name; document.getElementById(`tartist${i}`).value=artist; document.getElementById(`turl${i}`).value=trackUrl;
     document.getElementById(`tnd${i}`).textContent=name; document.getElementById(`tad${i}`).textContent=artist;
     const cov=document.getElementById(`tc${i}`); if(cov){cov.src=`https://api.audiotool.com/track/${tid}/cover/256.jpg`;cov.style.display='block';}
     showToast(name);
@@ -472,39 +452,24 @@ function saveSocial(f,v,alsoRoot=false){ if(currentIdx===null)return; if(!curren
 function deleteArtist(){ if(currentIdx===null)return; const name=currentData()[currentIdx].artist; if(!confirm('Delete "'+name+'"?'))return; currentData().splice(currentIdx,1); currentIdx=null; document.getElementById('editor').innerHTML='<div class="empty">Artist deleted</div>'; filterArtists(); setDirty(); showToast('Deleted: '+name); }
 function toggleHidden(){ if(currentIdx===null)return; currentData()[currentIdx].is_hidden=!currentData()[currentIdx].is_hidden; setDirty(); selectArtist(currentIdx); }
 function toggleCurrent(){ if(currentIdx===null||currentGen!==2)return; const isCurrent=!data2[currentIdx].is_current; data2.forEach((a,i)=>{if(i!==currentIdx)a.is_current=false;}); data2[currentIdx].is_current=isCurrent; setDirty(); selectArtist(currentIdx); }
-
 function newArtist(){
   const isGen1=currentGen===1;
   const a=isGen1?{artist:'NEW ARTIST',real_name:'',date:new Date().toISOString().slice(0,10),album_number:currentData().length+1,at_profile:'',album_url:'',photo:'',intro:'',about:'',interview:[],tracks:[],social:{},color1:'',color2:'',color_accent:'',desc_bg:'',links_bar_color:'',bar_color:'#111111',bar_text_color:'#ffffff',is_hidden:false}:{artist:'NEW ARTIST',real_name:'',date:new Date().toISOString().slice(0,10),board_url:'',album_url:'',at_profile:'',soundcloud:'',photo:'',cover_url:'',intro:'',about:'',interview:[],tracks:[],social:{},color1:'',color2:'',color_accent:'',desc_bg:'',is_hidden:false};
   currentData().push(a); currentIdx=currentData().length-1; filterArtists(); selectArtist(currentIdx); setDirty(); showToast('New artist created');
 }
-
 function pickFromImage(e,imgId){
-  const img=document.getElementById(imgId);
-  const canvas=document.getElementById(imgId.replace('Img','Canvas'));
-  if(!canvas)return;
-  const ctx=canvas.getContext('2d');
-  const rect=img.getBoundingClientRect();
-  const x=Math.round((e.clientX-rect.left)*(img.naturalWidth/rect.width));
-  const y=Math.round((e.clientY-rect.top)*(img.naturalHeight/rect.height));
-  canvas.width=img.naturalWidth||img.width;canvas.height=img.naturalHeight||img.height;
-  try{
-    ctx.drawImage(img,0,0);
-    const px=ctx.getImageData(x,y,1,1).data;
-    const hex='#'+[px[0],px[1],px[2]].map(v=>v.toString(16).padStart(2,'0')).join('');
-    lastPickedColor=hex;
-    const el=document.getElementById('pickedColor');
-    el.textContent=hex;el.style.color=hex;el.style.background='#1c1c1c';el.style.padding='2px 6px';
-  }catch(e){ const el=document.getElementById('pickedColor'); el.textContent='CORS blocked';el.style.color='var(--red)'; }
+  const img=document.getElementById(imgId); const canvas=document.getElementById(imgId.replace('Img','Canvas')); if(!canvas)return;
+  const ctx=canvas.getContext('2d'); const rect=img.getBoundingClientRect();
+  const x=Math.round((e.clientX-rect.left)*(img.naturalWidth/rect.width)); const y=Math.round((e.clientY-rect.top)*(img.naturalHeight/rect.height));
+  canvas.width=img.naturalWidth||img.width; canvas.height=img.naturalHeight||img.height;
+  try{ ctx.drawImage(img,0,0); const px=ctx.getImageData(x,y,1,1).data; const hex='#'+[px[0],px[1],px[2]].map(v=>v.toString(16).padStart(2,'0')).join(''); lastPickedColor=hex; const el=document.getElementById('pickedColor'); el.textContent=hex;el.style.color=hex;el.style.background='#1c1c1c';el.style.padding='2px 6px'; }
+  catch(e){ const el=document.getElementById('pickedColor'); el.textContent='CORS blocked';el.style.color='var(--red)'; }
 }
-
 function assignColorBoth(){ if(!lastPickedColor)return; syncColor('color1',lastPickedColor);syncColor('color2',lastPickedColor);syncColor('color_accent',lastPickedColor); const p=document.getElementById('color1Picker'),t=document.getElementById('color1Text'); if(p)p.value=lastPickedColor;if(t)t.value=lastPickedColor; }
 function syncColor(f,v){ if(currentIdx===null)return; currentData()[currentIdx][f]=v; const t=document.getElementById(`${f}Text`),p=document.getElementById(`${f}Picker`); if(t)t.value=v;if(p)p.value=v; const c1=currentData()[currentIdx].color1||'#333',c2=currentData()[currentIdx].color2||'#333',ca=currentData()[currentIdx].color_accent||c1; updatePreview(c1,c2,ca); setDirty(); }
 function syncColorText(f,v){ if(v.match(/^#[0-9a-fA-F]{6}$/))syncColor(f,v); }
 function updatePreview(c1,c2,ca){ const bg=document.getElementById('previewBg'),txt=document.getElementById('previewText'); if(bg)bg.style.background=`linear-gradient(to right,${c1} 0%,#141414 40%,#141414 60%,${c2} 100%)`;if(txt)txt.style.color=ca; }
-
 function saveArtist(){ if(currentIdx===null)return; if(currentData()[currentIdx].tracks)currentData()[currentIdx].tracks=currentData()[currentIdx].tracks.filter(t=>t.url&&t.url.trim()); setDirty(); filterArtists(); const s=document.getElementById('saveStatus'); s.textContent='Saved locally - click PUSH TO GITHUB to deploy';s.style.color='var(--green)'; showToast('Saved locally'); }
-
 async function saveAll(){
   const btn=document.getElementById('saveAllBtn'); btn.disabled=true; setStatus('Pushing...');
   const pushes=[];
@@ -513,15 +478,12 @@ async function saveAll(){
   try{ await Promise.all(pushes); setStatus('Pushed! GitHub Pages deploying...'); showToast('PUSHED TO GITHUB'); }
   catch(e){ setStatus('Push failed: '+e.message); showToast('PUSH FAILED',true); btn.disabled=false; }
 }
-
 async function pushData(dataset,path,sha,onSuccess){
   const content=btoa(unescape(encodeURIComponent(JSON.stringify(dataset,null,2))));
   const r=await fetch(`https://api.github.com/repos/${GITHUB_REPO}/contents/${path}`,{method:'PUT',headers:{Authorization:`token ${GITHUB_TOKEN}`,Accept:'application/vnd.github.v3+json','Content-Type':'application/json'},body:JSON.stringify({message:'Update artist data via admin',content,sha})});
   const j=await r.json();
-  if(j.content)onSuccess(j.content.sha);
-  else throw new Error(j.message||'Unknown error');
+  if(j.content)onSuccess(j.content.sha); else throw new Error(j.message||'Unknown error');
 }
-
 function showToast(m,isErr=false){ const t=document.getElementById('toast');t.textContent=m;t.className=isErr?'show error':'show';setTimeout(()=>t.className='',2800); }
 </script>
 </body>
