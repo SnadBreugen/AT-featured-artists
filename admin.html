@@ -112,7 +112,7 @@
 </div>
 <div id="mainScreen">
   <header>
-    <div class="hlogo">AT // ADMIN <span style="font-size:11px;color:var(--dim);letter-spacing:.05em">v5</span></div>
+    <div class="hlogo">AT // ADMIN <span style="font-size:11px;color:var(--dim);letter-spacing:.05em">v6</span></div>
     <div class="hright">
       <span class="status-msg" id="statusMsg"></span>
       <a id="previewLink" href="#" target="_blank" style="font-family:var(--block);font-size:13px;letter-spacing:.1em;color:var(--muted);text-decoration:none;display:none;">PREVIEW ↗</a>
@@ -342,6 +342,7 @@ function renderEditorGen1(a,idx){
       <div class="field-row"><div class="field-label">Artist Photo URL</div><input class="field-input" value="${esc(a.photo||'')}" onchange="save('photo',this.value);refreshCoverPreview()"></div>
       <div class="field-row"><div class="field-label">Audiotool Profile URL</div><input class="field-input" value="${esc(a.at_profile||'')}" onchange="save('at_profile',this.value)"></div>
       <div class="field-row"><div class="field-label">Album URL</div><input class="field-input" value="${esc(a.album_url||'')}" onchange="save('album_url',this.value)"></div>
+      <div class="field-row"><div class="field-label">Cover URL (Profilbild)</div><input class="field-input" value="${esc(a.cover_url||'')}" onchange="save('cover_url',this.value);refreshCoverPreview()"></div>
     </div></div>
     <div class="ed-section"><div class="ed-section-title">Social Links</div><div class="fields-2col">
       <div class="field-row"><div class="field-label">SoundCloud</div><input class="field-input" value="${esc(social.soundcloud||a.soundcloud||'')}" onchange="saveSocial('soundcloud',this.value,true)"></div>
@@ -358,7 +359,7 @@ function renderEditorGen1(a,idx){
     <div class="ed-section"><div class="ed-section-title">Interview Q&As</div><div id="qaList">${renderQAs(a.interview||[])}</div><button class="add-btn" onclick="addQA()">+ ADD Q&A</button></div>
     <div class="ed-section"><div class="ed-section-title">Cover Preview</div>
       <div class="cover-preview-wrap" id="coverPreviewWrap">
-        ${a.photo?`<img src="${esc(a.photo)}" id="coverPreviewImg" onerror="this.style.opacity='.2'">`:`<div class="no-photo"></div>`}
+        ${a.cover_url?`<img src="${esc(a.cover_url)}" id="coverPreviewImg" onerror="this.style.opacity='.2'">`:`<div class="no-photo"></div>`}
         <div class="cover-bar-preview" id="coverBarPreview" style="background:${barColor}">
           <span class="p-num" id="coverPNum" style="color:${barText}">${padNum(a.album_number)}</span>
           <span class="p-name" id="coverPName" style="color:${barText}">${esc(a.artist)}</span>
@@ -389,7 +390,7 @@ function renderEditorGen1(a,idx){
 
 function syncBarColor(val){ if(currentIdx===null)return; currentData()[currentIdx].bar_color=val; setDirty(); const p=document.getElementById('barColorPicker'),t=document.getElementById('barColorText');if(p)p.value=val;if(t)t.value=val; const bar=document.getElementById('coverBarPreview');if(bar)bar.style.background=val; }
 function syncBarTextColor(val){ if(currentIdx===null)return; currentData()[currentIdx].bar_text_color=val; setDirty(); const p=document.getElementById('barTextPicker'),t=document.getElementById('barTextText');if(p)p.value=val;if(t)t.value=val; const pnum=document.getElementById('coverPNum');if(pnum)pnum.style.color=val; const pname=document.getElementById('coverPName');if(pname)pname.style.color=val; }
-function refreshCoverPreview(){ if(currentIdx===null)return; const a=currentData()[currentIdx]; const img=document.getElementById('coverPreviewImg');if(img)img.src=a.photo||''; const pnum=document.getElementById('coverPNum');if(pnum)pnum.textContent=padNum(a.album_number); const pname=document.getElementById('coverPName');if(pname)pname.textContent=a.artist||''; }
+function refreshCoverPreview(){ if(currentIdx===null)return; const a=currentData()[currentIdx]; const img=document.getElementById('coverPreviewImg');if(img)img.src=a.cover_url||''; const pnum=document.getElementById('coverPNum');if(pnum)pnum.textContent=padNum(a.album_number); const pname=document.getElementById('coverPName');if(pname)pname.textContent=a.artist||''; }
 
 function renderEditorGen2(a,idx){
   const albumId=(a.album_url||'').match(/\/album\/([^/]+)/)?.[1];
