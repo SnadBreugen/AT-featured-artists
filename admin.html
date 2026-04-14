@@ -197,17 +197,17 @@ function logLine(msg,type=''){
 
 async function fetchAlbum(albumUrl){
   const albumId=albumUrl.replace(/\/$/,'').split('/').pop();
-  // Try /tracks/ endpoint which lists tracks in an album
-  const r=await fetch(`https://api.audiotool.com/album/${albumId}/tracks/`);
+  // Use the eds endpoint which works for albums too
+  const r=await fetch(`https://api.audiotool.com/album/${albumId}/eds/`);
   if(!r.ok) throw new Error(`HTTP ${r.status}`);
   const xml=await r.text();
   const doc=new DOMParser().parseFromString(xml,'text/xml');
-  // Get artist from first track or dir element
-  const dirEl=doc.querySelector('dir');
+  // Try album element first, then dir
+  const albumEl=doc.querySelector('album')||doc.querySelector('dir');
   const firstTrack=doc.querySelector('track');
-  if(!firstTrack&&!dirEl) throw new Error('No data');
-  const artistName=dirEl?.getAttribute('user-name')||firstTrack?.getAttribute('user-name')||'';
-  const userKey=dirEl?.getAttribute('user-key')||firstTrack?.getAttribute('user-key')||'';
+  if(!albumEl&&!firstTrack) throw new Error('No data');
+  const artistName=albumEl?.getAttribute('user-name')||firstTrack?.getAttribute('user-name')||'';
+  const userKey=albumEl?.getAttribute('user-key')||firstTrack?.getAttribute('user-key')||'';
   const atProfile=userKey?`https://www.audiotool.com/user/${userKey}/`:'';
   const tracks=[];
   doc.querySelectorAll('track').forEach(t=>{
@@ -217,6 +217,7 @@ async function fetchAlbum(albumUrl){
     const desc=t.getAttribute('description')||'';
     if(key) tracks.push({url:`https://www.audiotool.com/track/${key}/`,name,track_artist:trackArtist,desc});
   });
+  if(!artistName&&!tracks.length) throw new Error('Empty response');
   return {artistName,atProfile,tracks:tracks.slice(0,11)};
 }
 
