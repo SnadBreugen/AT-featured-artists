@@ -1,8 +1,8 @@
 import urllib.request
 import json
 import time
-import xml.etree.ElementTree as ET
 import re
+import datetime
 
 albums = [
     "https://www.audiotool.com/album/9pnx5/",
@@ -120,68 +120,99 @@ HEADERS = {
 
 def fetch_url(url, headers=None):
     req = urllib.request.Request(url, headers=headers or HEADERS)
-    with urllib.request.urlopen(req, timeout=15) as r:
+    with urllib.request.urlopen(req, timeout=20) as r:
         return r.read().decode('utf-8', errors='replace')
 
-def fetch_track(track_id):
-    url = f'https://www.audiotool.com/track/{track_id}/details.json'
+def fetch_user_avatar(user_key):
+    # Use old api.audiotool.com which has CORS and works without login
     try:
-        data = json.loads(fetch_url(url))
-        name = data.get('name', track_id)
-        creator_name = data.get('user', {}).get('name', '')
-        creator_key = data.get('user', {}).get('key', '')
-        # description not in details.json, try tracklist description from HTML
-        desc = data.get('description', '')
-        return {
-            'url': f'https://www.audiotool.com/track/{track_id}/',
-            'name': name,
-            'track_artist': creator_name,
-            'desc': desc,
-            'creator_key': creator_key,
-        }
-    except Exception as e:
-        return None
+        url = f'https://api.audiotool.com/user/{user_key}/'
+        xml = fetch_url(url, {'User-Agent': 'Mozilla/5.0'})
+        # Extract avatar URL from XML
+        m = re.search(r'avatarURL[^>]*>([^<]+)', xml)
+        if m:
+            avatar = m.group(1).strip()
+            if avatar and not avatar.startswith('http'):
+                avatar = 'https:' + avatar
+            # Try to get larger version
+            avatar = re.sub(r'/\d+/', '/512/', avatar)
+            return avatar
+    except:
+        pass
+    return ''
 
 def fetch_album(album_url):
     html = fetch_url(album_url)
 
-    # Extract track IDs - audiotool uses /track/{id}/ pattern in HTML
-    track_ids = list(dict.fromkeys(re.findall(r'data-track-key="([a-zA-Z0-9_-]+)"', html)))
-    track_ids = [t for t in track_ids if len(t) > 3][:11]
-
-    if not track_ids:
-        raise Exception(f'No track IDs found - HTML length: {len(html)}, sample: {html[400:450]}')
-
-    # Extract user key
-    user_keys = re.findall(r'["\'/]user/([a-z0-9_-]+)/', html)
-    user_key = user_keys[0] if user_keys else ''
-    at_profile = f'https://www.audiotool.com/user/{user_key}/' if user_key else ''
-
-    # Extract artist name from album title "Edition Audiotool: {Artist}"
+    # Extract artist name from title "Edition Audiotool: {Artist}"
     artist_name = ''
     title_match = re.search(r'Edition Audiotool:\s*([^<"]+)', html)
     if title_match:
         artist_name = title_match.group(1).strip()
 
-    # Fetch each track
+    # Extract album cover image (artist portrait) - og:image or first album cover
+    photo = ''
+    og_image = re.search(r'<meta[^>]+property="og:image"[^>]+content="([^"]+)"', html)
+    if og_image:
+        photo = og_image.group(1)
+    if not photo:
+        # Try cover image from CDN
+        cover_match = re.search(r'(https://at-cdn[^"]+cover[^"]+\.(?:jpg|png|jpeg))', html)
+        if cover_match:
+            photo = cover_match.group(1)
+
+    # Extract date from album HTML
+    date = ''
+    date_match = re.search(r'"datePublished"\s*:\s*"(\d{4}-\d{2}-\d{2})', html)
+    if not date_match:
+        date_match = re.search(r'(\d{4}-\d{2}-\d{2})', html)
+    if date_match:
+        date = date_match.group(1)
+
+    # Extract track IDs from data-track-key attributes
+    track_ids = list(dict.fromkeys(re.findall(r'data-track-key="([a-zA-Z0-9_-]+)"', html)))
+    track_ids = [t for t in track_ids if len(t) > 3][:11]
+
+    if not track_ids:
+        raise Exception('No track IDs found in HTML')
+
+    # Extract track names and artists from HTML
+    # Pattern: track link and author link side by side
     tracks = []
-    for tid in track_ids:
-        t = fetch_track(tid)
-        if t:
-            if not at_profile and t['creator_key']:
-                at_profile = f"https://www.audiotool.com/user/{t['creator_key']}/"
-            tracks.append({
-                'url': t['url'],
-                'name': t['name'],
-                'track_artist': t['track_artist'],
-                'desc': t['desc'],
-            })
-        time.sleep(0.1)
+    track_rows = re.findall(
+        r'href="/track/([a-zA-Z0-9_-]+)/"[^>]*class="[^"]*_track-name[^"]*"[^>]*>([^<]+)</a>.*?href="/user/([a-zA-Z0-9_-]+)/"',
+        html, re.DOTALL
+    )
+
+    # Get track names from title attributes or link text
+    track_names = re.findall(r'href="/track/[a-zA-Z0-9_-]+/"[^>]*>([^<]+)</a>', html)
+    track_artists = re.findall(r'class="[^"]*_author-name[^"]*"[^>]*>([^<]+)</a>', html)
+    track_user_keys = re.findall(r'href="/user/([a-zA-Z0-9_-]+)/"', html)
+
+    for idx, tid in enumerate(track_ids):
+        name = track_names[idx] if idx < len(track_names) else tid
+        track_artist = track_artists[idx] if idx < len(track_artists) else ''
+        tracks.append({
+            'url': f'https://www.audiotool.com/track/{tid}/',
+            'name': name.strip(),
+            'track_artist': track_artist.strip(),
+            'desc': '',
+        })
 
     if not tracks:
-        raise Exception('No tracks loaded from API')
+        raise Exception('No tracks parsed from HTML')
 
-    return artist_name, at_profile, tracks
+    # Get at_profile from last track's user - last user key in HTML
+    at_profile = ''
+    cover_url = ''
+    if track_user_keys:
+        # Last user key belongs to last track's artist
+        last_user_key = track_user_keys[-1]
+        at_profile = f'https://www.audiotool.com/user/{last_user_key}/'
+        # Fetch avatar for cover
+        cover_url = fetch_user_avatar(last_user_key)
+
+    return artist_name, at_profile, date, photo, cover_url, tracks
 
 # Load existing
 existing = []
@@ -192,7 +223,7 @@ try:
 except:
     print('Starting fresh')
 
-existing_by_url = {a.get('album_url','').rstrip('/'): a for a in existing}
+existing_by_url = {a.get('album_url', '').rstrip('/'): a for a in existing}
 results = []
 failed = []
 
@@ -202,25 +233,31 @@ for i, album_url in enumerate(albums):
 
     print(f'[{i+1}/{len(albums)}] {album_url}', end=' ', flush=True)
     try:
-        artist_name, at_profile, tracks = fetch_album(album_url)
+        artist_name, at_profile, date, photo, cover_url, tracks = fetch_album(album_url)
 
         if existing_entry:
-            # Update artist name and tracks, keep everything else
             existing_entry['artist'] = artist_name
             existing_entry['tracks'] = tracks
-            if not existing_entry.get('at_profile'):
+            if not existing_entry.get('at_profile') and at_profile:
                 existing_entry['at_profile'] = at_profile
+            if not existing_entry.get('photo') and photo:
+                existing_entry['photo'] = photo
+            if not existing_entry.get('cover_url') and cover_url:
+                existing_entry['cover_url'] = cover_url
+            if not existing_entry.get('date') and date:
+                existing_entry['date'] = date
             results.append(existing_entry)
-            print(f'UPDATED - {artist_name} ({len(tracks)} tracks)')
+            print(f'UPDATED - {artist_name} ({len(tracks)} tracks) photo={bool(photo)} cover={bool(cover_url)} date={date}')
         else:
             entry = {
                 'artist': artist_name,
                 'real_name': '',
-                'date': '',
+                'date': date,
                 'album_number': len(results) + 1,
                 'at_profile': at_profile,
                 'album_url': album_url,
-                'photo': '',
+                'photo': photo,
+                'cover_url': cover_url,
                 'intro': '',
                 'about': '',
                 'interview': [],
@@ -232,14 +269,15 @@ for i, album_url in enumerate(albums):
                 'is_hidden': False
             }
             results.append(entry)
-            print(f'NEW - {artist_name} ({len(tracks)} tracks)')
+            print(f'NEW - {artist_name} ({len(tracks)} tracks) photo={bool(photo)} cover={bool(cover_url)} date={date}')
+
     except Exception as e:
         print(f'FAILED - {e}')
         if existing_entry:
             results.append(existing_entry)
         failed.append(album_url)
 
-    time.sleep(0.4)
+    time.sleep(0.5)
 
 with open('gen1_data.json', 'w', encoding='utf-8') as f:
     json.dump(results, f, indent=2, ensure_ascii=False)
