@@ -220,16 +220,6 @@ function render(a,prev,next){
             ? `<img src="${esc(a.photo)}" alt="${esc(a.artist)}" style="object-position:${a.photo_position||'center'}" onerror="this.style.display='none'">`
             : `<div style="width:100%;aspect-ratio:1;background:var(--surface);"></div>`}
         </div>
-        <div class="cover-wrap" style="margin-top:12px">
-          ${a.cover_url
-            ? `<img src="${esc(a.cover_url)}" alt="${esc(a.artist)}" onerror="this.style.display='none'">`
-            : `<div style="width:100%;aspect-ratio:1;background:var(--surface);"></div>`}
-          <div class="cover-bar" style="--bar-color:${barColor};--bar-text:${barText}">
-            <span class="bar-num">${padNum(a.album_number)}</span>
-            <span class="bar-name">${esc(a.artist)}</span>
-          </div>
-        </div>
-        ${a.date?`<div class="cover-date">${fmtDate(a.date)}</div>`:''}
       </div>
     </section>
 
@@ -258,6 +248,19 @@ function render(a,prev,next){
               <span id="playIcon">▶</span><span id="playLabel">PLAY TRACKS</span>
             </button>
             <div class="album-player" id="albumPlayer"></div>
+          </div>
+          <div>
+            <div class="sidebar-title" style="color:${accent};border-bottom-color:${accent}">Edition Audiotool</div>
+            <div class="cover-wrap" style="margin-top:12px">
+              ${a.cover_url
+                ? `<img src="${esc(a.cover_url)}" alt="${esc(a.artist)}" onerror="this.style.display='none'">`
+                : `<div style="width:100%;aspect-ratio:1;background:var(--surface);"></div>`}
+              <div class="cover-bar" style="--bar-color:${barColor};--bar-text:${barText}">
+                <span class="bar-num">${padNum(a.album_number)}</span>
+                <span class="bar-name">${esc(a.artist)}</span>
+              </div>
+            </div>
+            ${a.date?`<div class="cover-date">${fmtDate(a.date)}</div>`:''}
           </div>
           <div>
             <div class="sidebar-title" style="color:${accent};border-bottom-color:${accent}">Curated Tracks</div>
