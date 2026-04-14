@@ -112,7 +112,7 @@
 </div>
 <div id="mainScreen">
   <header>
-    <div class="hlogo">AT // ADMIN</div>
+    <div class="hlogo">AT // ADMIN <span style="font-size:11px;color:var(--dim);letter-spacing:.05em">v4</span></div>
     <div class="hright">
       <span class="status-msg" id="statusMsg"></span>
       <a id="previewLink" href="#" target="_blank" style="font-family:var(--block);font-size:13px;letter-spacing:.1em;color:var(--muted);text-decoration:none;display:none;">PREVIEW ↗</a>
@@ -196,29 +196,61 @@ function logLine(msg,type=''){
 }
 
 async function fetchAlbum(albumUrl){
-  const albumId=albumUrl.replace(/\/$/,'').split('/').pop();
-  // Use the eds endpoint which works for albums too
-  const r=await fetch(`https://api.audiotool.com/album/${albumId}/eds/`);
+  // Load the album page HTML and parse track IDs from it
+  const r=await fetch(albumUrl);
   if(!r.ok) throw new Error(`HTTP ${r.status}`);
-  const xml=await r.text();
-  const doc=new DOMParser().parseFromString(xml,'text/xml');
-  // Try album element first, then dir
-  const albumEl=doc.querySelector('album')||doc.querySelector('dir');
-  const firstTrack=doc.querySelector('track');
-  if(!albumEl&&!firstTrack) throw new Error('No data');
-  const artistName=albumEl?.getAttribute('user-name')||firstTrack?.getAttribute('user-name')||'';
-  const userKey=albumEl?.getAttribute('user-key')||firstTrack?.getAttribute('user-key')||'';
-  const atProfile=userKey?`https://www.audiotool.com/user/${userKey}/`:'';
+  const html=await r.text();
+  const doc=new DOMParser().parseFromString(html,'text/html');
+
+  // Get artist name from page
+  const artistEl=doc.querySelector('.creator a, [class*="artist"] a, [class*="user"] a');
+  let artistName='';
+  // Try meta tags first
+  const metaAuthor=doc.querySelector('meta[name="author"], meta[property="music:musician"]');
+  if(metaAuthor) artistName=metaAuthor.getAttribute('content')||'';
+
+  // Try og:title or title
+  if(!artistName){
+    const ogTitle=doc.querySelector('meta[property="og:title"]');
+    if(ogTitle) artistName=ogTitle.getAttribute('content')||'';
+  }
+
+  // Extract track IDs from links like /track/{id}/
+  const trackLinks=[...new Set(
+    [...doc.querySelectorAll('a[href*="/track/"]')]
+      .map(a=>{ const m=a.href.match(/\/track\/([^/]+)\//); return m?m[1]:null; })
+      .filter(Boolean)
+  )];
+
+  if(!trackLinks.length) throw new Error('No tracks found in HTML');
+
+  // Fetch each track via API
   const tracks=[];
-  doc.querySelectorAll('track').forEach(t=>{
-    const key=t.getAttribute('key')||'';
-    const name=t.getAttribute('title')||'';
-    const trackArtist=t.getAttribute('user-name')||artistName;
-    const desc=t.getAttribute('description')||'';
-    if(key) tracks.push({url:`https://www.audiotool.com/track/${key}/`,name,track_artist:trackArtist,desc});
-  });
-  if(!artistName&&!tracks.length) throw new Error('Empty response');
-  return {artistName,atProfile,tracks:tracks.slice(0,11)};
+  for(const tid of trackLinks.slice(0,11)){
+    try{
+      const tr=await fetch(`https://api.audiotool.com/track/${tid}/eds/`);
+      if(!tr.ok) continue;
+      const xml=await tr.text();
+      const tdoc=new DOMParser().parseFromString(xml,'text/xml');
+      const tel=tdoc.querySelector('track');
+      if(!tel) continue;
+      const name=tel.querySelector('name')?.textContent||tel.getAttribute('title')||tid;
+      const trackArtist=tdoc.querySelector('creator name')?.textContent||tel.getAttribute('user-name')||'';
+      const desc=tel.querySelector('description')?.textContent||'';
+      const userKey=tdoc.querySelector('creator key')?.textContent||'';
+      if(!artistName&&trackArtist) artistName=trackArtist;
+      const atProfile=userKey?`https://www.audiotool.com/user/${userKey}/`:'';
+      tracks.push({url:`https://www.audiotool.com/track/${tid}/`,name,track_artist:trackArtist,desc});
+      if(!window._importAtProfile&&atProfile) window._importAtProfile=atProfile;
+    }catch(e){}
+    await new Promise(res=>setTimeout(res,100));
+  }
+
+  // Try to get artist name from first track's creator if still empty
+  const atProfile=window._importAtProfile||'';
+  window._importAtProfile=null;
+
+  return {artistName:artistName.trim(),atProfile,tracks};
 }
 
 async function startImport(){
