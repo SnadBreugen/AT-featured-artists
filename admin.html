@@ -112,7 +112,7 @@
 </div>
 <div id="mainScreen">
   <header>
-    <div class="hlogo">AT // ADMIN <span style="font-size:11px;color:var(--dim);letter-spacing:.05em">v4</span></div>
+    <div class="hlogo">AT // ADMIN <span style="font-size:11px;color:var(--dim);letter-spacing:.05em">v5</span></div>
     <div class="hright">
       <span class="status-msg" id="statusMsg"></span>
       <a id="previewLink" href="#" target="_blank" style="font-family:var(--block);font-size:13px;letter-spacing:.1em;color:var(--muted);text-decoration:none;display:none;">PREVIEW ↗</a>
@@ -196,8 +196,8 @@ function logLine(msg,type=''){
 }
 
 async function fetchAlbum(albumUrl){
-  // Load the album page HTML and parse track IDs from it
-  const r=await fetch(albumUrl);
+  // Load the album page HTML via CORS proxy and parse track IDs from it
+  const r=await fetch(`https://corsproxy.io/?${encodeURIComponent(albumUrl)}`);
   if(!r.ok) throw new Error(`HTTP ${r.status}`);
   const html=await r.text();
   const doc=new DOMParser().parseFromString(html,'text/html');
@@ -215,42 +215,44 @@ async function fetchAlbum(albumUrl){
     if(ogTitle) artistName=ogTitle.getAttribute('content')||'';
   }
 
-  // Extract track IDs from links like /track/{id}/
-  const trackLinks=[...new Set(
-    [...doc.querySelectorAll('a[href*="/track/"]')]
-      .map(a=>{ const m=a.href.match(/\/track\/([^/]+)\//); return m?m[1]:null; })
-      .filter(Boolean)
-  )];
+  // Extract track IDs from raw HTML string (handles relative and absolute URLs)
+  const trackIdSet=new Set();
+  const trackRe=/\/track\/([a-z0-9_-]+)\//gi;
+  let tm;
+  while((tm=trackRe.exec(html))!==null) trackIdSet.add(tm[1]);
+  const trackIds=[...trackIdSet].slice(0,11);
 
-  if(!trackLinks.length) throw new Error('No tracks found in HTML');
+  if(!trackIds.length) throw new Error('No tracks found');
 
-  // Fetch each track via API
+  // Also try to get user key from HTML
+  let userKey='', atProfile='';
+  const userRe=/\/user\/([a-z0-9_-]+)\//i;
+  const um=html.match(userRe);
+  if(um){ userKey=um[1]; atProfile=`https://www.audiotool.com/user/${userKey}/`; }
+
+  // Fetch each track via api.audiotool.com (CORS OK)
   const tracks=[];
-  for(const tid of trackLinks.slice(0,11)){
+  for(const tid of trackIds){
     try{
       const tr=await fetch(`https://api.audiotool.com/track/${tid}/eds/`);
       if(!tr.ok) continue;
       const xml=await tr.text();
       const tdoc=new DOMParser().parseFromString(xml,'text/xml');
-      const tel=tdoc.querySelector('track');
-      if(!tel) continue;
-      const name=tel.querySelector('name')?.textContent||tel.getAttribute('title')||tid;
-      const trackArtist=tdoc.querySelector('creator name')?.textContent||tel.getAttribute('user-name')||'';
-      const desc=tel.querySelector('description')?.textContent||'';
-      const userKey=tdoc.querySelector('creator key')?.textContent||'';
-      if(!artistName&&trackArtist) artistName=trackArtist;
-      const atProfile=userKey?`https://www.audiotool.com/user/${userKey}/`:'';
+      const name=tdoc.querySelector('name')?.textContent||tid;
+      const trackArtist=tdoc.querySelector('creator name')?.textContent||artistName;
+      const desc=tdoc.querySelector('description')?.textContent||'';
+      if(!artistName) artistName=trackArtist;
+      if(!atProfile){
+        const uk=tdoc.querySelector('creator key')?.textContent||'';
+        if(uk){ userKey=uk; atProfile=`https://www.audiotool.com/user/${uk}/`; }
+      }
       tracks.push({url:`https://www.audiotool.com/track/${tid}/`,name,track_artist:trackArtist,desc});
-      if(!window._importAtProfile&&atProfile) window._importAtProfile=atProfile;
     }catch(e){}
-    await new Promise(res=>setTimeout(res,100));
+    await new Promise(res=>setTimeout(res,80));
   }
 
-  // Try to get artist name from first track's creator if still empty
-  const atProfile=window._importAtProfile||'';
-  window._importAtProfile=null;
-
-  return {artistName:artistName.trim(),atProfile,tracks};
+  if(!tracks.length) throw new Error('No tracks loaded');
+  return {artistName:artistName||userKey,atProfile,tracks};
 }
 
 async function startImport(){
