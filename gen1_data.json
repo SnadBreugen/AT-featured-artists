@@ -1,113 +1,6 @@
 [
   {
-    "artist": "Jace",
-    "real_name": "Joel Caffey",
-    "date": "2014-07-02",
-    "album_number": 1,
-    "at_profile": "https://www.audiotool.com/user/tophat",
-    "album_url": "https://www.audiotool.com/album/uedgwu/",
-    "cover_url": "https://at-cdn-s01.audiotool.com/2014/07/02/albums/UEdgwu/cover256x256-a0a04b2d9bdd43a4aca06e115d0f9889.jpg",
-    "photo": "https://at-cdn-s01.audiotool.com/2014/07/02/albums/UEdgwu/cover256x256-a0a04b2d9bdd43a4aca06e115d0f9889.jpg",
-    "photo_position": "center",
-    "intro": "For years TopHat has stood for high-quality atmospheric tracks somewhere between Chillout and Future Garage. Give yourselves time and enjoy a sample of his mastery.",
-    "about": "Joel Caffey, 18, from Chesapeake, Virginia. Student of biomedical engineering at Boston University. Started making music at age seven on piano, electronically around 2009. On Audiotool since 2010.",
-    "interview": [
-      {
-        "q": "Style",
-        "a": "Profoundly whimsical (life soundtrack music)"
-      },
-      {
-        "q": "Background",
-        "a": "Southern gospel piano, traditional jazz"
-      },
-      {
-        "q": "Message",
-        "a": "I have learned that music is an extension of what we come to love, so let the essence of your heart flow effortlessly through your sound."
-      }
-    ],
-    "tracks": [
-      {
-        "url": "https://www.audiotool.com/track/under_the_same_sun/",
-        "name": "Under The Same Sun",
-        "track_artist": "Olaf",
-        "desc": "don't fear your emotions; channel them"
-      },
-      {
-        "url": "https://www.audiotool.com/track/lense/",
-        "name": "Lense",
-        "track_artist": "VLTRA",
-        "desc": "devote time to each element of a track"
-      },
-      {
-        "url": "https://www.audiotool.com/track/a_n_un_musical_joke/",
-        "name": "A(N) (UN)MUSICAL JOKE",
-        "track_artist": "Frigolito",
-        "desc": "have fun while producing!"
-      },
-      {
-        "url": "https://www.audiotool.com/track/jackfruit/",
-        "name": "Jackfruit",
-        "track_artist": "Snad Breugen",
-        "desc": "organization is key"
-      },
-      {
-        "url": "https://www.audiotool.com/track/break_iii/",
-        "name": "Break III",
-        "track_artist": "Julsy",
-        "desc": "be open to the unconventional"
-      },
-      {
-        "url": "https://www.audiotool.com/track/i_have_useless_superpowers/",
-        "name": "I have useless superpowers",
-        "track_artist": "sbronz",
-        "desc": "explore sample manipulation"
-      },
-      {
-        "url": "https://www.audiotool.com/track/breakdown-qmmcmasrq/",
-        "name": "Breakdown",
-        "track_artist": "CGMan",
-        "desc": "don't fear chaos"
-      },
-      {
-        "url": "https://www.audiotool.com/track/bcn_city/",
-        "name": "BCN CITY",
-        "track_artist": "Griader",
-        "desc": "your music is an extension of where we are from"
-      },
-      {
-        "url": "https://www.audiotool.com/track/susitna/",
-        "name": "susitna",
-        "track_artist": "Mr. Standfast",
-        "desc": "be original, the best you that will ever be"
-      },
-      {
-        "url": "https://www.audiotool.com/track/facing_dimensions/",
-        "name": "Facing Dimensions",
-        "track_artist": "Intracktion",
-        "desc": "The most underrated artist on Audiotool in Jace's eyes"
-      },
-      {
-        "url": "https://www.audiotool.com/track/",
-        "name": "",
-        "track_artist": "",
-        "desc": ""
-      }
-    ],
-    "social": {},
-    "color1": "#32ffff",
-    "color2": "#0d0d3a",
-    "color_accent": "#32ffff",
-    "desc_bg": "#ccfeff",
-    "links_bar_color": "#32ffff",
-    "overlay_color1": "#1a1a6e",
-    "overlay_color2": "#0d0d3a",
-    "is_current": false,
-    "is_hidden": false,
-    "bar_color": "#32FFFF",
-    "bar_text_color": "#0b3132"
-  },
-  {
-    "artist": "Kepz",
+    "artist": "Audial",
     "real_name": "",
     "date": "",
     "album_number": 2,
@@ -178,7 +71,7 @@
     "is_hidden": false
   },
   {
-    "artist": "kiari",
+    "artist": "Xavrockbeats",
     "real_name": "",
     "date": "",
     "album_number": 3,
@@ -243,7 +136,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Ante",
+    "artist": "Intracktion",
     "real_name": "",
     "date": "",
     "album_number": 4,
@@ -326,7 +219,7 @@
     "is_hidden": false
   },
   {
-    "artist": "CGMan",
+    "artist": "Flying Baby Seal",
     "real_name": "",
     "date": "",
     "album_number": 5,
@@ -403,7 +296,7 @@
     "is_hidden": false
   },
   {
-    "artist": "naut",
+    "artist": "Zone",
     "real_name": "",
     "date": "",
     "album_number": 6,
@@ -492,7 +385,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Kepz",
+    "artist": "Inavon",
     "real_name": "",
     "date": "",
     "album_number": 7,
@@ -575,7 +468,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Jonathan Gcia",
+    "artist": "Marodeur (Tocaknox)",
     "real_name": "",
     "date": "",
     "album_number": 8,
@@ -658,7 +551,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Kepz",
+    "artist": "mbelow",
     "real_name": "",
     "date": "",
     "album_number": 9,
@@ -735,7 +628,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Astrum",
+    "artist": "Luxior",
     "real_name": "",
     "date": "",
     "album_number": 10,
@@ -818,7 +711,7 @@
     "is_hidden": false
   },
   {
-    "artist": "valt",
+    "artist": "Vltra",
     "real_name": "",
     "date": "",
     "album_number": 11,
@@ -895,7 +788,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Jordi Moragues",
+    "artist": "Shakey",
     "real_name": "",
     "date": "",
     "album_number": 12,
@@ -984,7 +877,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Crazy about You",
+    "artist": "opaqity",
     "real_name": "",
     "date": "",
     "album_number": 13,
@@ -1073,7 +966,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Mikke",
+    "artist": "White Grizzly",
     "real_name": "",
     "date": "",
     "album_number": 14,
@@ -1233,7 +1126,7 @@
     "is_hidden": false
   },
   {
-    "artist": "VLTRA",
+    "artist": "In5omniac",
     "real_name": "",
     "date": "",
     "album_number": 16,
@@ -1322,7 +1215,7 @@
     "is_hidden": false
   },
   {
-    "artist": "EliaTrix",
+    "artist": "Jordi Moragues",
     "real_name": "",
     "date": "",
     "album_number": 17,
@@ -1405,7 +1298,7 @@
     "is_hidden": false
   },
   {
-    "artist": "udsinep (break)",
+    "artist": "Nionsomnia",
     "real_name": "",
     "date": "",
     "album_number": 18,
@@ -1488,7 +1381,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Sandcripten",
+    "artist": "Cripta",
     "real_name": "",
     "date": "",
     "album_number": 19,
@@ -1577,7 +1470,7 @@
     "is_hidden": false
   },
   {
-    "artist": "SSagara",
+    "artist": "JamBam",
     "real_name": "",
     "date": "",
     "album_number": 20,
@@ -1666,7 +1559,7 @@
     "is_hidden": false
   },
   {
-    "artist": "abstract",
+    "artist": "Uprising",
     "real_name": "",
     "date": "",
     "album_number": 21,
@@ -1755,7 +1648,7 @@
     "is_hidden": false
   },
   {
-    "artist": "DyinRif aka (Grimmad4)",
+    "artist": "the B-ST",
     "real_name": "",
     "date": "",
     "album_number": 22,
@@ -1838,7 +1731,7 @@
     "is_hidden": false
   },
   {
-    "artist": "tornsage",
+    "artist": "Grotzo",
     "real_name": "",
     "date": "",
     "album_number": 23,
@@ -1927,7 +1820,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Won Ton",
+    "artist": "Oedipax and Jonjon",
     "real_name": "",
     "date": "",
     "album_number": 24,
@@ -2010,7 +1903,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Nitrix",
+    "artist": "Cally Kay",
     "real_name": "",
     "date": "",
     "album_number": 25,
@@ -2093,7 +1986,7 @@
     "is_hidden": false
   },
   {
-    "artist": "cripta",
+    "artist": "Fontana",
     "real_name": "",
     "date": "",
     "album_number": 26,
@@ -2176,7 +2069,7 @@
     "is_hidden": false
   },
   {
-    "artist": "ReversedFyuthsion",
+    "artist": "Bluedude",
     "real_name": "",
     "date": "",
     "album_number": 27,
@@ -2265,7 +2158,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Intracktion",
+    "artist": "Potasmic",
     "real_name": "",
     "date": "",
     "album_number": 28,
@@ -2354,7 +2247,7 @@
     "is_hidden": false
   },
   {
-    "artist": "tornsage",
+    "artist": "Cihangir",
     "real_name": "",
     "date": "",
     "album_number": 29,
@@ -2443,7 +2336,7 @@
     "is_hidden": false
   },
   {
-    "artist": "THRONE",
+    "artist": "SOLACE",
     "real_name": "",
     "date": "",
     "album_number": 30,
@@ -2520,7 +2413,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Kepz",
+    "artist": "Triquend",
     "real_name": "",
     "date": "",
     "album_number": 31,
@@ -2609,7 +2502,7 @@
     "is_hidden": false
   },
   {
-    "artist": "navor",
+    "artist": "Vassrv&#x00f6;gel",
     "real_name": "",
     "date": "",
     "album_number": 32,
@@ -2692,7 +2585,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Aaron",
+    "artist": "&#x0398;LE",
     "real_name": "",
     "date": "",
     "album_number": 33,
@@ -2781,7 +2674,7 @@
     "is_hidden": false
   },
   {
-    "artist": "cripta",
+    "artist": "Agrippa",
     "real_name": "",
     "date": "",
     "album_number": 34,
@@ -2858,7 +2751,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Kepz",
+    "artist": "am&#x0153;ba",
     "real_name": "",
     "date": "",
     "album_number": 35,
@@ -2947,7 +2840,7 @@
     "is_hidden": false
   },
   {
-    "artist": "noraus1",
+    "artist": "Astrum",
     "real_name": "",
     "date": "",
     "album_number": 36,
@@ -3036,7 +2929,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Snad Breugen",
+    "artist": "The Seahorse",
     "real_name": "",
     "date": "",
     "album_number": 37,
@@ -3125,7 +3018,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Audial",
+    "artist": "MCT",
     "real_name": "",
     "date": "",
     "album_number": 38,
@@ -3214,7 +3107,7 @@
     "is_hidden": false
   },
   {
-    "artist": "VLTRA",
+    "artist": "aBstracT",
     "real_name": "",
     "date": "",
     "album_number": 39,
@@ -3303,7 +3196,7 @@
     "is_hidden": false
   },
   {
-    "artist": "yafee?",
+    "artist": "SouthBronxDen",
     "real_name": "",
     "date": "",
     "album_number": 40,
@@ -3374,7 +3267,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Olaf",
+    "artist": "Tornsage",
     "real_name": "",
     "date": "",
     "album_number": 41,
@@ -3457,7 +3350,7 @@
     "is_hidden": false
   },
   {
-    "artist": "808Chunk",
+    "artist": "Z&#x00e9;",
     "real_name": "",
     "date": "",
     "album_number": 42,
@@ -3546,7 +3439,7 @@
     "is_hidden": false
   },
   {
-    "artist": "CGMan",
+    "artist": "Navor",
     "real_name": "",
     "date": "",
     "album_number": 43,
@@ -3623,7 +3516,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Inavon",
+    "artist": "Pathfinder",
     "real_name": "",
     "date": "",
     "album_number": 44,
@@ -3712,7 +3605,7 @@
     "is_hidden": false
   },
   {
-    "artist": "+sumand",
+    "artist": "Daftwill",
     "real_name": "",
     "date": "",
     "album_number": 45,
@@ -3801,7 +3694,7 @@
     "is_hidden": false
   },
   {
-    "artist": "TrackSharks",
+    "artist": "Slopo",
     "real_name": "",
     "date": "",
     "album_number": 46,
@@ -3890,7 +3783,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Anthony Bartone",
+    "artist": "CGMan",
     "real_name": "",
     "date": "",
     "album_number": 47,
@@ -4044,7 +3937,7 @@
     "is_hidden": false
   },
   {
-    "artist": "amoeba",
+    "artist": "Crazy about You",
     "real_name": "",
     "date": "",
     "album_number": 49,
@@ -4121,7 +4014,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Nominal",
+    "artist": "Sweattz",
     "real_name": "",
     "date": "",
     "album_number": 50,
@@ -4204,7 +4097,7 @@
     "is_hidden": false
   },
   {
-    "artist": "ascent",
+    "artist": "Tottenhauser",
     "real_name": "",
     "date": "",
     "album_number": 51,
@@ -4275,7 +4168,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Shakey",
+    "artist": "Fauko",
     "real_name": "",
     "date": "",
     "album_number": 52,
@@ -4364,7 +4257,7 @@
     "is_hidden": false
   },
   {
-    "artist": "cihangir",
+    "artist": "Mikel Boyles",
     "real_name": "",
     "date": "",
     "album_number": 53,
@@ -4441,7 +4334,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Zone",
+    "artist": "Teqtoniq",
     "real_name": "",
     "date": "",
     "album_number": 54,
@@ -4530,7 +4423,7 @@
     "is_hidden": false
   },
   {
-    "artist": "richyrich",
+    "artist": "Bracolli",
     "real_name": "",
     "date": "",
     "album_number": 55,
@@ -4613,7 +4506,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Snad Breugen",
+    "artist": "Daniel Burgoyne",
     "real_name": "",
     "date": "",
     "album_number": 56,
@@ -4696,7 +4589,7 @@
     "is_hidden": false
   },
   {
-    "artist": "noraus1",
+    "artist": "Infyuthsion",
     "real_name": "",
     "date": "",
     "album_number": 57,
@@ -4767,7 +4660,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Kepz & oedipax",
+    "artist": "Universe Cosmic",
     "real_name": "",
     "date": "",
     "album_number": 58,
@@ -4856,7 +4749,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Lewi Astro (@ssurrealboy)",
+    "artist": "[Kh&#x00e1;&#x0159;&#x00a1;]'",
     "real_name": "",
     "date": "",
     "album_number": 59,
@@ -4939,7 +4832,7 @@
     "is_hidden": false
   },
   {
-    "artist": "abstract",
+    "artist": "proxima",
     "real_name": "",
     "date": "",
     "album_number": 60,
@@ -5028,7 +4921,7 @@
     "is_hidden": false
   },
   {
-    "artist": "noraus1",
+    "artist": "Mikke",
     "real_name": "",
     "date": "",
     "album_number": 61,
@@ -5117,7 +5010,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Untrust 三",
+    "artist": "Mr. Standfast",
     "real_name": "",
     "date": "",
     "album_number": 62,
@@ -5206,7 +5099,7 @@
     "is_hidden": false
   },
   {
-    "artist": "///",
+    "artist": "[Hybrid]",
     "real_name": "",
     "date": "",
     "album_number": 63,
@@ -5277,7 +5170,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Snad Breugen",
+    "artist": "dabrig",
     "real_name": "",
     "date": "",
     "album_number": 64,
@@ -5366,7 +5259,7 @@
     "is_hidden": false
   },
   {
-    "artist": "CGMan",
+    "artist": "E-Trim",
     "real_name": "",
     "date": "",
     "album_number": 65,
@@ -5455,7 +5348,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Aaron + Nominal",
+    "artist": "Jacob Tyler",
     "real_name": "",
     "date": "",
     "album_number": 66,
@@ -5538,7 +5431,7 @@
     "is_hidden": false
   },
   {
-    "artist": "synthonix",
+    "artist": "Apollo Euphoria",
     "real_name": "",
     "date": "",
     "album_number": 67,
@@ -5603,7 +5496,7 @@
     "is_hidden": false
   },
   {
-    "artist": "rnzr",
+    "artist": "Akimbo",
     "real_name": "",
     "date": "",
     "album_number": 68,
@@ -5686,7 +5579,7 @@
     "is_hidden": false
   },
   {
-    "artist": "(dormant)",
+    "artist": "&#x039b;&#x039b;RON",
     "real_name": "",
     "date": "",
     "album_number": 69,
@@ -5775,7 +5668,7 @@
     "is_hidden": false
   },
   {
-    "artist": "opaqity",
+    "artist": "floydpjasper",
     "real_name": "",
     "date": "",
     "album_number": 70,
@@ -5852,7 +5745,7 @@
     "is_hidden": false
   },
   {
-    "artist": "tornsage",
+    "artist": "brainwalker",
     "real_name": "",
     "date": "",
     "album_number": 71,
@@ -5941,7 +5834,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Xavi",
+    "artist": "Zerod",
     "real_name": "",
     "date": "",
     "album_number": 72,
@@ -6018,7 +5911,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Someone",
+    "artist": "Sandburgen",
     "real_name": "",
     "date": "",
     "album_number": 73,
@@ -6107,7 +6000,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Aaron",
+    "artist": "Kepz",
     "real_name": "",
     "date": "",
     "album_number": 74,
@@ -6190,7 +6083,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Snad Breugen",
+    "artist": "SharKyyo",
     "real_name": "",
     "date": "",
     "album_number": 75,
@@ -6279,7 +6172,7 @@
     "is_hidden": false
   },
   {
-    "artist": "amoeba",
+    "artist": "Aron",
     "real_name": "",
     "date": "",
     "album_number": 76,
@@ -6362,7 +6255,7 @@
     "is_hidden": false
   },
   {
-    "artist": "cihangir",
+    "artist": "Divus/Boshi",
     "real_name": "",
     "date": "",
     "album_number": 77,
@@ -6445,7 +6338,7 @@
     "is_hidden": false
   },
   {
-    "artist": "notoz",
+    "artist": "DubLion",
     "real_name": "",
     "date": "",
     "album_number": 78,
@@ -6528,7 +6421,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Lyon (done)",
+    "artist": "Notoz",
     "real_name": "",
     "date": "",
     "album_number": 79,
@@ -6617,7 +6510,7 @@
     "is_hidden": false
   },
   {
-    "artist": "erthboy",
+    "artist": "Ollie Jarvis",
     "real_name": "",
     "date": "",
     "album_number": 80,
@@ -6706,7 +6599,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Snad Breugen",
+    "artist": "Sumad",
     "real_name": "",
     "date": "",
     "album_number": 81,
@@ -6795,7 +6688,7 @@
     "is_hidden": false
   },
   {
-    "artist": "rnzr",
+    "artist": "Cal Lycus",
     "real_name": "",
     "date": "",
     "album_number": 82,
@@ -6884,7 +6777,7 @@
     "is_hidden": false
   },
   {
-    "artist": "tornsage",
+    "artist": "EMIL SCHYREN",
     "real_name": "",
     "date": "",
     "album_number": 83,
@@ -6973,7 +6866,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Frigolito",
+    "artist": "Christian Chrom",
     "real_name": "",
     "date": "",
     "album_number": 84,
@@ -7056,7 +6949,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Snad Breugen",
+    "artist": "AUDIOARCHITECT",
     "real_name": "",
     "date": "",
     "album_number": 85,
@@ -7145,7 +7038,7 @@
     "is_hidden": false
   },
   {
-    "artist": "X___________X",
+    "artist": "QVIN",
     "real_name": "",
     "date": "",
     "album_number": 86,
@@ -7234,7 +7127,7 @@
     "is_hidden": false
   },
   {
-    "artist": "ClickZ",
+    "artist": "Approaching Human",
     "real_name": "",
     "date": "",
     "album_number": 87,
@@ -7323,7 +7216,7 @@
     "is_hidden": false
   },
   {
-    "artist": "tornsage",
+    "artist": "Mute",
     "real_name": "",
     "date": "",
     "album_number": 88,
@@ -7406,7 +7299,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Infyuthsion",
+    "artist": "arche3.0",
     "real_name": "",
     "date": "",
     "album_number": 89,
@@ -7489,7 +7382,7 @@
     "is_hidden": false
   },
   {
-    "artist": "tornsage",
+    "artist": "ABADDON",
     "real_name": "",
     "date": "",
     "album_number": 90,
@@ -7572,7 +7465,7 @@
     "is_hidden": false
   },
   {
-    "artist": "notoz",
+    "artist": "Almate",
     "real_name": "",
     "date": "",
     "album_number": 91,
@@ -7661,7 +7554,7 @@
     "is_hidden": false
   },
   {
-    "artist": "shoes",
+    "artist": "Regret",
     "real_name": "",
     "date": "",
     "album_number": 92,
@@ -7750,7 +7643,7 @@
     "is_hidden": false
   },
   {
-    "artist": "amoeba",
+    "artist": "Arpeggiator Gladiator",
     "real_name": "",
     "date": "",
     "album_number": 93,
@@ -7839,7 +7732,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Jacob Tyler",
+    "artist": "Bit-Tron",
     "real_name": "",
     "date": "",
     "album_number": 94,
@@ -7928,7 +7821,7 @@
     "is_hidden": false
   },
   {
-    "artist": "opaqity",
+    "artist": "Hangoo",
     "real_name": "",
     "date": "",
     "album_number": 95,
@@ -8017,7 +7910,7 @@
     "is_hidden": false
   },
   {
-    "artist": "sky bound zoo",
+    "artist": "SuperN.O.V.A",
     "real_name": "",
     "date": "",
     "album_number": 96,
@@ -8106,7 +7999,7 @@
     "is_hidden": false
   },
   {
-    "artist": "swrlly",
+    "artist": "archives/Audiotool Hits",
     "real_name": "",
     "date": "",
     "album_number": 97,
@@ -8195,7 +8088,7 @@
     "is_hidden": false
   },
   {
-    "artist": "opaqity",
+    "artist": "clu",
     "real_name": "",
     "date": "",
     "album_number": 98,
@@ -8284,7 +8177,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Bluedude",
+    "artist": "Herlufsew",
     "real_name": "",
     "date": "",
     "album_number": 99,
@@ -8373,7 +8266,7 @@
     "is_hidden": false
   },
   {
-    "artist": "amoeba",
+    "artist": "Tyburn",
     "real_name": "",
     "date": "",
     "album_number": 100,
@@ -8456,7 +8349,7 @@
     "is_hidden": false
   },
   {
-    "artist": "femme_robot",
+    "artist": "Carlyon",
     "real_name": "",
     "date": "",
     "album_number": 101,
@@ -8545,7 +8438,7 @@
     "is_hidden": false
   },
   {
-    "artist": "OXBLUD",
+    "artist": "hvd.",
     "real_name": "",
     "date": "",
     "album_number": 102,
@@ -8634,7 +8527,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Future Sound Collabs",
+    "artist": "",
     "real_name": "",
     "date": "",
     "album_number": 103,
@@ -8723,7 +8616,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Infyuthsion",
+    "artist": "Rodrigo Del Canto",
     "real_name": "",
     "date": "",
     "album_number": 104,
@@ -8812,7 +8705,7 @@
     "is_hidden": false
   },
   {
-    "artist": "|fwk|",
+    "artist": "Lewi Astro",
     "real_name": "",
     "date": "",
     "album_number": 105,
@@ -8895,7 +8788,7 @@
     "is_hidden": false
   },
   {
-    "artist": "no vyce (Kryptic)",
+    "artist": "Flower",
     "real_name": "",
     "date": "",
     "album_number": 106,

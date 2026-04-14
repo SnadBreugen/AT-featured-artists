@@ -32,17 +32,21 @@
   .tagline { padding:16px var(--pad); border-bottom:1px solid var(--border); background:var(--surface); position:relative; z-index:1; }
   .tagline span { font-family:var(--type); font-size:20px; color:var(--text); letter-spacing:.02em; line-height:1.3; }
 
-  .search-bar { border-bottom:1px solid var(--border); padding:14px var(--pad); display:flex; align-items:center; gap:16px; position:relative; z-index:1; }
+  .search-bar { border-bottom:1px solid var(--border); padding:14px var(--pad); display:flex; align-items:center; gap:16px; flex-wrap:wrap; position:relative; z-index:1; }
   .search-input { background:var(--surface); border:1px solid var(--border); outline:none; color:var(--text); font-family:var(--type); font-size:13px; padding:9px 14px; width:300px; transition:border-color .15s; }
   .search-input:focus { border-color:var(--accent); }
   .search-input::placeholder { color:var(--text-dim); }
   .search-count { font-family:var(--block); font-size:12px; letter-spacing:.1em; color:var(--text-dim); }
 
+  .sort-btns { display:flex; gap:6px; margin-left:auto; }
+  .sort-btn { font-family:var(--block); font-size:12px; letter-spacing:.1em; padding:6px 14px; border:1px solid var(--border); background:var(--surface); color:var(--text-dim); cursor:pointer; transition:all .15s; }
+  .sort-btn:hover { border-color:var(--accent); color:var(--accent); }
+  .sort-btn.active { border-color:var(--gen-color); color:var(--gen-color); background:rgba(40,229,255,.08); }
+
   .grid-section { max-width:var(--max); margin:0 auto; padding:36px var(--pad); position:relative; z-index:1; }
   .grid-title { font-family:var(--block); font-size:13px; letter-spacing:.2em; color:var(--text-dim); margin-bottom:24px; }
   .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(340px, 1fr)); gap:1px; background:var(--border); }
 
-  /* CARD - identical to index.html */
   .card { background:var(--bg); text-decoration:none; display:flex; flex-direction:column; position:relative; overflow:hidden; transition:background .15s; cursor:pointer; }
   .card:hover { background:var(--surface); }
   .card-inner { display:flex; gap:0; flex:1; }
@@ -58,10 +62,9 @@
   .card-intro { font-size:10px; line-height:1.65; color:var(--text-dim); font-style:italic; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
   .card-bar { height:3px; width:100%; background:var(--border); flex-shrink:0; transition:background .25s; }
   .card:hover .card-bar { background:var(--card-accent, var(--accent)); }
-
   .no-results { padding:60px; text-align:center; color:var(--text-dim); font-family:var(--block); font-size:20px; letter-spacing:.15em; display:none; }
 
-  @media(max-width:900px){ :root{--pad:20px;} .grid{grid-template-columns:1fr;} .card-photo-wrap{width:120px;} }
+  @media(max-width:900px){ :root{--pad:20px;} .grid{grid-template-columns:1fr;} .card-photo-wrap{width:120px;} .sort-btns{margin-left:0;} }
 </style>
 </head>
 <body>
@@ -75,12 +78,20 @@
 </header>
 
 <div class="tagline">
-  <span>First Generation of Featured Artists | Edition Audiotool</span>
+  <span>FIRST GENERATION OF FEATURED ARTISTS | EDITION AUDIOTOOL</span>
 </div>
 
 <div class="search-bar">
   <input class="search-input" id="searchInput" type="text" placeholder="Search artists..." oninput="doSearch()">
   <span class="search-count" id="searchCount"></span>
+  <div class="sort-btns">
+    <button class="sort-btn active" onclick="setSort('default')" id="sort-default">ARCHIVE</button>
+    <button class="sort-btn" onclick="setSort('random')" id="sort-random">RANDOM</button>
+    <button class="sort-btn" onclick="setSort('az')" id="sort-az">A-Z</button>
+    <button class="sort-btn" onclick="setSort('za')" id="sort-za">Z-A</button>
+    <button class="sort-btn" onclick="setSort('newest')" id="sort-newest">NEWEST</button>
+    <button class="sort-btn" onclick="setSort('oldest')" id="sort-oldest">OLDEST</button>
+  </div>
 </div>
 
 <div class="grid-section">
@@ -91,19 +102,62 @@
 
 <script>
 let allArtists = [];
+let currentSort = 'default';
+let currentQuery = '';
 
 fetch('gen1_data.json')
   .then(r => r.json())
   .then(data => {
     allArtists = data;
-    const visible = data.filter(a => !a.is_hidden);
-    document.getElementById('searchCount').textContent = visible.length + ' ARTISTS';
-    renderGrid(visible);
+    update();
   })
   .catch(() => {
     document.getElementById('noResults').style.display = 'block';
     document.getElementById('noResults').textContent = 'DATA NOT FOUND';
   });
+
+function setSort(s) {
+  currentSort = s;
+  document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('sort-' + s).classList.add('active');
+  update();
+}
+
+function doSearch() {
+  currentQuery = document.getElementById('searchInput').value.toLowerCase().trim();
+  update();
+}
+
+function getSorted(artists) {
+  const arr = [...artists];
+  if (currentSort === 'az') return arr.sort((a,b) => a.artist.localeCompare(b.artist));
+  if (currentSort === 'za') return arr.sort((a,b) => b.artist.localeCompare(a.artist));
+  if (currentSort === 'newest') return arr.sort((a,b) => (b.date||'').localeCompare(a.date||''));
+  if (currentSort === 'oldest') return arr.sort((a,b) => (a.date||'').localeCompare(b.date||''));
+  if (currentSort === 'random') {
+    for (let i = arr.length-1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i+1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+  return arr;
+}
+
+function update() {
+  let visible = allArtists.filter(a => !a.is_hidden);
+  if (currentQuery) {
+    visible = visible.filter(a =>
+      a.artist.toLowerCase().includes(currentQuery) || (a.real_name||'').toLowerCase().includes(currentQuery)
+    );
+    document.getElementById('gridTitle').textContent = 'SEARCH RESULTS';
+  } else {
+    document.getElementById('gridTitle').textContent = 'ALL ARTISTS';
+  }
+  const sorted = getSorted(visible);
+  document.getElementById('searchCount').textContent = sorted.length + ' ARTISTS';
+  renderGrid(sorted);
+}
 
 function renderGrid(artists) {
   const grid = document.getElementById('artistGrid');
@@ -136,23 +190,6 @@ function renderGrid(artists) {
       <div class="card-bar"></div>
     </a>`;
   }).join('');
-}
-
-function doSearch() {
-  const q = document.getElementById('searchInput').value.toLowerCase().trim();
-  const visible = allArtists.filter(a => !a.is_hidden);
-  if (!q) {
-    document.getElementById('searchCount').textContent = visible.length + ' ARTISTS';
-    document.getElementById('gridTitle').textContent = 'ALL ARTISTS';
-    renderGrid(visible);
-    return;
-  }
-  const results = visible.filter(a =>
-    a.artist.toLowerCase().includes(q) || (a.real_name||'').toLowerCase().includes(q)
-  );
-  document.getElementById('searchCount').textContent = results.length + ' RESULTS';
-  document.getElementById('gridTitle').textContent = 'SEARCH RESULTS';
-  renderGrid(results);
 }
 </script>
 </body>

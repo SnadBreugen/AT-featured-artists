@@ -157,14 +157,17 @@ def fetch_album(album_url):
     user_key = user_keys[0] if user_keys else ''
     at_profile = f'https://www.audiotool.com/user/{user_key}/' if user_key else ''
 
+    # Extract artist name from album title "Edition Audiotool: {Artist}"
+    artist_name = ''
+    title_match = re.search(r'Edition Audiotool:\s*([^<"]+)', html)
+    if title_match:
+        artist_name = title_match.group(1).strip()
+
     # Fetch each track
     tracks = []
-    artist_name = ''
     for tid in track_ids:
         t = fetch_track(tid)
         if t:
-            if not artist_name and t['track_artist']:
-                artist_name = t['track_artist']
             if not at_profile and t['creator_key']:
                 at_profile = f"https://www.audiotool.com/user/{t['creator_key']}/"
             tracks.append({
@@ -189,42 +192,51 @@ try:
 except:
     print('Starting fresh')
 
-existing_urls = {a.get('album_url','').rstrip('/') for a in existing}
-results = list(existing)
+existing_by_url = {a.get('album_url','').rstrip('/'): a for a in existing}
+results = []
 failed = []
 
 for i, album_url in enumerate(albums):
     clean_url = album_url.rstrip('/')
-    if clean_url in existing_urls:
-        print(f'[{i+1}/{len(albums)}] SKIP: {clean_url.split("/")[-1]}')
-        continue
+    existing_entry = existing_by_url.get(clean_url)
 
     print(f'[{i+1}/{len(albums)}] {album_url}', end=' ', flush=True)
     try:
         artist_name, at_profile, tracks = fetch_album(album_url)
-        entry = {
-            'artist': artist_name,
-            'real_name': '',
-            'date': '',
-            'album_number': len(results) + 1,
-            'at_profile': at_profile,
-            'album_url': album_url,
-            'photo': '',
-            'intro': '',
-            'about': '',
-            'interview': [],
-            'tracks': tracks,
-            'social': {},
-            'color1': '', 'color2': '', 'color_accent': '',
-            'desc_bg': '', 'links_bar_color': '',
-            'bar_color': '#111111', 'bar_text_color': '#ffffff',
-            'is_hidden': False
-        }
-        results.append(entry)
-        existing_urls.add(clean_url)
-        print(f'OK - {artist_name} ({len(tracks)} tracks)')
+
+        if existing_entry:
+            # Update artist name and tracks, keep everything else
+            existing_entry['artist'] = artist_name
+            existing_entry['tracks'] = tracks
+            if not existing_entry.get('at_profile'):
+                existing_entry['at_profile'] = at_profile
+            results.append(existing_entry)
+            print(f'UPDATED - {artist_name} ({len(tracks)} tracks)')
+        else:
+            entry = {
+                'artist': artist_name,
+                'real_name': '',
+                'date': '',
+                'album_number': len(results) + 1,
+                'at_profile': at_profile,
+                'album_url': album_url,
+                'photo': '',
+                'intro': '',
+                'about': '',
+                'interview': [],
+                'tracks': tracks,
+                'social': {},
+                'color1': '', 'color2': '', 'color_accent': '',
+                'desc_bg': '', 'links_bar_color': '',
+                'bar_color': '#111111', 'bar_text_color': '#ffffff',
+                'is_hidden': False
+            }
+            results.append(entry)
+            print(f'NEW - {artist_name} ({len(tracks)} tracks)')
     except Exception as e:
         print(f'FAILED - {e}')
+        if existing_entry:
+            results.append(existing_entry)
         failed.append(album_url)
 
     time.sleep(0.4)
