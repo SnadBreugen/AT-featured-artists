@@ -124,22 +124,8 @@ def fetch_url(url, headers=None):
         return r.read().decode('utf-8', errors='replace')
 
 def fetch_user_avatar(user_key):
-    # Use old api.audiotool.com which has CORS and works without login
-    try:
-        url = f'https://api.audiotool.com/user/{user_key}/'
-        xml = fetch_url(url, {'User-Agent': 'Mozilla/5.0'})
-        # Extract avatar URL from XML
-        m = re.search(r'avatarURL[^>]*>([^<]+)', xml)
-        if m:
-            avatar = m.group(1).strip()
-            if avatar and not avatar.startswith('http'):
-                avatar = 'https:' + avatar
-            # Try to get larger version
-            avatar = re.sub(r'/\d+/', '/512/', avatar)
-            return avatar
-    except:
-        pass
-    return ''
+    # Direct avatar URL - no need to parse XML
+    return f'https://api.audiotool.com/user/{user_key}/avatar/512.jpg'
 
 def fetch_album(album_url, user_url=''):
     html = fetch_url(album_url)
@@ -245,7 +231,9 @@ for i, entry in enumerate(albums):
                 existing_entry['at_profile'] = at_profile
             if not existing_entry.get('photo') and photo:
                 existing_entry['photo'] = photo
-            if not existing_entry.get('cover_url') and cover_url:
+            if cover_url and user_url:
+                existing_entry['cover_url'] = cover_url  # Always update if we have explicit user_url
+            elif not existing_entry.get('cover_url') and cover_url:
                 existing_entry['cover_url'] = cover_url
             if not existing_entry.get('date') and date:
                 existing_entry['date'] = date
