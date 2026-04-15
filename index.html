@@ -221,7 +221,7 @@ function renderRandomQuote(data){
   if(!withQuotes.length) return;
   const items = withQuotes.map(q => {
     const c = q.color1 || q.color_accent || 'var(--accent)';
-    return `<span class="quote-item-text">${q.quote}</span><span class="quote-item-author" style="color:${c}">[ ${q.artist} ]</span><span class="quote-sep">///</span>`;
+    return `<span class="quote-item-text">${q.quote}</span><span class="quote-item-text">[ ${q.artist} ]</span><span class="quote-sep" style="color:${c}">///</span>`;
   }).join('');
   const ticker = document.getElementById('quoteTicker');
   ticker.innerHTML = items + items;
