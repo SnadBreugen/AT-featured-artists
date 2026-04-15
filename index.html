@@ -45,6 +45,27 @@
   .search-input::placeholder { color:var(--text-dim); }
   .search-count { font-family:var(--block); font-size:12px; letter-spacing:.1em; color:var(--text-dim); }
 
+  .quote-bar {
+    border-bottom:1px solid var(--border);
+    padding:18px var(--pad);
+    display:flex; align-items:center; gap:20px;
+    position:relative; z-index:1;
+    background:var(--surface);
+    min-height:60px;
+  }
+  .quote-mark {
+    font-family:var(--block); font-size:48px; line-height:1;
+    color:var(--accent); opacity:.4; flex-shrink:0; margin-top:-8px;
+  }
+  .quote-text {
+    font-family:var(--type); font-size:13px; line-height:1.7;
+    color:var(--text-dim); font-style:italic; flex:1;
+  }
+  .quote-author {
+    font-family:var(--block); font-size:13px; letter-spacing:.12em;
+    color:var(--accent); flex-shrink:0; white-space:nowrap;
+  }
+
   .hero-wrap { position:relative; z-index:1; border-bottom:2px solid var(--border); }
   .hero-tag { padding:10px var(--pad); background:rgba(14,14,14,.6); font-family:var(--block); font-size:11px; letter-spacing:.25em; color:var(--accent); border-bottom:1px solid var(--border); }
   .hero { max-width:var(--max); margin:0 auto; padding:56px var(--pad) 64px; display:grid; grid-template-columns:1fr 450px; gap:72px; align-items:center; }
@@ -99,9 +120,16 @@
     OUTSTANDING MUSICIANS FROM THE AUDIOTOOL COMMUNITY | FEATURED ARTISTS AND THEIR EDITION AUDIOTOOL ALBUMS
   </span>
 </div>
+
 <div class="search-bar">
   <input class="search-input" id="searchInput" type="text" placeholder="Search artists..." oninput="doSearch()">
   <span class="search-count" id="searchCount"></span>
+</div>
+
+<div class="quote-bar" id="quoteBar" style="display:none">
+  <div class="quote-mark">"</div>
+  <div class="quote-text" id="quoteText"></div>
+  <div class="quote-author" id="quoteAuthor"></div>
 </div>
 
 <div id="heroWrap" style="display:none" class="hero-wrap">
@@ -159,7 +187,17 @@ fetch('data.json')
     document.getElementById('searchCount').textContent = shuffled.length + ' ARTISTS';
     if(current){ renderHero(current); applyBgWash(current); }
     renderGrid(shuffled);
+    renderRandomQuote(data);
   });
+
+function renderRandomQuote(data){
+  const withQuotes = data.filter(a => a.quote && a.quote.trim() && !a.is_hidden);
+  if(!withQuotes.length) return;
+  const pick = withQuotes[Math.floor(Math.random() * withQuotes.length)];
+  document.getElementById('quoteText').textContent = pick.quote;
+  document.getElementById('quoteAuthor').textContent = '— ' + pick.artist;
+  document.getElementById('quoteBar').style.display = 'flex';
+}
 
 function applyBgWash(a){
   const col = a.color1 || a.color_accent;

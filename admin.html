@@ -100,6 +100,7 @@
   .import-log .info{color:var(--accent);}
   .progress-bar-wrap{background:var(--surface);border:1px solid var(--border);height:8px;margin-bottom:8px;}
   .progress-bar-fill{height:100%;background:var(--accent);transition:width .3s;}
+  .quote-hint{font-size:10px;color:var(--muted);letter-spacing:.08em;margin-top:6px;line-height:1.5;}
 </style>
 </head>
 <body>
@@ -263,7 +264,7 @@ async function startImport(){
     }
     try{
       const {artistName,atProfile,tracks}=await fetchAlbum(url);
-      data1.push({artist:artistName,real_name:'',date:'',album_number:data1.length+1,at_profile:atProfile,album_url:url,photo:'',intro:'',about:'',interview:[],tracks,social:{},color1:'',color2:'',color_accent:'',desc_bg:'',links_bar_color:'',bar_color:'#111111',bar_text_color:'#ffffff',is_hidden:false});
+      data1.push({artist:artistName,real_name:'',date:'',album_number:data1.length+1,at_profile:atProfile,album_url:url,photo:'',intro:'',about:'',interview:[],tracks,social:{},color1:'',color2:'',color_accent:'',desc_bg:'',links_bar_color:'',bar_color:'#111111',bar_text_color:'#ffffff',is_hidden:false,quote:''});
       existingUrls.add(cleanUrl);
       dirty1=true;
       document.getElementById('saveAllBtn').disabled=false;
@@ -312,6 +313,17 @@ function selectArtist(idx){
   if(currentGen===2)renderEditorGen2(a,idx); else renderEditorGen1(a,idx);
 }
 
+function quoteSection(a){
+  return `<div class="ed-section">
+    <div class="ed-section-title">Community Quote</div>
+    <div class="field-row">
+      <div class="field-label">Quote</div>
+      <textarea class="field-input" style="min-height:80px" onchange="save('quote',this.value)" placeholder="Paste a quote from the interview here...">${esc(a.quote||'')}</textarea>
+      <div class="quote-hint">This quote appears randomly on the index page with the artist name. Paste directly from the interview — no quotation marks needed.</div>
+    </div>
+  </div>`;
+}
+
 function renderEditorGen1(a,idx){
   const barColor=a.bar_color||'#111111', barText=a.bar_text_color||'#ffffff';
   const c1=a.color1||'#333333',c2=a.color2||a.color1||'#333333',ca=a.color_accent||a.color1||'#333333';
@@ -343,6 +355,7 @@ function renderEditorGen1(a,idx){
       <div class="field-row"><div class="field-label">Intro</div><textarea class="field-input" style="min-height:100px" onchange="save('intro',this.value)">${esc(a.intro||'')}</textarea></div>
       <div class="field-row"><div class="field-label">About</div><textarea class="field-input" style="min-height:80px" onchange="save('about',this.value)">${esc(a.about||'')}</textarea></div>
     </div>
+    ${quoteSection(a)}
     <div class="ed-section"><div class="ed-section-title">Interview Q&As</div><div id="qaList">${renderQAs(a.interview||[])}</div><button class="add-btn" onclick="addQA()">+ ADD Q&A</button></div>
     <div class="ed-section"><div class="ed-section-title">Cover Preview</div>
       <div class="cover-preview-wrap" id="coverPreviewWrap">
@@ -408,6 +421,7 @@ function renderEditorGen2(a,idx){
       <div class="field-row"><div class="field-label">Intro</div><textarea class="field-input" style="min-height:100px" onchange="save('intro',this.value)">${esc(a.intro||'')}</textarea></div>
       <div class="field-row"><div class="field-label">About</div><textarea class="field-input" style="min-height:80px" onchange="save('about',this.value)">${esc(a.about||'')}</textarea></div>
     </div>
+    ${quoteSection(a)}
     <div class="ed-section"><div class="ed-section-title">Interview Q&As</div><div id="qaList">${renderQAs(a.interview||[])}</div><button class="add-btn" onclick="addQA()">+ ADD Q&A</button></div>
     <div class="ed-section"><div class="ed-section-title">Social Links</div><div class="fields-2col">
       <div class="field-row"><div class="field-label">SoundCloud</div><input class="field-input" value="${esc(a.soundcloud||social.soundcloud||'')}" onchange="saveSocial('soundcloud',this.value,true)"></div>
@@ -508,7 +522,7 @@ function toggleHidden(){ if(currentIdx===null)return; currentData()[currentIdx].
 function toggleCurrent(){ if(currentIdx===null||currentGen!==2)return; const isCurrent=!data2[currentIdx].is_current; data2.forEach((a,i)=>{if(i!==currentIdx)a.is_current=false;}); data2[currentIdx].is_current=isCurrent; setDirty(); selectArtist(currentIdx); }
 function newArtist(){
   const isGen1=currentGen===1;
-  const a=isGen1?{artist:'NEW ARTIST',real_name:'',date:new Date().toISOString().slice(0,10),album_number:currentData().length+1,at_profile:'',album_url:'',photo:'',intro:'',about:'',interview:[],tracks:[],social:{},color1:'',color2:'',color_accent:'',desc_bg:'',links_bar_color:'',bar_color:'#111111',bar_text_color:'#ffffff',is_hidden:false}:{artist:'NEW ARTIST',real_name:'',date:new Date().toISOString().slice(0,10),board_url:'',album_url:'',at_profile:'',soundcloud:'',photo:'',cover_url:'',intro:'',about:'',interview:[],tracks:[],social:{},color1:'',color2:'',color_accent:'',desc_bg:'',is_hidden:false};
+  const a=isGen1?{artist:'NEW ARTIST',real_name:'',date:new Date().toISOString().slice(0,10),album_number:currentData().length+1,at_profile:'',album_url:'',photo:'',intro:'',about:'',interview:[],tracks:[],social:{},color1:'',color2:'',color_accent:'',desc_bg:'',links_bar_color:'',bar_color:'#111111',bar_text_color:'#ffffff',is_hidden:false,quote:''}:{artist:'NEW ARTIST',real_name:'',date:new Date().toISOString().slice(0,10),board_url:'',album_url:'',at_profile:'',soundcloud:'',photo:'',cover_url:'',intro:'',about:'',interview:[],tracks:[],social:{},color1:'',color2:'',color_accent:'',desc_bg:'',is_hidden:false,quote:''};
   currentData().push(a); currentIdx=currentData().length-1; filterArtists(); selectArtist(currentIdx); setDirty(); showToast('New artist created');
 }
 function pickFromImage(e,imgId){
