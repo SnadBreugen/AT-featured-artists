@@ -61,6 +61,8 @@
   .track-lookup-btn{background:var(--surface2);border:1px solid var(--border);color:var(--accent);font-family:var(--block);font-size:12px;letter-spacing:.1em;padding:6px 14px;cursor:pointer;white-space:nowrap;}
   .track-lookup-btn:hover{background:var(--border);}
   .track-lookup-btn:disabled{opacity:.4;cursor:not-allowed;}
+  .track-delete-btn{background:none;border:1px solid var(--red);color:var(--red);font-family:var(--block);font-size:11px;letter-spacing:.08em;padding:4px 10px;cursor:pointer;white-space:nowrap;flex-shrink:0;}
+  .track-delete-btn:hover{background:var(--red);color:#000;}
   .color-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:20px;max-width:720px;}
   .color-field label{display:block;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;}
   .color-picker-row{display:flex;align-items:center;border:1px solid var(--border);}
@@ -196,41 +198,27 @@ function logLine(msg,type=''){
 }
 
 async function fetchAlbum(albumUrl){
-  // Load the album page HTML via CORS proxy and parse track IDs from it
   const r=await fetch(`https://corsproxy.io/?${encodeURIComponent(albumUrl)}`);
   if(!r.ok) throw new Error(`HTTP ${r.status}`);
   const html=await r.text();
   const doc=new DOMParser().parseFromString(html,'text/html');
-
-  // Get artist name from page
-  const artistEl=doc.querySelector('.creator a, [class*="artist"] a, [class*="user"] a');
   let artistName='';
-  // Try meta tags first
   const metaAuthor=doc.querySelector('meta[name="author"], meta[property="music:musician"]');
   if(metaAuthor) artistName=metaAuthor.getAttribute('content')||'';
-
-  // Try og:title or title
   if(!artistName){
     const ogTitle=doc.querySelector('meta[property="og:title"]');
     if(ogTitle) artistName=ogTitle.getAttribute('content')||'';
   }
-
-  // Extract track IDs from raw HTML string (handles relative and absolute URLs)
   const trackIdSet=new Set();
   const trackRe=/\/track\/([a-z0-9_-]+)\//gi;
   let tm;
   while((tm=trackRe.exec(html))!==null) trackIdSet.add(tm[1]);
   const trackIds=[...trackIdSet].slice(0,11);
-
   if(!trackIds.length) throw new Error('No tracks found');
-
-  // Also try to get user key from HTML
   let userKey='', atProfile='';
   const userRe=/\/user\/([a-z0-9_-]+)\//i;
   const um=html.match(userRe);
   if(um){ userKey=um[1]; atProfile=`https://www.audiotool.com/user/${userKey}/`; }
-
-  // Fetch each track via api.audiotool.com (CORS OK)
   const tracks=[];
   for(const tid of trackIds){
     try{
@@ -250,7 +238,6 @@ async function fetchAlbum(albumUrl){
     }catch(e){}
     await new Promise(res=>setTimeout(res,80));
   }
-
   if(!tracks.length) throw new Error('No tracks loaded');
   return {artistName:artistName||userKey,atProfile,tracks};
 }
@@ -462,8 +449,36 @@ function renderTracks(tracks){
   return tracks.map((t,i)=>{
     const tid=(t.url||'').match(/\/track\/([^/?\s]+)/)?.[1]||'';
     const cov=tid?`https://api.audiotool.com/track/${tid}/cover/256.jpg`:'';
-    return `<div class="track-card" id="track-${i}"><div class="track-card-header"><div class="track-num">${i+1}</div>${cov?`<img class="track-cover-preview" src="${cov}" onerror="this.style.display='none'" id="tc${i}">`:`<div style="width:40px;height:40px;background:var(--surface2);flex-shrink:0"></div>`}<div class="track-info"><div class="track-name-display" id="tnd${i}">${esc(t.name||'--')}</div><div class="track-artist-display" id="tad${i}">${esc(t.track_artist||'--')}</div></div></div><div class="track-url-row"><input class="field-input" id="turl${i}" placeholder="https://www.audiotool.com/track/..." value="${esc(t.url||'')}" onchange="saveTrackField(${i},'url',this.value)"><button class="track-lookup-btn" id="tlookup${i}" onclick="lookupTrack(${i})">LOOKUP</button></div><div class="fields-2col" style="margin-bottom:10px"><div class="field-row"><div class="field-label">Track Name</div><input class="field-input" id="tname${i}" value="${esc(t.name||'')}" onchange="saveTrackField(${i},'name',this.value)"></div><div class="field-row"><div class="field-label">Artist</div><input class="field-input" id="tartist${i}" value="${esc(t.track_artist||'')}" onchange="saveTrackField(${i},'track_artist',this.value)"></div></div><div class="field-row"><div class="field-label">Description</div><textarea class="field-input" style="min-height:60px" onchange="saveTrackField(${i},'desc',this.value)">${esc(t.desc||'')}</textarea></div></div>`;
+    return `<div class="track-card" id="track-${i}">
+      <div class="track-card-header">
+        <div class="track-num">${i+1}</div>
+        ${cov?`<img class="track-cover-preview" src="${cov}" onerror="this.style.display='none'" id="tc${i}">`:`<div style="width:40px;height:40px;background:var(--surface2);flex-shrink:0"></div>`}
+        <div class="track-info">
+          <div class="track-name-display" id="tnd${i}">${esc(t.name||'--')}</div>
+          <div class="track-artist-display" id="tad${i}">${esc(t.track_artist||'--')}</div>
+        </div>
+        ${t.url?`<button class="track-delete-btn" onclick="deleteTrack(${i})">DELETE</button>`:''}
+      </div>
+      <div class="track-url-row"><input class="field-input" id="turl${i}" placeholder="https://www.audiotool.com/track/..." value="${esc(t.url||'')}" onchange="saveTrackField(${i},'url',this.value)"><button class="track-lookup-btn" id="tlookup${i}" onclick="lookupTrack(${i})">LOOKUP</button></div>
+      <div class="fields-2col" style="margin-bottom:10px">
+        <div class="field-row"><div class="field-label">Track Name</div><input class="field-input" id="tname${i}" value="${esc(t.name||'')}" onchange="saveTrackField(${i},'name',this.value)"></div>
+        <div class="field-row"><div class="field-label">Artist</div><input class="field-input" id="tartist${i}" value="${esc(t.track_artist||'')}" onchange="saveTrackField(${i},'track_artist',this.value)"></div>
+      </div>
+      <div class="field-row"><div class="field-label">Description</div><textarea class="field-input" style="min-height:60px" onchange="saveTrackField(${i},'desc',this.value)">${esc(t.desc||'')}</textarea></div>
+    </div>`;
   }).join('');
+}
+
+function deleteTrack(i){
+  if(currentIdx===null)return;
+  const a=currentData()[currentIdx];
+  if(!a.tracks)return;
+  if(!confirm('Delete this track?'))return;
+  a.tracks.splice(i,1);
+  const tracks=[...a.tracks]; while(tracks.length<11)tracks.push({url:'',name:'',track_artist:'',desc:''});
+  document.getElementById('trackList').innerHTML=renderTracks(tracks);
+  setDirty();
+  showToast('Track deleted');
 }
 
 async function lookupTrack(i){
