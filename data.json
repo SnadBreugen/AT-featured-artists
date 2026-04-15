@@ -271,7 +271,8 @@
     "color_accent": "#9966ff",
     "desc_bg": "#cab4f3",
     "links_bar_color": "#39cedc",
-    "album_number": 109
+    "album_number": 109,
+    "quote": "I really love its \"complex simplicity\". In my opinion, the learning curve for Audiotool is much more shallow than most other DAWs, which will help you get the basics down immediately."
   },
   {
     "artist": "Fluent",
@@ -365,7 +366,8 @@
     "color_accent": "#ab8158",
     "desc_bg": "#f8e0c9",
     "links_bar_color": "#f0ae70",
-    "album_number": 110
+    "album_number": 110,
+    "quote": "The community side of the website is really what makes Audiotool so unique. On AT, everyone uses the same tools and DAW, so it's really easy to get feedback or tips on the devices."
   },
   {
     "artist": "Kibbey",
@@ -460,7 +462,8 @@
     "color_accent": "#acae19",
     "desc_bg": "#f2f3ce",
     "links_bar_color": "#dddf58",
-    "album_number": 111
+    "album_number": 111,
+    "quote": "I think the multitude of ways you can collaborate and work off of each other is amazing. If anyone starting out needs a helping hand there are thousands of hands out there waiting for you."
   },
   {
     "artist": "Syntax AKA Kiari",
@@ -543,7 +546,8 @@
     "color1": "#7270d7",
     "color_accent": "#7270d7",
     "desc_bg": "#e0b8bc",
-    "links_bar_color": "#9c9bf3"
+    "links_bar_color": "#9c9bf3",
+    "quote": "That feeling of being able to control everything on one screen and wire everything together is the closest thing to being in a real life studio I can imagine on a DAW."
   },
   {
     "artist": "Laevent",
