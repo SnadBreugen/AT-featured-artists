@@ -3,10 +3,11 @@
     "artist": "Audial",
     "real_name": "",
     "date": "2014-07-08",
-    "album_number": 2,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 1,
+    "at_profile": "https://www.audiotool.com/user/ewan_mcculloch/",
     "album_url": "https://www.audiotool.com/album/9pnx5/",
     "photo": "https://api.audiotool.com/album/9Pnx5/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/ewan_mcculloch/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -86,17 +87,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/ewan_mcculloch/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Xavrockbeats",
     "real_name": "",
     "date": "2014-07-28",
-    "album_number": 3,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 2,
+    "at_profile": "https://www.audiotool.com/user/xavrockbeats/",
     "album_url": "https://www.audiotool.com/album/hnwkpu4/",
     "photo": "https://api.audiotool.com/album/hNwkpu4/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/xavrockbeats/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -152,17 +153,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/xavrockbeats/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Intracktion",
     "real_name": "",
     "date": "2014-07-20",
-    "album_number": 4,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 3,
+    "at_profile": "https://www.audiotool.com/user/intracktion/",
     "album_url": "https://www.audiotool.com/album/dgaoqtpm/",
     "photo": "https://api.audiotool.com/album/dGaOqTPm/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/intracktion/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -236,17 +237,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/intracktion/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Flying Baby Seal",
     "real_name": "",
     "date": "2014-07-14",
-    "album_number": 5,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 4,
+    "at_profile": "https://www.audiotool.com/user/flying-baby-seal/",
     "album_url": "https://www.audiotool.com/album/0poc9tl/",
     "photo": "https://api.audiotool.com/album/0POC9Tl/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/flying-baby-seal/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -314,17 +315,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/flying-baby-seal/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Zone",
     "real_name": "",
     "date": "2014-08-04",
-    "album_number": 6,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 5,
+    "at_profile": "https://www.audiotool.com/user/zonemusic/",
     "album_url": "https://www.audiotool.com/album/6pvw3rdg/",
     "photo": "https://api.audiotool.com/album/6PVW3rDG/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/zonemusic/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -404,17 +405,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/zonemusic/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Inavon",
     "real_name": "",
     "date": "2014-08-11",
-    "album_number": 7,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 6,
+    "at_profile": "https://www.audiotool.com/user/trancefreak12/",
     "album_url": "https://www.audiotool.com/album/i0qv2qyt6/",
     "photo": "https://api.audiotool.com/album/i0QV2qYT6/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/trancefreak12/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -488,17 +489,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/trancefreak12/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Marodeur (Tocaknox)",
     "real_name": "",
     "date": "2014-08-25",
-    "album_number": 8,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 7,
+    "at_profile": "https://www.audiotool.com/user/tocaknox/",
     "album_url": "https://www.audiotool.com/album/zwhdmh/",
     "photo": "https://api.audiotool.com/album/ZwhdMh/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/tocaknox/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -572,17 +573,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/tocaknox/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "mbelow",
     "real_name": "",
     "date": "2014-09-30",
-    "album_number": 9,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 8,
+    "at_profile": "https://www.audiotool.com/user/mbelow/",
     "album_url": "https://www.audiotool.com/album/agr87qx/",
     "photo": "https://api.audiotool.com/album/agr87Qx/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/mbelow/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -650,17 +651,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/mbelow/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Luxior",
     "real_name": "",
     "date": "2014-09-17",
-    "album_number": 10,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 9,
+    "at_profile": "https://www.audiotool.com/user/beat123/",
     "album_url": "https://www.audiotool.com/album/pts4e/",
     "photo": "https://api.audiotool.com/album/pTs4e/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/beat123/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -734,17 +735,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/beat123/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Vltra",
     "real_name": "",
     "date": "2014-09-09",
-    "album_number": 11,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 10,
+    "at_profile": "https://www.audiotool.com/user/vltra2/",
     "album_url": "https://www.audiotool.com/album/2gvqxec/",
     "photo": "https://api.audiotool.com/album/2GVqxeC/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/vltra2/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -812,17 +813,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/vltra2/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Shakey",
     "real_name": "",
     "date": "2014-09-02",
-    "album_number": 12,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 11,
+    "at_profile": "https://www.audiotool.com/user/shakey63/",
     "album_url": "https://www.audiotool.com/album/dfkvkal/",
     "photo": "https://api.audiotool.com/album/DFkvkaL/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/shakey63/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -902,17 +903,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/shakey63/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "opaqity",
     "real_name": "",
     "date": "2014-10-06",
-    "album_number": 13,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 12,
+    "at_profile": "https://www.audiotool.com/user/opaqity/",
     "album_url": "https://www.audiotool.com/album/trxsjo/",
     "photo": "https://api.audiotool.com/album/trxsJO/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/opaqity/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -992,17 +993,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/opaqity/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "White Grizzly",
     "real_name": "",
     "date": "2014-10-08",
-    "album_number": 14,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 13,
+    "at_profile": "https://www.audiotool.com/user/whitegrizzly/",
     "album_url": "https://www.audiotool.com/album/rpzwcp4v/",
     "photo": "https://api.audiotool.com/album/rPZwCP4V/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/whitegrizzly/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -1076,17 +1077,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/whitegrizzly/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "TRiCK",
     "real_name": "",
     "date": "2014-10-19",
-    "album_number": 15,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 14,
+    "at_profile": "https://www.audiotool.com/user/psychosismusic/",
     "album_url": "https://www.audiotool.com/album/xlv4lr4/",
     "photo": "https://api.audiotool.com/album/Xlv4LR4/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/psychosismusic/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -1154,17 +1155,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/psychosismusic/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "In5omniac",
     "real_name": "",
     "date": "2014-10-27",
-    "album_number": 16,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 15,
+    "at_profile": "https://www.audiotool.com/user/1n50mn1ac/",
     "album_url": "https://www.audiotool.com/album/amg2pbi/",
     "photo": "https://api.audiotool.com/album/amg2pBi/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/1n50mn1ac/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -1244,17 +1245,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/1n50mn1ac/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Jordi Moragues",
     "real_name": "",
     "date": "2014-11-04",
-    "album_number": 17,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 16,
+    "at_profile": "https://www.audiotool.com/user/jordynth/",
     "album_url": "https://www.audiotool.com/album/og6fd6z/",
     "photo": "https://api.audiotool.com/album/Og6Fd6Z/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/jordynth/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -1328,17 +1329,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/jordynth/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Nionsomnia",
     "real_name": "",
     "date": "2014-11-10",
-    "album_number": 18,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 17,
+    "at_profile": "https://www.audiotool.com/user/nionsomnia/",
     "album_url": "https://www.audiotool.com/album/kcvqjvpm2/",
     "photo": "https://api.audiotool.com/album/KcVqJVPM2/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/nionsomnia/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -1412,17 +1413,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/nionsomnia/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Cripta",
     "real_name": "",
     "date": "2014-11-17",
-    "album_number": 19,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 18,
+    "at_profile": "https://www.audiotool.com/user/farcio/",
     "album_url": "https://www.audiotool.com/album/8ktqn1orf/",
     "photo": "https://api.audiotool.com/album/8kTQN1orF/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/farcio/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -1502,17 +1503,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/farcio/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "JamBam",
     "real_name": "",
     "date": "2014-11-24",
-    "album_number": 20,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 19,
+    "at_profile": "https://www.audiotool.com/user/jambam/",
     "album_url": "https://www.audiotool.com/album/t5tdmds/",
     "photo": "https://api.audiotool.com/album/t5Tdmds/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/jambam/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -1592,17 +1593,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/jambam/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Uprising",
     "real_name": "",
     "date": "2014-11-30",
-    "album_number": 21,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 20,
+    "at_profile": "https://www.audiotool.com/user/musicmanpw/",
     "album_url": "https://www.audiotool.com/album/76ipsvb/",
     "photo": "https://api.audiotool.com/album/76IPSVb/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/musicmanpw/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -1682,17 +1683,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/musicmanpw/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "the B-ST",
     "real_name": "",
     "date": "2014-12-08",
-    "album_number": 22,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 21,
+    "at_profile": "https://www.audiotool.com/user/bocar_b-st/",
     "album_url": "https://www.audiotool.com/album/0cszualx/",
     "photo": "https://api.audiotool.com/album/0CszuAlx/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/bocar_b-st/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -1766,17 +1767,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/bocar_b-st/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Grotzo",
     "real_name": "",
     "date": "2014-12-17",
-    "album_number": 23,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 22,
+    "at_profile": "https://www.audiotool.com/user/grotzo/",
     "album_url": "https://www.audiotool.com/album/dgj432vk7/",
     "photo": "https://api.audiotool.com/album/DgJ432VK7/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/grotzo/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -1856,17 +1857,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/grotzo/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Oedipax and Jonjon",
     "real_name": "",
     "date": "2014-12-23",
-    "album_number": 24,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 23,
+    "at_profile": "https://www.audiotool.com/user/oedipax/",
     "album_url": "https://www.audiotool.com/album/fphr89zyy/",
     "photo": "https://api.audiotool.com/album/fPhr89zyy/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/oedipax/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -1946,17 +1947,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/oedipax/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Cally Kay",
     "real_name": "",
     "date": "2014-12-29",
-    "album_number": 25,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 24,
+    "at_profile": "https://www.audiotool.com/user/oedipax/",
     "album_url": "https://www.audiotool.com/album/drwan2/",
     "photo": "https://api.audiotool.com/album/drWAN2/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/oedipax/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -2030,17 +2031,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/oedipax/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Fontana",
     "real_name": "",
     "date": "2015-01-03",
-    "album_number": 26,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 25,
+    "at_profile": "https://www.audiotool.com/user/fontana/",
     "album_url": "https://www.audiotool.com/album/fg0yzv/",
     "photo": "https://api.audiotool.com/album/FG0yZV/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/fontana/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -2114,17 +2115,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/fontana/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Bluedude",
     "real_name": "",
     "date": "2015-01-12",
-    "album_number": 27,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 26,
+    "at_profile": "https://www.audiotool.com/user/bluedude/",
     "album_url": "https://www.audiotool.com/album/zgmrmokl0/",
     "photo": "https://api.audiotool.com/album/zgMrMOKl0/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/bluedude/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -2204,17 +2205,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/bluedude/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Potasmic",
     "real_name": "",
     "date": "2015-01-21",
-    "album_number": 28,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 27,
+    "at_profile": "https://www.audiotool.com/user/khoi98/",
     "album_url": "https://www.audiotool.com/album/dyz0s22ey/",
     "photo": "https://api.audiotool.com/album/dyz0S22EY/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/khoi98/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -2294,17 +2295,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/khoi98/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Cihangir",
     "real_name": "",
     "date": "2015-01-28",
-    "album_number": 29,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 28,
+    "at_profile": "https://www.audiotool.com/user/cihangir/",
     "album_url": "https://www.audiotool.com/album/0hqoaaw/",
     "photo": "https://api.audiotool.com/album/0HqoaaW/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/cihangir/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -2384,17 +2385,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/vort/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "SOLACE",
     "real_name": "",
     "date": "2015-02-03",
-    "album_number": 30,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 29,
+    "at_profile": "https://www.audiotool.com/user/cihangir/",
     "album_url": "https://www.audiotool.com/album/s1xjwzjco/",
     "photo": "https://api.audiotool.com/album/s1XjWZJco/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/cihangir/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -2462,17 +2463,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/djsolace1000/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Triquend",
     "real_name": "",
     "date": "2015-02-11",
-    "album_number": 31,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 30,
+    "at_profile": "https://www.audiotool.com/user/zedger/",
     "album_url": "https://www.audiotool.com/album/dejfpldko/",
     "photo": "https://api.audiotool.com/album/DEjFPLDKo/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/zedger/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -2552,101 +2553,23 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/erdbeerquark/avatar/512.jpg"
+    "is_hidden": false
   },
   {
-    "artist": "Vassrv&#x00f6;gel",
-    "real_name": "",
-    "date": "2015-02-18",
-    "album_number": 32,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
     "album_url": "https://www.audiotool.com/album/q9ovx/",
-    "photo": "https://api.audiotool.com/album/Q9oVX/cover/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
-    "tracks": [
-      {
-        "url": "https://www.audiotool.com/track/anna-NgvTmEck/",
-        "name": "Anna",
-        "track_artist": "navor",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/rabbit-h5ofIov/",
-        "name": "rabbit",
-        "track_artist": "Cuds",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/gamma-AI6VnQNB/",
-        "name": "Gamma",
-        "track_artist": "looks",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/run-BK1YZLGVG/",
-        "name": "Run",
-        "track_artist": "tornsage",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/empire-6kJbZm3/",
-        "name": "Empire",
-        "track_artist": "тяєкк",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/bike_ride/",
-        "name": "bike ride",
-        "track_artist": "S.N.O.V.A.",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/why_did_i_fade_away/",
-        "name": "why did i fade away",
-        "track_artist": "_______",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/the_tower_unplugged/",
-        "name": "The Tower (unplugged)",
-        "track_artist": "The B-ST",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/im_sorry-1UlbRQar/",
-        "name": "im sorry",
-        "track_artist": "Christian-Chrom",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/g303t/",
-        "name": "G303T",
-        "track_artist": "TwoSworded",
-        "desc": ""
-      }
-    ],
-    "social": {},
-    "color1": "",
-    "color2": "",
-    "color_accent": "",
-    "desc_bg": "",
-    "links_bar_color": "",
-    "bar_color": "#111111",
-    "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/clu/avatar/512.jpg"
+    "is_hidden": true,
+    "artist": "",
+    "tracks": []
   },
   {
     "artist": "&#x0398;LE",
     "real_name": "",
     "date": "2015-02-25",
-    "album_number": 33,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 32,
+    "at_profile": "https://www.audiotool.com/user/yack-fou/",
     "album_url": "https://www.audiotool.com/album/s1nfsuq/",
     "photo": "https://api.audiotool.com/album/s1nFSUq/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/yack-fou/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -2726,17 +2649,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/petebeat/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Agrippa",
     "real_name": "",
     "date": "2015-03-02",
-    "album_number": 34,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 33,
+    "at_profile": "https://www.audiotool.com/user/agrippa/",
     "album_url": "https://www.audiotool.com/album/8n41y2t4x/",
     "photo": "https://api.audiotool.com/album/8N41y2t4x/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/agrippa/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -2804,17 +2727,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/sharkyyo/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "am&#x0153;ba",
     "real_name": "",
     "date": "2015-03-10",
-    "album_number": 35,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 34,
+    "at_profile": "https://www.audiotool.com/user/amoeba/",
     "album_url": "https://www.audiotool.com/album/ku50sqn/",
     "photo": "https://api.audiotool.com/album/kU50sQN/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/amoeba/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -2894,17 +2817,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/erdbeerquark/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Astrum",
     "real_name": "",
     "date": "2015-03-16",
-    "album_number": 36,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 35,
+    "at_profile": "https://www.audiotool.com/user/crazydruminator/",
     "album_url": "https://www.audiotool.com/album/vranm/",
     "photo": "https://api.audiotool.com/album/vRaNm/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/crazydruminator/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -2984,17 +2907,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/pot/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "The Seahorse",
     "real_name": "",
     "date": "2015-03-25",
-    "album_number": 37,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 36,
+    "at_profile": "https://www.audiotool.com/user/markolmx/",
     "album_url": "https://www.audiotool.com/album/akswas7/",
     "photo": "https://api.audiotool.com/album/AKsWAs7/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/markolmx/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -3074,17 +2997,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/whitegrizzly/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "MCT",
     "real_name": "",
     "date": "2015-04-01",
-    "album_number": 38,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 37,
+    "at_profile": "https://www.audiotool.com/user/tenji240/",
     "album_url": "https://www.audiotool.com/album/fpkdql8j/",
     "photo": "https://api.audiotool.com/album/fpKdQL8J/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/tenji240/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -3164,17 +3087,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/offbeatninja123/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "aBstracT",
     "real_name": "",
     "date": "2015-04-08",
-    "album_number": 39,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 38,
+    "at_profile": "https://www.audiotool.com/user/nmgbeats/",
     "album_url": "https://www.audiotool.com/album/pif3btmq/",
     "photo": "https://api.audiotool.com/album/PIF3bTmq/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/nmgbeats/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -3254,17 +3177,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/beat123/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "SouthBronxDen",
     "real_name": "",
     "date": "2015-04-14",
-    "album_number": 40,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 39,
+    "at_profile": "https://www.audiotool.com/user/southbronxden/",
     "album_url": "https://www.audiotool.com/album/ixieojt/",
     "photo": "https://api.audiotool.com/album/iXIeOJt/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/southbronxden/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -3326,17 +3249,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/amish/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Tornsage",
     "real_name": "",
     "date": "2015-04-22",
-    "album_number": 41,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 40,
+    "at_profile": "https://www.audiotool.com/user/tornsage/",
     "album_url": "https://www.audiotool.com/album/jvjotpw/",
     "photo": "https://api.audiotool.com/album/JVJOTPW/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/tornsage/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -3410,17 +3333,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/dzool/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Z&#x00e9;",
     "real_name": "",
     "date": "2015-04-29",
-    "album_number": 42,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 41,
+    "at_profile": "https://www.audiotool.com/user/vort/",
     "album_url": "https://www.audiotool.com/album/fckpbo/",
     "photo": "https://api.audiotool.com/album/FcKPBO/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/vort/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -3500,17 +3423,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/christian-chrom/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Navor",
     "real_name": "",
     "date": "2015-05-06",
-    "album_number": 43,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 42,
+    "at_profile": "https://www.audiotool.com/user/djcandie/",
     "album_url": "https://www.audiotool.com/album/pri3aji/",
     "photo": "https://api.audiotool.com/album/pRI3aJI/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/djcandie/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -3578,17 +3501,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/notoz/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Pathfinder",
     "real_name": "",
     "date": "2015-05-13",
-    "album_number": 44,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 43,
+    "at_profile": "https://www.audiotool.com/user/perrier/",
     "album_url": "https://www.audiotool.com/album/o15is/",
     "photo": "https://api.audiotool.com/album/O15IS/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/perrier/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -3668,17 +3591,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/infyuthsion/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Daftwill",
     "real_name": "",
     "date": "2015-05-20",
-    "album_number": 45,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 44,
+    "at_profile": "https://www.audiotool.com/user/daftwill/",
     "album_url": "https://www.audiotool.com/album/huq36h9yv/",
     "photo": "https://api.audiotool.com/album/huq36h9yv/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/daftwill/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -3758,17 +3681,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/sandburgen/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Slopo",
     "real_name": "",
     "date": "2015-05-27",
-    "album_number": 46,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 45,
+    "at_profile": "https://www.audiotool.com/user/slopo/",
     "album_url": "https://www.audiotool.com/album/4oqrg5xs/",
     "photo": "https://api.audiotool.com/album/4OQrg5xS/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/slopo/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -3848,17 +3771,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/sharkyyo/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "CGMan",
     "real_name": "",
     "date": "2015-06-02",
-    "album_number": 47,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 46,
+    "at_profile": "https://www.audiotool.com/user/cgman/",
     "album_url": "https://www.audiotool.com/album/d6qdh/",
     "photo": "https://api.audiotool.com/album/D6Qdh/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/cgman/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -3914,17 +3837,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/galaxpel/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Joa Ebert",
     "real_name": "",
     "date": "2015-06-08",
-    "album_number": 48,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 47,
+    "at_profile": "https://www.audiotool.com/user/joa/",
     "album_url": "https://www.audiotool.com/album/qd3ss/",
     "photo": "https://api.audiotool.com/album/Qd3ss/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/joa/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -4004,17 +3927,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/kingbeats5/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Crazy about You",
     "real_name": "",
     "date": "2015-06-17",
-    "album_number": 49,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 48,
+    "at_profile": "https://www.audiotool.com/user/manuege_el/",
     "album_url": "https://www.audiotool.com/album/jbkwf/",
     "photo": "https://api.audiotool.com/album/jBKWF/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/manuege_el/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -4082,101 +4005,23 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/xavrockbeats/avatar/512.jpg"
+    "is_hidden": false
   },
   {
-    "artist": "Sweattz",
-    "real_name": "",
-    "date": "2015-06-24",
-    "album_number": 50,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
     "album_url": "https://www.audiotool.com/album/mlzmzzie/",
-    "photo": "https://api.audiotool.com/album/MLzMzzIE/cover/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
-    "tracks": [
-      {
-        "url": "https://www.audiotool.com/track/bgn_ovr_vip/",
-        "name": "BGN {OVR VIP)",
-        "track_artist": "Nominal",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/mct-03-808_vltra_remix/",
-        "name": "MCT-03-808 (Vltra Remix)",
-        "track_artist": "Nominal",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/pour_baby/",
-        "name": "Pour Baby",
-        "track_artist": "VLTRA",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/adult_swim_believe_in_me/",
-        "name": "[Adult Swim] Believe In Me",
-        "track_artist": "VLTRA",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/vvv-9kfRqXx/",
-        "name": "VVV",
-        "track_artist": "OzWu",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/sequence_iii/",
-        "name": "Sequence III",
-        "track_artist": "OzWu",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/allure/",
-        "name": "Allure",
-        "track_artist": "[offbeatninja]",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/endless-Ee3V4gcR/",
-        "name": "Endless",
-        "track_artist": "[offbeatninja]",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/id_rather_be_happy_than_right/",
-        "name": "I'd Rather Be Happy Than Right",
-        "track_artist": "Xavi",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/oeEZ8/",
-        "name": "真夜中",
-        "track_artist": "Xavi",
-        "desc": ""
-      }
-    ],
-    "social": {},
-    "color1": "",
-    "color2": "",
-    "color_accent": "",
-    "desc_bg": "",
-    "links_bar_color": "",
-    "bar_color": "#111111",
-    "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/mr_sinister/avatar/512.jpg"
+    "is_hidden": true,
+    "artist": "",
+    "tracks": []
   },
   {
     "artist": "Tottenhauser",
     "real_name": "",
     "date": "2015-07-01",
-    "album_number": 51,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 50,
+    "at_profile": "https://www.audiotool.com/user/tottenhauser/",
     "album_url": "https://www.audiotool.com/album/0oryk5/",
     "photo": "https://api.audiotool.com/album/0orYK5/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/tottenhauser/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -4238,17 +4083,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/lola_1/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Fauko",
     "real_name": "",
     "date": "2015-07-08",
-    "album_number": 52,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 51,
+    "at_profile": "https://www.audiotool.com/user/fauko/",
     "album_url": "https://www.audiotool.com/album/gerzj5pa7/",
     "photo": "https://api.audiotool.com/album/gerzj5Pa7/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/fauko/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -4328,17 +4173,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/sandburgen/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Mikel Boyles",
     "real_name": "",
     "date": "2015-07-15",
-    "album_number": 53,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 52,
+    "at_profile": "https://www.audiotool.com/user/nowai/",
     "album_url": "https://www.audiotool.com/album/ofu4hck4/",
     "photo": "https://api.audiotool.com/album/ofu4HcK4/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/nowai/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -4406,17 +4251,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/christian-chrom/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Teqtoniq",
     "real_name": "",
     "date": "2015-07-22",
-    "album_number": 54,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 53,
+    "at_profile": "https://www.audiotool.com/user/trance10/",
     "album_url": "https://www.audiotool.com/album/tzgcys/",
     "photo": "https://api.audiotool.com/album/tzgCyS/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/trance10/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -4496,17 +4341,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/puppiez1006/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Bracolli",
     "real_name": "",
     "date": "2015-07-29",
-    "album_number": 55,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 54,
+    "at_profile": "https://www.audiotool.com/user/gabriel_evangelistaadao/",
     "album_url": "https://www.audiotool.com/album/8v9sxpke3/",
     "photo": "https://api.audiotool.com/album/8v9sxPKE3/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/gabriel_evangelistaadao/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -4580,101 +4425,23 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/storman/avatar/512.jpg"
+    "is_hidden": false
   },
   {
-    "artist": "Daniel Burgoyne",
-    "real_name": "",
-    "date": "2014-09-24",
-    "album_number": 56,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
     "album_url": "https://www.audiotool.com/album/blgcbm/",
-    "photo": "https://api.audiotool.com/album/BLgcBm/cover/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
-    "tracks": [
-      {
-        "url": "https://www.audiotool.com/track/bein/",
-        "name": "Bein",
-        "track_artist": "Snad Breugen",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/hg1Sof4Sb/",
-        "name": "#04",
-        "track_artist": "Snad Breugen",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/in_my_shadow/",
-        "name": "In my Shadow",
-        "track_artist": "ascent",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/retaliation-d5taxyA/",
-        "name": "REtaliation",
-        "track_artist": "ascent",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/faster_and_faster/",
-        "name": "Faster and Faster",
-        "track_artist": "Marodeur",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/spirit_c/",
-        "name": "spirit c",
-        "track_artist": "Marodeur",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/industrial_sabotage/",
-        "name": "Industrial Sabotage",
-        "track_artist": "Tottenhauser",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/peach_seven/",
-        "name": "peach, seven.",
-        "track_artist": "Tottenhauser",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/extreme_party_re/",
-        "name": "extreme Party(re)",
-        "track_artist": "Xavi",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/hivZhw1O/",
-        "name": "42",
-        "track_artist": "Xavi",
-        "desc": ""
-      }
-    ],
-    "social": {},
-    "color1": "",
-    "color2": "",
-    "color_accent": "",
-    "desc_bg": "",
-    "links_bar_color": "",
-    "bar_color": "#111111",
-    "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/opaqity/avatar/512.jpg"
+    "is_hidden": true,
+    "artist": "",
+    "tracks": []
   },
   {
     "artist": "Infyuthsion",
     "real_name": "",
     "date": "2015-09-02",
-    "album_number": 57,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 56,
+    "at_profile": "https://www.audiotool.com/user/infyuthsion/",
     "album_url": "https://www.audiotool.com/album/fegwtffwt/",
     "photo": "https://api.audiotool.com/album/FeGwtFFWt/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/infyuthsion/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -4736,17 +4503,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/galaxpel/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Universe Cosmic",
     "real_name": "",
     "date": "2015-09-09",
-    "album_number": 58,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 57,
+    "at_profile": "https://www.audiotool.com/user/universecosmic/",
     "album_url": "https://www.audiotool.com/album/qbtlhcu/",
     "photo": "https://api.audiotool.com/album/QbtlhcU/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/universecosmic/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -4826,17 +4593,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/hud/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "[Kh&#x00e1;&#x0159;&#x00a1;]'",
     "real_name": "",
     "date": "2015-09-15",
-    "album_number": 59,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 58,
+    "at_profile": "https://www.audiotool.com/user/khman750/",
     "album_url": "https://www.audiotool.com/album/hbufuuw/",
     "photo": "https://api.audiotool.com/album/HBuFUuw/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/khman750/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -4910,107 +4677,23 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/hud/avatar/512.jpg"
+    "is_hidden": false
   },
   {
-    "artist": "proxima",
-    "real_name": "",
-    "date": "2015-09-22",
-    "album_number": 60,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
     "album_url": "https://www.audiotool.com/album/advfxu/",
-    "photo": "https://api.audiotool.com/album/advfXU/cover/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
-    "tracks": [
-      {
-        "url": "https://www.audiotool.com/track/illuminati_lumberjacks/",
-        "name": "Illuminati Lumberjacks",
-        "track_artist": "abstract",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/as_make_u_mine_but_how/",
-        "name": "[as] Make U Mine (But How?)",
-        "track_artist": "abstract",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/falls/",
-        "name": "Falls",
-        "track_artist": "[offbeatninja]",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/young-ZwhNI/",
-        "name": "young",
-        "track_artist": "[offbeatninja]",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/a2_-_hwe_1/",
-        "name": "A2 - HWE.1",
-        "track_artist": "Sora",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/sU4y4nFUi/",
-        "name": "ｗｈｙ ｄｉｄ ｔｈｅ ｌｉｇｈｔ ｆａｄｅ",
-        "track_artist": "Sora",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/roll_through_scribble/",
-        "name": "Roll Through [Scribble]",
-        "track_artist": "amoeba",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/twinkle_twinkle_-_synth_voice/",
-        "name": "Twinkle, Twinkle - Synth Voice",
-        "track_artist": "amoeba",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/2_-_sleep_dep/",
-        "name": "2 - SLEEP DEP",
-        "track_artist": "VLTRA",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/paradise_honest/",
-        "name": "Paradise, Honest",
-        "track_artist": "VLTRA",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/frogs_and_rabbits/",
-        "name": "FROGs and RABBITs",
-        "track_artist": "ｒａｃｅｃａｒ",
-        "desc": ""
-      }
-    ],
-    "social": {},
-    "color1": "",
-    "color2": "",
-    "color_accent": "",
-    "desc_bg": "",
-    "links_bar_color": "",
-    "bar_color": "#111111",
-    "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/hoosebee/avatar/512.jpg"
+    "is_hidden": true,
+    "artist": "",
+    "tracks": []
   },
   {
     "artist": "Mikke",
     "real_name": "",
     "date": "2015-09-30",
-    "album_number": 61,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 60,
+    "at_profile": "https://www.audiotool.com/user/mikke5885/",
     "album_url": "https://www.audiotool.com/album/e0aqv0xnj/",
     "photo": "https://api.audiotool.com/album/e0AQv0xnJ/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/mikke5885/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -5090,17 +4773,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/xtractmusic/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Mr. Standfast",
     "real_name": "",
     "date": "2015-10-07",
-    "album_number": 62,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 61,
+    "at_profile": "https://www.audiotool.com/user/mrstandfast/",
     "album_url": "https://www.audiotool.com/album/0ybmt/",
     "photo": "https://api.audiotool.com/album/0YBMT/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/mrstandfast/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -5180,17 +4863,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/opaqity/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "[Hybrid]",
     "real_name": "",
     "date": "2015-10-12",
-    "album_number": 63,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 62,
+    "at_profile": "https://www.audiotool.com/user/kahliel/",
     "album_url": "https://www.audiotool.com/album/cvguob117/",
     "photo": "https://api.audiotool.com/album/CVgUoB117/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/kahliel/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -5252,17 +4935,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/mark-lewis_ndikintum/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "dabrig",
     "real_name": "",
     "date": "2015-10-21",
-    "album_number": 64,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 63,
+    "at_profile": "https://www.audiotool.com/user/dabrig/",
     "album_url": "https://www.audiotool.com/album/ttfrr/",
     "photo": "https://api.audiotool.com/album/tTFRr/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/dabrig/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -5342,17 +5025,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/daveterrell/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "E-Trim",
     "real_name": "",
     "date": "2015-10-27",
-    "album_number": 65,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 64,
+    "at_profile": "https://www.audiotool.com/user/bart_van_eynde/",
     "album_url": "https://www.audiotool.com/album/xmilsqmwn/",
     "photo": "https://api.audiotool.com/album/xMiLsqmwN/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/bart_van_eynde/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -5432,17 +5115,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/sharkyyo/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Jacob Tyler",
     "real_name": "",
     "date": "2015-11-04",
-    "album_number": 66,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 65,
+    "at_profile": "https://www.audiotool.com/user/jakeleavey_ymail_com/",
     "album_url": "https://www.audiotool.com/album/2sem3/",
     "photo": "https://api.audiotool.com/album/2SEm3/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/jakeleavey_ymail_com/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -5516,17 +5199,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/perrier/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Apollo Euphoria",
     "real_name": "",
     "date": "2015-11-11",
-    "album_number": 67,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 66,
+    "at_profile": "https://www.audiotool.com/user/apolloeuphoria/",
     "album_url": "https://www.audiotool.com/album/jkuptea/",
     "photo": "https://api.audiotool.com/album/jkUPTEA/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/apolloeuphoria/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -5582,17 +5265,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/matrix1/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Akimbo",
     "real_name": "",
     "date": "2015-11-18",
-    "album_number": 68,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 67,
+    "at_profile": "https://www.audiotool.com/user/flooroneooneremixes/",
     "album_url": "https://www.audiotool.com/album/ftnagxh/",
     "photo": "https://api.audiotool.com/album/ftNAgXH/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/flooroneooneremixes/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -5666,17 +5349,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/fonder/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "&#x039b;&#x039b;RON",
     "real_name": "",
     "date": "2015-11-25",
-    "album_number": 69,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 68,
+    "at_profile": "https://www.audiotool.com/user/erdbeerquark/",
     "album_url": "https://www.audiotool.com/album/rjggctqy/",
     "photo": "https://api.audiotool.com/album/rjGGcTQY/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/erdbeerquark/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -5756,17 +5439,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/skyboundzoo/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "floydpjasper",
     "real_name": "",
     "date": "2015-12-02",
-    "album_number": 70,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 69,
+    "at_profile": "https://www.audiotool.com/user/floydpjasper/",
     "album_url": "https://www.audiotool.com/album/7a9ktldnm/",
     "photo": "https://api.audiotool.com/album/7A9ktLDNM/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/floydpjasper/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -5834,17 +5517,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/floydpjasper/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "brainwalker",
     "real_name": "",
     "date": "2015-12-09",
-    "album_number": 71,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 70,
+    "at_profile": "https://www.audiotool.com/user/brainwalker/",
     "album_url": "https://www.audiotool.com/album/3i0j5p/",
     "photo": "https://api.audiotool.com/album/3I0j5P/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/brainwalker/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -5924,17 +5607,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/sandburgen/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Zerod",
     "real_name": "",
     "date": "2015-12-16",
-    "album_number": 72,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 71,
+    "at_profile": "https://www.audiotool.com/user/zerod/",
     "album_url": "https://www.audiotool.com/album/mhksqxj/",
     "photo": "https://api.audiotool.com/album/mhKSqxJ/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/zerod/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -6002,17 +5685,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/questionone/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Sandburgen",
     "real_name": "",
     "date": "2015-12-23",
-    "album_number": 73,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 72,
+    "at_profile": "https://www.audiotool.com/user/sandburgen/",
     "album_url": "https://www.audiotool.com/album/rs5yxjze/",
     "photo": "https://api.audiotool.com/album/RS5yXjze/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/sandburgen/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -6092,17 +5775,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/sharkyyo/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Kepz",
     "real_name": "",
     "date": "2015-12-30",
-    "album_number": 74,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 73,
+    "at_profile": "https://www.audiotool.com/user/kepz/",
     "album_url": "https://www.audiotool.com/album/w3ob3/",
     "photo": "https://api.audiotool.com/album/w3oB3/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/kepz/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -6182,17 +5865,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/skyboundzoo/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "SharKyyo",
     "real_name": "",
     "date": "2016-01-06",
-    "album_number": 75,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 74,
+    "at_profile": "https://www.audiotool.com/user/sharkyyo/",
     "album_url": "https://www.audiotool.com/album/naaejqfyw/",
     "photo": "https://api.audiotool.com/album/NAaEJQfYW/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/sharkyyo/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -6272,17 +5955,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/walkerlrobinson/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Aron",
     "real_name": "",
     "date": "2016-01-13",
-    "album_number": 76,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 75,
+    "at_profile": "https://www.audiotool.com/user/mygrandpascool/",
     "album_url": "https://www.audiotool.com/album/develp/",
     "photo": "https://api.audiotool.com/album/DEveLP/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/mygrandpascool/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -6356,101 +6039,23 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/512/avatar/512.jpg"
+    "is_hidden": false
   },
   {
-    "artist": "Divus/Boshi",
-    "real_name": "",
-    "date": "2016-01-20",
-    "album_number": 77,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
     "album_url": "https://www.audiotool.com/album/tzvj27b/",
-    "photo": "https://api.audiotool.com/album/tzVj27b/cover/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
-    "tracks": [
-      {
-        "url": "https://www.audiotool.com/track/blue_days_feat_emma/",
-        "name": "Blue Days feat. Emma",
-        "track_artist": "cihangir",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/memory_eraser/",
-        "name": "Memory Eraser",
-        "track_artist": "cihangir",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/the_dude/",
-        "name": "The Dude",
-        "track_artist": "Cripta &amp; Kepz",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/everyday_anyone/",
-        "name": "EVERYDAY ANYONE",
-        "track_artist": "Cripta &amp; Kepz",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/flight_missing_new_edit/",
-        "name": "flight _ missing (new edit)",
-        "track_artist": "cripta",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/a_walk_in_the_dark/",
-        "name": "A Walk In The Dark",
-        "track_artist": "cripta",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/ktn-24/",
-        "name": "KTN-24",
-        "track_artist": "Nominal",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/je_rave_-_feat_twilatoo_pre/",
-        "name": "Je rave - feat. Twilatoo (pre)",
-        "track_artist": "Nominal",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/zeitgeist-c6S5pKq5c/",
-        "name": "Zeitgeist",
-        "track_artist": "Olondro",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/the_man_who_smokes_and_is_lost/",
-        "name": "the man who smokes and is lost",
-        "track_artist": "Olondro",
-        "desc": ""
-      }
-    ],
-    "social": {},
-    "color1": "",
-    "color2": "",
-    "color_accent": "",
-    "desc_bg": "",
-    "links_bar_color": "",
-    "bar_color": "#111111",
-    "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/boshi/avatar/512.jpg"
+    "is_hidden": true,
+    "artist": "",
+    "tracks": []
   },
   {
     "artist": "DubLion",
     "real_name": "",
     "date": "2016-01-27",
-    "album_number": 78,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 77,
+    "at_profile": "https://www.audiotool.com/user/dublion/",
     "album_url": "https://www.audiotool.com/album/gw9cqiqr/",
     "photo": "https://api.audiotool.com/album/Gw9Cqiqr/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/dublion/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -6524,17 +6129,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/scolex/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Notoz",
     "real_name": "",
     "date": "2016-02-03",
-    "album_number": 79,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 78,
+    "at_profile": "https://www.audiotool.com/user/notoz/",
     "album_url": "https://www.audiotool.com/album/xdi9i0mh/",
     "photo": "https://api.audiotool.com/album/XdI9I0Mh/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/notoz/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -6614,17 +6219,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/3beatss/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Ollie Jarvis",
     "real_name": "",
     "date": "2016-02-10",
-    "album_number": 80,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 79,
+    "at_profile": "https://www.audiotool.com/user/oscarollie/",
     "album_url": "https://www.audiotool.com/album/pohsz7b/",
     "photo": "https://api.audiotool.com/album/PoHsz7B/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/oscarollie/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -6704,17 +6309,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/opaqity/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Sumad",
     "real_name": "",
     "date": "2016-02-17",
-    "album_number": 81,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 80,
+    "at_profile": "https://www.audiotool.com/user/sumad/",
     "album_url": "https://www.audiotool.com/album/qbemlckoi/",
     "photo": "https://api.audiotool.com/album/qbEMLcKoi/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/sumad/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -6794,17 +6399,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/whitegrizzly/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Cal Lycus",
     "real_name": "",
     "date": "2016-02-24",
-    "album_number": 82,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 81,
+    "at_profile": "https://www.audiotool.com/user/callycus/",
     "album_url": "https://www.audiotool.com/album/ubguzjkis/",
     "photo": "https://api.audiotool.com/album/UBgUzjkIS/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/callycus/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -6884,17 +6489,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/callycus/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "EMIL SCHYREN",
     "real_name": "",
     "date": "2016-03-01",
-    "album_number": 83,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 82,
+    "at_profile": "https://www.audiotool.com/user/granpaw/",
     "album_url": "https://www.audiotool.com/album/knl9rxjg/",
     "photo": "https://api.audiotool.com/album/kNl9RxJG/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/granpaw/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -6974,17 +6579,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/danny_sierra/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Christian Chrom",
     "real_name": "",
     "date": "2016-03-09",
-    "album_number": 84,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 83,
+    "at_profile": "https://www.audiotool.com/user/christian-chrom/",
     "album_url": "https://www.audiotool.com/album/bwjaynh12/",
     "photo": "https://api.audiotool.com/album/bWJayNH12/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/christian-chrom/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -7058,17 +6663,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/bart_van_eynde/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "AUDIOARCHITECT",
     "real_name": "",
     "date": "2016-03-16",
-    "album_number": 85,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 84,
+    "at_profile": "https://www.audiotool.com/user/audioarchitect/",
     "album_url": "https://www.audiotool.com/album/mzcfu/",
     "photo": "https://api.audiotool.com/album/mzcFU/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/audioarchitect/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -7148,17 +6753,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/sandburgen/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "QVIN",
     "real_name": "",
     "date": "2016-03-22",
-    "album_number": 86,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 85,
+    "at_profile": "https://www.audiotool.com/user/statistik/",
     "album_url": "https://www.audiotool.com/album/pjpiou3l/",
     "photo": "https://api.audiotool.com/album/PJpIoU3l/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/statistik/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -7238,17 +6843,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/mynameischuckles/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Approaching Human",
     "real_name": "",
     "date": "2016-03-30",
-    "album_number": 87,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 86,
+    "at_profile": "https://www.audiotool.com/user/john_cavanaugh/",
     "album_url": "https://www.audiotool.com/album/zxigd/",
     "photo": "https://api.audiotool.com/album/ZXIgd/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/john_cavanaugh/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -7328,17 +6933,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/netime/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Mute",
     "real_name": "",
     "date": "2016-04-06",
-    "album_number": 88,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 87,
+    "at_profile": "https://www.audiotool.com/user/beatbob/",
     "album_url": "https://www.audiotool.com/album/dvf4umd/",
     "photo": "https://api.audiotool.com/album/Dvf4uMD/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/beatbob/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -7412,17 +7017,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/jonjon/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "arche3.0",
     "real_name": "",
     "date": "2016-04-12",
-    "album_number": 89,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 88,
+    "at_profile": "https://www.audiotool.com/user/arche289/",
     "album_url": "https://www.audiotool.com/album/mogada75n/",
     "photo": "https://api.audiotool.com/album/MOgADA75N/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/arche289/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -7496,17 +7101,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/bart_van_eynde/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "ABADDON",
     "real_name": "",
     "date": "2016-04-20",
-    "album_number": 90,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 89,
+    "at_profile": "https://www.audiotool.com/user/exist/",
     "album_url": "https://www.audiotool.com/album/p1yi4n/",
     "photo": "https://api.audiotool.com/album/P1YI4N/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/exist/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -7580,17 +7185,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/beat123/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Almate",
     "real_name": "",
     "date": "2016-04-27",
-    "album_number": 91,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 90,
+    "at_profile": "https://www.audiotool.com/user/almate/",
     "album_url": "https://www.audiotool.com/album/x8x8lg2tm/",
     "photo": "https://api.audiotool.com/album/X8X8Lg2TM/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/almate/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -7670,17 +7275,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/youfuckingweeb/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Regret",
     "real_name": "",
     "date": "2016-05-11",
-    "album_number": 92,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 91,
+    "at_profile": "https://www.audiotool.com/user/spacehorse/",
     "album_url": "https://www.audiotool.com/album/pevrv/",
     "photo": "https://api.audiotool.com/album/peVrv/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/spacehorse/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -7760,107 +7365,23 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/beat123/avatar/512.jpg"
+    "is_hidden": false
   },
   {
-    "artist": "Arpeggiator Gladiator",
-    "real_name": "",
-    "date": "2016-08-10",
-    "album_number": 93,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
     "album_url": "https://www.audiotool.com/album/uq8tpudy/",
-    "photo": "https://api.audiotool.com/album/UQ8TpuDY/cover/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
-    "tracks": [
-      {
-        "url": "https://www.audiotool.com/track/qd_remastered/",
-        "name": "qd (remastered)",
-        "track_artist": "amoeba",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/cubrick/",
-        "name": "Cubrick",
-        "track_artist": "amoeba",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/the_truth-eDEiE4h/",
-        "name": "The Truth",
-        "track_artist": "Intracktion",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/the_simpleton_2014/",
-        "name": "The Simpleton (2014)",
-        "track_artist": "Intracktion",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/corner_shop/",
-        "name": "Corner Shop",
-        "track_artist": "Sonic Particles",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/empire-6kJbZm3/",
-        "name": "Empire",
-        "track_artist": "Sonic Particles",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/blurred/",
-        "name": "Blurred",
-        "track_artist": "Versus",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/why_did_i_fade_away/",
-        "name": "why did i fade away",
-        "track_artist": "Versus",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/everyday_anyone/",
-        "name": "EVERYDAY ANYONE",
-        "track_artist": "ascent",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/zeitgeist-c6S5pKq5c/",
-        "name": "Zeitgeist",
-        "track_artist": "ascent",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/never_quite_here/",
-        "name": "Never Quite Here",
-        "track_artist": "CGMan",
-        "desc": ""
-      }
-    ],
-    "social": {},
-    "color1": "",
-    "color2": "",
-    "color_accent": "",
-    "desc_bg": "",
-    "links_bar_color": "",
-    "bar_color": "#111111",
-    "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/jonjon/avatar/512.jpg"
+    "is_hidden": true,
+    "artist": "",
+    "tracks": []
   },
   {
     "artist": "Bit-Tron",
     "real_name": "",
     "date": "2016-08-19",
-    "album_number": 94,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 93,
+    "at_profile": "https://www.audiotool.com/user/bit-tron/",
     "album_url": "https://www.audiotool.com/album/mjv7t0sad/",
     "photo": "https://api.audiotool.com/album/MjV7t0saD/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/bit-tron/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -7940,17 +7461,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/sandburgen/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Hangoo",
     "real_name": "",
     "date": "2016-08-31",
-    "album_number": 95,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 94,
+    "at_profile": "https://www.audiotool.com/user/hangoo/",
     "album_url": "https://www.audiotool.com/album/9pfmz/",
     "photo": "https://api.audiotool.com/album/9PFmZ/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/hangoo/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -8030,17 +7551,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/hangoo/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "SuperN.O.V.A",
     "real_name": "",
     "date": "2016-09-14",
-    "album_number": 96,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 95,
+    "at_profile": "https://www.audiotool.com/user/superneonsonvegasairwaves/",
     "album_url": "https://www.audiotool.com/album/rwhjt2i/",
     "photo": "https://api.audiotool.com/album/rWhjT2I/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/superneonsonvegasairwaves/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -8120,17 +7641,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/skyboundzoo/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "archives/Audiotool Hits",
     "real_name": "",
     "date": "2016-09-21",
-    "album_number": 97,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 96,
+    "at_profile": "https://www.audiotool.com/user/twerk/",
     "album_url": "https://www.audiotool.com/album/jtpwkjj/",
     "photo": "https://api.audiotool.com/album/jTPWkJj/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/twerk/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -8210,17 +7731,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/tomderry/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "clu",
     "real_name": "",
     "date": "2016-10-05",
-    "album_number": 98,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 97,
+    "at_profile": "https://www.audiotool.com/user/clu/",
     "album_url": "https://www.audiotool.com/album/wmnofedc/",
     "photo": "https://api.audiotool.com/album/wMnoFEDc/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/clu/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -8300,17 +7821,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/synthinox/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Herlufsew",
     "real_name": "",
     "date": "2016-10-12",
-    "album_number": 99,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 98,
+    "at_profile": "https://www.audiotool.com/user/herlufsew/",
     "album_url": "https://www.audiotool.com/album/n2xjvl/",
     "photo": "https://api.audiotool.com/album/n2Xjvl/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/herlufsew/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -8390,17 +7911,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/herlufsew/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Tyburn",
     "real_name": "",
     "date": "2016-10-19",
-    "album_number": 100,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 99,
+    "at_profile": "https://www.audiotool.com/user/virtuousduck/",
     "album_url": "https://www.audiotool.com/album/0i3ls/",
     "photo": "https://api.audiotool.com/album/0I3LS/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/virtuousduck/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -8474,17 +7995,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/kepz/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Carlyon",
     "real_name": "",
     "date": "2016-10-26",
-    "album_number": 101,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 100,
+    "at_profile": "https://www.audiotool.com/user/carlyon/",
     "album_url": "https://www.audiotool.com/album/fynka1b/",
     "photo": "https://api.audiotool.com/album/FynKA1b/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/carlyon/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -8564,17 +8085,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/tocka/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "hvd.",
     "real_name": "",
     "date": "2016-11-01",
-    "album_number": 102,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 101,
+    "at_profile": "https://www.audiotool.com/user/iwanbeflylo23/",
     "album_url": "https://www.audiotool.com/album/xe89crjwc/",
     "photo": "https://api.audiotool.com/album/xe89CRjWC/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/iwanbeflylo23/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -8654,17 +8175,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/cakefour/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "",
     "real_name": "",
     "date": "2016-12-21",
-    "album_number": 103,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 102,
+    "at_profile": "https://www.audiotool.com/user/djflashbang/",
     "album_url": "https://www.audiotool.com/album/dq1pabol/",
     "photo": "https://api.audiotool.com/album/dQ1pabOL/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/djflashbang/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -8744,17 +8265,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/dove/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Rodrigo Del Canto",
     "real_name": "",
     "date": "2016-12-28",
-    "album_number": 104,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 103,
+    "at_profile": "https://www.audiotool.com/user/rodrigo_del_canto/",
     "album_url": "https://www.audiotool.com/album/qafr9/",
     "photo": "https://api.audiotool.com/album/qaFR9/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/rodrigo_del_canto/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -8834,17 +8355,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/joaqbigroom/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Lewi Astro",
     "real_name": "",
     "date": "2017-01-04",
-    "album_number": 105,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 104,
+    "at_profile": "https://www.audiotool.com/user/mark-lewis_ndikintum/",
     "album_url": "https://www.audiotool.com/album/djnov/",
     "photo": "https://api.audiotool.com/album/DjnOv/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/mark-lewis_ndikintum/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -8918,17 +8439,17 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/mark-lewis_ndikintum/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Flower",
     "real_name": "",
     "date": "2017-01-11",
-    "album_number": 106,
-    "at_profile": "https://www.audiotool.com/user/a-records/",
+    "album_number": 105,
+    "at_profile": "https://www.audiotool.com/user/flowerrr/",
     "album_url": "https://www.audiotool.com/album/f1ailrc/",
     "photo": "https://api.audiotool.com/album/F1aIlRC/cover/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/flowerrr/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
