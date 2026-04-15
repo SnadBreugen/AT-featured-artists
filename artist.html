@@ -633,11 +633,11 @@ function render(a,idx,total,prev,next){
           <div>
             <div class="sidebar-title">Curated Tracks</div>
             <div class="track-list" style="display:flex;flex-direction:column;gap:1px;background:var(--border);margin-top:1px">
-              ${tracks.filter(t=>t.name&&t.track_artist).map((t,i)=>`
+              ${tracks.map((t,i)=>`
                 <div class="track-item">
                   <button class="track-btn" id="tbtn-${i}" data-url="${esc(t.url)}" onclick="toggleDesc(${i},'${esc(t.url)}')">
                     <img class="track-cover" src="https://api.audiotool.com/track/${tId(t.url)}/cover/256.jpg" onerror="this.src='${coverSrc||''}';this.onerror=null;" alt="">
-                    <span class="tt">${esc(t.track_artist)} . ${esc(t.name)}</span>
+                    <span class="tt">${esc(t.track_artist||'')} ${t.track_artist&&t.name?'. ':''}${esc(t.name||tId(t.url))}</span>
                     <span class="tp" id="tp-${i}">▷</span>
                   </button>
                   ${t.desc?`<div class="track-desc" id="tdesc-${i}">${esc(t.desc)}</div>`:''}
@@ -664,7 +664,7 @@ function render(a,idx,total,prev,next){
   else document.documentElement.style.removeProperty('--desc-bg');
   if(a.links_bar_color) document.documentElement.style.setProperty('--links-bar-color', a.links_bar_color);
   else document.documentElement.style.removeProperty('--links-bar-color');
-  window._tracks=tracks.filter(t=>t.name&&t.track_artist);
+  window._tracks=tracks;
   if(a.color_accent){ window._accentOverride=true; document.documentElement.style.setProperty('--accent', a.color_accent); }
   else if(a.color1){ window._accentOverride=true; document.documentElement.style.setProperty('--accent', a.color1); }
   else { window._accentOverride=false; }
