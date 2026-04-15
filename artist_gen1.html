@@ -49,9 +49,10 @@
   .hero-realname { font-family: var(--type); font-size: 13px; color: var(--text-muted); letter-spacing: 0.05em; margin-bottom: 24px; }
   .hero-intro { font-family: var(--type); font-size: 14px; line-height: 1.85; color: var(--text-muted); max-width: 520px; border-left: 3px solid var(--accent); padding-left: 18px; }
 
+  /* ARTIST PHOTO - groesser */
   .hero-photo { flex-shrink: 0; }
   .cover-wrap {
-    width: clamp(200px, 26vw, 340px);
+    width: clamp(260px, 32vw, 420px);
     position: relative; border: 2px solid var(--border); overflow: hidden;
   }
   .cover-wrap img {
@@ -59,22 +60,42 @@
     display: block; filter: grayscale(10%); transition: filter .4s;
   }
   .cover-wrap img:hover { filter: grayscale(0%); }
+
+  /* COVER OVERLAY BAR */
   .cover-bar {
     position: absolute; bottom: 0; left: 0; right: 0;
-    padding: 10px 14px;
+    padding: 8px 12px;
     display: flex; align-items: center; justify-content: space-between;
     background: var(--bar-color, #111);
   }
   .cover-bar .bar-num {
-    font-family: var(--block); font-size: 18px; letter-spacing: .04em;
+    font-family: var(--block); font-size: 15px; letter-spacing: .04em;
     color: var(--bar-text, #fff); line-height: 1;
   }
   .cover-bar .bar-name {
-    font-family: var(--block); font-size: 18px; letter-spacing: .06em;
+    font-family: var(--block); font-size: 15px; letter-spacing: .06em;
     color: var(--bar-text, #fff); text-align: right;
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 65%;
   }
   .cover-date { font-size: 10px; color: var(--text-dim); letter-spacing: 0.1em; margin-top: 8px; text-align: right; font-family: var(--type); }
+
+  /* SIDEBAR COVER - kleiner, passt in 300px Sidebar */
+  .sidebar-cover-wrap {
+    width: 100%;
+    position: relative; border: 2px solid var(--border); overflow: hidden;
+  }
+  .sidebar-cover-wrap img {
+    width: 100%; aspect-ratio: 1; object-fit: cover; object-position: center;
+    display: block; filter: grayscale(10%); transition: filter .4s;
+  }
+  .sidebar-cover-wrap img:hover { filter: grayscale(0%); }
+  .sidebar-cover-wrap .cover-bar {
+    padding: 6px 10px;
+  }
+  .sidebar-cover-wrap .cover-bar .bar-num,
+  .sidebar-cover-wrap .cover-bar .bar-name {
+    font-size: 13px;
+  }
 
   .links-bar {
     position: relative; z-index: 1; max-width: var(--max); margin: 28px auto 0;
@@ -245,7 +266,7 @@ function render(a,prev,next){
         ${tracks.length?`
           <div>
             <div class="sidebar-title" style="color:${accent};border-bottom-color:${accent}">Edition Audiotool</div>
-            <div class="cover-wrap" style="margin-top:12px">
+            <div class="sidebar-cover-wrap" style="margin-top:12px">
               ${a.cover_url
                 ? `<img src="${esc(a.cover_url)}" alt="${esc(a.artist)}" onerror="this.style.display='none'">`
                 : `<div style="width:100%;aspect-ratio:1;background:var(--surface);"></div>`}
