@@ -46,30 +46,26 @@
   .search-count { font-family:var(--block); font-size:12px; letter-spacing:.1em; color:var(--text-dim); }
 
   .quote-bar {
-    border-bottom:1px solid var(--border);
-    border-top:1px solid var(--border);
-    background:var(--surface);
-    display:flex; align-items:center;
     position:relative; z-index:1;
-    transition:border-color .8s ease;
+    transition:background .8s ease;
+    padding:24px var(--pad) 20px;
   }
   .quote-label {
-    flex-shrink:0; padding:0 20px;
-    border-right:1px solid #333;
-    align-self:stretch; display:flex; align-items:center;
-    font-family:var(--block); font-size:11px; letter-spacing:.25em; color:#888;
+    font-family:var(--block); font-size:11px; letter-spacing:.25em;
+    color:rgba(0,0,0,0.4); margin-bottom:10px;
   }
   .quote-content {
-    flex:1; padding:22px 40px;
     transition:opacity .6s ease;
   }
   .quote-content.fade { opacity:0; }
   .quote-text {
-    font-family:var(--type); font-size:13px;
-    color:#ccc; font-style:italic; line-height:1.7; margin-bottom:6px;
+    font-family:var(--type); font-size:12px;
+    color:#0a0a0a; font-style:italic; line-height:1.6;
+    margin-bottom:12px; max-width:900px;
   }
   .quote-author {
-    font-family:var(--type); font-size:13px; color:#ccc;
+    font-family:var(--block); font-size:clamp(48px,6vw,80px);
+    line-height:0.9; letter-spacing:0.02em; color:#0a0a0a;
   }
 
   .hero-wrap { position:relative; z-index:1; border-bottom:2px solid var(--border); }
@@ -208,18 +204,19 @@ function renderRandomQuote(data){
   const contentEl = document.getElementById('quoteContent');
   const textEl = document.getElementById('quoteText');
   const authorEl = document.getElementById('quoteAuthor');
+  const label = bar.querySelector('.quote-label');
 
   function show(idx) {
     const q = withQuotes[idx];
-    const c = q.color1 || q.color_accent || 'var(--accent)';
+    const c = q.color1 || q.color_accent || '#e8c840';
     textEl.textContent = q.quote;
     authorEl.textContent = '[' + q.artist + ']';
-    bar.style.borderTopColor = c;
-    bar.style.borderBottomColor = c;
+    bar.style.background = c;
+    if(label) label.style.color = 'rgba(0,0,0,0.4)';
   }
 
   show(current);
-  bar.style.display = 'flex';
+  bar.style.display = 'block';
 
   setInterval(() => {
     contentEl.classList.add('fade');
