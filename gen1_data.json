@@ -9010,5 +9010,27 @@
     "bar_text_color": "#ffffff",
     "is_hidden": false,
     "cover_url": "https://api.audiotool.com/user/carlyon/avatar/512.jpg"
+  },
+  {
+    "artist": "Mr X",
+    "real_name": "",
+    "date": "2026-04-14",
+    "album_number": 106,
+    "at_profile": "",
+    "album_url": "",
+    "photo": "",
+    "intro": "",
+    "about": "",
+    "interview": [],
+    "tracks": [],
+    "social": {},
+    "color1": "",
+    "color2": "",
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
+    "bar_color": "#111111",
+    "bar_text_color": "#ffffff",
+    "is_hidden": true
   }
 ]
