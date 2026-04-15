@@ -203,20 +203,32 @@ fetch('data.json')
 function renderRandomQuote(data){
   const withQuotes = data.filter(a => a.quote && a.quote.trim() && !a.is_hidden);
   if(!withQuotes.length) return;
-  const items = withQuotes.map(q => {
+  let current = Math.floor(Math.random() * withQuotes.length);
+  const bar = document.getElementById('quoteBar');
+  const contentEl = document.getElementById('quoteContent');
+  const textEl = document.getElementById('quoteText');
+  const authorEl = document.getElementById('quoteAuthor');
+
+  function show(idx) {
+    const q = withQuotes[idx];
     const c = q.color1 || q.color_accent || 'var(--accent)';
-    return `<span class="quote-item-text">${q.quote}</span><span class="quote-item-text">[ ${q.artist} ]</span><span class="quote-sep" style="color:${c}">///</span>`;
-  }).join('');
-  const ticker = document.getElementById('quoteTicker');
-  ticker.innerHTML = items + items;
-  document.getElementById('quoteBar').style.display = 'flex';
-  requestAnimationFrame(() => {
-    const half = ticker.scrollWidth / 2;
-    const duration = Math.max(60, half / 80);
-    ticker.style.animation = 'none';
-    ticker.style.setProperty('--ticker-half', half + 'px');
-    ticker.style.animation = `qticker_px ${duration}s linear infinite`;
-  });
+    textEl.textContent = q.quote;
+    authorEl.textContent = '[' + q.artist + ']';
+    bar.style.borderTopColor = c;
+    bar.style.borderBottomColor = c;
+  }
+
+  show(current);
+  bar.style.display = 'flex';
+
+  setInterval(() => {
+    contentEl.classList.add('fade');
+    setTimeout(() => {
+      current = (current + 1) % withQuotes.length;
+      show(current);
+      contentEl.classList.remove('fade');
+    }, 600);
+  }, 6000);
 }
 
 function applyBgWash(a){
