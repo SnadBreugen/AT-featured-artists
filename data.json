@@ -3595,9 +3595,9 @@
     ],
     "photo": "https://at-cdn-s03.audiotool.com/2023/03/20/comment/tpc-news/attachment-4e4dbfede8974d87a0c7aa82c2c6f381.png",
     "is_current": false,
-    "color1": "#b8d7eb",
-    "color_accent": "#b8d7eb",
-    "links_bar_color": "#ed7750",
+    "color1": "#0099ff",
+    "color_accent": "#0099ff",
+    "links_bar_color": "#fbff00",
     "desc_bg": "#d1edff"
   },
   {
@@ -5005,11 +5005,6 @@
         "desc": "No Space, No Light by Snad Breugen - mad respect for this producer",
         "name": "No Space, No Light (ATD 24 entry)",
         "track_artist": "Snad Breugen"
-      },
-      {
-        "url": "https://www.audiotool.com/track/rvb51vs/",
-        "desc": "My own track from the Edition Audiotool album",
-        "name": "rvb51vs"
       },
       {
         "url": "https://www.audiotool.com/track/oxhzhf6k/",

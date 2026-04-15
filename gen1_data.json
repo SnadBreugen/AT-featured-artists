@@ -8,14 +8,96 @@
     "album_url": "https://www.audiotool.com/album/uedgwu/",
     "photo": "https://api.audiotool.com/album/uedgwu/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/tophat/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
-    "tracks": [],
+    "intro": "For years TopHat has stood for high-quality atmospheric tracks somewhere between \"Chillout\" and \"Future Garage\". Give yourselves time and enjoy a sample of his mastery.",
+    "about": "Name: Joel Caffey\nPlace: Chesapeake, Virginia (USA)\nAge: 18\nProfession: Student of biomedical engineering at Boston University",
+    "interview": [
+      {
+        "q": "Musical Style: ",
+        "a": "Profoundly whimsical (life soundtrack music)\n\n"
+      },
+      {
+        "q": "Musical Background: ",
+        "a": "Southern gospel piano, traditional jazz"
+      },
+      {
+        "q": "On Audiotool: ",
+        "a": "Since 2010 via google"
+      },
+      {
+        "q": "Message to the Community ",
+        "a": "\"I have learned that music is an extension of what we come to love, so let the essence of your heart flow effortlessly through your sound.\""
+      }
+    ],
+    "tracks": [
+      {
+        "url": "https://www.audiotool.com/track/under_the_same_sun/",
+        "name": "Under The Same Sun",
+        "track_artist": "Olaf",
+        "desc": "don't fear your emotions; channel them"
+      },
+      {
+        "url": "https://www.audiotool.com/track/lense/",
+        "name": "Lense",
+        "track_artist": "VLTRA",
+        "desc": "devote time to each element of a track"
+      },
+      {
+        "url": "https://www.audiotool.com/track/a_n_un_musical_joke/",
+        "name": "A(N) (UN)MUSICAL JOKE",
+        "track_artist": "Frigolito",
+        "desc": " have fun while producing!"
+      },
+      {
+        "url": "https://www.audiotool.com/track/jackfruit/",
+        "name": "Jackfruit",
+        "track_artist": "Sandburgen",
+        "desc": "organization is key"
+      },
+      {
+        "url": "https://www.audiotool.com/track/break_iii/",
+        "name": "Break III",
+        "track_artist": "Julsy",
+        "desc": "be open to the unconventional"
+      },
+      {
+        "url": "https://www.audiotool.com/track/i_have_useless_superpowers/",
+        "name": "I have useless superpowers",
+        "track_artist": "sbronz",
+        "desc": "explore sample manipulation"
+      },
+      {
+        "url": "https://www.audiotool.com/track/breakdown-qmmcmasrq/",
+        "name": "Breakdown",
+        "track_artist": "CGMan",
+        "desc": "don't fear chaos"
+      },
+      {
+        "url": "https://www.audiotool.com/track/bcn_city/",
+        "name": "BCN CITY",
+        "track_artist": "Griader",
+        "desc": "your music is an extension of where we are from and a lens through which we see where we are headed"
+      },
+      {
+        "url": "https://www.audiotool.com/track/susitna/",
+        "name": "susitna",
+        "track_artist": "Mr. Standfast",
+        "desc": "be original, the best you that will ever be"
+      },
+      {
+        "url": "https://www.audiotool.com/track/facing_dimensions/",
+        "name": "Facing Dimensions",
+        "track_artist": "Intracktion",
+        "desc": "It's maddening how 'underrated' Intracktion is to me. I find it rare to find artists that not only create 'tracks,' but in-depth and profound soundscapes, each with their own accompanying world of vivid audial imagery. Handcrafted complex rhythms accompanied by heart-stained pads and overwhelming space is a weakness of mine. Although being underrated in today's time equates to the lack of followers, I think the handful that do take time to listen to Intracktion's music always experience something intellectually, sonically and aesthetically enlightening."
+      }
+    ],
     "social": {},
-    "bar_color": "#111111",
-    "bar_text_color": "#ffffff",
-    "is_hidden": false
+    "bar_color": "#349e54",
+    "bar_text_color": "#000000",
+    "is_hidden": false,
+    "color1": "#14e4ff",
+    "color_accent": "#14e4ff",
+    "links_bar_color": "#349e54",
+    "desc_bg": "#bbf0f7"
   },
   {
     "artist": "Audial",
