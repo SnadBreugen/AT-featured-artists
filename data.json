@@ -122,8 +122,8 @@
       },
       {
         "url": "https://www.audiotool.com/track/circular_logic-1NcYM/",
-        "name": "",
-        "track_artist": "",
+        "name": "Circular Logic",
+        "track_artist": "floydpjasper",
         "desc": "This has to be one of my favourite synth basslines of all time, 2:03 really hits the spot, the groove is infectious."
       },
       {
@@ -700,8 +700,8 @@
       },
       {
         "url": "https://www.audiotool.com/track/cjguau0tlgn/",
-        "name": "",
-        "track_artist": "",
+        "name": "1991",
+        "track_artist": "Apollo",
         "desc": "1991 by Wightfall Nyafae and Apollo I've decided to round it off with a more recent track. The overall sound design and atmosphere of this is just phenomenal - and I will forever question why this track didn't beat our entry in the Teams AT Work contest."
       }
     ],
@@ -857,7 +857,8 @@
       {
         "url": "https://www.audiotool.com/track/tq8ktyts/",
         "desc": "]push (how do) by nico - great example of NOISE being gorgeous",
-        "name": "tq8ktyts"
+        "name": "]push (how do)",
+        "track_artist": "nico"
       },
       {
         "url": "https://www.audiotool.com/track/peace_4_luv/",
@@ -2294,38 +2295,38 @@
       },
       {
         "url": "https://www.audiotool.com/track/dn9nfwmlikx/",
-        "name": "",
-        "track_artist": "",
+        "name": "idle idle",
+        "track_artist": "aeiter",
         "desc": "idle idle by aeiter ethan! what can I say.. this song has gotten me through so much. I keep it downloaded on my phone and listen to it whenever I need it. transcendent"
       },
       {
         "url": "https://www.audiotool.com/track/k0o3h9ndi1vz/",
-        "name": "",
-        "track_artist": "",
+        "name": "settle our differences",
+        "track_artist": "sky bound zoo",
         "desc": "settle our differences by sky bound zoo sbz/tophat has been a constant source of inspiration. his music is so buoyant and life-affirming and exudes love in every way. I met up with him a few times before he moved away to hang and make music and he’s just as amazing of a person as is his music!"
       },
       {
         "url": "https://www.audiotool.com/track/5j1xi09x4/",
-        "name": "",
-        "track_artist": "",
+        "name": "a Reflection Of Life",
+        "track_artist": "solar plexus",
         "desc": "a Reflection Of Life by solar plexus man.. I’ve never heard someone as versatile yet distinctive as heissen. he fuses together so many different approaches in such an effortlessly fluid manner that it’s sometimes scary. love you man, hope to work on something again."
       },
       {
         "url": "https://www.audiotool.com/track/moth-8plsjd8/",
-        "name": "",
-        "track_artist": "",
+        "name": "moth",
+        "track_artist": "looks",
         "desc": "moth by looks I remember hearing this song when it came out and being completely blown away. I learned so much from opening it up and poking around."
       },
       {
         "url": "https://www.audiotool.com/track/5dnntt0mwwi/",
-        "name": "",
-        "track_artist": "",
+        "name": "lonely",
+        "track_artist": "&#x200f;&#x200f;&#x200e;hhhhhhhhhhhhhhhhh",
         "desc": "lonely by ‏‏‎hhhhhhhhhhhhhhhhh there's an energy in this song, and in a lot of ‏‏‎hhhhhhhhhhhhhhhhh's tracks, that is so completely ethereal while being grounded in the most strangely familiar of sounds. these songs invite me to reconsider my everyday sonic environment as stepping stones into another world."
       },
       {
         "url": "https://www.audiotool.com/track/v05ywfu6e/",
-        "name": "",
-        "track_artist": "",
+        "name": "would have been",
+        "track_artist": "nico",
         "desc": "would have been by nico This song is gonna be track 9 on my upcoming album coming out this summer. I’ve been somewhat obsessed with the saccharine fluid pop sound from PC music and contemporaries, and this was an attempt to capture some of that energy. I’ve been thinking more about my voice and different ways of using it. I sang this song live with my band a few times, more to come soon! stream it here: https://distrokid.com/hyperfollow/nicodaglio/would-have-been Full Album Edition Audiotool: nico a-records 30 about 3 years ago 1 idle idle aeiter aeiter 498 2 settle our differences sky bound zoo sky bound zoo 465 3 a Reflection Of Life solar plexus solar plexus 324 4 moth looks looks 16505 5 lonely ‏‏‎hhhhhhhhhhhhhhhhh ‏‏‎hhhhhhhhhhhhhhhhh 111 6 would have been nico nico 4595"
       }
     ],
@@ -3151,32 +3152,38 @@
       {
         "url": "https://www.audiotool.com/track/4ipr9zkjm37/",
         "desc": "Spaces by acloudyskye - where I realized how far they could go",
-        "name": "4ipr9zkjm37"
+        "name": "Spaces [Audiotool Day '17]",
+        "track_artist": "acloudyskye"
       },
       {
         "url": "https://www.audiotool.com/track/h6es7bscjb3/",
         "desc": "apogee by opaqity - one of the most impressive tracks I've heard on AT",
-        "name": "h6es7bscjb3"
+        "name": "apogee",
+        "track_artist": "opaqity"
       },
       {
         "url": "https://www.audiotool.com/track/stardust-w2wgaaxx/",
         "desc": "stardust by looks - literally perfect in just about every way",
-        "name": "stardust w2wgaaxx"
+        "name": "stardust",
+        "track_artist": "looks"
       },
       {
         "url": "https://www.audiotool.com/track/leave-x6djj/",
         "desc": "Moonrise by Kepz - knows how to use ambiance to set a stage",
-        "name": "leave x6djj"
+        "name": "Moonrise",
+        "track_artist": "Kepz"
       },
       {
         "url": "https://www.audiotool.com/track/when_stars_collide-kghra7tyi/",
         "desc": "When Stars Collide by rnzr - one of the reasons I wanted to get good",
-        "name": "when stars collide kghra7tyi"
+        "name": "When Stars Collide",
+        "track_artist": "rnzr"
       },
       {
         "url": "https://www.audiotool.com/track/afterglow_astrum_remix/",
         "desc": "AFTERGLOW by Astrum - perfect notes of nostalgia",
-        "name": "afterglow astrum remix"
+        "name": "AFTERGLOW (Astrum Remix)",
+        "track_artist": "Astrum"
       },
       {
         "url": "https://www.audiotool.com/track/0yj6e6qb1m/",
@@ -3185,8 +3192,8 @@
       },
       {
         "url": "https://www.audiotool.com/track/i_mango_beach/",
-        "name": "",
-        "track_artist": "",
+        "name": "I.  (Mango Beach)",
+        "track_artist": "Xavi",
         "desc": "I. (Mango Beach) by Xavi Weird track of mine from this era to pick, I know, as it's not the most popular or even forward thinking. But, full honesty, this song I always felt is the best I ever did on here. Still proud of that to this day!"
       }
     ],
@@ -3253,38 +3260,38 @@
       },
       {
         "url": "https://www.audiotool.com/track/ye9kin2g/",
-        "name": "",
-        "track_artist": "",
+        "name": "gle3",
+        "track_artist": "sila",
         "desc": "gle3 by sila The vibe is amazing with this one. It reminds me of the former works of an actress. Big ups to Sila!!!"
       },
       {
         "url": "https://www.audiotool.com/track/ns0b4shg1/",
-        "name": "",
-        "track_artist": "",
+        "name": "dimming rays",
+        "track_artist": "Kepz",
         "desc": "dimming rays by Kepz KEPZ ALWAYS DELIVERS! This is one of the craziest tunes on Audiotool. It's perfect for use in clubs as well."
       },
       {
         "url": "https://www.audiotool.com/track/gentle_breeze_night/",
-        "name": "",
-        "track_artist": "",
+        "name": "gentle breeze, night",
+        "track_artist": "An angel",
         "desc": "gentle breeze, night by An angel He could be one of the best producers in Audiotool. Such a legendary tune... I always keep coming back to it"
       },
       {
         "url": "https://www.audiotool.com/track/untitled-y0oqf/",
-        "name": "",
-        "track_artist": "",
+        "name": "Untitled",
+        "track_artist": "VLTRA",
         "desc": "Untitled by VLTRA The reason for me to start make music on AT. Vltra aka Tlim Shug."
       },
       {
         "url": "https://www.audiotool.com/track/44757/",
-        "name": "",
-        "track_artist": "",
+        "name": "44757",
+        "track_artist": "SOLACE",
         "desc": "44757 by SOLACE Very inspiring music from solace. This might be the reason for me to try to produce Hip Hop."
       },
       {
         "url": "https://www.audiotool.com/track/ktmxopnoq/",
-        "name": "",
-        "track_artist": "",
+        "name": "bad girl",
+        "track_artist": "emre girginkaya (voyd)",
         "desc": "bad girl by emre girginkaya (voyd) Really enjoyed making this. Highly influenced from Ben Bondy."
       }
     ],
@@ -3343,24 +3350,25 @@
       {
         "url": "https://www.audiotool.com/track/reda045hw7/",
         "desc": "My own track Vertigo",
-        "name": "reda045hw7"
+        "name": "Vertigo",
+        "track_artist": "JayFK"
       },
       {
         "url": "https://www.audiotool.com/track/ke3qno7asrj/",
-        "name": "",
-        "track_artist": "",
+        "name": "SPO",
+        "track_artist": "Snad Breugen",
         "desc": "SPO by Snad Breugen One of the first tracks that showed me what is possible in audiotool. Also Sand was one of the first members who noticed me and my tracks. I love how the track pushes forward. It feels like something new happens after every single bar."
       },
       {
         "url": "https://www.audiotool.com/track/wfgfuh2w0d/",
-        "name": "",
-        "track_artist": "",
+        "name": "Unbekannt",
+        "track_artist": "kurp",
         "desc": "Unbekannt by kurp I first recognized Kurp with his track \"drone ship\". It was a great pleasure to remix it. I learned so much about the quasar and the waveshaper by analyzing his track! But for the Album I've chosen \"Unbekannt\". This track is what we call in Germany \"Brett\", meaning a track that blows you completely away. Wait until 5:10 and you will know what I mean. @Kurp : You're the Audiotool god of techno!"
       },
       {
         "url": "https://www.audiotool.com/track/13zlzb6b/",
-        "name": "",
-        "track_artist": "",
+        "name": "Blurred shapes",
+        "track_artist": "Lavalamp",
         "desc": "Blurred shapes by Lavalamp I just love this track. The melody and the pads are so amazing. 1:19 and 3:19 WOW!!!. Over the past year I have gotten to know Lavalamp as a very pleasent and friendly person who always finds kind words. Je suis très heureux de t'avoir rencontré ici mon ami!"
       },
       {
@@ -3371,14 +3379,14 @@
       },
       {
         "url": "https://www.audiotool.com/track/f70hjmibq/",
-        "name": "",
-        "track_artist": "",
+        "name": "[ATD 2022] 1,000 FOLLOWER SPECIAL",
+        "track_artist": "Vulkron",
         "desc": "[ATD 2022] 1,000 FOLLOWER SPECIAL by Vulkron Now to the contrast program. The entry for the ATD 2022 from is just awesome! If you listen to the complete track it feels like three or four different tracks. 3:41 is so great!!! Considering that I used to listen to so much Rap and Hip Hop in the past I just had to pick this track."
       },
       {
         "url": "https://www.audiotool.com/track/vesvtyd7m/",
-        "name": "",
-        "track_artist": "",
+        "name": "ScienceFiction [ATD22]",
+        "track_artist": "JayFK",
         "desc": "ScienceFiction [ATD22] by JayFK Now to my part of the album. I had to choose between two tracks. But because my favorite track is a remix I chose this one. The track is not so melodic as my other trance tracks but I still love the power of the track and not least it is my top track so far with more than 350 plays. Btw in this track also used the trick with the noise volume of the Pulv."
       }
     ],
@@ -3441,42 +3449,43 @@
       {
         "url": "https://www.audiotool.com/track/or9wwaui/",
         "desc": "sensory deprivation by sila and WPX - great balance",
-        "name": "or9wwaui"
+        "name": "sensory deprivation",
+        "track_artist": "sila"
       },
       {
         "url": "https://www.audiotool.com/track/v85mmqtl4/",
-        "name": "",
-        "track_artist": "",
+        "name": "triumph",
+        "track_artist": "Snio",
         "desc": "triumph by Snio This is one of, if not my favourite track on Audiotool. Ever, period. Despite being a heavy bass driven song, it carries emotions, meaning and a story. This goes out to snio, being my biggest inspiration icon on Audiotool."
       },
       {
         "url": "https://www.audiotool.com/track/vulkron_ft_sub4sax_-_lol/",
-        "name": "",
-        "track_artist": "",
+        "name": "Vulkron ft.Sub4sax - LOL",
+        "track_artist": "Vulkron",
         "desc": "Vulkron ft.Sub4sax - LOL by Vulkron and Sub4sax I remember back in 2017 when I first joined audiotool, I heard this track from Vulkron alongside his other tracks like Torpedo & Joule only one thing came to my mind. (I can make stuff as good as this on this website?) It made me very motivated to learn and produce."
       },
       {
         "url": "https://www.audiotool.com/track/0wkz5blhr5/",
-        "name": "",
-        "track_artist": "",
+        "name": "joet (joe X po9t)",
+        "track_artist": "joe",
         "desc": "joet (joe X po9t) by joe and po9t My personal favourite hip-hop/rap song on Audiotool, it’s just near absolute perfection. The delivery of lines, the oldschool boom bap beat, everything."
       },
       {
         "url": "https://www.audiotool.com/track/571vwuoti/",
-        "name": "",
-        "track_artist": "",
+        "name": "Valentine - Icebox X sim",
+        "track_artist": "Icebox",
         "desc": "Valentine - Icebox X sim by Icebox and sim You have no idea how popular this song is outside of Audiotool, it is stuck in my head. Up until a point it has become a running joke for everyone who knows Leo personally xD"
       },
       {
         "url": "https://www.audiotool.com/track/s5s2aaajbdsr/",
-        "name": "",
-        "track_artist": "",
+        "name": "B A C O N",
+        "track_artist": "Vulkron",
         "desc": "B A C O N by Vulkron and Perdition And last but not least I gotta show some love to the man Perdition, Perds was the one who showed me Audiotool getting pushed to it’s absolute limit with sound design. And of course I will not forget the time where we were in Uprooted Audio together <3 Good times."
       },
       {
         "url": "https://www.audiotool.com/track/du1uuxzt6v/",
-        "name": "",
-        "track_artist": "",
+        "name": "PHONES (Vocal Version)",
+        "track_artist": "SIREN",
         "desc": "PHONES (Vocal Version) by SIREN This is probably my best track on Audiotool ever. It's the one time I stepped out of my comfort zone after hearing the instrumental by Leo and started rapping and people loved it. And It’s also one of my best performing tracks on Spotify."
       }
     ],
@@ -3539,7 +3548,9 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/d90d0c7b/",
-        "desc": "Q8 - my own track that Drimeur also picked"
+        "desc": "Q8 - my own track that Drimeur also picked",
+        "name": "Q8",
+        "track_artist": "Kepz"
       },
       {
         "url": "https://www.audiotool.com/track/kitsch_kepz_remix/",
@@ -3555,38 +3566,38 @@
       },
       {
         "url": "https://www.audiotool.com/track/or9wwaui/",
-        "name": "",
-        "track_artist": "",
+        "name": "sensory deprivation",
+        "track_artist": "sila",
         "desc": "sensory deprivation by sila and WPX Sila's signature pulsar sampling technique combined with WPX's knack for golden age IDM sound birthed this very unique collab. Great balance of ambience and suffocating rhythms with just enough room to breathe to get you through 12 minutes."
       },
       {
         "url": "https://www.audiotool.com/track/kwybp1p23/",
-        "name": "",
-        "track_artist": "",
+        "name": "untitled",
+        "track_artist": "emre girginkaya (voyd)",
         "desc": "untitled by emre girginkaya (voyd) A great track of many in Emre's extensive and consistently impressive library. He was one of the first artists to crack the deep lo-fi formula many years ago and he was not afraid to push things a little further than most."
       },
       {
         "url": "https://www.audiotool.com/track/nsi0w29197/",
-        "name": "",
-        "track_artist": "",
+        "name": "therma",
+        "track_artist": "gekor8",
         "desc": "therma by gekor8 This track has all the qualities of an instant Audiotool classic. Great sound design, proper track structure and subtle quirks to make it memorable and interesting. I'm instantly thinking of warm summer evenings while listening to it."
       },
       {
         "url": "https://www.audiotool.com/track/audiophil/",
-        "name": "",
-        "track_artist": "",
+        "name": "audiophil",
+        "track_artist": "sumad",
         "desc": "audiophil by sumad Another artist with such a consistent output it's hard to pick a winner. Sumad is one of those users that constantly reminds me how unique Audiotool can sound and how far it pushes the emerging tech of web based DAWs. His work is on par with many serious names in the Dub Techno scene."
       },
       {
         "url": "https://www.audiotool.com/track/isa34vlvm/",
-        "name": "",
-        "track_artist": "",
+        "name": "Lava U",
+        "track_artist": "VLTRA",
         "desc": "Lava U by VLTRA This is one of my all time favourite tracks on Audiotool and I was overjoyed to see it get a proper physical release under his alias Tlim Shug. The record is part of Cactus Traxx series and came with real seeds of Selenicereus Grandiflorus which is still growing strong at my sun soaked flat. It's actually gotten so big and limby it's claimed one of our chairs to itself."
       },
       {
         "url": "https://www.audiotool.com/track/lexn1jv0k/",
-        "name": "",
-        "track_artist": "",
+        "name": "self aware",
+        "track_artist": "Kepz",
         "desc": "self aware by Kepz I think this is the first track that got me traction outside of Audiotool under the alias Kooscha. One of the first times I've heard my work in someone elses dj mix and people wanted to ID it. There's also a crazy video of a South African dj foreva_authentik playing it and filling up a dancefloor. People are chanting, jumping and climbing tables by the end, it's absolutely insane and so unexpected for a track like this. Brings a smile to my face every time I remember it. (edited)"
       }
     ],
@@ -3644,42 +3655,43 @@
       {
         "url": "https://www.audiotool.com/track/or9wwaui/",
         "desc": "My own collaboration with sila",
-        "name": "or9wwaui"
+        "name": "sensory deprivation",
+        "track_artist": "sila"
       },
       {
         "url": "https://www.audiotool.com/track/qe38jiy2/",
-        "name": "",
-        "track_artist": "",
+        "name": "vltra",
+        "track_artist": "sila",
         "desc": "vltra by sila Sila is my bro and the tracks he makes here are truly special. He has such a deep love for lofi house and you can see that love in his tracks. I love putting “brainworks” on while I am studying. He personally is my favorite here for dark experimental sounds."
       },
       {
         "url": "https://www.audiotool.com/track/hdblyjxx/",
-        "name": "",
-        "track_artist": "",
+        "name": "precious",
+        "track_artist": "sky bound zoo",
         "desc": "precious by sky bound zoo SBZ/Tophat/Jace makes some of the most beautiful music I’ve ever heard. He finds a way to create the most organic atmospheres on this website. The percussion is always fantastic over lush and inspiring sounds. Big ups to him."
       },
       {
         "url": "https://www.audiotool.com/track/8e59f3zuf/",
-        "name": "",
-        "track_artist": "",
+        "name": "8e59f3zuf",
+        "track_artist": "Kepz",
         "desc": "8e59f3zuf by Kepz I absolutely love Kepz's music. Every track he releases hits to the core. He never misses in my opinion. I can have his tracks on repeat for eternity. Flawless mixing and sound design every time."
       },
       {
         "url": "https://www.audiotool.com/track/gentle_breeze_night/",
-        "name": "",
-        "track_artist": "",
+        "name": "gentle breeze, night",
+        "track_artist": "An angel",
         "desc": "gentle breeze, night by An angel An Angel / Jeffhargrave’s sounds have been classics in my mind for many many years. Although he is not very active any more, the stuff on his old account and new one strike me in a dark and pleasant way and always have. All of his tracks take me to Silent Hill, a dense fog that I can wallow in. I still have all of his band camp releases on my phone from years ago."
       },
       {
         "url": "https://www.audiotool.com/track/c1xb7yjumv5/",
-        "name": "",
-        "track_artist": "",
+        "name": "forest (no sample)",
+        "track_artist": "sea foam and the wind",
         "desc": "forest (no sample) by sea foam and the wind Sea foam is an expert of sound design, and this track in particular I am very thankful for. I have meditated to this almost every day for over a year now, and every time I hear it my mind is reminded of peace. I just find it simply beautiful and so calming. Props to Sea Foam for his experimentation with sounds."
       },
       {
         "url": "https://www.audiotool.com/track/dwkzvkmgel/",
-        "name": "",
-        "track_artist": "",
+        "name": "chronotype",
+        "track_artist": "WPX",
         "desc": "chronotype by WPX This is one of my favorite tracks of mine. Something about it just hits me deeply, I just love the unique and strange vibe it gives off."
       }
     ],
@@ -3772,7 +3784,8 @@
       {
         "url": "https://www.audiotool.com/track/8fmvemqj0ky/",
         "desc": "SNOW (mxcii remix) - my own track, quite satisfied with it",
-        "name": "8fmvemqj0ky"
+        "name": "SNOW (mxcii remix)",
+        "track_artist": "mxcii"
       }
     ],
     "interview": [
@@ -3839,26 +3852,26 @@
       },
       {
         "url": "https://www.audiotool.com/track/erythrocyte/",
-        "name": "",
-        "track_artist": "",
+        "name": "Erythrocyte",
+        "track_artist": "Frigolito",
         "desc": "Erythrocyte by Frigolito This was one of the first tracks I heard on this site. And also the track that made me discover Frigolito's work, which I absolutely fell in love with. The track is an absolute earworm and it just makes me happy."
       },
       {
         "url": "https://www.audiotool.com/track/the_passers_by/",
-        "name": "",
-        "track_artist": "",
+        "name": "the passers",
+        "track_artist": "by opaqity",
         "desc": "the passers by opaqity Another track I heard very early on and it sounded so unusual to me that it got stuck in my head instantly. The odd meter, the percussion work, the airy and slightly detuned synths, I was just flabbergasted when I first heard this."
       },
       {
         "url": "https://www.audiotool.com/track/amalgam-ans3f3b/",
-        "name": "",
-        "track_artist": "",
+        "name": "amalgam",
+        "track_artist": "nico",
         "desc": "amalgam by nico This was the track that made me create the @retrorhythm account and actually start making my own stuff instead of just covering videogame music. The chords, the rhythm change, the saxophone solo... It's just a fabulous composition."
       },
       {
         "url": "https://www.audiotool.com/track/jealousy-ynymkoer1/",
-        "name": "",
-        "track_artist": "",
+        "name": "jealousy",
+        "track_artist": "looks",
         "desc": "jealousy by looks The slightly wonky beat and the 100% Wet and 0% Room Size on the reverb is just such a signature Looks sound. And like with many of his tracks the structure and the way the beat progresses areso weird. I love it."
       },
       {
@@ -3869,8 +3882,8 @@
       },
       {
         "url": "https://www.audiotool.com/track/20ylscexx6/",
-        "name": "",
-        "track_artist": "",
+        "name": "01/22/2021 Loop",
+        "track_artist": "retro",
         "desc": "01/22/2021 Loop by retro It's not my personal favorite, but I think it represents me quite well. A chill, slightly swung beat with the typical synth sounds I like to use."
       }
     ],
@@ -3938,38 +3951,38 @@
       },
       {
         "url": "https://www.audiotool.com/track/foliage_dnb_vip/",
-        "name": "",
-        "track_artist": "",
+        "name": "Foliage (dnb vip)",
+        "track_artist": "abstract",
         "desc": "Foliage (dnb vip) by abstract This is the first track that I ever listened to on audiotool back in 2016, it really drew me in and was exactly the kind of music I listened to at the time; and now it still impresses me how it was made with so little devices."
       },
       {
         "url": "https://www.audiotool.com/track/3soezyqw/",
-        "name": "",
-        "track_artist": "",
+        "name": "25&#x00a2; [insert coin to play]",
+        "track_artist": "blip",
         "desc": "25¢ [insert coin to play] by blip This is a track that I always come back and listen to, I love the lead, the melodies, the harmonies, the percussion, everything."
       },
       {
         "url": "https://www.audiotool.com/track/bd6c2oqh9/",
-        "name": "",
-        "track_artist": "",
+        "name": "Thundyre",
+        "track_artist": "Jetdarc",
         "desc": "Thundyre by Jetdarc I was struggling to pick between this and Gambit by Jetdarc and Kibbey, but thought this would add more variety; I just think the bass in this song is pleasing to the ear and am so so happy it is on spotify."
       },
       {
         "url": "https://www.audiotool.com/track/pnu4omifo/",
-        "name": "",
-        "track_artist": "",
+        "name": "ATD21",
+        "track_artist": "naswalt",
         "desc": "ATD21 by naswalt I love the vocals, synths and percussion In this (so everything haha); its exactly the kind of music I want to be making."
       },
       {
         "url": "https://www.audiotool.com/track/32r0nnwwi/",
-        "name": "",
-        "track_artist": "",
+        "name": "26th St. [ft. naut]",
+        "track_artist": "nwokn",
         "desc": "26th St. [ft. naut] by nwokn One of those songs for me which are just really satisfying to listen to, everything just seems to come together really nicely and the key drum things suit it so well!!!"
       },
       {
         "url": "https://www.audiotool.com/track/8xkzx272i5n/",
-        "name": "",
-        "track_artist": "",
+        "name": "Fascination",
+        "track_artist": "Amp7070",
         "desc": "Fascination by Amp7070 This is a track which I think shows the extent of my ability at the moment in terms of vocals and all the production and stuff, and it is also most my friends favourite. It was made to vent about how I get attached to people way too easily 🤓."
       }
     ],
@@ -4129,14 +4142,14 @@
       },
       {
         "url": "https://www.audiotool.com/track/second_guess/",
-        "name": "",
-        "track_artist": "",
+        "name": "second guess",
+        "track_artist": "opaqity",
         "desc": "second guess by opaqity I cannot explain what feeling this track brings me. I have tried so many times to recreate this, but I can never pick the correct notes. Black magic. Such a damn good track"
       },
       {
         "url": "https://www.audiotool.com/track/max_whitby/",
-        "name": "",
-        "track_artist": "",
+        "name": "Max Whitby",
+        "track_artist": "Infyuthsion",
         "desc": "Max Whitby by Infyuthsion Satisfying sound design and nice ideas sprinkled all over this track. Really really good stuff"
       },
       {
@@ -4147,20 +4160,20 @@
       },
       {
         "url": "https://www.audiotool.com/track/s4h7gqs3k/",
-        "name": "",
-        "track_artist": "",
+        "name": "BALLS IN YO JAW [Jetdarc Entry]",
+        "track_artist": "Jetdarc",
         "desc": "BALLS IN YO JAW [Jetdarc Entry] by Jetdarc The way that this song flows....... AAAGGHHHH so damn cool..."
       },
       {
         "url": "https://www.audiotool.com/track/tundra-btd1i/",
-        "name": "",
-        "track_artist": "",
+        "name": "tundra",
+        "track_artist": "looks",
         "desc": "tundra by looks and 4udiocreations Such a great song, back before all the good tools we have now like quasar and pulsar. Incredible."
       },
       {
         "url": "https://www.audiotool.com/track/72peih1k4/",
-        "name": "",
-        "track_artist": "",
+        "name": "not really there",
+        "track_artist": "kurp",
         "desc": "not really there by kurp I am not really sure what to pick for my personal track, this track I really enjoy the sound design of."
       }
     ],
@@ -4415,17 +4428,20 @@
       {
         "url": "https://www.audiotool.com/track/brqlyrou57/",
         "desc": "Explosion! VIP by RiMi & XculE - felt more excited than I had in a long time",
-        "name": "brqlyrou57"
+        "name": "Explosion! VIP",
+        "track_artist": "RiMi [Hiatus]"
       },
       {
         "url": "https://www.audiotool.com/track/3hzoc0m8ox/",
         "desc": "TRAUMA by JayFK - shared my love for Rezz with him",
-        "name": "3hzoc0m8ox"
+        "name": "TRAUMA",
+        "track_artist": "JayFK"
       },
       {
         "url": "https://www.audiotool.com/track/f72sucv3ljqj/",
         "desc": "Zero Light by Grawlix - convinced me there's real dubstep potential in AT",
-        "name": "f72sucv3ljqj"
+        "name": "Zero Light",
+        "track_artist": "Grawlix"
       },
       {
         "url": "https://www.audiotool.com/track/oxb34vh9xhr/",
@@ -4440,20 +4456,20 @@
       },
       {
         "url": "https://www.audiotool.com/track/6lxl7otw/",
-        "name": "",
-        "track_artist": "",
+        "name": "Raspberries and Peaches",
+        "track_artist": "EscapingReality",
         "desc": "Raspberries and Peaches by EscapingReality A beautiful, fun, melodic little song. It takes me back to the earlier days of producing on Audiotool, and reminds me that good music doesn't need to be all that fancy or complicated. It just needs to have soul"
       },
       {
         "url": "https://www.audiotool.com/track/n8j51h1gcts/",
-        "name": "",
-        "track_artist": "",
+        "name": "Simplistic|",
+        "track_artist": "CeRiXyn",
         "desc": "Simplistic| by CeRiXyn This is by far my favorite track on Audiotool of all time, and that's really saying something because this platform has so much good music. I feel like this track just describes me as a person, and it makes my heart swell and my foot tap every time I hear it <3"
       },
       {
         "url": "https://www.audiotool.com/track/ooliicmv6/",
-        "name": "",
-        "track_artist": "",
+        "name": "T1M3",
+        "track_artist": "Zir0h",
         "desc": "T1M3 by Le Voile & JayFK"
       }
     ],
@@ -4552,7 +4568,8 @@
       {
         "url": "https://www.audiotool.com/track/60tciwin/",
         "desc": "alibi(improv) - my own track, this is who I want to be musically",
-        "name": "60tciwin"
+        "name": "alibi(improv)",
+        "track_artist": "anodyne"
       }
     ],
     "interview": [
@@ -4728,38 +4745,38 @@
       },
       {
         "url": "https://www.audiotool.com/track/0fu0tnm82dp/",
-        "name": "",
-        "track_artist": "",
+        "name": "&quot;Water&quot; lil yatchy type beat",
+        "track_artist": "Momo&#x6843;.",
         "desc": "\"Water\" lil yatchy type beat by Momo桃. When I first joined audiotool, this was the very first track that I listened to upon joining. It brings back a lot of memories of when I first started on audiotool back in my freshman year of high school lol"
       },
       {
         "url": "https://www.audiotool.com/track/bxnc8g0co9il/",
-        "name": "",
-        "track_artist": "",
+        "name": "f1ow",
+        "track_artist": "elias",
         "desc": "f1ow by elias and noah This one will forever be a personal favorite. This was my first taste of wave, which is a style that I only make when I dedicate it to someone special. Sometimes I make wave due to the beauty of it. I love the emotion that this track conveys and it's a forever favorite."
       },
       {
         "url": "https://www.audiotool.com/track/aao46fsxs/",
-        "name": "",
-        "track_artist": "",
+        "name": "ODYSSEY [SLOWED EDIT]",
+        "track_artist": "bladerunner",
         "desc": "ODYSSEY [SLOWED EDIT] by bladerunner This one brings a lot of memories back. I still remember when I first heard it, which was in my environmental science class lol. Really great track, great vibes, and I remember hearing this on repeat while doing in class assignments, it really helped me to focus and to relax."
       },
       {
         "url": "https://www.audiotool.com/track/tfk7gdlzf/",
-        "name": "",
-        "track_artist": "",
+        "name": "backburner. [po9t remix challenge entry]",
+        "track_artist": "Uzeh",
         "desc": "backburner. [po9t remix challenge entry] by Uzeh I remember when Uzeh dropped the snippet of this when it wasn’t fully done, and it honestly blew me away. This track was also my introduction to Uzeh and po9t. This song is a personal favorite of mine. Another track that gave me another taste of wave, and also inspired me to start making it."
       },
       {
         "url": "https://www.audiotool.com/track/qlysw8rqcq5/",
-        "name": "",
-        "track_artist": "",
+        "name": "Redda x Grim Brxzy Type Beat &quot;ERROR&quot;",
+        "track_artist": "@elow",
         "desc": "Redda x Grim Brxzy Type Beat \"ERROR\" by @elow One of my first tastes into supertrap. This track opened my ears to more styles, and differents sounds that I haven’t heard before. I found this cool and also inspired me to try supertrap, even if I struggled to make it lol."
       },
       {
         "url": "https://www.audiotool.com/track/rmyqweyt/",
-        "name": "",
-        "track_artist": "",
+        "name": "lovestory",
+        "track_artist": "taiko!",
         "desc": "lovestory by taiko! I chose this track because it means a lot to me. It’s a favorite among my friends and family, and personally, it’s one of my favorite beats that I’ve produced and released. This track also marked a huge milestone, got featured in an audiotool tutorial video by Cal Lycus on mastering a track, it got me my first ever beat sale and placement."
       }
     ],
@@ -4831,27 +4848,32 @@
       {
         "url": "https://www.audiotool.com/track/delta_phi/",
         "desc": "Delta Phi by looks - one of the best sounding songs I've ever heard, 2014",
-        "name": "delta phi"
+        "name": "Delta Phi",
+        "track_artist": "looks"
       },
       {
         "url": "https://www.audiotool.com/track/hftla1k16t/",
         "desc": "Small rush by Amp7070 - I believe this is an example of a perfect track",
-        "name": "hftla1k16t"
+        "name": "Small rush",
+        "track_artist": "Amp7070"
       },
       {
         "url": "https://www.audiotool.com/track/vdluc0g3j/",
         "desc": "Neuron by Project Epsilon - inspired me to switch from chiptune to dubstep",
-        "name": "vdluc0g3j"
+        "name": "Project Epsilon - Neuron",
+        "track_artist": "relative mAJOR"
       },
       {
         "url": "https://www.audiotool.com/track/60tciwin/",
         "desc": "alibi(improv) by anodyne - I probably wouldn't be making music without him",
-        "name": "60tciwin"
+        "name": "alibi(improv)",
+        "track_artist": "anodyne"
       },
       {
         "url": "https://www.audiotool.com/track/6xzgxz3j03/",
         "desc": "Fear & Forgiveness - my own, born from struggles with social anxiety",
-        "name": "6xzgxz3j03"
+        "name": "Fear & Forgiveness",
+        "track_artist": "virux"
       }
     ],
     "interview": [
@@ -4920,32 +4942,38 @@
       {
         "url": "https://www.audiotool.com/track/sinister_x_x/",
         "desc": "sinister by X_X - first track with coolest sounds I'd ever heard on this site",
-        "name": "sinister x x"
+        "name": "sinister (X__________X)",
+        "track_artist": "X___________X"
       },
       {
         "url": "https://www.audiotool.com/track/la_la-k5gst92qh/",
         "desc": "La La by Tocka & Avalone - game changing in 2018, still trying to get on this level",
-        "name": "la la k5gst92qh"
+        "name": "La La",
+        "track_artist": "Tocka"
       },
       {
         "url": "https://www.audiotool.com/track/ws0npd73uxf/",
         "desc": "Kibbey's house entry - could identify his track blindfolded",
-        "name": "ws0npd73uxf"
+        "name": "Jetdarc's 300 [Kibbey's Unintentional House Entry]",
+        "track_artist": "Kibbey"
       },
       {
         "url": "https://www.audiotool.com/track/jc0lvi0wa5c/",
         "desc": "UDKBT by TEQTONIQ - huge banger, striving to get on their level",
-        "name": "jc0lvi0wa5c"
+        "name": "UDKBT",
+        "track_artist": "TEQTONIQ"
       },
       {
         "url": "https://www.audiotool.com/track/rb548nz7zd1r/",
         "desc": "you always— by erthboy - craziest sounds I've heard on AT",
-        "name": "rb548nz7zd1r"
+        "name": "you always &#x2014;",
+        "track_artist": "erthboy"
       },
       {
         "url": "https://www.audiotool.com/track/i7cyjz583uty/",
         "desc": "SELF DESTRUCT - my own, I think this is my best mix",
-        "name": "i7cyjz583uty"
+        "name": "SELF DESTRUCT",
+        "track_artist": "Head Trauma Romance"
       }
     ],
     "interview": [
@@ -5011,22 +5039,26 @@
       {
         "url": "https://www.audiotool.com/track/ym5jnty43r6/",
         "desc": "ah007 by Alex Hoffman - big influence, brings back memories of being a teenager",
-        "name": "ym5jnty43r6"
+        "name": "ah007",
+        "track_artist": "Alex Hoffman"
       },
       {
         "url": "https://www.audiotool.com/track/zz7rw64j6/",
         "desc": "Thunderstorm by -Seismic- - crazy track, love the thunderstorm background",
-        "name": "zz7rw64j6"
+        "name": "Thunderstorm",
+        "track_artist": "-Seismic-"
       },
       {
         "url": "https://www.audiotool.com/track/oc47ugvdaa/",
         "desc": "LOW by HTR & Sub4sax - one of the sickest tracks in Audiotool",
-        "name": "oc47ugvdaa"
+        "name": "LOW ft. Sub4sax",
+        "track_artist": "Head Trauma Romance"
       },
       {
         "url": "https://www.audiotool.com/track/jjzd61y8gxx/",
         "desc": "No Space, No Light by Snad Breugen - mad respect for this producer",
-        "name": "jjzd61y8gxx"
+        "name": "No Space, No Light (ATD 24 entry)",
+        "track_artist": "Snad Breugen"
       },
       {
         "url": "https://www.audiotool.com/track/rvb51vs/",
@@ -5035,14 +5067,14 @@
       },
       {
         "url": "https://www.audiotool.com/track/oxhzhf6k/",
-        "name": "",
-        "track_artist": "",
+        "name": "let go dub",
+        "track_artist": "floydpjasper",
         "desc": "let go dub by floydpjasper This track showed me how in depth Audiotool can really go. The ambience and vocals along with the bassline truly inspired me for making good sound production. Hopefully it will inspire others like it has me."
       },
       {
         "url": "https://www.audiotool.com/track/ra971yfv/",
-        "name": "",
-        "track_artist": "",
+        "name": "Graphic Minds",
+        "track_artist": "DJ TeK-NjA",
         "desc": "Graphic Minds by DJ TeK-NjA I was in the Zone when I produced this track."
       }
     ],
@@ -5113,12 +5145,14 @@
       {
         "url": "https://www.audiotool.com/track/oc47ugvdaa/",
         "desc": "LOW ft. Sub4sax - collab with Head Trauma Romance",
-        "name": "oc47ugvdaa"
+        "name": "LOW ft. Sub4sax",
+        "track_artist": "Head Trauma Romance"
       },
       {
         "url": "https://www.audiotool.com/track/yphnrriggk3/",
         "desc": "Featured track by HTR & Sub4sax",
-        "name": "yphnrriggk3"
+        "name": "Echoes of Pulse",
+        "track_artist": "Head Trauma Romance"
       },
       {
         "url": "https://www.audiotool.com/track/dyw76w/",
@@ -5127,38 +5161,38 @@
       },
       {
         "url": "https://www.audiotool.com/track/stagger_ft_vulkron/",
-        "name": "",
-        "track_artist": "",
+        "name": "Stagger Ft. Vulkron",
+        "track_artist": "Sunder",
         "desc": "Stagger Ft. Vulkron by Sunder and Vulkron This is one of the first Future House tracks that i listened on Audiotool when i joined it. This track at that time really amazed me and soon after i did my own edit to it, since i was still learning the basics of auditool. Also in this track i met Vulkron and we made our first collab soon after and the rest is history hehe"
       },
       {
         "url": "https://www.audiotool.com/track/starfall_1_5k/",
-        "name": "",
-        "track_artist": "",
+        "name": "starfall. [1.5k]",
+        "track_artist": "synthonix",
         "desc": "starfall. [1.5k] by synthonix What else can i say other than this track is one of the best House tracks on Audiotool. The legendary Synthonix himself & a really good friend of mine. I love that dude, down to earth guy. The first time i heard this i was like holy crap, this dude is talented & this track was made in Audiotool? I was really amazed & i wanted to learn more from him and his melodic EDM style, which is also a big factor that shaped my music later on in my career. What else can i say, thank you Synthy for being also one of my mentors and teaching me stuff i didn't know a thing about hehe"
       },
       {
         "url": "https://www.audiotool.com/track/remember-kxr7h0/",
-        "name": "",
-        "track_artist": "",
+        "name": "Remember",
+        "track_artist": "Vulkron",
         "desc": "Remember by Vulkron This is the first EDM tracks that i heard on Auditool. What else can i say, i thought at that time is this Martin Garrix's ghost profile? At that time i didn't know who Vulkron was and i was really amazed at his style and i wanted to do music just like that. This EDM track is one of my fav of all time. Vulkron man, Audiotool's House & EDM legend. Without you i wouldn't be who i am today. Without your mentorship and being patient with me and teaching me to be just like you, and hey man it worked out better than ever! Everything i know is thanks to you!"
       },
       {
         "url": "https://www.audiotool.com/track/la_la-k5gst92qh/",
-        "name": "",
-        "track_artist": "",
+        "name": "La La",
+        "track_artist": "Tocka",
         "desc": "La La by Tocka and Avalone. Tocka man. What a legend he is. When this track came out it was the biggest hit on Audiotool back then. Listening to it today it still feels fresh like it just came out today! Man i tell you, this track is everything you want in a House track. Future House, EDM, Future Bounce everything combined in one track, i call that perfection. Tocka was one of the reasons i kept being motivated back then. To create something on my own, have my unique style and get recognized. Tocka, thank you for the motivation & everything you have done for Audiotool. Living legend."
       },
       {
         "url": "https://www.audiotool.com/track/5jtc1dotor/",
-        "name": "",
-        "track_artist": "",
+        "name": "Moon Cycles",
+        "track_artist": "Head Trauma Romance",
         "desc": "Moon Cycles by Head Trauma Romance Head Trauma Romance. This is one of the legendary people on Audiotool. For me he is currently the best House producer on Audiotool. This dude is screaming pure talent from him. I respect him so much, he is the core of House music on Audiotool. We have 3 tracks together & everytime i worked with this guy it was always fun working with him. The ideas we both share are incredible. His work ethic is phenomenal. This track of his is one of my favorites. Once i heard it i was like wow, this dude got talent and hell yeah he does! I want to thank him for bringing the best out of me and creating amazing tracks together. Legendary Artist & surely deserves more people following his music. Thank you bro!"
       },
       {
         "url": "https://www.audiotool.com/track/wqt80fj2a6e/",
-        "name": "",
-        "track_artist": "",
+        "name": "Sub4sax x Vulkron - Next Level",
+        "track_artist": "Vulkron",
         "desc": "Sub4sax x Vulkron - Next Level by Vulkron and Sub4sax Everyone remember this one when it came out? What else can i say man. When i released this track with Vulkron i never in my life thought that this track is going to get so big & popular. This one ended up on youtube channel called Future House Records & currently it has over 40k views! Man! This track really changed everything for me from that day on. If i would ask myself, Sub is this your best track of all time? Hell yeah it is. I always wanted to do proper Future House. My dream was to create a melodic Future House track that is catchy and that people are gonna keep coming back to listen it over & over again. Thanks to Vulkron's mentorship we did that! We created something that will remain a legendary track & show the world that you can create anything on a DAW called Audiotool & make it go viral."
       }
     ],
@@ -5224,32 +5258,38 @@
       {
         "url": "https://www.audiotool.com/track/hk5txwk3/",
         "desc": "M35 by Snio - one of my biggest inspirations, production incredibly clean",
-        "name": "hk5txwk3"
+        "name": "M35",
+        "track_artist": "Snio"
       },
       {
         "url": "https://www.audiotool.com/track/33o8fg6f0x6/",
         "desc": "VILE by leadenshrew - one of my biggest inspirations on this platform",
-        "name": "33o8fg6f0x6"
+        "name": "VILE",
+        "track_artist": "leadenshrew"
       },
       {
         "url": "https://www.audiotool.com/track/5j0pudknj/",
         "desc": "Metropia by eratekk - my favorite DnB producer on AT",
-        "name": "5j0pudknj"
+        "name": "Metropia",
+        "track_artist": "eratekk"
       },
       {
         "url": "https://www.audiotool.com/track/b267lxs6h/",
         "desc": "Covenant by Jetdarc & Client - masterclass in sound design and mixing",
-        "name": "b267lxs6h"
+        "name": "Jetdarc x Client - Covenant",
+        "track_artist": "discord.com/ghstwave"
       },
       {
         "url": "https://www.audiotool.com/track/p83dthwpz5/",
         "desc": "Chapter 1: Red Skies by SIREN - captures the essence of his unique style",
-        "name": "p83dthwpz5"
+        "name": "Chapter 1: Red Skies",
+        "track_artist": "SIREN"
       },
       {
         "url": "https://www.audiotool.com/track/n9ydabxo3n/",
         "desc": "Starbound (Star VIP) - my own, most fun to make",
-        "name": "n9ydabxo3n"
+        "name": "Starbound (Star VIP)",
+        "track_artist": "BioL!nk"
       }
     ],
     "interview": [
@@ -5329,12 +5369,14 @@
       {
         "url": "https://www.audiotool.com/track/5fkyb5wn6ml/",
         "desc": "Take Me by Le Voile - introduced me to Drum & Bass",
-        "name": "5fkyb5wn6ml"
+        "name": "Take Me",
+        "track_artist": "Le Voile"
       },
       {
         "url": "https://www.audiotool.com/track/snd-300/",
         "desc": "snd-300 by Snad Breugen - a genius, first songs I listened to on AT",
-        "name": "snd 300"
+        "name": "snd-300",
+        "track_artist": "Snad Breugen"
       },
       {
         "url": "https://www.audiotool.com/track/oxb34vh9xhr/",
@@ -5345,7 +5387,8 @@
       {
         "url": "https://www.audiotool.com/track/nlmdzflb5hdm/",
         "desc": "Aurora - my own, a declaration of love to my wife of 20 years",
-        "name": "nlmdzflb5hdm"
+        "name": "Aurora",
+        "track_artist": "Batoune & The Brewers"
       }
     ],
     "interview": [
@@ -5414,7 +5457,8 @@
       {
         "url": "https://www.audiotool.com/track/x7umb1jq3bd/",
         "desc": "they love me by :_archive - haunting simplicity and emotional depth",
-        "name": "x7umb1jq3bd"
+        "name": "they love me",
+        "track_artist": ":_archive"
       },
       {
         "url": "https://www.audiotool.com/track/ea2wmm8mwuhu/",
@@ -5424,12 +5468,14 @@
       {
         "url": "https://www.audiotool.com/track/an5k1uqmr/",
         "desc": "yōsei by etterath - intricate blend of ambient textures",
-        "name": "an5k1uqmr"
+        "name": "y&#x014d;sei",
+        "track_artist": "etterath"
       },
       {
         "url": "https://www.audiotool.com/track/g7kwswmzdooz/",
         "desc": "counterpart by nico - clean and intentional, consistently pretty soundscape",
-        "name": "g7kwswmzdooz"
+        "name": "counterpart",
+        "track_artist": "nico"
       },
       {
         "url": "https://www.audiotool.com/track/xd28apfx/",
@@ -5525,17 +5571,20 @@
       {
         "url": "https://www.audiotool.com/track/3g3vlw3j3l/",
         "desc": "Tonal contrast by Roy - one of the best beats I've ever heard",
-        "name": "3g3vlw3j3l"
+        "name": "Tonal contrast",
+        "track_artist": "Roy &#x21a8;"
       },
       {
         "url": "https://www.audiotool.com/track/5e43g5duuq/",
         "desc": "eulogy by sky bound zoo - amazing synth work, biggest recent influence",
-        "name": "5e43g5duuq"
+        "name": "eulogy",
+        "track_artist": "sky bound zoo"
       },
       {
         "url": "https://www.audiotool.com/track/pq4n8039wj7/",
         "desc": "Daredevil - my own, favorite project to have worked on",
-        "name": "pq4n8039wj7"
+        "name": "daredevil",
+        "track_artist": "volen"
       }
     ],
     "interview": [
@@ -5613,22 +5662,26 @@
       {
         "url": "https://www.audiotool.com/track/y1ud2i27mlfj/",
         "desc": ".wav by Raiden - super impressive use of synths and lush chords",
-        "name": "y1ud2i27mlfj"
+        "name": ".wav",
+        "track_artist": "Raiden"
       },
       {
         "url": "https://www.audiotool.com/track/bxnc8g0co9il/",
         "desc": "f1ow by elias & noah - one of the most beautiful masterpieces I've ever heard",
-        "name": "bxnc8g0co9il"
+        "name": "f1ow",
+        "track_artist": "elias"
       },
       {
         "url": "https://www.audiotool.com/track/9kbgrdjnkdgf/",
         "desc": "LXST NXGHT by Young kay - big inspiration for the fundamentals of my career",
-        "name": "9kbgrdjnkdgf"
+        "name": "LXST NXGHT",
+        "track_artist": "Young kay beats"
       },
       {
         "url": "https://www.audiotool.com/track/ocze6c9me/",
         "desc": "i know (w/kc x slow) - my own, one of my greatest works",
-        "name": "ocze6c9me"
+        "name": "i know (w/kc x slow)",
+        "track_artist": "noah"
       }
     ],
     "interview": [
@@ -5790,32 +5843,38 @@
       {
         "url": "https://www.audiotool.com/track/k1osiy4y9i7/",
         "desc": "mothsong by etterath - the most important song to me on Audiotool",
-        "name": "k1osiy4y9i7"
+        "name": "mothsong",
+        "track_artist": "etterath"
       },
       {
         "url": "https://www.audiotool.com/track/lni8ki6y/",
         "desc": "see you again by polyspace - brings back nostalgia for childhood trips",
-        "name": "lni8ki6y"
+        "name": "see you again",
+        "track_artist": "polyspace&#x2727;"
       },
       {
         "url": "https://www.audiotool.com/track/ahntfhcz35/",
         "desc": "the red moon's egg by we die - production is immaculate",
-        "name": "ahntfhcz35"
+        "name": "the red moon's egg",
+        "track_artist": "we die"
       },
       {
         "url": "https://www.audiotool.com/track/w6lmx83a59/",
         "desc": "Chiliocosm by etterath - best production on Audiotool, hands down",
-        "name": "w6lmx83a59"
+        "name": "chiliocosm",
+        "track_artist": "etterath"
       },
       {
         "url": "https://www.audiotool.com/track/7mhgv0xte/",
         "desc": "w/ loste & skye by dove & polyspace - hits you like a wall of emotion",
-        "name": "7mhgv0xte"
+        "name": "w/ loste & skye [unfinished]",
+        "track_artist": "dove"
       },
       {
         "url": "https://www.audiotool.com/track/8ykxragg74/",
         "desc": "REDROOM - my own track",
-        "name": "8ykxragg74"
+        "name": "REDROOM",
+        "track_artist": "Chonoes"
       }
     ],
     "interview": [
