@@ -47,23 +47,42 @@
 
   .quote-bar {
     border-bottom:1px solid var(--border);
-    padding:18px var(--pad);
-    display:flex; align-items:center; gap:20px;
-    position:relative; z-index:1;
+    border-top:1px solid var(--border);
     background:var(--surface);
-    min-height:60px;
+    display:flex; align-items:center;
+    height:44px; overflow:hidden;
+    position:relative; z-index:1;
   }
-  .quote-mark {
-    font-family:var(--block); font-size:48px; line-height:1;
-    color:var(--accent); opacity:.4; flex-shrink:0; margin-top:-8px;
+  .quote-label {
+    flex-shrink:0; padding:0 20px;
+    border-right:1px solid #333;
+    height:100%; display:flex; align-items:center;
+    font-family:var(--block); font-size:11px; letter-spacing:.25em; color:#888;
   }
-  .quote-text {
-    font-family:var(--type); font-size:13px; line-height:1.7;
-    color:#e0ddd5; font-style:italic; flex:1; font-weight:500;
+  .quote-ticker-wrap {
+    flex:1; overflow:hidden;
   }
-  .quote-author {
-    font-family:var(--type); font-size:13px; letter-spacing:.05em;
-    color:#e0ddd5; flex-shrink:0; white-space:nowrap; font-weight:500;
+  .quote-ticker {
+    display:inline-flex; align-items:center;
+    height:44px; white-space:nowrap;
+    animation: qticker 45s linear infinite;
+  }
+  .quote-ticker:hover { animation-play-state:paused; }
+  .quote-item-text {
+    padding:0 48px;
+    font-family:var(--type); font-size:12px;
+    color:#ccc; font-style:italic;
+  }
+  .quote-item-author {
+    padding:0 12px;
+    font-family:var(--block); font-size:13px; letter-spacing:.12em;
+  }
+  .quote-sep {
+    padding:0 12px; color:#333;
+  }
+  @keyframes qticker {
+    0% { transform:translateX(0); }
+    100% { transform:translateX(-50%); }
   }
 
   .hero-wrap { position:relative; z-index:1; border-bottom:2px solid var(--border); }
@@ -127,9 +146,10 @@
 </div>
 
 <div class="quote-bar" id="quoteBar" style="display:none">
-  <div class="quote-mark">"</div>
-  <div class="quote-text" id="quoteText"></div>
-  <div class="quote-author" id="quoteAuthor"></div>
+  <div class="quote-label">COMMUNITY</div>
+  <div class="quote-ticker-wrap">
+    <div class="quote-ticker" id="quoteTicker"></div>
+  </div>
 </div>
 
 <div id="heroWrap" style="display:none" class="hero-wrap">
@@ -193,9 +213,11 @@ fetch('data.json')
 function renderRandomQuote(data){
   const withQuotes = data.filter(a => a.quote && a.quote.trim() && !a.is_hidden);
   if(!withQuotes.length) return;
-  const pick = withQuotes[Math.floor(Math.random() * withQuotes.length)];
-  document.getElementById('quoteText').textContent = pick.quote;
-  document.getElementById('quoteAuthor').textContent = '[ ' + pick.artist + ' ]';
+  const items = withQuotes.map(q => {
+    const c = q.color1 || q.color_accent || 'var(--accent)';
+    return `<span class="quote-item-text">${q.quote}</span><span class="quote-item-author" style="color:${c}">[ ${q.artist} ]</span><span class="quote-sep">///</span>`;
+  }).join('');
+  document.getElementById('quoteTicker').innerHTML = items + items;
   document.getElementById('quoteBar').style.display = 'flex';
 }
 
