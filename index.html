@@ -50,6 +50,14 @@
     transition:background .8s ease;
     padding:28px var(--pad) 24px;
   }
+  .quote-bar::after {
+    content:'';
+    position:absolute; inset:0;
+    background:url('grunge.png') center/cover;
+    opacity:0.12;
+    mix-blend-mode:multiply;
+    pointer-events:none;
+  }
   .quote-label {
     font-family:var(--block); font-size:11px; letter-spacing:.25em;
     color:rgba(0,0,0,0.35); margin-bottom:14px;
@@ -63,6 +71,8 @@
     font-family:var(--type); font-size:15px;
     color:#0a0a0a; font-style:italic; line-height:1.6;
     max-width:700px; flex:1;
+    overflow:hidden;
+    display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;
   }
   .quote-author {
     font-family:var(--block); font-size:clamp(60px,7vw,100px);
