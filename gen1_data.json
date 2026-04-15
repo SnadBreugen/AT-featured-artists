@@ -8,9 +8,30 @@
     "album_url": "https://www.audiotool.com/album/9pnx5/",
     "photo": "https://api.audiotool.com/album/9Pnx5/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/ewan_mcculloch/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Audial's tracks are always technically mature and  produced  to perfection. \n\n\n\nThis and his virtuosity on the claviature of styles make every new publication a pleasant surprise.\n\n",
+    "about": "Name: Ewan McCulloch\nPlace: Ascot, UK \nAge: 18 \nProfession: Soon to be studying physics at Oxford",
+    "interview": [
+      {
+        "q": "Style:",
+        "a": "Atmospheric dance music to trap or dub step"
+      },
+      {
+        "q": "Musical Background: ",
+        "a": "Classical guitar and piano"
+      },
+      {
+        "q": "Started making music: ",
+        "a": "A couple of years ago when his school invested in some decent computers and a decent DAW."
+      },
+      {
+        "q": "On Audiotool since:",
+        "a": "He discovered AT a year ago because he got sick of using soundation and put some effort into finding a good online DAW."
+      },
+      {
+        "q": "Messsage:",
+        "a": "\"Make the music you want to but remember you may find your sound quicker by trying new things and experimenting as much as possible, even if it means listening to new types of music too. By avoiding loops and presets you are forced to create sounds from scratch, not only will this help you understand the synths but it will give you new techniques that can develop into a sound of your own. I have built up a small arsenal of techniques that really define my sound but I’m always adding to it as I’m never completely satisfied. An evolving sound is a healthy sound so always strive to better yourself.\""
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/death_of_vega/",
