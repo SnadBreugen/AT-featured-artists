@@ -733,7 +733,8 @@
     "color1": "#b0b0b0",
     "color_accent": "#b0b0b0",
     "desc_bg": "#d1d1d1",
-    "links_bar_color": "#d6d6d6"
+    "links_bar_color": "#d6d6d6",
+    "quote": "One of my favorite things about audiotool is that it's so accessible. One of the reasons I haven't made the switch to any other standalone software suites is the fact that it's always right there at the push of a button."
   },
   {
     "artist": "Tim Derry",
@@ -818,7 +819,8 @@
     "color1": "#66cdcc",
     "color_accent": "#66cdcc",
     "desc_bg": "#efbcf0",
-    "links_bar_color": "#990198"
+    "links_bar_color": "#990198",
+    "quote": "I've been amazed hundreds of times by what can be created here, and felt so proud when artists I love were faving and commenting my tracks. "
   },
   {
     "artist": "Sila",
