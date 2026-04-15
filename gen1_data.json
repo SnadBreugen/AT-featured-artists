@@ -80,13 +80,13 @@
       }
     ],
     "social": {},
-    "color1": "",
+    "color1": "#834ba0",
     "color2": "",
-    "color_accent": "",
-    "desc_bg": "",
-    "links_bar_color": "",
-    "bar_color": "#111111",
-    "bar_text_color": "#ffffff",
+    "color_accent": "#834ba0",
+    "desc_bg": "#d3afe4",
+    "links_bar_color": "#4a91bd",
+    "bar_color": "#834ba0",
+    "bar_text_color": "#4a91bd",
     "is_hidden": false
   },
   {
@@ -8449,7 +8449,7 @@
     "at_profile": "https://www.audiotool.com/user/flowerrr/",
     "album_url": "https://www.audiotool.com/album/f1ailrc/",
     "photo": "https://api.audiotool.com/album/F1aIlRC/cover/512.jpg",
-    "cover_url": "https://api.audiotool.com/user/flowerrr/avatar/512.jpg",
+    "cover_url": "https://api.audiotool.com/user/carlyon/avatar/512.jpg",
     "intro": "",
     "about": "",
     "interview": [],
@@ -8529,8 +8529,7 @@
     "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "cover_url": "https://api.audiotool.com/user/carlyon/avatar/512.jpg"
+    "is_hidden": false
   },
   {
     "artist": "Mr X",
