@@ -1482,7 +1482,8 @@
     "color_accent": "#dd2fe9",
     "desc_bg": "#f5a2fb",
     "links_bar_color": "#509afb",
-    "album_number": 124
+    "album_number": 124,
+    "quote": "I like the community the most on Audiotool: I like how friendly and welcoming people have become"
   },
   {
     "artist": "Wightfall",
@@ -1579,7 +1580,8 @@
     "color1": "#0075ff",
     "color_accent": "#0075ff",
     "desc_bg": "#acd9e2",
-    "links_bar_color": "#00d3ff"
+    "links_bar_color": "#00d3ff",
+    "quote": "How easy it is to just login, boot up from any computer, and get going. That portability and free access is really amazing"
   },
   {
     "artist": "Two Sworded",
@@ -1667,7 +1669,8 @@
     "color_accent": "#fb0b0b",
     "desc_bg": "#d6fff5",
     "links_bar_color": "#1ce9fb",
-    "album_number": 126
+    "album_number": 126,
+    "quote": "I like being able to express myself artistically for \"the best price\". But I also like seeing other people not only do the same but go onto do that professionally."
   },
   {
     "artist": "po9t",
@@ -1763,7 +1766,8 @@
     "color1": "#e2e4e3",
     "color_accent": "#e2e4e3",
     "links_bar_color": "#c7c7c7",
-    "album_number": 127
+    "album_number": 127,
+    "quote": "I love how it's a community integrated into a DAW, and how people can socialize and interact with an interface on a personal level. I've met some truly amazing artists and some long time friends due to this and I will forever thank audiotool for that."
   },
   {
     "artist": "sim",
