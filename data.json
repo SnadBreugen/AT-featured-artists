@@ -3539,58 +3539,10 @@
     "about": "I'm a Ukrainian born, Australian based artist, DJ and software engineer. I release and perform under my alias Kooscha.",
     "tracks": [
       {
-        "url": "https://www.audiotool.com/track/d90d0c7b/",
-        "desc": "Q8 - my own track that Drimeur also picked",
-        "name": "Q8",
-        "track_artist": "Kepz"
-      },
-      {
-        "url": "https://www.audiotool.com/track/kitsch_kepz_remix/",
-        "desc": "kitsch Kepz remix - my own remix",
-        "name": "kitsch (Kepz Remix)",
-        "track_artist": "Kepz"
-      },
-      {
-        "url": "https://www.audiotool.com/track/rise-euokndpnd/",
-        "desc": "Rise - my own track",
-        "name": "Rise",
-        "track_artist": "Kepz"
-      },
-      {
         "url": "https://www.audiotool.com/track/or9wwaui/",
         "name": "sensory deprivation",
-        "track_artist": "sila",
-        "desc": "sensory deprivation by sila and WPX Sila's signature pulsar sampling technique combined with WPX's knack for golden age IDM sound birthed this very unique collab. Great balance of ambience and suffocating rhythms with just enough room to breathe to get you through 12 minutes."
-      },
-      {
-        "url": "https://www.audiotool.com/track/kwybp1p23/",
-        "name": "untitled",
-        "track_artist": "emre girginkaya (voyd)",
-        "desc": "untitled by emre girginkaya (voyd) A great track of many in Emre's extensive and consistently impressive library. He was one of the first artists to crack the deep lo-fi formula many years ago and he was not afraid to push things a little further than most."
-      },
-      {
-        "url": "https://www.audiotool.com/track/nsi0w29197/",
-        "name": "therma",
-        "track_artist": "gekor8",
-        "desc": "therma by gekor8 This track has all the qualities of an instant Audiotool classic. Great sound design, proper track structure and subtle quirks to make it memorable and interesting. I'm instantly thinking of warm summer evenings while listening to it."
-      },
-      {
-        "url": "https://www.audiotool.com/track/audiophil/",
-        "name": "audiophil",
-        "track_artist": "sumad",
-        "desc": "audiophil by sumad Another artist with such a consistent output it's hard to pick a winner. Sumad is one of those users that constantly reminds me how unique Audiotool can sound and how far it pushes the emerging tech of web based DAWs. His work is on par with many serious names in the Dub Techno scene."
-      },
-      {
-        "url": "https://www.audiotool.com/track/isa34vlvm/",
-        "name": "Lava U",
-        "track_artist": "VLTRA",
-        "desc": "Lava U by VLTRA This is one of my all time favourite tracks on Audiotool and I was overjoyed to see it get a proper physical release under his alias Tlim Shug. The record is part of Cactus Traxx series and came with real seeds of Selenicereus Grandiflorus which is still growing strong at my sun soaked flat. It's actually gotten so big and limby it's claimed one of our chairs to itself."
-      },
-      {
-        "url": "https://www.audiotool.com/track/lexn1jv0k/",
-        "name": "self aware",
-        "track_artist": "Kepz",
-        "desc": "self aware by Kepz I think this is the first track that got me traction outside of Audiotool under the alias Kooscha. One of the first times I've heard my work in someone elses dj mix and people wanted to ID it. There's also a crazy video of a South African dj foreva_authentik playing it and filling up a dancefloor. People are chanting, jumping and climbing tables by the end, it's absolutely insane and so unexpected for a track like this. Brings a smile to my face every time I remember it. (edited)"
+        "track_artist": "sila & wpx",
+        "desc": "Sila's signature pulsar sampling technique combined with WPX's knack for golden age IDM sound birthed this very unique collab. Great balance of ambience and suffocating rhythms with just enough room to breathe to get you through 12 minutes."
       }
     ],
     "interview": [
