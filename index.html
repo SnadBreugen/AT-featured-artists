@@ -85,7 +85,14 @@
   }
 
   .hero-wrap { position:relative; z-index:1; border-bottom:2px solid var(--border); }
-  .hero-tag { padding:10px var(--pad); background:rgba(14,14,14,.6); font-family:var(--block); font-size:11px; letter-spacing:.25em; color:var(--accent); border-bottom:1px solid var(--border); }
+  .hero-spacer { height:32px; background:var(--bg); border-bottom:1px solid var(--border); }
+  .hero-tag {
+    padding:12px var(--pad);
+    background:#ffffff;
+    font-family:var(--block); font-size:18px; letter-spacing:.25em;
+    color:#0e0e0e;
+    border-bottom:1px solid var(--border);
+  }
   .hero { max-width:var(--max); margin:0 auto; padding:56px var(--pad) 64px; display:grid; grid-template-columns:1fr 450px; gap:72px; align-items:center; }
   .hero-name { font-family:var(--block); font-size:clamp(80px,12vw,160px); line-height:0.85; letter-spacing:-0.02em; margin-bottom:14px; text-transform:uppercase; }
   .hero-realname { font-family:var(--block); font-size:15px; letter-spacing:.2em; color:var(--text-dim); margin-bottom:28px; }
@@ -152,7 +159,8 @@
 </div>
 
 <div id="heroWrap" style="display:none" class="hero-wrap">
-  <div class="hero-tag">▶ CURRENT FEATURED ARTIST</div>
+  <div class="hero-spacer"></div>
+  <div class="hero-tag">CURRENT FEATURED ARTIST</div>
   <div class="hero" id="heroContent"></div>
 </div>
 
@@ -193,13 +201,13 @@ fetch('data.json')
     renderGrid(shuffled);
     renderRandomQuote(data);
 
-    // Preload global player with current featured artist track 1
     if(inIframe && current && current.tracks && current.tracks.length){
       const color = current.color1 || current.color_accent || '#e8c840';
       window.parent.postMessage({
         type: 'GP_PRELOAD',
         tracks: current.tracks,
-        color: color
+        color: color,
+        links_bar_color: current.links_bar_color || null
       }, '*');
     }
   });
