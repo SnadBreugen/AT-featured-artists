@@ -49,6 +49,10 @@
     position:relative; z-index:1;
     transition:background .8s ease;
     padding:28px var(--pad) 24px;
+    min-height:140px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
   }
   .quote-bar::after {
     content:'';
@@ -59,8 +63,8 @@
     pointer-events:none;
   }
   .quote-label {
-    font-family:var(--block); font-size:11px; letter-spacing:.25em;
-    color:rgba(0,0,0,0.35); margin-bottom:14px;
+    font-family:var(--block); font-size:13px; letter-spacing:.3em;
+    color:rgba(0,0,0,0.75); margin-bottom:14px;
   }
   .quote-content {
     transition:opacity .6s ease;
@@ -221,14 +225,14 @@ function renderRandomQuote(data){
   function show(idx) {
     const q = withQuotes[idx];
     const c = q.color1 || q.color_accent || '#e8c840';
-    textEl.textContent = q.quote;
+    textEl.textContent = '"' + q.quote + '"';
     authorEl.textContent = '[' + q.artist + ']';
     bar.style.background = c;
-    if(label) label.style.color = 'rgba(0,0,0,0.4)';
+    if(label) label.style.color = 'rgba(0,0,0,0.75)';
   }
 
   show(current);
-  bar.style.display = 'block';
+  bar.style.display = 'flex';
 
   setInterval(() => {
     contentEl.classList.add('fade');
