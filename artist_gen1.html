@@ -49,59 +49,23 @@
   .hero-realname { font-family: var(--type); font-size: 13px; color: var(--text-muted); letter-spacing: 0.05em; margin-bottom: 24px; }
   .hero-intro { font-family: var(--type); font-size: 14px; line-height: 1.85; color: var(--text-muted); max-width: 520px; border-left: 3px solid var(--accent); padding-left: 18px; }
 
-  /* ARTIST PHOTO - groesser */
   .hero-photo { flex-shrink: 0; }
-  .cover-wrap {
-    width: clamp(260px, 32vw, 420px);
-    position: relative; border: 2px solid var(--border); overflow: hidden;
-  }
-  .cover-wrap img {
-    width: 100%; aspect-ratio: 1; object-fit: cover; object-position: center;
-    display: block; filter: grayscale(10%); transition: filter .4s;
-  }
+  .cover-wrap { width: clamp(260px, 32vw, 420px); position: relative; border: 2px solid var(--border); overflow: hidden; }
+  .cover-wrap img { width: 100%; aspect-ratio: 1; object-fit: cover; object-position: center; display: block; filter: grayscale(10%); transition: filter .4s; }
   .cover-wrap img:hover { filter: grayscale(0%); }
 
-  /* COVER OVERLAY BAR */
-  .cover-bar {
-    position: absolute; bottom: 0; left: 0; right: 0;
-    padding: 8px 12px;
-    display: flex; align-items: center; justify-content: space-between;
-    background: var(--bar-color, #111);
-  }
-  .cover-bar .bar-num {
-    font-family: var(--block); font-size: 15px; letter-spacing: .04em;
-    color: var(--bar-text, #fff); line-height: 1;
-  }
-  .cover-bar .bar-name {
-    font-family: var(--block); font-size: 15px; letter-spacing: .06em;
-    color: var(--bar-text, #fff); text-align: right;
-    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 65%;
-  }
+  .cover-bar { position: absolute; bottom: 0; left: 0; right: 0; padding: 8px 12px; display: flex; align-items: center; justify-content: space-between; background: var(--bar-color, #111); }
+  .cover-bar .bar-num { font-family: var(--block); font-size: 15px; letter-spacing: .04em; color: var(--bar-text, #fff); line-height: 1; }
+  .cover-bar .bar-name { font-family: var(--block); font-size: 15px; letter-spacing: .06em; color: var(--bar-text, #fff); text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 65%; }
   .cover-date { font-size: 10px; color: var(--text-dim); letter-spacing: 0.1em; margin-top: 8px; text-align: right; font-family: var(--type); }
 
-  /* SIDEBAR COVER - kleiner, passt in 300px Sidebar */
-  .sidebar-cover-wrap {
-    width: 100%;
-    position: relative; border: 2px solid var(--border); overflow: hidden;
-  }
-  .sidebar-cover-wrap img {
-    width: 100%; aspect-ratio: 1; object-fit: cover; object-position: center;
-    display: block; filter: grayscale(10%); transition: filter .4s;
-  }
+  .sidebar-cover-wrap { width: 100%; position: relative; border: 2px solid var(--border); overflow: hidden; }
+  .sidebar-cover-wrap img { width: 100%; aspect-ratio: 1; object-fit: cover; object-position: center; display: block; filter: grayscale(10%); transition: filter .4s; }
   .sidebar-cover-wrap img:hover { filter: grayscale(0%); }
-  .sidebar-cover-wrap .cover-bar {
-    padding: 6px 10px;
-  }
-  .sidebar-cover-wrap .cover-bar .bar-num,
-  .sidebar-cover-wrap .cover-bar .bar-name {
-    font-size: 13px;
-  }
+  .sidebar-cover-wrap .cover-bar { padding: 6px 10px; }
+  .sidebar-cover-wrap .cover-bar .bar-num, .sidebar-cover-wrap .cover-bar .bar-name { font-size: 13px; }
 
-  .links-bar {
-    position: relative; z-index: 1; max-width: var(--max); margin: 28px auto 0;
-    padding: 14px var(--pad); border-top: 1px solid var(--border); border-bottom: 2px solid var(--border);
-    display: flex; gap: 28px; flex-wrap: wrap;
-  }
+  .links-bar { position: relative; z-index: 1; max-width: var(--max); margin: 28px auto 0; padding: 14px var(--pad); border-top: 1px solid var(--border); border-bottom: 2px solid var(--border); display: flex; gap: 28px; flex-wrap: wrap; }
   .ext-link { font-family: var(--type); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--links-bar-color, var(--text-dim)); text-decoration: none; transition: color .15s; display: flex; align-items: center; gap: 5px; }
   .ext-link::before { content: '↗'; color: var(--links-bar-color, var(--accent)); }
   .ext-link:hover { color: var(--text); }
@@ -131,7 +95,6 @@
   .track-desc.open { display: block; }
   .play-toggle { width: 100%; background: var(--surface); border: 2px solid var(--accent); color: var(--accent); font-family: var(--block); font-size: 18px; letter-spacing: 0.15em; padding: 14px 20px; cursor: pointer; display: flex; align-items: center; gap: 12px; transition: background .15s, color .15s; text-transform: uppercase; margin-top: 12px; }
   .play-toggle:hover { background: var(--accent); color: var(--bg); }
-  .album-player { margin-top: 1px; }
 
   .nav { position: relative; z-index: 1; border-top: 2px solid var(--border); display: grid; grid-template-columns: 1fr 1fr; }
   .nav-a { padding: 28px var(--pad); text-decoration: none; color: var(--text-dim); transition: background .15s, color .15s; display: flex; flex-direction: column; gap: 6px; }
@@ -149,20 +112,29 @@
 <div id="colorWash"><div id="washTop"></div><div id="washBot"></div><div id="washFade"></div></div>
 
 <header>
-  <a href="index.html" class="logo">AUDIOTOOL <span class="slash">//</span> FEATURED ARTISTS</a>
+  <a href="index.html" class="logo" onclick="navigate(event,'index.html')">AUDIOTOOL <span class="slash">//</span> FEATURED ARTISTS</a>
   <div class="header-right">
-    <a href="generation1.html" class="back">GEN I Archive</a>
-    <button id="autoplayToggle" onclick="window.toggleAutoplay()" style="background:var(--accent);border:2px solid #0e0e0e;color:#0e0e0e;font-family:var(--block);font-size:13px;letter-spacing:.15em;padding:6px 16px;cursor:pointer;transition:all .2s;">MUSIC AUTOPLAY: OFF</button>
+    <a href="generation1.html" class="back" onclick="navigate(event,'generation1.html')">GEN I Archive</a>
   </div>
 </header>
 
 <div id="app"></div>
 
 <script>
+const inIframe = window.self !== window.top;
+
+function navigate(e, url){
+  if(!inIframe) return;
+  e.preventDefault();
+  window.parent.postMessage({ type:'NAVIGATE', url: url }, '*');
+}
+
+function gpPost(msg){
+  if(inIframe) window.parent.postMessage(msg, '*');
+}
+
 const params = new URLSearchParams(location.search);
 const artistId = params.get('id');
-let autoplay = localStorage.getItem('musicAutoplay') === 'true';
-let albumOpen = false, currentTrackIdx = -1;
 window._tracks = [];
 
 function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
@@ -177,55 +149,58 @@ function applyColors(t,b){
   document.getElementById('colorWash').classList.add('on');
 }
 
-function loadTrack(idx){
-  const tracks=window._tracks;
-  if(!tracks||!tracks.length)return;
-  if(idx<0)idx=tracks.length-1;
-  if(idx>=tracks.length)idx=0;
-  currentTrackIdx=idx;
-  const t=tracks[idx];
-  const m=t.url.match(/\/track\/([^/]+)/);
-  if(!m)return;
-  const player=document.getElementById('albumPlayer');
-  if(!player)return;
-  document.querySelectorAll('.track-btn').forEach((b,i)=>{ b.classList.toggle('active',i===idx); const tp=b.querySelector('.tp'); if(tp)tp.textContent=i===idx?'▶':'▷'; });
-  const trackId=m[1].replace(/\/$/,'');
-  player.innerHTML=`<div style="background:var(--surface);border:1px solid var(--border);padding:12px"><div style="font-size:10px;color:var(--accent);margin-bottom:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;letter-spacing:.06em;font-family:var(--block)">${esc(t.track_artist||'')} . ${esc(t.name||trackId)}</div><audio controls preload="none" style="width:100%;height:32px;display:block" onended="loadTrack(${idx+1})" onerror="this.insertAdjacentHTML('afterend','<div style=padding:4px;font-size:10px;color:var(--text-dim)>Stream not available</div>')"><source src="https://api.audiotool.com/track/${trackId}/play.mp3" type="audio/mpeg"></audio><div style="display:flex;justify-content:space-between;margin-top:8px"><button onclick="loadTrack(${idx}-1)" style="background:none;border:1px solid var(--border);color:var(--accent);cursor:pointer;font-family:var(--block);font-size:12px;letter-spacing:.1em;padding:3px 10px">PREV</button><span style="font-size:10px;color:var(--text-dim);letter-spacing:.08em;align-self:center">${idx+1} / ${tracks.length}</span><button onclick="loadTrack(${idx}+1)" style="background:none;border:1px solid var(--border);color:var(--accent);cursor:pointer;font-family:var(--block);font-size:12px;letter-spacing:.1em;padding:3px 10px">NEXT</button></div></div>`;
-  setTimeout(()=>{ const a=player.querySelector('audio'); if(a)a.play().catch(()=>{}); },50);
-}
+window.playTrack = function(idx){
+  document.querySelectorAll('.track-btn').forEach((b,i) => {
+    b.classList.toggle('active', i === idx);
+    const tp = b.querySelector('.tp');
+    if(tp) tp.textContent = i === idx ? '▶' : '▷';
+  });
+  gpPost({ type:'GP_PLAY_TRACK', tracks: window._tracks, idx: idx, color: window._artistColor });
+};
 
-window.toggleDesc=function(idx){ const popup=document.getElementById('tdesc-'+idx); if(!popup)return; document.querySelectorAll('.track-desc').forEach((p,i)=>{if(i!==idx)p.classList.remove('open');}); popup.classList.toggle('open'); };
-window.playTrack=function(idx){ if(!albumOpen){albumOpen=true;const icon=document.getElementById('playIcon');const label=document.getElementById('playLabel');if(icon)icon.textContent='■';if(label)label.textContent='STOP';} loadTrack(idx); };
-window.toggleAlbum=function(){ const player=document.getElementById('albumPlayer');const icon=document.getElementById('playIcon');const label=document.getElementById('playLabel');albumOpen=!albumOpen;if(albumOpen){loadTrack(0);if(icon)icon.textContent='■';if(label)label.textContent='STOP';}else{if(player)player.innerHTML='';currentTrackIdx=-1;if(icon)icon.textContent='▶';if(label)label.textContent='PLAY TRACKS';} };
-window.toggleAutoplay=function(){ autoplay=!autoplay;localStorage.setItem('musicAutoplay',autoplay);updateAutoplayBtn();if(!autoplay){const player=document.getElementById('albumPlayer');if(player)player.innerHTML='';}};
+window.toggleDesc = function(idx){
+  const popup = document.getElementById('tdesc-' + idx);
+  if(!popup) return;
+  document.querySelectorAll('.track-desc').forEach((p,i) => { if(i !== idx) p.classList.remove('open'); });
+  popup.classList.toggle('open');
+};
 
-function updateAutoplayBtn(){
-  const btn=document.getElementById('autoplayToggle');
-  if(!btn)return;
-  if(autoplay){btn.textContent='MUSIC AUTOPLAY: ON';btn.style.background='transparent';btn.style.color='var(--accent)';btn.style.borderColor='var(--accent)';}
-  else{btn.textContent='MUSIC AUTOPLAY: OFF';btn.style.background='var(--accent)';btn.style.color='#0e0e0e';btn.style.borderColor='#0e0e0e';}
-}
+window.toggleAlbum = function(){
+  if(!window._tracks.length) return;
+  gpPost({ type:'GP_PLAY_TRACK', tracks: window._tracks, idx: 0, color: window._artistColor });
+  const icon = document.getElementById('playIcon');
+  const label = document.getElementById('playLabel');
+  if(icon) icon.textContent = '▶';
+  if(label) label.textContent = 'PLAYING IN PLAYER';
+};
 
 fetch('gen1_data.json')
   .then(r=>r.json())
   .then(data=>{
-    if(!artistId){location.href='generation1.html';return;}
+    if(!artistId){ if(inIframe) gpPost({type:'NAVIGATE',url:'generation1.html'}); else location.href='generation1.html'; return; }
     const idx=data.findIndex(a=>a.artist===artistId);
-    if(idx===-1){location.href='generation1.html';return;}
-    if(data[idx].is_hidden){document.getElementById('app').innerHTML='<div style="padding:60px;font-family:var(--block);font-size:24px;color:var(--text-dim);letter-spacing:.1em">ARTIST NOT AVAILABLE</div>';return;}
+    if(idx===-1){ if(inIframe) gpPost({type:'NAVIGATE',url:'generation1.html'}); else location.href='generation1.html'; return; }
+    if(data[idx].is_hidden){ document.getElementById('app').innerHTML='<div style="padding:60px;font-family:var(--block);font-size:24px;color:var(--text-dim);letter-spacing:.1em">ARTIST NOT AVAILABLE</div>'; return; }
     const visible=data.filter(a=>!a.is_hidden);
     const vIdx=visible.indexOf(data[idx]);
     render(data[idx],vIdx>0?visible[vIdx-1]:null,vIdx<visible.length-1?visible[vIdx+1]:null);
   })
-  .catch(()=>{document.getElementById('app').innerHTML='<div style="padding:60px;font-family:var(--block);font-size:24px;color:var(--text-dim);letter-spacing:.1em">DATA NOT FOUND</div>';});
+  .catch(()=>{
+    document.getElementById('app').innerHTML='<div style="padding:60px;font-family:var(--block);font-size:24px;color:var(--text-dim);letter-spacing:.1em">DATA NOT FOUND</div>';
+  });
 
 function render(a,prev,next){
   document.title=`${a.artist} . Gen I . Audiotool Featured Artist`;
   const barColor = a.bar_color || a.color1 || '#111111';
   const barText = a.bar_text_color || '#ffffff';
   const tracks=(a.tracks||[]).filter(t=>t.name&&t.track_artist&&t.url&&t.url.includes('/track/'));
-  window._tracks=tracks;
-  const accent=a.color_accent||a.color1||'var(--accent)';
+  window._tracks = tracks;
+  window._artistColor = a.color1 || a.color_accent || '#e8c840';
+  const accent = a.color_accent || a.color1 || 'var(--accent)';
+
+  if(tracks.length){
+    gpPost({ type:'GP_LOAD_TRACKS', tracks: tracks, color: window._artistColor });
+  }
 
   document.getElementById('app').innerHTML=`
     <section class="hero">
@@ -279,7 +254,6 @@ function render(a,prev,next){
             <button class="play-toggle" id="playToggle" onclick="toggleAlbum()" style="border-color:${accent};color:${accent};margin-top:12px">
               <span id="playIcon">▶</span><span id="playLabel">PLAY TRACKS</span>
             </button>
-            <div class="album-player" id="albumPlayer"></div>
           </div>
           <div>
             <div class="sidebar-title" style="color:${accent};border-bottom-color:${accent}">Curated Tracks</div>
@@ -301,19 +275,17 @@ function render(a,prev,next){
     </div>
 
     <nav class="nav">
-      ${prev?`<a href="artist_gen1.html?id=${encodeURIComponent(prev.artist)}" class="nav-a"><span class="nav-dir">Previous</span><span class="nav-name">${esc(prev.artist)}</span></a>`:`<span class="nav-a" style="opacity:.25"><span class="nav-dir">Start of archive</span></span>`}
-      ${next?`<a href="artist_gen1.html?id=${encodeURIComponent(next.artist)}" class="nav-a" style="text-align:right;align-items:flex-end"><span class="nav-dir">Next</span><span class="nav-name">${esc(next.artist)}</span></a>`:`<span class="nav-a" style="opacity:.25;text-align:right;align-items:flex-end"><span class="nav-dir">End of archive</span></span>`}
+      ${prev?`<a href="artist_gen1.html?id=${encodeURIComponent(prev.artist)}" class="nav-a" onclick="navigate(event,'artist_gen1.html?id=${encodeURIComponent(prev.artist)}')"><span class="nav-dir">Previous</span><span class="nav-name">${esc(prev.artist)}</span></a>`:`<span class="nav-a" style="opacity:.25"><span class="nav-dir">Start of archive</span></span>`}
+      ${next?`<a href="artist_gen1.html?id=${encodeURIComponent(next.artist)}" class="nav-a" style="text-align:right;align-items:flex-end" onclick="navigate(event,'artist_gen1.html?id=${encodeURIComponent(next.artist)}')"><span class="nav-dir">Next</span><span class="nav-name">${esc(next.artist)}</span></a>`:`<span class="nav-a" style="opacity:.25;text-align:right;align-items:flex-end"><span class="nav-dir">End of archive</span></span>`}
     </nav>
   `;
 
-  updateAutoplayBtn();
-  if(a.desc_bg)document.documentElement.style.setProperty('--desc-bg',a.desc_bg);
-  if(a.links_bar_color)document.documentElement.style.setProperty('--links-bar-color',a.links_bar_color);
+  if(a.desc_bg) document.documentElement.style.setProperty('--desc-bg', a.desc_bg);
+  if(a.links_bar_color) document.documentElement.style.setProperty('--links-bar-color', a.links_bar_color);
   if(a.color1){
     const h=s=>{const r=parseInt(s.slice(1,3),16),g=parseInt(s.slice(3,5),16),b=parseInt(s.slice(5,7),16);return[r,g,b];};
-    try{applyColors(h(a.color1),h(a.color2||a.color1));}catch(e){}
+    try{ applyColors(h(a.color1), h(a.color2||a.color1)); }catch(e){}
   }
-  if(tracks.length&&autoplay)setTimeout(()=>{window.toggleAlbum();},800);
 }
 </script>
 </body>

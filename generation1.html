@@ -70,10 +70,10 @@
 <body>
 
 <header>
-  <a href="index.html" class="logo">AUDIOTOOL <span class="slash">//</span> FEATURED ARTISTS</a>
+  <a href="index.html" class="logo" onclick="navigate(event,'index.html')">AUDIOTOOL <span class="slash">//</span> FEATURED ARTISTS</a>
   <div class="header-right">
-    <a href="index.html" class="gen-link">GEN II</a>
-    <a href="generation1.html" class="gen-link active">GEN I</a>
+    <a href="index.html" class="gen-link" onclick="navigate(event,'index.html')">GEN II</a>
+    <a href="generation1.html" class="gen-link active" onclick="navigate(event,'generation1.html')">GEN I</a>
   </div>
 </header>
 
@@ -101,6 +101,14 @@
 </div>
 
 <script>
+const inIframe = window.self !== window.top;
+
+function navigate(e, url){
+  if(!inIframe) return;
+  e.preventDefault();
+  window.parent.postMessage({ type:'NAVIGATE', url: url }, '*');
+}
+
 let allArtists = [];
 let currentSort = 'default';
 let currentQuery = '';
@@ -169,7 +177,8 @@ function renderGrid(artists) {
     const accentStyle = accent ? `style="--card-accent:${accent}"` : '';
     const intro = (a.intro||'').slice(0,120).replace(/</g,'&lt;') + ((a.intro||'').length>120?'...':'');
     const year = (a.date||'').slice(0,4);
-    return `<a href="artist_gen1.html?id=${encodeURIComponent(a.artist)}" class="card" ${accentStyle}>
+    const url = `artist_gen1.html?id=${encodeURIComponent(a.artist)}`;
+    return `<a href="${url}" class="card" ${accentStyle} onclick="navigate(event,'${url}')">
       <div class="card-inner">
         <div class="card-photo-wrap">
           ${a.photo

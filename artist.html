@@ -24,370 +24,98 @@
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { scroll-behavior: smooth; }
+  body { background: var(--bg); color: var(--text); font-family: var(--type); min-height: 100vh; overflow-x: hidden; }
 
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: var(--type);
-    min-height: 100vh;
-    overflow-x: hidden;
-  }
-
-  #colorWash {
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: 0;
-    opacity: 0;
-    transition: opacity 1.6s ease;
-  }
+  #colorWash { position: fixed; inset: 0; pointer-events: none; z-index: 0; opacity: 0; transition: opacity 1.6s ease; }
   #colorWash.on { opacity: 1; }
-  #washTop {
-    position: absolute;
-    top: 0; left: 0; right: 0; height: 45vh;
-    transition: background 1.4s ease;
-  }
-  #washBot {
-    position: absolute;
-    bottom: 0; left: 0; right: 0; height: 40vh;
-    transition: background 1.4s ease;
-  }
-  #washFade {
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(ellipse 80% 60% at 50% 40%, transparent 30%, var(--bg) 80%);
-  }
+  #washTop { position: absolute; top: 0; left: 0; right: 0; height: 45vh; transition: background 1.4s ease; }
+  #washBot { position: absolute; bottom: 0; left: 0; right: 0; height: 40vh; transition: background 1.4s ease; }
+  #washFade { position: absolute; inset: 0; background: radial-gradient(ellipse 80% 60% at 50% 40%, transparent 30%, var(--bg) 80%); }
 
   header {
     position: sticky; top: 0; z-index: 100;
-    background: rgba(14,14,14,0.95);
-    backdrop-filter: blur(12px);
-    border-bottom: 2px solid var(--border);
-    height: 50px;
+    background: rgba(14,14,14,0.95); backdrop-filter: blur(12px);
+    border-bottom: 2px solid var(--border); height: 50px;
     display: flex; align-items: center; justify-content: space-between;
     padding: 0 var(--pad);
   }
-  .logo {
-    font-family: var(--block);
-    font-size: 16px;
-    letter-spacing: 0.15em;
-    color: var(--text-muted);
-    text-decoration: none;
-    transition: color .15s;
-  }
+  .logo { font-family: var(--block); font-size: 16px; letter-spacing: 0.15em; color: var(--text-muted); text-decoration: none; transition: color .15s; }
   .logo:hover { color: var(--text); }
   .logo .slash { color: var(--accent); }
-  .back {
-    font-family: var(--type);
-    font-size: 11px;
-    color: var(--text-dim);
-    text-decoration: none;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    transition: color .15s;
-  }
+  .back { font-family: var(--type); font-size: 11px; color: var(--text-dim); text-decoration: none; letter-spacing: 0.1em; text-transform: uppercase; transition: color .15s; }
   .back:hover { color: var(--text); }
 
   .hero {
-    position: relative; z-index: 1;
-    max-width: var(--max);
-    margin: 0 auto;
+    position: relative; z-index: 1; max-width: var(--max); margin: 0 auto;
     padding: clamp(36px,5vw,72px) var(--pad) 0;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 40px;
-    align-items: start;
+    display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: start;
   }
-  .hero-num {
-    font-family: var(--block);
-    font-size: 13px;
-    letter-spacing: 0.25em;
-    color: var(--accent);
-    margin-bottom: 10px;
-  }
-  .hero-name {
-    font-family: var(--block);
-    font-size: clamp(48px, 8vw, 120px);
-    line-height: 0.88;
-    letter-spacing: 0.02em;
-    color: var(--text);
-    text-transform: uppercase;
-    margin-bottom: 14px;
-    word-break: break-word;
-  }
-  .hero-realname {
-    font-family: var(--type);
-    font-size: 13px;
-    color: var(--text-muted);
-    letter-spacing: 0.05em;
-    margin-bottom: 24px;
-  }
-  .hero-intro {
-    font-family: var(--type);
-    font-size: 14px;
-    line-height: 1.85;
-    color: var(--text-muted);
-    max-width: 520px;
-    border-left: 3px solid var(--accent);
-    padding-left: 18px;
-  }
+  .hero-num { font-family: var(--block); font-size: 13px; letter-spacing: 0.25em; color: var(--accent); margin-bottom: 10px; }
+  .hero-name { font-family: var(--block); font-size: clamp(48px, 8vw, 120px); line-height: 0.88; letter-spacing: 0.02em; color: var(--text); text-transform: uppercase; margin-bottom: 14px; word-break: break-word; }
+  .hero-realname { font-family: var(--type); font-size: 13px; color: var(--text-muted); letter-spacing: 0.05em; margin-bottom: 24px; }
+  .hero-intro { font-family: var(--type); font-size: 14px; line-height: 1.85; color: var(--text-muted); max-width: 520px; border-left: 3px solid var(--accent); padding-left: 18px; }
 
   .hero-photo { flex-shrink: 0; }
-  .photo-box {
-    width: clamp(220px, 28vw, 360px);
-    aspect-ratio: 1;
-    overflow: hidden;
-    border: 2px solid var(--border);
-  }
-  .photo-box img {
-    width: 100%; height: 100%;
-    object-fit: cover;
-    object-position: top center;
-    display: block;
-    filter: grayscale(15%);
-    transition: filter .4s;
-  }
+  .photo-box { width: clamp(220px, 28vw, 360px); aspect-ratio: 1; overflow: hidden; border: 2px solid var(--border); }
+  .photo-box img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; filter: grayscale(15%); transition: filter .4s; }
   .photo-box img:hover { filter: grayscale(0%); }
-  .photo-date {
-    font-size: 10px;
-    color: var(--text-dim);
-    letter-spacing: 0.1em;
-    margin-top: 8px;
-    text-align: right;
-    font-family: var(--type);
-  }
+  .photo-date { font-size: 10px; color: var(--text-dim); letter-spacing: 0.1em; margin-top: 8px; text-align: right; font-family: var(--type); }
 
   .links-bar {
-    position: relative; z-index: 1;
-    max-width: var(--max); margin: 28px auto 0;
-    padding: 14px var(--pad);
-    border-top: 1px solid var(--border);
-    border-bottom: 2px solid var(--border);
+    position: relative; z-index: 1; max-width: var(--max); margin: 28px auto 0;
+    padding: 14px var(--pad); border-top: 1px solid var(--border); border-bottom: 2px solid var(--border);
     display: flex; gap: 28px; flex-wrap: wrap;
   }
-  .ext-link {
-    font-family: var(--type);
-    font-size: 11px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--links-bar-color, var(--text-dim));
-    text-decoration: none;
-    transition: color .15s;
-    display: flex; align-items: center; gap: 5px;
-  }
+  .ext-link { font-family: var(--type); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--links-bar-color, var(--text-dim)); text-decoration: none; transition: color .15s; display: flex; align-items: center; gap: 5px; }
   .ext-link::before { content: '↗'; color: var(--links-bar-color, var(--accent)); }
   .ext-link:hover { color: var(--text); }
 
-  .main {
-    position: relative; z-index: 1;
-    max-width: var(--max); margin: 0 auto;
-    padding: 0 var(--pad);
-    display: grid;
-    grid-template-columns: 1fr 300px;
-  }
-
-  .interview {
-    padding: 52px 48px 80px 0;
-    border-right: 1px solid var(--border);
-  }
-
-  .sec-title {
-    font-family: var(--block);
-    font-size: 28px;
-    letter-spacing: 0.12em;
-    color: var(--accent);
-    margin-bottom: 28px;
-    text-transform: uppercase;
-    padding-bottom: 10px;
-    border-bottom: 2px solid var(--accent);
-    display: inline-block;
-  }
-
+  .main { position: relative; z-index: 1; max-width: var(--max); margin: 0 auto; padding: 0 var(--pad); display: grid; grid-template-columns: 1fr 300px; }
+  .interview { padding: 52px 48px 80px 0; border-right: 1px solid var(--border); }
+  .sec-title { font-family: var(--block); font-size: 28px; letter-spacing: 0.12em; color: var(--accent); margin-bottom: 28px; text-transform: uppercase; padding-bottom: 10px; border-bottom: 2px solid var(--accent); display: inline-block; }
   .about-block { margin-bottom: 48px; }
-  .about-text {
-    font-family: var(--type);
-    font-size: 14px;
-    line-height: 1.9;
-    color: var(--text-muted);
-  }
-
+  .about-text { font-family: var(--type); font-size: 14px; line-height: 1.9; color: var(--text-muted); }
   .qa-list { display: flex; flex-direction: column; gap: 40px; }
+  .qa-q { font-family: var(--block); font-size: 20px; letter-spacing: 0.06em; color: var(--accent); text-transform: uppercase; margin-bottom: 12px; line-height: 1.2; }
+  .qa-a { font-family: var(--type); font-size: 14px; line-height: 1.95; color: var(--text-muted); }
 
-  .qa-q {
-    font-family: var(--block);
-    font-size: 20px;
-    letter-spacing: 0.06em;
-    color: var(--accent);
-    text-transform: uppercase;
-    margin-bottom: 12px;
-    line-height: 1.2;
-  }
-  .qa-a {
-    font-family: var(--type);
-    font-size: 14px;
-    line-height: 1.95;
-    color: var(--text-muted);
-  }
-
-  .board-link {
-    margin-top: 52px;
-    padding-top: 20px;
-    border-top: 1px solid var(--border);
-    font-family: var(--type);
-    font-size: 11px;
-  }
-  .board-link a {
-    color: var(--text-dim);
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    letter-spacing: 0.06em;
-    transition: color .15s;
-  }
-  .board-link a:hover { color: var(--text-muted); }
-
-  .sidebar {
-    padding: 52px 0 80px 36px;
-    display: flex; flex-direction: column; gap: 40px;
-  }
-
-  .cover-link {
-    display: block;
-    position: relative;
-    border: 2px solid var(--border);
-    overflow: hidden;
-    transition: border-color .2s;
-  }
+  .sidebar { padding: 52px 0 80px 36px; display: flex; flex-direction: column; gap: 40px; }
+  .cover-link { display: block; position: relative; border: 2px solid var(--border); overflow: hidden; transition: border-color .2s; }
   .cover-link:hover { border-color: var(--accent); }
   .cover-link img { width: 100%; display: block; }
-  .cover-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,.5);
-    display: flex; align-items: center; justify-content: center;
-    opacity: 0; transition: opacity .2s;
-    font-family: var(--block);
-    font-size: 14px;
-    letter-spacing: 0.15em;
-    color: var(--text);
-    text-transform: uppercase;
-  }
+  .cover-overlay { position: absolute; inset: 0; background: rgba(0,0,0,.5); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity .2s; font-family: var(--block); font-size: 14px; letter-spacing: 0.15em; color: var(--text); text-transform: uppercase; }
   .cover-link:hover .cover-overlay { opacity: 1; }
+  .sidebar-title { font-family: var(--block); font-size: 22px; letter-spacing: 0.1em; color: var(--accent); text-transform: uppercase; padding-bottom: 8px; border-bottom: 2px solid var(--accent); margin-bottom: 0; }
 
-  .sidebar-title {
-    font-family: var(--block);
-    font-size: 22px;
-    letter-spacing: 0.1em;
-    color: var(--accent);
-    text-transform: uppercase;
-    padding-bottom: 8px;
-    border-bottom: 2px solid var(--accent);
-    margin-bottom: 0;
-  }
-
-  .track-list {
-    display: flex; flex-direction: column;
-    gap: 1px; background: var(--border);
-    margin-top: 1px;
-  }
+  .track-list { display: flex; flex-direction: column; gap: 1px; background: var(--border); margin-top: 1px; }
   .track-item { border-bottom: 1px solid var(--border); }
-  .track-btn {
-    background: var(--surface);
-    padding: 10px 12px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-    transition: background .15s;
-    border: none; width: 100%;
-    text-align: left; color: inherit;
-    font-family: var(--type);
-    min-width: 0;
-  }
+  .track-btn { background: var(--surface); padding: 10px 12px; display: flex; flex-direction: row; align-items: center; gap: 10px; cursor: pointer; transition: background .15s; border: none; width: 100%; text-align: left; color: inherit; font-family: var(--type); min-width: 0; }
   .track-btn:hover { background: #1e1e1e; }
   .track-btn.active { background: #1e1e1e; }
-  .track-cover {
-    width: 32px; height: 32px; flex-shrink: 0;
-    object-fit: cover; display: block;
-    border: 1px solid var(--border);
-  }
-  .tt {
-    flex: 1;
-    font-size: 11px; color: var(--text-muted);
-    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-    letter-spacing: .02em; min-width: 0;
-  }
+  .track-cover { width: 32px; height: 32px; flex-shrink: 0; object-fit: cover; display: block; border: 1px solid var(--border); }
+  .tt { flex: 1; font-size: 11px; color: var(--text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; letter-spacing: .02em; min-width: 0; }
   .track-btn.active .tt { color: var(--text); }
   .tp { font-size: 9px; color: var(--text-dim); flex-shrink: 0; }
   .track-btn.active .tp { color: var(--accent); }
-  .track-desc {
-    display: none;
-    padding: 10px 12px 12px 54px;
-    font-size: 11px; line-height: 1.7;
-    color: #1a1a1a;
-    font-family: var(--type);
-    background: var(--desc-bg, #e8e4dc);
-    border-top: 1px solid var(--border);
-  }
+  .track-desc { display: none; padding: 10px 12px 12px 54px; font-size: 11px; line-height: 1.7; color: #1a1a1a; font-family: var(--type); background: var(--desc-bg, #e8e4dc); border-top: 1px solid var(--border); }
   .track-desc.open { display: block; }
-
-  .play-toggle {
-    width: 100%;
-    background: var(--surface);
-    border: 2px solid var(--accent);
-    color: var(--accent);
-    font-family: var(--block);
-    font-size: 18px;
-    letter-spacing: 0.15em;
-    padding: 14px 20px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    transition: background .15s, color .15s;
-    text-transform: uppercase;
-    margin-top: 12px;
-  }
+  .play-toggle { width: 100%; background: var(--surface); border: 2px solid var(--accent); color: var(--accent); font-family: var(--block); font-size: 18px; letter-spacing: 0.15em; padding: 14px 20px; cursor: pointer; display: flex; align-items: center; gap: 12px; transition: background .15s, color .15s; text-transform: uppercase; margin-top: 12px; }
   .play-toggle:hover { background: var(--accent); color: var(--bg); }
 
-  .nav {
-    position: relative; z-index: 1;
-    border-top: 2px solid var(--border);
-    display: grid; grid-template-columns: 1fr 1fr;
-  }
-  .nav-a {
-    padding: 28px var(--pad);
-    text-decoration: none; color: var(--text-dim);
-    transition: background .15s, color .15s;
-    display: flex; flex-direction: column; gap: 6px;
-  }
+  .nav { position: relative; z-index: 1; border-top: 2px solid var(--border); display: grid; grid-template-columns: 1fr 1fr; }
+  .nav-a { padding: 28px var(--pad); text-decoration: none; color: var(--text-dim); transition: background .15s, color .15s; display: flex; flex-direction: column; gap: 6px; }
   .nav-a:hover { background: var(--surface); color: var(--text); }
   .nav-a + .nav-a { border-left: 1px solid var(--border); text-align: right; align-items: flex-end; }
   .nav-dir { font-size: 10px; letter-spacing: .15em; text-transform: uppercase; color: var(--text-dim); }
-  .nav-name {
-    font-family: var(--block);
-    font-size: 24px; letter-spacing: .05em;
-    text-transform: uppercase; color: var(--text);
-  }
+  .nav-name { font-family: var(--block); font-size: 24px; letter-spacing: .05em; text-transform: uppercase; color: var(--text); }
 
-  @media (max-width: 900px) {
-    .hero { grid-template-columns: 1fr; gap: 24px; }
-    .photo-box { width: 150px; }
-    .photo-date { text-align: left; }
-    .main { grid-template-columns: 1fr; }
-    .interview { border-right: none; border-bottom: 1px solid var(--border); padding-right: 0; }
-    .sidebar { padding-left: 0; }
-  }
+  @media (max-width: 900px) { .hero { grid-template-columns: 1fr; gap: 24px; } .photo-box { width: 150px; } .main { grid-template-columns: 1fr; } .interview { border-right: none; border-bottom: 1px solid var(--border); padding-right: 0; } .sidebar { padding-left: 0; } }
   @media (max-width: 600px) { .hero-name { font-size: 58px; } }
 </style>
 </head>
 <body>
 
-<div id="colorWash">
-  <div id="washTop"></div>
-  <div id="washBot"></div>
-  <div id="washFade"></div>
-</div>
+<div id="colorWash"><div id="washTop"></div><div id="washBot"></div><div id="washFade"></div></div>
 
 <header>
   <a href="index.html" class="logo" onclick="navigate(event,'index.html')">AUDIOTOOL <span class="slash">//</span> FEATURED ARTISTS</a>
@@ -411,40 +139,18 @@ function gpPost(msg){
 
 const params = new URLSearchParams(location.search);
 const artistId = params.get('id');
+window._tracks = [];
 
 function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
-
-function fmtDate(d){
-  if(!d) return '';
-  const [y,m,day]=d.split('-');
-  return ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+m-1]+' '+parseInt(day)+', '+y;
-}
-
 function tId(url){ const m=url.match(/\/track\/([^/]+)/); return m?m[1]:''; }
 
 function extractColors(src, cb){
   function tryLoad(url, onSuccess, onFail){
-    const img=new Image();
-    img.crossOrigin='anonymous';
-    img.onload=()=>{
-      try{
-        const c=document.createElement('canvas');
-        c.width=img.width; c.height=img.height;
-        const ctx=c.getContext('2d');
-        ctx.drawImage(img,0,0);
-        function avg(d){ let r=0,g=0,b=0,n=0; for(let i=0;i<d.length;i+=4){r+=d[i];g+=d[i+1];b+=d[i+2];n++;} return [r/n,g/n,b/n]; }
-        const t=avg(ctx.getImageData(4,4,80,80).data);
-        const b=avg(ctx.getImageData(4,img.height-84,80,80).data);
-        onSuccess(t,b);
-      }catch(e){ onFail(); }
-    };
-    img.onerror=onFail;
-    img.src=url;
+    const img=new Image(); img.crossOrigin='anonymous';
+    img.onload=()=>{ try{ const c=document.createElement('canvas'); c.width=img.width; c.height=img.height; const ctx=c.getContext('2d'); ctx.drawImage(img,0,0); function avg(d){ let r=0,g=0,b=0,n=0; for(let i=0;i<d.length;i+=4){r+=d[i];g+=d[i+1];b+=d[i+2];n++;} return [r/n,g/n,b/n]; } const t=avg(ctx.getImageData(4,4,80,80).data); const b=avg(ctx.getImageData(4,img.height-84,80,80).data); onSuccess(t,b); }catch(e){ onFail(); } };
+    img.onerror=onFail; img.src=url;
   }
-  tryLoad(src, (t,b)=>cb(t,b), ()=>{
-    const proxy='https://corsproxy.io/?'+encodeURIComponent(src);
-    tryLoad(proxy, (t,b)=>cb(t,b), ()=>cb(null,null));
-  });
+  tryLoad(src, (t,b)=>cb(t,b), ()=>{ const proxy='https://corsproxy.io/?'+encodeURIComponent(src); tryLoad(proxy, (t,b)=>cb(t,b), ()=>cb(null,null)); });
 }
 
 function applyColors(t,b){
@@ -455,20 +161,17 @@ function applyColors(t,b){
   document.getElementById('washBot').style.background=`linear-gradient(to top, ${bc} 0%, transparent 100%)`;
   document.getElementById('colorWash').classList.add('on');
   if(!window._accentOverride){
-    const accent=`rgb(${Math.round(t[0])},${Math.round(t[1])},${Math.round(t[2])})`;
-    document.documentElement.style.setProperty('--accent', accent);
+    document.documentElement.style.setProperty('--accent', `rgb(${Math.round(t[0])},${Math.round(t[1])},${Math.round(t[2])})`);
   }
 }
 
-window._tracks = [];
-
-// Called when user clicks a track in the list
 window.playTrack = function(idx){
   document.querySelectorAll('.track-btn').forEach((b,i) => {
     b.classList.toggle('active', i === idx);
-    b.querySelector('.tp').textContent = i === idx ? '▶' : '▷';
+    const tp = b.querySelector('.tp');
+    if(tp) tp.textContent = i === idx ? '▶' : '▷';
   });
-  gpPost({ type:'GP_PLAY_TRACK', tracks: window._tracks, idx: idx });
+  gpPost({ type:'GP_PLAY_TRACK', tracks: window._tracks, idx: idx, color: window._artistColor });
 };
 
 window.toggleDesc = function(idx){
@@ -480,11 +183,9 @@ window.toggleDesc = function(idx){
   window.playTrack(idx);
 };
 
-// PLAY ALBUM button - sends all tracks to global player and starts track 0
 window.toggleAlbum = function(){
   if(!window._tracks.length) return;
-  gpPost({ type:'GP_PLAY_TRACK', tracks: window._tracks, idx: 0 });
-  // Update button to show it's active
+  gpPost({ type:'GP_PLAY_TRACK', tracks: window._tracks, idx: 0, color: window._artistColor });
   const icon = document.getElementById('playIcon');
   const label = document.getElementById('playLabel');
   if(icon) icon.textContent = '▶';
@@ -494,21 +195,10 @@ window.toggleAlbum = function(){
 fetch('data.json')
   .then(r=>r.json())
   .then(data=>{
-    if(!artistId){
-      if(inIframe) gpPost({type:'NAVIGATE', url:'index.html'});
-      else location.href='index.html';
-      return;
-    }
+    if(!artistId){ if(inIframe) gpPost({type:'NAVIGATE',url:'index.html'}); else location.href='index.html'; return; }
     const idx=data.findIndex(a=>a.artist===artistId);
-    if(idx===-1){
-      if(inIframe) gpPost({type:'NAVIGATE', url:'index.html'});
-      else location.href='index.html';
-      return;
-    }
-    if(data[idx].is_hidden){
-      document.getElementById('app').innerHTML='<div style="padding:60px;font-family:var(--block);font-size:24px;color:var(--text-dim);letter-spacing:.1em">ARTIST NOT AVAILABLE</div>';
-      return;
-    }
+    if(idx===-1){ if(inIframe) gpPost({type:'NAVIGATE',url:'index.html'}); else location.href='index.html'; return; }
+    if(data[idx].is_hidden){ document.getElementById('app').innerHTML='<div style="padding:60px;font-family:var(--block);font-size:24px;color:var(--text-dim);letter-spacing:.1em">ARTIST NOT AVAILABLE</div>'; return; }
     const visible=data.filter(a=>!a.is_hidden);
     const vIdx=visible.indexOf(data[idx]);
     render(data[idx],idx,data.length,vIdx>0?visible[vIdx-1]:null,vIdx<visible.length-1?visible[vIdx+1]:null);
@@ -518,13 +208,13 @@ function render(a,idx,total,prev,next){
   document.title=`${a.artist} — Audiotool Featured Artist`;
   const tracks=a.tracks||[];
   window._tracks = tracks;
+  window._artistColor = a.color1 || a.color_accent || '#e8c840';
   const albumMatch=(a.album_url||'').match(/\/album\/([^/]+)/);
   const albumId=albumMatch?albumMatch[1]:null;
   const coverSrc=albumId?`https://api.audiotool.com/album/${albumId}/cover/512.jpg`:null;
 
-  // Send track list to global player (no autoplay)
   if(tracks.length){
-    gpPost({ type:'GP_LOAD_TRACKS', tracks: tracks });
+    gpPost({ type:'GP_LOAD_TRACKS', tracks: tracks, color: window._artistColor });
   }
 
   document.getElementById('app').innerHTML=`
@@ -558,24 +248,15 @@ function render(a,idx,total,prev,next){
         ${(a.about||a.interview&&a.interview.length)?`
           <div class="sec-title">Interview</div>
           ${a.about?`<div class="about-block"><p class="about-text">${esc(a.about)}</p></div>`:''}
-          ${a.interview&&a.interview.length?`
-          <div class="qa-list">
-            ${a.interview.map(qa=>`
-              <div class="qa-item">
-                <div class="qa-q">${esc(qa.q)}</div>
-                <div class="qa-a">${esc(qa.a)}</div>
-              </div>
-            `).join('')}
-          </div>`:''}
+          ${a.interview&&a.interview.length?`<div class="qa-list">${a.interview.map(qa=>`<div class="qa-item"><div class="qa-q">${esc(qa.q)}</div><div class="qa-a">${esc(qa.a)}</div></div>`).join('')}</div>`:''}
         `:''}
       </div>
-
       <div class="sidebar">
         ${coverSrc?`
           <div>
             <div class="sidebar-title">Edition Audiotool</div>
             <a href="${esc(a.album_url||'#')}" target="_blank" class="cover-link" style="margin-top:12px">
-              <img src="${coverSrc}" alt="Edition Audiotool: ${esc(a.artist)}" id="albumCover" onerror="this.closest('.cover-link').style.display='none'">
+              <img src="${coverSrc}" alt="Edition Audiotool: ${esc(a.artist)}" onerror="this.closest('.cover-link').style.display='none'">
               <div class="cover-overlay">Listen ↗</div>
             </a>
           </div>
@@ -609,10 +290,8 @@ function render(a,idx,total,prev,next){
     </div>
 
     <nav class="nav">
-      ${prev?`<a href="artist.html?id=${encodeURIComponent(prev.artist)}" class="nav-a" onclick="navigate(event,'artist.html?id=${encodeURIComponent(prev.artist)}')"><span class="nav-dir">Previous</span><span class="nav-name">${esc(prev.artist)}</span></a>`
-            :`<span class="nav-a" style="opacity:.25"><span class="nav-dir">Start of archive</span></span>`}
-      ${next?`<a href="artist.html?id=${encodeURIComponent(next.artist)}" class="nav-a" style="text-align:right;align-items:flex-end" onclick="navigate(event,'artist.html?id=${encodeURIComponent(next.artist)}')"><span class="nav-dir">Next</span><span class="nav-name">${esc(next.artist)}</span></a>`
-            :`<span class="nav-a" style="opacity:.25;text-align:right;align-items:flex-end"><span class="nav-dir">End of archive</span></span>`}
+      ${prev?`<a href="artist.html?id=${encodeURIComponent(prev.artist)}" class="nav-a" onclick="navigate(event,'artist.html?id=${encodeURIComponent(prev.artist)}')"><span class="nav-dir">Previous</span><span class="nav-name">${esc(prev.artist)}</span></a>`:`<span class="nav-a" style="opacity:.25"><span class="nav-dir">Start of archive</span></span>`}
+      ${next?`<a href="artist.html?id=${encodeURIComponent(next.artist)}" class="nav-a" style="text-align:right;align-items:flex-end" onclick="navigate(event,'artist.html?id=${encodeURIComponent(next.artist)}')"><span class="nav-dir">Next</span><span class="nav-name">${esc(next.artist)}</span></a>`:`<span class="nav-a" style="opacity:.25;text-align:right;align-items:flex-end"><span class="nav-dir">End of archive</span></span>`}
     </nav>
   `;
 

@@ -29,6 +29,7 @@
     gap:16px;
     padding:0 24px;
     z-index:1000;
+    transition:border-color .6s ease, background .6s ease;
   }
 
   .gp-cover {
@@ -74,25 +75,22 @@
   }
   .gp-btn {
     background:none;
-    border:1px solid #333;
+    border:1px solid #444;
     color:#e8c840;
     font-family:"Bebas Neue", Impact, sans-serif;
     font-size:13px;
     letter-spacing:.1em;
     padding:5px 14px;
     cursor:pointer;
-    transition:background .15s, color .15s;
+    transition:background .15s, color .15s, border-color .15s;
     white-space:nowrap;
   }
   .gp-btn:hover { background:#e8c840; color:#0e0e0e; border-color:#e8c840; }
   .gp-btn.primary {
-    background:#e8c840;
-    color:#0e0e0e;
-    border-color:#0e0e0e;
     font-size:18px;
     padding:6px 20px;
+    border-width:2px;
   }
-  .gp-btn.primary:hover { opacity:.85; }
 
   .gp-audio-wrap {
     flex:1;
@@ -109,7 +107,7 @@
     font-family:"Bebas Neue", Impact, sans-serif;
     font-size:13px;
     letter-spacing:.1em;
-    color:#555;
+    color:#666;
     flex-shrink:0;
     min-width:52px;
     text-align:center;
@@ -120,7 +118,6 @@
     font-size:13px;
     letter-spacing:.15em;
     color:#444;
-    flex:1;
   }
 
   @media(max-width:700px){
@@ -140,13 +137,13 @@
     <div class="gp-artist" id="gpArtist"></div>
   </div>
   <div class="gp-idle" id="gpIdle">NO TRACK LOADED</div>
-  <div class="gp-controls" id="gpControls" style="display:none">
-    <button class="gp-btn" onclick="gpPrev()">PREV</button>
+  <div class="gp-controls">
+    <button class="gp-btn" id="gpPrevBtn" onclick="gpPrev()" style="display:none">PREV</button>
     <button class="gp-btn primary" id="gpPlayBtn" onclick="gpTogglePlay()">▶</button>
-    <button class="gp-btn" onclick="gpNext()">NEXT</button>
+    <button class="gp-btn" id="gpNextBtn" onclick="gpNext()" style="display:none">NEXT</button>
     <span class="gp-counter" id="gpCounter"></span>
   </div>
-  <div class="gp-audio-wrap" id="gpAudioWrap" style="display:none">
+  <div class="gp-audio-wrap">
     <audio id="gpAudio" preload="none"></audio>
   </div>
 </div>
@@ -155,6 +152,7 @@
 let gpTracks = [];
 let gpIdx = -1;
 let gpLoaded = false;
+let gpColor = '#e8c840';
 
 const gpAudio    = document.getElementById('gpAudio');
 const gpCoverEl  = document.getElementById('gpCover');
@@ -162,14 +160,30 @@ const gpTrackEl  = document.getElementById('gpTrack');
 const gpArtistEl = document.getElementById('gpArtist');
 const gpInfo     = document.getElementById('gpInfo');
 const gpIdle     = document.getElementById('gpIdle');
-const gpControls = document.getElementById('gpControls');
-const gpAudioWrap= document.getElementById('gpAudioWrap');
 const gpPlayBtn  = document.getElementById('gpPlayBtn');
+const gpPrevBtn  = document.getElementById('gpPrevBtn');
+const gpNextBtn  = document.getElementById('gpNextBtn');
 const gpCounter  = document.getElementById('gpCounter');
+const gpPlayer   = document.getElementById('global-player');
 
 function tIdFromUrl(url){
   const m = (url||'').match(/\/track\/([^/]+)/);
   return m ? m[1].replace(/\/$/,'') : '';
+}
+
+function applyColor(color){
+  if(!color) return;
+  gpColor = color;
+  gpPlayer.style.borderTopColor = color;
+  gpPlayBtn.style.color = color;
+  gpPlayBtn.style.borderColor = color;
+  gpPrevBtn.style.color = color;
+  gpPrevBtn.style.borderColor = color;
+  gpNextBtn.style.color = color;
+  gpNextBtn.style.borderColor = color;
+  gpCounter.style.color = color;
+  gpPlayBtn.onmouseover = () => { gpPlayBtn.style.background = color; gpPlayBtn.style.color = '#0e0e0e'; };
+  gpPlayBtn.onmouseout  = () => { gpPlayBtn.style.background = 'none'; gpPlayBtn.style.color = color; };
 }
 
 function gpShowTrack(idx){
@@ -183,8 +197,8 @@ function gpShowTrack(idx){
   gpArtistEl.textContent = t.track_artist || t.artist || '';
   gpInfo.style.display = 'flex';
   gpIdle.style.display = 'none';
-  gpControls.style.display = 'flex';
-  gpAudioWrap.style.display = 'block';
+  gpPrevBtn.style.display = 'inline-block';
+  gpNextBtn.style.display = 'inline-block';
   gpCounter.textContent = (idx + 1) + ' / ' + gpTracks.length;
 }
 
@@ -235,34 +249,44 @@ window.addEventListener('message', function(e){
   const d = e.data;
   if(!d || !d.type) return;
 
-  // Artist page loaded: update track list, show first track info, don't start
-  if(d.type === 'GP_LOAD_TRACKS'){
+  if(d.type === 'GP_PRELOAD'){
+    // Index page: show first track, don't play, apply color
     gpTracks = d.tracks || [];
     gpIdx = -1;
     gpLoaded = false;
     if(gpTracks.length){
       gpShowTrack(0);
-      gpCounter.textContent = '- / ' + gpTracks.length;
+      gpCounter.textContent = '1 / ' + gpTracks.length;
       gpPlayBtn.textContent = '▶';
-      // Stop current audio so old track doesnt keep playing visually out of sync
-      // but only if something was already playing from a different album
-      if(!gpAudio.paused){ gpAudio.pause(); gpAudio.src = ''; }
     }
+    if(d.color) applyColor(d.color);
   }
 
-  // User clicked a track in the list
+  if(d.type === 'GP_LOAD_TRACKS'){
+    // Artist page loaded: update track list, show first, don't autoplay
+    // Only update if nothing is currently playing
+    gpTracks = d.tracks || [];
+    if(!gpAudio.paused){
+      // Music is playing - just update the track list silently
+    } else {
+      gpIdx = -1;
+      gpLoaded = false;
+      if(gpTracks.length){
+        gpShowTrack(0);
+        gpCounter.textContent = '- / ' + gpTracks.length;
+        gpPlayBtn.textContent = '▶';
+        gpAudio.src = '';
+      }
+    }
+    if(d.color) applyColor(d.color);
+  }
+
   if(d.type === 'GP_PLAY_TRACK'){
     if(d.tracks) gpTracks = d.tracks;
+    if(d.color) applyColor(d.color);
     gpLoad(d.idx, true);
   }
 
-  // Hero play button on index page
-  if(d.type === 'GP_LOAD_AND_PLAY'){
-    gpTracks = d.tracks || [];
-    gpLoad(0, true);
-  }
-
-  // Internal navigation - load new page in iframe
   if(d.type === 'NAVIGATE'){
     document.getElementById('frame').src = d.url;
   }
