@@ -34,7 +34,7 @@
 
   .search-bar {
     border-bottom:1px solid var(--border); padding:14px var(--pad);
-    display:flex; align-items:center; gap:16px; position:relative; z-index:1;
+    display:flex; align-items:center; gap:16px; flex-wrap:wrap; position:relative; z-index:1;
   }
   .search-input {
     background:var(--surface); border:1px solid var(--border); outline:none;
@@ -44,6 +44,11 @@
   .search-input:focus { border-color:var(--accent); }
   .search-input::placeholder { color:var(--text-dim); }
   .search-count { font-family:var(--block); font-size:12px; letter-spacing:.1em; color:var(--text-dim); }
+
+  .sort-btns { display:flex; gap:6px; margin-left:auto; flex-wrap:wrap; }
+  .sort-btn { font-family:var(--block); font-size:12px; letter-spacing:.1em; padding:6px 14px; border:1px solid var(--border); background:var(--surface); color:var(--text-dim); cursor:pointer; transition:all .15s; }
+  .sort-btn:hover { border-color:var(--accent); color:var(--accent); }
+  .sort-btn.active { border-color:var(--accent); color:var(--accent); background:rgba(232,200,64,.08); }
 
   .quote-bar {
     position:relative; z-index:1;
@@ -124,7 +129,7 @@
   .card:hover .card-bar { background:var(--card-accent, var(--accent)); }
   .no-results { padding:60px; text-align:center; color:var(--text-dim); font-family:var(--block); font-size:20px; letter-spacing:.15em; display:none; }
 
-  @media(max-width:900px){ :root{--pad:20px;} .hero{grid-template-columns:1fr;gap:32px;} .hero-photo-col{order:-1;max-width:240px;} .grid{grid-template-columns:1fr;} .card-photo-wrap{width:120px;} }
+  @media(max-width:900px){ :root{--pad:20px;} .hero{grid-template-columns:1fr;gap:32px;} .hero-photo-col{order:-1;max-width:240px;} .grid{grid-template-columns:1fr;} .card-photo-wrap{width:120px;} .sort-btns{margin-left:0;} }
 </style>
 </head>
 <body>
@@ -148,6 +153,14 @@
 <div class="search-bar">
   <input class="search-input" id="searchInput" type="text" placeholder="Search artists..." oninput="doSearch()">
   <span class="search-count" id="searchCount"></span>
+  <div class="sort-btns">
+    <button class="sort-btn active" onclick="setSort('default')" id="sort-default">ARCHIVE</button>
+    <button class="sort-btn" onclick="setSort('random')" id="sort-random">RANDOM</button>
+    <button class="sort-btn" onclick="setSort('az')" id="sort-az">A-Z</button>
+    <button class="sort-btn" onclick="setSort('za')" id="sort-za">Z-A</button>
+    <button class="sort-btn" onclick="setSort('newest')" id="sort-newest">NEWEST</button>
+    <button class="sort-btn" onclick="setSort('oldest')" id="sort-oldest">OLDEST</button>
+  </div>
 </div>
 
 <div class="quote-bar" id="quoteBar" style="display:none">
@@ -189,6 +202,8 @@ function navigate(e, url){
 }
 
 let allArtists = [], shuffled = [];
+let currentSort = 'default';
+let currentQuery = '';
 
 fetch('data.json')
   .then(r => r.json())
@@ -196,10 +211,9 @@ fetch('data.json')
     allArtists = data;
     const current = data.find(a => a.is_current && !a.is_hidden);
     shuffled = data.filter(a => !a.is_current && !a.is_hidden).reverse();
-    document.getElementById('searchCount').textContent = shuffled.length + ' ARTISTS';
     if(current){ renderHero(current); applyBgWash(current); }
-    renderGrid(shuffled);
     renderRandomQuote(data);
+    update();
 
     if(inIframe && current && current.tracks && current.tracks.length){
       const color = current.color1 || current.color_accent || '#e8c840';
@@ -211,6 +225,50 @@ fetch('data.json')
       }, '*');
     }
   });
+
+function setSort(s){
+  currentSort = s;
+  document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('sort-' + s).classList.add('active');
+  update();
+}
+
+function doSearch(){
+  currentQuery = document.getElementById('searchInput').value.toLowerCase().trim();
+  update();
+}
+
+function getSorted(artists){
+  const arr = [...artists];
+  if(currentSort === 'az') return arr.sort((a,b) => a.artist.localeCompare(b.artist));
+  if(currentSort === 'za') return arr.sort((a,b) => b.artist.localeCompare(a.artist));
+  if(currentSort === 'newest') return arr.sort((a,b) => (b.date||'').localeCompare(a.date||''));
+  if(currentSort === 'oldest') return arr.sort((a,b) => (a.date||'').localeCompare(b.date||''));
+  if(currentSort === 'random'){
+    for(let i=arr.length-1;i>0;i--){
+      const j=Math.floor(Math.random()*(i+1));
+      [arr[i],arr[j]]=[arr[j],arr[i]];
+    }
+    return arr;
+  }
+  return arr;
+}
+
+function update(){
+  let visible = shuffled;
+  if(currentQuery){
+    visible = allArtists.filter(a =>
+      !a.is_current && !a.is_hidden &&
+      (a.artist.toLowerCase().includes(currentQuery) || (a.real_name||'').toLowerCase().includes(currentQuery))
+    );
+    document.getElementById('gridTitle').textContent = 'SEARCH RESULTS';
+  } else {
+    document.getElementById('gridTitle').textContent = 'ALL ARTISTS';
+  }
+  const sorted = getSorted(visible);
+  document.getElementById('searchCount').textContent = sorted.length + ' ARTISTS';
+  renderGrid(sorted);
+}
 
 function renderRandomQuote(data){
   const withQuotes = data.filter(a => a.quote && a.quote.trim() && !a.is_hidden);
@@ -302,22 +360,6 @@ function renderGrid(artists){
       <div class="card-bar"></div>
     </a>`;
   }).join('');
-}
-
-function doSearch(){
-  const q = document.getElementById('searchInput').value.toLowerCase().trim();
-  if(!q){
-    document.getElementById('searchCount').textContent = shuffled.length + ' ARTISTS';
-    document.getElementById('gridTitle').textContent = 'ALL ARTISTS';
-    renderGrid(shuffled);
-    return;
-  }
-  const results = allArtists.filter(a =>
-    a.artist.toLowerCase().includes(q) || (a.real_name||'').toLowerCase().includes(q)
-  );
-  document.getElementById('searchCount').textContent = results.length + ' RESULTS';
-  document.getElementById('gridTitle').textContent = 'SEARCH RESULTS';
-  renderGrid(results);
 }
 </script>
 </body>
