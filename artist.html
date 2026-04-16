@@ -349,7 +349,6 @@
     margin-top: 12px;
   }
   .play-toggle:hover { background: var(--accent); color: var(--bg); }
-  .album-player { margin-top: 1px; }
 
   .nav {
     position: relative; z-index: 1;
@@ -391,16 +390,27 @@
 </div>
 
 <header>
-  <a href="index.html" class="logo">AUDIOTOOL <span class="slash">//</span> FEATURED ARTISTS</a>
-  <button id="autoplayToggle" onclick="window.toggleAutoplay()" style="background:var(--accent);border:2px solid #0e0e0e;color:#0e0e0e;font-family:var(--block);font-size:13px;letter-spacing:.15em;padding:6px 16px;cursor:pointer;transition:all .2s;">▶ MUSIC AUTOPLAY</button>
+  <a href="index.html" class="logo" onclick="navigate(event,'index.html')">AUDIOTOOL <span class="slash">//</span> FEATURED ARTISTS</a>
+  <a href="index.html" class="back" onclick="navigate(event,'index.html')">← Back</a>
 </header>
 
 <div id="app"></div>
 
 <script>
+const inIframe = window.self !== window.top;
+
+function navigate(e, url){
+  if(!inIframe) return;
+  e.preventDefault();
+  window.parent.postMessage({ type:'NAVIGATE', url: url }, '*');
+}
+
+function gpPost(msg){
+  if(inIframe) window.parent.postMessage(msg, '*');
+}
+
 const params = new URLSearchParams(location.search);
 const artistId = params.get('id');
-let curUrl = null;
 
 function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 
@@ -450,111 +460,55 @@ function applyColors(t,b){
   }
 }
 
-let albumOpen=false;
-let currentTrackIdx=-1;
-let autoplay=localStorage.getItem('musicAutoplay')==='true';
-window._tracks=[];
+window._tracks = [];
 
-function loadTrack(idx){
-  const tracks=window._tracks;
-  if(!tracks||!tracks.length) return;
-  if(idx<0) idx=tracks.length-1;
-  if(idx>=tracks.length) idx=0;
-  currentTrackIdx=idx;
-  const t=tracks[idx];
-  const m=t.url.match(/\/track\/([^/]+)/);
-  if(!m) return;
-  const player=document.getElementById('albumPlayer');
-  if(!player) return;
-  document.querySelectorAll('.track-btn').forEach((b,i)=>{
-    b.classList.toggle('active',i===idx);
-    b.querySelector('.tp').textContent=i===idx?'▶':'▷';
+// Called when user clicks a track in the list
+window.playTrack = function(idx){
+  document.querySelectorAll('.track-btn').forEach((b,i) => {
+    b.classList.toggle('active', i === idx);
+    b.querySelector('.tp').textContent = i === idx ? '▶' : '▷';
   });
-  const trackId=m[1].replace(/\/$/,'');
-  const mp3=`https://api.audiotool.com/track/${trackId}/play.mp3`;
-  player.innerHTML=`
-    <div style="background:var(--surface);border:1px solid var(--border);padding:12px">
-      <div style="font-size:10px;color:var(--accent);margin-bottom:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;letter-spacing:.06em;font-family:var(--block)">
-        ${t.track_artist||''} . ${t.name||trackId}
-      </div>
-      <audio controls preload="none" style="width:100%;height:32px;display:block"
-        onended="loadTrack(${idx+1})"
-        onerror="this.insertAdjacentHTML('afterend','<div style=padding:4px;font-size:10px;color:var(--text-dim)>Stream not available</div>')">
-        <source src="${mp3}" type="audio/mpeg">
-      </audio>
-      <div style="display:flex;justify-content:space-between;margin-top:8px">
-        <button onclick="loadTrack(${idx}-1)" style="background:none;border:1px solid var(--border);color:var(--accent);cursor:pointer;font-family:var(--block);font-size:12px;letter-spacing:.1em;padding:3px 10px">PREV</button>
-        <span style="font-size:10px;color:var(--text-dim);letter-spacing:.08em;align-self:center">${idx+1} / ${tracks.length}</span>
-        <button onclick="loadTrack(${idx}+1)" style="background:none;border:1px solid var(--border);color:var(--accent);cursor:pointer;font-family:var(--block);font-size:12px;letter-spacing:.1em;padding:3px 10px">NEXT</button>
-        <button onclick="toggleAutoplay()" id="autoplayBtn" style="background:none;border:1px solid var(--border);color:var(--accent);cursor:pointer;font-family:var(--block);font-size:12px;letter-spacing:.1em;padding:3px 10px">AUTO</button>
-      </div>
-    </div>`;
-  setTimeout(()=>{ const a=player.querySelector('audio'); if(a) a.play().catch(()=>{}); },50);
-}
+  gpPost({ type:'GP_PLAY_TRACK', tracks: window._tracks, idx: idx });
+};
 
-window.toggleDesc=function(idx, url){
-  const popup=document.getElementById('tdesc-'+idx);
+window.toggleDesc = function(idx){
+  const popup = document.getElementById('tdesc-' + idx);
   if(popup){
-    document.querySelectorAll('.track-desc-popup').forEach((p,i)=>{ if(i!==idx) p.classList.remove('open'); });
+    document.querySelectorAll('.track-desc').forEach((p,i) => { if(i !== idx) p.classList.remove('open'); });
     popup.classList.toggle('open');
   }
-  window.playTrack(url);
+  window.playTrack(idx);
 };
 
-window.playTrack=function(url){
-  const tracks=window._tracks;
-  const m=url.match(/\/track\/([^/]+)/);
-  if(!m) return;
-  const id=m[1];
-  const idx=tracks.findIndex(t=>(t.url||'').includes(id));
-  if(idx===-1) return;
-  const btn=document.querySelector(`.track-btn[data-url="${url}"]`);
-  if(btn){
-    const popup=btn.closest('.track-item-wrap')?.querySelector('.track-desc-popup');
-    if(popup){
-      document.querySelectorAll('.track-desc-popup').forEach(p=>{ if(p!==popup) p.classList.remove('open'); });
-      popup.classList.toggle('open');
-    }
-  }
-  if(!albumOpen){
-    albumOpen=true;
-    document.getElementById('playIcon').textContent='■';
-    document.getElementById('playLabel').textContent='STOP';
-  }
-  loadTrack(idx);
-};
-
-window.toggleAutoplay=function(){
-  autoplay=!autoplay;
-  localStorage.setItem('musicAutoplay', autoplay);
-  updateAutoplayButtons();
-  if(!autoplay){ const player=document.getElementById('albumPlayer'); if(player) player.innerHTML=''; }
-};
-function updateAutoplayButtons(){
-  const mainBtn=document.getElementById('autoplayToggle');
-  const inlineBtn=document.getElementById('autoplayBtn');
-  if(mainBtn){
-    if(autoplay){ mainBtn.textContent='■ MUSIC AUTOPLAY'; mainBtn.style.background='transparent'; mainBtn.style.color='var(--accent)'; mainBtn.style.borderColor='var(--accent)'; }
-    else { mainBtn.textContent='▶ MUSIC AUTOPLAY'; mainBtn.style.background='var(--accent)'; mainBtn.style.color='#0e0e0e'; mainBtn.style.borderColor='#0e0e0e'; }
-  }
-  if(inlineBtn){ inlineBtn.textContent = autoplay ? 'AUTO ■' : 'AUTO ▶'; inlineBtn.style.opacity = autoplay ? '1' : '0.4'; }
-}
-window.toggleAlbum=function(){
-  const player=document.getElementById('albumPlayer');
-  const icon=document.getElementById('playIcon');
-  const label=document.getElementById('playLabel');
-  albumOpen=!albumOpen;
-  if(albumOpen){ loadTrack(0); icon.textContent='■'; label.textContent='STOP'; }
-  else { player.innerHTML=''; currentTrackIdx=-1; icon.textContent='▶'; label.textContent='PLAY ALBUM'; }
+// PLAY ALBUM button - sends all tracks to global player and starts track 0
+window.toggleAlbum = function(){
+  if(!window._tracks.length) return;
+  gpPost({ type:'GP_PLAY_TRACK', tracks: window._tracks, idx: 0 });
+  // Update button to show it's active
+  const icon = document.getElementById('playIcon');
+  const label = document.getElementById('playLabel');
+  if(icon) icon.textContent = '▶';
+  if(label) label.textContent = 'PLAYING IN PLAYER';
 };
 
 fetch('data.json')
   .then(r=>r.json())
   .then(data=>{
-    if(!artistId){location.href='index.html';return;}
+    if(!artistId){
+      if(inIframe) gpPost({type:'NAVIGATE', url:'index.html'});
+      else location.href='index.html';
+      return;
+    }
     const idx=data.findIndex(a=>a.artist===artistId);
-    if(idx===-1){location.href='index.html';return;}
-    if(data[idx].is_hidden){ document.getElementById('app').innerHTML='<div style="padding:60px;font-family:var(--block);font-size:24px;color:var(--text-dim);letter-spacing:.1em">ARTIST NOT AVAILABLE</div>'; return; }
+    if(idx===-1){
+      if(inIframe) gpPost({type:'NAVIGATE', url:'index.html'});
+      else location.href='index.html';
+      return;
+    }
+    if(data[idx].is_hidden){
+      document.getElementById('app').innerHTML='<div style="padding:60px;font-family:var(--block);font-size:24px;color:var(--text-dim);letter-spacing:.1em">ARTIST NOT AVAILABLE</div>';
+      return;
+    }
     const visible=data.filter(a=>!a.is_hidden);
     const vIdx=visible.indexOf(data[idx]);
     render(data[idx],idx,data.length,vIdx>0?visible[vIdx-1]:null,vIdx<visible.length-1?visible[vIdx+1]:null);
@@ -563,9 +517,15 @@ fetch('data.json')
 function render(a,idx,total,prev,next){
   document.title=`${a.artist} — Audiotool Featured Artist`;
   const tracks=a.tracks||[];
+  window._tracks = tracks;
   const albumMatch=(a.album_url||'').match(/\/album\/([^/]+)/);
   const albumId=albumMatch?albumMatch[1]:null;
   const coverSrc=albumId?`https://api.audiotool.com/album/${albumId}/cover/512.jpg`:null;
+
+  // Send track list to global player (no autoplay)
+  if(tracks.length){
+    gpPost({ type:'GP_LOAD_TRACKS', tracks: tracks });
+  }
 
   document.getElementById('app').innerHTML=`
     <section class="hero">
@@ -626,16 +586,15 @@ function render(a,idx,total,prev,next){
               <span id="playIcon">▶</span>
               <span id="playLabel">PLAY ALBUM</span>
             </button>
-            <div class="album-player" id="albumPlayer"></div>
           </div>
         `:''}
         ${tracks.length?`
           <div>
             <div class="sidebar-title">Curated Tracks</div>
-            <div class="track-list" style="display:flex;flex-direction:column;gap:1px;background:var(--border);margin-top:1px">
+            <div class="track-list">
               ${tracks.map((t,i)=>`
                 <div class="track-item">
-                  <button class="track-btn" id="tbtn-${i}" data-url="${esc(t.url)}" onclick="toggleDesc(${i},'${esc(t.url)}')">
+                  <button class="track-btn" id="tbtn-${i}" onclick="toggleDesc(${i})">
                     <img class="track-cover" src="https://api.audiotool.com/track/${tId(t.url)}/cover/256.jpg" onerror="this.src='${coverSrc||''}';this.onerror=null;" alt="">
                     <span class="tt">${esc(t.track_artist||'')} ${t.track_artist&&t.name?'. ':''}${esc(t.name||tId(t.url))}</span>
                     <span class="tp" id="tp-${i}">▷</span>
@@ -650,21 +609,17 @@ function render(a,idx,total,prev,next){
     </div>
 
     <nav class="nav">
-      ${prev?`<a href="artist.html?id=${encodeURIComponent(prev.artist)}" class="nav-a"><span class="nav-dir">Previous</span><span class="nav-name">${esc(prev.artist)}</span></a>`
+      ${prev?`<a href="artist.html?id=${encodeURIComponent(prev.artist)}" class="nav-a" onclick="navigate(event,'artist.html?id=${encodeURIComponent(prev.artist)}')"><span class="nav-dir">Previous</span><span class="nav-name">${esc(prev.artist)}</span></a>`
             :`<span class="nav-a" style="opacity:.25"><span class="nav-dir">Start of archive</span></span>`}
-      ${next?`<a href="artist.html?id=${encodeURIComponent(next.artist)}" class="nav-a" style="text-align:right;align-items:flex-end"><span class="nav-dir">Next</span><span class="nav-name">${esc(next.artist)}</span></a>`
+      ${next?`<a href="artist.html?id=${encodeURIComponent(next.artist)}" class="nav-a" style="text-align:right;align-items:flex-end" onclick="navigate(event,'artist.html?id=${encodeURIComponent(next.artist)}')"><span class="nav-dir">Next</span><span class="nav-name">${esc(next.artist)}</span></a>`
             :`<span class="nav-a" style="opacity:.25;text-align:right;align-items:flex-end"><span class="nav-dir">End of archive</span></span>`}
     </nav>
   `;
 
-  window._albumId=albumId;
-  updateAutoplayButtons();
-  if(tracks.length && autoplay){ setTimeout(()=>loadTrack(0), 800); }
   if(a.desc_bg) document.documentElement.style.setProperty('--desc-bg', a.desc_bg);
   else document.documentElement.style.removeProperty('--desc-bg');
   if(a.links_bar_color) document.documentElement.style.setProperty('--links-bar-color', a.links_bar_color);
   else document.documentElement.style.removeProperty('--links-bar-color');
-  window._tracks=tracks;
   if(a.color_accent){ window._accentOverride=true; document.documentElement.style.setProperty('--accent', a.color_accent); }
   else if(a.color1){ window._accentOverride=true; document.documentElement.style.setProperty('--accent', a.color1); }
   else { window._accentOverride=false; }

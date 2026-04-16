@@ -125,11 +125,10 @@
 <div id="bgWash"></div>
 
 <header>
-  <a href="index.html" class="logo">AUDIOTOOL <span class="slash">//</span> FEATURED ARTISTS</a>
+  <a href="index.html" class="logo" onclick="navigate(event,'index.html')">AUDIOTOOL <span class="slash">//</span> FEATURED ARTISTS</a>
   <div class="header-right">
-    <a href="index.html" class="gen-link active">GEN II</a>
-    <a href="generation1.html" class="gen-link">GEN I</a>
-    <button id="autoplayToggle" onclick="toggleAutoplay()" style="background:var(--accent);border:2px solid #0e0e0e;color:#0e0e0e;font-family:var(--block);font-size:14px;letter-spacing:.15em;padding:8px 18px;cursor:pointer;transition:all .2s;">MUSIC AUTOPLAY: OFF</button>
+    <a href="index.html" class="gen-link active" onclick="navigate(event,'index.html')">GEN II</a>
+    <a href="generation1.html" class="gen-link" onclick="navigate(event,'generation1.html')">GEN I</a>
   </div>
 </header>
 
@@ -175,30 +174,15 @@
 </div>
 
 <script>
-let allArtists = [], shuffled = [];
-let musicAutoplay = localStorage.getItem('musicAutoplay') === 'true';
+const inIframe = window.self !== window.top;
 
-function toggleAutoplay(){
-  musicAutoplay = !musicAutoplay;
-  localStorage.setItem('musicAutoplay', musicAutoplay);
-  updateAutoplayBtn();
+function navigate(e, url){
+  if(!inIframe) return;
+  e.preventDefault();
+  window.parent.postMessage({ type:'NAVIGATE', url: url }, '*');
 }
-function updateAutoplayBtn(){
-  const btn = document.getElementById('autoplayToggle');
-  if(!btn) return;
-  if(musicAutoplay){
-    btn.textContent = '■ MUSIC AUTOPLAY';
-    btn.style.background = 'transparent';
-    btn.style.color = 'var(--accent)';
-    btn.style.borderColor = 'var(--accent)';
-  } else {
-    btn.textContent = '▶ MUSIC AUTOPLAY';
-    btn.style.background = 'var(--accent)';
-    btn.style.color = '#0e0e0e';
-    btn.style.borderColor = '#0e0e0e';
-  }
-}
-document.addEventListener('DOMContentLoaded', updateAutoplayBtn);
+
+let allArtists = [], shuffled = [];
 
 fetch('data.json')
   .then(r => r.json())
@@ -263,7 +247,7 @@ function renderHero(a){
       <div class="hero-name" style="color:${accent}">${a.artist}</div>
       ${a.real_name ? `<div class="hero-realname">${a.real_name}</div>` : ''}
       ${intro ? `<div class="hero-intro" style="border-left-color:${accent}">${intro}</div>` : ''}
-      <a href="artist.html?id=${encodeURIComponent(a.artist)}" class="hero-cta" style="background:${accent}">READ MORE ↗</a>
+      <a href="artist.html?id=${encodeURIComponent(a.artist)}" class="hero-cta" style="background:${accent}" onclick="navigate(event,'artist.html?id=${encodeURIComponent(a.artist)}')">READ MORE ↗</a>
     </div>
     <div class="hero-photo-col">
       ${a.photo ? `<img src="${a.photo}" class="hero-photo" alt="${a.artist}" onerror="this.outerHTML='<div class=hero-photo-placeholder></div>'">`
@@ -281,7 +265,8 @@ function renderGrid(artists){
     const accentStyle = accent ? `style="--card-accent:${accent}"` : '';
     const intro = (a.intro||'').slice(0,120).replace(/</g,'&lt;') + ((a.intro||'').length>120?'...':'');
     const year = (a.date||'').slice(0,4);
-    return `<a href="artist.html?id=${encodeURIComponent(a.artist)}" class="card" ${accentStyle}>
+    const url = `artist.html?id=${encodeURIComponent(a.artist)}`;
+    return `<a href="${url}" class="card" ${accentStyle} onclick="navigate(event,'${url}')">
       <div class="card-inner">
         <div class="card-photo-wrap">
           ${a.photo ? `<img src="${a.photo}" class="card-photo" style="object-position:${a.photo_position||'top'}" alt="${a.artist}" loading="lazy" onerror="this.outerHTML='<div class=card-photo-placeholder></div>'">`

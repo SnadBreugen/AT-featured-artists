@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Featured Artists — Audiotool</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Geist+Mono&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { height:100%; overflow:hidden; background:#0e0e0e; }
+
+  #frame {
+    position:fixed;
+    top:0; left:0; right:0;
+    bottom:72px;
+    border:none;
+    width:100%;
+    height:calc(100% - 72px);
+  }
+
+  #global-player {
+    position:fixed;
+    bottom:0; left:0; right:0;
+    height:72px;
+    background:#111111;
+    border-top:2px solid #222;
+    display:flex;
+    align-items:center;
+    gap:16px;
+    padding:0 24px;
+    z-index:1000;
+  }
+
+  .gp-cover {
+    width:44px; height:44px;
+    object-fit:cover;
+    border:1px solid #222;
+    flex-shrink:0;
+    background:#1a1a1a;
+  }
+
+  .gp-info {
+    display:flex;
+    flex-direction:column;
+    gap:3px;
+    min-width:0;
+    flex:1;
+    max-width:240px;
+  }
+  .gp-track {
+    font-family:"Bebas Neue", Impact, sans-serif;
+    font-size:15px;
+    letter-spacing:.08em;
+    color:#fff;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  .gp-artist {
+    font-family:"Geist Mono", monospace;
+    font-size:10px;
+    color:#aaa;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    letter-spacing:.04em;
+  }
+
+  .gp-controls {
+    display:flex;
+    align-items:center;
+    gap:10px;
+    flex-shrink:0;
+  }
+  .gp-btn {
+    background:none;
+    border:1px solid #333;
+    color:#e8c840;
+    font-family:"Bebas Neue", Impact, sans-serif;
+    font-size:13px;
+    letter-spacing:.1em;
+    padding:5px 14px;
+    cursor:pointer;
+    transition:background .15s, color .15s;
+    white-space:nowrap;
+  }
+  .gp-btn:hover { background:#e8c840; color:#0e0e0e; border-color:#e8c840; }
+  .gp-btn.primary {
+    background:#e8c840;
+    color:#0e0e0e;
+    border-color:#0e0e0e;
+    font-size:18px;
+    padding:6px 20px;
+  }
+  .gp-btn.primary:hover { opacity:.85; }
+
+  .gp-audio-wrap {
+    flex:1;
+    min-width:0;
+    max-width:440px;
+  }
+  .gp-audio-wrap audio {
+    width:100%;
+    height:32px;
+    display:block;
+  }
+
+  .gp-counter {
+    font-family:"Bebas Neue", Impact, sans-serif;
+    font-size:13px;
+    letter-spacing:.1em;
+    color:#555;
+    flex-shrink:0;
+    min-width:52px;
+    text-align:center;
+  }
+
+  .gp-idle {
+    font-family:"Bebas Neue", Impact, sans-serif;
+    font-size:13px;
+    letter-spacing:.15em;
+    color:#444;
+    flex:1;
+  }
+
+  @media(max-width:700px){
+    .gp-audio-wrap { display:none; }
+    .gp-info { max-width:160px; }
+  }
+</style>
+</head>
+<body>
+
+<iframe id="frame" src="index.html"></iframe>
+
+<div id="global-player">
+  <img class="gp-cover" id="gpCover" src="" alt="" style="display:none">
+  <div class="gp-info" id="gpInfo" style="display:none">
+    <div class="gp-track" id="gpTrack"></div>
+    <div class="gp-artist" id="gpArtist"></div>
+  </div>
+  <div class="gp-idle" id="gpIdle">NO TRACK LOADED</div>
+  <div class="gp-controls" id="gpControls" style="display:none">
+    <button class="gp-btn" onclick="gpPrev()">PREV</button>
+    <button class="gp-btn primary" id="gpPlayBtn" onclick="gpTogglePlay()">▶</button>
+    <button class="gp-btn" onclick="gpNext()">NEXT</button>
+    <span class="gp-counter" id="gpCounter"></span>
+  </div>
+  <div class="gp-audio-wrap" id="gpAudioWrap" style="display:none">
+    <audio id="gpAudio" preload="none"></audio>
+  </div>
+</div>
+
+<script>
+let gpTracks = [];
+let gpIdx = -1;
+let gpLoaded = false;
+
+const gpAudio    = document.getElementById('gpAudio');
+const gpCoverEl  = document.getElementById('gpCover');
+const gpTrackEl  = document.getElementById('gpTrack');
+const gpArtistEl = document.getElementById('gpArtist');
+const gpInfo     = document.getElementById('gpInfo');
+const gpIdle     = document.getElementById('gpIdle');
+const gpControls = document.getElementById('gpControls');
+const gpAudioWrap= document.getElementById('gpAudioWrap');
+const gpPlayBtn  = document.getElementById('gpPlayBtn');
+const gpCounter  = document.getElementById('gpCounter');
+
+function tIdFromUrl(url){
+  const m = (url||'').match(/\/track\/([^/]+)/);
+  return m ? m[1].replace(/\/$/,'') : '';
+}
+
+function gpShowTrack(idx){
+  if(!gpTracks.length) return;
+  const t = gpTracks[idx];
+  const trackId = tIdFromUrl(t.url);
+  if(!trackId) return;
+  gpCoverEl.src = `https://api.audiotool.com/track/${trackId}/cover/256.jpg`;
+  gpCoverEl.style.display = 'block';
+  gpTrackEl.textContent = t.name || trackId;
+  gpArtistEl.textContent = t.track_artist || t.artist || '';
+  gpInfo.style.display = 'flex';
+  gpIdle.style.display = 'none';
+  gpControls.style.display = 'flex';
+  gpAudioWrap.style.display = 'block';
+  gpCounter.textContent = (idx + 1) + ' / ' + gpTracks.length;
+}
+
+function gpLoad(idx, autoplay){
+  if(!gpTracks.length) return;
+  if(idx < 0) idx = gpTracks.length - 1;
+  if(idx >= gpTracks.length) idx = 0;
+  gpIdx = idx;
+  gpLoaded = true;
+
+  const t = gpTracks[idx];
+  const trackId = tIdFromUrl(t.url);
+  if(!trackId) return;
+
+  gpShowTrack(idx);
+  gpAudio.src = `https://api.audiotool.com/track/${trackId}/play.mp3`;
+
+  if(autoplay){
+    gpAudio.play().catch(()=>{});
+    gpPlayBtn.textContent = '■';
+  } else {
+    gpPlayBtn.textContent = '▶';
+  }
+}
+
+function gpTogglePlay(){
+  if(!gpLoaded){
+    if(gpTracks.length){ gpLoad(0, true); }
+    return;
+  }
+  if(gpAudio.paused){
+    gpAudio.play().catch(()=>{});
+    gpPlayBtn.textContent = '■';
+  } else {
+    gpAudio.pause();
+    gpPlayBtn.textContent = '▶';
+  }
+}
+
+function gpPrev(){ gpLoad(gpIdx - 1, !gpAudio.paused); }
+function gpNext(){ gpLoad(gpIdx + 1, !gpAudio.paused); }
+
+gpAudio.addEventListener('ended', () => gpLoad(gpIdx + 1, true));
+gpAudio.addEventListener('play',  () => { gpPlayBtn.textContent = '■'; });
+gpAudio.addEventListener('pause', () => { gpPlayBtn.textContent = '▶'; });
+
+window.addEventListener('message', function(e){
+  const d = e.data;
+  if(!d || !d.type) return;
+
+  // Artist page loaded: update track list, show first track info, don't start
+  if(d.type === 'GP_LOAD_TRACKS'){
+    gpTracks = d.tracks || [];
+    gpIdx = -1;
+    gpLoaded = false;
+    if(gpTracks.length){
+      gpShowTrack(0);
+      gpCounter.textContent = '- / ' + gpTracks.length;
+      gpPlayBtn.textContent = '▶';
+      // Stop current audio so old track doesnt keep playing visually out of sync
+      // but only if something was already playing from a different album
+      if(!gpAudio.paused){ gpAudio.pause(); gpAudio.src = ''; }
+    }
+  }
+
+  // User clicked a track in the list
+  if(d.type === 'GP_PLAY_TRACK'){
+    if(d.tracks) gpTracks = d.tracks;
+    gpLoad(d.idx, true);
+  }
+
+  // Hero play button on index page
+  if(d.type === 'GP_LOAD_AND_PLAY'){
+    gpTracks = d.tracks || [];
+    gpLoad(0, true);
+  }
+
+  // Internal navigation - load new page in iframe
+  if(d.type === 'NAVIGATE'){
+    document.getElementById('frame').src = d.url;
+  }
+});
+</script>
+</body>
+</html>
