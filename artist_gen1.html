@@ -155,7 +155,7 @@ window.playTrack = function(idx){
     const tp = b.querySelector('.tp');
     if(tp) tp.textContent = i === idx ? '▶' : '▷';
   });
-  gpPost({ type:'GP_PLAY_TRACK', tracks: window._tracks, idx: idx, color: window._artistColor });
+  gpPost({ type:'GP_PLAY_TRACK', tracks: window._tracks, idx: idx, color: window._artistColor, links_bar_color: window._linksBarColor });
 };
 
 window.toggleDesc = function(idx){
@@ -167,7 +167,7 @@ window.toggleDesc = function(idx){
 
 window.toggleAlbum = function(){
   if(!window._tracks.length) return;
-  gpPost({ type:'GP_PLAY_TRACK', tracks: window._tracks, idx: 0, color: window._artistColor });
+  gpPost({ type:'GP_PLAY_TRACK', tracks: window._tracks, idx: 0, color: window._artistColor, links_bar_color: window._linksBarColor });
   const icon = document.getElementById('playIcon');
   const label = document.getElementById('playLabel');
   if(icon) icon.textContent = '▶';
@@ -196,10 +196,11 @@ function render(a,prev,next){
   const tracks=(a.tracks||[]).filter(t=>t.name&&t.track_artist&&t.url&&t.url.includes('/track/'));
   window._tracks = tracks;
   window._artistColor = a.color1 || a.color_accent || '#e8c840';
+  window._linksBarColor = a.links_bar_color || null;
   const accent = a.color_accent || a.color1 || 'var(--accent)';
 
   if(tracks.length){
-    gpPost({ type:'GP_LOAD_TRACKS', tracks: tracks, color: window._artistColor });
+    gpPost({ type:'GP_LOAD_TRACKS', tracks: tracks, color: window._artistColor, links_bar_color: window._linksBarColor });
   }
 
   document.getElementById('app').innerHTML=`

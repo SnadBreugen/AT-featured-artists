@@ -57,6 +57,19 @@
     overflow:hidden;
     text-overflow:ellipsis;
   }
+  .gp-at-link {
+    font-family:"Geist Mono", monospace;
+    font-size:10px;
+    letter-spacing:.06em;
+    text-decoration:none;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    transition:opacity .15s;
+    opacity:.8;
+  }
+  .gp-at-link:hover { opacity:1; text-decoration:underline; }
+
   .gp-artist {
     font-family:"Geist Mono", monospace;
     font-size:10px;
@@ -134,7 +147,7 @@
   <img class="gp-cover" id="gpCover" src="" alt="" style="display:none">
   <div class="gp-info" id="gpInfo" style="display:none">
     <div class="gp-track" id="gpTrack"></div>
-    <div class="gp-artist" id="gpArtist"></div>
+    <a class="gp-at-link" id="gpAtLink" href="#" target="_blank">OPEN ON AUDIOTOOL ↗</a>
   </div>
   <div class="gp-idle" id="gpIdle">NO TRACK LOADED</div>
   <div class="gp-controls">
@@ -153,11 +166,12 @@ let gpTracks = [];
 let gpIdx = -1;
 let gpLoaded = false;
 let gpColor = '#e8c840';
+let gpLinkColor = '#888888';
 
 const gpAudio    = document.getElementById('gpAudio');
 const gpCoverEl  = document.getElementById('gpCover');
 const gpTrackEl  = document.getElementById('gpTrack');
-const gpArtistEl = document.getElementById('gpArtist');
+const gpAtLink   = document.getElementById('gpAtLink');
 const gpInfo     = document.getElementById('gpInfo');
 const gpIdle     = document.getElementById('gpIdle');
 const gpPlayBtn  = document.getElementById('gpPlayBtn');
@@ -186,6 +200,11 @@ function applyColor(color){
   gpPlayBtn.onmouseout  = () => { gpPlayBtn.style.background = 'none'; gpPlayBtn.style.color = color; };
 }
 
+function applyLinkColor(color){
+  gpLinkColor = color || '#888888';
+  gpAtLink.style.color = gpLinkColor;
+}
+
 function gpShowTrack(idx){
   if(!gpTracks.length) return;
   const t = gpTracks[idx];
@@ -193,8 +212,9 @@ function gpShowTrack(idx){
   if(!trackId) return;
   gpCoverEl.src = `https://api.audiotool.com/track/${trackId}/cover/256.jpg`;
   gpCoverEl.style.display = 'block';
-  gpTrackEl.textContent = t.name || trackId;
-  gpArtistEl.textContent = t.track_artist || t.artist || '';
+  gpTrackEl.textContent = (t.track_artist ? t.track_artist + ' . ' : '') + (t.name || trackId);
+  gpAtLink.href = `https://www.audiotool.com/track/${trackId}/`;
+  gpAtLink.style.color = gpLinkColor;
   gpInfo.style.display = 'flex';
   gpIdle.style.display = 'none';
   gpPrevBtn.style.display = 'inline-block';
@@ -250,7 +270,6 @@ window.addEventListener('message', function(e){
   if(!d || !d.type) return;
 
   if(d.type === 'GP_PRELOAD'){
-    // Index page: show first track, don't play, apply color
     gpTracks = d.tracks || [];
     gpIdx = -1;
     gpLoaded = false;
@@ -260,14 +279,13 @@ window.addEventListener('message', function(e){
       gpPlayBtn.textContent = '▶';
     }
     if(d.color) applyColor(d.color);
+    applyLinkColor(d.links_bar_color || null);
   }
 
   if(d.type === 'GP_LOAD_TRACKS'){
-    // Artist page loaded: update track list, show first, don't autoplay
-    // Only update if nothing is currently playing
     gpTracks = d.tracks || [];
     if(!gpAudio.paused){
-      // Music is playing - just update the track list silently
+      // music playing - just update track list silently
     } else {
       gpIdx = -1;
       gpLoaded = false;
@@ -279,11 +297,13 @@ window.addEventListener('message', function(e){
       }
     }
     if(d.color) applyColor(d.color);
+    applyLinkColor(d.links_bar_color || null);
   }
 
   if(d.type === 'GP_PLAY_TRACK'){
     if(d.tracks) gpTracks = d.tracks;
     if(d.color) applyColor(d.color);
+    applyLinkColor(d.links_bar_color || null);
     gpLoad(d.idx, true);
   }
 
