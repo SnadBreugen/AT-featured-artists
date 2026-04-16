@@ -1860,7 +1860,8 @@
     "color_accent": "#589ff3",
     "desc_bg": "#eaddd2",
     "links_bar_color": "#b08154",
-    "is_hidden": false
+    "is_hidden": false,
+    "quote": "I love the DIY and social nature of this place. We're all just a bunch of hobbyists on a niche German website exploring and enjoying the art of music creation together."
   },
   {
     "artist": "aeiter",
@@ -1952,7 +1953,8 @@
     "color1": "#5b6be1",
     "color_accent": "#5b6be1",
     "links_bar_color": "#e8626f",
-    "desc_bg": "#b9c0f9"
+    "desc_bg": "#b9c0f9",
+    "quote": "I love that the website offers the opportunity for users to give constructive criticism on my music. The community on Audiotool has made a huge positive impact on my development as an artist and a person."
   },
   {
     "artist": "okin",
@@ -2048,7 +2050,8 @@
     "color1": "#caa68e",
     "color_accent": "#caa68e",
     "links_bar_color": "#9cb6c5",
-    "desc_bg": "#dde7e6"
+    "desc_bg": "#dde7e6",
+    "quote": "I've had the pleasure to meet many fantastic artists that have reached out and gave feedback throughout the years which reshaped how I approach and create music. "
   },
   {
     "artist": "Client",
