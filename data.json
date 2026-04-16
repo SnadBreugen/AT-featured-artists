@@ -2558,7 +2558,8 @@
     "color1": "#befed0",
     "color_accent": "#befed0",
     "links_bar_color": "#bac6f6",
-    "desc_bg": "#d9d5d4"
+    "desc_bg": "#d9d5d4",
+    "quote": "My favorite part of Audiotool is the sheer amount of variety of things you can do in the studio. You can literally make any sound you want, for free."
   },
   {
     "artist": "Melancolist",
@@ -2647,7 +2648,8 @@
     "color1": "#f4d2ae",
     "color_accent": "#f4d2ae",
     "desc_bg": "#f8f4e4",
-    "links_bar_color": "#906482"
+    "links_bar_color": "#906482",
+    "quote": "The thing which is really unique about Audiotool is that it allows you to compose live with other people, on the same project. It's a great value and we should develop that to improve our community."
   },
   {
     "artist": "ApoC",
@@ -2736,7 +2738,8 @@
     "color1": "#bc2f2f",
     "color_accent": "#bc2f2f",
     "links_bar_color": "#166d6d",
-    "desc_bg": "#dbd6ff"
+    "desc_bg": "#dbd6ff",
+    "quote": "You can do so much on Audiotool, and I believe you can take it to the next level if you put your best efforts into making something you enjoy and love."
   },
   {
     "artist": "sphere",
@@ -2829,7 +2832,8 @@
     "color1": "#c9e2b1",
     "color_accent": "#c9e2b1",
     "desc_bg": "#e0cdef",
-    "links_bar_color": "#8458d5"
+    "links_bar_color": "#8458d5",
+    "quote": "The essence of Audiotool is as much of a community as it is a tool for others. It's the constant encouragement of ourselves from others in the community that makes us strive to get better."
   },
   {
     "artist": "Drimeur",
@@ -2921,7 +2925,8 @@
     "color1": "#e97015",
     "color_accent": "#e97015",
     "links_bar_color": "#e3861d",
-    "desc_bg": "#fce6b6"
+    "desc_bg": "#fce6b6",
+    "quote": "I'm so grateful and really admire the work you are doing, guys. That's why I want everybody to support Audiotool on Patreon. The collab thing is also a great idea: you can chat with your colleague making music and discuss live what to do to your track! "
   },
   {
     "artist": "withdecay",
@@ -3029,7 +3034,8 @@
     "is_current": false,
     "color1": "#969696",
     "color_accent": "#969696",
-    "links_bar_color": "#e4e4e4"
+    "links_bar_color": "#e4e4e4",
+    "quote": "I love the dev team and everyone involved with the building, maintaining, and growth of this site. You make this all possible, and bring so much light into people's lives with this small music app."
   },
   {
     "artist": "etterath",
@@ -3125,7 +3131,8 @@
     "color1": "#7bb28c",
     "color_accent": "#7bb28c",
     "links_bar_color": "#b03081",
-    "desc_bg": "#ace2b5"
+    "desc_bg": "#ace2b5",
+    "quote": "Audiotool has undoubtedly changed my life. With it I discovered my love of music, a passion that will certainly define me for as long as I live."
   },
   {
     "artist": "Xavi",
@@ -3323,7 +3330,8 @@
     "color1": "#728ba7",
     "color_accent": "#728ba7",
     "links_bar_color": "#c8d1da",
-    "desc_bg": "#e2e5ea"
+    "desc_bg": "#e2e5ea",
+    "quote": "I love this way of making music by using the internet. The interface is so friendly to me. I love the way of patching cables and it reminds me of VCV Rack."
   },
   {
     "artist": "JayFK",
@@ -3416,7 +3424,8 @@
     "color1": "#c090c1",
     "color_accent": "#c090c1",
     "desc_bg": "#f4eef2",
-    "links_bar_color": "#805483"
+    "links_bar_color": "#805483",
+    "quote": "I think Audiotool is absolutely fantastic for a free DAW. What I love most is the endless possibilities of interconnecting devices. There really are no limits."
   },
   {
     "artist": "Siren",
@@ -3515,7 +3524,8 @@
     "color1": "#8fbbe2",
     "color_accent": "#8fbbe2",
     "links_bar_color": "#d5d2ca",
-    "desc_bg": "#ead6ae"
+    "desc_bg": "#ead6ae",
+    "quote": "The thing I like about Audiotool the most, is the fact that it's free and allows live-time collaboration with other producers. Not many DAWs achieve this, the fact that you can pack this much power on something that is on the web alone still continues to wow me."
   },
   {
     "artist": "Kepz",
@@ -3721,7 +3731,8 @@
     "color1": "#bdfa07",
     "color_accent": "#bdfa07",
     "links_bar_color": "#e6fc04",
-    "desc_bg": "#f3fdc7"
+    "desc_bg": "#f3fdc7",
+    "quote": "I love the browser based aspect and the community of course. That's what makes AT special. I'm very grateful for the friends I've made here and hope to continue to use this site as long as possible."
   },
   {
     "artist": "mxcii",
@@ -3814,7 +3825,8 @@
     "color1": "#b527dd",
     "color_accent": "#b527dd",
     "links_bar_color": "#ad247f",
-    "desc_bg": "#f0c9f8"
+    "desc_bg": "#f0c9f8",
+    "quote": "One thing that I find very unique about Audiotool is the ability to open up other people's tracks and see how they're made. I've learnt so much from doing this."
   },
   {
     "artist": "retro",
