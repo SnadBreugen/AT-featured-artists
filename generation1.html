@@ -109,7 +109,7 @@
 </header>
 
 <div class="tagline">
-  <span>FIRST GENERATION OF FEATURED ARTISTS | EDITION AUDIOTOOL</span>
+  <span>OUTSTANDING MUSICIANS FROM THE AUDIOTOOL COMMUNITY | FEATURED ARTISTS AND THEIR EDITION AUDIOTOOL ALBUMS</span>
 </div>
 
 <div class="quote-bar" id="quoteBar" style="display:none">
@@ -166,19 +166,20 @@ let allArtists = [];
 let currentSort = '';
 let currentQuery = '';
 
-fetch('gen1_data.json')
-  .then(r => r.json())
-  .then(data => {
-    allArtists = data;
-    const visible = data.filter(a => !a.is_hidden);
-    renderRandomHero(visible);
-    renderRandomQuote(visible);
-    update();
-  })
-  .catch(() => {
-    document.getElementById('noResults').style.display = 'block';
-    document.getElementById('noResults').textContent = 'DATA NOT FOUND';
-  });
+Promise.all([
+  fetch('gen1_data.json').then(r => r.json()),
+  fetch('data.json').then(r => r.json())
+]).then(([gen1, gen2]) => {
+  allArtists = gen1;
+  const visible = gen1.filter(a => !a.is_hidden);
+  const allForQuotes = [...gen1, ...gen2].filter(a => !a.is_hidden);
+  renderRandomHero(visible);
+  renderRandomQuote(allForQuotes);
+  update();
+}).catch(() => {
+  document.getElementById('noResults').style.display = 'block';
+  document.getElementById('noResults').textContent = 'DATA NOT FOUND';
+});
 
 function renderRandomHero(artists){
   if(!artists.length) return;
@@ -236,6 +237,7 @@ function renderRandomQuote(artists){
 function setSort(s){
   if(currentSort === s){ currentSort = ''; document.getElementById('sort-' + s).classList.remove('active'); }
   else { currentSort = s; document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active')); document.getElementById('sort-' + s).classList.add('active'); }
+  if(s === 'random') renderRandomHero(allArtists.filter(a => !a.is_hidden));
   update();
 }
 
