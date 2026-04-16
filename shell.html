@@ -98,7 +98,7 @@
     transition:background .15s, color .15s, border-color .15s;
     white-space:nowrap;
   }
-  .gp-btn:hover { background:#e8c840; color:#0e0e0e; border-color:#e8c840; }
+  .gp-btn:hover { color:#0e0e0e; }
   .gp-btn.primary {
     font-size:18px;
     padding:6px 20px;
@@ -198,6 +198,10 @@ function applyColor(color){
   gpCounter.style.color = color;
   gpPlayBtn.onmouseover = () => { gpPlayBtn.style.background = color; gpPlayBtn.style.color = '#0e0e0e'; };
   gpPlayBtn.onmouseout  = () => { gpPlayBtn.style.background = 'none'; gpPlayBtn.style.color = color; };
+  gpPrevBtn.onmouseover = () => { gpPrevBtn.style.background = color; gpPrevBtn.style.color = '#0e0e0e'; };
+  gpPrevBtn.onmouseout  = () => { gpPrevBtn.style.background = 'none'; gpPrevBtn.style.color = color; };
+  gpNextBtn.onmouseover = () => { gpNextBtn.style.background = color; gpNextBtn.style.color = '#0e0e0e'; };
+  gpNextBtn.onmouseout  = () => { gpNextBtn.style.background = 'none'; gpNextBtn.style.color = color; };
 }
 
 function applyLinkColor(color){
