@@ -35,10 +35,10 @@
   .quote-bar {
     position:relative; z-index:1;
     transition:background .8s ease;
-    padding:0 var(--pad);
     height:260px;
-    display:flex; flex-direction:column; justify-content:center;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
     overflow:hidden;
+    padding:0 var(--pad);
   }
   .quote-bar::after {
     content:''; position:absolute; inset:0;
@@ -46,10 +46,10 @@
     opacity:0.12; mix-blend-mode:multiply; pointer-events:none;
   }
   .quote-label { font-family:var(--block); font-size:14px; letter-spacing:.3em; color:rgba(0,0,0,0.7); position:absolute; top:16px; left:var(--pad, 40px); }
-  .quote-content { transition:opacity .6s ease; width:100%; display:flex; align-items:center; justify-content:center; padding:0 var(--pad, 40px); }
+  .quote-content { transition:opacity .6s ease; width:100%; display:flex; align-items:center; justify-content:center; }
   .quote-content.fade { opacity:0; }
-  .quote-text { font-family:var(--block); font-size:clamp(22px,3vw,44px); color:#0a0a0a; line-height:1.05; letter-spacing:.02em; width:100%; text-align:left; }
-  .quote-author { font-family:var(--block); font-size:clamp(80px,12vw,160px); line-height:0.85; letter-spacing:-0.02em; color:#0a0a0a; text-align:center; width:100%; white-space:nowrap; overflow:hidden; text-overflow:clip; font-size:min(160px, 14vw); }
+  .quote-text { font-family:var(--block); font-size:clamp(22px,3vw,44px); color:#0a0a0a; line-height:1.05; letter-spacing:.02em; width:100%; text-align:center; }
+  .quote-author { font-family:var(--block); font-size:clamp(80px,12vw,160px); line-height:0.85; letter-spacing:-0.02em; color:#0a0a0a; text-align:center; width:100%; white-space:nowrap; overflow:hidden; }
 
   .hero-wrap { position:relative; z-index:1; border-bottom:2px solid var(--border); }
   .hero-spacer { height:32px; background:var(--bg); border-bottom:1px solid var(--border); }
