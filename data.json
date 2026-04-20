@@ -647,44 +647,33 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/chords-ude1ljc2/",
-        "desc": "zignabah - sometimes less is more",
+        "desc": "Starting off simple. zignabah was one of the first users I ran into when I started my audiotool journey, and still to this day I keep coming back to this track. To me, it really helped demonstrate how sometimes - less is more.",
         "name": "Chords",
         "track_artist": "zignabah"
       },
       {
-        "url": "https://www.audiotool.com/track/unscalable_sky/",
-        "desc": "André Michelle - the Heisenberg showcase",
-        "name": "unscalable sky"
-      },
-      {
         "url": "https://www.audiotool.com/track/kitsch_kepz_remix/",
-        "desc": "Kepz - that melody has been living rent free in my head",
+        "desc": "This is such a fun and creative remix of an already great track. It's well rounded and that melody has been living rent free in my head since I first heard it.",
         "name": "kitsch (Kepz Remix)",
         "track_artist": "Kepz"
       },
       {
         "url": "https://www.audiotool.com/track/the_shelf_life_of_everything/",
-        "desc": "tornsage - inspired me to use physical instruments",
+        "desc": "I can't talk about inspirations without mentioning Tornsage. Not only did he inspire me to use physical instruments in my compositions, but he also gave me a warm welcome to the Audiotool community when I first started out.",
         "name": "the shelf life of everything",
         "track_artist": "tornsage"
-      },
-      {
-        "url": "https://www.audiotool.com/track/4b9qne1hdzm/",
-        "desc": "1991 by Wightfall - phenomenal sound design",
-        "name": "Solitude",
-        "track_artist": "Wightfall"
-      },
-      {
-        "url": "https://www.audiotool.com/track/wpfog5g6cmg/",
-        "name": "crescent moon",
-        "track_artist": "Naut",
-        "desc": "crescent moon by naut This is one of my personal tracks I'm most fond of. It's short and simple but the pacing and ambiance feels right. The inspiration came to me suddenly during a mild summer night, and I wrote all of it in a just a few hours after I got home."
       },
       {
         "url": "https://www.audiotool.com/track/cjguau0tlgn/",
         "name": "1991",
         "track_artist": "Apollo",
         "desc": "1991 by Wightfall Nyafae and Apollo I've decided to round it off with a more recent track. The overall sound design and atmosphere of this is just phenomenal - and I will forever question why this track didn't beat our entry in the Teams AT Work contest."
+      },
+      {
+        "url": "https://www.audiotool.com/track/wpfog5g6cmg/",
+        "name": "crescent moon",
+        "track_artist": "Naut",
+        "desc": "This is one of my personal tracks I'm most fond of. It's short and simple but the pacing and ambiance feels right. The inspiration came to me suddenly during a mild summer night, and I wrote all of it in a just a few hours after I got home."
       }
     ],
     "interview": [
