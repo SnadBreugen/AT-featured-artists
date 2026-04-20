@@ -12,33 +12,33 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/when_i_hold_you/",
-        "desc": "Nominal was one of the first artists I truly felt like was pushing the envelope on what audiotool could make.",
         "name": "When I Hold You",
-        "track_artist": "Nominal"
+        "track_artist": "Nominal",
+        "desc": "Nominal was one of the first artists I truly felt like was pushing the envelope on what audiotool could make. One of the first I had found and he made a profound impact on the way I listen to music. This song hits so many different feelings. It feels angry, yet yearning. It feels intentional, yet chaotic. I remember playing this at a old pizza job I had and getting in trouble for it. That's when I knew I loved this song!"
       },
       {
         "url": "https://www.audiotool.com/track/missed_generation/",
-        "desc": "I saw this track on audiotool when I had just started listening to LCD Soundsystem.",
         "name": "missed generation",
-        "track_artist": "tornsage"
+        "track_artist": "ornsage",
+        "desc": "I saw this track on audiotool when I had just started listening to LCD Soundsystem and other indie electronic/ dance punk groups. It was the perfect storm and pushed me to start recording vocals.\nTrack #3:"
       },
       {
         "url": "https://www.audiotool.com/track/zzzzzzzx/",
-        "desc": "Xavi has always been an amazing artist who I've looked up to, but this song gave me the synthwave bug.",
         "name": "ZZZZZZZX",
-        "track_artist": "Xavi"
+        "track_artist": "Xavi",
+        "desc": "You want to know how much I've copied synth setups? I'm throwing myself under the bus here. Xavi has always been an amazing artist who I've looked up to, but this song gave me the synthwave bug that I'm still infected with."
       },
       {
         "url": "https://www.audiotool.com/track/those_chickens_are_up_to_something/",
-        "desc": "Goon deserves it. This track was the first where I had to keep listening to it over and over again.",
         "name": "Those Chickens Are Up To Something",
-        "track_artist": "Giles"
+        "track_artist": "Giles",
+        "desc": "Goon has been one of those artists that has started to gain some attention and let me tell you... He deserves it. This track was the first where I had to keep listening to it over and over again. The groove, funk, mellowness and danciness all working together blend into a pizza party of a track. This song could loop for all of eternity in the back of my mind and never get old."
       },
       {
         "url": "https://www.audiotool.com/track/7no6oaok7m/",
-        "desc": "My own track - the highlight of the whole experience for me.",
         "name": "stuck",
-        "track_artist": "naswalt"
+        "track_artist": "Naswalt",
+        "desc": "When I was working on the 2 concept albums I really felt like I was pumping out some of my best work. This track I feel like was the highlight of the whole experience for me."
       }
     ],
     "interview": [
