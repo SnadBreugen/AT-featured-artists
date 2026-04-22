@@ -385,12 +385,12 @@
     "social": {
       "youtube": "https://www.youtube.com/channel/UCVXLazY-PQpWgOaU12-4YcQ "
     },
-    "color1": "",
+    "color1": "#02b2ab",
     "color2": "",
-    "color_accent": "",
-    "desc_bg": "",
-    "links_bar_color": "",
-    "bar_color": "#111111",
+    "color_accent": "#02b2ab",
+    "desc_bg": "#dbfffe",
+    "links_bar_color": "#cca766",
+    "bar_color": "#02aea7",
     "bar_text_color": "#ffffff",
     "is_hidden": false
   },
