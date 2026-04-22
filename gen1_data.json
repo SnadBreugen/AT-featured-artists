@@ -610,9 +610,30 @@
     "album_url": "https://www.audiotool.com/album/i0qv2qyt6/",
     "photo": "https://api.audiotool.com/album/i0QV2qYT6/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/trancefreak12/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Talk about Audiotool-Trance-Music and you won't get far without the name Inavon. From the beginning he knew how to use the resources to produce perfect authentic Trance pieces. His \"Sole Survivor\" remains to this day one of the historical highlights of the website.",
+    "about": "Name: Stephen Tai\nPlace: Fremont, California (USA)\nAge: 19\nProfession: Studying computer science at University of California, Irvine",
+    "interview": [
+      {
+        "q": "Style:",
+        "a": "A lot of uplifting trance, but shifting toward psychedelic and atmospheric styles."
+      },
+      {
+        "q": "Musical Background: ",
+        "a": "He received piano and theory lessons at age 9. Around that time, he also discovered a dance radio station which sparked his interest in trance"
+      },
+      {
+        "q": "Started making music: ",
+        "a": "2009 with trackers\n\n"
+      },
+      {
+        "q": "On Audiotool: ",
+        "a": "2009 on the Tony-B Machine, when someone posted a link to Hobnox Audiotool. He didn't know how to use the devices, so he put it aside until 2010 when he created an account. Cripta happened to be a user on the Tony-B Machine so he was a welcome presence on Audiotool"
+      },
+      {
+        "q": "Message to the Community:",
+        "a": "Digital audio workstations (DAWs) exist to assist in the making of music. But that doesn't mean they are easy ways to escape hard work. A DAW is like any other instrument; you must practice in order to gain experience and get better. If you find that your work isn't up to your standards, then familiarity with your tools is more important than more tools. After all, you don't know what that knob does until you twist it, so you should twist it before you get more knobs. So my advice for Audiotoolers is this: if you want to make better music, then eat more peaches."
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/night_ride/",
@@ -676,14 +697,15 @@
       }
     ],
     "social": {},
-    "color1": "",
+    "color1": "#7cdafd",
     "color2": "",
-    "color_accent": "",
-    "desc_bg": "",
-    "links_bar_color": "",
+    "color_accent": "#7cdafd",
+    "desc_bg": "#c1ecfb",
+    "links_bar_color": "#a5d341",
     "bar_color": "#111111",
-    "bar_text_color": "#ffffff",
-    "is_hidden": false
+    "bar_text_color": "#d1d9ff",
+    "is_hidden": false,
+    "quote": "... my advice for Audiotoolers is this: if you want to make better music, then eat more peaches.\n"
   },
   {
     "artist": "Marodeur (Tocaknox)",
