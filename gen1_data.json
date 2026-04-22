@@ -403,9 +403,26 @@
     "album_url": "https://www.audiotool.com/album/0poc9tl/",
     "photo": "https://api.audiotool.com/album/0POC9Tl/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/flying-baby-seal/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Flying Baby Seal is one of Audiotool's most versatile artists, and not only musically: the scope of his identities can hardly be imagined. Only the stilistic reliability he reveals in each of his numbers gives him away again and again.",
+    "about": "Name: Vincent\nPlace: Born near Toulon. Now living on a small french island in the indian ocean called \"Mayotte\".\nAge: 32\nProfession: Professor of history and geography",
+    "interview": [
+      {
+        "q": "Style: ",
+        "a": "Flying Baby Seal: Glitchy Downtempo, Hip Hop, Ambient and Garage. Also some Techno, Rock and even a reaggaeton track. \nかたな: Techno\nThe Massacre of Suns: Poetric  \nWazungu:  Analogue"
+      },
+      {
+        "q": "Musical Background: ",
+        "a": "In his youth he played the piano for seven years and studied the history and theory of music. In the late 1990s, at the age of about 16, he also played in a grung group called \"Psts\", as the lead singer  and composing and writing the  lyrics. Then a year later he discovered the WARP label, dropped the \"grounge\" line and started composing only electronic music."
+      },
+      {
+        "q": "On Audiotool: ",
+        "a": "Since 3 years via André Michelle's Blog "
+      },
+      {
+        "q": "Message to the community:",
+        "a": "Hi audiotool's gang, first I want to thank the staff for the absolutely brilliant work on the software and I want to say how I'm proud to be a part of this amazing adventure ... I  probably stopped making music if audiotool was not there. And today I can't make a day without making music or listen to it. So just for that : Stay classy audiotoolers ;-)"
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/tripled-Qjbj0/",
