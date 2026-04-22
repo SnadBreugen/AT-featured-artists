@@ -498,86 +498,108 @@
     "album_url": "https://www.audiotool.com/album/6pvw3rdg/",
     "photo": "https://api.audiotool.com/album/6PVW3rDG/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/zonemusic/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
-    "tracks": [
+    "intro": "Another Audiotool Chill-Out institution. Nicklas Anderson aka Zone conjures the crystal clear athmosphere of scandinavian nights on our home stereos. Take the time and look who's behind the trademark Zone. \n\n",
+    "about": "Name: Nicklas Sindlev Anderse\nPlace: Copenhagen, Denmark. Living in Odense at the moment.\nAge: 21\nProfession: Student at University of Southern Denmark, studying applied mathematics.",
+    "interview": [
       {
-        "url": "https://www.audiotool.com/track/compulsion-WabKMpG/",
-        "name": "Compulsion",
-        "track_artist": "Snad Breugen",
-        "desc": ""
+        "q": "Style:",
+        "a": "Clean melodic Chill-Out "
       },
+      {
+        "q": "Musical Background: ",
+        "a": "Nicklas took piano lessons at a jazz musician for about 6 years without learning the theory. It was more about playing around and using music as a creative tool to express himself. He learned to play different instruments, but primarily the piano, which he learned to play by ear. \n\n"
+      },
+      {
+        "q": "Started making music",
+        "a": "He started creating his own music when he joined Audiotool. Before that he had played cover songs on the piano."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "2011 via Google appstore. Attracted by RNZR's remix of \"When stars collide\" by Hbeao."
+      },
+      {
+        "q": "Message to the Community",
+        "a": "For me, the most important part of making music, is having fun. Audiotool makes this effortless with its intuitive and straightforward layout. With the amazing sample browser at hand and a few simple effects, its easy to make my creativity to flow. Without Audiotool I would probably never have started producing any music or even continued to play an instrument (sorry if this sounds like a bad commercial, but I mean it). For the community i just want to say: Make the music you want to make, don't make the music everyone else wants you to make. Good artists evolve, when they follow their heart, think outside the box and experiment. New sounds and concepts can evolve from simple ideas and this is what makes music such an amazing thing. "
+      }
+    ],
+    "tracks": [
       {
         "url": "https://www.audiotool.com/track/sunshine_edit/",
         "name": "sunshine [edit]",
-        "track_artist": "Snad Breugen",
-        "desc": ""
+        "track_artist": "Sandburgen",
+        "desc": "This is one of my favorite tracks on the Sandorama EP. I literally played this track for days after getting the vinyl. The track seems slightly chaotic while still being in control. When I listen to this track I get the feeling of \"traveling through dimensions\". Evil, wicked catchy and hypnotic vibes, a very well made track."
       },
       {
         "url": "https://www.audiotool.com/track/program_8/",
         "name": "Program 8",
         "track_artist": "Infyuthsion",
-        "desc": ""
+        "desc": "I absolutely adore Infyuthsions synth pop tracks, cosmonaut, short circuit etc.. They're so groovy with such a variation in sound and melody, that they're interesting throughout. With this track, Program 8, he really caught the Com Truise spirit in his own way. A very well tailored track with amazing synth bends and stabby bass sounds."
       },
       {
         "url": "https://www.audiotool.com/track/im_kreis_tanzen/",
         "name": "im Kreis tanzen",
-        "track_artist": "Infyuthsion",
-        "desc": ""
+        "track_artist": "Sumad",
+        "desc": "Again, one of my favorite tracks of an a-records release: sumads Summersum EP. A minimal track with just the right amount of bass, hi hats and cymbals, the evolving bassline keeps it interesting and gives the track a very refined and wholesome sound. The groove is just perfect, so catchy and what a rhythm."
       },
       {
         "url": "https://www.audiotool.com/track/natural_blue/",
         "name": "natural blue",
-        "track_artist": "sumad",
-        "desc": ""
+        "track_artist": "trrrrillionare",
+        "desc": "Amazing lo-fi feeling with nice subtle textures. This is what sampling is all about!!! The vocal/guitar sample is so well integrated into the rest of the track, since it fits so well with the rest of trrrrillionares unique sound design. The track's got deep, warm feelings with awesome, minimal and catchy melodies that makes you fall into the groove instantly. "
       },
       {
         "url": "https://www.audiotool.com/track/when_stars_collide-KGhra7TYi/",
         "name": "When Stars Collide",
-        "track_artist": "sumad",
-        "desc": ""
+        "track_artist": "rnzr",
+        "desc": "The track that made me join audiotool. A clean and very well balanced track with thoughtful yet happy melodies. A good beat and a solid arrangement that makes the track flow really well."
       },
       {
         "url": "https://www.audiotool.com/track/passive-QnAspCUHk/",
         "name": "Passive",
-        "track_artist": "trrrrillionare",
-        "desc": ""
+        "track_artist": "valt",
+        "desc": "A full, lush, textured pad and a solid beat. When I listen to this track, I feel like time is slowing down and I'm about to go into a state of trance. It's a really simple and soothing track, yet with a lot of depth."
       },
       {
         "url": "https://www.audiotool.com/track/technicolour/",
         "name": "Technicolour",
-        "track_artist": "trrrrillionare",
-        "desc": ""
+        "track_artist": "Akimbo",
+        "desc": "This is a classic akimbo drum and bass track. A tight beat with a smooth baseline and well fitting vocals. It's got a light composition, where every element has got it's own distinct role: Every sound is perfectly fitting and you can hear every little detail. A well produced and clean track."
       },
       {
         "url": "https://www.audiotool.com/track/missed-AFTmR/",
         "name": "Missed",
-        "track_artist": "rnzr",
-        "desc": ""
+        "track_artist": "Aaron",
+        "desc": "I had a hard time picking my favorite Aaron track. He's just an amazing artist and he probably makes the most ideal music for me: clean, with the right amount of noise and crisp textures. This is the kind of music I myself strive to make, but fail miserably at.\nAarons latests song's are just astonishingly good and 'Missed' ins't an exception."
       },
       {
         "url": "https://www.audiotool.com/track/what_i_felt/",
         "name": "what i felt",
-        "track_artist": "rnzr",
-        "desc": ""
+        "track_artist": "amoeba",
+        "desc": "I really like this song by amoeba. The percs are just amazingly crisp and fit so well with the underlaying subtle pads. It creates a nostalgic warmth. The glitched mid-range synth changes the mood slightly and adds to the atmosphere. It really makes the track unique and stand out. It's a really well produced track with lots of interesting elements and ideas."
       },
       {
         "url": "https://www.audiotool.com/track/berlination/",
         "name": "Berlination",
-        "track_artist": "valt",
-        "desc": ""
+        "track_artist": "cripta",
+        "desc": "A catchy track from Cripta that brings back good memories from Berlin 2012/tooltime. I just love the breaks, the subtle changes throughout the track and the synth design. Criptas music is a sure party starter."
+      },
+      {
+        "url": "https://www.audiotool.com/track/attic_-_should_i_stay/",
+        "name": "Attic - Should I Stay",
+        "track_artist": "naut",
+        "desc": "He's good at what he's doing: making straightforward music that's easy to listen to, with solid compositions, arrangements, catchy vocals and melodies!\n\nAdding to that, I think he's doing a really good job blending recorded instruments and vocals with the synths and effect pedals in AT."
       }
     ],
     "social": {},
-    "color1": "",
+    "color1": "#d87da2",
     "color2": "",
-    "color_accent": "",
+    "color_accent": "#d87da2",
     "desc_bg": "",
-    "links_bar_color": "",
+    "links_bar_color": "#fdfdfd",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false
+    "is_hidden": false,
+    "quote": "For me, the most important part of making music, is having fun. Audiotool makes this effortless with its intuitive and straightforward layout. "
   },
   {
     "artist": "Inavon",
