@@ -296,72 +296,95 @@
     "album_url": "https://www.audiotool.com/album/dgaoqtpm/",
     "photo": "https://api.audiotool.com/album/dGaOqTPm/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/intracktion/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
-    "tracks": [
+    "intro": "Intracktion, the enigmatic genius. There's hardly another Audiotooler that achieves such a perfect synthesis of melancholy and euphoria in one piece of music. Not least because of his apparently fragile voice, combined with his perfect command of the musical material, a comparison with Radiohead suggests itself. You can look forward to the ATU interview on 10.08.14 on ",
+    "about": "Name: Kai Franke\nPlace: Hilden (Germany)\nAge: 40 \nProfession: Musician (self thought) ",
+    "interview": [
       {
-        "url": "https://www.audiotool.com/track/i_won_t_if_you_won_t/",
-        "name": "I Won't if You Won't",
-        "track_artist": "Frigolito",
-        "desc": ""
+        "q": "Style: ",
+        "a": "He always had problems to define music. "
       },
+      {
+        "q": "Background:",
+        "a": "There was a piano in the family home. His mother remembered how as a small boy he would clamber onto the piano stool, listening to every note with his full concentration. After some months he was playing little tunes with one hand, some months later extemporizing with with two. At the age of eight he started taking piano lessons, but found it boring to learn to play notes. He preferred playing things that came out of himself, not from a paper full of notes. When he was 14 his father bought him a Korg T1. He loved this big keyboard. It had a lot of great synths and drums and a sequencer, so for the first time he could record his compositions on discs. He becam interested in forms of synthesis, creating his own sounds with a Yamaha SY99. With the development of personal computers, recording tools and plug-in technology he did more and more with the computer down to the present time.\n\n"
+      },
+      {
+        "q": "Started making music:",
+        "a": "At the age of three or four"
+      },
+      {
+        "q": "On Audiotool: ",
+        "a": "About two years ago "
+      },
+      {
+        "q": "Message: ",
+        "a": "„Let´s make some music!“"
+      }
+    ],
+    "tracks": [
       {
         "url": "https://www.audiotool.com/track/synthesizer_symphony_1st_mov/",
         "name": "Synthesizer Symphony 1st Mov.",
         "track_artist": "Frigolito",
-        "desc": ""
+        "desc": "I was deeply impressed by his skills in composition and sound-design. To create such a romantic synthesizer-orchestra track is an outstanding achievement."
       },
       {
         "url": "https://www.audiotool.com/track/mega-uYzhu/",
         "name": "Ømega",
         "track_artist": "CGMan",
-        "desc": ""
+        "desc": "When Drum and bass entered the dancefloors, it was really mind-blowing for me. This track of CGMan has such an amazing lead rhythm sound, thatit brought back the intensity of listening to Drum and bass for the first time."
       },
       {
         "url": "https://www.audiotool.com/track/left_shoes_at_home_edit/",
         "name": "left (shoes at home edit)",
-        "track_artist": "CGMan",
-        "desc": ""
+        "track_artist": "shoes",
+        "desc": "Even Amoeba lays the foundation for this wonderful track, the remix of Enjoyyourshoes was killing me very softly."
       },
       {
-        "url": "https://www.audiotool.com/track/time-a9eezSxt8/",
+        "url": "https://www.audiotool.com/track/time-a9eezsxt8/",
         "name": "Time",
-        "track_artist": "shoes",
-        "desc": ""
+        "track_artist": "Aaron",
+        "desc": "The first time I heard this track, I was freaking out. I had never heard anything like this before. Such an understatement of sound-design and heart-breaking atmosphere."
       },
       {
         "url": "https://www.audiotool.com/track/toonami_rejects_beat_1/",
         "name": "Toonami Rejects Beat #1",
-        "track_artist": "shoes",
-        "desc": ""
+        "track_artist": "[offbeatninja]",
+        "desc": "Love that jazzy sample, love that easy going ninja beat, love my body seesawing to it all."
       },
       {
         "url": "https://www.audiotool.com/track/frail_trail/",
         "name": "Frail Trail",
-        "track_artist": "Aaron",
-        "desc": ""
+        "track_artist": "Julsy",
+        "desc": "The sweet combination of accoustic and synthesis in a weightless flow."
       },
       {
         "url": "https://www.audiotool.com/track/humbly_we_fell_into_the_sky/",
         "name": "Humbly, we fell into the sky",
-        "track_artist": "Aaron",
-        "desc": ""
+        "track_artist": "tophat",
+        "desc": "I love the playful creativity of Jace. The sweet belly harmonies and spots in this track make me feel like a gentle awakening in the morning."
       },
       {
         "url": "https://www.audiotool.com/track/standalone/",
-        "name": "StandAlone",
-        "track_artist": "[offbeatninja]",
-        "desc": ""
+        "name": "Stand Alone ",
+        "track_artist": "Flying Baby Seal",
+        "desc": "I directly fell in love with the vocal melody and Flying Baby Seal puts it in tasteful sonic surroundings."
       },
       {
         "url": "https://www.audiotool.com/track/epilogic/",
         "name": "epilogic",
-        "track_artist": "[offbeatninja]",
-        "desc": ""
+        "track_artist": "Sandburgen",
+        "desc": "The theme of this track is introduced so softly and catchily , and increasingly gains power in its endless morphing expression."
+      },
+      {
+        "url": "https://www.audiotool.com/track/i_won_t_if_you_won_t/",
+        "name": "I Won't if You Won't",
+        "track_artist": "Ante",
+        "desc": "I think he is a very talented sound engineer and his ideas are so manifold and innovative for me. For me there is also a constant progress to be seen in his skills. I´m very excitedly looking forward to his newest releases. Go ahead, man!"
       }
     ],
-    "social": {},
+    "social": {
+      "youtube": "https://www.youtube.com/channel/UCVXLazY-PQpWgOaU12-4YcQ "
+    },
     "color1": "",
     "color2": "",
     "color_accent": "",
