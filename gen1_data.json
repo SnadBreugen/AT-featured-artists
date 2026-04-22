@@ -213,51 +213,68 @@
     "album_url": "https://www.audiotool.com/album/hnwkpu4/",
     "photo": "https://api.audiotool.com/album/hNwkpu4/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/xavrockbeats/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Xavrockbeat's command of the high-pressure synth dance tracks is second to none on Audiotool. A close look at his constructions is guaranteed to reward any producer of contemporary electronic dance music. The passive audience simply finds just the right thing to freak out.",
+    "about": "Name: Xavier Hoffman\nPlace: Troy, Il, USA\nAge: 18\nProfession: Incoming Freshman at Missouri Science & Technology\n",
+    "interview": [
+      {
+        "q": "What is your style?",
+        "a": "Dance, Lo-fi, Drum and Bass, what ever he feels like "
+      },
+      {
+        "q": "Started making music",
+        "a": "In 2008 with Garage Band. "
+      },
+      {
+        "q": "On Audiotool",
+        "a": "I was messing around on the Tonematrix one day and noticed the Audiotool link.  I clicked on it and the rest is history."
+      },
+      {
+        "q": "Message",
+        "a": "A few weeks ago, a popular Audiotool artist commented on one of my tracks that it was far away from what they would ever be able to do.  I just want to say, never say never, as cliché as it sounds.  I’ve seen people say they can never do something, than three weeks ever they are mastering it already."
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/soar-IkRVmZ1x6/",
         "name": "Soar",
         "track_artist": "kiari",
-        "desc": ""
+        "desc": "One of the coolest tracks on Audiotool out there. How can you not love this?"
       },
       {
         "url": "https://www.audiotool.com/track/adult_swim_smile/",
         "name": "[Adult Swim] Smile",
-        "track_artist": "kiari",
-        "desc": ""
+        "track_artist": "[offbeatninja]",
+        "desc": "This track is a perfect example of how to use Audiotool for loops. One of my favorites from OBN."
       },
       {
         "url": "https://www.audiotool.com/track/wasting_time-9FmNJ9ROM/",
         "name": "Wasting TIme",
-        "track_artist": "[offbeatninja]",
-        "desc": ""
+        "track_artist": "Zpek",
+        "desc": "Kepz disliked this song so much he moved it to his second account. I don’t share the same feeling towards this track. One from my favorite tracks to listen to on a rainy day."
       },
       {
         "url": "https://www.audiotool.com/track/baby_let_me/",
         "name": "BABY LET ME",
-        "track_artist": "[offbeatninja]",
-        "desc": ""
+        "track_artist": "Nominal",
+        "desc": "Beautiful, Bonobo-esque track with some really cool drum work. Great song to chill out to."
       },
       {
         "url": "https://www.audiotool.com/track/could_feel_good/",
         "name": "Forests",
-        "track_artist": "Zpek",
-        "desc": ""
+        "track_artist": "Ante",
+        "desc": "This song was set as my alarm noise in the morning for awhile because this is the only track I could awake to at 6 AM and not want to smash my phone to pieces for waking me up."
       },
       {
         "url": "https://www.audiotool.com/track/taire/",
         "name": "Taire",
-        "track_artist": "Zpek",
-        "desc": ""
+        "track_artist": "Kriss",
+        "desc": "Again, another underrated artist. His music combines French house with the lo-fi feel of the 80’s and runs with it. I highly recommend listening to his stuff."
       },
       {
-        "url": "https://www.audiotool.com/track/cori_s_theme-BJvEYjUk/",
+        "url": "https://www.audiotool.com/track/cori_s_theme-bjveyjuk/",
         "name": "Cori's Theme (Astro Remix)",
-        "track_artist": "Nominal",
-        "desc": ""
+        "track_artist": "Astro",
+        "desc": "If anyone is underrated on Audiotool, it has to be him. His songs are a perfect mix of effects, chords, and classic video game sounds that will leave you speechless and/or dancing. His complextro is some of the best on Audiotool at the moment. I recommend Cori’s Theme (Astro Remix), Gameover, and House Shit. He doesn’t have too many followers yet. I’d really like to see that change. I recommend listening to his Remix of SOLACE’s Cori’s Theme."
       }
     ],
     "social": {},
