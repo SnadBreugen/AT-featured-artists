@@ -1837,7 +1837,7 @@
     "color_accent": "#589ff3",
     "desc_bg": "#eaddd2",
     "links_bar_color": "#b08154",
-    "is_hidden": false,
+    "is_hidden": true,
     "quote": "I love the DIY and social nature of this place. We're all just a bunch of hobbyists on a niche German website exploring and enjoying the art of music creation together."
   },
   {
@@ -1852,36 +1852,31 @@
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/flying-juedbstfv/",
-        "desc": "FLYING by sky bound zoo - SBZ's musical ability confounds me",
+        "desc": "SBZs musical ability confounds me to this day.",
         "name": "FLYING",
         "track_artist": "sky bound zoo"
       },
       {
-        "url": "https://www.audiotool.com/track/p2ph66sa9rw/",
-        "desc": "circles [remix] by sim - influenced how I approach deep lofi texture",
-        "name": "p2ph66sa9rw"
-      },
-      {
         "url": "https://www.audiotool.com/track/small_spaces/",
-        "desc": "small spaces by opaqity - first song I learned how to play on piano",
+        "desc": "Opaqity had a huge impact on my musical journey and sound. This was the first song I learned how to play on piano.",
         "name": "small spaces",
         "track_artist": "opaqity"
       },
       {
         "url": "https://www.audiotool.com/track/rise-euokndpnd/",
-        "desc": "Rise by Kepz - aided me in laying out the progression for my earlier tracks",
+        "desc": "Kepz’s beautiful work aided me in laying out the progression for my earlier tracks.",
         "name": "Rise",
         "track_artist": "Kepz"
       },
       {
         "url": "https://www.audiotool.com/track/mugen_ii/",
-        "desc": "MUGEN II by HBVI - the synth served as base for presets I still use today",
+        "desc": "The synth in this song served as a base for me to create the presets that I still work with to this day.",
         "name": "MUGEN II",
         "track_artist": "HBVI"
       },
       {
         "url": "https://www.audiotool.com/track/dctpt4ozkobu/",
-        "desc": "habit - my own track, proud of the comb filtered basses",
+        "desc": "This is one of my favourite tracks. I love the way that the pulsar delay effects weaves in and out of the core notes that play. Here I used comb filtered basses for the first time too! I’m just proud of this song :)",
         "name": "habit",
         "track_artist": "aeiter"
       }
