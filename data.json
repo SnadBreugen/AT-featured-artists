@@ -3716,40 +3716,34 @@
     "about": "Hey, my name is Jonas. I'm from Cologne, Germany and I've been on Audiotool for 8 years.",
     "tracks": [
       {
-        "url": "https://www.audiotool.com/track/secta/",
-        "desc": "Astrum - secta, still a masterpiece",
-        "name": "SECTA",
-        "track_artist": "Astrum"
-      },
-      {
         "url": "https://www.audiotool.com/track/erythrocyte/",
         "name": "Erythrocyte",
         "track_artist": "Frigolito",
-        "desc": "Erythrocyte by Frigolito This was one of the first tracks I heard on this site. And also the track that made me discover Frigolito's work, which I absolutely fell in love with. The track is an absolute earworm and it just makes me happy."
+        "desc": "This was one of the first tracks I heard on this site. And also the track that made me discover Frigolito's work, which I absolutely fell in love with. The track is an absolute earworm and it just makes me happy."
       },
       {
         "url": "https://www.audiotool.com/track/the_passers_by/",
         "name": "the passers",
         "track_artist": "by opaqity",
-        "desc": "the passers by opaqity Another track I heard very early on and it sounded so unusual to me that it got stuck in my head instantly. The odd meter, the percussion work, the airy and slightly detuned synths, I was just flabbergasted when I first heard this."
+        "desc": "Another track I heard very early on and it sounded so unusual to me that it got stuck in my head instantly. The odd meter, the percussion work, the airy and slightly detuned synths, I was just flabbergasted when I first heard this."
       },
       {
         "url": "https://www.audiotool.com/track/amalgam-ans3f3b/",
         "name": "amalgam",
         "track_artist": "nico",
-        "desc": "amalgam by nico This was the track that made me create the @retrorhythm account and actually start making my own stuff instead of just covering videogame music. The chords, the rhythm change, the saxophone solo... It's just a fabulous composition."
+        "desc": "This was the track that made me create the @retrorhythm account and actually start making my own stuff instead of just covering videogame music. The chords, the rhythm change, the saxophone solo... It's just a fabulous composition."
       },
       {
         "url": "https://www.audiotool.com/track/jealousy-ynymkoer1/",
         "name": "jealousy",
         "track_artist": "looks",
-        "desc": "jealousy by looks The slightly wonky beat and the 100% Wet and 0% Room Size on the reverb is just such a signature Looks sound. And like with many of his tracks the structure and the way the beat progresses areso weird. I love it."
+        "desc": "The slightly wonky beat and the 100% Wet and 0% Room Size on the reverb is just such a signature Looks sound. And like with many of his tracks the structure and the way the beat progresses areso weird. I love it."
       },
       {
         "url": "https://www.audiotool.com/track/20ylscexx6/",
         "name": "01/22/2021 Loop",
         "track_artist": "retro",
-        "desc": "01/22/2021 Loop by retro It's not my personal favorite, but I think it represents me quite well. A chill, slightly swung beat with the typical synth sounds I like to use."
+        "desc": "It's not my personal favorite, but I think it represents me quite well. A chill, slightly swung beat with the typical synth sounds I like to use."
       }
     ],
     "interview": [
