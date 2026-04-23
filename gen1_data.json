@@ -101,16 +101,37 @@
   },
   {
     "artist": "Audial",
-    "real_name": "",
+    "real_name": "Ewan McCulloch",
     "date": "2014-07-08",
     "album_number": 2,
     "at_profile": "https://www.audiotool.com/user/ewan_mcculloch/",
     "album_url": "https://www.audiotool.com/album/9pnx5/",
     "photo": "https://api.audiotool.com/album/9Pnx5/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/ewan_mcculloch/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Audial's tracks are always technically mature and produced to perfection. This and his virtuosity on the claviature of styles make every new publication a pleasant surprise.",
+    "about": "Ewan McCulloch\nPlace: Ascot, UK\nAge: 18\nProfession: soon to be studying physics at Oxford",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "Atmospheric dance music to trap or dub step"
+      },
+      {
+        "q": "Musical Background",
+        "a": "Classical guitar and piano"
+      },
+      {
+        "q": "Started making music",
+        "a": "A couple of years ago when his school invested in some decent computers and a decent DAW."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "He discovered AT a year ago because he got sick of using soundation and put some effort into finding a good online DAW."
+      },
+      {
+        "q": "Message to the community",
+        "a": "Make the music you want to but remember you may find your sound quicker by trying new things and experimenting as much as possible, even if it means listening to new types of music too. By avoiding loops and presets you are forced to create sounds from scratch, not only will this help you understand the synths but it will give you new techniques that can develop into a sound of your own. I have built up a small arsenal of techniques that really define my sound but I'm always adding to it as I'm never completely satisfied. An evolving sound is a healthy sound so always strive to better yourself."
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/or9wwaui/",
@@ -161,16 +182,37 @@
   },
   {
     "artist": "Xavrockbeats",
-    "real_name": "",
+    "real_name": "Xavier Hoffman",
     "date": "2014-07-28",
     "album_number": 3,
     "at_profile": "https://www.audiotool.com/user/xavrockbeats/",
     "album_url": "https://www.audiotool.com/album/hnwkpu4/",
     "photo": "https://api.audiotool.com/album/hNwkpu4/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/xavrockbeats/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Xavrockbeat's command of the high-pressure synth dance tracks is second to none on Audiotool. A close look at his constructions is guaranteed to reward any producer of contemporary electronic dance music. The passive audience simply finds just the right thing to freak out.",
+    "about": "Xavier Hoffman\nPlace: Troy, Il, USA\nAge: 18\nProfession: Incoming Freshman at Missouri Science & Technology",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "Dance, Lo-fi, Drum and Bass, what ever he feels like"
+      },
+      {
+        "q": "Musical Background",
+        "a": "None"
+      },
+      {
+        "q": "Started making music",
+        "a": "In 2008 with Garage Band."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "I was messing around on the Tonematrix one day and noticed the Audiotool link. I clicked on it and the rest is history."
+      },
+      {
+        "q": "Message to the community",
+        "a": "A few weeks ago, a popular Audiotool artist commented on one of my tracks that it was far away from what they would ever be able to do. I just want to say, never say never, as cliché as it sounds. I've seen people say they can never do something, than three weeks ever they are mastering it already."
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/soar-IkRVmZ1x6/",
@@ -227,16 +269,37 @@
   },
   {
     "artist": "Intracktion",
-    "real_name": "",
+    "real_name": "Kai Franke",
     "date": "2014-07-20",
     "album_number": 4,
     "at_profile": "https://www.audiotool.com/user/intracktion/",
     "album_url": "https://www.audiotool.com/album/dgaoqtpm/",
     "photo": "https://api.audiotool.com/album/dGaOqTPm/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/intracktion/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Intracktion, the enigmatic genius. There's hardly another Audiotooler that achieves such a perfect synthesis of melancholy and euphoria in one piece of music. Not least because of his apparently fragile voice, combined with his perfect command of the musical material, a comparison with Radiohead suggests itself.",
+    "about": "Kai Franke\nPlace: Hilden (Germany)\nAge: 40\nProfession: Musician (self thought)",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "He always had problems to define music."
+      },
+      {
+        "q": "Musical Background",
+        "a": "There was a piano in the family home. His mother remembered how as a small boy he would clamber onto the piano stool, listening to every note with his full concentration. After some months he was playing little tunes with one hand, some months later extemporizing with with two. At the age of eight he started taking piano lessons, but found it boring to learn to play notes. He preferred playing things that came out of himself, not from a paper full of notes. When he was 14 his father bought him a Korg T1. He loved this big keyboard. It had a lot of great synths and drums and a sequencer, so for the first time he could record his compositions on discs. He becam interested in forms of synthesis, creating his own sounds with a Yamaha SY99. With the development of personal computers, recording tools and plug-in technology he did more and more with the computer down to the present time."
+      },
+      {
+        "q": "Started making music",
+        "a": "At the age of three or four"
+      },
+      {
+        "q": "On Audiotool",
+        "a": "About two years ago"
+      },
+      {
+        "q": "Message to the community",
+        "a": "Let's make some music!"
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/i_won_t_if_you_won_t/",
@@ -311,16 +374,21 @@
   },
   {
     "artist": "Flying Baby Seal",
-    "real_name": "",
+    "real_name": "Vincent",
     "date": "2014-07-14",
     "album_number": 5,
     "at_profile": "https://www.audiotool.com/user/flying-baby-seal/",
     "album_url": "https://www.audiotool.com/album/0poc9tl/",
     "photo": "https://api.audiotool.com/album/0POC9Tl/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/flying-baby-seal/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "FBS is one of Audiotool's most versatile artists, and not only musically: the scope of his identities can hardly be imagined. Only the stilistic reliability he reveals in each of his numbers gives him away again and again.",
+    "about": "Vincent\nPlace: Born near Toulon. Now living on a small french island in the indian ocean called \"Mayotte\".\nAge: 32\nProfession: Professor of history and geography",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "Flying Baby Seal: Glitchy Downtempo, Hip Hop, Ambient and Garage. Also some Techno, Rock and even a reaggaeton track.\n\nかたな: Techno\n\nThe Massacre of Suns: Poetric\n\nWazungu: Analogue"
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/tripled-Qjbj0/",
@@ -389,16 +457,37 @@
   },
   {
     "artist": "Zone",
-    "real_name": "",
+    "real_name": "Nicklas Sindlev Andersen",
     "date": "2014-08-04",
     "album_number": 6,
     "at_profile": "https://www.audiotool.com/user/zonemusic/",
     "album_url": "https://www.audiotool.com/album/6pvw3rdg/",
     "photo": "https://api.audiotool.com/album/6PVW3rDG/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/zonemusic/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Another Audiotool Chill-Out institution. Nicklas Anderson aka Zone conjures the crystal clear athmosphere of scandinavian nights on our home stereos. Take the time and look who's behind the trademark Zone.",
+    "about": "Nicklas Sindlev Andersen\nPlace: Copenhagen, Denmark. Living in Odense at the moment.\nAge: 21\nProfession: Student at University of Southern Denmark, studying applied mathematics.",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "Clean melodic Chill-Out"
+      },
+      {
+        "q": "Musical Background",
+        "a": "Nicklas took piano lessons at a jazz musician for about 6 years without learning the theory. It was more about playing around and using music as a creative tool to express himself. He learned to play different instruments, but primarily the piano, which he learned to play by ear."
+      },
+      {
+        "q": "Started making music",
+        "a": "He started creating his own music when he joined audiotool.com. Before that he had played cover songs on the piano."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "2011 via Google appstore. Attracted by RNZR's remix of \"When stars collide\" by Hbeao."
+      },
+      {
+        "q": "Message to the community",
+        "a": "For me, the most important part of making music, is having fun. Audiotool makes this effortless with its intuitive and straightforward layout. With the amazing sample browser at hand and a few simple effects, its easy to make my creativity to flow. Without Audiotool I would probably never have started producing any music or even continued to play an instrument (sorry if this sounds like a bad commercial, but I mean it). For the community i just want to say: Make the music you want to make, don't make the music everyone else wants you to make. Good artists evolve, when they follow their heart, think outside the box and experiment. New sounds and concepts can evolve from simple ideas and this is what makes music such an amazing thing.\n\nHave fun and stay humble. Cheers Zone."
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/compulsion-WabKMpG/",
@@ -479,16 +568,37 @@
   },
   {
     "artist": "Inavon",
-    "real_name": "",
+    "real_name": "Stephen Tai",
     "date": "2014-08-11",
     "album_number": 7,
     "at_profile": "https://www.audiotool.com/user/trancefreak12/",
     "album_url": "https://www.audiotool.com/album/i0qv2qyt6/",
     "photo": "https://api.audiotool.com/album/i0QV2qYT6/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/trancefreak12/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Talk about Audiotool-Trance-Music and you won't get far without the name Inavon. From the beginning he knew how to use the resources to produce perfect authentic Trance pieces. His \"Sole Survivor\" remains to this day one of the historical highlights of the website.",
+    "about": "Stephen Tai\nPlace: Fremont, California (USA)\nAge: 19\nProfession: Studying computer science at University of California, Irvine",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "A lot of uplifting trance, but shifting toward psychedelic and atmospheric styles"
+      },
+      {
+        "q": "Musical Background",
+        "a": "He received piano and theory lessons at age 9. Around that time, he also discovered a dance radio station which sparked his interest in trance"
+      },
+      {
+        "q": "Started making music",
+        "a": "2009 with trackers"
+      },
+      {
+        "q": "On Audiotool",
+        "a": "2009 on the Tony-B Machine, when someone posted a link to Hobnox Audiotool. He didn't know how to use the devices, so he put it aside until 2010 when he created an account. Cripta happened to be a user on the Tony-B Machine so he was a welcome presence on Audiotool"
+      },
+      {
+        "q": "Message to the community",
+        "a": "Digital audio workstations (DAWs) exist to assist in the making of music. But that doesn't mean they are easy ways to escape hard work. A DAW is like any other instrument; you must practice in order to gain experience and get better. If you find that your work isn't up to your standards, then familiarity with your tools is more important than more tools. After all, you don't know what that knob does until you twist it, so you should twist it before you get more knobs. So my advice for Audiotoolers is this: if you want to make better music, then eat more peaches."
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/night_ride/",
@@ -775,16 +885,37 @@
   },
   {
     "artist": "Luxior",
-    "real_name": "",
+    "real_name": "Lee Ho Seok aka David Lee",
     "date": "2014-09-17",
     "album_number": 10,
     "at_profile": "https://www.audiotool.com/user/beat123/",
     "album_url": "https://www.audiotool.com/album/pts4e/",
     "photo": "https://api.audiotool.com/album/pTs4e/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/beat123/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Luxior is one of the Audiotool prodigies: at 14 the South Korean is the absolute chartbreaker. His mix of Eletro House, Glitch-Hop and Game music is as inimitable as the realisation is impeccable.",
+    "about": "Lee Ho Seok aka David Lee\nPlace: Seoul, South Korea\nAge: 14\nSchool: Student at Lisgar Collegiate Institute",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "Anything with a ear-pleasing melody. Mostly electro, chill trap, glitch hop, chiptune and a lot of mash-up experimental genres"
+      },
+      {
+        "q": "Musical Background",
+        "a": "I have 3 years of violin experience, and 2 years of playing the clarinet. I've played the piano for a bit when I was 7, but I've long forgotten it since"
+      },
+      {
+        "q": "Started making music",
+        "a": "3 years ago"
+      },
+      {
+        "q": "On Audiotool",
+        "a": "I discovered it on the Chrome App Store 3 years ago, while browsing through the Music category."
+      },
+      {
+        "q": "Message to the community",
+        "a": "It isn't music from the artist if it is forced by the audience. Stay true to the music, not your followers."
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/too_far/",
@@ -859,16 +990,37 @@
   },
   {
     "artist": "Vltra",
-    "real_name": "",
+    "real_name": "Dakarai Shafer",
     "date": "2014-09-09",
     "album_number": 11,
     "at_profile": "https://www.audiotool.com/user/vltra2/",
     "album_url": "https://www.audiotool.com/album/2gvqxec/",
     "photo": "https://api.audiotool.com/album/2GVqxeC/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/vltra2/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Dakarai Shafer aka Vltra is firmly established in the darker realms of AT Future Sounds. His seemingly supernatural atmospheres and the beat frames that remind you of surreal machine parks inspired a whole generation of new AT artists and make us hope there will soon be a comeback.",
+    "about": "Dakarai Shafer\nPlace: Vacaville, CA\nAge: 18\nSchool: Student at SCTD, Studying Computer Engineering Tech",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "Future-garage/ambient/dnb influenced"
+      },
+      {
+        "q": "Musical Background",
+        "a": "Audiotool"
+      },
+      {
+        "q": "Started making music",
+        "a": "About two years ago, when I created an AT account, and finally clicked that \"Launch App\" button after discovering a lot of amazing music."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "I believe I discovered Audiotool on the Google Chrome Web Store"
+      },
+      {
+        "q": "Message to the community",
+        "a": "I've never been apart of an online community like I have been with Audiotool. To me, it truly feels like a community of friends and artist alike, and I thank you all for being such cool peeps. So much damn talent in one place."
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/glow-YCiTR/",
@@ -937,16 +1089,37 @@
   },
   {
     "artist": "Shakey",
-    "real_name": "",
+    "real_name": "Mark Valleley",
     "date": "2014-09-02",
     "album_number": 12,
     "at_profile": "https://www.audiotool.com/user/shakey63/",
     "album_url": "https://www.audiotool.com/album/dfkvkal/",
     "photo": "https://api.audiotool.com/album/DFkvkaL/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/shakey63/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Talking about Brighton: When Audiotool Retro Electro is on the agenda you won't get far without Shakey. Since his smash hit \"Venus Transit\" he has had a firm place among the Audiotool greats with his regular high-quality output. His heroes from the pioneer days of Electro are always there in his sound but they blend in perfectly with the more modern track structures.",
+    "about": "Mark Valleley\nPlace: Brighton, UK\nAge: 51 (I know, unbelievable isn't it?)\nProfession: Transport Planner however, I always wanted to be a dancer on a cruise liner!",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "Chilled Synth-Pop infused Electro"
+      },
+      {
+        "q": "Musical Background",
+        "a": "Played the recorder and sang at infant school. I've had a few guitar lessons over the years but have never been technically proficient enough to be able to express my musicality. Audiotool has changed all that!"
+      },
+      {
+        "q": "Started making music",
+        "a": "When I discovered Audiotool!"
+      },
+      {
+        "q": "On Audiotool",
+        "a": "I discovered Audiotool as a Chrome Extension about two and a half years ago. I listened to 'Across the Pond' by Olaf and thought \"wow, if this is what you can do with this thing, then I'm in!\""
+      },
+      {
+        "q": "Message to the community",
+        "a": "I have to come to know, love and meet some talented music makers through Audiotool. I love the fact that I can open up your tracks and steal your ideas!"
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/chasing_happiness/",
@@ -2323,16 +2496,37 @@
   },
   {
     "artist": "Cally Kay",
-    "real_name": "",
+    "real_name": "Caroline Kay Kennedy",
     "date": "2014-12-29",
     "album_number": 25,
     "at_profile": "https://www.audiotool.com/user/oedipax/",
     "album_url": "https://www.audiotool.com/album/drwan2/",
     "photo": "https://api.audiotool.com/album/drWAN2/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/oedipax/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "We close 2014 with the remarkebly talanted Cally Kay from Ohio US. As one of the few female users she has found herself a place among the well known Audiotool artists. We would like to take this opportunity to encourage more female musicians to join our community in 2015. Come on girls!",
+    "about": "Caroline Kay Kennedy\nPlace: Ohio, United States of America\nAge: 18\nUniversity: Business Marketing and Technology",
+    "interview": [
+      {
+        "q": "Musical Background",
+        "a": "I've been singing ever since I could speak and at the age of 6 I took my first piano class for a year. I taught myself until I was 13 and then started back up taking classes from a professional pianist. My family is oriented around music. My father is teaching my younger brother to play the drums, my sister is teaching herself to play guitar by ear and she, my mother and I all sing. I am also currently taking piano lessons today and I recently had the opportunity to sing at a Veterans' Day Assembly with an audience of 1,300 people. On a normal basis, I lead the congregational music at my local church every Sunday and Wednesday Evening."
+      },
+      {
+        "q": "Musical Style",
+        "a": "I would define my style as Trance, Techno, easy to listen to and danceable. Oh! And always optimistic. I have tried to make sad or evil sounding music and I just fail miserably. I also compare some of my tracks' styles to Owl City. They are always peppy, happy and encouraging. I make music to make people's day."
+      },
+      {
+        "q": "Started making music",
+        "a": "I did not start making music electronically until I found Audiotool. Before that I would compose music on my keyboard for leisure."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "It was a cold and wet April Evening of my freshman year in high-school, so 3-4 years ago. I had recently downloaded Google Chrome because it was all the rage! I was playing around with the different music applications and came across Audiotool. It was everything I wanted and more. The community came together and helped me with almost anything I needed. People like Uprising, Tornsage, ZOD4X, Smily, and Inavon supported me and helped promote my music without me even having to ask them to. This has been the most brilliant experience and I never want it to end."
+      },
+      {
+        "q": "Message to the community",
+        "a": "Thank you Audiotool, all the staff and producers and literally everyone who took part in helping make this site possible and running as smoothly as it does. I am so thankful for this, it is my number one hobby and favorite passtime. This site has changed my outlook on music and has helped me to discover what I would like to do in the future. As for the Community... Thank you to all my followers, fans, listeners and even to the haters! Your input helps me to be not only a better musician but even a better person in general. Thank you to the many more who like my me and my music and are supporting me. My advice to you is be creative, think outside the box, research, ask for help, experiment, be Optimistic, Love Chicken and <3 Audiotool."
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/gone-5C3HZ/",
@@ -2407,16 +2601,37 @@
   },
   {
     "artist": "Fontana",
-    "real_name": "",
+    "real_name": "Fontana, Karl Andrea - aka Fonti",
     "date": "2015-01-03",
     "album_number": 26,
     "at_profile": "https://www.audiotool.com/user/fontana/",
     "album_url": "https://www.audiotool.com/album/fg0yzv/",
     "photo": "https://api.audiotool.com/album/FG0yZV/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/fontana/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "He himself claims to have no experience in music production and not a trace of talent. But with his odd audio collages and a goodly portion of self-irony he has achieved the status of an Audiotool cult figure. From the earliest days of the website Andrea Karl Fontana, aka Fonti aka \"King of Audiotool\" has always left us wondering what he will come up with next. Hats off for this original personality.",
+    "about": "Fontana, Karl Andrea - aka Fonti\nPlace: Chur, Switzerland\nAge: 61 (otherwise sweet 16)\nProfession: Worker Teatcher",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "PIZZA ... normally I (re)mix everything together, add some samples, a little bit of Tonematrix, some Rasselbock, Tube and Crusher and it ends on … PIZZA"
+      },
+      {
+        "q": "Musical Background",
+        "a": "Oh my gosh ... there is a lot. I listen to the radio and watch TV."
+      },
+      {
+        "q": "Started making music",
+        "a": "Next year (hopefully)"
+      },
+      {
+        "q": "On Audiotool",
+        "a": "In 2007 I was looking for some Flash web sites and found Andre Michelle's lab with the Tonematrix. I made some Tonematrix live session tracks and I fell in love with audiotool. That's it."
+      },
+      {
+        "q": "Message to the community",
+        "a": "Audiotool is a gift, a wonderful parcel. Free, without adverts, no time-limit, comprehensive, accessible for everyone. The fact that Audiotool works with this amount of data is initself a miracle for me. Ok, I can't upload complete audio tracks, of course the libary of other DAWs is larger and possibly, but only possibly, certain functions more elaborate. I like the tools, the modular system with the synth on whitenoise and more than anything the cabling and usability. And then we can publish our works in the community. And last but not least we can invite people to collaborate on a track, and learn from others. Where else is that possible?\n\nThe bit of spam is negligible. If it gets too much I can mute the troublemaker. But I only used this facility once: the community is just great.\n\nIf help is needed, you get it immediately. Or you can look at the video tutorials on Youtube.\n\nFor this and much more to the Aduiotool crew and the community a big\n\nTHANK YOU!"
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/fontana_-_it_socks_farcio_s_malandrone_m/",
@@ -2491,16 +2706,33 @@
   },
   {
     "artist": "Bluedude",
-    "real_name": "",
+    "real_name": "Jedediah Caro",
     "date": "2015-01-12",
     "album_number": 27,
     "at_profile": "https://www.audiotool.com/user/bluedude/",
     "album_url": "https://www.audiotool.com/album/zgmrmokl0/",
     "photo": "https://api.audiotool.com/album/zgMrMOKl0/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/bluedude/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Bluedude stands for: powerful, funky EDM Sounds and has done so since the early days of Audiotool. All his tracks go like hotcakes and it's hardly surprising to find two of his productions among the top rated tracks of 2014. We are glad to have him back on board after a longish creative break.",
+    "about": "Jedediah Caro\nPlace: Oxnard, CA, USA\nAge: 17\nSchool: Adolfo Camarillo High School. Go Scorps!",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "I like to cover any genre that passes up in front of me and one thing that's apparent is that I try to make danceable/close-to-mainstream tracks. My style was somehow called \"Bluelectro\" by some listeners. Also I take from Reversal's style of adding exciters to almost everything. Savant is one of my main outside inspirations because of the 8-bit melodies he makes. Also, anime OST's inspire me as well. In short, fast saw-wave melody + gritty bass + 4x4 drums + Blue = my style."
+      },
+      {
+        "q": "Musical Background",
+        "a": "I learned drums when I lived in Indonesia in 2004-2006 (so when I was about 7 years old), but I forgot how to play them now. I learned piano in 2006, the year I immigrated to the USA. Since then, I listened to classical music until I had a piano teacher that taught me how to play piano for a year. I still play piano but I can't read notes anymore, so I learn and play by ear. I had no experience nor knew anything about electronically made music until I discovered Audiotool."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "Fall of 2011....or 2012. I don't remember very well but I know it was a few weeks after my birthday and around the same time Uprising joined. By the end of 2010 I started listening to electronic music. Soon I wanted to make my own music and an anonymous user from some random website that I can't remember suggested Audiotool. Once I checked it out, there was no way I wouldn't make music. \"Bluedude\" was a joke name. I just chose it because I liked the color blue and I am a dude. Now the Audiotool people remember me by it. Bahahaha!"
+      },
+      {
+        "q": "Message to the community",
+        "a": "Audiotool is such a blessing. It's probably (if not) the BEST free DAW (Digital Audio Workstation) out there. Actually, it is the best DAW in my opinion because of the amount of great tracks able to be produced and the amazing community. Seriously. The community is a family...albeit a strangely lovable family. To my friends who heard some of my tracks, thanks for listening. For the growing Audiotoolers, you will get a lot better but it takes so much practice and patience. I'm sure you already know what I mean or you will know soon. Thanks Audiotool for featuring me as an artist! I never would have thought that I would get featured because a lot of people said that I would, but it never came. I learned that making music isn't about attention, it's about what YOU want to make when YOU want it. It's about passing time doing something you love. It's about bacon...ear bacon (because ear candy is too mainstream). Audiotool should be a hobby, not a job. Also, stay happy and stay fresh! Peace!"
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/hybrid/",
@@ -2581,16 +2813,37 @@
   },
   {
     "artist": "Potasmic",
-    "real_name": "",
+    "real_name": "Nguyễn Trần Minh Khôi",
     "date": "2015-01-21",
     "album_number": 28,
     "at_profile": "https://www.audiotool.com/user/khoi98/",
     "album_url": "https://www.audiotool.com/album/dyz0s22ey/",
     "photo": "https://api.audiotool.com/album/dyz0S22EY/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/khoi98/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Khoi is obviously a very talented guy. Not only that he is a very good musician and constantly taking Audiotool to the next level, he also is a very good programmer. Having Khoi in the team would be a real enrichment for Audiotool. In fact sometimes we think he is already working with us. We hope some day, we can hire him officially. Keep it up, Khoi!",
+    "about": "Nguyễn Trần Minh Khôi\nPlace: Ho Chi Minh City / Saigon, Vietnam\nAge: 16\nSchool: Asian International School",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "I'm not so sure. I like to experiment with many genres. I tend to make more progressive house than any other genre, I think. Chiptune is one of my favorites too, but I can never figure to finish a chiptune track :/"
+      },
+      {
+        "q": "Musical Background",
+        "a": "I started piano lessons when I was 4 and stopped several months ago.\n\nI really hated learning piano at first, it was forced, and not something I was willing to learn (now it's different hehe). Currently, my mom is teaching me the traditional Zither. She played it when she was little but stopped and just has recently started playing it again.\n\nBonus fact: I would never have known about electronic music if there wasn't David Guetta :P"
+      },
+      {
+        "q": "Started making music",
+        "a": "When I found out about Audiotool! No where earlier than that!"
+      },
+      {
+        "q": "On Audiotool",
+        "a": "Vsauce on YouTube! One of his videos of D.O.N.G featured the Tone Matrix. After going around the links for a while, I ended up in Audiotool. I quit at first and came back after a long while."
+      },
+      {
+        "q": "Message to the community",
+        "a": "You gotta make more; you'll never know when you got better! Seriously! When I first started making music, my sound design sucked! Thank you so much to people who've helped me so much and commenting on all my tracks! Thank you, bitch2.0, Kooscha, Getout, None, Theorist, humasigno, Marodeur, xavrockbeats, Luxior, Jambam, opaqity, yaffee! and so many more! (Thanks ΛΛRON for helping me with the CS:GO ;)\n\nCheers guys & gals!"
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/in_no_sight/",
@@ -2671,16 +2924,37 @@
   },
   {
     "artist": "Cihangir",
-    "real_name": "",
+    "real_name": "Cihangir Eryıldız",
     "date": "2015-01-28",
     "album_number": 29,
     "at_profile": "https://www.audiotool.com/user/cihangir/",
     "album_url": "https://www.audiotool.com/album/0hqoaaw/",
     "photo": "https://api.audiotool.com/album/0HqoaaW/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/cihangir/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Since the primaeval days of Audiotool the name Cianghir has stood for high-karat Tech-House floor-fillers. He masters the tightrope walk between Mainstream and Undergroung brilliantly, producing one clean authentic Club Track after another, all of which should belong in the DJ's cases throughout the world.",
+    "about": "Cihangir Eryıldız\nPlace: Istanbul, Turkey\nAge: 37\nProfession: UX / UI Designer",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "4x4 on the floor with love :)"
+      },
+      {
+        "q": "Musical Background",
+        "a": "My Father forced me to play Bağlama - an ethnic string instrument - when I was 10 and I played it for 2 years. O_o I didn't really like note reading stuff but interacting with an instrument was great. I simply love the concept of giving a physical input to a machine and getting different sounds as an output. When Depeche Mode led me to electronic music in my early college years I also wanted to create the sounds I like and I ended up playing with Digital Audio Workstations."
+      },
+      {
+        "q": "Started making music",
+        "a": "In 1995, With my Pentium 166 MMX with dance e-day installed :)"
+      },
+      {
+        "q": "On Audiotool",
+        "a": "4 years ago. I was looking for some music applications and bam! Audiotool was a dream come true for an amateur."
+      },
+      {
+        "q": "Message to the community",
+        "a": "Love you all guys, keep producing what you like and deliver some great fresh music."
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/sentinel/",
@@ -2761,16 +3035,37 @@
   },
   {
     "artist": "SOLACE",
-    "real_name": "",
+    "real_name": "Solace Bowden",
     "date": "2015-02-03",
     "album_number": 30,
     "at_profile": "https://www.audiotool.com/user/cihangir/",
     "album_url": "https://www.audiotool.com/album/s1xjwzjco/",
     "photo": "https://api.audiotool.com/album/s1XjWZJco/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/cihangir/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Solace moves confidently in the field of modern Bass-Music, but doesn't want to be pinned down to one particular style. With contagious enthusiasm he throws himself into the production of his unmistakable Solace tracks. Let yourself be infected by his exuberance and creativity.",
+    "about": "Solace Bowden\nPlace: I was born in Baltimore/Maryland but now I reside in New Paltz/New York (USA)\nAge: 15\nSchool: New Paltz High School",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "I like to try to keep things weird and obscure, like Soly. I used to be this really jumpy guy that always made super cool drum and bass and super happy electro and tried to make bass-heavy stuff, but now I just like to keep things personal. Every song I make now has some sort of relation to my life in some way, and I like to cheesily use synths as metaphors for things. I'm inspired by mostly underground artists, and I think my style is just mostly some sort of spacey classic stuff. I try to make songs seem like really casual chill acid trips. I never tend to stick to one genre, however. \"Relaxing\" is what I'd call my style."
+      },
+      {
+        "q": "Musical Background",
+        "a": "I actually don't have any musical background. I learned a bit of piano when I was, like, 7 or 8 (which is how I come up with chords for my songs nowadays) and I used to try to rap, but that's about it."
+      },
+      {
+        "q": "Started making music",
+        "a": "I started when I was 12. My first song was created with audiotool on january 16th, 2012. When I first started, I'd come out with songs, like, every 4 hours. They weren't the greatest, obviously, but I loved making them."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "I spent, like, weeks trying to find some kind of cool but free DAW that I can easily make music with. One day I went on the Google shop thingy, and I found Audiotool on january 16th, 2012."
+      },
+      {
+        "q": "Message to the community",
+        "a": "Don't worry about what other people think. Make what you wanna make... Oh, and I love all of you guys, as people."
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/climax-4drTM/",
@@ -2839,16 +3134,37 @@
   },
   {
     "artist": "Triquend",
-    "real_name": "",
+    "real_name": "Shahen Khandkaryan",
     "date": "2015-02-11",
     "album_number": 31,
     "at_profile": "https://www.audiotool.com/user/zedger/",
     "album_url": "https://www.audiotool.com/album/dejfpldko/",
     "photo": "https://api.audiotool.com/album/DEjFPLDKo/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/zedger/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Triquent's tracks can largely be described as club music with a focus on Drum and Bass. What makes them unmistakable and unique in the community are the influences of Reggae and of the folklore of his home country Armenia. All that remains for us to wish for is that his studies leave him time for a comeback on Audiotool.",
+    "about": "Shahen Khandkaryan\nPlace: Yerevan (Armenia)\nAge: 18\nUniversity: Yerevan Komitas State Conservatory (Composition/Compositor)",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "I haven't been active in Audiotool since last year. So some things may have changed, but not everything. Now I am working mainly on some Neurofunk and other \"Neuro\" things. Also I do Trip-Hop, Nu Jazz and of course Reggae and all kinds of Drum and Bass. I also like to do some experimental stuff. I like to do - work on drums and percussion as you may have noticed in my Audiotool projects. But now I like to work on everything: melodies, sound-design, synths, effects, drums, drums, drums and everything else. When I was doing my stuff in Audiotool my style was Experimentaliquidsteggaedrumbass. Now it's Experimentajazzsteggaeurofunkiquidrumbass.\n\nSo I can't tell you a concrete genre. You're the judge, you're the listener."
+      },
+      {
+        "q": "Musical Background",
+        "a": "I have studied drums and percussion since I was 13. Now I'm a student at a conservatory. My subject is compositon and of course I play the piano. That's important."
+      },
+      {
+        "q": "Started making music",
+        "a": "I have been \"making\" music since 2010. But I have been making music since 2012. But I have been writing/making/working on music since 2013."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "I discovered Audiotool I don't remember how. It was 2011-2012 and I remember when Hobnox became Audiotool. I think it was 2011."
+      },
+      {
+        "q": "Message to the community",
+        "a": "Love you all guys, keep producing what you like and deliver some great fresh music."
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/kitsch_kepz_remix/",
@@ -2930,21 +3246,64 @@
   {
     "album_url": "https://www.audiotool.com/album/q9ovx/",
     "is_hidden": true,
-    "artist": "",
-    "tracks": []
+    "artist": "Vassrvögel",
+    "tracks": [],
+    "album_number": 32,
+    "real_name": "Anna Pentaghast",
+    "intro": "Vassrvögl aka Atomic Duckie brought her own vivacious vibes and turned the place upside down. She's not only a talented musician, with her slightly dubious sense of humour she also manages to keep the community on their toes. But today let's concentrate on the special Ducky style: a blend of brutal but melancholy melodies and hard Bass Music beats.",
+    "about": "Anna Pentaghast\nPlace: I came from Weimar, Germany, but moved to Clinton, New Jersey when I was 10\nAge: 20\nProfession: I am currently a waitress and am on my last year at North Hunterdon High School due to my poor grades and inability to speak English when I came to America",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "My style of music is anything that I have in mind at the time. I don't really have a trademark other than the usage of the tonematrix in almost every single one of my tracks. Other than that, my songs are mostly melodic and slap dashed as heck!"
+      },
+      {
+        "q": "Musical Background",
+        "a": "Before there was Atomic Duckie, I used to play a whole lot of banjo and piano! My old artist name was Laxxy which seems extremely silly now that I think about it! People back in middle school used to call me German Johnny Cash, even though Cash never played banjo! I then later found this song by Zircon called, \"Augmented,\" which really got me into complextro and dubstep. I started making music ever since I was 8 on the piano. Piano class was probably my most favorite at the time, since I just get to play whatever song I want to. I knew Für Elise by heart ever since because of that class!"
+      },
+      {
+        "q": "On Audiotool",
+        "a": "I discovered audiotool mainly through browsing the Chrome Store after receiving my Chromebook for the first time which is back in 2013 or so. I never thought I'd actually get into using the app since I had no knowledge of music, but after a whole day of just looking at tutorials; I really got into it!"
+      },
+      {
+        "q": "Message to the community",
+        "a": "My final words will be, use Audiotool as something fun to fool around with. Like Play Doh! You can shape it into anything you like, but you can never expect to be the real deal next gen Audio Jesus. Never should you stress yourself over Play Doh or Audiotool. And also, SUCK IT CUDDLY, I GOT FEATURED!! WOOH!! MOVING UP IN LIFE!!"
+      }
+    ]
   },
   {
     "artist": "&#x0398;LE",
-    "real_name": "",
+    "real_name": "Ole Renfordt",
     "date": "2015-02-25",
     "album_number": 33,
     "at_profile": "https://www.audiotool.com/user/yack-fou/",
     "album_url": "https://www.audiotool.com/album/s1nfsuq/",
     "photo": "https://api.audiotool.com/album/s1nFSUq/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/yack-fou/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "ΘLE has undergone one of the most perceptible metamorphoses in the community. If at the beginning he won the listeners attention with robust Drum and Bass pieces without any trumpery, his focus now is on sensitive, atmospheric Future Garage and Chillout. Both of his specialties are definitely worth listening to.",
+    "about": "Ole Renfordt\nPlace: Iserlohn, Germany\nAge: 18\nSchool: Märkisches Gymnasium Iserlohn",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "Somehow Futuristic/Garage/Chillout/"
+      },
+      {
+        "q": "Musical Background",
+        "a": "7 years of drums/ some experimenting with some analog synthesizers"
+      },
+      {
+        "q": "Started making music",
+        "a": "2011"
+      },
+      {
+        "q": "On Audiotool",
+        "a": "I discovered audiotool after reading an article about it in the days of Hobnox. I was hooked."
+      },
+      {
+        "q": "Message to the community",
+        "a": "'Got love for each other cause this world got none' - be thankful for what we have here! We are one loving community and I guess there is no other place on the Internet where you get so connected with your personal art as on Audiotool. I love each and every single one of you. Thanks to the Audiotool staff for giving us the opportunity to let our inspiration and creativity flow into our very own music FOR FREE! Have a nice day everyone."
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/GkoU0qCH/",
@@ -3025,16 +3384,29 @@
   },
   {
     "artist": "Agrippa",
-    "real_name": "",
+    "real_name": "Richard",
     "date": "2015-03-02",
     "album_number": 34,
     "at_profile": "https://www.audiotool.com/user/agrippa/",
     "album_url": "https://www.audiotool.com/album/8n41y2t4x/",
     "photo": "https://api.audiotool.com/album/8N41y2t4x/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/agrippa/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "The dark figure of Agrippa stands out a mile in our colourful mixture. Reminiscent of the Gothic Music of the late 1980s, his New Wave Sound is chock full of the spirit of that decade and would not be out of place in any contemporary record collection. His eminently experienced Synth work is rounded off by his own vocals, oozing with a goodly portion of Weltschmerz. A real must, and that not just for listeners in dark clothes.",
+    "about": "Richard\nPlace: Originally, from Liverpool, but for some time now I've lived just outside London, and I work in London.\nAge: 42. It is the answer to the ultimate question of life, the universe and everything.\nProfession: I studied art and design, but now I work at an advertising agency, heading the creative team, using my powers for evil.",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "I suppose it could be categorised as minimal synth, synth wave, DIY, new wave, vintage synth pop. Occasionally I touch on EDM, but more often I start off with melodies and vocal ideas now, rather than beats and basslines.\n\nI'm really into vintage, analogue sounds. Software synths can often do a great interpretation of analogue sounds – the Pulverisateur being a fantastic example – I love that instrument.\n\nHowever, over the past year, I've also started purchasing a few physical analogue instruments. I love them. I think a lot of it is down to the small inaccuracies, especially in pitch. And I love the feeling of sounds directly created by turning dials and moving sliders, manipulating voltages.\n\nSo, increasingly, physical devices feature in a lot of my tracks on Audiotool, especially over the past 9 months. But I keep coming back to the Audiotool staples, especially the Pulverisateur, which often remains an instrument of choice."
+      },
+      {
+        "q": "Musical Background",
+        "a": "I suppose my period in the 90s as a post-punk and Goth obsessive has stayed with me to a degree. In the 00s I was more into Electro and House. However, more than anything, I think the earlier music of my childhood had a profound and lasting impact on me. OMD, Tubeway Army, The Human League and many others. I vividly remember first hearing their early records (and radio play) as a child in Liverpool – around the 1978-1982 period."
+      },
+      {
+        "q": "Making music/On Audiotool since",
+        "a": "I had a college band in the early to mid 90s, very guitar driven and post-punk and new wave in style. Though electronic was part of it – I used a drum machine and lots of \"synth\" – actually just a cheap, Yamaha presets keyboard, fed through a chorus pedal and a reverb. Back then creating electronic music just wasn't anywhere near as accessible (or affordable) as it is now.\n\nI largely stopped by the end of the 90s. Probably because my attention shifted from music and nights out towards building a career in design.\n\nAt the start of 2013 two things happened. First, I met a few musicians/performers, initially online, then later in person, who were creating fantastic electronic, avant-garde music and I started to feel inspired to create music again.\n\nBut the real spark was discovering Audiotool at the same time. I was at a sister-in-law's house, feeling extremely bored, so I was browsing the Android app store and I came across the Audiotool Sketch app. I loved it, and then very soon discovered Audiotool itself.\n\nMy very first track on Audiotool was called \"Sieben\". I shared it with one of those musicians, who was very encouraging, and it was even featured on a small compilation CD, that was handed out as part of an exhibition on DIY music and new independent labels.\n\nA few months later, I had an instrumental album released, physical and digital, on a little indie label.\n\nI also collaborated on a cover version of 'Nowhere to Run' with Ivan Antunovic. I supplied the backing track, entirely produced on Audiotool, and he provided the vocals. It remains part of his set.\n\nIn 2014 I was invited to perform at Fluc in Vienna and Abattoir in London. It was never my intention to do gigs (or to sing), but as I was asked, I thought I'd give it a go. I took a physical synth, but in large part I was singing to digital backing tracks, produced using Audiotool. I really enjoyed it – a real buzz. I don't plan to start touring ort anything, but a few gigs a year would be fun."
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/solaris-6wRJgqDN/",
@@ -3103,16 +3475,37 @@
   },
   {
     "artist": "am&#x0153;ba",
-    "real_name": "",
+    "real_name": "Andrew Edwards",
     "date": "2015-03-10",
     "album_number": 35,
     "at_profile": "https://www.audiotool.com/user/amoeba/",
     "album_url": "https://www.audiotool.com/album/ku50sqn/",
     "photo": "https://api.audiotool.com/album/kU50sQN/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/amoeba/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Talking about Audiotool's Ambient and Chillout music one of the first names that spring to mind is that of the hugely talented amœba. With a seriousness unusual at his young age he enchants the listener and takes him on a journey through his personal universe of sound. Find out for yourselves how well this artist's name suits his music.",
+    "about": "Andrew Edwards\nPlace: Fullerton, CA (USA)\nAge: 16\nSchool: Troy High School",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "My electronic style of music is geared toward Ambient/Atmospheric/Lo-Fi sound mixed with a lot of other stuff... just basically anything I make I always try to take the listener to another place."
+      },
+      {
+        "q": "Musical Background",
+        "a": "I've been playing piano since age 6"
+      },
+      {
+        "q": "Started making music",
+        "a": "Started scribbling notes around 6 as well but didn't start writing actual music till about a year or so after that."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "My brother saw Audiotool on the Chrome app store or something like 3 years ago and thought it looked cool, I looked at it and I thought it was pretty cool."
+      },
+      {
+        "q": "Message to the community",
+        "a": "I think Audiotool is the perfect place to have fun and let your creativity run wild, and I've found there are so many things you can do with electronic music that you can't with the classical approach to writing music for instruments and stuff. When you're writing electronic music I would advise you to listen to lots of different electronic artists and also listen to classical music. Listening to electronic music really helps me find inspiration for different sounds I could make, different textures and stuff, and the classical music helps me with the actual compositional technique; I try to get into the composers head and wonder what they were thinking, why they are doing what they are doing with the music. Just listen and learn from what is out there, keep doing it until you get better and above all have fun. :)"
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/lost_at_night/",
@@ -3193,16 +3586,33 @@
   },
   {
     "artist": "Astrum",
-    "real_name": "",
+    "real_name": "Jackson Hale",
     "date": "2015-03-16",
     "album_number": 36,
     "at_profile": "https://www.audiotool.com/user/crazydruminator/",
     "album_url": "https://www.audiotool.com/album/vranm/",
     "photo": "https://api.audiotool.com/album/vRaNm/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/crazydruminator/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "It's about four years ago that a kid calling himself 'The Crazy Druminator' made his first tentative steps on our app. One name-change and 138 tracks (resulting in 11205 likes) later, Astrum has reached the peak of Audiotool popularity and long since stretched out his feelers towards the big stage.\nAt the audiotool.con we had the opportunity to experience the energy of his music in a breathtaking live performance which convinced us all: this guy is going places",
+    "about": "Jackson Hale\nPlace: Albuquerque, New Mexico\nAge: I am 20 years old at the moment\nUniversity: I am studying Recording Arts at the University of Colorado in Denver",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "My style is all over the place, never sticking to a distinct genre. Nowadays it lies somewhere between EDM and IDM and takes on whatever form my mood currently is."
+      },
+      {
+        "q": "Musical Background",
+        "a": "I started playing piano when I was 5 years old, and moved onto drums when I was 9 or so. Since then I've lost nearly all of my piano skills. I played drums in a lot of jazz bands when I was in high school and put in a good deal of time in symphonic type bands as well as an instrumental metal band my friends and I had."
+      },
+      {
+        "q": "Started making music",
+        "a": "I began making music electronically when I was 15. I stumbled upon Andre Michelle's website which showed me the (in)famous Tonematrix. From there, I followed a link to the Hobnox site, found Audiotool, and was instantly hooked on the concept of electronic music production."
+      },
+      {
+        "q": "Message to the community",
+        "a": "Do, or at least try, anything and everything you can think to do. The more absurd, the better."
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/sol_solo/",
@@ -3283,16 +3693,37 @@
   },
   {
     "artist": "The Seahorse",
-    "real_name": "",
+    "real_name": "Mark Wells",
     "date": "2015-03-25",
     "album_number": 37,
     "at_profile": "https://www.audiotool.com/user/markolmx/",
     "album_url": "https://www.audiotool.com/album/akswas7/",
     "photo": "https://api.audiotool.com/album/AKsWAs7/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/markolmx/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "The Seahorse's first publication about a year ago, was more like a Machinist-based finger exercises than a complete track. But it was cleary the work of an experienced rhythm man. In this short space of time he has managed to enhance his skills so much that he can now create music which any movie director would give his eye teeth for.",
+    "about": "Mark Wells\nPlace: Denver, Colorado, USA\nAge: Almost six (in dog years)\nProfession: Recent Environmental Science grad seeking bartending position",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "I don't really know how to describe my style or what genre it is. Sort of a mix between Ambient, Techno, Psychedelic, Acid, World, Big Beat, and an assortment of different live music. Is that a genre? Probably. ;)"
+      },
+      {
+        "q": "Musical Background",
+        "a": "I've spent most of my life playing drums in everything from marching band to Punk and Metal Bands with a little bit of Jazz, Funk, and Latin thrown in here or there."
+      },
+      {
+        "q": "Started making music",
+        "a": "In the 3rd grade with the saxophone and quickly decided that I wanted to play drums instead. My parents were thrilled with that decision."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "I discovered Audiotool through the Chrome store. I downloaded the app and promptly forgot about it. I rediscovered it a few months later and was immediately hooked! The Machiniste was the coolest thing I had ever seen ... Then I discovered The Pulv!!!! I had absolutely no idea how to use it and no idea how subtractive synthesis worked, so I became obsessed and read everything I could about the subject and understood nothing. That led to tons of experimentation and relentless studying of other AT artists tracks and I finally began to learn! Yeehaw!!"
+      },
+      {
+        "q": "Message to the community",
+        "a": "This thing we call Audiotool is amazing! Not only is it a powerful DAW, It comes with an international community of open minded and generous folks who are more than willing to let you look at how they make their music, and give you advice and feedback. It also comes with people who will listen to your tracks and an almost unlimited catalog of tunes for your own enjoyment. Besides, how many of your friends can tell you they just finished writing a song with a dude from Macedonia. :)"
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/blimps/",
@@ -3373,16 +3804,37 @@
   },
   {
     "artist": "MCT",
-    "real_name": "",
+    "real_name": "Tenji Tembo",
     "date": "2015-04-01",
     "album_number": 38,
     "at_profile": "https://www.audiotool.com/user/tenji240/",
     "album_url": "https://www.audiotool.com/album/fpkdql8j/",
     "photo": "https://api.audiotool.com/album/fpKdQL8J/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/tenji240/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "For about three years now MCT has worked his way through a range of widely differing Electro styles. From House via Trance to Ambient and - inspired by his great Audiotool idol VLTRA - even New Garage. His repertoire expands from track to track. If you remind yourself that he got to know Audiotool as a musical greenhorn, his progress has been considerable so that he has made his way into the community's heart.",
+    "about": "Tenji Tembo\nPlace: Baltimore, Maryland, USA\nAge: 21\nProfession: Student/ UX Developer @ Must Win LLC",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "My style can best be described as a story: When I first started fiddling with Audiotool, I was heavy into the dubstep scene, so I focused on creating intense tracks with crazy bass-lines, under the name DJ-240. Then suddenly, everyone I knew was doing dubstep, so I sought to re-invent myself. I went from DJ-240 to MCTembo, and with that, a change of style. MCTembo focused on Ambient and Future Garage (influenced by artists such as VLTRA, Olafd, and enjoyyourshoes), which lead to the release of Simplicity EP. From there MCTembo ventured deeper into pure ambience, with the release of Isolation and Depths EP. After my foray with Ambience and Future Garage, I began to experiment again. It was around the time trap was up and coming, as well as my discovery of Deep House (thanks to Cihangir, and Mikel Boyles aka Nowaii) ending with the release of Future House EP as MCT. Who knows what the future holds?"
+      },
+      {
+        "q": "Musical Background",
+        "a": "I have a fairly light musical background, stemming mainly from piano lessons as a young child. I did about 3-4 years of lessons, as well as a year experimenting with other various instruments."
+      },
+      {
+        "q": "Started making music",
+        "a": "I really got into making music when I discovered Audiotool, as they provided the platform and the tools to make whatever ran through my imagination, and translate my inspirations into melodies others can enjoy."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "Remember Burn Studios? I discovered Audiotool during their Sasha Remix Competition. #Throwback. I wonder what happened to them lol"
+      },
+      {
+        "q": "Message to the community",
+        "a": "You guys are amazing. I've never seen such a vibrant and diverse community such as Audiotool. The ability to make, share, learn, and grow as musicians via the internet is a blessing to be had. The feeling of elation you get when you discover the next best thing (like that time I found Intracktion and Claine) and want to shout it out to the rest of the world, it's moments like those that make me excited to use the site. Keep making music. Keep inspiring me. And maybe, just maybe, I'll do one more EP :p"
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/serenity_progressive_house_edit/",
@@ -3463,16 +3915,33 @@
   },
   {
     "artist": "aBstracT",
-    "real_name": "",
+    "real_name": "Nathan Glaser",
     "date": "2015-04-08",
     "album_number": 39,
     "at_profile": "https://www.audiotool.com/user/nmgbeats/",
     "album_url": "https://www.audiotool.com/album/pif3btmq/",
     "photo": "https://api.audiotool.com/album/PIF3bTmq/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/nmgbeats/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Together with Frigolito, Abstract is probably the user with most Swing characteristics on Audiotool. Expertly he mixes basslines reminiscent of Jazz with elements of Dub-Step, Electro House and Drum and Bass, and that with great success: with almost 500 Favourites, his track 'Illuminati Lumberjacks' is one of the all-time chart-breakers of our website. A must on any playlist",
+    "about": "Nathan Glaser\nPlace: Tulsa, Oklahoma (USA)\nAge: 16\nSchool: Booker T. Washington High School",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "Well, since my musical development has primarily happened through jazz, almost all tracks that I write (and my style in general) is heavily jazz-influenced. As an EDM producer, I was first majorly inspired by Savant, and as result a lot of my tracks feature 8 bit type solos and such. Mord Fustang inspired me to write big electro chord-based songs. Once I discovered glitch hop, it fit perfectly with my jazzy style, and I like to write a lot of glitch hop. Overall though, I try to become good at as many genres as possible so that I can be a versatile artist, and now I write songs depending on what I'm liking at that moment."
+      },
+      {
+        "q": "Musical Background",
+        "a": "Both my parents are professional musicians, and I grew up singing in various choirs, as well as playing piano for a year when I was fairly young (somewhere from 6-8 years old), which I then hated but now admittedly wished I had followed through on. From 6th grade to present time I've played trumpet at school, and from 9th to present I've played in my high school's Jazz band."
+      },
+      {
+        "q": "Started making music",
+        "a": "Sometime from January to March in 2012, one of my friends found out about Audiotool and decided that we should try messing around on it. We both started out as total production noobs and learned from each other for a little bit. I started looking around the site and naturally found Infyuthsion (since he is and probably always will be the most popular artist of Audiotool), as well as Pilgrim. I got super inspired by, well, simply how awesome their music was. Ever since then, I've been having fun on Audiotool and trying to constantly get better."
+      },
+      {
+        "q": "Message to the community",
+        "a": "There's always going to be someone out there that makes amazing music that you can be inspired by. Inspiration is key in getting ideas to flow. Learning from each other is very important to the continuing development of practically anyone as a musical artist :)"
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/Mxztjx/",
@@ -3553,16 +4022,33 @@
   },
   {
     "artist": "SouthBronxDen",
-    "real_name": "",
+    "real_name": "Dennis Davis",
     "date": "2015-04-14",
     "album_number": 40,
     "at_profile": "https://www.audiotool.com/user/southbronxden/",
     "album_url": "https://www.audiotool.com/album/ixieojt/",
     "photo": "https://api.audiotool.com/album/iXIeOJt/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/southbronxden/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "SouthBronxDen has been an Audiotool elemental force since its earliest days. His consistently individualistic version of Funk and Jazz in all its scope is his main distinguishing feature and over the years has become his very own style. He skillfully manoeuvers around musical norms and comes up with a genre-mix which can perhaps best be described as Den-Fusion.",
+    "about": "Dennis Davis\nPlace: South Bronx, New York (USA)\nAge: I am to old to be alive (62) but I still love to party\nProfession: My profession I really don't have one but I do a lot of different things, like working for a hospice, for an airline company, for a shipping company et al. I have sold some paintings I have done. I guess the place I learned and gained the most knowledge from is Audiotool.",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "My musical style is anything goes from classical to Funk, Funk is my fave."
+      },
+      {
+        "q": "Musical Background",
+        "a": "My musical background is listening to all types of music and loving them."
+      },
+      {
+        "q": "Started making music",
+        "a": "I started making music on Hobnox and followed Audiotool to it's new platform.\n\nI purchased some Fake Books and some on theory and started to use them in my attempts to make music. I am still learning."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "Like I mentioned before I started with Audiotool from the Hobnox days when an e-friend ask me to check out his tracks, I have been hooked ever since."
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/hot_t/",
@@ -3625,16 +4111,33 @@
   },
   {
     "artist": "Tornsage",
-    "real_name": "",
+    "real_name": "John Ertsgard",
     "date": "2015-04-22",
     "album_number": 41,
     "at_profile": "https://www.audiotool.com/user/tornsage/",
     "album_url": "https://www.audiotool.com/album/jvjotpw/",
     "photo": "https://api.audiotool.com/album/JVJOTPW/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/tornsage/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "To call Tornsage an Audiotool legend is really not exaggerating: every one of his tracks raises the standard in the Ambient field a notch higher, showing us again and again how much magically destroyed atmosphere can be conjured out of old familiar piano samples. Beside his enormous talent he is remarkable for his friendly presence in the community: he gives new arrivals a warm welcome and makes them feel at home in Audiotool. Check out the man with the rabbit head!",
+    "about": "John Ertsgard\nPlace: I was born in SanJose California but moved east as a teen to Massachusetts where I have lived all my life since.\nAge: I have been around the sun 55 times but feel like I just got started.\nProfession: I am an Electronics Engineer and currently work at Bose Corporation in the division creating automotive sound system designs.",
+    "interview": [
+      {
+        "q": "Musical Background",
+        "a": "After I finished my stint in the USMC, I started a band with some fellow musicians named \"Johnny Nervous and the Shapeless Pygmies\" (rhythm guitar/vocals) playing covers and originals in local clubs. Following that I jammed extensively with my son Nick (drummer, keyboardist) and now I work on my piano and audiotool exclusively."
+      },
+      {
+        "q": "Started making music",
+        "a": "I started playing guitar as a kid and sang songs like \"Yellow Submarine\" in a 5th grade band early on."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "At the time I was jamming regularly with my son he turned me on to the audiotool DAW. After some time and a couple first tries I was absolutely hooked and have not looked back since. The site replaced oodles of equipment that I had lost, given away or thrown out over the years thus presenting an amazing opportunity to rejoin an earlier effort to create music without having to compromise."
+      },
+      {
+        "q": "Message to the community",
+        "a": "My message is thank you. Thank you all for being so kind, helpful and inspiring over the years. Thank you for the vast array of music and for opening my eyes to new genres that I had never considered. The community at Audiotool is diverse and talented and I will always be grateful to have such an amazing place to work on music and share ideas with others as well as a gifted group of SW professionals who designed and run the site. I truly think that Audiotool is set for greatness and will heartily compete with alternate DAWs in the future."
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/heron/",
@@ -3716,7 +4219,7 @@
     "album_url": "https://www.audiotool.com/album/fckpbo/",
     "photo": "https://api.audiotool.com/album/FcKPBO/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/vort/avatar/512.jpg",
-    "intro": "",
+    "intro": "Interview unfortunately not available.",
     "about": "",
     "interview": [],
     "tracks": [
@@ -3799,16 +4302,37 @@
   },
   {
     "artist": "Navor",
-    "real_name": "",
+    "real_name": "Orion Hendershot",
     "date": "2015-05-06",
     "album_number": 43,
     "at_profile": "https://www.audiotool.com/user/djcandie/",
     "album_url": "https://www.audiotool.com/album/pri3aji/",
     "photo": "https://api.audiotool.com/album/pRI3aJI/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/djcandie/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Navor is one of a group of highly talented young American EDM producers on Audiotool and initiator of the very successful and heartwarming mega collaboration for a sick member of the community. In the wide range of Electronic Dance Music he doesn't want to nail himself down to one particular style. So better expect the unexpected.",
+    "about": "Orion Hendershot\nPlace: Currently living in Ft. Myers, Florida\nAge: 16\nSchool: Sophomore at South Fort Myers High School",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "Honestly, I don't even know myself. I go from Dubstep to Ambient to Trap to Future Bass, I'm really kind of all over the place. I just enjoy producing everything trying to actually define a style for myself, so I go all over genres trying to find something that I can fall in love with."
+      },
+      {
+        "q": "Musical Background",
+        "a": "I played violin from 4th to 8th grade, but that never really went anywhere. I recently have been trying to teach myself to play piano, so there's that! Before I was listening to electronic music I was listening to Metal a lot, which was what introduced me to electronic music when one of my favorite bands mentioned Deadmau5 in an interview or something. I listened to Deadmau5 a lot when I first got into electronic music, and just branched out from there."
+      },
+      {
+        "q": "Started making music",
+        "a": "I started making music when I was 12, so four years is coming up within the next year. I started with Looplabs if anyone remembers that monstrosity, then I found Audiotool and let loose. I've been using other DAWs recently such as Ableton and FL Studio, as well."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "I discovered Audiotool when I was 12, but not really sure when, but I think it was somewhere in the middle of summer so guessing June or something? I found Audiotool by browsing Google for \"Free online music maker\". I thought Audiotool sounded like a cool name so I signed up and started messing around. I've had a few accounts before my current one, but those are lost in the past (thankfully)."
+      },
+      {
+        "q": "Message to the community",
+        "a": "Just keep your head up. Music is something that should come from within, so always try your hardest to better yourself and others around you. Critique yourself and always try to expand your horizons. Audiotool has a ton of stuff to offer, and even more with the coming updates. Always interact with the community, making friends on Audiotool is one of the best things to ever happen in my life. I've made so many close friends and even met one in real life, which is incredible! The community is one of the best things that Audiotool has over other DAWs and music sharing sites, so my final advice is to take advantage of it!"
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/silent_anomalies/",
@@ -3877,16 +4401,37 @@
   },
   {
     "artist": "Pathfinder",
-    "real_name": "",
+    "real_name": "Metin Filiz",
     "date": "2015-05-13",
     "album_number": 44,
     "at_profile": "https://www.audiotool.com/user/perrier/",
     "album_url": "https://www.audiotool.com/album/o15is/",
     "photo": "https://api.audiotool.com/album/O15IS/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/perrier/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "To describe Pathfnder's style only as Retro would not do justice to his wild and always dynamic mixture. But what in fact is ever present is the character of the Roller Discos and Arcades of the late seventies and early eighties, enhanced with a trace of the Modern. And that at the highest level of production techniques. So pick up your joysticks and follow his path on the way to the Highscore.",
+    "about": "Metin Filiz\nPlace: St.Gallen/Swizerland\nAge: 32\nProfession: Dispatcher / Technical Support engineer",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "I think most producers are influenced by the music they hear and grow up with. Maybe that's why my tracks are a mix of Funk and 80s Synth wave. I love this pushing feeling with strong beats and the characteristic bass and clear synth design."
+      },
+      {
+        "q": "Musical Background",
+        "a": "I learned to play the drums and keyboard for a few years."
+      },
+      {
+        "q": "Started making music",
+        "a": "My first contact with something like a DAW was in 1994 with a program called Magix Music Maker. Back then it was more of a loop puzzle game with a small library. Producing my own stuff began in 2007 when I discovered Ableton and the possibility to record and work with instruments"
+      },
+      {
+        "q": "On Audiotool",
+        "a": "I discovered Auditool some years ago at a time where I was bored with pre-designed synth patches but had no idea how to create my own. I thought that my mix would be this blurred because of the bad patches. It was on YouTube that I found a tutorial for the pulv - I think it was by Einhard Luther."
+      },
+      {
+        "q": "Message to the community",
+        "a": "It is really awesome how many talented and creative artists there are in this community! Keep listening, commenting and learning from each other. This is one of the strongest parts of Audiotool I think. Publishing songs on Soundcloud is not half as satisfying as it is on Audiotool, because of the real feedback of the community. Don't underestimate Audiotool and invest a lot of money in \"professional\" music workstations early on. A painter does not automatically produce a \"better\" picture with more expensive brushes without knowledge about colors and proportions."
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/sole_survivor/",
@@ -3967,16 +4512,33 @@
   },
   {
     "artist": "Daftwill",
-    "real_name": "",
+    "real_name": "William Lachoua",
     "date": "2015-05-20",
     "album_number": 45,
     "at_profile": "https://www.audiotool.com/user/daftwill/",
     "album_url": "https://www.audiotool.com/album/huq36h9yv/",
     "photo": "https://api.audiotool.com/album/huq36h9yv/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/daftwill/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Since the early days Daftwill has been a well liked member of the community and producer of suspense-packed dark Electro and Techno tracks. Among the sources of his input were a number of Audiotool greats of those days, as can be seen from the number of collaborations he has been involved in. With sixteen collaborations to date he must be the record holder on Audiotool.",
+    "about": "William Lachoua\nPlace: I'm from France. I'm have been staying in New Caledonia for a year but I actually live in Paris.\nAge: 20\nProfession: I have been working in a gas station for eight months. In October I will start studying at an audiovisual school and attempt to become a sound engineer.",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "I don't really know how to define my style: I try to vary it for each new track I make, but some guys say that my tracks have some kind of dark, trippy and psych sounds."
+      },
+      {
+        "q": "Musical Background",
+        "a": "I never played or composed music before Audiotool, but I like listening to music all day long: from Beethoven to Neu!, through Dave Brubeck, Thomas Newman, Pink bFloyd and Fluke. I like to discover some old and new stuff from any style every day."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "I discovered Audiotool in a french High-Tech magazine more than 5 ago, when it was still named Hobnox-Audiotool. At that time, I didn't publish tracks. I just played around with the Tonematrix and the Bassline."
+      },
+      {
+        "q": "Message to the community",
+        "a": "Audiotool is really a powerful website, not just because you have total access to unlimited music production tools. Only your personal creativity sets your limits. But especially because the community is really nice: attentive and helpful for helping you improve. From amateur users to master producers, there will always be people to listen and comment on your pieces."
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/space_odyssey-AJtimSxZ/",
@@ -4057,16 +4619,37 @@
   },
   {
     "artist": "Slopo",
-    "real_name": "",
+    "real_name": "Goran Spirkoski",
     "date": "2015-05-27",
     "album_number": 46,
     "at_profile": "https://www.audiotool.com/user/slopo/",
     "album_url": "https://www.audiotool.com/album/4oqrg5xs/",
     "photo": "https://api.audiotool.com/album/4OQrg5xS/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/slopo/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "If you hear driving Minimal beats reinforcing mechanical chirps and swishes coming from all directions you have come across a track by Slopo. Even his first steps on Audiotool suggested that here is somebody who is in command of the Minimal materia. Now two years later the technical know-how is in place, so that flawless Techno tracks are guaranteed. Not only a must for Techno-Heads",
+    "about": "Goran Spirkoski\nPlace: Skopje/Macedonia\nAge: 31\nProfession: Cisco Certified Network Associate",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "Uff... :) somewhere between Minimal, Techno, Acid and Psy influences. Some people call it Minimal Mechanical Techno, others call it Tribal Psy Techno. I just love to mess around with the music that I grew up with :)"
+      },
+      {
+        "q": "Musical Background",
+        "a": "Audiotool:)"
+      },
+      {
+        "q": "Started making music",
+        "a": "I have been working on Audiotool for around 2 years now."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "I read about Audiotool in a music magazine about 2 years ago. Immediately searched for it and here I'm :)"
+      },
+      {
+        "q": "Message to the community",
+        "a": "Just keep on rocking!"
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/times_2015_edit/",
@@ -4147,16 +4730,41 @@
   },
   {
     "artist": "CGMan",
-    "real_name": "",
+    "real_name": "Robin B.",
     "date": "2015-06-02",
     "album_number": 47,
     "at_profile": "https://www.audiotool.com/user/cgman/",
     "album_url": "https://www.audiotool.com/album/d6qdh/",
     "photo": "https://api.audiotool.com/album/D6Qdh/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/cgman/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "CGMan's Drum and Bass and Neurofunk tracks are legendary on Audiotool. It's just all there, in the right place. It feels as if a soul has been breathed into a huge army of dystopian mega-machines. Always somber, mechanical, yet funky and always on the edge of mixing perfection, everyone of his tracks is an institution in its field.\n\nFrom our point of view a well deserved top vote.",
+    "about": "Robin B.\nPlace: Altusried, Bavaria, Germany\nAge: 20\nProfession: Kempten University of Applied Sciences",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "Of course this changes depending on my mood, but it's usually fast, bassy, experimental, tense, a bit empty, sometimes uncanny. I love the Dead Space game series and sometimes I try to transport these eerie feelings in my music, usually unconsciously. Maybe you felt like there's something missing in my tracks. This is often intended. The reason is difficult to describe. I like this feeling of something strange happening. The absence of the expected consequence of something. A good example is \"Silent Anomalies\". In case it shows itself, it can still be strange. It's there, you can see it, but it's not normal. You don't want to touch it by any means. Like rotten food. Haha I feel insane now as I write it, but you probably know what I mean. These feelings are so interesting to me as they always make my flesh crawl. It's pretty much the opposite of a love song.\n\nI love subtle melodies in tracks mixed with \"breathed\" sounds and short samples, so that's what I often want. Some tracks by other artists have short pieces repeated over and over, they can sound equally great."
+      },
+      {
+        "q": "Musical Background",
+        "a": "I tried to play contrabass once but stopped. I never wanted to commit myself to one specific instrument. Sometimes I grab my keyboard and try to play songs I remember from movies or games, or just for fun. I can't play chords and melody at the same time, though. Middle eastern and Chinese instruments are very interesting to me as they look and sound different to what I'm used to. I'm really fascinated by the idea of sounds one never heard before, not melodies. Yes, melodies help, but for me these are \"just\" 12 different notes in different octaves in different orders, with little freedom. You'll probably notice that when listening to my tracks. Some of them need more melodic elements. If you listen to tracks like \"Non Human\" by Phace & Misanthrop you'll notice that there is a subtle melody in it. That's one of my goals."
+      },
+      {
+        "q": "Started making music",
+        "a": "I started with a demo of the \"MAGIX Music Maker\" at my aunt's computer. They all went to a party and I had to stay home. It wasn't that bad. I was 11 or 12 years old."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "Yes, Google. I can't remember the search string exactly but it was something like \"make music online\". I knew it theoretically was possible. Audiotool says it was 4 years ago, but for me it was at least 5. I did not expect a whole working studio :)"
+      },
+      {
+        "q": "Message to the community",
+        "a": "Don't be afraid of messing your track up while editing it. I am afraid and it does not help. It's probably better to just export parts as samples and use these. You'll treat them differently. You won't see them as a huge and complicated network of devices anymore, but a simple sample. I don't do that so you can see how I did it. I don't like the idea of a huge flat sample base either. You can go even further and work in iterations, but this is experimental and not tested yet. I'll try it out."
+      },
+      {
+        "q": "Message to the Audiotool Team",
+        "a": "Thank you for this amazing and completely free application and website. There is no better way to show people what is possible with music and the web and what it's about."
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/take_and_strike_v2/",
@@ -4213,16 +4821,49 @@
   },
   {
     "artist": "Joa Ebert",
-    "real_name": "",
+    "real_name": "Joa D. Ebert. The D is for Diego",
     "date": "2015-06-08",
     "album_number": 48,
     "at_profile": "https://www.audiotool.com/user/joa/",
     "album_url": "https://www.audiotool.com/album/qd3ss/",
     "photo": "https://api.audiotool.com/album/Qd3ss/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/joa/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Joa Ebert is not only a very talented programmer and musician, he is also Audiotool developer of the first hour and father of the first track released on Audiotool. We still consider Joa as a part of the Audiotool team even if he has now already founded his own company with Tim Richter. Defrac is the foundation for the HTML 5 version of Audiotool to be released later this year. Thanks for all your hard work. Without you, Audiotool would never had been possible.",
+    "about": "Joa D. Ebert\nPlace: Originally from Bielefeld, Germany. You could say it is the modern Atlantis, the town that is nowhere to be found. But nowadays I am living in Cologne, Germany\nAge: 28",
+    "interview": [
+      {
+        "q": "What is your job at Audiotool?",
+        "a": "I founded Audiotool and worked on it for about five years but our ways parted – no bridges burned though. My main job at Audiotool was the core foundation of the application. I worked mostly on algorithms and data structures. But I did basically everything from drawing little monsters, building and shipping the browser app to developing the website and backend. I also wrote some of the \"cool\" parts – the desktop and cable rendering for instance. I also developed my personal favorite: the Rasselbock. It went through many iterations: from a first completely autonomous cellular automata, playing stutter effects to what we have now (André also applied his Midas touch to the DSP implementation). I left Audiotool to start a new company called defrac. My co-founder Tim Richter and I are developing a platform to convert compiled Java code to different target platforms like the web, iOS or Android. This is quite technical but really fun stuff! I heard through the grapevine that Audiotool Next is built with defrac"
+      },
+      {
+        "q": "How would you define your work?",
+        "a": "As a developer you're in the fantastic position of imagining something up and then being able to create it immediately. It is like Lego on steroids. There are no limits and once you hit a wall you have to be creative to find a solution. It's basically never boring and creating a massive Flash application like Audiotool was a real challenge. If you like solving puzzles, you can probably become a really good developer."
+      },
+      {
+        "q": "What is your educational background for the job you are doing?",
+        "a": "Blood and sweat. I was a small child when I started programming and went the path of the autodidact. I started to study cognitive computer science once but dropped out which I kind of regret. When I find the time, I seriously want to get that computer science degree."
+      },
+      {
+        "q": "When and how did you start programming?",
+        "a": "I think I was about eight years old. Our first computer had no case and the only way to reset the machine was by putting a screwdriver on the jump. We also had two games. GORILLA.BAS and NIBBLES.BAS. Those were written by Microsoft to demo QBasic at that time. The only way to start the game was by starting QBasic first. You always saw the source-code. The love of a lifetime emerged."
+      },
+      {
+        "q": "How would you define your musical style?",
+        "a": "Short-circuits, buzzes and noises. Honestly I feel a dwarfed by all the talent on Audiotool and I wish I had the skills to produce the music I have in my head. I really enjoy pads and melodic synthesizers with a hint of glitch. The music I create is the music I want to listen to myself. When there are 100 listens on one of my tracks, you can be sure that I count for 96 of them."
+      },
+      {
+        "q": "What is your musical background?",
+        "a": "My mother did a real good job and I am really thankful for her efforts. I went to early music education in elementary school and started playing classical piano around the age of ten. Puberty made me ditch the classical education and I went to a different music school with a focus on improvisation. I also started playing guitar there and I have a bass lying around somewhere. We did a lot of great live gigs with that school and it influenced me a lot. One person suggested a song, then someone who played the drums joined, someone who sings and so on until you have a band for that song. You meet for one or two evenings and then you play on stage. It really showed me that random people can get together and make some music. Hello live collaboration!"
+      },
+      {
+        "q": "When did you start making music?",
+        "a": "I think in 1996 or 1997 my brother and I received a fantastic christmas present. It was a copy of ReBirth RB-338. Later I started using FruityLoops and got into chiptunes for some reason."
+      },
+      {
+        "q": "Message to the community",
+        "a": "Audiotool has the best community ever. Stay exactly like you are. Creating music makes you vulnerable. You share your songs and emotions with complete strangers. I believe that Audiotool is one of the few places on the internet where people aren't talking you down because your technique isn't perfect. Ergo the only thing I can say is that you are simply amazing and that I am proud to be one of the people who made all this possible.\n\nPS.: Some people continue to ask why my profile is so weird. I guess one late evening there was so much work that my head was exploding and I kind of expressed it by turning my profile upside-down. When Martin joined Audiotool and took over he kindly kept this tradition!"
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/onoff/",
@@ -4303,16 +4944,37 @@
   },
   {
     "artist": "Crazy about You",
-    "real_name": "",
+    "real_name": "Manuel Francisco de Casas Sánchez",
     "date": "2015-06-17",
     "album_number": 49,
     "at_profile": "https://www.audiotool.com/user/manuege_el/",
     "album_url": "https://www.audiotool.com/album/jbkwf/",
     "photo": "https://api.audiotool.com/album/jBKWF/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/manuege_el/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Crazy about You's music drifts between melancholy and relaxation. Never intrusive, rarely melodramatic. There is hardly an Audiotool artist who connects his inner live so much with the music he is making as this talented young guy from Spain. An up and coming Ambient artist, who belongs on everyone's list.",
+    "about": "Manuel Francisco de Casas Sánchez\nPlace: Melilla (Spain)\nAge: 18\nProfession: I'm studying at university to become a teacher in the future. And if possible for sport. I really like kids and I like to teach them. Exactly, I'm studying school teaching and sports.",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "As I said, I prefer to focus my music on my experiences or how I feel at that moment. So the style which I feel more connected with is Ambient/Chill. I also like Jazz, Hip Hop and Trap but my style is Ambient with soundscapes. Although if you follow my music you will see an influence of the poetry that I try to combine the music with. I really like to write with an influence from my life."
+      },
+      {
+        "q": "Musical Background",
+        "a": "I don't have any musical background but I'm really focused on listening to music all day long. Anyway my father loves Jazz music most, so when I was a child I always listened a lot of musicians from Blues to Jazz and Rock and things like that. But I don't know anything about composition or pianos I just like to hear music."
+      },
+      {
+        "q": "Started making music",
+        "a": "I think that my musical development started a few months ago because I didn't have a ''style'' and I was very bad when I began but I started with my first tracks on AT like 2 years ago… actually I'm learning a lot."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "It's a long story. Well one of my best friends ''Mr. Delfe'' told me that he was making music on a website, so I decided to take a look at it When he showed me his first tracks I really liked it so I started making some fun songs there."
+      },
+      {
+        "q": "Message to the community",
+        "a": "You always need to have an inspiration, guys. If you don't have one it is better just not to waste your time. For me the most important thing is to live life to make music. You guys have to live and try to express how you can feel. Never be scared of that."
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/stay-p8x8pO/",
@@ -4382,21 +5044,68 @@
   {
     "album_url": "https://www.audiotool.com/album/mlzmzzie/",
     "is_hidden": true,
-    "artist": "",
-    "tracks": []
+    "artist": "Sweattz",
+    "tracks": [],
+    "album_number": 50,
+    "real_name": "Lance Alexander Sweatt",
+    "intro": "Talking about Audiotool chilled Hip Hop Beats Sweattz is one of the artists who immediately come to mind. Whereby he does not restrict himself to the common practice of stringing together drum- and music loops. He skillfully combines his tracks with original syntheszier sounds and -lines giving his music an organic substance.",
+    "about": "Lance Alexander Sweatt\nPlace: Greenville, South Carolina\nAge: 20\nProfession: Majoring in Electrical Engineering at Clemson University. About to study abroad at Tohoku University in Sendai, Japan for a year.",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "Sample based, Hyphy Hip Hop"
+      },
+      {
+        "q": "Musical Background",
+        "a": "My father and uncle were arguably the best rhythm section in the state, and so they made sure that from a very young age I was well versed in American Classic and Progressive Rock artists. However, once I discovered anime and video games, my interests started shifting towards more video game soundtrack music, more Japanese Pop, and less Rock & Roll. Even today, my biggest Hip Hop influences are from the Silent Hill and Samurai Champloo soundtracks. Interestingly enough, I almost exclusively listen to super poppy electro house from Japan nowadays, especially in the middle of making a chilled out Hip Hop beat on Audiotool."
+      },
+      {
+        "q": "Started making music",
+        "a": "My uncle gave me my first bass guitar for my 16th birthday, and then I started a band with two of my close friends. All we had were drums, bass, and keyboards, but we managed to make some interesting progressive jams."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "In between band meetings, Jeff (the guy on keyboards) would show me instrumental hip hop beats from the Samurai Champloo soundtrack, as well as artists related to it. That music forever changed me, and from there on I had a deep-rooted interest in chilled out instrumental Hip Hop. Pretty soon after that, Jeff and I were sending each other beats that we found on YouTube. That was when we discovered [offbeatninja123], and through him, Audiotool."
+      },
+      {
+        "q": "Message to the community",
+        "a": "I want to say thank you to everyone who is putting their hearts into making music here on Audiotool. Let's hope that in 10 years the community will be much bigger, and that there will be famous producers who can say they started in Audiotool!"
+      }
+    ]
   },
   {
     "artist": "Tottenhauser",
-    "real_name": "",
+    "real_name": "Thomas Valcke",
     "date": "2015-07-01",
     "album_number": 51,
     "at_profile": "https://www.audiotool.com/user/tottenhauser/",
     "album_url": "https://www.audiotool.com/album/0oryk5/",
     "photo": "https://api.audiotool.com/album/0orYK5/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/tottenhauser/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Tottenhauser is one of the Drum and Bass bedrocks of Audiotool's first hour with a huge output of dark, minimal and always driving tracks. His enthusiasm has always been infectious but focused and effective: like his initiating the first international AT get-together, 2012 in Gent. People like him are a great asset to the community being a motor for its progress and inspiration - apart from creating awesome music!",
+    "about": "Thomas Valcke\nPlace: Belgium\nAge: 35\nProfession: Product Designer",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "Dark & loud atmospheric music with an emphasis on drums"
+      },
+      {
+        "q": "Musical Background",
+        "a": "None"
+      },
+      {
+        "q": "Started making music",
+        "a": "Am I making music?"
+      },
+      {
+        "q": "On Audiotool",
+        "a": "A few years ago. Back in the days when I was 18 one of my mates discovered a Rebirth demo. It was a warm welcoming from playing GTA1 all day. The demo had a time limit so in 20min you had to make all your drums and melodies and then find enough time to make a very rudimentary track. We taped all these little experiments. And listened to it until the tape was beyond salvation. From thereon I realized that everyone could make music without having to buy expensive equipment. (Instead you had to buy expensive software). So because there where better things to spend my money on, it never really got serious.\n\nMany years, already a workingman, and probably a bit frustrated in life and work. I was in dire need of a creative outlet and thought back to those moments we had with the Rebirth demo. So I decided to go and look on the Internet for free music software. And then I stumbled upon Audiotool. I couldn't believe my eyes. It had all the features Rebirth had and a lot more! It ran in your browser and it was free! I was instantly hooked. And the first 2-years the addiction went quite far. Just ask my wife.\n\nNowadays I can control the addiction much better. But from time to time the urgency comes and then I know exactly where my medicine is."
+      },
+      {
+        "q": "Message to the community",
+        "a": "Have fun, respect the community, be eternally grateful for the makers? Don't make music to be popular or rich. Don't follow trends. Don't care about followers, listens or favourites. Just be you and make your music because you need to and enjoy doing it."
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/jungle_wip/",
@@ -4459,16 +5168,37 @@
   },
   {
     "artist": "Fauko",
-    "real_name": "",
+    "real_name": "Tom Davis",
     "date": "2015-07-08",
     "album_number": 52,
     "at_profile": "https://www.audiotool.com/user/fauko/",
     "album_url": "https://www.audiotool.com/album/gerzj5pa7/",
     "photo": "https://api.audiotool.com/album/gerzj5Pa7/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/fauko/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Fauko aka Pedestrian is one of the few Audiotool one man bands. His compositions are influenced mainly by the Synthpop of the 1980s whereby the pleasant timbre of his voice makes its own contribution to their authenticity and evokes memories of bands like 'Depeche Mode' and 'Camouflage'. Not only fans of the early electronic Pop music will get their money's worth.",
+    "about": "Tom Davis\nPlace: Currently living in the Washington, DC metro area\nAge: 42\nProfession: sysadmin",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "Whatever comes naturally. My last couple of published tracks (last one from fauko and first one from pedestrian) could be considered Synthpop."
+      },
+      {
+        "q": "Musical Background",
+        "a": "I sang in church as a child and throughout my youth. I also took piano lessons briefly as a child (wish I had stuck with that!) and played trumpet in school bands from age 10-18. I also played with brass ensembles at parties and events as an older teen. Oh yes, I was in a rock band for a brief period of time after graduating high school. I never studied much in terms of theory – making music was just a fun hobby for me."
+      },
+      {
+        "q": "Started making music",
+        "a": "In terms of attempting original composition, as a young teen when I got a Casio MT 205 keyboard as a gift. It wasn't much more than a child's toy, but this was circa 1987 and about all my parents were willing to shell out for. The best thing about it was it had an output that I was able to utilize with a jack on a boombox on which I would record to an audio cassette. I would record what amounted to accompaniment and then attempt to add a solo melody with my trumpet. That lasted until I was about 19. I stopped making music completely until discovering Audiotool many years later."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "In late 2011, I was exploring the Chrome app store and ran across Audiotool. It was and remains far beyond anything I expected to find for making music online."
+      },
+      {
+        "q": "Message to the community",
+        "a": "To the Audiotool team: Thank you for the site/DAW/community you have created and continue to develop. AT is a true gift to anyone interested making electronic music and I believe it provides value to users of any experience, from novice to pro.\n\nTo the community: It is amazing to experience the music you create and share. I have been introduced to and influenced by styles of music I never would have considered listening to before joining Audiotool. I appreciate the inspiration, encouragement guidance and friendship that I have received from you."
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/fabrique/",
@@ -4549,16 +5279,37 @@
   },
   {
     "artist": "Mikel Boyles",
-    "real_name": "",
+    "real_name": "Mikel Arrid-Thomas Boyles",
     "date": "2015-07-15",
     "album_number": 53,
     "at_profile": "https://www.audiotool.com/user/nowai/",
     "album_url": "https://www.audiotool.com/album/ofu4hck4/",
     "photo": "https://api.audiotool.com/album/ofu4HcK4/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/nowai/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Since the early Audiotool days Mikel Boyles aka Nowai has been a guarantor of a sound which - whatever style he is trying his hand at - shows his unfailing feeling for the origins of that musical culture. Whether Detroit -Techno, Chicago-House or Oldschool-Jungle: his tracks could without exception have had their place on the vinyls of that era.\n\nHis portfolio is reminiscent of a visit in a records store in the 1990s.",
+    "about": "Mikel Arrid-Thomas Boyles\nPlace: Born in Pensacola, Florida, USA but spent most of my years in Fresno, California, USA.\nAge: 26\nProfession: Professional Dad",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "Fluid. I constantly shift between different genres and styles of music. Repetitive Techno one day, grooving House the next, Ambient and D&B on another."
+      },
+      {
+        "q": "Musical Background",
+        "a": "As far as playing actual instruments I didn't really start until I was a sophomore in University and that was guitar. Nowadays, aside from making tracks on Audiotool, I play guitar when the feeling strikes."
+      },
+      {
+        "q": "Started making music",
+        "a": "I started making really bad mashup Hip Hop tracks back in 2007. I'd literally take an instrumental track, an acapella track, and smash them together using Fruity Loops (now called FL Studio)."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "I discovered Hobnox Audiotool in the winter of 2009. I made a plethora of pretty basic Techno tracks and haven't looked back since. I watched it go from a pretty basic app to something that can be used to produce very impressive tracks if you have the vision and skill and a powerful enough computer!"
+      },
+      {
+        "q": "Message to the community",
+        "a": "To the community: Just have fun making music. Seriously. Don't get caught up in trying to make the next big club hit, trying to recruit everyone on the site to be your follower, or making tons of money off of your music. If you make good tracks people will find them.\n\nTo the Audiotool Devs: Thank you so much for your hard work. Because of you lot I've been able to hear some incredible music, meet some awesome people, and find a way to make the music I always wished I could! Thanks for the spotlight!"
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/blue_days_feat_emma/",
@@ -4627,16 +5378,33 @@
   },
   {
     "artist": "Teqtoniq",
-    "real_name": "",
+    "real_name": "Arjun Sharma",
     "date": "2015-07-22",
     "album_number": 54,
     "at_profile": "https://www.audiotool.com/user/trance10/",
     "album_url": "https://www.audiotool.com/album/tzgcys/",
     "photo": "https://api.audiotool.com/album/tzgCyS/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/trance10/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "In his past four years on Audiotool Teqtoniq has made some kind of a fairytale career. From his beginnings as a comparative novice in production to one of the most successful and inspiring artists on the website. Hardly a week goes by without one of his tracks at higher places in the charts. Whereby he plays on the claviature of contemporary electronic music as if he never did anything else before.",
+    "about": "Arjun Sharma\nPlace: Toronto, Ontario\nAge: 18\nProfession: I'm studying Biochemistry at McMaster University.",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "One of the things I'm most proud of is that I feel like I'm able to work on music from a wide variety of styles and genres. I love to play around with hybrid genres, and I enjoy pulling influences from all over the place - jazz, EDM, classical, movie OSTs, whatever."
+      },
+      {
+        "q": "Musical Background",
+        "a": "I've been classically trained in piano since I was about eight or nine, in addition to studying music theory. I've also played viola for 7 years in both small chamber groups and larger orchestras. And sometimes I play around with a guitar."
+      },
+      {
+        "q": "Started making music",
+        "a": "I've been listening to electronic music all my life. I guess it was only natural for me to start playing around with the idea of trying to make it myself, so I started looking at free DAW options around 2008-2010, when I fooled around on a site called Splice Music (where I first used the trance10 username)."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "When the original Splice Music went down around 2011, I started looking for alternatives, and the visual layout of the Audiotool app at the time was pretty similar to Splice Music's layout. I decided to try a few things out. At first I just played around with loops, but then I started to play with the Pulv and it kind of snowballed from there. I would go over to my grandparents' house and just sit upstairs for hours working on music on crappy speakers - but it just captivated me."
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/dream-u06QHpZn/",
@@ -4717,16 +5485,37 @@
   },
   {
     "artist": "Bracolli",
-    "real_name": "",
+    "real_name": "Gabriel Evangelista Adão",
     "date": "2015-07-29",
     "album_number": 55,
     "at_profile": "https://www.audiotool.com/user/gabriel_evangelistaadao/",
     "album_url": "https://www.audiotool.com/album/8v9sxpke3/",
     "photo": "https://api.audiotool.com/album/8v9sxPKE3/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/gabriel_evangelistaadao/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Our final Featured Artist of the 2014/-15 season is Bracolli from Brasil. His style is orientated toward the classic electronic Techno and Acid artists of the early years and the original Dub Techno music of the Berlin based project 'Basic Channel'. Be sure to check out this talented young guy it's definitely worth it.",
+    "about": "Gabriel Evangelista Adão\nPlace: Francisco Morato (São Paulo, Brasil)\nAge: 17\nProfession: Etec de Francisco Morato (school), Northern Sub Records (Label)",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "Experimental Old School Music"
+      },
+      {
+        "q": "Musical Background",
+        "a": "None :) Computer Music?"
+      },
+      {
+        "q": "Started making music",
+        "a": "In 2010 I started getting interested in electronic music, so I tried out an online application which was just clipping samples. Between 2010 and 2013 I listened to several different styles of music. I was so interested that I started listening to Deep House and researching the history of Chicago House on several sites. It was there that I came across Detroit Techno which was quite different from Techno tracks I had ever heard. Most of these were not Trance but Techno with the industrial sound of Belgium. At that time I started to feel like producing music. Until one day I listened to an 808Chunk which inspired me to finally get on with it."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "In 2012 I discovered Audiotool on a website for applications and game downloads. I even tried to do a song but the Adobe Flash Player on my computer was outdated. So I asked my dad to update it because my Linux computer could not support other music applications. He was so busy that it took a long time to help me upgrade the Adobe Flash Player although he is good with computers.\n\nThen in 2013 Flash was updated and I started making music with Audiotool. The first tracks were horrible. Audiotool is a great App! But it is very difficult for those who know nothing about music production."
+      },
+      {
+        "q": "Message to the community",
+        "a": "Thanks for your comments on all my tracks! If you are new to Audiotool and do not know anything about music ... I have to talk to you: it's not easy but do not give up!"
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/detroit_is_calling/",
@@ -4802,21 +5591,64 @@
   {
     "album_url": "https://www.audiotool.com/album/blgcbm/",
     "is_hidden": true,
-    "artist": "",
-    "tracks": []
+    "artist": "Daniel Burgoyne",
+    "tracks": [],
+    "album_number": 56,
+    "real_name": "Daniel Burgoyne",
+    "intro": "Another young talent of ours is Daniel Burgoyne, also 14, from London. We well remember how at the age of 11 he delivered such stringently produced Minimal-Techno Tracks that our jaws dropped when we heard how young he was. Today he is well established in his sector and again and again he proves his talent with successful experiments in other styles. Judge for yourselves",
+    "about": "Daniel Burgoyne\nPlace: London, England\nAge: 14\nSchool: Christ's College (Finchley)",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "Don't know really, just anything outside of EDM"
+      },
+      {
+        "q": "Musical Background",
+        "a": "3 years playing the drums"
+      },
+      {
+        "q": "Started making music",
+        "a": "Around 2011"
+      },
+      {
+        "q": "On Audiotool",
+        "a": "I literally searched \"free music production\" and AT appeared"
+      },
+      {
+        "q": "Message to the community",
+        "a": "I'd like to thank all of the people who have supported my music, even when I seem a bit more unknown in the community and even when I am not slightly confident in a track. Thanks to the developers of Audiotool for creating this incredible environment (even if there's still a lot more to come) and not making me pay for it. I've learned a lot."
+      }
+    ]
   },
   {
     "artist": "Infyuthsion",
-    "real_name": "",
+    "real_name": "Michael Hleck",
     "date": "2015-09-02",
     "album_number": 57,
     "at_profile": "https://www.audiotool.com/user/infyuthsion/",
     "album_url": "https://www.audiotool.com/album/fegwtffwt/",
     "photo": "https://api.audiotool.com/album/FeGwtFFWt/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/infyuthsion/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Infyuthsion is not only by far the most successful producer on Audiotool. From Hardtrance to 80s inspired Electro beats he has a near perfect command. But his involvement reaches further than mere music making. His video tutorials have cult status and many a beginner has gained from them valuable insights into the use of Audiotool and production techniques in general.\n\nThank you Michael for your support and the truly great contribution you have made over the years.",
+    "about": "Michael Hleck\nPlace: Winnipeg, Manitoba, Canada\nAge: 28\nProfession: Following my heart :P",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "I like to use lots saw waveforms and play the same 4 chords over and over again. This is mostly because I have very little understanding of music theory. But that's okay. What I can tell you, is that if this was like, some kind of music mag interview. I'd fake a european accent so I sound all inspired and underground, and say some rubbish stock line like: \"With Compu'ers, it's like the possibilities are endless.\""
+      },
+      {
+        "q": "Musical Background",
+        "a": "I've never really played any traditional instruments, and in fact I had no interest in music at all until I was 15. I mean, I guess you could call a computer an instrument! So, in that case I'm a real professional at pressing/clicking buttons that make sounds. So Pro, brah."
+      },
+      {
+        "q": "Started making music",
+        "a": "Somewhere in the early 2000's, I fumbled my way through trial and error and learned how to make tracks in early versions of Fruity Loops. Which was funny, because there were so many really bad glitches. Like, really bad glitches no one explained to me. I mostly ignored normal social interactions like meeting girls and going to parties, to invest my time into pressing a key, hearing a stupid bass sample, laughing, and repeating. It's been about 10 or so years and now I have friends to come over, press a key, hear a stupid bass sample, laugh, and repeat."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "\"Back in the Day\" when the site was still under \"The Company That Shall Not Be Named\" (AT seems to hate Hobnox or something, it's basically the Voldemort of Audiotool), My friend Tyler told me about Audiotool.\n\nI used it to mess around while I was in class, instead of doing my work. Coincidentally, I also got top marks in that class as a network engineer. Also coincidentally, no one really seems to want to hire network engineers, and so I went on to work doing security. This is where I spent the majority of my time using Audiotool, as the cities highest paid musician."
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/dubtexno/",
@@ -4879,16 +5711,37 @@
   },
   {
     "artist": "Universe Cosmic",
-    "real_name": "",
+    "real_name": "Uriel Zaldivar González",
     "date": "2015-09-09",
     "album_number": 58,
     "at_profile": "https://www.audiotool.com/user/universecosmic/",
     "album_url": "https://www.audiotool.com/album/qbtlhcu/",
     "photo": "https://api.audiotool.com/album/QbtlhcU/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/universecosmic/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Whenever the signature n_n crosses your path UniverseCosmic is not far away. His fresh Disco House style is oriented to the origins from Chicago just like the French House of the late nineties. Get your bell-bottoms out and let the music play.",
+    "about": "Uriel Zaldivar González\nPlace: Chalco De Díaz Covarrubias, México\nAge: Coming soon 22 years! (Day after tomorrow)\nProfession: Employee at a Recycling Plant",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "My style... hmm. Well I like make easy beats in general which I experiment with. But I have two main styles:\n\nThe first: Stupid Melodic House Music. Which are cheesy melodies on easy drum beats are catchy sounds.\n\nThe second is my Disco Drugs. Which are danceable tracks between 120 and 140 bpm with the classic four on the floor beats with a lot of filtered sounds and in particular cases the 303.\n\nAlso I try to make Drum 'n' Bass and other stuff... n_n"
+      },
+      {
+        "q": "Musical Background",
+        "a": "I have been listening to Disco Music since I was 10 years old and I lhave listened to a lot of different music genres. I tried to play the guitar, keyboard, drums and some percussions but my experience is practically null. I only know the basics of music production. The scale, some chords and patterns, drums ... Currently I'm trying to study a little more... n_n"
+      },
+      {
+        "q": "Started making music",
+        "a": "Well ... when I was a kid my dad had some old instruments. I had fun over the years creating sounds which I liked. In 2008 I tested a lot of programs for making electronic music and I made some tracks for fun. Oriented in tribal beats, percussions and drums. But I stopped until I found AT. n_n"
+      },
+      {
+        "q": "On Audiotool",
+        "a": "One day, searching for musical games, I found the emulator RT 909 by André Michelle and I liked a lot.\n\nLater in 2011 I came across Audiotool and I made some tracks. But I left it again to sort out my musical idea and returned in 2012 as Universe Cosmic. n_n"
+      },
+      {
+        "q": "Message to the community",
+        "a": "Audiotool: Thanks for existing:\n\nTo the new users: make and listen to the music you like and accept the good or bad critiques in order to improve. Enjoy this great opportunity to express what you think and feel to the Audiotool community and be grateful to the people who made Audiotool possible n_n"
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/menara_petronas/",
@@ -4969,16 +5822,33 @@
   },
   {
     "artist": "[Kh&#x00e1;&#x0159;&#x00a1;]'",
-    "real_name": "",
+    "real_name": "Nathaniel Green",
     "date": "2015-09-15",
     "album_number": 59,
     "at_profile": "https://www.audiotool.com/user/khman750/",
     "album_url": "https://www.audiotool.com/album/hbufuuw/",
     "photo": "https://api.audiotool.com/album/HBuFUuw/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/khman750/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Another highly talented young Audiotool personality. The Trap Beats, which he mostly produces himself, give his tracks the independent character that is missing in the work of many others in this genre. Keep your eyes and ears open: there's something to discover here.",
+    "about": "Nathaniel Green\nPlace: Florida\nAge: 15\nSchool: Sophomore in High School",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "I'd describe my style as instrumental Alternative Hip Hop and sometimes I'll make trap music."
+      },
+      {
+        "q": "Musical Background",
+        "a": "I taught myself how to play piano in fourth grade, and I've been a percussionist since the 6th grade. I'm currently playing quints in my High school marching band. (Playing Quints builds some serious chops. My wrists are a lot stronger now.)"
+      },
+      {
+        "q": "On Audiotool",
+        "a": "I discovered Audiotool while looking up ways to make music for free. At first I wanted to be an animator but I found out quickly that I'm really bad at drawing and that animating is really difficult. So I found this website called Soundation and it was cool, but I had a feeling that I could find something better. I did a Google search, found Audiotool, and the rest is history."
+      },
+      {
+        "q": "Message to the community",
+        "a": "My advice to the Audiotool community is to always be yourself, always experiment, never be intimidated by people better than you, and for the love of all that is good DON'T DELETE YOUR TRACKS. THERE WILL ALWAYS BE SOMEONE DISAPPOINTED WHEN YOU DO THAT. That's all. Stay classy Audiotool."
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/lewi_-_odyssey/",
@@ -5054,21 +5924,64 @@
   {
     "album_url": "https://www.audiotool.com/album/advfxu/",
     "is_hidden": true,
-    "artist": "",
-    "tracks": []
+    "artist": "Proxima",
+    "tracks": [],
+    "album_number": 60,
+    "real_name": "David Thompson",
+    "intro": "Proxima's abstractly minimal Dubstep approach leaves a hardboiled impression that suggests his productions are the work of an old hand. We were all the more baffled to find that the artist behind the fantastic album 'hope EP' was at that time 13 years old.\n\nToday, a year older and no longer quite so reticent but no less tricky, Proxima is playing at the forefront in the league of complex contemporary Bass Music. Definitely worth a visit.",
+    "about": "David Thompson\nPlace: London, England.\nAge: 14\nSchool: Student at Dwight School London",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "Dubstep music. I like making Dubstep music because there's a lot of freedom within the genre. (There are many different styles of Dubstep.) I really enjoy making melodies, with triplets and swing notes. I like it when a few good melodies overlap in the drop, it creates a really \"full\" sound. I never learn't music theory.. I kinda just go with what sounds good. I think it's working for me so far. :)"
+      },
+      {
+        "q": "Musical Background",
+        "a": "I play piano. I stopped having lessons about 2 years ago, now I teach myself. I used to learn guitar but it hurt my fingers too much, so I stopped. Now, my computer is my instrument. But whenever I write melodies..I always go to my piano to play it, and make chords and stuff."
+      },
+      {
+        "q": "Started making music",
+        "a": "2011 - 2012 i think..It was a few years ago. I first got into EDM music when I was in the car with my dad and a cool song came on the radio. It was Superbad by Doctor P and Flux Pavilion. I was like whoaaaaa. Before this time, I didn't really listen to music much. It was this track that first got me interested in the whole EDM scene. I found all kinds of music. I unearthed a passion for music within myself that I didn't even know was there. I loved music so much I wanted to see if i could create my own. So i looked on the internet for any free online music production software. And after some extensive searching i found a yahoo answers post where someone recommended audiotool.com. This is when I found Audiotool."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "2011-2012. I started out making sample tracks (like most people.) I just put some samples into the timeline and published them under the alias \"Lumax\". Then for about half a year I just stopped. I think i got bored of that. Then one day when I was visiting a friend, he told me that he wanted to become a music producer. I told him about Audiotool, and produced a track in his house. This was my first actual track ever. \"Alone\" (I've deleted it now). I got back into Audiotool. I began to make Dubstep, since I was really into it. Then I made some experimental/ambient type tracks, and now I'm back into Dubstep. :)"
+      },
+      {
+        "q": "Message to the community",
+        "a": "THANK YOUUUUUU\n\nI want to thank everyone. First of all the Devs, thanks for creating such an amazing and versatile software\n\nI'd also like to thank all of my followers. I never imagined that I would get anywhere close to 600 followers, let alone being this week's featured artist :O. I don't always like my music that much but i'm glad you guys do.\n\nTo all the new/aspiring producers out there: DON'T GIVE UP! I didn't get to where I am by giving up. Just make what you enjoy, and become a part of the wonderful community we have here. The only way to improve with your music is to keep making it, and fine tuning your style.\n\nThanks for listening, guys. :)"
+      }
+    ]
   },
   {
     "artist": "Mikke",
-    "real_name": "",
+    "real_name": "Mikael Quantacquapende",
     "date": "2015-09-30",
     "album_number": 61,
     "at_profile": "https://www.audiotool.com/user/mikke5885/",
     "album_url": "https://www.audiotool.com/album/e0aqv0xnj/",
     "photo": "https://api.audiotool.com/album/e0AQv0xnJ/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/mikke5885/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "The brand name Mikke stands for versatility at the highest level. Whatever style he adopts it's always the characteristic hypnotic synth melodies that are at the forefront and unfailingly hit the mark. The most recent sensation was the quantitatively and qualitatively very successful remix contest of his track 'Ghosts'.",
+    "about": "Mikael Quantacquapende\nPlace: I was born in Rome, Italy on the famous Tiber Island right in the middle of the city. The non Italian name is due to the fact that I'm half Swedish. My mother is the blonde one and my father is the Italian one. Now I'm still living here in Rome but maybe I will leave Italy after school. I was just thinking about a colder place... oh yes I'm half Swedish.\nAge: Almost 18\nProfession: I'm in the last class of senior high school.",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "This is the hardest question that Audiotool put to me. I think I'll define my tracks as a meditation but the truth is that I don't have one particular style. These are the ones I prefer and to which I'm getting closer: Cosmic Music, Ambient and Funky music."
+      },
+      {
+        "q": "Musical Background",
+        "a": "So when I went to secondary school I played the flute... and that is pretty much my musical experience before Audiotool eheh. Not so much, really but I listened to a lot of music. When I was small my father made me listen to Peter Gabriel from whom I learned never to love only one single style."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "I started making music from zero experience (oh yes the flute...) with Audiotool three years ago. Making music by my own was never in my plans but when a friend showed me his tracks on this mysterious app I was inspired. After this I decided to open an account and to publish some tracks."
+      },
+      {
+        "q": "Message to the community",
+        "a": "Thank you to all my supporters for these three amazing years especially jinx, farcio and whitegrizzly for introducing me to the community and for teaching me a lot of things :). Audiotool is incredible, it completely changed me regarding music. Also when I listen to music I now distinguish all the sounds and understand more things. So thank you for creating this fantastic app!\n\nCheers Mikke."
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/sol_solo/",
@@ -5149,16 +6062,37 @@
   },
   {
     "artist": "Mr. Standfast",
-    "real_name": "",
+    "real_name": "Jack",
     "date": "2015-10-07",
     "album_number": 62,
     "at_profile": "https://www.audiotool.com/user/mrstandfast/",
     "album_url": "https://www.audiotool.com/album/0ybmt/",
     "photo": "https://api.audiotool.com/album/0YBMT/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/mrstandfast/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Hardly any other artist on Audiotool has such an unmistakably original musical profile as Mr. Standfast. Every one of his almost five hundred tracks is a small work of art, each with its own special cosmos. His work with drums, melodies and atmosphere is unique and for the inquisitive definitely worth studying.",
+    "about": "Jack\nPlace: Virginia, United States\nAge: 33\nProfession: Voight-Kampff specialist at Tyrell Corp",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "Music for driving up to Grand Marais in the autumn. My stuff is inspired by a mixture of Presbyterian theology and boreal forests. An essential part of what it means to be made in the image of God the creator is, I reckon, to have a creative capacity. And the ability to, more or less, create and design the sound of your instrument every time you work with a synthesizer is part of what makes synthesis so amazing. I dig that."
+      },
+      {
+        "q": "Musical Background",
+        "a": "At the same time I was listening to Grieg, Beethoven, and Brahms I was playing piano in a jazz band. We used to go into the practice rooms in my old high school and listen to really off the wall stuff during study hall. The drummer in our band lent me a copy of the Richard D. James Album, and from there I spiraled into Autechre, Bochum Welt, Photek, Global Goon and have since then only fallen more deeply in love with what a synthesizer can do."
+      },
+      {
+        "q": "Started making music",
+        "a": "I've been composing music as long as I've been playing instruments. I played piano from the age of 6, and pretty early on was interested in improvisational jazz, but also orchestral music and big cinematic and romantic musical landscapes."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "A friend of mine (who is a brilliant musician, and analog genius) put me onto audiotool back in 2010. Since then, I've made around 471 tracks...which...if you do the math...is a track every 4 days. I don't have a lot of free time, and tend to just jot down melodies as they pop into my head. But this year I've been in grad school and only published a track every few months or so."
+      },
+      {
+        "q": "Message to the community",
+        "a": "It should blow our minds that Audiotool is possible, and that it is free. in 2014 audiotool sent Kepz, Frigolito, RNZR and me to Moogfest, and I am not exaggerating to say it was a life changing experience. I think the culture of synthesizers is an incredibly generous and beautiful one. We are all people who have a deep respect for the people who make our instruments--and have to confess that much of what we do would not be possible without the artists behind the instrument. At Moogfest last year, Tom Oberheim spoke a bit about his role in the invention of MIDI, and he paused for a moment to play music written and performed by artists. He was moved to tears at hearing what other people had made out of his instruments. Clark did something similar during his set, pausing to express amazement at what he was able to get from his machines. I think that expresses a perfect summary of the community of electronic music--it's a place where technician and artist coexist peacefully, and get to make some pretty amazing sounds together. That's why I love the fact that Audiotool is full of old and young, remix and original, collaboration and solo act. Thanks to Audiotool for creating the instruments and the place, and thanks to all you Audiotools for making the place amazing."
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/a_turn/",
@@ -5239,16 +6173,37 @@
   },
   {
     "artist": "[Hybrid]",
-    "real_name": "",
+    "real_name": "Kahliel Jones",
     "date": "2015-10-12",
     "album_number": 63,
     "at_profile": "https://www.audiotool.com/user/kahliel/",
     "album_url": "https://www.audiotool.com/album/cvguob117/",
     "photo": "https://api.audiotool.com/album/CVgUoB117/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/kahliel/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "[Hybrid] has been an insider tip for a considerable time. About three years ago his deep, atmospheric track 'Please Keep Breathing' had not only made it on the second a+ compilation 'Amorfx', it also topped the a-records charts on Beatport for more than a year. His mixture of abstract beats and intense sound formations is definitely worth a listen.",
+    "about": "Kahliel Jones\nPlace: San Francisco, California, USA\nAge: 20",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "My style is a combination of samples (used as textures) that are tweaked using the pitch knob on the Machiniste, coupled with many different variations of leads and pads (primary created with the Heisenberg; occasionally the Pulv) and a wide variation of Drums and percussion, typically created through the Machiniste and Beatbox 8. I don't fall under any specific Genre, I experiment with many sounds, although I always try to create a sense of bliss and euphoria through my music, and I always try to include some type of Jazz."
+      },
+      {
+        "q": "Musical Background",
+        "a": "I was born into a very musical family; My mother sang and played guitar, my grandfather also sang and played piano, drums and any kind of brass instrument you could think of, and I had a cousin named Ronnie Brown who used to play for a world-famous Avante Garde Jazz group named Sun Ra (lead Trumpeter). My grandfather was the one to teach me my first instrument (harmonica) and he really took it seriously whenever we'd sing songs in the car, so he gave me a better sense of Key and Tone. When I was about 11, I took my first band class and picked up the trumpet. I did learn much as far as trumpet goes, until I spent a week with my cousin Ronnie, who taught me, just whithin that week, everything I know about reading music. From there on, I played trumpet til I was about 13 and picked up the guitar. Shortly after, my mom bought me my first drumset. So essentially was learning guitar and drums at the same time, and got pretty decent at both. I still play guitar a lot, but I'm primarily producing on Audiotool now."
+      },
+      {
+        "q": "Started making music",
+        "a": "I started creating my own music, when I was about 13 years old. Writing lyrics and composing guitar chords to create my initial sound. over the years, my writing skills have developed tremendously."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "I discovered Audiotool on a foggy morning when I was 16. me and a couple of stoners went back to a friend's house to get all lazy and surf the internet. I remember know how it got brought up but I do remember one of my girl friends saying \"you know there's an app on chrome that you can make dubstep on right?\". I imediately had a change in mood and asked over and over again to tell me the name of the app (Audiotool). Since then, I've been hooked. Making music and practicing every day on the app. I can almost remember my first \"favorite\" Who I believe was from OscarOllie (love you). Audiotool changed my entire life, and essentially gave me more purpose as a creator."
+      },
+      {
+        "q": "Message to the community",
+        "a": "I only really have 2 things to say:\n\n1. Thank you So much to the audiotool crew that helped make this DAW possible. I really can't tell you how much I appreciate having a free platform that still works as an authentic software to create professional production. Like I said earlier, it's changed my life in the most positive way, and now I feel like I'm at a place where I can really make a living off of it.\n\n2. To the AT community: Follow your own path. Whether you want as many followers as possible, or just live to create a beautiful sound for your own purposes, FOLLOW YOUR OWN PATH. I'm personally trying to make it in the music industry and sometimes I have to ignore a lot of the AT users that I even look up to, just because their advice doesn't suit my path. So in the end, trust your gut, and make it whatever you want it to be. But also, PRACTICE. Practice practice practice and don't get lazy. Don't resort to only using loops that are off-key, really put time and effort into it, and understand that it is WORK and wont be easy at first; With that mentality, you wont be so overwhelmed. That's all I have to say."
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/hybrid_heaven_bit-tr_n_rmx/",
@@ -5311,16 +6266,37 @@
   },
   {
     "artist": "dabrig",
-    "real_name": "",
+    "real_name": "Pascal",
     "date": "2015-10-21",
     "album_number": 64,
     "at_profile": "https://www.audiotool.com/user/dabrig/",
     "album_url": "https://www.audiotool.com/album/ttfrr/",
     "photo": "https://api.audiotool.com/album/tTFRr/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/dabrig/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "dabrig was one of the early representatives of minimal Electro music on Audiotool. From his early raw approaches you could see him getting more complex and coherent in the structure and melody composition of his tracks, till his work reached its climax two years ago when he created timeless Audiotool masterpieces like \"Distant Moons\" and \"Origin of Live\".\n\nRecently we have been hearing less of him but there is hope that this will change in foreseeable future.",
+    "about": "Pascal\nPlace: Hamburg, Germany\nAge: 29\nProfession: Who cares",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "In my opinion I make hard, dark and atmospheric Techno music. Sometimes more or less Minimal-like. With a lot of Pulvs (from 5 to 7 is a lot for my computer) in it and focused on bass-synth, atmosphere and percussion. I love to spend hours on riding the knobs of the Pulv to find the one special sound I am searching for. Or I discover a totally different unique sound while I'm searching. But unfortunately this long process means my publish rate is almost zero today."
+      },
+      {
+        "q": "Musical Background",
+        "a": "No musical education if you mean that. No instruments learned except the recorder in school. I don't think I can play it anymore. But I have always loved listening to music.\n\nI always enjoyed hitting keys, drums and xylophones when I saw them until the time came I wanted to make music on my own."
+      },
+      {
+        "q": "Started making music",
+        "a": "I started making music very late, at the age of 22-23 I think. At that time I was listening intensively to albums like Stefan Bodzin's \"Liebe ist ...\" or Jean Michel Jarre's \"Oxygene\".\n\nI loved these sounds and atmospheres so I wanted to create some of them myself. (a naive dream, as I have learned over the years) I got myself a free version of Music Maker and started but was getting bored after a year or so. All those sample and loop blocks, I hadn't a clue what to do with them. Only cutting, copying and pasting all the time ... so a musical out time followed. Then I found something on the internet... a mysterious machine called the Tone Matrix. I really started making music with Audiotool, learning by doing. I was scared by all those devices and knobs but year by year I got better to the point I'm at right now. Still learning more and more."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "As mentioned above I found the Tone Matrix and some other cool mini tools on a website called 'laboratories'.\n\nI played around for some days, which brought back my motivation to make music.\n\nAnd then I wanted to find out more about the Tone Matrix which brought me to a site ehm ... I can't remember the name I'm getting old :)\n\nBut few a months later in march 2010 I found Audiotool. Back then when people like the crazydruminator, femme_robot or virtous duck were around ;) and Sandburgen had just a hand full of followers."
+      },
+      {
+        "q": "Message to the community",
+        "a": "Thanks to all the people who worked on Audiotool for this unique DAW and to the community. Keep up the good work ... and all this without paying. Thanks Thanks Thanks ...\n\nI could write a book of thanks and nice words but I'll keep it simple."
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/e_m_t/",
@@ -5401,16 +6377,37 @@
   },
   {
     "artist": "E-Trim",
-    "real_name": "",
+    "real_name": "Bart Van Eynde",
     "date": "2015-10-27",
     "album_number": 65,
     "at_profile": "https://www.audiotool.com/user/bart_van_eynde/",
     "album_url": "https://www.audiotool.com/album/xmilsqmwn/",
     "photo": "https://api.audiotool.com/album/xMiLsqmwN/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/bart_van_eynde/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "E-Trim can't yet look back on a really long Audiotool career. But that's no reason for not taking a closer look at his nihilistically minimal approach. Whether he is letting off steam in physical Drum and Bass and Neurofunk tracks - in which milieu he obviously feels at home - or groping his way toward minimal Techno, he does both with the same intuition for dark but forceful Club Music.",
+    "about": "Bart Van Eynde\nPlace: Herentals, Belgium\nAge: 36\nProfession: High school Teacher (electrics, mechanics, CAD design, ...), no I'm not the enemy ;)",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "I mainly make bass driven dark drum n' bass and neurofunk, but occasionally I try some other things. Recently I'm also doing some dark minimal techno.\n\nThe best word to describe my style is \"Dark\". My goal on Audiotool is to one day make a perfect, pitch black track :)"
+      },
+      {
+        "q": "Musical Background",
+        "a": "When I was like ten years old I found an acoustic guitar on one of the closets at home. Intrigued by it I grabbed it and a little booklet with chord fingering fell to the floor. Since that day I tortured my fingertips every day learning the chord fingering and trying to make clean chord progressions. At the age of 12 I bought my first electric guitar and amp. A Fender Strat copy and an 80 watt Marshall amp. Years went by playing cover bands until my brother's punkrock band asked me to fill in for one of their guitar players. This interim job had gotten a little out of hand and I became a true band member. Some line-up changes (and new guitars) later we found a good singer which gave us the opportunity play all over Belgium, some gigs in the Netherlands and even France. Gaining local recognition, we even signed an underground Punk-Rock record label. We recorded 2 full Cd's and we even were the opening act for bands like Pennywise, Bad Religion, Rise Against ...\n\nIn 2013 I quit the band due to lack of time. I felt like I was holding down the band.\n\nMy father was a big rock fan so I grew up with great bands like Pink Floyd, Uriah Heep, Black Sabbath, Deep Purple etc ... I always listened to Grunge, Rock, Metal and Punkrock/hardcore music and later evolved to listening to Progressive rock and metal (the weird and complicated song structures became my new love). I always hated electronical music ... man ... was I wrong :D"
+      },
+      {
+        "q": "Started making music",
+        "a": "At the age of 10 I started composing some little tracks on my guitar. As a 12-year-old I composed some more complex guitar tracks (still very basic compared to the sh#t I've composed later). Helped writing 3 full Cd's with my former band (last one I didn't record because I quit)."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "One day I had to replace a teacher that was on sick-leave. The students of that class didn't had a task so we just started a conversation about music genres and stuff and one of the students showed me Audiotool. At that time I was searching a tool to make drums and synths to make Progressive Rock/Metal myself and it seemed like a cool program. So I started experimenting with the synths and started listening to the published tracks. I learned allot from Infy's tutorials and it was so much fun I never even really came to the part of making Progressive Rock. Spent allot of time experimenting before I published my first track."
+      },
+      {
+        "q": "Message to the community",
+        "a": "Good music always comes from the heart and there's no better way to do it with a (FREE) program that's build from the heart. I never used any other DAWs so I can't compare, but until now I always could make what I wanted to make. Sure there is some lag involved, but I blame my laptop for that ... not Audiotool :)\n\nMy advise to everyone is to make music for yourself and don't care to much about followers, favs and stuff. Sure it is nice and flattering but use this community to learn and share. Make friends, give real critique, collaborate, don't rush into making that next track. Make a track the best you can and then on a beautiful day u get featured ;)\n\nThanks to all Audiotoolers that have supported me during my journey. This feature has happened because of y'all.\n\nThanks allot Audiotool-crew for giving me an outlet to express my (mostly dark) feelings and spread it on this awesome community. And a big thank you for featuring me. I never thought it would happen to me."
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/motorcycle/",
@@ -5491,16 +6488,37 @@
   },
   {
     "artist": "Jacob Tyler",
-    "real_name": "",
+    "real_name": "Jacob Tyler",
     "date": "2015-11-04",
     "album_number": 66,
     "at_profile": "https://www.audiotool.com/user/jakeleavey_ymail_com/",
     "album_url": "https://www.audiotool.com/album/2sem3/",
     "photo": "https://api.audiotool.com/album/2SEm3/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/jakeleavey_ymail_com/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Jacob Tyler is a real Audio pro. His tutorial templates are popular sources of good sound-design and effective production techniques.\n\nThe legendary contest series 'Audiotool Day' which he initiated starts its fourth season on November 10th and in all probability will far exceed previous year's participation. Just one of the reasons for looking by on Jake's Audiotool page.",
+    "about": "Jacob Tyler\nPlace: Hampshire, England\nAge: 18\nProfession: Southampton Solent University, studying to work as a sound engineer.",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "I guess I don't have a specific style but I love messing around combining genres."
+      },
+      {
+        "q": "Musical Background",
+        "a": "Violin for 10 years and played in numerous orchestras."
+      },
+      {
+        "q": "Started making music",
+        "a": "3 years ago. My first ever finished song was done with Audiotool."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "I used to go round one of my friend's house all the time and he made music with Propellerhead's Reason. I didn't have the money to spend on Reason, so I went online looking for a free alternative. I was on the Google Chrome store and found Audiotool. The first time I used it I couldn't get any sound to come through unless I used the tonematrix. I got really annoyed and didn't revisit it for ages, and then I found some of Infyuthsion's tutorials on Youtube and I immediately became hooked."
+      },
+      {
+        "q": "Message to the community",
+        "a": "Audiotool is an amazing site filled with amazing people. I'm at university studying to become a sound engineer, I work producing and recording music for other people as a career. I would never have even considered music as a career if it hadn't been for Audiotool. I guess what I'm trying to say is that Audiotool is a great place and that everyone should keep on doing what they're passionate about.\n\nAlso, I'm hosting the fourth annual \"Audiotool Day\" competition. Every year I upload a track with no content on it. You can then remix this track and you have until the 10th of December to make whatever you want. Last year I got over 5 hours worth of entries and it'd be awesome to see if we can get even more! I shall upload the track on the 10th of November, which allows everyone exactly 1 month."
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/aaron_nominal_-_everything_i_want_is_far_away/",
@@ -5575,16 +6593,41 @@
   },
   {
     "artist": "Apollo Euphoria",
-    "real_name": "",
+    "real_name": "Ethan Lewis",
     "date": "2015-11-11",
     "album_number": 67,
     "at_profile": "https://www.audiotool.com/user/apolloeuphoria/",
     "album_url": "https://www.audiotool.com/album/jkuptea/",
     "photo": "https://api.audiotool.com/album/jkUPTEA/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/apolloeuphoria/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Apollo Euphoria is not only a highly talented young musician. With his Label/Artist-Promotion project GenesisNetwork he has in a comparatively short time made a name for himself on Audiotool. We take this opportunity to congratulate him on his birthday and look forward to many more awesome tracks and projects.",
+    "about": "Ethan Lewis\nPlace: I was born in Indianapolis, Indiana; raised in San Diego, California; and am currently finishing up school in Orlando, Florida\nAge: 16\nSchool: I'm a sophomore in High School",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "I really enjoy Electro/Complextro tracks in or outside of Audiotool—along with some occasional progressive house, melodic Dubstep, etc. However, my personal production style seems to be more geared toward Chill Progressive/Trance. I'd like to, however, begin making uplifting progressive house/trance and electro in the future, as that is my ultimate goal with production."
+      },
+      {
+        "q": "Musical Background",
+        "a": "I think I have a quite extensive musical background. Growing up, I remember listening to country music. Perhaps it was my surroundings that accounted for that. Regardless, it didn't stick around for long.\n\nAfter my parents separated, my mom moved to literally the other side of the country in California. When I moved there with her, I didn't have much technology, so I turned to the radio for music. There happened to be one station that played music from the 70s and 80s that I really liked (also, mostly because I refused to conform to the contemporary standards of Top 40s music). A few of my particular favourites that I could actually recall included Earth Wind & Fire, Billy Paul, Rick James, you get the gist.\n\nNot long after, and completely contrasting the contemporary, my mom gave me and my sister this CD that had music on it from as early as the 1930s. Big Band, it was called. It was the music my grandfather used to listen to, and it really spiked my attention... it was just good-natured, great sounding, upbeat music that I found myself clinging to for awhile.\n\nAfterwards, Pandora relatedly got me into more jazz-like music. Michael Bluble's modern renditions of Frank Sinatra and whatnot.\n\nFollowing that—and actually one of the most pivotal points in my life, I got my hands on the pirated version of Minecraft. The game I absolutely loathed one day, and came to become an extreme enthusiast of the next. I can remember loading up a new world on my school laptop; when the music started playing, I already knew what the game had to offer. It took me a good while to stop playing the game altogether, but during my addiction to it, I learned as much as I possibly could about it; and getting to know C418—the musician behind all of the music in the game, documentary, etc.—and his background in music from the 2012 Mincecon Stream really enlightened me to become what I am today. As I look back on it, truly, if I hadn't gotten into Minecraft, I likely wouldn't be into producing either.\n\nFrom then, and after finding the SoundCloud platform, I started listening to some really generic dubstep just by searching the tag through the site. (Back then, they didn't even really have tags) Nonetheless, I found myself starting to become more engaged with music itself. With prior experience with various genres, SoundCloud became an outlet for me to find artists such as AdhesiveWombat, Sparx, and Sanixels, who—still to this day in my opinion, are some of the best electronic producers out there.\n\nLastly, as you know, being into Minecraft I was pretty involved in the YouTube community regarding that select part of the platform for gamers. I often watched quite a few of CaptainSparklez's videos and he always has an outro with a really interesting track. So, one day, I deceided to find out who was the artist of the track. As it turns out, it was Stephen Walking's \"Top Of The World\" signed to a label called Monstercat that I began listening to promeniently for a good year or two. Only now am I trying to diverge from its confinement and listen to other artists, try finding them on my own. It's difficult, but worthwhile in the end."
+      },
+      {
+        "q": "Started making music",
+        "a": "I've been producing music since—really when I purchased a horrid toy keyboard after receiving a gift card for my birthday. I think I was about 7 or 8, but I remember messing around with different songs, chords... just very basic... crap in general. Soonafter, however, being extremely curious and enticed by what I was hearing, and wanting to improve it, I began trying to make my own music. Looking up free ways to do so online, I found Soundation and started dabbling with that. I probably won't go into too much detail about that, but I mean, if you really want to damage your brain, I guess you could check out the site and search \"MineatronOrigin\" (Which was my Minecraft name).\n\nMy mom started picking up on my ear for music and tried to harness it, putting me in piano lessons early on. Unfortunately, I didn't take most of the opportunities seriously and ended up loosing them. As life goes I suppose. However, it wasn't until last year that I started being pretty much 100% dedicated to production, on Audiotool especially."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "Right after getting fed up with Soundation, I searched a little harder and found Audiotool... That's really all there is to it. Nothing too extravagant. Of course, when I first discovered Audiotool though, I didn't even know there was a community to interact with, so most of my first tracks went unnoticed as I didn't bother to tag anything."
+      },
+      {
+        "q": "Side Projects",
+        "a": "GenesisNetwork is my Audiotool-based music network that is working everyday to find and showcase other artist's talent on the platform and bring out the best in each artist providing feedback and in-depth analysis of their tracks.\n\nOf course, the network is still in it's early stages and we're still establishing the groundwork. However, once we're fully up and running, I would have also acquired a team to maintain it (I'm currently the only one working on it at the moment).\n\nHow it works is artists submit tracks to us through email or rabbit and we determine whether or not they made it in. If they did, they will either be in the current or previous wave. If they didn't, we will do our best to provide constructive feedback on the track they submitted, and they can try as many more times as they'd like.\n\nEach wave in Genesis consists of about ten artists and each artist must release at least one track of their own (not including collaborations) before the wave is complete. Once a wave is finished, previous artists that joined are not allowed to release through Genesis again. There will be a reunion for those who released previously. At the end of a wave, there is a remix competition of every track released through Genesis to determine future artists and to engage the community."
+      },
+      {
+        "q": "Message to the community",
+        "a": "Keep working hard and help each other out. I believe there are amazing people out there waiting to be heard, they honestly cannot do it without your help. Not only that, but I believe we can make this community more connected and a powerful resource for producers across the globe. It already is, in some ways, but there's always room for improvement. You don't have to do something huge to help out either, it could be as simple as giving helpful feedback on a track, regardless of the quality mainly because you don't know really who's behind it. They may just be wait for the opportunity to become something better.\n\nI remember being that person."
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/complextro_urban-contact_style/",
@@ -5641,16 +6684,37 @@
   },
   {
     "artist": "Akimbo",
-    "real_name": "",
+    "real_name": "Jack Hughes",
     "date": "2015-11-18",
     "album_number": 68,
     "at_profile": "https://www.audiotool.com/user/flooroneooneremixes/",
     "album_url": "https://www.audiotool.com/album/ftnagxh/",
     "photo": "https://api.audiotool.com/album/ftNAgXH/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/flooroneooneremixes/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Another talented youngster in the Audiotool Artist Crew: Akimbo delivers polished Club Music with a focus on driving Drum &Bass. And that with a stylistic confidence which makes it hard to believe he is at the beginning of the road. Though he describes himself as an amateur on his AT account, many of his tracks wouldn't be out of place on an official publication. Be sure to check his music out, his future seems promising.",
+    "about": "Jack Hughes\nPlace: Bristol, UK\nAge: 17\nSchool: Still at school",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "Drum and Bass/UK Bass"
+      },
+      {
+        "q": "Musical Background",
+        "a": "I don't really have a musical background to be honest. I played a bit of guitar and piano, and listened to a lot of Classic Rock as I was using my dad's iTunes account most of the time: Led Zepp, Van Halen, The Happy Mondays, those kind."
+      },
+      {
+        "q": "Started making music",
+        "a": "Before Audiotool. I had some guitar and piano lessons, but I never really mastered either instrument, although my dad did teach me enough guitar to jam with him, although it was only the 12 bar and some basic chords. Most musical theory that I've learned has actually come from opening up other users tracks and seeing how they've done certain things, and then trying to copy them."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "I discovered Audiotool when I was about 12, and used to play around with it regularly. But I never really published anything until I was 13, about 4 years ago now. Some of the stuff actually received a positive reception, and from then I was hooked! I've loved seeing artists on this site flourish into some of the most followed users, and the site itself evolve while I watched."
+      },
+      {
+        "q": "Message to the community",
+        "a": "The one thing that I'd like to see more of on Audiotool is more constructive criticism of tracks. At the moment it seems like some tracks only get praise where as a little constructive criticism could make them a lot better. I wouldn't mind someone telling me how to improve my music, and I'm fairly sure that other people wouldn't mind either. So if you can see something that might need improving, just say."
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/kitsch/",
@@ -5725,16 +6789,29 @@
   },
   {
     "artist": "&#x039b;&#x039b;RON",
-    "real_name": "",
+    "real_name": "Aaron Schäfer",
     "date": "2015-11-25",
     "album_number": 69,
     "at_profile": "https://www.audiotool.com/user/erdbeerquark/",
     "album_url": "https://www.audiotool.com/album/rjggctqy/",
     "photo": "https://api.audiotool.com/album/rjGGcTQY/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/erdbeerquark/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "When in 2012 a young man called \"Erdbeerquark\" (strawberry curd) entered the Audiotool stage a murmur went through the virtual crowd. His very first piece went straight into the track feature of the old website. His chilled Downbeat tunes are always spot on. His atmosphere constructions enriched with his surrealistic guitar sounds draw the listener under their spell leaving behind a blissful sense of contentment.",
+    "about": "Aaron Schäfer\nPlace: Berlin, Germany\nAge: 19\nProfession: I am Studying Music-Technology/Sound Engineering in Berlin.",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "Many people call my music \"Ambient\" and I agree to some points. Maybe because of my guitar atmospheres. But all in all it's different to real Ambient.\n\nIt's hard to define my style, I would call it Chill, Deep, Experimental.\n\nThis year I have started to record my electric-guitar and I love playing around with it.\n\nA huge inspiration to me was Eivind Aarset (a Scandinavian guitar player).\n\nHe always makes those big room sized guitars with a lot of reverb, which brings an awesome atmosphere.\n\nI also love working with vocals. I am not very good with the AT synths, mostly I use them in a really simple way for some sub bass, for example.\n\nInspiration: Olaf. He makes awesome beats. And I love his guitars. Even he hasn't published any tracks in the last 2 Years on Audiotool. He is still one of my favorite Audiotool Artists."
+      },
+      {
+        "q": "Musical Background",
+        "a": "I started making music when I was about 12. I played the guitar and sang in a school rockband, Just for fun. I was into Nu-Metal, Rock, and Brit Pop at that age but my music tastechanged when I found out about Audiotool in 2012. My Father told me about Audiotool. And I just went ahead. I didn't have any experience with DAWs.\n\nBut here Audiotool helped me to get into it really fast. And I learned so much from others in the Community. Just because of Audiotool, I started listening to electronic music. But I always wanted to bring something natural into my music. So I started recording my own guitar lines. I hope to get better soon."
+      },
+      {
+        "q": "Message to the community",
+        "a": "I think Audiotool is the perfect place to have fun and let your creativity run wild, and I've found there are so many things you can do with electronic music that you can't with the classical approach to writing music for instruments and stuff. When you're writing electronic music I would advise you to listen to lots of different electronic artists and also listen to classical music. Listening to electronic music really helps me find inspiration for different sounds I could make, different textures and stuff, and the classical music helps me with the actual compositional technique; I try to get into the composers head and wonder what they were thinking, why they are doing what they are doing with the music. Just listen and learn from what is out there, keep doing it until you get better and above all have fun. :)"
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/leave_wip/",
@@ -5815,16 +6892,37 @@
   },
   {
     "artist": "floydpjasper",
-    "real_name": "",
+    "real_name": "Jack Mills",
     "date": "2015-12-02",
     "album_number": 70,
     "at_profile": "https://www.audiotool.com/user/floydpjasper/",
     "album_url": "https://www.audiotool.com/album/7a9ktldnm/",
     "photo": "https://api.audiotool.com/album/7A9ktLDNM/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/floydpjasper/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "The impressive thing about Floydjasper is not only his unfailingly clean production and the outstanding atmospherics of his tracks - every second of which bears witness to his skills. But also his approach to other artists works and his way of commenting on them reveal his knowledge and love of music. An artist we can just warmly recommend.",
+    "about": "Jack Mills\nPlace: Born and raised in Rhode Island, USA\nAge: 23\nProfession: Design-engineer at a bio-medical company, no degree.",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "haha:) In the words of the ever-poetic dronealpha, \"genres R 4 critics.\"\n\nBut to answer the question in a less annoying way, I like warm analog tones, heavy grooves, polyrhythms and minor 7th and 9th chords:)"
+      },
+      {
+        "q": "Musical Background",
+        "a": "Classical guitar from age 5, played recorder, violin in school. I've played bass, guitar and drums in bands ranging stylistically from metal to hip hop to folk and everything in between. It's only been in the past couple years or so that I really seriously have gotten into electronic stuff. I wish I could play trumpet."
+      },
+      {
+        "q": "Started making music",
+        "a": "I started playing when I was 5, but didn't actually start writing my own music until I was about 12."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "My wall says \"ABOUT 4 YEARS AGO\". The cracked DAW I was using gave up the ghost, so I started googling 'browser based sequencer'."
+      },
+      {
+        "q": "Message to the community",
+        "a": "Stop screwing around on facebook and go make some music!"
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/ultraviolet/",
@@ -5893,16 +6991,37 @@
   },
   {
     "artist": "brainwalker",
-    "real_name": "",
+    "real_name": "Stefan Holzner",
     "date": "2015-12-09",
     "album_number": 71,
     "at_profile": "https://www.audiotool.com/user/brainwalker/",
     "album_url": "https://www.audiotool.com/album/3i0j5p/",
     "photo": "https://api.audiotool.com/album/3I0j5P/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/brainwalker/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "The list of Psy Trance musicians on Audiotool isn't the longest. Brainwalker definitely belongs to its pioneers and flagships. In every single note of his output you can feel the experience he has collected over the years he has been into this genre and music in general. A must at every Goa event!",
+    "about": "Stefan Holzner\nPlace: Augsburg near Munich (Germany)\nAge: 40\nProfession: This year I completed a training as a nurse for handicapped people. Before that I was a businessman for 20 years, but it doesn't suit me anymore ;-)",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "Oh, that's not easy – my tracks are inspired by many different styles, from Psy-Trance, Dub, Retro, 8-bit to Rock and Pop - it depends on my mood and different influences in my life… The main genre which I will produce more of in future consists of all kinds of Psy-Trance… The other genres inspire me, but Psy-Trance is what I really love :)"
+      },
+      {
+        "q": "Musical Background",
+        "a": "I never learned any kind of instrument… About twenty years ago I bought a Djembe and played with friends in nature and at Cosmic-Music Festivals. I think that was my first serious contact with a musical instrument… Later a friend loaned me an electri -guitar for some months and I explored the great sounds and rhythms, but I never had guitar-lessons."
+      },
+      {
+        "q": "Started making music",
+        "a": "I started to make music when I was roundabout 13. I played around with an Music-Tracker called \"Pro-Tracker\" on the Amiga 500. I was totally fascinated by creating my own music. I made lots of short tracks, recorded them on cassettes and shared them with friends. In the middle of the 90's I started to buy some cheaper hardware synthesizers and keyboards to produce my own Techno and Trance-stuff."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "Two and a half years ago, my girlfriend asked me if I could look for good and cheep music programms for her, because she wanted to check out making music… I searched for a few hours in the web – and tadaaa: I found Audiotool!\n\nI was really surprised by it's possibilities and since that time I have been inspired to make music with Audiotool. The crazy thing about this is, that I never wanted to produce with software, because I tested one of the usual suspects and it worked against my creativity, but Audiotool convinced me with its easy and clear handling."
+      },
+      {
+        "q": "Message to the community",
+        "a": "For me Audiotool is seriously one of the best tools for producing music. Because it supports my way to be creative. Other kinds of music software are overloaded with possibilities and less intuitive things. I think my creativity gets pushed, if my options are limited – and I definitely have more fun this way! Other DAWs may have 10.000 options and you can download tons of plug-Ins – but that way I never came to an end ;-)\n\nOn the other hand I really like the community! I found a few friends there and sometimes it's surprising how much some people improve in a few months! It helps me to go on with my music and some comments helped me to improve myself – thanks a lot!\n\nSometimes I wish other producers would respect Audiotool! I know so many really good artists on this site – and often the only thing they can say: what – no plugins? – than I won't try it – but it's your fault guys ;-)"
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/missed_generation/",
@@ -5983,16 +7102,37 @@
   },
   {
     "artist": "Zerod",
-    "real_name": "",
+    "real_name": "Alejandro Ybarra",
     "date": "2015-12-16",
     "album_number": 72,
     "at_profile": "https://www.audiotool.com/user/zerod/",
     "album_url": "https://www.audiotool.com/album/mhksqxj/",
     "photo": "https://api.audiotool.com/album/mhKSqxJ/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/zerod/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "Hardly another name has appeared so often on our wall in the last few months: Everyone wants Zerod! Reason enough for us to take a closer look at this young man: flawless EDM music with a tendency towards melodic Dubstep and an occasional touch of frenzy. That's what Zerod is about.",
+    "about": "Alejandro Ybarra\nPlace: Mission, Texas (USA)\nAge: I am currently 15 years old\nSchool: I currently attend High School",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "It's hard to define my style. I like to mix it up sometimes, but most of my tracks are melodic Dubstep. It's what people know me the most for."
+      },
+      {
+        "q": "Musical Background",
+        "a": "I started to listen to Electronic music since I was a young kido. I was around 7 to 9 when I fully got into it and really enjoyed listening to it. Most of it was Electro, Trance, Dubstep, etc."
+      },
+      {
+        "q": "Started making music",
+        "a": "I started to OFFICIALLY make music somewhere around September of 2014. I wasn't that good, but to see how much I've progressed in the span of a year (and a few months) I am highly impressed with how much I've learned and have had experienced. I'm proud to have ran into Audiotool."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "I really wanted to start making music when I was 12. I started messing with DAWs that to this day I cringe hard to. I really couldn't do it so I somewhat gave up. I kept trying to find a DAW that I could really use to actually make music on. FL, Ableton, Cubase, and all those other fancy DAWs cost money. I searched up free DAW and found Audiotool. I decided to take a shot at it. I wasn't disappointed with that I was capable of doing on there."
+      },
+      {
+        "q": "Message to the community",
+        "a": "Audiotool is such an amazing site. The community is really not just a bunch of artists but more of a family to me. I honestly wouldn't be where I am on Audiotool if it wasn't for the community who helped me along the way. They taught me a lot. I really enjoy what the DAW has. The Pulverisateur (I can't spell), the Heisenberg, the giant sample library, the CPU usage that ends up destroying my computer and makes me buy a new one. This DAW is very unique. And I honestly can't leave it for another DAW. Sure I may get another one but eventually Audiotool will come back. Audiotool ALWAYS comes back. :)"
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/neo_tokyo/",
@@ -6061,16 +7201,33 @@
   },
   {
     "artist": "Sandburgen",
-    "real_name": "",
+    "real_name": "Ralf Noetzel",
     "date": "2015-12-23",
     "album_number": 73,
     "at_profile": "https://www.audiotool.com/user/sandburgen/",
     "album_url": "https://www.audiotool.com/album/rs5yxjze/",
     "photo": "https://api.audiotool.com/album/RS5yXjze/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/sandburgen/avatar/512.jpg",
-    "intro": "",
-    "about": "",
-    "interview": [],
+    "intro": "You only have to look at the number of tracks that he has produced – and the following he has amassed – to see that Sandburgen is one of the cornerstones of the Audiotool.\n\nRooted in Minimal Techno and incorporating elements from Trance and Electro, he has crafted his own individual style that makes his tracks both distinctive and instantly recognisable.\n\nHe encourages other users by consistently producing high quality tracks that demonstrate the full potential of Audiotool and set the standard for others to aspire to.\n\n[Mark 'Shakey' Valleley]",
+    "about": "Ralf Noetzel\nPlace: Düsseldorf (Germany)\nAge: 43\nProfession: Executive chef in an event catering service",
+    "interview": [
+      {
+        "q": "Musical Style",
+        "a": "My style has its roots in the Minimal and Detroit Techno of the 1990s. Influences from deep Retro Electro, mournful Indie music and of course everything that I listen to on Audiotool have created the style you know me for.\n\nArtists like Dominik Eulberg, Stimming and Extrawelt and many more have been producing more melancholic dance music for some time now. So Sandy style is not really my invention.\n\nThe outstanding soundtrack of the movie 'Drive' motivated me some years ago to dip into the darker 80s influenced Electro Pop. This was the foundation for Cripta's and my collaboration project 'Sandcripten' which is still one of my favorites."
+      },
+      {
+        "q": "Musical Background",
+        "a": "Kids Drum Set - Skip - Recorder - Skip - Classical guitar - Skip - Bassguitar in the band of the Music School of my hometown - Skip - Drums in some Post Punk and New Wave Bands - Skip - And then finally the 90ies:\n\nAfter a few years as a guest at diverse raves and club parties it was just a matter of time till I wanted to take an active part in the Techno thing. So I started buying records - mainly crappy mainstream Trance anthems. The first DJ gig followed soon. And that although I didn't actually have the faintest idea what it was all about. That was to change when after an appearance at the AJZ Bielefeld I was introduced to a guy who had already made himself a name in the scene of the town. After the party was long since over André Michelle and I stood in the deserted club and took turns spinning records.\n\nMusically I would say that I gained more from this encounter cause from this day on it was clear that Detroit Techno and Acid was the thing not the Rave stuff that I had up my sleeve.\n\nAfter this our paths were inseparable. We invested in a small home studio which was not to stand still for a long time. Later my brother, who you may know as Olondro entered the scene. And so we published a considerable number of records under our - unfortunately rather short-lived - labels Matrix, TINT and Convenience. It seems marketing was not our main talent.\n\nAt the beginning of the millenium, after our crew had dispersed across the country I started working with DAWs like Reason and Cubase and some of my tracks were published under a Cologne based label called Pinku. But that all petered out. I stopped spinning records and I turned to producing sounds for browser games and websites. That earned me a bit of cash but killed the last motivation to produce my own tracks.\n\nBut then Something happened which was to put everything in place again:\n\nAndré who had meanwhile landed up in Berlin decided to come to Cologne, bringing with him a project that sounded like the fulfillment of his (and all our) dreams."
+      },
+      {
+        "q": "On Audiotool",
+        "a": "To be honest, as long as Audiotool belonged to Hobnox I didn't play so much with it. The impossibility to save and publish and the restricted choice of instruments didn't immediately made to take it seriously. Not until the range of instruments grew and André converted me by showing me rnzr's \"teeth\" and his \"8 Bit but a Bite\" did I start to get hooked. Five years and about 250 tracks later I can say that I as an old hand was able to learn a lot."
+      },
+      {
+        "q": "Message to the community",
+        "a": "I want to thank the handful of guys whose enthusiasm has made Audiotool possible. It plays an irreplaceable role in the lives of many of us.\n\nIt has turned out to be more than just a DAW. It has become a platform for creative thinking in general and has inspired many users to start up further projects and collaborations. And that's what the community has achieved. Stay classy and carry on being awesome!\n\nAnd of course thanks for the vote!"
+      }
+    ],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/lonesome-Xl0seF/",
