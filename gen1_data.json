@@ -4105,13 +4105,13 @@
       }
     ],
     "social": {},
-    "color1": "",
+    "color1": "#ffe366",
     "color2": "",
-    "color_accent": "",
+    "color_accent": "#ffe366",
     "desc_bg": "",
-    "links_bar_color": "",
+    "links_bar_color": "#fcfcfc",
     "bar_color": "#111111",
-    "bar_text_color": "#ffffff",
+    "bar_text_color": "#d99514",
     "is_hidden": false
   },
   {
