@@ -4016,11 +4016,11 @@
       }
     ],
     "social": {},
-    "color1": "",
+    "color1": "#dedede",
     "color2": "",
-    "color_accent": "",
+    "color_accent": "#dedede",
     "desc_bg": "",
-    "links_bar_color": "",
+    "links_bar_color": "#bfbaba",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
     "is_hidden": false
