@@ -1940,13 +1940,13 @@
       }
     ],
     "social": {},
-    "color1": "",
+    "color1": "#82b39f",
     "color2": "",
-    "color_accent": "",
-    "desc_bg": "",
-    "links_bar_color": "",
-    "bar_color": "#111111",
-    "bar_text_color": "#ffffff",
+    "color_accent": "#82b39f",
+    "desc_bg": "#beb0b4",
+    "links_bar_color": "#e9cfab",
+    "bar_color": "#2e1115",
+    "bar_text_color": "#8e3144",
     "is_hidden": false
   },
   {
