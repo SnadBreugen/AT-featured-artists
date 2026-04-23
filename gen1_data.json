@@ -3579,11 +3579,11 @@
       }
     ],
     "social": {},
-    "color1": "",
+    "color1": "#ad5b52",
     "color2": "",
-    "color_accent": "",
-    "desc_bg": "",
-    "links_bar_color": "",
+    "color_accent": "#ad5b52",
+    "desc_bg": "#a9b9db",
+    "links_bar_color": "#667491",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
     "is_hidden": false
