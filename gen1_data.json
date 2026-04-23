@@ -4216,7 +4216,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Z&#x00e9;",
+    "artist": "Zé",
     "real_name": "",
     "date": "2015-04-29",
     "album_number": 42,
@@ -4296,13 +4296,13 @@
       }
     ],
     "social": {},
-    "color1": "",
+    "color1": "#f2eb52",
     "color2": "",
-    "color_accent": "",
-    "desc_bg": "",
-    "links_bar_color": "",
+    "color_accent": "#f2eb52",
+    "desc_bg": "#fdfefa",
+    "links_bar_color": "#a3b0c5",
     "bar_color": "#111111",
-    "bar_text_color": "#ffffff",
+    "bar_text_color": "#f2eb52",
     "is_hidden": false
   },
   {
