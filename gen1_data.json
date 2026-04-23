@@ -2917,13 +2917,13 @@
       }
     ],
     "social": {},
-    "color1": "",
+    "color1": "#02aa54",
     "color2": "",
-    "color_accent": "",
-    "desc_bg": "",
-    "links_bar_color": "",
-    "bar_color": "#111111",
-    "bar_text_color": "#ffffff",
+    "color_accent": "#02aa54",
+    "desc_bg": "#c2f5da",
+    "links_bar_color": "#d96f76",
+    "bar_color": "#3c413b",
+    "bar_text_color": "#cac4b6",
     "is_hidden": false
   },
   {
