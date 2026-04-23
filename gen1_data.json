@@ -979,12 +979,12 @@
       }
     ],
     "social": {},
-    "color1": "",
+    "color1": "#bebdba",
     "color2": "",
-    "color_accent": "",
-    "desc_bg": "",
-    "links_bar_color": "",
-    "bar_color": "#111111",
+    "color_accent": "#bebdba",
+    "desc_bg": "#e8c840",
+    "links_bar_color": "#8aa1b8",
+    "bar_color": "#252a31",
     "bar_text_color": "#ffffff",
     "is_hidden": false
   },
