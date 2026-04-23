@@ -195,12 +195,12 @@
       }
     ],
     "social": {},
-    "color1": "#c144b0",
+    "color1": "",
     "color2": "",
-    "color_accent": "#c144b0",
-    "desc_bg": "#d4bfc7",
-    "links_bar_color": "#769bcd",
-    "bar_color": "#9c3c8d",
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
+    "bar_color": "#111111",
     "bar_text_color": "#ffffff",
     "is_hidden": false
   },
@@ -282,13 +282,13 @@
       }
     ],
     "social": {},
-    "color1": "#b35e61",
+    "color1": "",
     "color2": "",
-    "color_accent": "#b35e61",
-    "desc_bg": "#ffdbc7",
-    "links_bar_color": "#8ed6d7",
-    "bar_color": "#fe4f48",
-    "bar_text_color": "#000000",
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
+    "bar_color": "#111111",
+    "bar_text_color": "#ffffff",
     "is_hidden": false
   },
   {
@@ -387,12 +387,12 @@
       }
     ],
     "social": {},
-    "color1": "#01b6af",
+    "color1": "",
     "color2": "",
-    "color_accent": "#01b6af",
-    "desc_bg": "#a6e8e7",
-    "links_bar_color": "#c99945",
-    "bar_color": "#221858",
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
+    "bar_color": "#111111",
     "bar_text_color": "#ffffff",
     "is_hidden": false
   },
@@ -470,13 +470,13 @@
       }
     ],
     "social": {},
-    "color1": "#555555",
+    "color1": "",
     "color2": "",
-    "color_accent": "#555555",
-    "desc_bg": "#dad9d8",
-    "links_bar_color": "#c2c2c2",
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
     "bar_color": "#111111",
-    "bar_text_color": "#bfbfbf",
+    "bar_text_color": "#ffffff",
     "is_hidden": false
   },
   {
@@ -581,13 +581,13 @@
       }
     ],
     "social": {},
-    "color1": "#87b0af",
+    "color1": "",
     "color2": "",
-    "color_accent": "#87b0af",
-    "desc_bg": "#fefefe",
-    "links_bar_color": "#a37590",
-    "bar_color": "#ffffff",
-    "bar_text_color": "#000000",
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
+    "bar_color": "#111111",
+    "bar_text_color": "#ffffff",
     "is_hidden": false
   },
   {
@@ -686,17 +686,17 @@
       }
     ],
     "social": {},
-    "color1": "#5fb4d8",
+    "color1": "",
     "color2": "",
-    "color_accent": "#5fb4d8",
-    "desc_bg": "#c6f9fe",
-    "links_bar_color": "#c6f9fe",
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
     "bar_color": "#111111",
-    "bar_text_color": "#c6f9fe",
+    "bar_text_color": "#ffffff",
     "is_hidden": false
   },
   {
-    "artist": "Marodeur",
+    "artist": "Marodeur (Tocaknox)",
     "real_name": "Nicolai Staufenberg",
     "date": "2014-08-25",
     "album_number": 8,
@@ -791,13 +791,13 @@
       }
     ],
     "social": {},
-    "color1": "#a6b6cc",
+    "color1": "",
     "color2": "",
-    "color_accent": "#a6b6cc",
-    "desc_bg": "#c2c4d3",
-    "links_bar_color": "#a9def9",
-    "bar_color": "#9a9a9a",
-    "bar_text_color": "#21211f",
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
+    "bar_color": "#111111",
+    "bar_text_color": "#ffffff",
     "is_hidden": false
   },
   {
@@ -898,13 +898,13 @@
       }
     ],
     "social": {},
-    "color1": "#bf1d35",
+    "color1": "",
     "color2": "",
-    "color_accent": "#bf1d35",
-    "desc_bg": "#fafdfe",
-    "links_bar_color": "#19b67f",
-    "bar_color": "#495561",
-    "bar_text_color": "#f7fe7c",
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
+    "bar_color": "#111111",
+    "bar_text_color": "#ffffff",
     "is_hidden": false
   },
   {
@@ -1003,12 +1003,12 @@
       }
     ],
     "social": {},
-    "color1": "#bebdba",
+    "color1": "",
     "color2": "",
-    "color_accent": "#bebdba",
-    "desc_bg": "#fef7da",
-    "links_bar_color": "#8aa1b8",
-    "bar_color": "#252a31",
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
+    "bar_color": "#111111",
     "bar_text_color": "#ffffff",
     "is_hidden": false
   },
@@ -1102,15 +1102,14 @@
       }
     ],
     "social": {},
-    "color1": "#48af53",
+    "color1": "",
     "color2": "",
-    "color_accent": "#48af53",
-    "desc_bg": "#eeece0",
-    "links_bar_color": "#a6d5ed",
-    "bar_color": "#989bbc",
-    "bar_text_color": "#000000",
-    "is_hidden": false,
-    "quote": "I've never been apart of an online community like I have been with Audiotool. To me, it truly feels like a community of friends and artist alike, and I thank you all for being such cool peeps. So much damn talent in one place. "
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
+    "bar_color": "#111111",
+    "bar_text_color": "#ffffff",
+    "is_hidden": false
   },
   {
     "artist": "Shakey",
@@ -1214,15 +1213,14 @@
       }
     ],
     "social": {},
-    "color1": "#3891d2",
+    "color1": "",
     "color2": "",
-    "color_accent": "#3891d2",
-    "desc_bg": "#bcddf5",
-    "links_bar_color": "#61bbf4",
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "quote": "I have to come to know, love and meet some talented music makers through Audiotool. I love the fact that I can open up your tracks and steal your ideas!"
+    "is_hidden": false
   },
   {
     "artist": "opaqity",
@@ -1332,15 +1330,14 @@
       }
     ],
     "social": {},
-    "color1": "#1879a3",
+    "color1": "",
     "color2": "",
-    "color_accent": "#1879a3",
+    "color_accent": "",
     "desc_bg": "",
-    "links_bar_color": "#64b4b7",
-    "bar_color": "#010101",
-    "bar_text_color": "#ea2b1c",
-    "is_hidden": false,
-    "quote": "Audiotool is the coolest way to get into making music. The relatively small community makes everyone's presence so much more valuable - so make the music you love."
+    "links_bar_color": "",
+    "bar_color": "#111111",
+    "bar_text_color": "#ffffff",
+    "is_hidden": false
   },
   {
     "artist": "White Grizzly",
@@ -1438,9 +1435,9 @@
       }
     ],
     "social": {},
-    "color1": "#9e9e9e",
+    "color1": "",
     "color2": "",
-    "color_accent": "#9e9e9e",
+    "color_accent": "",
     "desc_bg": "",
     "links_bar_color": "",
     "bar_color": "#111111",
@@ -1537,15 +1534,14 @@
       }
     ],
     "social": {},
-    "color1": "#ff9d04",
+    "color1": "",
     "color2": "",
-    "color_accent": "#ff9d04",
-    "desc_bg": "#fcfdfa",
-    "links_bar_color": "#f9e733",
-    "bar_color": "#fe9a04",
-    "bar_text_color": "#000000",
-    "is_hidden": false,
-    "quote": "Audiotool forever"
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
+    "bar_color": "#111111",
+    "bar_text_color": "#ffffff",
+    "is_hidden": false
   },
   {
     "artist": "In5omniac",
@@ -1660,8 +1656,8 @@
     "color_accent": "",
     "desc_bg": "",
     "links_bar_color": "",
-    "bar_color": "#717171",
-    "bar_text_color": "#000000",
+    "bar_color": "#111111",
+    "bar_text_color": "#ffffff",
     "is_hidden": false
   },
   {
@@ -1760,12 +1756,12 @@
       }
     ],
     "social": {},
-    "color1": "#b26186",
+    "color1": "",
     "color2": "",
-    "color_accent": "#b26186",
-    "desc_bg": "#dde69e",
-    "links_bar_color": "#4fab6a",
-    "bar_color": "#58243d",
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
+    "bar_color": "#111111",
     "bar_text_color": "#ffffff",
     "is_hidden": false
   },
@@ -1865,11 +1861,11 @@
       }
     ],
     "social": {},
-    "color1": "#fa7993",
+    "color1": "",
     "color2": "",
-    "color_accent": "#fa7993",
-    "desc_bg": "#d6e6b7",
-    "links_bar_color": "#b9505e",
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
     "is_hidden": false
@@ -1976,13 +1972,13 @@
       }
     ],
     "social": {},
-    "color1": "#82b39f",
+    "color1": "",
     "color2": "",
-    "color_accent": "#82b39f",
-    "desc_bg": "#beb0b4",
-    "links_bar_color": "#e9cfab",
-    "bar_color": "#2e1115",
-    "bar_text_color": "#8e3144",
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
+    "bar_color": "#111111",
+    "bar_text_color": "#ffffff",
     "is_hidden": false
   },
   {
@@ -2093,13 +2089,13 @@
       }
     ],
     "social": {},
-    "color1": "#23b14d",
+    "color1": "",
     "color2": "",
-    "color_accent": "#23b14d",
+    "color_accent": "",
     "desc_bg": "",
-    "links_bar_color": "#fe7f26",
-    "bar_color": "#fe7f26",
-    "bar_text_color": "#23b14d",
+    "links_bar_color": "",
+    "bar_color": "#111111",
+    "bar_text_color": "#ffffff",
     "is_hidden": false
   },
   {
@@ -2210,11 +2206,11 @@
       }
     ],
     "social": {},
-    "color1": "#b3b5c4",
+    "color1": "",
     "color2": "",
-    "color_accent": "#b3b5c4",
+    "color_accent": "",
     "desc_bg": "",
-    "links_bar_color": "#e7e5f2",
+    "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
     "is_hidden": false
@@ -2315,11 +2311,11 @@
       }
     ],
     "social": {},
-    "color1": "#32d6f9",
+    "color1": "",
     "color2": "",
-    "color_accent": "#32d6f9",
-    "desc_bg": "#d6c9b0",
-    "links_bar_color": "#f8940e",
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
     "is_hidden": false
@@ -2428,13 +2424,13 @@
       }
     ],
     "social": {},
-    "color1": "#cc8265",
+    "color1": "",
     "color2": "",
-    "color_accent": "#cc8265",
-    "desc_bg": "#fde6d8",
-    "links_bar_color": "#fbd9c6",
-    "bar_color": "#7cc3de",
-    "bar_text_color": "#000000",
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
+    "bar_color": "#111111",
+    "bar_text_color": "#ffffff",
     "is_hidden": false
   },
   {
@@ -2597,9 +2593,9 @@
       }
     ],
     "social": {},
-    "color1": "#eedddd",
+    "color1": "",
     "color2": "",
-    "color_accent": "#eedddd",
+    "color_accent": "",
     "desc_bg": "",
     "links_bar_color": "",
     "bar_color": "#111111",
@@ -2813,13 +2809,13 @@
       }
     ],
     "social": {},
-    "color1": "#3de7f7",
+    "color1": "",
     "color2": "",
-    "color_accent": "#3de7f7",
-    "desc_bg": "#bcebf0",
-    "links_bar_color": "#116e86",
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
     "bar_color": "#111111",
-    "bar_text_color": "#3ce1f1",
+    "bar_text_color": "#ffffff",
     "is_hidden": false
   },
   {
@@ -2926,13 +2922,13 @@
       }
     ],
     "social": {},
-    "color1": "#82e3f4",
+    "color1": "",
     "color2": "",
-    "color_accent": "#82e3f4",
-    "desc_bg": "#f4e3c1",
-    "links_bar_color": "#eb8161",
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
     "bar_color": "#111111",
-    "bar_text_color": "#8be6f8",
+    "bar_text_color": "#ffffff",
     "is_hidden": false
   },
   {
@@ -3037,13 +3033,13 @@
       }
     ],
     "social": {},
-    "color1": "#02aa54",
+    "color1": "",
     "color2": "",
-    "color_accent": "#02aa54",
-    "desc_bg": "#c2f5da",
-    "links_bar_color": "#d96f76",
-    "bar_color": "#3c413b",
-    "bar_text_color": "#cac4b6",
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
+    "bar_color": "#111111",
+    "bar_text_color": "#ffffff",
     "is_hidden": false
   },
   {
@@ -3148,13 +3144,13 @@
       }
     ],
     "social": {},
-    "color1": "#71cdd5",
+    "color1": "",
     "color2": "",
-    "color_accent": "#71cdd5",
-    "desc_bg": "#fffaf0",
-    "links_bar_color": "#fe806d",
-    "bar_color": "#eaeac6",
-    "bar_text_color": "#98988e",
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
+    "bar_color": "#111111",
+    "bar_text_color": "#ffffff",
     "is_hidden": false
   },
   {
@@ -3247,11 +3243,11 @@
       }
     ],
     "social": {},
-    "color1": "#b65029",
+    "color1": "",
     "color2": "",
-    "color_accent": "#b65029",
+    "color_accent": "",
     "desc_bg": "",
-    "links_bar_color": "#78bad1",
+    "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
     "is_hidden": false
@@ -3352,13 +3348,13 @@
       }
     ],
     "social": {},
-    "color1": "#35c9d2",
+    "color1": "",
     "color2": "",
-    "color_accent": "#35c9d2",
-    "desc_bg": "#b8ccd5",
-    "links_bar_color": "#4a942f",
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
     "bar_color": "#111111",
-    "bar_text_color": "#4a942f",
+    "bar_text_color": "#ffffff",
     "is_hidden": false
   },
   {
@@ -3451,7 +3447,7 @@
     ]
   },
   {
-    "artist": "eratekk",
+    "artist": "&#x0398;LE",
     "real_name": "Ole Renfordt",
     "date": "2015-02-25",
     "album_number": 33,
@@ -3558,13 +3554,13 @@
       }
     ],
     "social": {},
-    "color1": "#e8aa00",
+    "color1": "",
     "color2": "",
-    "color_accent": "#e8aa00",
-    "desc_bg": "#eae4d9",
-    "links_bar_color": "#ffffff",
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
     "bar_color": "#111111",
-    "bar_text_color": "#e4a801",
+    "bar_text_color": "#ffffff",
     "is_hidden": false
   },
   {
@@ -3649,13 +3645,13 @@
       }
     ],
     "social": {},
-    "color1": "#9d0c4b",
+    "color1": "",
     "color2": "",
-    "color_accent": "#9d0c4b",
-    "desc_bg": "#f6e5ed",
-    "links_bar_color": "#cb9db3",
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
     "bar_color": "#111111",
-    "bar_text_color": "#c4276b",
+    "bar_text_color": "#ffffff",
     "is_hidden": false
   },
   {
@@ -3760,11 +3756,11 @@
       }
     ],
     "social": {},
-    "color1": "#ad5b52",
+    "color1": "",
     "color2": "",
-    "color_accent": "#ad5b52",
-    "desc_bg": "#a9b9db",
-    "links_bar_color": "#667491",
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
     "is_hidden": false
@@ -3867,13 +3863,13 @@
       }
     ],
     "social": {},
-    "color1": "#32976b",
+    "color1": "",
     "color2": "",
-    "color_accent": "#32976b",
-    "desc_bg": "#f2e5bf",
-    "links_bar_color": "#cbaf64",
-    "bar_color": "#fdb534",
-    "bar_text_color": "#3d11a0",
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
+    "bar_color": "#111111",
+    "bar_text_color": "#ffffff",
     "is_hidden": false
   },
   {
@@ -3978,13 +3974,13 @@
       }
     ],
     "social": {},
-    "color1": "#3dafb8",
+    "color1": "",
     "color2": "",
-    "color_accent": "#3dafb8",
-    "desc_bg": "#f9dccd",
-    "links_bar_color": "#b9c251",
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
     "bar_color": "#111111",
-    "bar_text_color": "#919191",
+    "bar_text_color": "#ffffff",
     "is_hidden": false
   },
   {
@@ -4089,15 +4085,14 @@
       }
     ],
     "social": {},
-    "color1": "#ef7f04",
+    "color1": "",
     "color2": "",
-    "color_accent": "#ef7f04",
-    "desc_bg": "#c4d4cb",
-    "links_bar_color": "#13ab54",
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
     "bar_color": "#111111",
-    "bar_text_color": "#f07f04",
-    "is_hidden": false,
-    "quote": "You guys are amazing. I've never seen such a vibrant and diverse community such as Audiotool. The ability to make, share, learn, and grow as musicians via the internet is a blessing to be had."
+    "bar_text_color": "#ffffff",
+    "is_hidden": false
   },
   {
     "artist": "aBstracT",
@@ -4197,11 +4192,11 @@
       }
     ],
     "social": {},
-    "color1": "#dedede",
+    "color1": "",
     "color2": "",
-    "color_accent": "#dedede",
+    "color_accent": "",
     "desc_bg": "",
-    "links_bar_color": "#bfbaba",
+    "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
     "is_hidden": false
@@ -4286,13 +4281,13 @@
       }
     ],
     "social": {},
-    "color1": "#ffe366",
+    "color1": "",
     "color2": "",
-    "color_accent": "#ffe366",
+    "color_accent": "",
     "desc_bg": "",
-    "links_bar_color": "#fcfcfc",
+    "links_bar_color": "",
     "bar_color": "#111111",
-    "bar_text_color": "#d99514",
+    "bar_text_color": "#ffffff",
     "is_hidden": false
   },
   {
@@ -4387,17 +4382,17 @@
       }
     ],
     "social": {},
-    "color1": "#d96247",
+    "color1": "",
     "color2": "",
-    "color_accent": "#d96247",
+    "color_accent": "",
     "desc_bg": "",
-    "links_bar_color": "#ffbead",
-    "bar_color": "#ffffff",
-    "bar_text_color": "#000000",
+    "links_bar_color": "",
+    "bar_color": "#111111",
+    "bar_text_color": "#ffffff",
     "is_hidden": false
   },
   {
-    "artist": "Zé",
+    "artist": "Z&#x00e9;",
     "real_name": "",
     "date": "2015-04-29",
     "album_number": 42,
@@ -4477,13 +4472,13 @@
       }
     ],
     "social": {},
-    "color1": "#f2eb52",
+    "color1": "",
     "color2": "",
-    "color_accent": "#f2eb52",
-    "desc_bg": "#fdfefa",
-    "links_bar_color": "#a3b0c5",
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
     "bar_color": "#111111",
-    "bar_text_color": "#f2eb52",
+    "bar_text_color": "#ffffff",
     "is_hidden": false
   },
   {
@@ -4582,13 +4577,13 @@
       }
     ],
     "social": {},
-    "color1": "#dfd29e",
+    "color1": "",
     "color2": "",
-    "color_accent": "#dfd29e",
+    "color_accent": "",
     "desc_bg": "",
-    "links_bar_color": "#df9981",
+    "links_bar_color": "",
     "bar_color": "#111111",
-    "bar_text_color": "#fdecf4",
+    "bar_text_color": "#ffffff",
     "is_hidden": false
   },
   {
@@ -4699,13 +4694,13 @@
       }
     ],
     "social": {},
-    "color1": "#adeaf9",
+    "color1": "",
     "color2": "",
-    "color_accent": "#adeaf9",
+    "color_accent": "",
     "desc_bg": "",
-    "links_bar_color": "#7eddf6",
+    "links_bar_color": "",
     "bar_color": "#111111",
-    "bar_text_color": "#a4e6f8",
+    "bar_text_color": "#ffffff",
     "is_hidden": false
   },
   {
@@ -5994,49 +5989,49 @@
         "url": "https://www.audiotool.com/track/dubtexno/",
         "name": "allday long dub",
         "track_artist": "noraus1",
-        "desc": ""
+        "desc": "Noraus is just so godly good at creating wonderful atmospheres in Audiotool, and I don't think there is anyone on Audiotool who doesn't like this track."
       },
       {
         "url": "https://www.audiotool.com/track/afterglow_20/",
         "name": "AFTERGLOW (Original Mix)",
-        "track_artist": "noraus1",
-        "desc": ""
+        "track_artist": "Beat Canteen",
+        "desc": "This was my favorite remix contest, the original track is just great and has a good flow. Plus there is some good memories of nostalgia."
       },
       {
         "url": "https://www.audiotool.com/track/trapped_inside_the_box/",
         "name": "Trapped Inside the Box",
-        "track_artist": "Beat Canteen",
+        "track_artist": "Inavon",
         "desc": "An insanely gorgeous track that tickles my ears in all the right ways. It's just so, so good in every way."
       },
       {
         "url": "https://www.audiotool.com/track/office_bossa_nova/",
         "name": "Office Bossa Nova",
-        "track_artist": "Beat Canteen",
+        "track_artist": "Frigolito",
         "desc": "All of Frigolitos tracks are astronomically miles above what everyone else on Audiotool can make. Coincidentally, I find this track rather amusing."
       },
       {
-        "url": "https://www.audiotool.com/track/beyond_reality-l8kbtW7/",
+        "url": "https://www.audiotool.com/track/beyond_reality-l8kbtw7/",
         "name": "Beyond Reality",
-        "track_artist": "Inavon",
-        "desc": "A really tallented guy with obviously a lot of experience. Audiotool needs more psytrance. Everything here is pure excellence and shows what audiotool can do."
+        "track_artist": "Sonic Particles",
+        "desc": "A really talented guy with obviously a lot of experience. Audiotool needs more psytrance. Everything here is pure excellence and shows what audiotool can do."
       },
       {
         "url": "https://www.audiotool.com/track/too_far/",
         "name": "Too Far",
-        "track_artist": "Inavon",
+        "track_artist": "Astrum",
         "desc": "Love the rhodes in this track. Yeah Astrum has a lot of dance music, but I like his chill stuff."
       },
       {
         "url": "https://www.audiotool.com/track/chasing_happiness/",
         "name": "Chasing Happiness",
-        "track_artist": "Frigolito",
-        "desc": ""
+        "track_artist": "Jordi Moragues",
+        "desc": "Underrated artist. He's been around for a bit now, but if you haven't checked him out his tracks are really cool!"
       },
       {
         "url": "https://www.audiotool.com/track/topaz/",
         "name": "Topaz",
-        "track_artist": "Frigolito",
-        "desc": ""
+        "track_artist": "Infyuthsion",
+        "desc": "Favorite own track. There is just something about the simplicity and beauty of this track that reminds me of when I first started making music. I love how the synths just intertwine throughout the track. :)"
       }
     ],
     "social": {},
@@ -6086,68 +6081,68 @@
       {
         "url": "https://www.audiotool.com/track/menara_petronas/",
         "name": "Menara Petronas",
-        "track_artist": "Kepz &amp; oedipax",
-        "desc": ""
+        "track_artist": "Kepz & oedipax",
+        "desc": "Great sounds. I sense the feeling between two great artists. Maybe it's not their technically best track but it is a beautiful memory from those days. n_n"
       },
       {
         "url": "https://www.audiotool.com/track/disco_shark/",
         "name": "disco shark",
-        "track_artist": "Kepz &amp; oedipax",
-        "desc": "Awesome, I love the the percussion work. The synths are addictive. I wanna dance in the sea... n_n"
+        "track_artist": "rnzr",
+        "desc": "Awesome, I love the percussion work. The synths are addictive. I wanna dance in the sea... n_n"
       },
       {
         "url": "https://www.audiotool.com/track/suzlukla/",
         "name": "Suzlukla",
-        "track_artist": "rnzr",
-        "desc": "My first reaction was OH! That sound is really danceable, stupendous rhythm and crazy synths, love it ... n_n"
+        "track_artist": "Austek",
+        "desc": "My first reaction was OH! That sound is really danceable, stupendous rhythm and crazy synths, love it... n_n"
       },
       {
         "url": "https://www.audiotool.com/track/clubbing/",
         "name": "clubbing",
-        "track_artist": "rnzr",
+        "track_artist": "andremoda",
         "desc": "The synths are cool, love the subtle phaser effect. I keep my trance and feel a small sense of dance in me... n_n"
       },
       {
         "url": "https://www.audiotool.com/track/funk_experiment/",
         "name": "Funk experiment",
-        "track_artist": "Austek",
+        "track_artist": "Tyburn",
         "desc": "Brings me old memories. Funk style. The sound of the bass and piano are pleasant but it's the synths that catch me... n_n"
       },
       {
         "url": "https://www.audiotool.com/track/lavish_life_filter_house/",
         "name": "Lavish life (Filter house)",
-        "track_artist": "Austek",
-        "desc": ""
+        "track_artist": "Les Énchantillonneurs",
+        "desc": "Memorable track, essence of Old School... n_n"
       },
       {
         "url": "https://www.audiotool.com/track/loveball/",
         "name": "LoveBall",
-        "track_artist": "andremoda",
+        "track_artist": "cripta",
         "desc": "Glorious sound, excellent management of the samples. Nice creative work in the bass, really feel something with this. It's right: No Pulve No Party... n_n"
       },
       {
         "url": "https://www.audiotool.com/track/great_escape/",
         "name": "Great Escape",
-        "track_artist": "andremoda",
+        "track_artist": "drum.",
         "desc": "Feel the energy flowing. This sound is really relaxing for me. n_n"
       },
       {
         "url": "https://www.audiotool.com/track/palm_trees/",
         "name": "Palm Trees",
-        "track_artist": "Tyburn",
-        "desc": "I love a lot the Drum 'n' Bass, but this style is impressive. He is a genius with the synths. They are fantastic. It makes me feel good and without a doubt I would call it brilliant... n_n"
+        "track_artist": "kav",
+        "desc": "I love a lot the Drum 'n' Bass, but this style is impressive. He is a genius with the synths. It makes me feel good and without a doubt I would call it brilliant... n_n"
       },
       {
-        "url": "https://www.audiotool.com/track/sister-vZRUIhTL/",
+        "url": "https://www.audiotool.com/track/sister-vzruihtl/",
         "name": "sister",
-        "track_artist": "Tyburn",
+        "track_artist": "pot",
         "desc": "8 bit nostalgic feel. Continuous rhythm, awesome synths. I love the wood block, it makes me shudder. Maybe it is a bit short but I love it! n_n"
       },
       {
         "url": "https://www.audiotool.com/track/stoici_urqhestrva_uc_n_n/",
-        "name": "Stoici Urqhestrva (UC &amp; n_n)",
-        "track_artist": "Les Énchantillonneurs",
-        "desc": ""
+        "name": "Stoici Urqhestrva (UC & n_n)",
+        "track_artist": "UniverseCosmic",
+        "desc": "Favorite own track. I am proud of this track. No samples, no presets, just Audiotool! n_n"
       }
     ],
     "social": {},
@@ -6193,62 +6188,62 @@
       {
         "url": "https://www.audiotool.com/track/lewi_-_odyssey/",
         "name": "Odyssey.",
-        "track_artist": "Lewi Astro (@ssurrealboy)",
-        "desc": ""
+        "track_artist": "Lewi Astro",
+        "desc": "Lewis is a huge inspiration. We're about the same age, but his music is on a completely different level than mine. This song in particular is very cinematic and the choir like main synth is simply magical."
       },
       {
-        "url": "https://www.audiotool.com/track/faded-ACJE98U5H/",
+        "url": "https://www.audiotool.com/track/faded-acje98u5h/",
         "name": "Faded",
-        "track_artist": "Lewi Astro (@ssurrealboy)",
-        "desc": "I've got to thank $Ramoney$ for helping me get interested in trap music. This song has some awesome melodies that go perfectly together. Songs like this one make me believe that trap music isn't just repetitive hi hats, 808's, and air horns. This song is a gem."
+        "track_artist": "$Ramoney$",
+        "desc": "I've got to thank $Ramoney$ for helping me get interested in trap music. Songs like this one make me believe that trap music isn't just repetitive hi hats, 808's, and air horns. This song is a gem."
       },
       {
         "url": "https://www.audiotool.com/track/teal_water/",
         "name": "Teal//Water",
-        "track_artist": "$Ramoney$",
-        "desc": ""
+        "track_artist": "[Hybrid]",
+        "desc": "Definite proof that some truly beautiful tracks on this program. [Hybrid] unfortunately deleted most of his tracks a while ago. Luckily, he kept this gem. When I listened to this song I was inspired to make more professional sounding tracks."
       },
       {
         "url": "https://www.audiotool.com/track/play_that_trippy_music_hybrid/",
         "name": "Play That + [Hybrid]",
-        "track_artist": "$Ramoney$",
-        "desc": ""
+        "track_artist": "Limitless & [Hybrid]",
+        "desc": "This collab has two artists who I love very much. It's probably one of the most original Hip Hop songs I've ever heard. I love the chill synths and the fact that this song is in 3/4."
       },
       {
         "url": "https://www.audiotool.com/track/doctrina_de_lumine/",
         "name": "Doctrina de Lumine",
-        "track_artist": "[Hybrid]",
-        "desc": "I remember first listening to this song. I was feeling kinda down and I'm not sure how, but it kinda matched how i was feeling. I loved the percussion. I had never heard anything like it before, and even though it was weird, the song would most likely feel very incomplete without it. The attack on the pad was genius. I just really like the vibe this song gives off."
+        "track_artist": "floydpjasper",
+        "desc": "I was feeling kinda down and I'm not sure how, but it kinda matched how I was feeling. I loved the percussion. The attack on the pad was genius. I just really like the vibe this song gives off."
       },
       {
         "url": "https://www.audiotool.com/track/ixcanxfly/",
         "name": "ixcanxfly.",
-        "track_artist": "[Hybrid]",
+        "track_artist": "Dzool",
         "desc": "Possibly one of the best Lo-Fi Hip Hop songs I've ever heard. Everything about this song is excellent to me. The sampling is great. The distortion is superb. This is a legit [AS] bump track."
       },
       {
-        "url": "https://www.audiotool.com/track/home-qCwB7QRu/",
+        "url": "https://www.audiotool.com/track/home-qcwb7qru/",
         "name": "Home",
-        "track_artist": "Limitless",
-        "desc": "This was one of the first songs I'd heard on audiotool when I first started. At the time I was just getting interested in genres other than regular hip hop. This song sounded so professional. To this day I wonder how DR U M was able to make this masterpiece. This song helped me get interested in making music."
+        "track_artist": "drum.",
+        "desc": "This was one of the first songs I'd heard on audiotool when I first started. This song sounded so professional. To this day I wonder how DR U M was able to make this masterpiece. This song helped me get interested in making music."
       },
       {
         "url": "https://www.audiotool.com/track/as_magic_lamp/",
         "name": "[AS] Magic Lamp",
-        "track_artist": "[Hybrid]",
-        "desc": "OBN helped get me interested in experimental hip hop early on. After I heard this song I started discovering artists similar to him outside of audiotool and on audiotool. OBN has made hundreds of other beauties but this one will always have a special place in my mind."
+        "track_artist": "[offbeatninja]",
+        "desc": "OBN helped get me interested in experimental hip hop early on. After I heard this song I started discovering artists similar to him. OBN has made hundreds of other beauties but this one will always have a special place in my mind."
       },
       {
         "url": "https://www.audiotool.com/track/i_ll_never_forgive_you/",
         "name": "I'll never forgive you",
-        "track_artist": "Limitless",
-        "desc": ""
+        "track_artist": "OzWu",
+        "desc": "Artist recommendation. This guy is very underrated. He's just producing hot black fire track after track and I don't feel like he gets the attention he deserves. He's very unique, and he's very skilled."
       },
       {
         "url": "https://www.audiotool.com/track/sippin_snippet/",
         "name": "Sippin",
-        "track_artist": "[Hybrid]",
-        "desc": ""
+        "track_artist": "[Khář¡]' & C Sling",
+        "desc": "Favorite own track. It's short, it's simple, and I can bump it with my friends when we're hanging out. It sounds pretty nice on my speakers. I've made better tracks but this is my favorite."
       }
     ],
     "social": {},
@@ -6265,7 +6260,74 @@
     "album_url": "https://www.audiotool.com/album/advfxu/",
     "is_hidden": true,
     "artist": "Proxima",
-    "tracks": [],
+    "tracks": [
+      {
+        "url": "https://www.audiotool.com/track/illuminati_lumberjacks/",
+        "name": "Illuminati Lumberjacks",
+        "track_artist": "abstract",
+        "desc": "I love the melodies in this track. I like how they all blend perfectly when they overlap in the drop, it sounds very nice. Also the chords are reaaaaaally good."
+      },
+      {
+        "url": "https://www.audiotool.com/track/as_make_u_mine_but_how/",
+        "name": "[as] Make U Mine (But How?)",
+        "track_artist": "[offbeatninja]",
+        "desc": "The theme of this bump resonates with me a lot, when I think about past crushes and stuff like that."
+      },
+      {
+        "url": "https://www.audiotool.com/track/falls/",
+        "name": "Falls",
+        "track_artist": "Sora",
+        "desc": "The beat and the piano sample go really well together. I like the rough sidechaining on it, and the melody."
+      },
+      {
+        "url": "https://www.audiotool.com/track/young-zwhni/",
+        "name": "young",
+        "track_artist": "amoeba",
+        "desc": "I challenged amoeba to make this track a while back. It's a track without any reverb at all. He still managed to produce an amazing ambient track just like I expected."
+      },
+      {
+        "url": "https://www.audiotool.com/track/a2_-_hwe_1/",
+        "name": "A2 - HWE.1",
+        "track_artist": "VLTRA",
+        "desc": "This track just takes me to another world. VLTRA has managed to create such an ethereal atmosphere and I'm at a loss for words to describe it."
+      },
+      {
+        "url": "https://www.audiotool.com/track/su4y4nfui/",
+        "name": "ｗｈｙ ｄｉｄ ｔｈｅ ｌｉｇｈｔ ｆａｄｅ",
+        "track_artist": "ｒａｃｅｃａｒ",
+        "desc": "This one is very unique. I've never heard any song like this before. It's interesting because it was made of familiar sounds, but it was presented in an unfamiliar way."
+      },
+      {
+        "url": "https://www.audiotool.com/track/roll_through_scribble/",
+        "name": "Roll Through [Scribble]",
+        "track_artist": "OXBLUD",
+        "desc": "The melody is so catchy, I love it. The vocals are catchy even though I don't know what they're saying."
+      },
+      {
+        "url": "https://www.audiotool.com/track/twinkle_twinkle_-_synth_voice/",
+        "name": "Twinkle, Twinkle - Synth Voice",
+        "track_artist": "Frigolito",
+        "desc": "This is just next level. Frigolito is known for being extremely creative and he always does things with the app that no one else even tries. I admire this track because it shows the undiscovered capability of AT."
+      },
+      {
+        "url": "https://www.audiotool.com/track/2_-_sleep_dep/",
+        "name": "2 - SLEEP DEP",
+        "track_artist": "Nominal",
+        "desc": "My favorite part of this track is the intro, it just mesmerises me. Whenever I listen to it... I feel sentimental."
+      },
+      {
+        "url": "https://www.audiotool.com/track/paradise_honest/",
+        "name": "Paradise, Honest",
+        "track_artist": "Future Sound Collabs, trrrrillionare, Tyburn, Nominal & Post Myth",
+        "desc": "One of my favorite tracks of all time. Even outside of AT. This song is just so beautiful. All the parts of this track just flow perfectly and blend really well, and I love it."
+      },
+      {
+        "url": "https://www.audiotool.com/track/frogs_and_rabbits/",
+        "name": "FROGs and RABBITs",
+        "track_artist": "MUDA",
+        "desc": "Underrated artist. MUDA is probably the most underrated audiotool user I have ever seen. The way he uses presets is amazing, his/her music is so professional."
+      }
+    ],
     "album_number": 60,
     "real_name": "David Thompson",
     "intro": "Proxima's abstractly minimal Dubstep approach leaves a hardboiled impression that suggests his productions are the work of an old hand. We were all the more baffled to find that the artist behind the fantastic album 'hope EP' was at that time 13 years old.\n\nToday, a year older and no longer quite so reticent but no less tricky, Proxima is playing at the forefront in the league of complex contemporary Bass Music. Definitely worth a visit.",
@@ -6328,67 +6390,73 @@
         "url": "https://www.audiotool.com/track/sol_solo/",
         "name": "sol solo",
         "track_artist": "noraus1",
-        "desc": ""
+        "desc": "This true artist never fails to surprise me and when this track came out I couldn't believe it was actually made with Audiotool. The first moment I heard this masterpiece it inspired me so much that I decided to start making this type of music."
       },
       {
         "url": "https://www.audiotool.com/track/night_ride/",
         "name": "Dream Tape",
-        "track_artist": "noraus1",
-        "desc": "This is the best Trance track I have found on Audiotool. When I started listening I immediately fell in love with this amazing masterpiece because of the pad shots he uses which create a really cool ambience. The track develops perfectly and then at 2:51 my brain starts"
+        "track_artist": "Kepz",
+        "desc": "This is the best Trance track I have found on Audiotool. I immediately fell in love with this amazing masterpiece because of the pad shots he uses which create a really cool ambience. At 2:51 my brain starts 'travelling by itself'."
       },
       {
         "url": "https://www.audiotool.com/track/4_am/",
         "name": "4 AM",
-        "track_artist": "Kepz",
-        "desc": "Astrum really chose the perfect title for his beautiful track. This masterpiece really gets me because every time I listen to it I feel that I'm actually alone at my desk at 4 a.m. producing in front of a window from which I can see all the city lights. Alone yes, but not completely: because I'm with my friend - which is music."
+        "track_artist": "Astrum",
+        "desc": "Astrum really chose the perfect title for his beautiful track. Every time I listen to it I feel that I'm actually alone at my desk at 4 a.m. producing in front of a window from which I can see all the city lights."
       },
       {
-        "url": "https://www.audiotool.com/track/resonance-y8cJlDO0a/",
+        "url": "https://www.audiotool.com/track/resonance-y8cjldo0a/",
         "name": "Resonance",
-        "track_artist": "Kepz",
-        "desc": ""
+        "track_artist": "LowFeel",
+        "desc": "This track of my good friend LowFeel brings me so many memories. It was actually him that advised me to listen to the great noraus. I hope you will be back some day."
       },
       {
         "url": "https://www.audiotool.com/track/kepz/",
         "name": "Airglow",
-        "track_artist": "Astrum",
-        "desc": "Another trancey bomb from Kepz. This track like his"
+        "track_artist": "Kepz",
+        "desc": "Another trancey bomb from Kepz. His basses, his pads, his melody and his reverb work are incredible. This track makes me feel as if I'm actually driving a car alone in the night, wondering."
       },
       {
         "url": "https://www.audiotool.com/track/find_a_place_right_here/",
         "name": "Find a place right here",
-        "track_artist": "Astrum",
-        "desc": "Amazing collaboration of Cripta and Sandburgen! The melody is fantastic, the vocals are perfect and all the effects get me immediately, Great Masterpiece."
+        "track_artist": "Sandcripten",
+        "desc": "Amazing collaboration of Cripta and Sandburgen! The melody is fantastic, the vocals are perfect and all the effects get me immediately. Great Masterpiece."
       },
       {
         "url": "https://www.audiotool.com/track/shine_in_the_night/",
         "name": "Shine in the Night",
-        "track_artist": "LowFeel",
-        "desc": "Great collab of Lowfeel and uncle Cripta! Super sounds and melody which develops perfectly (2:41 WOW). The drums are perfect and the acoustic snare which is far from the main beat is just perfect because it gives an amazing feeling of power. Great track! I just hope that the four horsemen appear on Audiotool again."
+        "track_artist": "The Four Horsemen",
+        "desc": "Great collab of Lowfeel and uncle Cripta! Super sounds and melody which develops perfectly. I just hope that the four horsemen appear on Audiotool again."
       },
       {
-        "url": "https://www.audiotool.com/track/beyond_reality-l8kbtW7/",
+        "url": "https://www.audiotool.com/track/beyond_reality-l8kbtw7/",
         "name": "Beyond Reality",
-        "track_artist": "LowFeel",
-        "desc": "This track is just BIG! It's a Psytrance masterpiece which immediately penetrates your mind ("
+        "track_artist": "Sonic Particles",
+        "desc": "This track is just BIG! It's a Psytrance masterpiece which immediately penetrates your mind. At minute 3:12 BOOM, everything explodes and the same happened with my mind."
       },
       {
         "url": "https://www.audiotool.com/track/there_s_always_tomorrow/",
         "name": "there's always tomorrow",
-        "track_artist": "Kepz",
-        "desc": "This great artist has amazed everyone with his beautiful tracks and this beautiful piece of art particularly inspired me. The melody is great and the sounds are as clean as they can be. Opaq's track makes me think of a thing that starts and finishes, not a concrete thing but an abstract one. Great track bro."
+        "track_artist": "opaqity",
+        "desc": "This great artist has amazed everyone with his beautiful tracks and this beautiful piece of art particularly inspired me. The melody is great and the sounds are as clean as they can be."
       },
       {
         "url": "https://www.audiotool.com/track/morning_tadpoles/",
         "name": "morning tadpoles",
-        "track_artist": "Kepz",
-        "desc": "I think this is the cleanest set of pads that I ever heard on Audiotool. All the sounds/effects are very professional. This is a track which you hardly believe that it came out of Audiotool. This is a true masterpiece."
+        "track_artist": "noraus1",
+        "desc": "I think this is the cleanest set of pads that I ever heard on Audiotool. All the sounds/effects are very professional. This is a track which you hardly believe that it came out of Audiotool."
       },
       {
-        "url": "https://www.audiotool.com/track/spine-eN6TJU/",
+        "url": "https://www.audiotool.com/track/spine-en6tju/",
         "name": "Spine",
-        "track_artist": "Sandcripten",
-        "desc": "This track has an amazing melody work, just wait for it. The drums are perfect and the bass is very warm and powerful."
+        "track_artist": "Xtract",
+        "desc": "Artist recommendation. Xtract - because I simply like all the tracks I have heard from him, because he is very underrated for the work he does and because he doesn't focus on just one style."
+      },
+      {
+        "url": "https://www.audiotool.com/track/lost_here-xicnix2k/",
+        "name": "Lost Here",
+        "track_artist": "Mikke",
+        "desc": "Favorite own track. I consider this track to be my best one because it turned out as really wanted and expected. I'm usually not so sure when I publish a track but this time it was different."
       }
     ],
     "social": {},
@@ -6439,67 +6507,67 @@
         "url": "https://www.audiotool.com/track/a_turn/",
         "name": "A TURN",
         "track_artist": "Untrust 三",
-        "desc": ""
+        "desc": "This is just so impossibly brilliant I don't even know what to say. It showcases the talents of each artist (and they are formidable)."
       },
       {
         "url": "https://www.audiotool.com/track/sol_solo/",
         "name": "sol solo",
-        "track_artist": "Untrust 三",
-        "desc": ""
+        "track_artist": "noraus1",
+        "desc": "Max's work is its own universe of meticulous sound. He's got an incredible way of balancing massive bass and carefully balanced sound with delicate warbling melodies."
       },
       {
         "url": "https://www.audiotool.com/track/auf_kurs_2015/",
         "name": "Auf Kurs (2015)",
-        "track_artist": "noraus1",
-        "desc": "There's a reason around 2000 people follow Sndbrgn--he's arguably the greatest pound for pound artist on Audiotool. This piece exemplifies the depth, but also the subtle evolution and movement that goes along with every piece he publishes. Like Plastikman with a sense of groove. Just a top notch, brilliant artist."
+        "track_artist": "Snad Breugen",
+        "desc": "There's a reason around 2000 people follow Sndbrgn - he's arguably the greatest pound for pound artist on Audiotool. Like Plastikman with a sense of groove. Just a top notch, brilliant artist."
       },
       {
         "url": "https://www.audiotool.com/track/small_intermezzo/",
         "name": "Small Intermezzo",
-        "track_artist": "noraus1",
+        "track_artist": "Imexpression",
         "desc": "Brilliant electro orchestral stuff here."
       },
       {
-        "url": "https://www.audiotool.com/track/tears-tGgpQJC/",
+        "url": "https://www.audiotool.com/track/tears-tggpqjc/",
         "name": "tears",
-        "track_artist": "Snad Breugen",
-        "desc": "Amoeba is just always incredible. This stuff is demanding of the listener, complex and unpredictable. You can hear a sense of classical harmony in just about every piece, and this is no exception."
+        "track_artist": "amoeba",
+        "desc": "Amoeba is just always incredible. This stuff is demanding of the listener, complex and unpredictable. You can hear a sense of classical harmony in just about every piece."
       },
       {
         "url": "https://www.audiotool.com/track/ipyfo/",
         "name": "Ipyfo",
-        "track_artist": "Snad Breugen",
-        "desc": "Hanging out with Kepz and Moogfest last year was one of the highpoints of the year. In addition to being a fantastic guy, he's (maybe more importantly) one of the most brilliantly natural musicians on Audiotool. His sense of space and melody is haunting and careful, and he clearly loves synthesizers, not just sound. Kepz belongs in any sensible top 5 list of greatest Audiotool artists, and this song is no exception."
+        "track_artist": "Kepz",
+        "desc": "Hanging out with Kepz and Moogfest last year was one of the highpoints of the year. He's (maybe more importantly) one of the most brilliantly natural musicians on Audiotool. Kepz belongs in any sensible top 5 list of greatest Audiotool artists."
       },
       {
-        "url": "https://www.audiotool.com/track/lonesome-Xl0seF/",
+        "url": "https://www.audiotool.com/track/lonesome-xl0sef/",
         "name": "Lonesome",
-        "track_artist": "Imexpression",
-        "desc": "Thousands of Audiotools DEMAND to know what evil genius is behind this. The smart money seems to be on frigolito...but it's quickly becoming one of the great unsolved mysteries of Audiotool."
+        "track_artist": "Someone",
+        "desc": "Thousands of Audiotools DEMAND to know what evil genius is behind this. The smart money seems to be on frigolito... but it's quickly becoming one of the great unsolved mysteries of Audiotool."
       },
       {
         "url": "https://www.audiotool.com/track/the_passers_by/",
         "name": "the passers by",
-        "track_artist": "Imexpression",
+        "track_artist": "opaqity",
         "desc": "This song zaps whatever part of my brain can't stop listening to Global Goon. Opaqity always has something unusual and wondrous going on, this one's just offbeat and weird and excellent."
       },
       {
         "url": "https://www.audiotool.com/track/twin_pines_tott_rmx_wip/",
         "name": "twin pines (Tott RMX)",
-        "track_artist": "amoeba",
-        "desc": ""
+        "track_artist": "Tottenhauser",
+        "desc": "It's a bit embarrassing to include a remix of one of mine on here. But I love the remix culture on audiotool, and this song is one example of how Tottenhauser's mad genius can take one of my little tunes and make it something more memorable."
       },
       {
         "url": "https://www.audiotool.com/track/fma_2_fjfj/",
         "name": "fma 2 fjfj",
-        "track_artist": "amoeba",
-        "desc": ""
+        "track_artist": "dinosaurfoodrecords",
+        "desc": "Underrated artist. His last track was published three years ago, but I wonder if there's some way to bring this hidden genius back?"
       },
       {
         "url": "https://www.audiotool.com/track/bactor/",
         "name": "bactor",
-        "track_artist": "Kepz",
-        "desc": ""
+        "track_artist": "Mr. Standfast",
+        "desc": "Favorite own track. I wrote bactor just after something pretty excellent happened... so it's probably a more fitting choice for edition Audiotool."
       }
     ],
     "social": {},
@@ -6550,49 +6618,49 @@
         "url": "https://www.audiotool.com/track/hybrid_heaven_bit-tr_n_rmx/",
         "name": "Hybrid Heaven {bit-trøn rmx}",
         "track_artist": "///",
-        "desc": ""
+        "desc": "This was Drax's entry to Lewi's remix contest. As non-complex as it is, the bass and chord structure is simply just in the right place. Something about it brings up this huge emotion that I can't quite pin point."
       },
       {
         "url": "https://www.audiotool.com/track/dem_naps/",
         "name": "[Dem.Naps]",
-        "track_artist": "///",
-        "desc": "Khari reminds me a lot of myself, what with how I use my samples and his structure is extremely similar to mine in many songs. The big difference is that he's faster in development and is easily smoother than me. Proud of this dude, I remember when he was just known as 'sampler'."
+        "track_artist": "[Khář¡]'",
+        "desc": "Khari reminds me a lot of myself, what with how I use my samples. The big difference is that he's faster in development and is easily smoother than me. I remember when he was just known as 'sampler'."
       },
       {
         "url": "https://www.audiotool.com/track/water_park_sunday/",
         "name": "Water Park Sunday",
-        "track_artist": "[Khář¡]'",
-        "desc": "Solace impressed me with this one. I've only know him to do DnB until I heard this track. Not only is the lead beautiful, but his drums are tight, the bass is unexpected and on point, and vibe is just chill. This is the type of song you could play in almost setting and it'll still create the tone of the moment."
+        "track_artist": "SOLACE",
+        "desc": "Solace impressed me with this one. I've only known him to do DnB until I heard this track. Not only is the lead beautiful, but his drums are tight, the bass is unexpected and on point, and vibe is just chill."
       },
       {
-        "url": "https://www.audiotool.com/track/im_sorry-1UlbRQar/",
+        "url": "https://www.audiotool.com/track/im_sorry-1ulbrqar/",
         "name": "im sorry",
-        "track_artist": "[Khář¡]'",
-        "desc": ""
+        "track_artist": "swrlly",
+        "desc": "Clu doesn't get enough credit for how versatile he is. Too many people call him 'future-bass' but there's a lot more to him. I've found myself very jealous of how he can accomplish what I've tried for years in just a few weeks."
       },
       {
         "url": "https://www.audiotool.com/track/japanese_trapmaster/",
         "name": "japanese trapmaster",
-        "track_artist": "SOLACE",
-        "desc": "I can't say much about kendrick, other than the fact that he makes bangers. Pretty underrated if you ask me. This song, just spells B.A.N.G.E.R."
+        "track_artist": "kendrick.",
+        "desc": "I can't say much about kendrick, other than the fact that he makes bangers. Pretty underrated if you ask me. This song just spells B.A.N.G.E.R."
       },
       {
-        "url": "https://www.audiotool.com/track/elegance-Yu0GEXEmy/",
+        "url": "https://www.audiotool.com/track/elegance-yu0gexemy/",
         "name": "[Elegance.]",
-        "track_artist": "SOLACE",
-        "desc": "Dzool is the guru of creating Lofi sounds through audiotool, which I know first hand is tricky. He really knows how to drown his sound in vinyl while keeping it very enjoyable. I l love all of his tracks, but I love his sample play in this one, particularly."
+        "track_artist": "Dzool",
+        "desc": "Dzool is the guru of creating Lofi sounds through audiotool, which I know first hand is tricky. He really knows how to drown his sound in vinyl while keeping it very enjoyable."
       },
       {
         "url": "https://www.audiotool.com/track/morning_sway/",
         "name": "morning sway",
-        "track_artist": "swrlly",
-        "desc": ""
+        "track_artist": "Lewi Astro",
+        "desc": "Lewi is such a young talent. He doesn't get enough attention on his newer tracks. It's very soft and pretty, and the chords he uses always compliment the beautiful leads."
       },
       {
-        "url": "https://www.audiotool.com/track/hybrid_heaven_rmx-4FO0pbM/",
+        "url": "https://www.audiotool.com/track/hybrid_heaven_rmx-4fo0pbm/",
         "name": "[Hybrid] Heaven []RMX[]",
-        "track_artist": "swrlly",
-        "desc": "This was my unknown entry to Lewi's"
+        "track_artist": "[Hybrid] & Skitlan",
+        "desc": "Favorite own track. This was my unknown entry to Lewi's 'hybrid heaven' remix competition. Despite it being a remix, everything apart from the synth in the first 27 seconds was all me, NO SAMPLES."
       }
     ],
     "social": {},
@@ -6643,67 +6711,67 @@
         "url": "https://www.audiotool.com/track/e_m_t/",
         "name": "e.m.t.",
         "track_artist": "Snad Breugen",
-        "desc": ""
+        "desc": "You ask why not the edit version... I can't explain. Perhaps nostalgia. But amazing track. I loved it back then and still so."
       },
       {
         "url": "https://www.audiotool.com/track/baby_let_me/",
         "name": "BABY LET ME",
-        "track_artist": "Snad Breugen",
-        "desc": ""
+        "track_artist": "Nominal",
+        "desc": "Love this track. I listen to it often at work to get rid of bad mood."
       },
       {
         "url": "https://www.audiotool.com/track/moon_base/",
         "name": "moon_base",
-        "track_artist": "Nominal",
-        "desc": ""
+        "track_artist": "femme_robot",
+        "desc": "One of the tracks that bind me to AT. Legendary track in my opinion but tastes differ."
       },
       {
         "url": "https://www.audiotool.com/track/c_n_c/",
         "name": "C.N.C",
-        "track_artist": "Nominal",
-        "desc": "Amazing track. I really enjoy the 8bit-ish flavour of it"
+        "track_artist": "Potasmic",
+        "desc": "Amazing track. I really enjoy the 8bit-ish flavour of it."
       },
       {
         "url": "https://www.audiotool.com/track/cembalo_undead/",
         "name": "Cembalo undead",
-        "track_artist": "femme_robot",
-        "desc": ""
+        "track_artist": "Snad Breugen",
+        "desc": "I think this the AT track I have listened to most and it made me a Sndbrgn fan."
       },
       {
         "url": "https://www.audiotool.com/track/himmelblau_preview/",
         "name": "Himmelblau (preview)",
-        "track_artist": "femme_robot",
-        "desc": ""
+        "track_artist": "sumad",
+        "desc": "Very creative and no less amazing track. I love the quiet sounds in this one and I don't agree with the 'pre'."
       },
       {
         "url": "https://www.audiotool.com/track/e-voice/",
         "name": "E-Voice",
-        "track_artist": "Potasmic",
-        "desc": ""
+        "track_artist": "Olondro",
+        "desc": "Awesome track. I think it has the ultimate summer feeling. Listen to it a lot in the open air season."
       },
       {
-        "url": "https://www.audiotool.com/track/closed-fFhRLzLA/",
+        "url": "https://www.audiotool.com/track/closed-ffhrlzla/",
         "name": "closed",
-        "track_artist": "Potasmic",
-        "desc": "A track I listen to a lot in private. A mind clearing track. When it starts the world turns a bit slower ... cheesy."
+        "track_artist": "amoeba",
+        "desc": "A track I listen to a lot in private. A mind clearing track. When it starts the world turns a bit slower... cheesy."
       },
       {
         "url": "https://www.audiotool.com/track/wedoallthework/",
         "name": "wedoallthework",
-        "track_artist": "Snad Breugen",
-        "desc": "A comparatively recent track on this list but unbelievably good. I especially love the middle part. Dreamy and danceabely hard at the same time."
+        "track_artist": "DaveTerrell",
+        "desc": "A comparatively recent track on this list but unbelievably good. I especially love the middle part. Dreamy and danceably hard at the same time."
       },
       {
-        "url": "https://www.audiotool.com/track/hydrogen-VSfqz2BJe/",
+        "url": "https://www.audiotool.com/track/hydrogen-vsfqz2bje/",
         "name": "Hydrogen",
-        "track_artist": "Snad Breugen",
-        "desc": "Simple but effective. Love the craziness in this one."
+        "track_artist": "bjoiful",
+        "desc": "Artist recommendation. Love the creativity of Bjoiful and the idea of his chemical elements series. Definitely underrated."
       },
       {
         "url": "https://www.audiotool.com/track/origin_of_life/",
         "name": "origin of life",
-        "track_artist": "sumad",
-        "desc": ""
+        "track_artist": "dabrig",
+        "desc": "Favorite own track. Every time I listen to it I think it needs a better kick or some more work. But I won't change because for me the sound fits like little gears."
       }
     ],
     "social": {},
@@ -6754,67 +6822,67 @@
         "url": "https://www.audiotool.com/track/motorcycle/",
         "name": "Motorcycle",
         "track_artist": "CGMan",
-        "desc": ""
+        "desc": "This was the very first track on Audiotool that really blew me away. This very track is the reason why I started making dark bass driven Drum & Bass. CGMan created the ultimate bass in this one."
       },
       {
         "url": "https://www.audiotool.com/track/dark_waters/",
         "name": "Dark Waters",
-        "track_artist": "CGMan",
-        "desc": ""
+        "track_artist": "Vectorshock (DARKLITE)",
+        "desc": "Darklite was most known for his Dubstep tracks but he's so versatile. The atmosphere and sound design of this masterpiece is so amazing. You can feel the darkness and pressure of the depths of the ocean."
       },
       {
         "url": "https://www.audiotool.com/track/sword_of_angels/",
         "name": "Sword Of Angels",
-        "track_artist": "Vectorshock (DARKLITE)",
-        "desc": "Lately I've been exploring the mysteries of dark Techno. Unkindness and Murder inspired me to try Techno myself. His tracks always have such driving vibe. This one is one of my favorites from him. The groove is just so great and I love how the bass seems to roll through the track, providing it with a solid foundation. Show him your love guys ;)"
+        "track_artist": "Unkindness and Murder",
+        "desc": "Unkindness and Murder inspired me to try Techno myself. His tracks always have such driving vibe. The groove is just so great and I love how the bass seems to roll through the track."
       },
       {
         "url": "https://www.audiotool.com/track/feat_twila_too_-_dropping_now/",
         "name": "Feat. twila.too - Dropping Now",
-        "track_artist": "Vectorshock (DARKLITE)",
-        "desc": "I could have chosen any track of the one and only Sndbrgn. I simply just love his synths and his layering. It's unmatched in Audiotool in my opinion. I picked this track because it is the one I remember best. The reason for that is because twila.too is Belgian like me :D Nah ... this tune is produced so well and those vocals just make it perfect."
+        "track_artist": "Snad Breugen & twila.too",
+        "desc": "I could have chosen any track of the one and only Sndbrgn. I simply just love his synths and his layering. It's unmatched in Audiotool in my opinion. twila.too is Belgian like me."
       },
       {
         "url": "https://www.audiotool.com/track/last_light_jaws_edit/",
         "name": "Last Light Jaws Edit",
-        "track_artist": "Unkindness and Murder",
-        "desc": "This list wouldn't be complete without a track from my good friend SharKyyo. I chose this particular track because I really love his guitar-including tunes. His tracks always have a great groove and this one is no exception. I really love how the guitar and the amazing synths create this dark atmospheric, psychedelic feeling, and of course there are the typical SharKyyo style drums. And I have always admired his 303 skills. Keep them coming mate."
+        "track_artist": "TrackSharks",
+        "desc": "This list wouldn't be complete without a track from my good friend SharKyyo. I really love how the guitar and the amazing synths create this dark atmospheric, psychedelic feeling. I have always admired his 303 skills."
       },
       {
-        "url": "https://www.audiotool.com/track/summit-QBYga/",
+        "url": "https://www.audiotool.com/track/summit-qbyga/",
         "name": "Summit",
-        "track_artist": "Unkindness and Murder",
-        "desc": "I found this track by accident. I was working on a track in the app and I wanted to add something on my timeline at the right bottom of my screen when suddenly a notification popped up. So I accidentally clicked on it. It was one of the best miss-clicks I've ever made. Just listen to this beautiful track and let it take you away to divine places."
+        "track_artist": "Audial",
+        "desc": "I found this track by accident. It was one of the best miss-clicks I've ever made. Just listen to this beautiful track and let it take you away to divine places."
       },
       {
         "url": "https://www.audiotool.com/track/bondage_atc_5/",
-        "name": "Bondage &quot;Act 5&quot;",
-        "track_artist": "Snad Breugen",
-        "desc": ""
+        "name": "Bondage \"Act 5\"",
+        "track_artist": "WhiteGrizzly",
+        "desc": "Another big composer on Audiotool that I admire is our big white teddy bear. No one can create dark ambient gems like he does. That intro drone just cuts through flesh and bones."
       },
       {
-        "url": "https://www.audiotool.com/track/resurrection-sCuhLoP/",
+        "url": "https://www.audiotool.com/track/resurrection-scuhlop/",
         "name": "REsurrection",
-        "track_artist": "twila.too",
-        "desc": "I had to add a Tottmaster Drum & Bass track to my list. He doesn't know it but ever since I joined Audiotool, I have been a big fan of his and of his tracks. Not so long ago I found out that he is also Belgian. So that explains why he is such a nice guy :) About the track ... It's a typical Tottenhauser dark Drum & Bass track but for some reason I like this one even more than his other work. Like in all of his tracks he's showing off his supremacy in drum manipulation. Also the reese in this track is damn hot. And I love the energy that comes out of this one. Let's make sure Audiotool doesn't forget us Belgians ;)"
+        "track_artist": "Tottenhauser",
+        "desc": "I had to add a Tottmaster Drum & Bass track to my list. Not so long ago I found out that he is also Belgian. He's showing off his supremacy in drum manipulation. Let's make sure Audiotool doesn't forget us Belgians ;)"
       },
       {
         "url": "https://www.audiotool.com/track/aenea/",
         "name": "AeneA",
-        "track_artist": "Snad Breugen",
-        "desc": "Maybe my favorite non-Drum & Bass track on Audiotool. This track is also one of those tracks that left me sitting in front of my laptop with my mouth wide open, drooling all over my keyboard. I love the big productions of my (really nice) sea-creature-buddy but this one is more than big ... it's gigantic. The drums are dope and all the sounds and noises coming from like everywhere lift this masterpiece to perfection. Make more of this mate. We need tracks like these ... oh ... and you still owe me a new keyboard :)"
+        "track_artist": "The Seahorse",
+        "desc": "Maybe my favorite non-Drum & Bass track on Audiotool. This track left me sitting in front of my laptop with my mouth wide open, drooling all over my keyboard. It's gigantic. And you still owe me a new keyboard :)"
       },
       {
         "url": "https://www.audiotool.com/track/5erpent_riv3r/",
         "name": "5erpent riv3r",
-        "track_artist": "twila.too",
-        "desc": ""
+        "track_artist": "C-men",
+        "desc": "Artist recommendation. I picked the duo C-men because of their name :D I like the way they experiment with sounds and synths. I think they have a lot of talent and they deserve more attention."
       },
       {
         "url": "https://www.audiotool.com/track/mechanical_eyes_wip/",
         "name": "Mechanical eyes",
-        "track_artist": "TrackSharks",
-        "desc": "I had a hard time deciding if I would pick a Drum & Bass track or another genre. I always make music that I like. And to be honest I like most of my tracks (even the noob-ones). Most of them have a special meaning to me and were created to describe a certain feeling/emotional state I was in at that time. Funnily enough, this track wasn't dictated by any feeling. I just wanted to create an industrial feeling track. I think the intro makes that clear :) I like this track mainly because of this intro (spend a lot of time on that). I also like the energy and anger released in the drop and the fact that I was able to add a little melody (not so obvious for me). In the middle of the track it chills down a little to build up to the end drop with a bit of drum madness at the end. Hope u guys enjoy it as well."
+        "track_artist": "E-trim",
+        "desc": "Favorite own track. I wanted to create an industrial feeling track. I like the energy and anger released in the drop and the fact that I was able to add a little melody."
       }
     ],
     "social": {},
@@ -6865,61 +6933,61 @@
         "url": "https://www.audiotool.com/track/aaron_nominal_-_everything_i_want_is_far_away/",
         "name": "Aaron + Nominal - Everything I want is far away",
         "track_artist": "Aaron + Nominal",
-        "desc": ""
+        "desc": "This song is incredibly well produced! It's so chilled out and relaxed and the mix is so clean!"
       },
       {
         "url": "https://www.audiotool.com/track/looking_at_things/",
         "name": "KTN-01",
-        "track_artist": "Aaron",
-        "desc": "This track has so much raw energy and all the samples fit together so well. 3. After Glow (Jonjon Remix) by @jonjon ."
+        "track_artist": "かたな",
+        "desc": "This track has so much raw energy and all the samples fit together so well."
       },
       {
         "url": "https://www.audiotool.com/track/watashi_zone/",
         "name": "Watashi Zone",
-        "track_artist": "Nominal",
-        "desc": "This is such a gorgeous track. Even after years I always come back to this track. This was on the old Audiotool website and was featured on the homepage. Also, Zone is one of the nicest guys on the site and had many a good chat with him. Zone also helps me judge Audiotool day J"
+        "track_artist": "Zone",
+        "desc": "This is such a gorgeous track. Even after years I always come back to this track. This was on the old Audiotool website and was featured on the homepage. Zone is one of the nicest guys on the site."
       },
       {
         "url": "https://www.audiotool.com/track/cadmium_hotel/",
         "name": "Cadmium Hotel",
-        "track_artist": "Aaron + Nominal",
-        "desc": "This track’s synth design is easily some of the best on the website. This collaboration by Flying Baby Seal and CGman never fails to impress me."
+        "track_artist": "CGK",
+        "desc": "This track's synth design is easily some of the best on the website. This collaboration by Flying Baby Seal and CGman never fails to impress me."
       },
       {
         "url": "https://www.audiotool.com/track/flake/",
         "name": "Flake",
-        "track_artist": "Aaron",
-        "desc": "This track’s sound design is incredible. Every sound is perfectly timed and placed in the mix. A lot can be learnt from Olaf’s sound design!"
+        "track_artist": "Olaf",
+        "desc": "This track's sound design is incredible. Every sound is perfectly timed and placed in the mix. A lot can be learnt from Olaf's sound design!"
       },
       {
-        "url": "https://www.audiotool.com/track/dream-u06QHpZn/",
+        "url": "https://www.audiotool.com/track/dream-u06qhpzn/",
         "name": "./dream",
-        "track_artist": "Nominal",
-        "desc": "This song is so beautiful. It's so well composed and the vocals fit perfectly alongside everything else. After hearing it once I knew I had to remix it, so there’s a remix on my Soundcloud."
+        "track_artist": "Zone",
+        "desc": "This song is so beautiful. It's so well composed and the vocals fit perfectly alongside everything else. After hearing it once I knew I had to remix it."
       },
       {
         "url": "https://www.audiotool.com/track/sole_survivor/",
         "name": "Sole Survivor",
-        "track_artist": "かたな",
-        "desc": "This track was featured back on the old Audiotool website and I’ve never forgotten it. It is so “big” and it's almost like an orchestra of synthesizers."
+        "track_artist": "Inavon",
+        "desc": "This track was featured back on the old Audiotool website and I've never forgotten it. It is so 'big' and it's almost like an orchestra of synthesizers."
       },
       {
-        "url": "https://www.audiotool.com/track/dark_dub-sXN3LK/",
+        "url": "https://www.audiotool.com/track/dark_dub-sxn3lk/",
         "name": "Dark Dub",
-        "track_artist": "かたな",
+        "track_artist": "Infyuthsion",
         "desc": "This is an extremely old school, dark Dub-Step track. Infyuthsion released it when everyone was trying to make over the top growls and massive drops, so this track was a breath of fresh air."
       },
       {
         "url": "https://www.audiotool.com/track/everyday_anyone/",
         "name": "EVERYDAY ANYONE",
-        "track_artist": "Zone",
+        "track_artist": "Nominal",
         "desc": "This track is incredible. The large reverb on every synth makes this track sound incredibly deep. The composition is fairly simple but it has been executed very professionally."
       },
       {
         "url": "https://www.audiotool.com/track/ursa_minor/",
         "name": "Ursa Minor",
-        "track_artist": "Zone",
-        "desc": "I have a soft spot for this track. It's so old now and it's not good by any modern audiotool standard. But this track was the first track of mine to get featured and is responsible for why I continued producing to this day."
+        "track_artist": "Jacob Tyler",
+        "desc": "Favorite own track. This track was the first track of mine to get featured and is responsible for why I continued producing to this day."
       }
     ],
     "social": {},
@@ -6971,46 +7039,46 @@
     ],
     "tracks": [
       {
-        "url": "https://www.audiotool.com/track/complextro_urban-contact_style/",
-        "name": "Complextro [Urban-Contact Style]",
-        "track_artist": "Xtraction",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/ep_remix_comp-arVWv8yR/",
+        "url": "https://www.audiotool.com/track/ep_remix_comp-arvwv8yr/",
         "name": "Running from the Wind",
         "track_artist": "Xtraction",
-        "desc": "There are just some artists on Audiotool that, unfortunately, don't get enough attention, despite how many followers they have. Perhaps they were forgotten, I dunno, but Xtraction shouldn't be one of those artists. His music is amazingly unique and inspiring. It takes an amazing artist to pull of what he does with minimal activity in the app too, it's pretty amazing what he's accomplished."
+        "desc": "Some artists on Audiotool don't get enough attention, despite how many followers they have. Xtraction shouldn't be one of those artists. His music is amazingly unique and inspiring."
       },
       {
         "url": "https://www.audiotool.com/track/annihilate_ft_neocterix_melodic_dubstep/",
         "name": "Annihilate Ft.Neocterix [Melodic Dubstep]",
-        "track_artist": "synthonix",
-        "desc": ""
+        "track_artist": "synthonix & neo.",
+        "desc": "When he published 'Complextro [Urban-Contact Style]' almost a year ago, I already heard his unharnessed potential. He pretty much, single-handedly controls the charts."
       },
       {
-        "url": "https://www.audiotool.com/track/lost_in_time-tx49vJpb/",
+        "url": "https://www.audiotool.com/track/lost_in_time-tx49vjpb/",
         "name": "Lost In Time",
-        "track_artist": "neo.",
-        "desc": "I believe Dollavix is misunderstood on the part of the Audiotool community. He's a really talented artist and although he uses other explicit elements from other artist's tracks, he still manages to put his own little twist on his work. He's getting better and I believe that with a nudge in the right direction, he can become something great too."
+        "track_artist": "Dollavix",
+        "desc": "I believe Dollavix is misunderstood on the part of the Audiotool community. He's a really talented artist and although he uses other explicit elements from other artists' tracks, he still manages to put his own little twist on his work."
+      },
+      {
+        "url": "https://www.audiotool.com/track/7_8/",
+        "name": "7/8",
+        "track_artist": "nico & proxima",
+        "desc": "It was only recently that I heard TheAnonymousPineapple's works. We have quite a bit in common in terms of knowledge of music theory."
       },
       {
         "url": "https://www.audiotool.com/track/silence_in_tokyo/",
-        "name": "7/8",
-        "track_artist": "synthonix",
-        "desc": "It was only recently that I heard TheAnonymousPineapple's works. Getting to know him better as an artists, we have quite a bit in common in terms of knowledge of music theory, (even though I think he knows much more than I do). This is a pretty good track on his part, nothing like I could make, of course."
+        "name": "Silence In Tokyo",
+        "track_artist": "Kyba",
+        "desc": "Joining in on a few rabbits in the past I was able to find this prodigy who has a ton of amazing works coming in the future. He deserves to be on this list more than I can say."
       },
       {
         "url": "https://www.audiotool.com/track/to_feel_alright_feat_eny/",
-        "name": "Silence In Tokyo",
-        "track_artist": "neo.",
-        "desc": "I haven't really had a chance to just sit down and listen to Audiotool music and find more artists, however, recently, joining in on a few rabbits in the past I was able to find this prodigy who has a ton of amazing works coming in the future. He deserves to be on this list more than I can say."
+        "name": "To Feel Alright (Feat.ENY)",
+        "track_artist": "orcean",
+        "desc": "This is simply a breathtaking track. I'm no good with working with vocals, and I can sense the hard work put into this track. I can definitely see orcean going far with music."
       },
       {
         "url": "https://www.audiotool.com/track/is_this/",
-        "name": "To Feel Alright (Feat.ENY)",
-        "track_artist": "Dollavix",
-        "desc": "This is simply a breathtaking track. I only recently heard this, but I'm no good with working with vocals, and I can sense the hard work put into this track. I can definitely see orcean going far with music and look forward to hearing his future work."
+        "name": "is this",
+        "track_artist": "mirai",
+        "desc": "Artist recommendation. Mirai is an incredible, young, aspiring producer that has so much to offer. This track in particular helped me keep going in times when I didn't think I'd amount to anything, in life and in music."
       }
     ],
     "social": {},
@@ -7066,56 +7134,56 @@
       {
         "url": "https://www.audiotool.com/track/liquid_drum_and_bass_3/",
         "name": "Liquid Drum and Bass 3",
-        "track_artist": "rnzr",
-        "desc": "This track changed the way that I thought about making D&B. It was so insanely smooth and almost nostalgic while still keeping the energy that I loved from Drum and Bass as well. This was my main inspiration making Technicolour, and is still in the rotation on my phone like 3 years after I first heard it."
+        "track_artist": "THRONE",
+        "desc": "This track changed the way that I thought about making D&B. It was so insanely smooth and almost nostalgic while still keeping the energy that I loved. This was my main inspiration making Technicolour."
       },
       {
         "url": "https://www.audiotool.com/track/blue_days_feat_emma/",
         "name": "Blue Days feat. Emma",
-        "track_artist": "THRONE",
+        "track_artist": "cihangir",
         "desc": "Quality Deep House from cihangir. Love the vocals as well."
       },
       {
         "url": "https://www.audiotool.com/track/shudder_in_name_only_ep_nov_15_for_real_this_time/",
         "name": "shudder [IN NAME ONLY EP Nov 15, for real this time]",
-        "track_artist": "THRONE",
+        "track_artist": "Nominal",
         "desc": "NOMINAL has always had some really interesting tracks, but I love the nostalgic feel that this track has, with the main chords sounding distant but always present. Insane stuff."
       },
       {
         "url": "https://www.audiotool.com/track/find_a_place_right_here/",
         "name": "Find a place right here",
-        "track_artist": "cihangir",
-        "desc": "I love the 80’s vibe of this track. It’s a bona fide AT classic."
+        "track_artist": "Sandcripten",
+        "desc": "I love the 80's vibe of this track. It's a bona fide AT classic."
       },
       {
         "url": "https://www.audiotool.com/track/love_in_an_empty_shell_nowai_mix/",
         "name": "Love In An Empty Shell (Mikel Boyles Mix)",
-        "track_artist": "cihangir",
-        "desc": ""
+        "track_artist": "Mikel Boyles",
+        "desc": "Love this remix. Offbeat Ninja is one of my favourite Hip Hop/Bump artists on Audiotool. But this remix is so much better than the original, which was a really good track in its own right."
       },
       {
-        "url": "https://www.audiotool.com/track/young-ZwhNI/",
+        "url": "https://www.audiotool.com/track/young-zwhni/",
         "name": "young",
-        "track_artist": "Nominal",
+        "track_artist": "amoeba",
         "desc": "Proper lovely stuff. Amoeba combines his natural ear for melody with a slightly harder edge than a usual amoeba track, and it pays off really really well."
       },
       {
         "url": "https://www.audiotool.com/track/big_narstie_-_gasleak_fsc_remix/",
         "name": "Big Narstie - Gasleak (FSC remix)",
-        "track_artist": "Nominal",
+        "track_artist": "Future Sound Collabs",
         "desc": "Don't judge. This goes in hard."
       },
       {
-        "url": "https://www.audiotool.com/track/find_me-neuOfGqJ/",
+        "url": "https://www.audiotool.com/track/find_me-neuofgqj/",
         "name": "find me",
-        "track_artist": "Sandcripten",
-        "desc": "I love the melody/bass combo, and the drums are decent as well."
+        "track_artist": "rai.",
+        "desc": "Artist recommendation. His mix down and drums could use some work, but he has a fantastic ear for melody, and surprisingly good tracks for a guy with 20 followers. I love the melody/bass combo."
       },
       {
         "url": "https://www.audiotool.com/track/jonjon_-_breach_of_trust_akimbo_and_jambams_future_jungle_remix/",
         "name": "Jonjon - Breach of Trust (Akimbo and Jambams future Jungle Remix)",
-        "track_artist": "Sandcripten",
-        "desc": ""
+        "track_artist": "Akimbo & Jambam",
+        "desc": "Favorite own track. I love the way that this one turned out. Jambam's chords in the second half top everything off, so he gets props for this as well."
       }
     ],
     "social": {},
@@ -7158,67 +7226,73 @@
         "url": "https://www.audiotool.com/track/leave_wip/",
         "name": "leave.",
         "track_artist": "(dormant)",
-        "desc": ""
+        "desc": "An artist who is really underrated in my opinion. I found his music a few weeks ago, and fell in love with it."
       },
       {
-        "url": "https://www.audiotool.com/track/hue-rmwgdeP/",
+        "url": "https://www.audiotool.com/track/hue-rmwgdep/",
         "name": "Hue",
-        "track_artist": "(dormant)",
-        "desc": "Also one of the most underrated artists on Audiotool. Love his beats. Mostly when they are percussive, with those nice wood sounds. like in"
+        "track_artist": "VLTRA",
+        "desc": "Also one of the most underrated artists on Audiotool. Love his beats. Mostly when they are percussive, with those nice wood sounds like in 'Hue'."
       },
       {
-        "url": "https://www.audiotool.com/track/passive-QnAspCUHk/",
+        "url": "https://www.audiotool.com/track/passive-qnaspcuhk/",
         "name": "Passive",
-        "track_artist": "VLTRA",
+        "track_artist": "valt",
         "desc": "This track is one of my all time favorites. Feels like it came out yesterday but it's already two years old. This track shows that even a simple track can have a lot of power."
       },
       {
         "url": "https://www.audiotool.com/track/sunloop/",
         "name": "Sunloop",
-        "track_artist": "VLTRA",
-        "desc": "I have listened to this track 500 times AT LEAST !!!!! On long Bus trips it helps me to sleep. It always warms my heart with the beautiful guitar."
+        "track_artist": "Olaf",
+        "desc": "I have listened to this track 500 times AT LEAST! On long Bus trips it helps me to sleep. It always warms my heart with the beautiful guitar."
       },
       {
         "url": "https://www.audiotool.com/track/bgn_ovr_vip/",
         "name": "BGN {OVR VIP)",
-        "track_artist": "valt",
-        "desc": "I Love the beat, the bass, the Stuttered Synth and the Dry snare. Everything fits perfectly together."
+        "track_artist": "Nominal",
+        "desc": "I love the beat, the bass, the stuttered synth and the dry snare. Everything fits perfectly together."
       },
       {
-        "url": "https://www.audiotool.com/track/let_me_take_you_away/",
+        "url": "https://www.audiotool.com/track/nor/",
         "name": "Nor",
-        "track_artist": "valt",
+        "track_artist": "Untrust 三",
         "desc": "This is a shout out to all of the other members of our collab. They motivated me most in the last months. This one, definitely is my favorite Untrust track."
       },
       {
-        "url": "https://www.audiotool.com/track/there_s_always_tomorrow/",
+        "url": "https://www.audiotool.com/track/let_me_take_you_away/",
         "name": "Let me take you away",
-        "track_artist": "Olaf",
+        "track_artist": "Crazy about You",
         "desc": "He is my favorite Ambient/Chill artist on Audiotool. The crackle in combination with the percs and the whisper... I love it <3"
       },
       {
-        "url": "https://www.audiotool.com/track/my_room_is_a_mess/",
+        "url": "https://www.audiotool.com/track/there_s_always_tomorrow/",
         "name": "there's always tomorrow",
-        "track_artist": "Olaf",
-        "desc": "A really long and great Intro. The drop with the Kalimba is even better."
+        "track_artist": "opaqity",
+        "desc": "A really long and great intro. The drop with the Kalimba is even better."
+      },
+      {
+        "url": "https://www.audiotool.com/track/my_room_is_a_mess/",
+        "name": "My room is a mess,",
+        "track_artist": "sky bound zoo",
+        "desc": "The combination of the beat, the chilled vibes with the acoustic bass. I LOVE IT! So underrated!"
       },
       {
         "url": "https://www.audiotool.com/track/untitled_ii/",
-        "name": "My room is a mess,",
-        "track_artist": "Nominal",
-        "desc": ""
+        "name": "Untitled II",
+        "track_artist": "Olaf II",
+        "desc": "This is Ambient to my mind. I always listen to this when the first snow falls. Sentimental moment...."
       },
       {
         "url": "https://www.audiotool.com/track/electronica_double_run/",
-        "name": "Untitled II",
-        "track_artist": "Nominal",
-        "desc": ""
+        "name": "Electronica [Double run]",
+        "track_artist": "None",
+        "desc": "I listened to this last week. So underrated!"
       },
       {
         "url": "https://www.audiotool.com/track/strahlen_chaos/",
-        "name": "Electronica [Double run]",
-        "track_artist": "Untrust 三",
-        "desc": "I listened to this last week. So underrated!"
+        "name": "Strahlen [Chaos]",
+        "track_artist": "Aaron",
+        "desc": "Favorite own track. It's a perfect example of what I am doing now. I am using my guitar in different ways, layer them up to 5 guitars and do special rhythms (11/4 in this case). This is always an inspiration for my upcoming tracks."
       }
     ],
     "social": {},
@@ -7269,55 +7343,55 @@
         "url": "https://www.audiotool.com/track/ultraviolet/",
         "name": "ultraviolet",
         "track_artist": "opaqity",
-        "desc": "Opaqity is one of my favorite AT artists. I don't understand how he makes his tracks so smooth and jazzy while claiming to know nothing of jazz composition. From the moment I heard his tracks, the sheer classiness of Opaqity's productions immediately blew me away. His attention to detail and worshipful approach to melody and harmony never fails to impress."
+        "desc": "Opaqity is one of my favorite AT artists. I don't understand how he makes his tracks so smooth and jazzy while claiming to know nothing of jazz composition. His attention to detail and worshipful approach to melody and harmony never fails to impress."
       },
       {
         "url": "https://www.audiotool.com/track/conga_jams_01/",
         "name": "conga_jams_01",
-        "track_artist": "opaqity",
-        "desc": "Another super raw track from another of AT's finest outsiders. The use of noise and ambiance in this track is so good it hurts. The way the kick and the distorted toms duck that main loop is just ridiculous. Lo-fi at it's lo-finest. VLTRA's got that"
+        "track_artist": "VLTRA",
+        "desc": "Another super raw track from another of AT's finest outsiders. The use of noise and ambiance in this track is so good it hurts. Lo-fi at its lo-finest. VLTRA's got that 'so sloppy it's tight' shit down to a science."
       },
       {
-        "url": "https://www.audiotool.com/track/tijuana-tQNNc2/",
+        "url": "https://www.audiotool.com/track/tijuana-tqnnc2/",
         "name": "tijuana",
-        "track_artist": "VLTRA",
-        "desc": "Torn (as is the case for many people, I think) was one of the first"
+        "track_artist": "tornsage",
+        "desc": "Torn was one of the first 'big names' in the AT community to give me the time of day. He is also a major supporter of emerging artists. The mood of this track is amazing, super grimy. I can feel the air rippling like water in the heat of the sun when that trumpet sample hits."
       },
       {
         "url": "https://www.audiotool.com/track/night_train/",
         "name": "Night Train",
-        "track_artist": "VLTRA",
-        "desc": "One of my earliest fav's as an AT user. The way that delirious bass-line pulls the groove along is incredible. The delicate use of space in this track is perfect. For me, the"
+        "track_artist": "Olaf",
+        "desc": "One of my earliest favs as an AT user. The way that delirious bass-line pulls the groove along is incredible. The delicate use of space in this track is perfect."
       },
       {
         "url": "https://www.audiotool.com/track/finding_the_words_to_say_to_you/",
         "name": "Finding the words to say to you",
-        "track_artist": "tornsage",
-        "desc": ""
+        "track_artist": "sky bound zoo",
+        "desc": "This track completely blows my mind. So loose, yet so much groove, and the harmonic structure is utterly merciless."
       },
       {
         "url": "https://www.audiotool.com/track/premaster001/",
         "name": "premaster001",
-        "track_artist": "tornsage",
-        "desc": ""
+        "track_artist": "днa",
+        "desc": "I don't 100% know who this is. Appears to be an alternate account. It really takes a lot of confidence and vision to take a track as simple as this from start to finish. Minimal enough to evoke a sense of starkness, but enough textural and groove development to keep heads nodding."
       },
       {
         "url": "https://www.audiotool.com/track/chill_tribe_vibes_interlude/",
         "name": "chill tribe vibes interlude 10m Boiler Mix",
-        "track_artist": "Olaf",
-        "desc": "Finally the great Lewi-Astro. This track is just way too cool for school. Perfect mixing proportions, so much detail, amazing use of repetition and subtle manipulation. Definitely one of the chillest tracks on AT, this beast clocks out at 12:42 and feels more like a short set than a single track. I'd also like to take a moment to thank Lewi for the amazing sample collection that he has made available to the AT community."
+        "track_artist": "Lewi Astro",
+        "desc": "Finally the great Lewi-Astro. This track is just way too cool for school. Perfect mixing proportions, so much detail. Definitely one of the chillest tracks on AT. I'd also like to thank Lewi for the amazing sample collection he has made available to the AT community."
       },
       {
-        "url": "https://www.audiotool.com/track/hydrogen-VSfqz2BJe/",
+        "url": "https://www.audiotool.com/track/hydrogen-vsfqz2bje/",
         "name": "Hydrogen",
-        "track_artist": "Olaf",
-        "desc": "I don't know if this dude's still making tracks, but he/she/it has a bunch already that are excellent. I especially love the idea of tracks inspired by the periodic table. Support the AT underground, check it out!"
+        "track_artist": "bjoiful",
+        "desc": "Artist recommendation. I don't know if this dude's still making tracks, but he/she/it has a bunch already that are excellent. I especially love the idea of tracks inspired by the periodic table. Support the AT underground!"
       },
       {
         "url": "https://www.audiotool.com/track/semiquaver/",
         "name": "semiquaver",
-        "track_artist": "sky bound zoo",
-        "desc": "I've been doing a lot of 4 on the floor lately, felt like switching things up a bit. I'm really happy with the marriage of the kick drum and bass in this track, wish there was a little more action in the air-bands though..."
+        "track_artist": "floydpjasper",
+        "desc": "Favorite own track. I've been doing a lot of 4 on the floor lately, felt like switching things up. I'm really happy with the marriage of the kick drum and bass in this track."
       }
     ],
     "social": {},
@@ -7368,67 +7442,67 @@
         "url": "https://www.audiotool.com/track/missed_generation/",
         "name": "missed generation",
         "track_artist": "tornsage",
-        "desc": ""
+        "desc": "This track was my first earworm on Audiotool for a long time... It is magnetic and one of the best tracks on Audiotool in my opinion..."
       },
       {
         "url": "https://www.audiotool.com/track/transoceanic/",
         "name": "Transoceanic",
-        "track_artist": "tornsage",
-        "desc": "This tune transports a lot of energy and mood. I think this track of The Seahorse really shows his potential and his wide musical background…"
+        "track_artist": "The Seahorse",
+        "desc": "This tune transports a lot of energy and mood. I think this track of The Seahorse really shows his potential and his wide musical background..."
       },
       {
-        "url": "https://www.audiotool.com/track/royal_flush-hxKPjs/",
+        "url": "https://www.audiotool.com/track/royal_flush-hxkpjs/",
         "name": "Royal Flush",
-        "track_artist": "The Seahorse",
-        "desc": "This track is so powerful and magnetic that I had to hear it lots of times. Even though it’s not my favorite music genre…"
+        "track_artist": "Xavi",
+        "desc": "This track is so powerful and magnetic that I had to hear it lots of times. Even though it's not my favorite music genre..."
       },
       {
         "url": "https://www.audiotool.com/track/object/",
         "name": "OBJeCT",
-        "track_artist": "The Seahorse",
-        "desc": "This track got a beautiful atmosphere and it’s constructed quite interestingly. Furthermore it uses effects in a perfect and effective way, especially the reverb…"
+        "track_artist": "Potasmic",
+        "desc": "This track got a beautiful atmosphere and it's constructed quite interestingly. Furthermore it uses effects in a perfect and effective way, especially the reverb..."
       },
       {
-        "url": "https://www.audiotool.com/track/the_truth-eDEiE4h/",
+        "url": "https://www.audiotool.com/track/the_truth-edeie4h/",
         "name": "The Truth",
-        "track_artist": "Xavi",
-        "desc": "Oh my good – what a track! It shows perfectly, that you can create real professional sounding Psy-Trance on Audiotool! What a pity that Sonic Particle isn't publishing at the moment."
+        "track_artist": "Sonic Particles",
+        "desc": "Oh my good – what a track! It shows perfectly that you can create real professional sounding Psy-Trance on Audiotool! What a pity that Sonic Particle isn't publishing at the moment."
       },
       {
-        "url": "https://www.audiotool.com/track/nemesis_snatch-JzVflrV/",
+        "url": "https://www.audiotool.com/track/nemesis_snatch-jzvflrv/",
         "name": "Ravage",
-        "track_artist": "Xavi",
-        "desc": ""
+        "track_artist": "Anthony Bartone",
+        "desc": "Another Psy-track that inspired me a lot! I think this was the first real Psy-track I explored on Audiotool. It shows how good some fx-samples work in Trance-Tracks..."
       },
       {
         "url": "https://www.audiotool.com/track/banisham/",
         "name": "Banisham",
-        "track_artist": "Potasmic",
-        "desc": ""
+        "track_artist": "cripta & Daftwill",
+        "desc": "Cripta was the first person on Audiotool I had contact with. He makes great electronic tracks, but when he published this Psy-track, I was really fascinated..."
       },
       {
         "url": "https://www.audiotool.com/track/flatliners/",
         "name": "flatliners",
-        "track_artist": "Potasmic",
-        "desc": "A powerful track full of pressure! For the most percussions and drums he used synthesizer and not samples – a quite interesting sound…"
+        "track_artist": "Christian-Chrom",
+        "desc": "A powerful track full of pressure! For most percussions and drums he used synthesizer and not samples – a quite interesting sound..."
       },
       {
         "url": "https://www.audiotool.com/track/meerbusch/",
         "name": "Meerbusch",
-        "track_artist": "Sonic Particles",
-        "desc": "This is my latest earworm on Audiotool! It sounds really magnetic and shows the art how to make minimal music that never sounds boring, even if the same melody runs through the whole song…"
+        "track_artist": "Snad Breugen",
+        "desc": "This is my latest earworm on Audiotool! It sounds really magnetic and shows the art how to make minimal music that never sounds boring, even if the same melody runs through the whole song..."
       },
       {
         "url": "https://www.audiotool.com/track/geometric_abstraction/",
         "name": "Geometric Abstraction",
-        "track_artist": "Sonic Particles",
-        "desc": "He is in my opinion the most underrated musician on"
+        "track_artist": "ᴉlqɐH",
+        "desc": "Artist recommendation. He is in my opinion the most underrated musician on Audiotool. This track shows perfectly his Psy-Trance skills enhanced with his own creative, futuristic influences."
       },
       {
         "url": "https://www.audiotool.com/track/evolutionary_humanism/",
         "name": "evolutionary humanism",
-        "track_artist": "Anthony Bartone",
-        "desc": "This is not the best track of mine, but it's message seems very important to me! Currently very bad and inhuman things are going on in Germany and Europe… Again hostility toward strangers can be seen and I really don’t want to support this – because: we are one!!!"
+        "track_artist": "brain-walker",
+        "desc": "Favorite own track. This is not the best track of mine, but its message seems very important to me! Currently very bad and inhuman things are going on in Germany and Europe... we are one!!!"
       }
     ],
     "social": {},
@@ -7479,55 +7553,55 @@
         "url": "https://www.audiotool.com/track/neo_tokyo/",
         "name": "Neo Tokyo",
         "track_artist": "Xavi",
-        "desc": ""
+        "desc": "Every song I hear from xav is mind blowing and inspiring. This was one of his songs that got to me the most. His chord progressions are always so nice and very impressive."
       },
       {
         "url": "https://www.audiotool.com/track/silver_palm/",
         "name": "silver palm",
-        "track_artist": "Xavi",
-        "desc": "Description: One word I can use to describe opaqity’s tracks: Percs. Most of opaq’s songs are pretty good but this would have to be my favorite from him. I honestly really liked the percs he used in this one. Let’s not forget about the rest though. The chords, the melody that plays in the track overtime, and even the white noise. I really loved this track when I first heard it <3."
+        "track_artist": "opaqity",
+        "desc": "One word I can use to describe opaqity's tracks: Percs. This would have to be my favorite from him. The chords, the melody that plays in the track overtime, and even the white noise. I really loved this track when I first heard it <3."
       },
       {
         "url": "https://www.audiotool.com/track/ubongo/",
         "name": "Ubongo",
-        "track_artist": "opaqity",
-        "desc": "Anything from CGman just proves what Audiotool is capable of doing. Every song he makes has some pretty crazy atmospheres and Neuro basses. Every time I hear one of them, I am amazed. I honestly love CGman’s work, and I’m always excited to hear what he has coming up next."
+        "track_artist": "CGMan",
+        "desc": "Anything from CGman just proves what Audiotool is capable of doing. Every song he makes has some pretty crazy atmospheres and Neuro basses. Every time I hear one of them, I am amazed."
       },
       {
         "url": "https://www.audiotool.com/track/contraflux/",
         "name": "Contraflux",
-        "track_artist": "opaqity",
-        "desc": "This was one of the first songs I heard on Audiotool. It’s what got me into Electro House stuff. Lux’s Electro House was something I truly miss, but his new stuff is pretty good. Hope to see more from him soon."
+        "track_artist": "looks",
+        "desc": "This was one of the first songs I heard on Audiotool. It's what got me into Electro House stuff. Lux's Electro House was something I truly miss."
       },
       {
-        "url": "https://www.audiotool.com/track/purple-k5qWm2X/",
+        "url": "https://www.audiotool.com/track/purple-k5qwm2x/",
         "name": "Purple",
-        "track_artist": "CGMan",
-        "desc": "I sometimes listen to chill sort of stuff. I really enjoyed this when I first heard it. The pads. The bass. Teqtoniq’s stuff amazes me everytime. Hope to see him get into medical school soon! :D"
+        "track_artist": "TEQTONIQ",
+        "desc": "I sometimes listen to chill sort of stuff. I really enjoyed this when I first heard it. The pads. The bass. Teqtoniq's stuff amazes me every time. Hope to see him get into medical school soon! :D"
       },
       {
-        "url": "https://www.audiotool.com/track/bloom-h81eHBNjn/",
+        "url": "https://www.audiotool.com/track/bloom-h81ehbnjn/",
         "name": "bloom",
-        "track_artist": "CGMan",
-        "desc": "I’ve known Neo for quite a bit of time, and I’ve always enjoyed hearing his stuff every single time I hear it. But I’ve never been able to picture him making chill music for once. I quite honestly didn’t expect to hear anything like this from him, and I loved it from the very first second. The drums, the melody, and let’s not forget the arp <3"
+        "track_artist": "neo.",
+        "desc": "I've known Neo for quite a bit of time, and I've always enjoyed hearing his stuff. I've never been able to picture him making chill music for once. The drums, the melody, and let's not forget the arp <3"
       },
       {
         "url": "https://www.audiotool.com/track/these_aren_t_tears_of_joy/",
         "name": "these aren't tears of joy",
-        "track_artist": "looks",
-        "desc": ""
+        "track_artist": "dove",
+        "desc": "Over time the track really started to get to me. Dove's LFO pads in this were pretty satisfying to me. And of course... the bubbles :)"
       },
       {
-        "url": "https://www.audiotool.com/track/limitless-HeD05HBcO/",
+        "url": "https://www.audiotool.com/track/limitless-hed05hbco/",
         "name": "LIMITLESS",
-        "track_artist": "looks",
-        "desc": "Of all songs I’ve heard from this guy I instantly fell in love with this one. The supersaws, the lead, the little arp that plays at some parts of the track. I couldn’t get over this song the first time I heard it. But go a bit easy on the compression next time BSRK! :)))) <3"
+        "track_artist": "BSRK! / [KALVERO]",
+        "desc": "Of all songs I've heard from this guy I instantly fell in love with this one. The supersaws, the lead, the little arp that plays at some parts of the track. But go a bit easy on the compression next time BSRK!"
       },
       {
-        "url": "https://www.audiotool.com/track/waves-xuLeb31OG/",
+        "url": "https://www.audiotool.com/track/waves-xuleb31og/",
         "name": "Waves",
-        "track_artist": "TEQTONIQ",
-        "desc": ""
+        "track_artist": "orcean",
+        "desc": "Artist recommendation. I seriously have to thank zelvo for showing me this guy. Holy crap this guy is good. Those vocal chops, the chords, the sound design in this song was pretty good."
       }
     ],
     "social": {},
@@ -7571,70 +7645,76 @@
     ],
     "tracks": [
       {
-        "url": "https://www.audiotool.com/track/lonesome-Xl0seF/",
+        "url": "https://www.audiotool.com/track/lonesome-xl0sef/",
         "name": "Lonesome",
         "track_artist": "Someone",
-        "desc": ""
+        "desc": "Every new attempt (it felt like 1000) to compile this album had one thing in common: This track. With a single Bassline 3 and FX automations which I still can't comprehend, Someone created something that most of us couldn't even have managed with a full orchestration."
       },
       {
         "url": "https://www.audiotool.com/track/lost_at_night/",
         "name": "Lost",
-        "track_artist": "Someone",
-        "desc": "Well deserved winner of the Moogfest Contest. This track also raises the justifiable question: how the hell did he get all this out of only two Pulverisateurs? Kepz also would have been on any list of mine. His stuff is not only very well produced, it also meets my taste in 99.9% of cases."
+        "track_artist": "Kepz",
+        "desc": "Well deserved winner of the Moogfest Contest. How the hell did he get all this out of only two Pulverisateurs? Kepz also would have been on any list of mine. His stuff is not only very well produced, it also meets my taste in 99.9% of cases."
       },
       {
-        "url": "https://www.audiotool.com/track/move-hxphFzpd/",
+        "url": "https://www.audiotool.com/track/move-hxphfzpd/",
         "name": "move",
-        "track_artist": "Kepz",
+        "track_artist": "Mr. Standfast",
         "desc": "There is no 100% pure Audiotool list without Mr Standfast. In very few of his tracks are there any signs of samples. His synth melodies are unmatched not to mention what he does with the drums. That's Mr Standfast."
       },
       {
         "url": "https://www.audiotool.com/track/verlangen/",
         "name": "Verlangen",
-        "track_artist": "Kepz",
-        "desc": "One of my first real favorites on Audiotool (and what luck without samples). A perfect symbiosis of a cool Minimal beat and atmospheric synth lines. And that bass! And it was here that I first understood the Tonematrix as an respectable production tool not just a toy. We can only hope for a Sumad comeback soon."
+        "track_artist": "sumad",
+        "desc": "One of my first real favorites on Audiotool (and what luck without samples). A perfect symbiosis of a cool Minimal beat and atmospheric synth lines. And that bass! Here I first understood the Tonematrix as a respectable production tool not just a toy."
       },
       {
         "url": "https://www.audiotool.com/track/nowhere_but_everywhere/",
         "name": "Nowhere But Everywhere",
-        "track_artist": "Mr. Standfast",
-        "desc": "Freshest addition to the list: heartwarming Trance synth melodies and ... isn't that a choir? No that's impossible isn't it. In the middle of the track we are surprised to hear something like a little organ solo which conjures up a smile and then sends us back to the dreamy melancholia of this piece of art."
+        "track_artist": "Potasmic",
+        "desc": "Freshest addition to the list: heartwarming Trance synth melodies and... isn't that a choir? In the middle of the track a little organ solo conjures up a smile and then sends us back to the dreamy melancholia of this piece of art."
       },
       {
         "url": "https://www.audiotool.com/track/little_blue_box_dub/",
         "name": "Strange Small Blue Box Dub",
-        "track_artist": "Mr. Standfast",
-        "desc": "We don't have to say anything about Noraus' qualities as a sound designer. What he has created here without samples or even a drum computer is mind-blowing. The glitchy hi hats, the percussions and the fat kick drum, all synthesized with the Heisenberg is just indescribable. And on top of it all it is simply an awesome Dub track."
+        "track_artist": "noraus1",
+        "desc": "We don't have to say anything about Noraus' qualities as a sound designer. The glitchy hi hats, the percussions and the fat kick drum, all synthesized with the Heisenberg is just indescribable. And on top of it all it is simply an awesome Dub track."
       },
       {
         "url": "https://www.audiotool.com/track/dark_melody_fbs_mix/",
         "name": "dark melody (fbs mix)",
-        "track_artist": "sumad",
-        "desc": "What FBS has done with @enjoyyourshoes ' small but no less beautiful Tonematrix melody is remarkable. When the Rasslebock adds the bass, the dark sun rises."
+        "track_artist": "Flying Baby Seal",
+        "desc": "What FBS has done with shoes' small but no less beautiful Tonematrix melody is remarkable. When the Rasslebock adds the bass, the dark sun rises."
       },
       {
-        "url": "https://www.audiotool.com/track/ethereal-witH3Ae8a/",
+        "url": "https://www.audiotool.com/track/ethereal-with3ae8a/",
         "name": "ethereal",
-        "track_artist": "sumad",
+        "track_artist": "Christian-Chrom",
         "desc": "Great Neo-Trance piece without a single sample. Christian Chrom has some of this kind on his tracklist."
       },
       {
         "url": "https://www.audiotool.com/track/photomultiplier/",
         "name": "Photomultiplier",
-        "track_artist": "Potasmic",
+        "track_artist": "Tyburn",
         "desc": "Another sound master: Tyburn. Here too no trace of drum computer. Instead 100% Pulverisateur. A stroke of genius in my eyes. A little more Tyburn wouldn't hurt in future."
       },
       {
         "url": "https://www.audiotool.com/track/one_pulver_only/",
         "name": "one pulver only",
-        "track_artist": "Potasmic",
+        "track_artist": "traqks",
         "desc": "One Pulve, one reverb and a compressor. Not the setup you would expect behind this fresh and funky milestone. This is really worth opening, there is something to learn here."
       },
       {
-        "url": "https://www.audiotool.com/track/deep_inside-vZDNDq/",
+        "url": "https://www.audiotool.com/track/deep_inside-vzdndq/",
         "name": "Deep Inside",
-        "track_artist": "noraus1",
-        "desc": "A monster of a downtempo track. Brutal und inexorable it rolls on and takes no prisoners."
+        "track_artist": "TrackSharks",
+        "desc": "Artist recommendation. His track 'Deep Inside' delivered the initial spark for the 100% Audiotool idea. This guy has worked his way through the material in the past two years like hardly another. A monster of a downtempo track."
+      },
+      {
+        "url": "https://www.audiotool.com/track/beware_the_blurred_horseman/",
+        "name": "Beware The Blurred Horseman",
+        "track_artist": "Snad Breugen",
+        "desc": "Favorite own track. The number of sample free tracks in my repertoire is pretty limited. So I did this one. As mostly my latest is my dearest it kind of fits. Have fun."
       }
     ],
     "social": {},
@@ -7686,67 +7766,61 @@
         "url": "https://www.audiotool.com/track/tired_guitar_mix/",
         "name": "WE TIRE [RIVER EP]",
         "track_artist": "Aaron",
-        "desc": ""
+        "desc": "Aaron Schäfer's skillful use of his guitar combined with creativity and extensive producing knowledge result in very polished, organic and lively sounding music. Clever manipulation of samples gives his tracks that extra depth and complexity."
       },
       {
         "url": "https://www.audiotool.com/track/second_guess/",
         "name": "second guess",
-        "track_artist": "Aaron",
-        "desc": "Just as with Luxior and a number of other young Audiotool talents, it is hard to believe opaqity’s age after you see his 100+ track library of some of the best music on Audiotool. Here, opaqity went in a less expected direction, deciding to ditch the beat and push the sounds of percussion into the background while focusing on the powerful pads, a gentle melody and immersive ambience. A type of music that is fairly rare on Audiotool."
+        "track_artist": "opaqity",
+        "desc": "It is hard to believe opaqity's age after you see his 100+ track library of some of the best music on Audiotool. Here, opaqity went in a less expected direction, focusing on the powerful pads, a gentle melody and immersive ambience."
       },
       {
         "url": "https://www.audiotool.com/track/i_m_sad_and_i_don_t_know_why/",
         "name": "We'll make it through",
-        "track_artist": "opaqity",
-        "desc": "It is no surprise even Joel himself had moments of regret since deleting his main page with his work from the last 4+ years. His beautiful, experimental and expressive music, poetic and open personality made him one of the most interesting users on the website. Continuing on a new chapter ‘sky bound zoo’, predominantly with heavy manipulation of samples, he delivers incredibly rich, densely packed and complicated compositions."
+        "track_artist": "sky bound zoo",
+        "desc": "It is no surprise even Joel himself had moments of regret since deleting his main page with his work from the last 4+ years. Continuing on a new chapter 'sky bound zoo', he delivers incredibly rich, densely packed and complicated compositions."
       },
       {
-        "url": "https://www.audiotool.com/track/rain-dXGU6FAD/",
+        "url": "https://www.audiotool.com/track/rain-dxgu6fad/",
         "name": "rain",
-        "track_artist": "opaqity",
-        "desc": "To stick within such well defined boundaries of a genre and to create something so unique, alive, imagery evoking is a work of pure talent. Percussion and noise morphing into the sounds of water, deep echoing chords mimicking the feeling of distant thunder are just a few aspects making it a masterpiece. The track unpredictably but gently unravels and progresses like a passing night storm, and still remains danceable enough for a techno set in a club."
+        "track_artist": "sumad",
+        "desc": "To stick within such well defined boundaries of a genre and to create something so unique, alive, imagery evoking is a work of pure talent. Percussion and noise morphing into the sounds of water, deep echoing chords mimicking distant thunder. A masterpiece."
       },
       {
         "url": "https://www.audiotool.com/track/surf_dude/",
         "name": "SURF DUDE",
-        "track_artist": "sky bound zoo",
-        "desc": "VLTRA has been perfecting his unique sound over the last couple of years and it is no surprise he has become successful outside of Audiotool, releasing his first record as TLIM SHUG on Echovort Records and having it sold out on several online stores within days. His touch of messy lo-fi beats, deep basslines, dreamy and surreal vibes and clever ideas in every track placed him as my favourite artist this and previous year."
+        "track_artist": "VLTRA",
+        "desc": "VLTRA has been perfecting his unique sound over the last couple of years. He has become successful outside of Audiotool, releasing his first record as TLIM SHUG on Echovort Records. His messy lo-fi beats, deep basslines and clever ideas placed him as my favourite artist."
       },
       {
-        "url": "https://www.audiotool.com/track/sandstorm-ZzYAP/",
+        "url": "https://www.audiotool.com/track/sandstorm-zzyap/",
         "name": "Sandstorm",
-        "track_artist": "sky bound zoo",
-        "desc": "Sandburgen was one of the earliest users to show why Audiotool should be taken seriously. His music sounds rich and is usually melody driven with a minimalistic structure letting the user focus on subtle changes and progressions. ‘Sandstorm’ has messier and heavier sound design than most of his work, but here it works very well. Planned to be released as part of Sandorama record, it never made the cut being difficult to re-master, becoming a forgotten classic."
+        "track_artist": "Snad Breugen",
+        "desc": "Sandburgen was one of the earliest users to show why Audiotool should be taken seriously. 'Sandstorm' has messier and heavier sound design than most of his work, but here it works very well. Planned to be released as part of Sandorama record, it never made the cut being difficult to re-master, becoming a forgotten classic."
       },
       {
         "url": "https://www.audiotool.com/track/kitsch/",
         "name": "kitsch",
-        "track_artist": "sumad",
-        "desc": "Another oldie that is still impressing me almost 4 years later. rnzr is known for pushing the boundaries of Audiotool in the early days, putting out music of mind-blowing quality. Open up his projects and you’ll see a mess of tools and timeline regions that is hard to make sense of. The hidden secret behind his well crafted and polished music with high attention to detail in every layer."
+        "track_artist": "rnzr",
+        "desc": "Another oldie that is still impressing me almost 4 years later. rnzr is known for pushing the boundaries of Audiotool in the early days. Open up his projects and you'll see a mess of tools and timeline regions that is hard to make sense of."
       },
       {
         "url": "https://www.audiotool.com/track/realmvision_beta/",
         "name": "Realmvision '93",
-        "track_artist": "sumad",
-        "desc": "Created by the same person behind the VLTRA alias it definitely has aspects of his recognizable style, only this time bumping the bpm up to 140 and with a careful selection of samples, he created one of his most powerful, nostalgia evoking tracks. I still can’t get enough of this piece and it is without a doubt my favorite track of 2015."
+        "track_artist": "Nyneateate",
+        "desc": "Created by the same person behind the VLTRA alias, this time bumping the bpm up to 140 with a careful selection of samples. I still can't get enough of this piece and it is without a doubt my favorite track of 2015."
       },
       {
         "url": "https://www.audiotool.com/track/tho_30th/",
         "name": "the 30th",
-        "track_artist": "VLTRA",
-        "desc": ""
+        "track_artist": "mayonnaise",
+        "desc": "Artist recommendation. He produces different kinds of music both with samples and without, but my favorites are his pure ambient tracks. Absence of a beat allows for the imagination and emotions to flow freely."
       },
       {
         "url": "https://www.audiotool.com/track/lost_at_night/",
         "name": "Lost",
-        "track_artist": "VLTRA",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/38921/",
-        "name": "38921",
-        "track_artist": "Snad Breugen",
-        "desc": "Semitama really should be the “underrated artist” of this list having just over 60 followers, but their consistently fresh, creative and quality output landed them in my top 10 inspirations. Semitama’s unique work comes like breaths of fresh air in the track feed and never fails to impress and make you ponder the mystery behind this silent user."
+        "track_artist": "Kepz",
+        "desc": "Favorite own track. It's probably the most expected answer, but I'll be honest it is the only track that I wouldn't go back and change. My mind just went with the flow. 'Lost' also turned out to become a ticket to a festival and a once in a lifetime unforgettable experience."
       }
     ],
     "social": {},
@@ -7797,67 +7871,67 @@
         "url": "https://www.audiotool.com/track/sunshine_unplugged/",
         "name": "Sunshine unplugged",
         "track_artist": "Snad Breugen",
-        "desc": ""
+        "desc": "I could have chosen any track of Sandy's. This one could easily have stood on a Massive Attack album: great guitar, awesome drums, wonderful mood! Maybe my own favorite of his, or at least the one I listened to most often!"
       },
       {
         "url": "https://www.audiotool.com/track/emancipation/",
         "name": "Emancipation",
-        "track_artist": "Snad Breugen",
-        "desc": "cihangir makes the best Deep House in the place, for me at least. This track is a perfect example of his art of mixing. Smooth synths with cool vox and great percs, with delicately slight fx for a cozy atmosphere, taking your mind far far away."
+        "track_artist": "cihangir",
+        "desc": "cihangir makes the best Deep House in the place, for me at least. Smooth synths with cool vox and great percs, with delicately slight fx for a cozy atmosphere, taking your mind far far away."
       },
       {
         "url": "https://www.audiotool.com/track/high_and_dry/",
         "name": "High and Dry",
-        "track_artist": "cihangir",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/datura-ocZO4Dlr/",
-        "name": "datura",
-        "track_artist": "cihangir",
-        "desc": ""
-      },
-      {
-        "url": "https://www.audiotool.com/track/inner_demons-WYeFf/",
-        "name": "Inner demons",
         "track_artist": "floydpjasper",
-        "desc": ""
+        "desc": "This track is a good example of the versatility of Floydpjasper. One of my favorite 'Hip Hop' tracks on AT: great percs, so west coast! The first time I heard it, I can well imagine myself saying: where is Snoop?? :)"
+      },
+      {
+        "url": "https://www.audiotool.com/track/datura-oczo4dlr/",
+        "name": "datura",
+        "track_artist": "Christian-Chrom",
+        "desc": "He is the man I have made most collabs with. He is so skilled, always hanging around with his crushers. This track is just haunting: deep bass, great production, and cool sharp synths and fx make it a jewel!"
+      },
+      {
+        "url": "https://www.audiotool.com/track/inner_demons-wyeff/",
+        "name": "Inner demons",
+        "track_artist": "E-trim",
+        "desc": "Another one of my buddies here, that has become a real great dark Drum and Bass producer in such a short time. This one comes straight from hell and it's a massive gift made to demons! :)"
       },
       {
         "url": "https://www.audiotool.com/track/touch_e/",
         "name": "touch e",
-        "track_artist": "floydpjasper",
+        "track_artist": "Jambam",
         "desc": "Another talented producer, with a wide range of styles. This is a fast ride on the 303 highway. A bit repetitive? Yes maybe, but so gooood!!!"
       },
       {
         "url": "https://www.audiotool.com/track/acid_burst/",
         "name": "Acid Burst",
-        "track_artist": "Christian-Chrom",
-        "desc": "This guy always makes great tracks with crystal clear production! This one is a good example of his ability to create deep Acid tunes. But not only out of a 303. A real master of this machine here on AT."
+        "track_artist": "808Chunk",
+        "desc": "This guy always makes great tracks with crystal clear production! A real master of the 303 machine here on AT."
       },
       {
         "url": "https://www.audiotool.com/track/dlaboki_vir_deep_pool_preview/",
         "name": "Dlaboki Vir (Deep Pool)",
-        "track_artist": "Christian-Chrom",
-        "desc": ""
+        "track_artist": "slopo",
+        "desc": "Slopo always amazes me with his pure dark Tribal Techno tracks, creating sounds coming from nowhere and everywhere at once, and deeply going through your mind. Beware the bee! :)"
       },
       {
         "url": "https://www.audiotool.com/track/pareidolia/",
         "name": "Pareidolia",
-        "track_artist": "E-trim",
-        "desc": ""
+        "track_artist": "The Seahorse",
+        "desc": "Horsy has a huge talent for producing big atmosphere tracks that could easily score any blockbuster movie. Always having this 'Chemical Brothers' touch with perfect production!"
       },
       {
         "url": "https://www.audiotool.com/track/there_is_a_price/",
         "name": "There Is A Price",
-        "track_artist": "E-trim",
-        "desc": ""
+        "track_artist": "Unkindness and Murder",
+        "desc": "Artist recommendation. Really underrated, he produces some of the best bouncing Techno I have ever heard. Discreet and unadvertised, sharp beat with deep bass and groovy rhythm. Always a dark atmosphere."
       },
       {
         "url": "https://www.audiotool.com/track/last_light_jaws_edit/",
         "name": "Last Light Jaws Edit",
-        "track_artist": "Jambam",
-        "desc": ""
+        "track_artist": "TrackSharks",
+        "desc": "Favorite own track. It gives a pretty good idea of me: I'm kind of a geek (track based on a videogame riff), I love it dark, with a Rock/Trip Hop style. I made it in one take as it was flowing and I like it as it is: very rare :)."
       }
     ],
     "social": {},
@@ -7905,64 +7979,64 @@
     ],
     "tracks": [
       {
-        "url": "https://www.audiotool.com/track/please-IWP5ZH/",
+        "url": "https://www.audiotool.com/track/please-iwp5zh/",
         "name": "please",
         "track_artist": "amoeba",
-        "desc": ""
+        "desc": "Easy one to choose. This guy is just INSANE. One of the most talented people I've seen on Audiotool and beyond. Never had an emotional connection with a track as strong as I have with amoeba's tracks."
       },
       {
-        "url": "https://www.audiotool.com/track/plane-Xf6sOD/",
+        "url": "https://www.audiotool.com/track/plane-xf6sod/",
         "name": "Plane",
-        "track_artist": "amoeba",
-        "desc": "Shoutout to my friends at Untrust, this one was really a team effort, and I'm very happy with how it turned out. We have plenty of finished/nearly finished material, so keep watching us in 2016! We're desperate for Next though."
+        "track_artist": "Untrust 三",
+        "desc": "Shoutout to my friends at Untrust, this one was really a team effort. We have plenty of finished/nearly finished material, so keep watching us in 2016! We're desperate for Next though."
       },
       {
         "url": "https://www.audiotool.com/track/only_lines_interlude/",
         "name": "Interlude I",
-        "track_artist": "Untrust 三",
-        "desc": ""
+        "track_artist": "Olaf",
+        "desc": "This has secretly always been one of my favourite soundscapes on Audiotool. The pad is amazing, and the little clicks are a synth!"
       },
       {
-        "url": "https://www.audiotool.com/track/mega-uYzhu/",
+        "url": "https://www.audiotool.com/track/mega-uyzhu/",
         "name": "Ømega",
-        "track_artist": "Untrust 三",
+        "track_artist": "CGMan",
         "desc": "A no-brainer. Just open it up, look at the synthwork, and kneel in awe to the C-god."
       },
       {
-        "url": "https://www.audiotool.com/track/underground_lake-nwNDvwr/",
+        "url": "https://www.audiotool.com/track/underground_lake-nwndvwr/",
         "name": "Underground Lake",
-        "track_artist": "Olaf",
-        "desc": "Kepz, also one of my favourite artists. I really value production and the amount of work put into details, and this is a great example again. Kepz somehow makes his reverb sound different, and WAY better than everybody elses reverb. The drums and melody are also very creative."
+        "track_artist": "Kepz",
+        "desc": "Kepz somehow makes his reverb sound different, and WAY better than everybody elses reverb. The drums and melody are also very creative."
       },
       {
         "url": "https://www.audiotool.com/track/corner_shop/",
         "name": "Corner Shop",
-        "track_artist": "Olaf",
-        "desc": "I remember when this was featured. I listened to it, was like"
+        "track_artist": "ascent",
+        "desc": "I listened to it, was like 'hey, nice track, sick bass, nice kick, cool sidechained noise'. After a while I saw something about the setup in the comment section, so I opened it up, and I literally could not believe my eyes. It doesn't get more impressive than this."
       },
       {
         "url": "https://www.audiotool.com/track/d_u_n_k_e_l/",
         "name": "D u n k e l",
-        "track_artist": "CGMan",
+        "track_artist": "Aaron",
         "desc": "Aaron makes such innovative beats. Amazing artist, amazing textures. Very unique style!"
       },
       {
         "url": "https://www.audiotool.com/track/ripples_luxior_chill_edit/",
         "name": "Ripples (Luxior chill edit)",
-        "track_artist": "CGMan",
+        "track_artist": "looks",
         "desc": "Luxior has some sort of raw talent that I haven't seen anywhere else. Melodically super cool, drum-work always on point, and how the heck did he make the chords at 3:52 sound like that?!"
       },
       {
         "url": "https://www.audiotool.com/track/abs_x_lux_-_peripherals/",
         "name": "abs x lux - peripherals",
-        "track_artist": "Kepz",
+        "track_artist": "abstract & looks",
         "desc": "Shoutout to my boy Abstract, his melodies are insane, and the variation this tune in particular has is just incredible!"
       },
       {
         "url": "https://www.audiotool.com/track/no_future_ft_cgman/",
         "name": "No Future (ft. CGMan)",
-        "track_artist": "Kepz",
-        "desc": ""
+        "track_artist": "Aron & CGMan",
+        "desc": "Favorite own track. I started this draft, invited CGMan, we changed some stuff, and then CGMan gave it a proper mixing and compressing session and wow, that made the entire tune. Got some love from Funtcase and a couple of record labels too."
       }
     ],
     "social": {},
@@ -7980,6 +8054,90 @@
     "is_hidden": true,
     "artist": "",
     "tracks": []
+  },
+  {
+    "artist": "Boshi",
+    "real_name": "",
+    "date": "2016-01-20",
+    "album_number": 77,
+    "at_profile": "https://www.audiotool.com/user/boshi/",
+    "album_url": "https://www.audiotool.com/album/tzVj27b/",
+    "photo": "",
+    "cover_url": "https://at-cdn-s01.audiotool.com/2016/01/20/albums/tzVj27b/cover256x256-dbae65e70cdc4da2a57b6bb8588f5d4b.jpg",
+    "intro": "",
+    "about": "Also known as Divus. German producer.",
+    "interview": "",
+    "tracks": [
+      {
+        "url": "https://www.audiotool.com/track/blue_days_feat_emma/",
+        "name": "Blue Days feat. Emma",
+        "track_artist": "cihangir",
+        "desc": "His tracks have always had a special impact on me and 'Blue Days feat Emma' is probably the track that I have heard most on Audiotool. The Sunday groove with a good beat memorable vocal. Even my friends have it on their playlist."
+      },
+      {
+        "url": "https://www.audiotool.com/track/memory_eraser/",
+        "name": "Memory Eraser",
+        "track_artist": "Cripta & Kepz",
+        "desc": "One of the first tracks on Audiotool that inspired me to go on trying. In some places it reminds me of the music of Booka Shade who often manage to create some kind of blend of dream and reality."
+      },
+      {
+        "url": "https://www.audiotool.com/track/the_dude/",
+        "name": "The Dude",
+        "track_artist": "cripta",
+        "desc": "Because he is the dude! the original hipster."
+      },
+      {
+        "url": "https://www.audiotool.com/track/everyday_anyone/",
+        "name": "EVERYDAY ANYONE",
+        "track_artist": "Nominal",
+        "desc": "The deep-reaching bassline mixed with the beat and the vocals make this track to one of the most mind-blowing pieces on Audiotool. For me Nominal's music is always an incentive for new tracks."
+      },
+      {
+        "url": "https://www.audiotool.com/track/flight_missing_new_edit/",
+        "name": "flight _ missing (new edit)",
+        "track_artist": "Olondro",
+        "desc": "I can't exactly say what it is about this track that fascinates me so much. I think it's the lightness of it. It simply sounds like a good mood and the main thing."
+      },
+      {
+        "url": "https://www.audiotool.com/track/a_walk_in_the_dark/",
+        "name": "A Walk In The Dark",
+        "track_artist": "Kepz",
+        "desc": "So clear and clean down to the last detail. I am always amazed how he does it. Close your eyes and you will succumb to the magic of it."
+      },
+      {
+        "url": "https://www.audiotool.com/track/ktn-24/",
+        "name": "KTN-24",
+        "track_artist": "かたな",
+        "desc": "Pushing things forward! The right thing when you are sitting in the tram on the way home. Sometimes it's exactly what you need get your head clear."
+      },
+      {
+        "url": "https://www.audiotool.com/track/je_rave_-_feat_twilatoo_pre/",
+        "name": "Je rave - feat. Twilatoo (pre)",
+        "track_artist": "Snad Breugen",
+        "desc": "A favorite of mine with vocals, which is always an inspiration for me. Besides you can always tell if it's an original Sandbrgn. For me he is one of the few artists who have managed to find his own personal style."
+      },
+      {
+        "url": "https://www.audiotool.com/track/zeitgeist-c6s5pkq5c/",
+        "name": "Zeitgeist",
+        "track_artist": "Marodeur",
+        "desc": "The darkest good mood track I know. One of those tracks that wants to make you want to press the App button - you can't resist it."
+      },
+      {
+        "url": "https://www.audiotool.com/track/the_man_who_smokes_and_is_lost/",
+        "name": "the man who smokes and is lost",
+        "track_artist": "IVS",
+        "desc": "Artist recommendation. I was pleasantly surprised when I discovered ivs. I am always happy when he releases something new. Especially his short cuts are often a huge inspiration to me and whet my appetite for more."
+      }
+    ],
+    "social": {},
+    "color1": "",
+    "color2": "",
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
+    "bar_color": "#111111",
+    "bar_text_color": "#ffffff",
+    "is_hidden": true
   },
   {
     "artist": "DubLion",
@@ -8014,62 +8172,62 @@
       {
         "url": "https://www.audiotool.com/track/kodama_ft_mourn/",
         "name": "Kodama(Ft. Mourn)",
-        "track_artist": "notoz",
-        "desc": ""
+        "track_artist": "notoz & Ante",
+        "desc": "This track gives me some Ambient vibes. The solid drums and clear bassline show his originality. Notoz always delivers his best and is someone who always works to perfection."
       },
       {
         "url": "https://www.audiotool.com/track/ides_of_march/",
         "name": "ides of march",
-        "track_artist": "Ante",
+        "track_artist": "tornsage",
         "desc": "There are no words to describe how beautiful this song is. Tornsage uses a steady beat and combines vocals and pianos to create the perfect mix."
       },
       {
         "url": "https://www.audiotool.com/track/focus-csidk2d9/",
         "name": "Focus",
-        "track_artist": "notoz",
+        "track_artist": "Mikke",
         "desc": "Mikke created such a soul-touching song with this one. This inspired me to progress further when collaborating with Notoz."
       },
       {
-        "url": "https://www.audiotool.com/track/distant-dM2ZhX/",
+        "url": "https://www.audiotool.com/track/distant-dm2zhx/",
         "name": "Distant.",
-        "track_artist": "Ante",
+        "track_artist": "no vyce (Kryptic)",
         "desc": "Kryptic started to reach out and find his potential in music last summer. This track was a good example of music progression on AT."
       },
       {
         "url": "https://www.audiotool.com/track/underground_love_ft_dublion/",
         "name": "Underground Love (Ft. DubLion)",
-        "track_artist": "tornsage",
+        "track_artist": "Xavi & DubLion",
         "desc": "This collab was the start of something special. Xav wanted to see what would happen when two styles of music production come together. I'm glad this collaboration happened."
       },
       {
-        "url": "https://www.audiotool.com/track/metropolis-Suv63vUON/",
+        "url": "https://www.audiotool.com/track/metropolis-suv63vuon/",
         "name": "Metropolis",
-        "track_artist": "tornsage",
-        "desc": "This song has inspired me from the start. Nostalgia is what is brought back for Ketram‘s old songs. Ketram has always been an Audiotool legend to me."
+        "track_artist": "Ketram",
+        "desc": "This song has inspired me from the start. Nostalgia is what is brought back for Ketram's old songs. Ketram has always been an Audiotool legend to me."
       },
       {
-        "url": "https://www.audiotool.com/track/stream-niSvMU/",
+        "url": "https://www.audiotool.com/track/stream-nisvmu/",
         "name": "Stream",
-        "track_artist": "Mikke",
+        "track_artist": "CGMan",
         "desc": "This song takes a darker turn to any mix. He always delivers the best of Neuro Drum and Bass when are in need of it."
       },
       {
-        "url": "https://www.audiotool.com/track/alone-KLaIY0D/",
+        "url": "https://www.audiotool.com/track/alone-klaiy0d/",
         "name": "alone",
-        "track_artist": "Mikke",
-        "desc": ""
+        "track_artist": "amoeba",
+        "desc": "His tracks inspired everyone on audiotool. The chords on this track remind me of Hybrid minds but overall show what Audiotool is capable of."
       },
       {
         "url": "https://www.audiotool.com/track/reborn_-_1_5/",
         "name": "Reborn - [1/5]",
-        "track_artist": "no vyce (Kryptic)",
-        "desc": ""
+        "track_artist": "Kyba",
+        "desc": "Artist recommendation. Kyba creates some wonders of Audiotool. He designs the most perfect atmospheres and definitive drums which makes me love the unique style he brings to Audiotool."
       },
       {
         "url": "https://www.audiotool.com/track/story_of_a_lifetime/",
         "name": "Story of a Lifetime",
-        "track_artist": "no vyce (Kryptic)",
-        "desc": ""
+        "track_artist": "DubLion",
+        "desc": "Favorite own track. This song is the definitive of summer 2015. This brings memories back from this amazing time. I hope to release a 2016 summer album this year which will go beyond boundaries."
       }
     ],
     "social": {},
@@ -8119,68 +8277,68 @@
       {
         "url": "https://www.audiotool.com/track/resurface/",
         "name": "Resurface",
-        "track_artist": "Lyon (done)",
-        "desc": ""
+        "track_artist": "Lyon (done) & tornsage",
+        "desc": "This track deserves so much attention. Really just a general favorite. This almost didn't sound like it was made in Audiotool. It's just so well done in every aspect."
       },
       {
-        "url": "https://www.audiotool.com/track/spiral-dbPVgQ/",
+        "url": "https://www.audiotool.com/track/spiral-dbpvgq/",
         "name": "spiral",
-        "track_artist": "tornsage",
+        "track_artist": "amoeba",
         "desc": "So many memories with this one. The melody, the bass, the atmosphere. Really just an overall beautiful track that I often come back to. Amoeba has many other amazing tracks, but this one hits the feels."
       },
       {
         "url": "https://www.audiotool.com/track/plano/",
         "name": "PLANO [Extended]",
-        "track_artist": "Lyon (done)",
-        "desc": ""
+        "track_artist": "3Beats",
+        "desc": "Definitely an under-rated artist, very talented individual with so much potential and really shows it with this simple track."
       },
       {
         "url": "https://www.audiotool.com/track/everlasting_autumn/",
         "name": "Everlasting Autumn",
-        "track_artist": "tornsage",
-        "desc": ""
+        "track_artist": "RDz",
+        "desc": "My original Drum and Bass inspiration here at Audiotool. Onyx has so many great tracks, however this one brings back so many memories and it was the reason why I moved towards Drum and Bass."
       },
       {
-        "url": "https://www.audiotool.com/track/into_the_atmosphere-SJmhqsPOO/",
+        "url": "https://www.audiotool.com/track/into_the_atmosphere-sjmhqspoo/",
         "name": "Into the atmosphere",
-        "track_artist": "amoeba",
+        "track_artist": "Sota.",
         "desc": "Another artist who inspired me to move towards Drum and Bass. Sota has many other great tracks so I suggest those who haven't checked him out should really do so."
       },
       {
-        "url": "https://www.audiotool.com/track/day_dream-9OhuTm9b/",
+        "url": "https://www.audiotool.com/track/day_dream-9ohutm9b/",
         "name": "Day Dream",
-        "track_artist": "amoeba",
+        "track_artist": "DubLion",
         "desc": "Dublion is without a doubt a talented artist. I've been working with him for some time now and I'm pretty impressed with the amount of motivation this guy has. This is personally my favorite track from him."
       },
       {
         "url": "https://www.audiotool.com/track/waves_in_the_sunset/",
         "name": "Waves In The Sunset",
-        "track_artist": "3Beats",
+        "track_artist": "kiari",
         "desc": "Syntax' pads are incredible and in this track really shows it. A really great track made by Syntax, absolutely love the simplicity of this track."
       },
       {
         "url": "https://www.audiotool.com/track/broken_projector/",
         "name": "Broken Projector",
-        "track_artist": "3Beats",
+        "track_artist": "Kepz",
         "desc": "Kepz is a master at his art, whether it be music or painting (yes I saw that Pulv painting of yours). This track by Kepz is my personal favorite, like a lot of the tracks on here, it brings back memories."
       },
       {
         "url": "https://www.audiotool.com/track/comedown/",
         "name": "Comedown",
-        "track_artist": "RDz",
-        "desc": "Another one. This along with Heis'n'b brings back so many memories. I remember this was my first track I ever downloaded at Audiotool around my freshman year of High school. A great classic by Astrum."
+        "track_artist": "Astrum",
+        "desc": "This along with Heis'n'b brings back so many memories. I remember this was my first track I ever downloaded at Audiotool around my freshman year of High school. A great classic by Astrum."
       },
       {
-        "url": "https://www.audiotool.com/track/i_can_t_explain-SJBlXS/",
+        "url": "https://www.audiotool.com/track/i_can_t_explain-sjblxs/",
         "name": "I Can't Explain",
-        "track_artist": "RDz",
-        "desc": ""
+        "track_artist": "...",
+        "desc": "Artist recommendation. Previously known as 'Mourn' or 'Another Terrestrial'. This guy is incredible and his tracks are pretty unique. Definitely under-rated. I just really love the atmosphere he puts out in his tracks."
       },
       {
         "url": "https://www.audiotool.com/track/kodama_ft_mourn/",
         "name": "Kodama(Ft. Mourn)",
-        "track_artist": "Sota.",
-        "desc": ""
+        "track_artist": "notoz & Ante",
+        "desc": "Favorite own track. I was pretty proud of the outcome of this track, also thanks to Mourn it was fleshed out. I think it kind of puts me into a nice step into the type of DnB I want to create."
       }
     ],
     "social": {},
@@ -8227,67 +8385,73 @@
         "url": "https://www.audiotool.com/track/cash_stacks/",
         "name": "Cash Stacks",
         "track_artist": "erthboy",
-        "desc": ""
+        "desc": "When I heard this it blew my mind, the production was/is incredible. This was the first time I had heard somebody use Audiotool for that fast-paced, bright and complex sounding kinda style, which plenty of other artists then try/tried to emulate later on."
       },
       {
         "url": "https://www.audiotool.com/track/re-boot_the_system/",
         "name": "Re-boot the system",
-        "track_artist": "erthboy",
+        "track_artist": "Tyburn",
         "desc": "I've always been a fan of Tyburn, he has musical golden thumbs, and this proved it. I wouldn't even know what to classify this as, but it's chaotic and it works so well."
       },
       {
         "url": "https://www.audiotool.com/track/teal_water/",
         "name": "Teal//Water",
-        "track_artist": "Tyburn",
-        "desc": ""
+        "track_artist": "[Hybrid]",
+        "desc": "The vibe in this track caught me immediately, the solemn nature of the pad/lead, and the reverb-ey percussion just sets the perfect mood, but it's the progression almost following a 'two steps forward, three steps back' format which kept me listening."
       },
       {
         "url": "https://www.audiotool.com/track/soar/",
         "name": "Soar",
-        "track_artist": "Tyburn",
-        "desc": "As my comment on the actual track says, I still maintain this is my personal favorite ambient track on AT. I don't know how he made that big gliding lead and I don't want to know, just to keep the magic. This has been one of my 'comfort tracks' over the last few years. Just wish I was around when Won Ton was still active."
+        "track_artist": "Won Ton",
+        "desc": "I still maintain this is my personal favorite ambient track on AT. I don't know how he made that big gliding lead and I don't want to know, just to keep the magic. This has been one of my 'comfort tracks' over the last few years."
       },
       {
-        "url": "https://www.audiotool.com/track/chirp-ShO52z/",
+        "url": "https://www.audiotool.com/track/chirp-sho52z/",
         "name": "Chirp",
-        "track_artist": "[Hybrid]",
-        "desc": "Don't get me wrong, for me and many others (I assume, look at that follower count man) Xav is one of my favorite artists, but the sheer uniqueness of this track makes it memorable. It's all calm, birds chirping, some water fx, then bam, one of the fattest Neuro/Glitch basses I've ever heard."
+        "track_artist": "Xavi",
+        "desc": "Xav is one of my favorite artists, but the sheer uniqueness of this track makes it memorable. It's all calm, birds chirping, some water fx, then bam, one of the fattest Neuro/Glitch basses I've ever heard."
       },
       {
         "url": "https://www.audiotool.com/track/fdr002_hearts/",
         "name": "#FDR002 Hearts",
-        "track_artist": "[Hybrid]",
+        "track_artist": "Tetra",
         "desc": "This is one of those tracks that from the second I pressed play, I just sat motionless in my chair and listened, my mind playing out like a forlorn black and white film. A thinking track, but still a massive favorite."
       },
       {
         "url": "https://www.audiotool.com/track/there_s_always_tomorrow/",
         "name": "there's always tomorrow",
-        "track_artist": "Won Ton",
-        "desc": ""
+        "track_artist": "opaqity",
+        "desc": "I would just put Opaq's artist page here, he is literally golden, but this track is the standout of mine. He definitely influenced me to start looking for alternative percussion."
       },
       {
         "url": "https://www.audiotool.com/track/cars_passin/",
         "name": "cars passin",
-        "track_artist": "Won Ton",
-        "desc": ""
+        "track_artist": "swrlly",
+        "desc": "Not sure if it's just the key this track is in, or the work with that piano, but something about this track just puts me in a good place."
       },
       {
         "url": "https://www.audiotool.com/track/malice/",
         "name": "Malice",
-        "track_artist": "Xavi",
+        "track_artist": "Tyburn",
         "desc": "Feel a bit bad for putting the same artist in here twice, but c'mon it's Tyburn. This was the first time I'd heard AT being used for UK-style Dubstep. The vibe Tyburn creates in this is still something I'm trying to emulate."
       },
       {
         "url": "https://www.audiotool.com/track/technicolour/",
         "name": "Technicolour",
-        "track_artist": "Xavi",
-        "desc": "Akimbo and I started out on AT at pretty similar times, and I like to think both of our sounds have matured and evolved during that time. This hands down is my fave of his though. The first time I listened my first thought was 'Yup, he's defo going places'"
+        "track_artist": "Akimbo",
+        "desc": "Akimbo and I started out on AT at pretty similar times, and I like to think both of our sounds have matured and evolved during that time. This hands down is my fave of his though. The first time I listened my first thought was 'Yup, he's defo going places'."
       },
       {
-        "url": "https://www.audiotool.com/track/nervous-uHLQaF/",
+        "url": "https://www.audiotool.com/track/nervous-uhlqaf/",
         "name": "Nervous",
-        "track_artist": "Tetra",
-        "desc": "My under-rated artist is Jaradodo for sure, always been a solid presence ever since I stepped into AT. It's always a gamble as to what genre they put out, but it's always a charm to listen."
+        "track_artist": "Jaradodo",
+        "desc": "Artist recommendation. Always been a solid presence ever since I stepped into AT. It's always a gamble as to what genre they put out, but it's always a charm to listen."
+      },
+      {
+        "url": "https://www.audiotool.com/track/i_really_liked_you/",
+        "name": "I Really Liked You",
+        "track_artist": "ollie",
+        "desc": "Favorite own track. It was made pretty shortly after a breakup, hence the name, but sentiment aside it's the first track I've made that I think really sounds like a 'live' organic track."
       }
     ],
     "social": {},
