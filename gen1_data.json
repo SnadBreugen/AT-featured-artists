@@ -3468,13 +3468,13 @@
       }
     ],
     "social": {},
-    "color1": "",
+    "color1": "#9d0c4b",
     "color2": "",
-    "color_accent": "",
-    "desc_bg": "",
-    "links_bar_color": "",
+    "color_accent": "#9d0c4b",
+    "desc_bg": "#f6e5ed",
+    "links_bar_color": "#cb9db3",
     "bar_color": "#111111",
-    "bar_text_color": "#ffffff",
+    "bar_text_color": "#c4276b",
     "is_hidden": false
   },
   {
