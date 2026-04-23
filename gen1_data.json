@@ -171,12 +171,12 @@
       }
     ],
     "social": {},
-    "color1": "",
+    "color1": "#c144b0",
     "color2": "",
-    "color_accent": "",
-    "desc_bg": "",
-    "links_bar_color": "",
-    "bar_color": "#111111",
+    "color_accent": "#c144b0",
+    "desc_bg": "#d4bfc7",
+    "links_bar_color": "#769bcd",
+    "bar_color": "#9c3c8d",
     "bar_text_color": "#ffffff",
     "is_hidden": false
   },
