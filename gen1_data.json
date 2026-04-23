@@ -2051,13 +2051,13 @@
       }
     ],
     "social": {},
-    "color1": "",
+    "color1": "#23b14d",
     "color2": "",
-    "color_accent": "",
+    "color_accent": "#23b14d",
     "desc_bg": "",
-    "links_bar_color": "",
-    "bar_color": "#111111",
-    "bar_text_color": "#ffffff",
+    "links_bar_color": "#fe7f26",
+    "bar_color": "#fe7f26",
+    "bar_text_color": "#23b14d",
     "is_hidden": false
   },
   {
