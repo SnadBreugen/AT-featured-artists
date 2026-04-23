@@ -874,13 +874,13 @@
       }
     ],
     "social": {},
-    "color1": "",
+    "color1": "#bf1d35",
     "color2": "",
-    "color_accent": "",
-    "desc_bg": "",
-    "links_bar_color": "",
-    "bar_color": "#111111",
-    "bar_text_color": "#ffffff",
+    "color_accent": "#bf1d35",
+    "desc_bg": "#fafdfe",
+    "links_bar_color": "#19b67f",
+    "bar_color": "#495561",
+    "bar_text_color": "#f7fe7c",
     "is_hidden": false
   },
   {
