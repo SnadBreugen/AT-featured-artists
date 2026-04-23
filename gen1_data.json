@@ -258,13 +258,13 @@
       }
     ],
     "social": {},
-    "color1": "",
+    "color1": "#b35e61",
     "color2": "",
-    "color_accent": "",
-    "desc_bg": "",
-    "links_bar_color": "",
-    "bar_color": "#111111",
-    "bar_text_color": "#ffffff",
+    "color_accent": "#b35e61",
+    "desc_bg": "#ffdbc7",
+    "links_bar_color": "#8ed6d7",
+    "bar_color": "#fe4f48",
+    "bar_text_color": "#000000",
     "is_hidden": false
   },
   {
