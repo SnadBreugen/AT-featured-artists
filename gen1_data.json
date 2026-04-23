@@ -557,13 +557,13 @@
       }
     ],
     "social": {},
-    "color1": "",
+    "color1": "#87b0af",
     "color2": "",
-    "color_accent": "",
-    "desc_bg": "",
-    "links_bar_color": "",
-    "bar_color": "#111111",
-    "bar_text_color": "#ffffff",
+    "color_accent": "#87b0af",
+    "desc_bg": "#fefefe",
+    "links_bar_color": "#a37590",
+    "bar_color": "#ffffff",
+    "bar_text_color": "#000000",
     "is_hidden": false
   },
   {
@@ -662,13 +662,13 @@
       }
     ],
     "social": {},
-    "color1": "",
+    "color1": "#5fb4d8",
     "color2": "",
-    "color_accent": "",
-    "desc_bg": "",
-    "links_bar_color": "",
+    "color_accent": "#5fb4d8",
+    "desc_bg": "#c6f9fe",
+    "links_bar_color": "#c6f9fe",
     "bar_color": "#111111",
-    "bar_text_color": "#ffffff",
+    "bar_text_color": "#c6f9fe",
     "is_hidden": false
   },
   {
