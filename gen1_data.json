@@ -1189,11 +1189,11 @@
       }
     ],
     "social": {},
-    "color1": "",
+    "color1": "#3891d2",
     "color2": "",
-    "color_accent": "",
-    "desc_bg": "",
-    "links_bar_color": "",
+    "color_accent": "#3891d2",
+    "desc_bg": "#bcddf5",
+    "links_bar_color": "#61bbf4",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
     "is_hidden": false
