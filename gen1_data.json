@@ -3238,13 +3238,13 @@
       }
     ],
     "social": {},
-    "color1": "",
+    "color1": "#35c9d2",
     "color2": "",
-    "color_accent": "",
-    "desc_bg": "",
-    "links_bar_color": "",
+    "color_accent": "#35c9d2",
+    "desc_bg": "#b8ccd5",
+    "links_bar_color": "#4a942f",
     "bar_color": "#111111",
-    "bar_text_color": "#ffffff",
+    "bar_text_color": "#4a942f",
     "is_hidden": false
   },
   {
