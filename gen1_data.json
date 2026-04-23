@@ -3797,13 +3797,13 @@
       }
     ],
     "social": {},
-    "color1": "",
+    "color1": "#3dafb8",
     "color2": "",
-    "color_accent": "",
-    "desc_bg": "",
-    "links_bar_color": "",
+    "color_accent": "#3dafb8",
+    "desc_bg": "#f9dccd",
+    "links_bar_color": "#b9c251",
     "bar_color": "#111111",
-    "bar_text_color": "#ffffff",
+    "bar_text_color": "#919191",
     "is_hidden": false
   },
   {
