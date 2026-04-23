@@ -2806,13 +2806,13 @@
       }
     ],
     "social": {},
-    "color1": "",
+    "color1": "#82e3f4",
     "color2": "",
-    "color_accent": "",
-    "desc_bg": "",
-    "links_bar_color": "",
+    "color_accent": "#82e3f4",
+    "desc_bg": "#f4e3c1",
+    "links_bar_color": "#eb8161",
     "bar_color": "#111111",
-    "bar_text_color": "#ffffff",
+    "bar_text_color": "#8be6f8",
     "is_hidden": false
   },
   {
