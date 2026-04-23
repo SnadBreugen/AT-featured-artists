@@ -1300,14 +1300,15 @@
       }
     ],
     "social": {},
-    "color1": "",
+    "color1": "#1879a3",
     "color2": "",
-    "color_accent": "",
+    "color_accent": "#1879a3",
     "desc_bg": "",
-    "links_bar_color": "",
-    "bar_color": "#111111",
-    "bar_text_color": "#ffffff",
-    "is_hidden": false
+    "links_bar_color": "#64b4b7",
+    "bar_color": "#010101",
+    "bar_text_color": "#ea2b1c",
+    "is_hidden": false,
+    "quote": "Audiotool is the coolest way to get into making music. The relatively small community makes everyone's presence so much more valuable - so make the music you love."
   },
   {
     "artist": "White Grizzly",
