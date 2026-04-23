@@ -3276,7 +3276,7 @@
     ]
   },
   {
-    "artist": "&#x0398;LE",
+    "artist": "eratekk",
     "real_name": "Ole Renfordt",
     "date": "2015-02-25",
     "album_number": 33,
@@ -3377,13 +3377,13 @@
       }
     ],
     "social": {},
-    "color1": "",
+    "color1": "#e8aa00",
     "color2": "",
-    "color_accent": "",
-    "desc_bg": "",
-    "links_bar_color": "",
+    "color_accent": "#e8aa00",
+    "desc_bg": "#eae4d9",
+    "links_bar_color": "#ffffff",
     "bar_color": "#111111",
-    "bar_text_color": "#ffffff",
+    "bar_text_color": "#e4a801",
     "is_hidden": false
   },
   {
