@@ -2699,13 +2699,13 @@
       }
     ],
     "social": {},
-    "color1": "",
+    "color1": "#3de7f7",
     "color2": "",
-    "color_accent": "",
-    "desc_bg": "",
-    "links_bar_color": "",
+    "color_accent": "#3de7f7",
+    "desc_bg": "#bcebf0",
+    "links_bar_color": "#116e86",
     "bar_color": "#111111",
-    "bar_text_color": "#ffffff",
+    "bar_text_color": "#3ce1f1",
     "is_hidden": false
   },
   {
