@@ -1829,11 +1829,11 @@
       }
     ],
     "social": {},
-    "color1": "",
+    "color1": "#fa7993",
     "color2": "",
-    "color_accent": "",
-    "desc_bg": "",
-    "links_bar_color": "",
+    "color_accent": "#fa7993",
+    "desc_bg": "#d6e6b7",
+    "links_bar_color": "#b9505e",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
     "is_hidden": false
