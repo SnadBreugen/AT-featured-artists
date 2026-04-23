@@ -1724,12 +1724,12 @@
       }
     ],
     "social": {},
-    "color1": "",
+    "color1": "#b26186",
     "color2": "",
-    "color_accent": "",
-    "desc_bg": "",
-    "links_bar_color": "",
-    "bar_color": "#111111",
+    "color_accent": "#b26186",
+    "desc_bg": "#dde69e",
+    "links_bar_color": "#4fab6a",
+    "bar_color": "#58243d",
     "bar_text_color": "#ffffff",
     "is_hidden": false
   },
