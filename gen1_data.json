@@ -1507,14 +1507,15 @@
       }
     ],
     "social": {},
-    "color1": "",
+    "color1": "#ff9d04",
     "color2": "",
-    "color_accent": "",
-    "desc_bg": "",
-    "links_bar_color": "",
-    "bar_color": "#111111",
-    "bar_text_color": "#ffffff",
-    "is_hidden": false
+    "color_accent": "#ff9d04",
+    "desc_bg": "#fcfdfa",
+    "links_bar_color": "#f9e733",
+    "bar_color": "#fe9a04",
+    "bar_text_color": "#000000",
+    "is_hidden": false,
+    "quote": "Audiotool forever"
   },
   {
     "artist": "In5omniac",
