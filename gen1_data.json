@@ -3127,11 +3127,11 @@
       }
     ],
     "social": {},
-    "color1": "",
+    "color1": "#b65029",
     "color2": "",
-    "color_accent": "",
+    "color_accent": "#b65029",
     "desc_bg": "",
-    "links_bar_color": "",
+    "links_bar_color": "#78bad1",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
     "is_hidden": false
