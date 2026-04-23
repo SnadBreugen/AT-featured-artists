@@ -4506,13 +4506,13 @@
       }
     ],
     "social": {},
-    "color1": "",
+    "color1": "#adeaf9",
     "color2": "",
-    "color_accent": "",
+    "color_accent": "#adeaf9",
     "desc_bg": "",
-    "links_bar_color": "",
+    "links_bar_color": "#7eddf6",
     "bar_color": "#111111",
-    "bar_text_color": "#ffffff",
+    "bar_text_color": "#a4e6f8",
     "is_hidden": false
   },
   {
