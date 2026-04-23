@@ -4395,13 +4395,13 @@
       }
     ],
     "social": {},
-    "color1": "",
+    "color1": "#dfd29e",
     "color2": "",
-    "color_accent": "",
+    "color_accent": "#dfd29e",
     "desc_bg": "",
-    "links_bar_color": "",
+    "links_bar_color": "#df9981",
     "bar_color": "#111111",
-    "bar_text_color": "#ffffff",
+    "bar_text_color": "#fdecf4",
     "is_hidden": false
   },
   {
