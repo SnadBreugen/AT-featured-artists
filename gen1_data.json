@@ -3908,14 +3908,15 @@
       }
     ],
     "social": {},
-    "color1": "",
+    "color1": "#ef7f04",
     "color2": "",
-    "color_accent": "",
-    "desc_bg": "",
-    "links_bar_color": "",
+    "color_accent": "#ef7f04",
+    "desc_bg": "#c4d4cb",
+    "links_bar_color": "#13ab54",
     "bar_color": "#111111",
-    "bar_text_color": "#ffffff",
-    "is_hidden": false
+    "bar_text_color": "#f07f04",
+    "is_hidden": false,
+    "quote": "You guys are amazing. I've never seen such a vibrant and diverse community such as Audiotool. The ability to make, share, learn, and grow as musicians via the internet is a blessing to be had."
   },
   {
     "artist": "aBstracT",
