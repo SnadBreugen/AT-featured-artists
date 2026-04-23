@@ -9,7 +9,7 @@
     "photo": "https://api.audiotool.com/album/uedgwu/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/tophat/avatar/512.jpg",
     "intro": "For years TopHat has stood for high-quality atmospheric tracks somewhere between \"Chillout\" and \"Future Garage\". Give yourselves time and enjoy a sample of his mastery.",
-    "about": "Name: Joel Caffey\n\nPlace: Chesapeake, Virginia (USA)\n\nAge: 18\n\nProfession: Student of biomedical engineering at Boston University",
+    "about": "Name: Joel Caffey\nPlace: Chesapeake, Virginia (USA)\nAge: 18\nProfession: Student of biomedical engineering at Boston University",
     "interview": [
       {
         "q": "Musical Style: ",
@@ -25,7 +25,7 @@
       },
       {
         "q": "Message to the Community ",
-        "a": "I have learned that music is an extension of what we come to love, so let the essence of your heart flow effortlessly through your sound."
+        "a": "\"I have learned that music is an extension of what we come to love, so let the essence of your heart flow effortlessly through your sound.\""
       }
     ],
     "tracks": [
@@ -33,13 +33,13 @@
         "url": "https://www.audiotool.com/track/under_the_same_sun/",
         "name": "Under The Same Sun",
         "track_artist": "Olaf",
-        "desc": "Don't fear your emotions; channel them"
+        "desc": "don't fear your emotions; channel them"
       },
       {
         "url": "https://www.audiotool.com/track/lense/",
         "name": "Lense",
         "track_artist": "VLTRA",
-        "desc": "Devote time to each element of a track"
+        "desc": "devote time to each element of a track"
       },
       {
         "url": "https://www.audiotool.com/track/a_n_un_musical_joke/",
@@ -51,37 +51,37 @@
         "url": "https://www.audiotool.com/track/jackfruit/",
         "name": "Jackfruit",
         "track_artist": "Sandburgen",
-        "desc": "Organization is key"
+        "desc": "organization is key"
       },
       {
         "url": "https://www.audiotool.com/track/break_iii/",
         "name": "Break III",
         "track_artist": "Julsy",
-        "desc": "Be open to the unconventional"
+        "desc": "be open to the unconventional"
       },
       {
         "url": "https://www.audiotool.com/track/i_have_useless_superpowers/",
         "name": "I have useless superpowers",
         "track_artist": "sbronz",
-        "desc": "Explore sample manipulation"
+        "desc": "explore sample manipulation"
       },
       {
         "url": "https://www.audiotool.com/track/breakdown-qmmcmasrq/",
         "name": "Breakdown",
         "track_artist": "CGMan",
-        "desc": "Don't fear chaos"
+        "desc": "don't fear chaos"
       },
       {
         "url": "https://www.audiotool.com/track/bcn_city/",
         "name": "BCN CITY",
         "track_artist": "Griader",
-        "desc": "Your music is an extension of where we are from and a lens through which we see where we are headed"
+        "desc": "your music is an extension of where we are from and a lens through which we see where we are headed"
       },
       {
         "url": "https://www.audiotool.com/track/susitna/",
         "name": "susitna",
         "track_artist": "Mr. Standfast",
-        "desc": "Be original, the best you that will ever be"
+        "desc": "be original, the best you that will ever be"
       },
       {
         "url": "https://www.audiotool.com/track/facing_dimensions/",
@@ -108,90 +108,45 @@
     "album_url": "https://www.audiotool.com/album/9pnx5/",
     "photo": "https://api.audiotool.com/album/9Pnx5/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/ewan_mcculloch/avatar/512.jpg",
-    "intro": "Audial's tracks are always technically mature and  produced  to perfection. \nThis and his virtuosity on the claviature of styles make every new publication a pleasant surprise.",
-    "about": "Name: Ewan McCulloch \nPlace: Ascot, UK\nAge: 18\nProfession: soon to be studying physics at Oxford",
-    "interview": [
-      {
-        "q": "What is your style? ",
-        "a": "Atmospheric dance music to trap or dub step"
-      },
-      {
-        "q": "What is your musical background",
-        "a": "Classical guitar and piano"
-      },
-      {
-        "q": "Started making music: ",
-        "a": "A couple of years ago when his school invested in some decent computers and a decent DAW."
-      },
-      {
-        "q": "On Audiotool:",
-        "a": "He discovered AT a year ago because he got sick of using soundation and put some effort into finding a good online DAW."
-      },
-      {
-        "q": "Message to the Community:",
-        "a": "\"Make the music you want to but remember you may find your sound quicker by trying new things and experimenting as much as possible, even if it means listening to new types of music too. By avoiding loops and presets you are forced to create sounds from scratch, not only will this help you understand the synths but it will give you new techniques that can develop into a sound of your own. I have built up a small arsenal of techniques that really define my sound but I’m always adding to it as I’m never completely satisfied. An evolving sound is a healthy sound so always strive to better yourself.\""
-      }
-    ],
+    "intro": "",
+    "about": "",
+    "interview": [],
     "tracks": [
       {
-        "url": "https://www.audiotool.com/track/sc9wvt0wr/",
-        "name": "19",
-        "track_artist": "Kepz",
-        "desc": "A master piece of ambience."
+        "url": "https://www.audiotool.com/track/or9wwaui/",
+        "name": "sensory deprivation",
+        "track_artist": "sila & wpx",
+        "desc": "Sila's signature pulsar sampling technique combined with WPX's knack for golden age IDM sound birthed this very unique collab. Great balance of ambience and suffocating rhythms with just enough room to breathe to get you through 12 minutes."
       },
       {
-        "url": "https://www.audiotool.com/track/blurred/",
-        "name": "Blurred",
-        "track_artist": "Kepz",
-        "desc": "The perfect mix between atmosphere and dance."
+        "url": "https://www.audiotool.com/track/kwybp1p23/",
+        "name": "untitled",
+        "track_artist": "emre girginkaya (voyd)",
+        "desc": "A great track of many in Emre's extensive and consistently impressive library. He was one of the first artists to crack the deep lo-fi formula many years ago and he was not afraid to push things a little further than most."
       },
       {
-        "url": "https://www.audiotool.com/track/i_ve_missed_you_too/",
-        "name": "I've missed you, too",
-        "track_artist": "tophat",
-        "desc": "Beautiful melodic vibes, makes me reminisce."
+        "url": "https://www.audiotool.com/track/nsi0w29197/",
+        "name": "therma",
+        "track_artist": "gekor8",
+        "desc": "This track has all the qualities of an instant Audiotool classic. Great sound design, proper track structure and subtle quirks to make it memorable and interesting. I'm instantly thinking of warm summer evenings while listening to it."
       },
       {
-        "url": "https://www.audiotool.com/track/quarantine/",
-        "name": "Quarantine",
-        "track_artist": "Aaron",
-        "desc": "What a track… the first track on AT I really loved. Get lost in it.\n\n"
+        "url": "https://www.audiotool.com/track/audiophil/",
+        "name": "audiophil",
+        "track_artist": "sumad",
+        "desc": "Another artist with such a consistent output it's hard to pick a winner. Sumad is one of those users that constantly reminds me how unique Audiotool can sound and how far it pushes the emerging tech of web based DAWs. His work is on par with many serious names in the Dub Techno scene."
       },
       {
-        "url": "https://www.audiotool.com/track/wait-dhfov5mja/",
-        "name": "wait ",
-        "track_artist": "amoeba",
-        "desc": "A perfect archetype for the deep future garage amoeba is famous for."
+        "url": "https://www.audiotool.com/track/isa34vlvm/",
+        "name": "Lava U",
+        "track_artist": "VLTRA",
+        "desc": "This is one of my all time favourite tracks on Audiotool and I was overjoyed to see it get a proper physical release under his alias Tlim Shug. The record is part of Cactus Traxx series and came with real seeds of Selenicereus Grandiflorus which is still growing strong at my sun soaked flat. It's actually gotten so big and limby it's claimed one of our chairs to itself."
       },
       {
-        "url": "https://www.audiotool.com/track/off_to_tokyo/",
-        "name": "Off to Tokyo",
-        "track_artist": "THRONE",
-        "desc": "The beat is infectious, a brilliant dance track."
-      },
-      {
-        "url": "https://www.audiotool.com/track/dream-u06qhpzn/",
-        "name": "./dream",
-        "track_artist": "Zone",
-        "desc": "Another melodic beauty, zone is a genius with vocals."
-      },
-      {
-        "url": "https://www.audiotool.com/track/the_tower_unplugged/",
-        "name": "The Tower (unplugged)",
-        "track_artist": "Sandburgen",
-        "desc": "The texture is so full, the tonality is so interesting. I really love it, it’s kind of mysterious…"
-      },
-      {
-        "url": "https://www.audiotool.com/track/pimpampero/",
-        "name": "Pimpampero",
-        "track_artist": "Cripta",
-        "desc": "I love the ridiculous vocals and the bass line is superb, before AT I was never into any techno."
-      },
-      {
-        "url": "https://www.audiotool.com/track/ew_that_kick_drum/",
-        "name": "EW THAT KICK DRUM",
-        "track_artist": "Inavon",
-        "desc": "Just wow, this track is fantastic for so many reasons. The technique used in this was a must have for my production technique arsenal."
+        "url": "https://www.audiotool.com/track/lexn1jv0k/",
+        "name": "self aware",
+        "track_artist": "kepz",
+        "desc": "self aware"
       }
     ],
     "social": {},
@@ -213,78 +168,61 @@
     "album_url": "https://www.audiotool.com/album/hnwkpu4/",
     "photo": "https://api.audiotool.com/album/hNwkpu4/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/xavrockbeats/avatar/512.jpg",
-    "intro": "Xavrockbeat's command of the high-pressure synth dance tracks is second to none on Audiotool. A close look at his constructions is guaranteed to reward any producer of contemporary electronic dance music. The passive audience simply finds just the right thing to freak out.",
-    "about": "Name: Xavier Hoffman\nPlace: Troy, Il, USA\nAge: 18\nProfession: Incoming Freshman at Missouri Science & Technology\n",
-    "interview": [
-      {
-        "q": "What is your style?",
-        "a": "Dance, Lo-fi, Drum and Bass, what ever he feels like "
-      },
-      {
-        "q": "Started making music",
-        "a": "In 2008 with Garage Band. "
-      },
-      {
-        "q": "On Audiotool",
-        "a": "I was messing around on the Tonematrix one day and noticed the Audiotool link.  I clicked on it and the rest is history."
-      },
-      {
-        "q": "Message",
-        "a": "A few weeks ago, a popular Audiotool artist commented on one of my tracks that it was far away from what they would ever be able to do.  I just want to say, never say never, as cliché as it sounds.  I’ve seen people say they can never do something, than three weeks ever they are mastering it already."
-      }
-    ],
+    "intro": "",
+    "about": "",
+    "interview": [],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/soar-IkRVmZ1x6/",
         "name": "Soar",
         "track_artist": "kiari",
-        "desc": "One of the coolest tracks on Audiotool out there. How can you not love this?"
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/adult_swim_smile/",
         "name": "[Adult Swim] Smile",
-        "track_artist": "[offbeatninja]",
-        "desc": "This track is a perfect example of how to use Audiotool for loops. One of my favorites from OBN."
+        "track_artist": "kiari",
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/wasting_time-9FmNJ9ROM/",
         "name": "Wasting TIme",
-        "track_artist": "Zpek",
-        "desc": "Kepz disliked this song so much he moved it to his second account. I don’t share the same feeling towards this track. One from my favorite tracks to listen to on a rainy day."
+        "track_artist": "[offbeatninja]",
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/baby_let_me/",
         "name": "BABY LET ME",
-        "track_artist": "Nominal",
-        "desc": "Beautiful, Bonobo-esque track with some really cool drum work. Great song to chill out to."
+        "track_artist": "[offbeatninja]",
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/could_feel_good/",
         "name": "Forests",
-        "track_artist": "Ante",
-        "desc": "This song was set as my alarm noise in the morning for awhile because this is the only track I could awake to at 6 AM and not want to smash my phone to pieces for waking me up."
+        "track_artist": "Zpek",
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/taire/",
         "name": "Taire",
-        "track_artist": "Kriss",
-        "desc": "Again, another underrated artist. His music combines French house with the lo-fi feel of the 80’s and runs with it. I highly recommend listening to his stuff."
+        "track_artist": "Zpek",
+        "desc": ""
       },
       {
-        "url": "https://www.audiotool.com/track/cori_s_theme-bjveyjuk/",
+        "url": "https://www.audiotool.com/track/cori_s_theme-BJvEYjUk/",
         "name": "Cori's Theme (Astro Remix)",
-        "track_artist": "Astro",
-        "desc": "If anyone is underrated on Audiotool, it has to be him. His songs are a perfect mix of effects, chords, and classic video game sounds that will leave you speechless and/or dancing. His complextro is some of the best on Audiotool at the moment. I recommend Cori’s Theme (Astro Remix), Gameover, and House Shit. He doesn’t have too many followers yet. I’d really like to see that change. I recommend listening to his Remix of SOLACE’s Cori’s Theme."
+        "track_artist": "Nominal",
+        "desc": ""
       }
     ],
     "social": {},
-    "color1": "#fd5858",
+    "color1": "",
     "color2": "",
-    "color_accent": "#fd5858",
-    "desc_bg": "#fdbfbf",
-    "links_bar_color": "#d9ef6b",
-    "bar_color": "#e77858",
-    "bar_text_color": "#7ecfd1",
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
+    "bar_color": "#111111",
+    "bar_text_color": "#ffffff",
     "is_hidden": false
   },
   {
@@ -296,101 +234,78 @@
     "album_url": "https://www.audiotool.com/album/dgaoqtpm/",
     "photo": "https://api.audiotool.com/album/dGaOqTPm/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/intracktion/avatar/512.jpg",
-    "intro": "Intracktion, the enigmatic genius. There's hardly another Audiotooler that achieves such a perfect synthesis of melancholy and euphoria in one piece of music. Not least because of his apparently fragile voice, combined with his perfect command of the musical material, a comparison with Radiohead suggests itself. You can look forward to the ATU interview on 10.08.14 on ",
-    "about": "Name: Kai Franke\nPlace: Hilden (Germany)\nAge: 40 \nProfession: Musician (self thought) ",
-    "interview": [
-      {
-        "q": "Style: ",
-        "a": "He always had problems to define music. "
-      },
-      {
-        "q": "Background:",
-        "a": "There was a piano in the family home. His mother remembered how as a small boy he would clamber onto the piano stool, listening to every note with his full concentration. After some months he was playing little tunes with one hand, some months later extemporizing with with two. At the age of eight he started taking piano lessons, but found it boring to learn to play notes. He preferred playing things that came out of himself, not from a paper full of notes. When he was 14 his father bought him a Korg T1. He loved this big keyboard. It had a lot of great synths and drums and a sequencer, so for the first time he could record his compositions on discs. He becam interested in forms of synthesis, creating his own sounds with a Yamaha SY99. With the development of personal computers, recording tools and plug-in technology he did more and more with the computer down to the present time.\n\n"
-      },
-      {
-        "q": "Started making music:",
-        "a": "At the age of three or four"
-      },
-      {
-        "q": "On Audiotool: ",
-        "a": "About two years ago "
-      },
-      {
-        "q": "Message: ",
-        "a": "„Let´s make some music!“"
-      }
-    ],
+    "intro": "",
+    "about": "",
+    "interview": [],
     "tracks": [
+      {
+        "url": "https://www.audiotool.com/track/i_won_t_if_you_won_t/",
+        "name": "I Won't if You Won't",
+        "track_artist": "Frigolito",
+        "desc": ""
+      },
       {
         "url": "https://www.audiotool.com/track/synthesizer_symphony_1st_mov/",
         "name": "Synthesizer Symphony 1st Mov.",
         "track_artist": "Frigolito",
-        "desc": "I was deeply impressed by his skills in composition and sound-design. To create such a romantic synthesizer-orchestra track is an outstanding achievement."
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/mega-uYzhu/",
         "name": "Ømega",
         "track_artist": "CGMan",
-        "desc": "When Drum and bass entered the dancefloors, it was really mind-blowing for me. This track of CGMan has such an amazing lead rhythm sound, thatit brought back the intensity of listening to Drum and bass for the first time."
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/left_shoes_at_home_edit/",
         "name": "left (shoes at home edit)",
-        "track_artist": "shoes",
-        "desc": "Even Amoeba lays the foundation for this wonderful track, the remix of Enjoyyourshoes was killing me very softly."
+        "track_artist": "CGMan",
+        "desc": ""
       },
       {
-        "url": "https://www.audiotool.com/track/time-a9eezsxt8/",
+        "url": "https://www.audiotool.com/track/time-a9eezSxt8/",
         "name": "Time",
-        "track_artist": "Aaron",
-        "desc": "The first time I heard this track, I was freaking out. I had never heard anything like this before. Such an understatement of sound-design and heart-breaking atmosphere."
+        "track_artist": "shoes",
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/toonami_rejects_beat_1/",
         "name": "Toonami Rejects Beat #1",
-        "track_artist": "[offbeatninja]",
-        "desc": "Love that jazzy sample, love that easy going ninja beat, love my body seesawing to it all."
+        "track_artist": "shoes",
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/frail_trail/",
         "name": "Frail Trail",
-        "track_artist": "Julsy",
-        "desc": "The sweet combination of accoustic and synthesis in a weightless flow."
+        "track_artist": "Aaron",
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/humbly_we_fell_into_the_sky/",
         "name": "Humbly, we fell into the sky",
-        "track_artist": "tophat",
-        "desc": "I love the playful creativity of Jace. The sweet belly harmonies and spots in this track make me feel like a gentle awakening in the morning."
+        "track_artist": "Aaron",
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/standalone/",
-        "name": "Stand Alone ",
-        "track_artist": "Flying Baby Seal",
-        "desc": "I directly fell in love with the vocal melody and Flying Baby Seal puts it in tasteful sonic surroundings."
+        "name": "StandAlone",
+        "track_artist": "[offbeatninja]",
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/epilogic/",
         "name": "epilogic",
-        "track_artist": "Sandburgen",
-        "desc": "The theme of this track is introduced so softly and catchily , and increasingly gains power in its endless morphing expression."
-      },
-      {
-        "url": "https://www.audiotool.com/track/i_won_t_if_you_won_t/",
-        "name": "I Won't if You Won't",
-        "track_artist": "Ante",
-        "desc": "I think he is a very talented sound engineer and his ideas are so manifold and innovative for me. For me there is also a constant progress to be seen in his skills. I´m very excitedly looking forward to his newest releases. Go ahead, man!"
+        "track_artist": "[offbeatninja]",
+        "desc": ""
       }
     ],
-    "social": {
-      "youtube": "https://www.youtube.com/channel/UCVXLazY-PQpWgOaU12-4YcQ "
-    },
-    "color1": "#02b2ab",
+    "social": {},
+    "color1": "",
     "color2": "",
-    "color_accent": "#02b2ab",
-    "desc_bg": "#dbfffe",
-    "links_bar_color": "#cca766",
-    "bar_color": "#02aea7",
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
+    "bar_color": "#111111",
     "bar_text_color": "#ffffff",
     "is_hidden": false
   },
@@ -403,90 +318,73 @@
     "album_url": "https://www.audiotool.com/album/0poc9tl/",
     "photo": "https://api.audiotool.com/album/0POC9Tl/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/flying-baby-seal/avatar/512.jpg",
-    "intro": "Flying Baby Seal is one of Audiotool's most versatile artists, and not only musically: the scope of his identities can hardly be imagined. Only the stilistic reliability he reveals in each of his numbers gives him away again and again.",
-    "about": "Name: Vincent\nPlace: Born near Toulon. Now living on a small french island in the indian ocean called \"Mayotte\".\nAge: 32\nProfession: Professor of history and geography",
-    "interview": [
-      {
-        "q": "Style: ",
-        "a": "Flying Baby Seal: Glitchy Downtempo, Hip Hop, Ambient and Garage. Also some Techno, Rock and even a reaggaeton track. \nかたな: Techno\nThe Massacre of Suns: Poetric  \nWazungu:  Analogue"
-      },
-      {
-        "q": "Musical Background: ",
-        "a": "In his youth he played the piano for seven years and studied the history and theory of music. In the late 1990s, at the age of about 16, he also played in a grung group called \"Psts\", as the lead singer  and composing and writing the  lyrics. Then a year later he discovered the WARP label, dropped the \"grounge\" line and started composing only electronic music."
-      },
-      {
-        "q": "On Audiotool: ",
-        "a": "Since 3 years via André Michelle's Blog "
-      },
-      {
-        "q": "Message to the community:",
-        "a": "Hi audiotool's gang, first I want to thank the staff for the absolutely brilliant work on the software and I want to say how I'm proud to be a part of this amazing adventure ... I  probably stopped making music if audiotool was not there. And today I can't make a day without making music or listen to it. So just for that : Stay classy audiotoolers ;-)"
-      }
-    ],
+    "intro": "",
+    "about": "",
+    "interview": [],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/tripled-Qjbj0/",
         "name": "Tripled",
         "track_artist": "CGMan",
-        "desc": "This track of CGMan just keep in my mind for the day when i hear it. He really can do amazing deep growling sound ... a true inspiration for me and glad to have him on our @CGK project."
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/numberless/",
         "name": "Numberless",
-        "track_artist": "Intracktion",
-        "desc": "What can i say about Intracktion..... i just adore everything he's doing. I'm a big fan, a really talented producer."
+        "track_artist": "CGMan",
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/malice/",
         "name": "Malice",
-        "track_artist": "Tyburn",
-        "desc": "Tyburn ... another great source of inspiration : i often open his tracks to see what he's doing... it is just so accurate. Insanely good. And again this bass ...wow."
+        "track_artist": "Intracktion",
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/treasure/",
         "name": "Treasure",
-        "track_artist": "Julsy",
-        "desc": "Ah Julsy... an another french representative on audiotool. Beautiful voice and great skills in her composition. Touching, brilliant !"
+        "track_artist": "Intracktion",
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/the_belafonte/",
         "name": "The Belafonte",
-        "track_artist": "Lyon",
-        "desc": "Perhaps if i had to choose ... my favourite track on AT... everything is absolutely perfect on this one."
+        "track_artist": "Tyburn",
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/everyday_anyone/",
         "name": "EVERYDAY ANYONE",
-        "track_artist": "Nominal",
-        "desc": "I'm so glad he chose me to be on his ep with my remix ... another bass master. Another big inspiration for me."
+        "track_artist": "Tyburn",
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/santa_muerte/",
         "name": "Santa Muerte",
-        "track_artist": "sumad",
-        "desc": "What can i say about Sumad ... his dark techno, always impress me ... no exception. Again what a bass !"
+        "track_artist": "Julsy",
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/grik2/",
         "name": "GRIK2:)!",
-        "track_artist": "yafee?",
-        "desc": "One of my favourite techno tracks ... what a groove !! big fan of the work of Yafee? and his \"spirit\" and jokes !!"
+        "track_artist": "Julsy",
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/stray-4uLfgvP/",
         "name": "Stray",
-        "track_artist": "ascent",
-        "desc": "Everthing he touches is gold. Well not gold, dark and brilliant. Each time he says : \"rough edit\" or \"old draft\" : you can be sure, it's a massive hit !! big, big ,big fan !\""
+        "track_artist": "Lyon (done)",
+        "desc": ""
       }
     ],
     "social": {},
-    "color1": "#ffffff",
+    "color1": "",
     "color2": "",
-    "color_accent": "#ffffff",
-    "desc_bg": "#b7b6b3",
-    "links_bar_color": "#f4ab8f",
-    "bar_color": "#efefef",
-    "bar_text_color": "#88a6b3",
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
+    "bar_color": "#111111",
+    "bar_text_color": "#ffffff",
     "is_hidden": false
   },
   {
@@ -498,108 +396,86 @@
     "album_url": "https://www.audiotool.com/album/6pvw3rdg/",
     "photo": "https://api.audiotool.com/album/6PVW3rDG/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/zonemusic/avatar/512.jpg",
-    "intro": "Another Audiotool Chill-Out institution. Nicklas Anderson aka Zone conjures the crystal clear athmosphere of scandinavian nights on our home stereos. Take the time and look who's behind the trademark Zone. \n\n",
-    "about": "Name: Nicklas Sindlev Anderse\nPlace: Copenhagen, Denmark. Living in Odense at the moment.\nAge: 21\nProfession: Student at University of Southern Denmark, studying applied mathematics.",
-    "interview": [
-      {
-        "q": "Style:",
-        "a": "Clean melodic Chill-Out "
-      },
-      {
-        "q": "Musical Background: ",
-        "a": "Nicklas took piano lessons at a jazz musician for about 6 years without learning the theory. It was more about playing around and using music as a creative tool to express himself. He learned to play different instruments, but primarily the piano, which he learned to play by ear. \n\n"
-      },
-      {
-        "q": "Started making music",
-        "a": "He started creating his own music when he joined Audiotool. Before that he had played cover songs on the piano."
-      },
-      {
-        "q": "On Audiotool",
-        "a": "2011 via Google appstore. Attracted by RNZR's remix of \"When stars collide\" by Hbeao."
-      },
-      {
-        "q": "Message to the Community",
-        "a": "For me, the most important part of making music, is having fun. Audiotool makes this effortless with its intuitive and straightforward layout. With the amazing sample browser at hand and a few simple effects, its easy to make my creativity to flow. Without Audiotool I would probably never have started producing any music or even continued to play an instrument (sorry if this sounds like a bad commercial, but I mean it). For the community i just want to say: Make the music you want to make, don't make the music everyone else wants you to make. Good artists evolve, when they follow their heart, think outside the box and experiment. New sounds and concepts can evolve from simple ideas and this is what makes music such an amazing thing. "
-      }
-    ],
+    "intro": "",
+    "about": "",
+    "interview": [],
     "tracks": [
+      {
+        "url": "https://www.audiotool.com/track/compulsion-WabKMpG/",
+        "name": "Compulsion",
+        "track_artist": "Snad Breugen",
+        "desc": ""
+      },
       {
         "url": "https://www.audiotool.com/track/sunshine_edit/",
         "name": "sunshine [edit]",
-        "track_artist": "Sandburgen",
-        "desc": "This is one of my favorite tracks on the Sandorama EP. I literally played this track for days after getting the vinyl. The track seems slightly chaotic while still being in control. When I listen to this track I get the feeling of \"traveling through dimensions\". Evil, wicked catchy and hypnotic vibes, a very well made track."
+        "track_artist": "Snad Breugen",
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/program_8/",
         "name": "Program 8",
         "track_artist": "Infyuthsion",
-        "desc": "I absolutely adore Infyuthsions synth pop tracks, cosmonaut, short circuit etc.. They're so groovy with such a variation in sound and melody, that they're interesting throughout. With this track, Program 8, he really caught the Com Truise spirit in his own way. A very well tailored track with amazing synth bends and stabby bass sounds."
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/im_kreis_tanzen/",
         "name": "im Kreis tanzen",
-        "track_artist": "Sumad",
-        "desc": "Again, one of my favorite tracks of an a-records release: sumads Summersum EP. A minimal track with just the right amount of bass, hi hats and cymbals, the evolving bassline keeps it interesting and gives the track a very refined and wholesome sound. The groove is just perfect, so catchy and what a rhythm."
+        "track_artist": "Infyuthsion",
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/natural_blue/",
         "name": "natural blue",
-        "track_artist": "trrrrillionare",
-        "desc": "Amazing lo-fi feeling with nice subtle textures. This is what sampling is all about!!! The vocal/guitar sample is so well integrated into the rest of the track, since it fits so well with the rest of trrrrillionares unique sound design. The track's got deep, warm feelings with awesome, minimal and catchy melodies that makes you fall into the groove instantly. "
+        "track_artist": "sumad",
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/when_stars_collide-KGhra7TYi/",
         "name": "When Stars Collide",
-        "track_artist": "rnzr",
-        "desc": "The track that made me join audiotool. A clean and very well balanced track with thoughtful yet happy melodies. A good beat and a solid arrangement that makes the track flow really well."
+        "track_artist": "sumad",
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/passive-QnAspCUHk/",
         "name": "Passive",
-        "track_artist": "valt",
-        "desc": "A full, lush, textured pad and a solid beat. When I listen to this track, I feel like time is slowing down and I'm about to go into a state of trance. It's a really simple and soothing track, yet with a lot of depth."
+        "track_artist": "trrrrillionare",
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/technicolour/",
         "name": "Technicolour",
-        "track_artist": "Akimbo",
-        "desc": "This is a classic akimbo drum and bass track. A tight beat with a smooth baseline and well fitting vocals. It's got a light composition, where every element has got it's own distinct role: Every sound is perfectly fitting and you can hear every little detail. A well produced and clean track."
+        "track_artist": "trrrrillionare",
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/missed-AFTmR/",
         "name": "Missed",
-        "track_artist": "Aaron",
-        "desc": "I had a hard time picking my favorite Aaron track. He's just an amazing artist and he probably makes the most ideal music for me: clean, with the right amount of noise and crisp textures. This is the kind of music I myself strive to make, but fail miserably at.\nAarons latests song's are just astonishingly good and 'Missed' ins't an exception."
+        "track_artist": "rnzr",
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/what_i_felt/",
         "name": "what i felt",
-        "track_artist": "amoeba",
-        "desc": "I really like this song by amoeba. The percs are just amazingly crisp and fit so well with the underlaying subtle pads. It creates a nostalgic warmth. The glitched mid-range synth changes the mood slightly and adds to the atmosphere. It really makes the track unique and stand out. It's a really well produced track with lots of interesting elements and ideas."
+        "track_artist": "rnzr",
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/berlination/",
         "name": "Berlination",
-        "track_artist": "cripta",
-        "desc": "A catchy track from Cripta that brings back good memories from Berlin 2012/tooltime. I just love the breaks, the subtle changes throughout the track and the synth design. Criptas music is a sure party starter."
-      },
-      {
-        "url": "https://www.audiotool.com/track/attic_-_should_i_stay/",
-        "name": "Attic - Should I Stay",
-        "track_artist": "naut",
-        "desc": "He's good at what he's doing: making straightforward music that's easy to listen to, with solid compositions, arrangements, catchy vocals and melodies!\n\nAdding to that, I think he's doing a really good job blending recorded instruments and vocals with the synths and effect pedals in AT."
+        "track_artist": "valt",
+        "desc": ""
       }
     ],
     "social": {},
-    "color1": "#d87da2",
+    "color1": "",
     "color2": "",
-    "color_accent": "#d87da2",
+    "color_accent": "",
     "desc_bg": "",
-    "links_bar_color": "#fdfdfd",
+    "links_bar_color": "",
     "bar_color": "#111111",
     "bar_text_color": "#ffffff",
-    "is_hidden": false,
-    "quote": "For me, the most important part of making music, is having fun. Audiotool makes this effortless with its intuitive and straightforward layout. "
+    "is_hidden": false
   },
   {
     "artist": "Inavon",
@@ -610,102 +486,80 @@
     "album_url": "https://www.audiotool.com/album/i0qv2qyt6/",
     "photo": "https://api.audiotool.com/album/i0QV2qYT6/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/trancefreak12/avatar/512.jpg",
-    "intro": "Talk about Audiotool-Trance-Music and you won't get far without the name Inavon. From the beginning he knew how to use the resources to produce perfect authentic Trance pieces. His \"Sole Survivor\" remains to this day one of the historical highlights of the website.",
-    "about": "Name: Stephen Tai\nPlace: Fremont, California (USA)\nAge: 19\nProfession: Studying computer science at University of California, Irvine",
-    "interview": [
-      {
-        "q": "Style:",
-        "a": "A lot of uplifting trance, but shifting toward psychedelic and atmospheric styles."
-      },
-      {
-        "q": "Musical Background: ",
-        "a": "He received piano and theory lessons at age 9. Around that time, he also discovered a dance radio station which sparked his interest in trance"
-      },
-      {
-        "q": "Started making music: ",
-        "a": "2009 with trackers\n\n"
-      },
-      {
-        "q": "On Audiotool: ",
-        "a": "2009 on the Tony-B Machine, when someone posted a link to Hobnox Audiotool. He didn't know how to use the devices, so he put it aside until 2010 when he created an account. Cripta happened to be a user on the Tony-B Machine so he was a welcome presence on Audiotool"
-      },
-      {
-        "q": "Message to the Community:",
-        "a": "Digital audio workstations (DAWs) exist to assist in the making of music. But that doesn't mean they are easy ways to escape hard work. A DAW is like any other instrument; you must practice in order to gain experience and get better. If you find that your work isn't up to your standards, then familiarity with your tools is more important than more tools. After all, you don't know what that knob does until you twist it, so you should twist it before you get more knobs. So my advice for Audiotoolers is this: if you want to make better music, then eat more peaches."
-      }
-    ],
+    "intro": "",
+    "about": "",
+    "interview": [],
     "tracks": [
       {
         "url": "https://www.audiotool.com/track/night_ride/",
         "name": "Dream Tape",
         "track_artist": "Kepz",
-        "desc": "This may be the track that I revisit the most. I love its subtly wet, dark sound"
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/venus_transit/",
         "name": "Venus Transit",
-        "track_artist": "Shakey",
-        "desc": "I always lose myself in the large atmospheric sound"
+        "track_artist": "Kepz",
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/by_the_waterside_preview/",
         "name": "By The Waterside",
-        "track_artist": "Jambam",
-        "desc": "Jambam often uses innovative methods, and this track is no exception with its stuttering"
+        "track_artist": "Shakey",
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/the_circle/",
         "name": "The Circle",
-        "track_artist": "LowFeel",
-        "desc": "Amazing synth design"
+        "track_artist": "Shakey",
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/kepz/",
         "name": "Airglow",
-        "track_artist": "Kepz",
-        "desc": "This track is very smooth and professional sounding. Its sparse melody has been an inspiration in many of my tracks."
+        "track_artist": "Jambam",
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/dusk_-_another_day/",
         "name": "Another Day",
-        "track_artist": "Audial",
-        "desc": "A very calm and pleasant track to listen to."
+        "track_artist": "Jambam",
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/cloudsurf_banana_motorboat/",
         "name": "Cloudsurf Banana Motorboat",
-        "track_artist": "Kiari AKA Syntax",
-        "desc": "One of the things that makes me keep listening to a track is the emotion that it evokes. The chords in this one certainly tug at my heartstrings."
+        "track_artist": "LowFeel",
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/iwi_biwi_back/",
         "name": "Iwi Biwi Back",
-        "track_artist": "Intracktion",
-        "desc": "Intracktion mixes together his distinctive synth work and good voice in this dynamic composition"
+        "track_artist": "LowFeel",
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/a_n_un_musical_joke/",
         "name": "A(N) (UN)MUSICAL JOKE",
-        "track_artist": "Frigolito",
-        "desc": "All jokes aside, Frigolito's musicality never fails to impress"
+        "track_artist": "Kepz",
+        "desc": ""
       },
       {
         "url": "https://www.audiotool.com/track/power_within/",
         "name": "Power Within",
-        "track_artist": "Sonic Particles & Mikke",
-        "desc": "This psybient track tickles the ears. I recommend listening to @Sonic Particles because he leads Audiotool in the psychedelic and Goa trance world. His synth and effect work in his professional sounding tracks add a modern taste to a 90s style of trance."
+        "track_artist": "Kepz",
+        "desc": ""
       }
     ],
     "social": {},
-    "color1": "#7cdafd",
+    "color1": "",
     "color2": "",
-    "color_accent": "#7cdafd",
-    "desc_bg": "#c1ecfb",
-    "links_bar_color": "#a5d341",
+    "color_accent": "",
+    "desc_bg": "",
+    "links_bar_color": "",
     "bar_color": "#111111",
-    "bar_text_color": "#d1d9ff",
-    "is_hidden": false,
-    "quote": "... my advice for Audiotoolers is this: if you want to make better music, then eat more peaches.\n"
+    "bar_text_color": "#ffffff",
+    "is_hidden": false
   },
   {
     "artist": "Marodeur (Tocaknox)",
@@ -2362,31 +2216,31 @@
     "photo": "https://api.audiotool.com/album/fPhr89zyy/cover/512.jpg",
     "cover_url": "https://api.audiotool.com/user/oedipax/avatar/512.jpg",
     "intro": "Oedipax and Jonjon, both AT legends of the first hour, demonstrate with their story how Audiotool can bring people together accross borders. Of course mostly this happens on a musical level. In this special case it led to more: Our congratulations go to Suzanne and Jonjon, who married in June 2014. We are proud to introduce to you the first intercontinental Audiotool couple.\n\nNot forgetting that independently of one another they have played an outstanding role in the qualitative development of Audiotool music over the years.",
-    "about": "Oedipax\nName: Suzanne Greninger\nPlace: Seattle, Washington, USA\nAge: 35\nProfession: Administrative Manager at a nonprofit\n\nJonjon\nName: Jon Clark\nPlace: Seattle, U.S. (Originally from Coventry, England)\nAge: 31\nProfession: Self Employed Driver",
+    "about": "OEDIPAX\nName: Suzanne Greninger\nPlace: Seattle, Washington, USA\nAge: 35\nProfession: Administrative Manager at a nonprofit\n\nJONJON\nName: Jon Clark\nPlace: Seattle, U.S. (Originally from Coventry, England)\nAge: 31\nProfession: Self Employed Driver",
     "interview": [
       {
         "q": "Musical Background",
-        "a": "Oedipax: I started learning classical piano at the age of 10 and have been playing ever since, occasionally branching off into some modern music.\n\nJonjon: I've never learned an instrument, but I tinkered with drums, lots of keyboards and a couple of synths as a kid. I grew up with lots of Reggae and Ska around through my father. Then one day, as a 10 year old, he bought me the Jungle-Mania cassette tapes and I was hooked! I would listen to the old Rave tapes at school, then I took up the turntables around 15, I taught myself how to mix and scratch records and spent much of my youth at record shops, club nights, raves and so on. I did a few DJ sets with my mate but nothing much. I haven't mixed a single record for over 5 years. Maybe I'll treat myself to some 1210's and start collecting old records again."
+        "a": "OEDIPAX:\nI started learning classical piano at the age of 10 and have been playing ever since, occasionally branching off into some modern music.\n\nJONJON:\nI've never learned an instrument, but I tinkered with drums, lots of keyboards and a couple of synths as a kid. I grew up with lots of Reggae and Ska around through my father. Then one day, as a 10 year old, he bought me the Jungle-Mania cassette tapes and I was hooked! I would listen to the old Rave tapes at school, then I took up the turntables around 15, I taught myself how to mix and scratch records and spent much of my youth at record shops, club nights, raves and so on. I did a few DJ sets with my mate but nothing much. I haven't mixed a single record for over 5 years. Maybe I'll treat myself to some 1210's and start collecting old records again."
       },
       {
         "q": "Musical Style",
-        "a": "Oedipax: Right now, it's primarily dark and influenced by Industrial and technical/mechanical sounds and falling a lot within what people would call Drum and Bass or Jungle. I also dabble a bit with Jazz samples within a Jungle or Drum and Bass context.\n\nJonjon: Hard for me to say, but I believe in good drums that still have that older more acoustic sound and I love to pair a deep low end bass with the beat. I'll usually have some theme going and if I'm in the mood, I'll add a half decent melody."
+        "a": "OEDIPAX:\nRight now, it's primarily dark and influenced by Industrial and technical/mechanical sounds and falling a lot within what people would call Drum and Bass or Jungle. I also dabble a bit with Jazz samples within a Jungle or Drum and Bass context.\n\nJONJON:\nHard for me to say, but I believe in good drums that still have that older more acoustic sound and I love to pair a deep low end bass with the beat. I'll usually have some theme going and if I'm in the mood, I'll add a half decent melody."
       },
       {
         "q": "Started making music",
-        "a": "Oedipax: I started regularly composing melodies and writing compositions on the piano at the age of 13, however, I found Audiotool in 2011 and started making electronic music at the ripe old age of 31! ;)\n\nJonjon: I was 18 years old and mostly used Reason"
+        "a": "OEDIPAX:\nI started regularly composing melodies and writing compositions on the piano at the age of 13, however, I found Audiotool in 2011 and started making electronic music at the ripe old age of 31! ;)\n\nJONJON:\nI was 18 years old and mostly used Reason"
       },
       {
         "q": "On Audiotool",
-        "a": "Oedipax: I found Audiotool through I believe what was Google's app store at the time and was introduced to electronic music production through this handy platform in early 2011.\n\nJonjon: In 2009 Luke recommended the original Hobnox site to me, so I uploaded some music and was actually really blown away by some of the musicians and video artists on there. Then I signed up for the first version of audiotool the night it went live. It was a few weeks before I published \"Man in Grey\" which was part of all those early tracks that I deleted."
+        "a": "OEDIPAX:\nI found Audiotool through I believe what was Google's app store at the time and was introduced to electronic music production through this handy platform in early 2011.\n\nJONJON:\nIn 2009 Luke recommended the original Hobnox site to me, so I uploaded some music and was actually really blown away by some of the musicians and video artists on there. Then I signed up for the first version of audiotool the night it went live. It was a few weeks before I published \"Man in Grey\" which was part of all those early tracks that I deleted."
       },
       {
         "q": "Lovestory",
-        "a": "Oedipax: Jonjon found me! ;) I saw that he faved one of my tracks on Audiotool and said something nice about it back in 2011. I clicked on his name, listened to a couple of his tracks and realized his great talent straight away. We started talking about music and both found common ground through our similar interests. Over the course of a year, we wrote about music, shared our thoughts about art, life, and many other topics, and learned from each other. Eventually, we decided we needed to meet in person. John came to the U.S. last year and stayed with me, and I found upon meeting him, it was like meeting someone I had already known forever. Before he had to go back to the UK, he proposed. I accepted wholeheartedly. Through the process of U.S. immigration and loads of research and paperwork on our part, he eventually was able to make it back here to the U.S. in May of this year. We married in June and we are living very happily together. :)\n\nJonjon: Warning: Have tissues at the ready. I was drawn to Suzanne from the moment I heard her early experimental tracks such as \"Burn\" and she was really into my afterglow remix. We began chatting on each others walls, then through email, video, pics, phone. Eventually we found we had written a huge romantic novel through e-mail! We share much in common and had experienced similar periods in life. We became best friends. Then we became romantic and I went over to Seattle a couple of times for the maximum period of time allowed. We got to know each other, we fell in love and had a lot of fun. I proposed to her at the beach one summer's evening, Suzanne accepted and then a week later, through many tears, I had to depart back to England and begin the whole immigration process which took an age, mountains and mountains of paperwork and much longing. Suzanne came to England for the first time to meet my family. When I got approved to return, I was the happiest man on earth. So then I went back for good, we married in June this year and we're enjoying life together very much."
+        "a": "OEDIPAX:\nJonjon found me! ;) I saw that he faved one of my tracks on Audiotool and said something nice about it back in 2011. I clicked on his name, listened to a couple of his tracks and realized his great talent straight away. We started talking about music and both found common ground through our similar interests. Over the course of a year, we wrote about music, shared our thoughts about art, life, and many other topics, and learned from each other. Eventually, we decided we needed to meet in person. John came to the U.S. last year and stayed with me, and I found upon meeting him, it was like meeting someone I had already known forever. Before he had to go back to the UK, he proposed. I accepted wholeheartedly. Through the process of U.S. immigration and loads of research and paperwork on our part, he eventually was able to make it back here to the U.S. in May of this year. We married in June and we are living very happily together. :)\n\nJONJON:\nWarning: Have tissues at the ready. I was drawn to Suzanne from the moment I heard her early experimental tracks such as \"Burn\" and she was really into my afterglow remix. We began chatting on each others walls, then through email, video, pics, phone. Eventually we found we had written a huge romantic novel through e-mail! We share much in common and had experienced similar periods in life. We became best friends. Then we became romantic and I went over to Seattle a couple of times for the maximum period of time allowed. We got to know each other, we fell in love and had a lot of fun. I proposed to her at the beach one summer's evening, Suzanne accepted and then a week later, through many tears, I had to depart back to England and begin the whole immigration process which took an age, mountains and mountains of paperwork and much longing. Suzanne came to England for the first time to meet my family. When I got approved to return, I was the happiest man on earth. So then I went back for good, we married in June this year and we're enjoying life together very much."
       },
       {
         "q": "Message to the community",
-        "a": "Oedipax: Thank you all for all the music you make. Many of you are coming up with such innovative and incredible music. Keep doing what you do for the happiness you find in it. Many of you also know how much making music can be used as a creative and even personal outlet for emotions, dreams, and thoughts. Take it as an opportunity for exploration whether you want to express a deeper part of yourself or simply use it as an opportunity to learn more about certain aspects of music production. Whether you're just starting out or have been at it for years, remember that what you have within you is priceless regardless of popularity, fame, or recognition. Keep learning with fresh eyes and listening with fresh ears, but mostly, don't forget to have fun. ;)"
+        "a": "OEDIPAX:\nThank you all for all the music you make. Many of you are coming up with such innovative and incredible music. Keep doing what you do for the happiness you find in it. Many of you also know how much making music can be used as a creative and even personal outlet for emotions, dreams, and thoughts. Take it as an opportunity for exploration whether you want to express a deeper part of yourself or simply use it as an opportunity to learn more about certain aspects of music production. Whether you're just starting out or have been at it for years, remember that what you have within you is priceless regardless of popularity, fame, or recognition. Keep learning with fresh eyes and listening with fresh ears, but mostly, don't forget to have fun. ;)"
       }
     ],
     "tracks": [
