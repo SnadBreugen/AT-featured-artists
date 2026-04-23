@@ -672,7 +672,7 @@
     "is_hidden": false
   },
   {
-    "artist": "Marodeur (Tocaknox)",
+    "artist": "Marodeur",
     "real_name": "Nicolai Staufenberg",
     "date": "2014-08-25",
     "album_number": 8,
@@ -767,13 +767,13 @@
       }
     ],
     "social": {},
-    "color1": "",
+    "color1": "#a6b6cc",
     "color2": "",
-    "color_accent": "",
-    "desc_bg": "",
-    "links_bar_color": "",
-    "bar_color": "#111111",
-    "bar_text_color": "#ffffff",
+    "color_accent": "#a6b6cc",
+    "desc_bg": "#c2c4d3",
+    "links_bar_color": "#a9def9",
+    "bar_color": "#9a9a9a",
+    "bar_text_color": "#21211f",
     "is_hidden": false
   },
   {
